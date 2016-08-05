@@ -12,83 +12,8 @@
 
 @import "base/type";
 
+@import "base/reset";
 
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-html {
-  font-size: 62.5%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  color: #A0A0A0;
-  overflow-y: scroll;
-}
-body {
-  cursor: default;
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0.015em;
-  font-weight: 200;
-  text-transform: normal;
-  color: #A0A0A0;
-  position: relative;
-  min-height: 100vh;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-body.disable-pointer-events {
-  pointer-events: none;
-}
-.selectable {
-  cursor: text;
-  -webkit-touch-callout: default;
-  -webkit-user-select: all;
-  -khtml-user-select: all;
-  -moz-user-select: all;
-  -ms-user-select: all;
-  user-select: all;
-}
-@import "components/forms";
-a {
-  color: #FFFFFF;
-  text-decoration: none;
-  cursor: pointer;
-  border-bottom: 1px solid transparent;
-}
-a:hover:not(.button),
-a:focus:not(.button) {
-  color: #ffffff;
-  text-decoration: none;
-  border-bottom-color: currentcolor;
-}
-a:hover:not(.button):active,
-a:focus:not(.button):active {
-  color: #d9d9d9;
-}
-a:active {
-  background-color: transparent;
-}
-img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
-}
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
 /**
  * Grid system
  *

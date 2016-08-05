@@ -1,0 +1,14 @@
+/* WIP, using this as a reference for extracting files in Spotify.app/Content/Resources/Apps/ */
+
+/*
+  Original command thanks to Matthew Kosloski https://gist.github.com/MatthewKosloski/2146b28e1fbba6a168f11f7a2576a39c
+
+  Extracts each .spa file in Spotify's Apps directory without manually doing it yourself.
+
+  The default folder is put on the desktop.
+  To change that, change the following part of the command:
+  `~/Desktop/Apps && cd ~/Desktop/Apps`
+
+*/
+
+cd /Applications/Spotify.app/Contents/Resources/Apps && cp -R . ~/Desktop/Apps && cd ~/Desktop/Apps && mkdir about ad album artist-chart artist browse buddy-list chart collection-album collection-artist collection-songs collection concerts creator-about discover error feedback findfriends full-screen-modal genre glue-resources hub licenses lyrics messages notification-center people playlist-desktop playlist-folder profile radio-hub search settings share social-feed station stations suggest zlink-queue zlink zlogin && tar -xvf about.spa -C ./about && tar -xvf ad.spa -C ./ad && tar -xvf album.spa -C ./album && tar -xvf artist-chart.spa -C ./artist-chart && tar -xvf artist.spa -C ./artist && tar -xvf browse.spa -C ./browse && tar -xvf buddy-list.spa -C ./buddy-list && tar -xvf chart.spa -C ./chart && tar -xvf collection-album.spa -C ./collection-album && tar -xvf collection-artist.spa -C ./collection-artist && tar -xvf collection-songs.spa -C ./collection-songs && tar -xvf collection.spa -C ./collection && tar -xvf concerts.spa -C ./concerts && tar -xvf creator-about.spa -C ./creator-about && tar -xvf discover.spa -C ./discover && tar -xvf error.spa -C ./error && tar -xvf feedback.spa -C ./feedback && tar -xvf findfriends.spa -C ./findfriends && tar -xvf full-screen-modal.spa -C ./full-screen-modal && tar -xvf genre.spa -C ./genre && tar -xvf glue-resources.spa -C ./glue-resources && tar -xvf hub.spa -C ./hub && tar -xvf licenses.spa -C ./licenses && tar -xvf lyrics.spa -C ./lyrics && tar -xvf messages.spa -C ./messages && tar -xvf notification-center.spa -C ./notification-center && tar -xvf people.spa -C ./people && tar -xvf playlist-desktop.spa -C ./playlist-desktop && tar -xvf playlist-folder.spa -C ./playlist-folder && tar -xvf profile.spa -C ./profile && tar -xvf radio-hub.spa -C ./radio-hub && tar -xvf search.spa -C ./search && tar -xvf settings.spa -C ./settings && tar -xvf share.spa -C ./share && tar -xvf social-feed.spa -C ./social-feed && tar -xvf station.spa -C ./station && tar -xvf stations.spa -C ./stations && tar -xvf suggest.spa -C ./suggest && tar -xvf zlink-queue.spa -C ./zlink-queue && tar -xvf zlink.spa -C ./zlink && tar -xvf zlogin.spa -C ./zlogin
