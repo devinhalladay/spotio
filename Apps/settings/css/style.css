@@ -1,0 +1,283 @@
+#settings.is-incognito .incognito-state .slider {
+  background: #333333;
+  border-color: transparent;
+  pointer-events: none;
+}
+#settings.is-incognito .incognito-state .slider div {
+  background: #404040;
+  box-shadow: none;
+}
+#settings.is-incognito .incognito-state .slider:active div {
+  background: #404040;
+  width: 22px;
+}
+#settings.is-incognito .incognito-state .slider:hover div {
+  background: #404040;
+}
+#settings.is-incognito .incognito-state .slider.enabled:active div {
+  left: 15px;
+}
+html,
+body {
+  min-height: 100%;
+  width: 100%;
+  -webkit-user-select: none;
+  background: #181818;
+}
+.loading-screen {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: #181818;
+}
+.loading-screen .throbber {
+  margin: auto auto;
+  position: initial;
+}
+#prelogin-title {
+  margin-top: 90px;
+}
+#header {
+  margin: 40px 0 16px 0;
+}
+#header .upgrade {
+  margin-right: 20px;
+}
+#header .mo-image-wrapper:hover .mo-overlay {
+  visibility: hidden;
+}
+#header .button-container {
+  margin-top: 20px;
+}
+#header .button-container button {
+  margin-left: 6px;
+  margin-right: 6px;
+}
+#header h1 {
+  margin: 20px 0 0;
+}
+.avatar {
+  height: 120px;
+  width: 120px;
+  margin: 0 auto;
+}
+#settings .action-button {
+  padding-top: 10px;
+}
+#local-files .button,
+#advanced-settings .button {
+  margin-bottom: 13px;
+}
+.setting-row {
+  color: #A0A0A0;
+}
+.setting-row:before,
+.setting-row:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.setting-row:after {
+  clear: both;
+}
+.setting-row.active .col.action a {
+  color: #1DB954;
+}
+.setting-row.active small {
+  display: block;
+}
+.setting-row.disabled,
+#settings.is-incognito .incognito-state,
+#settings.is-incognito .incognito-state .setting-row {
+  color: #404040;
+}
+.setting-row.disabled .col.action a,
+#settings.is-incognito .incognito-state .col.action a,
+#settings.is-incognito .incognito-state .setting-row .col.action a {
+  color: #333333;
+}
+.setting-row.disabled .col.action a:hover,
+#settings.is-incognito .incognito-state .col.action a:hover,
+#settings.is-incognito .incognito-state .setting-row .col.action a:hover {
+  cursor: default;
+}
+.setting-row.disabled .btn-info,
+#settings.is-incognito .incognito-state .btn-info,
+#settings.is-incognito .incognito-state .setting-row .btn-info {
+  cursor: default;
+  pointer-events: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+}
+.setting-row.disabled .btn-info:hover,
+.setting-row.disabled .btn-info:focus,
+.setting-row.disabled .btn-info:active,
+.setting-row.disabled .btn-info.active,
+#settings.is-incognito .incognito-state .btn-info:hover,
+#settings.is-incognito .incognito-state .btn-info:focus,
+#settings.is-incognito .incognito-state .btn-info:active,
+#settings.is-incognito .incognito-state .btn-info.active,
+#settings.is-incognito .incognito-state .setting-row .btn-info:hover,
+#settings.is-incognito .incognito-state .setting-row .btn-info:focus,
+#settings.is-incognito .incognito-state .setting-row .btn-info:active,
+#settings.is-incognito .incognito-state .setting-row .btn-info.active {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.setting-row #facebook-description .avatar {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  float: left;
+}
+.setting-row #facebook-description span {
+  line-height: 30px;
+  margin-left: 10px;
+  float: left;
+}
+.setting-row small {
+  display: none;
+  color: #A0A0A0;
+}
+.setting-row .col {
+  padding: 15px 0;
+  vertical-align: middle;
+}
+.setting-row .col.description {
+  float: left;
+  padding-right: 15px;
+  cursor: default;
+}
+.setting-row .col.action {
+  float: right;
+  text-align: right;
+}
+.setting-row .col.action input[type=checkbox] {
+  float: right;
+}
+.btn-group li {
+  text-align: left;
+}
+#footer {
+  margin-top: 40px;
+}
+.hidden {
+  visibility: hidden;
+}
+.form-group input {
+  display: inline-block;
+  width: auto;
+  padding: 5px;
+  color: #FFFFFF;
+  border: 0;
+  border-radius: 2px;
+  background-color: #333333;
+}
+.form-group input::-webkit-input-placeholder {
+  color: #A0A0A0;
+}
+.form-group input:focus {
+  color: #FFFFFF;
+  outline: 0;
+  border-color: #404040;
+  background-color: #404040;
+}
+.form-group input[name=host],
+.form-group input[name=username],
+.form-group input[name=password] {
+  width: 200px;
+}
+.form-group input[name=port] {
+  width: 70px;
+}
+.form-group input[disabled] {
+  color: #A0A0A0;
+  background-color: #282828;
+}
+.form-group input.error {
+  border: 1px solid #CD1A2B;
+}
+select {
+  min-width: 200px;
+  background: #333333;
+  color: #FFFFFF;
+  border: 0;
+  height: 24px;
+}
+section .left {
+  position: relative;
+  float: left;
+}
+section .right {
+  position: relative;
+  float: right;
+}
+section#social .state .col.user {
+  float: left;
+}
+section#social .user-input {
+  padding-top: 0px;
+}
+section#playback .col.crossfade {
+  display: block;
+  position: relative;
+  float: left;
+  transition: opacity 0.2s;
+}
+section#playback .col.crossfade.disabled {
+  opacity: 0;
+}
+/**
+ * @TODO - abstract to GLUE
+ */
+.slider-range {
+  display: inline-block;
+  position: relative;
+  width: 300px;
+  outline: none;
+  user-select: none;
+  background: transparent;
+}
+.slider-range.disabled.track {
+  background: #282828;
+}
+.slider-range.disabled .applied {
+  background: #A0A0A0;
+}
+.slider-range .container {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+.slider-range .container .progress-bar-wrapper {
+  display: inline-block;
+  position: relative;
+  width: 230px;
+}
+.slider-range .container .progress-bar-wrapper .handle {
+  display: block;
+  position: relative;
+  left: -5px;
+}
+.slider-range .container .duration {
+  display: inline-block;
+  position: relative;
+  margin-left: 15px;
+  cursor: default;
+}
+section#apps .button {
+  margin: 8px 12px 8px 0;
+}
+html.prelogin {
+  -webkit-app-region: drag;
+}
+html.prelogin #wrapper {
+  -webkit-app-region: no-drag;
+}

@@ -1,0 +1,15 @@
+.empty-content {
+  margin: 0 auto;
+  text-align: center;
+}
+.empty-content .message {
+  margin: 1em auto 2em auto;
+  max-width: 400px;
+}
+.empty-content .btn-info {
+  margin: 0 5px;
+}
+.folder-content .media-object .button-add,
+.folder-content .media-object .button-more {
+  display: none;
+}
