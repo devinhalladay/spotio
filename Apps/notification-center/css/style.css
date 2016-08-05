@@ -1,0 +1,68 @@
+/* Sizes */
+html {
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  height: 100%;
+  overflow: hidden;
+  min-width: 0;
+}
+#notification-center {
+  width: 100%;
+  height: 100%;
+  background-color: #333333;
+}
+#title-bar {
+  /* Override GLUE here since the app container handles borders */
+  border-radius: 0;
+  overflow: hidden;
+  padding: 2px inherit 0;
+}
+#notification-list {
+  position: absolute;
+  top: 36px;
+  bottom: 0px;
+  width: 100%;
+}
+#notification-list .scrollbar-track {
+  right: 3px;
+}
+#alert-container {
+  background-color: #333333;
+  width: 100%;
+  height: 100%;
+  display: table;
+  text-align: center;
+}
+#alert-container #alert-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+#alert-container #alert-message {
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 0;
+}
+#notificationListContent {
+  overflow-x: hidden;
+}
+.hide {
+  display: none;
+}
+#throbber-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #333333;
+}
+#loading-throbber {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -25px;
+  margin-left: -25px;
+}

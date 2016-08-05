@@ -1,0 +1,90 @@
+{
+  "BundleIdentifier": "zlink",
+  "BundleType": "Application",
+  "BundleVersion": "0.7.0",
+  "VendorIdentifier": "com.spotify",
+  "UserInstallable": false,
+  "AppDescription": {
+    "en": "The UI for the Zelda client",
+    "de": "The UI for the Zelda client",
+    "el": "The UI for the Zelda client",
+    "es": "The UI for the Zelda client",
+    "es-419": "The UI for the Zelda client",
+    "fi": "The UI for the Zelda client",
+    "fr": "The UI for the Zelda client",
+    "fr-CA": "The UI for the Zelda client",
+    "hu": "The UI for the Zelda client",
+    "id": "The UI for the Zelda client",
+    "it": "The UI for the Zelda client",
+    "ja": "The UI for the Zelda client",
+    "nl": "The UI for the Zelda client",
+    "pl": "The UI for the Zelda client",
+    "pt-BR": "The UI for the Zelda client",
+    "sv": "The UI for the Zelda client",
+    "tr": "The UI for the Zelda client",
+    "zh-Hant": "The UI for the Zelda client",
+    "zsm": "The UI for the Zelda client"
+  },
+  "AppName": {
+    "en": "Zlink",
+    "de": "Zlink",
+    "el": "Zlink",
+    "es": "Zlink",
+    "es-419": "Zlink",
+    "fi": "Zlink",
+    "fr": "Zlink",
+    "fr-CA": "Zlink",
+    "hu": "Zlink",
+    "id": "Zlink",
+    "it": "Zlink",
+    "ja": "Zlink",
+    "nl": "Zlink",
+    "pl": "Zlink",
+    "pt-BR": "Zlink",
+    "sv": "Zlink",
+    "tr": "Zlink",
+    "zh-Hant": "Zlink",
+    "zsm": "Zlink"
+  },
+  "SupportedLanguages": [
+    "de",
+    "el",
+    "en",
+    "es",
+    "es-419",
+    "fi",
+    "fr",
+    "fr-CA",
+    "hu",
+    "id",
+    "it",
+    "ja",
+    "nl",
+    "pl",
+    "pt-BR",
+    "sv",
+    "tr",
+    "zh-Hant",
+    "zsm"
+  ],
+  "SupportedDeviceClasses": [
+    "Desktop"
+  ],
+  "ProvidedFeatures": {
+    "clientStorage": true
+  },
+  "BridgeDependencies": {
+    "bridge-desktop": "0.25.0",
+    "bridge-web": "2.50.0",
+    "bridge-zelda": "1.0.0"
+  },
+  "Dependencies": {
+    "api": "1.0.0"
+  },
+  "InjectScripts": false,
+  "InjectStylesheets": false,
+  "SkipLanguageValidation": true,
+  "SkipUnrequireValidation": true,
+  "SpmApp": true,
+  "GitRevision": "c025c9d"
+}

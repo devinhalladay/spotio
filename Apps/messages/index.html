@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html class="glue1">
+    <head>
+        <meta charset="utf-8">
+        <title>Messages</title>
+        <link rel="stylesheet" href="css/glue1.css">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body data-bind="css: { 'loading': !initialized(), 'show-offline-screen': offline }" class="loading">
+        <div class="error-and-offline">
+          <div class="container">
+            <div class="offline-content">
+              <h1 class="hdr-l" data-bind="text: $root.string('offlineHeader')"></h1>
+              <div class="message" data-bind="text: $root.string('offlineMessage')"></div>
+              <a class="button button-white" href="javascript:location.reload();" data-bind="text: $root.string('offlineButton')"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="fake-screen"
+            style="height: 100%; position: relative;"
+            data-bind="visible: !initialized()">
+          <div class="throbber-initial"><div></div></div>
+        </div>
+
+        <div data-bind="if: !offline()">
+        <div data-bind="visible: !loading() && empty()" id="no-threads">
+            <h4>
+                <span data-bind="text: string('noThreads')"></span><br>
+                <span data-bind="text: string('noThreadsShareAppearsHere')"></span>
+            </h4>
+        </div>
+
+        <div class="fixed-container-wrapper">
+            <!-- Block user confirmation modal -->
+            <div id="modal-backdrop" class="modal-backdrop"></div>
+            <div data-bind="modal: threadToBeBlocked" class="popover modal" id="block-modal">
+                <div class="popover-title clearfix">
+                    <h4 data-bind="text: $root.string('blockUser')"></h4>
+                    <button class="button button-icon-only spoticon-x-16" data-dismiss="modal"></button>
+                </div>
+                <div class="popover-content" style="padding: 30px 20px">
+                    <span data-bind="text: $root.string('blockUserDescription', $data.user().name())"></span>
+                </div>
+                <div class="popover-footer">
+                    <button data-bind="text: $root.string('cancelBlock')" type="button" class="button button-with-stroke" data-dismiss="modal"></button>
+                    <button data-bind="click: $root.blockThreadToBeBlocked, text: $root.string('confirmBlock')" type="button" class="button button-green"></button>
+                </div>
+            </div>
+
+            <div class="container">
+                <div data-bind="visible: loading() || !empty()" class="row">
+
+                    <section data-bind="visible: !empty() && !selectedThread()" class="col-md-8 col-md-push-4" id="thread-not-selected">
+                        <h4 data-bind="text: string('noConvoSelected')" class="text-muted"></h4>
+
+                        <!-- Block user success alert -->
+                        <div id="block-success" class="alert alert-info col-md-6 col-md-push-3 fade">
+                            <strong data-bind="text: $root.string('blockUserConfirmationTitle')"></strong>&nbsp;
+                            <span id="block-success-text"></span>
+                            <button class="button button-icon-only close" data-bind="click: $root.closeAlert"></button>
+                        </div>
+                    </section>
+
+                    <!-- ko with: selectedThread() -->
+                        <!-- ko template: 'ko-thread' --><!-- /ko -->
+                    <!-- /ko -->
+
+                    <section class="col-xs-12 col-sm-12 col-md-4 col-md-pull-8" id="thread-list">
+                        <div class="nav navbar-fixed-top" id="app-title" data-bind="css: { 'loading': loading }">
+                            <h1 class="main-header" data-bind="text: $root.string('appName')"></h1>
+                        </div>
+                        <div data-scroll-area class="thread-scroll-area scrollbar-view">
+                            <div data-bind="scroller: { loading: loading, more: loadMore, foreach: filteredThreads, direction: 'down' }" class="list-group">
+                                <!-- ko template: 'ko-thread-item' --><!-- /ko -->
+                            </div>
+                        </div>
+                        <div class="nav navbar-fixed-bottom" id="thread-list-actions" data-bind="css: { 'loading': loading }">
+                            <li class="dropup">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <!-- ko text: filterDescription --><!-- /ko --> <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu arrow-bottom arrow-position-right" role="menu">
+                                    <li><a data-bind="click: hideUnknownPeople.bind(null, false), text: string('filterEveryone')" href="#" tabindex="-1">Everyone</a></li>
+                                    <li><a data-bind="click: hideUnknownPeople.bind(null, true), text: string('filterKnown')" href="#" tabindex="-1">People You Know</a></li>
+                                </ul>
+                            </li>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <script id="ko-attachment" type="text/html">
+            <div class="msg-attachment row" data-bind="click: onPlayHandler">
+                <!-- ko handlebars: {
+                    name: 'media-object',
+                    data: {
+                        artists: info.artists(),
+                        imageUrl: image(),
+                        modifiers: 'col-lg-4 col-md-5 col-sm-6 col-xs-6',
+                        name: name(),
+                        owner: info.owner(),
+                        uri: uri
+                    },
+                    afterRender: $root.updateMediaEvents
+                } --><!-- /ko -->
+            </div>
+            <!-- ko template: 'ko-attachment-playstate' --><!-- /ko -->
+        </script>
+
+        <script id="ko-attachment-playstate" type="text/html">
+            <!-- ko with: playstate -->
+                <div class="playstate-text">
+                    <span data-bind="css: { 'text-muted': !haveReceiversPlayed() }">
+                        <span class="spoticon-check-16 icon-played"
+                              data-bind="visible: sender.isMe() && haveReceiversPlayed()"></span>
+                        <span><!-- ko text: text() --><!-- /ko --></span>
+                    </span>
+                </div>
+            <!-- /ko -->
+        </script>
+
+        <script id="ko-avatar" type="text/html">
+            <!-- ko handlebars: {
+                name: 'media-image',
+                data: {
+                    imageUrl: image(),
+                    modifiers: 'media-object-simple media-object-link user',
+                    uri: uri
+                }
+            } --><!-- /ko -->
+        </script>
+
+        <script id="ko-composer" type="text/html">
+            <!-- ko with: composer -->
+                <div class="composer">
+                    <textarea class="form-control" data-bind="attr: { placeholder: $root.string('writeReply') }, event: { keydown: replyInput }, hasfocus: replyFocus, value: reply, valueUpdate: ['afterdrop', 'afterkeydown', 'afterpaste']"></textarea>
+                    <div class="controls">
+                        <div class="entertosend-wrapper" data-bind="click: $root.togglePressEnterToSend" data-log-click="enter-to-send-toggle">
+                            <span class="slider-text"><!-- ko text: $root.string('enterToSend') --><!-- /ko --></span>
+                            <div class="slider" data-bind="css: { enabled: $root.canPressEnterToSend }" id="entertosend">
+                                <div></div>
+                            </div>
+                        </div>
+                        <button type="submit" data-bind="attr: { disabled: !canReply() }, click: sendReply, text: $root.string('send'), visible: !$root.canPressEnterToSend()" class="button button-with-stroke" data-log-click="send-button"></button>
+                    </div>
+                </div>
+            <!-- /ko -->
+        </script>
+
+        <script id="ko-message" type="text/html">
+            <div data-bind="css: { 'send-failed': isSendFailed, unread: !read() }" class="msg-grp-message">
+                <small data-bind="text: !isSendFailed() ? time : $root.string('messageFailed')" class="text-aux time"></small>
+                    <!-- ko if: text -->
+                        <!-- ko foreach: textLines -->
+                            <p data-bind="text: $data"></p>
+                        <!-- /ko -->
+                    <!-- /ko -->
+                    <!-- ko with: attachment -->
+                        <!-- ko template: { name: 'ko-attachment' } -->
+                        <!-- /ko -->
+                    <!-- /ko -->
+            </div>
+        </script>
+
+        <script id="ko-thread" type="text/html">
+            <section data-bind="event: { mousemove: markAsRead }" class="col-xs-12 col-sm-12 col-md-8 col-md-push-4" id="thread-body">
+                <!-- ko template: 'ko-thread-nav'--><!-- /ko -->
+                <div data-bind="scroller: { loading: loading, more: loadMore, foreach: messageGroups, direction: 'up' }" data-scroll-area class="msg-list scrollbar-view">
+                    <!-- ko if: divider -->
+                        <div class="divider">
+                            <small data-bind="text: divider" class="divider-title text-aux"></small>
+                        </div>
+                    <!-- /ko -->
+                    <div class="msg-grp">
+                        <!-- ko with: user -->
+                            <div data-bind="template: 'ko-avatar'" class="pull-left msg-grp-usericon"></div>
+                        <!-- /ko -->
+                        <div class="msg-grp-body">
+                            <p class="msg-grp-heading">
+                                <strong><a data-bind="attr: { href: user.uri }, text: user.name"></a></strong>
+                            </p>
+                            <div data-bind="foreach: messages" class="msg-grp-messages">
+                                <!-- ko template: 'ko-message' --><!-- /ko -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ko template: 'ko-composer' --><!-- /ko -->
+            </section>
+        </script>
+
+        <script id="ko-thread-nav" type="text/html">
+            <div class="nav navbar-fixed-top" id="thread-nav">
+                <button id="back-to-convos" class="button button-with-stroke pull-left" data-bind="click: $root.unselectThread, text: $root.string('backToConvos')"></button>
+                <h2 class="pull-left">
+                    <a data-bind="attr: { href: user().uri.toSpotifyLink() }">
+                    <!-- ko text: user().name--><!-- /ko -->
+                    </a>
+                </h2>
+
+                <li class="dropdown settings pull-right">
+                    <button class="button button-icon-with-stroke spoticon-more-32" data-toggle="dropdown" data-log-click="user-settings"></button>
+                    <ul class="dropdown-menu arrow-top arrow-position-right" role="menu">
+                      <li><a href="#" data-toggle="modal" data-target="#block-modal" data-bind="click: $root.requestSelectedThreadToBeBlocked, text: $root.string('blockUser')" data-log-click="block-user"></a></li>
+                    </ul>
+                </li>
+            </div>
+        </script>
+
+        <script id="ko-thread-item" type="text/html">
+            <!--
+                TODO:
+                get rid of this hack when we have templates that
+                support data binding.
+            -->
+            <div data-bind="click: $root.setThread, clickBubble: false" style="border-bottom: 2px solid #121314">
+                <!-- ko handlebars: {
+                    name: 'list-group-item-media',
+                    data: {
+                        auxiliary: {
+                            icon: preview.message().user.isMe() ? 'arrow-left' : false,
+                            text: preview.message().timeAgo()
+                        },
+                        imageUrl: user().image,
+                        modifiers: 'large ' + ($data == $root.selectedThread() ? 'active' : ''),
+                        name: user().name,
+                        subtitle: {
+                            icon: preview.attachment() ? 'track' : false,
+                            text: preview.text()
+                        },
+                        unread: !read(),
+                        uri: user().uri,
+                        url: "#"
+                    }
+                } --><!-- /ko -->
+            </div>
+        </script>
+
+        <script src="vendor/jquery-2.0.3.min.js"></script>
+        <script src="vendor/bootstrap.min.js"></script>
+        <script src="bundle.js"></script>
+    </body>
+</html>

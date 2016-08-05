@@ -1,0 +1,215 @@
+package spotify.messaging.proto;
+
+option optimize_for = SPEED;
+
+enum MessagesFilter {
+  MESSAGES_NO_FILTER = 0;  // Processed as default.
+  PLAYABLE_ONLY = 1;
+}
+
+// Request to get the inbox for a user.
+message ListRequest {
+  // The limit for the number of threads to respond with in preview
+  // If set to 0, it means inbox is only interested in count of unread messages.
+  optional int32 limit = 1;
+
+  // The ID of the last item received by the client
+  // Used for paginating messages in long conversations.
+  optional string lastId = 2;
+
+  // The timestamp associated with the last item in the list
+  // For paginating conversations, this is the timestamp of the preview message.
+  optional int64 lastTimestamp = 3;
+
+  // A filter type to use for messages.
+  optional MessagesFilter messagesFilter = 4;
+}
+
+// Response for a request to get a user's inbox
+message ConversationList {
+  // Count of unread threads in list
+  optional int32 unread = 1;
+
+  // Total number of threads
+  optional int32 total = 2;
+
+  // Optionally, List of messages in preview.
+  repeated Conversation threads = 3;
+}
+
+// A conversation update contains a reference to a message in the conversation.
+// This is the message that's published when there's a new message, for example.
+message MessagePointer {
+  // Conversation ID
+  optional string conversationId = 1;
+
+  // Message ID
+  optional string messageId = 2;
+}
+
+// A thread is a conversation with someone (or a group)
+message Conversation {
+  // The conversation id
+  optional string id = 1;
+
+  // DEPRECATED: Read status for the requester
+  // The new system uses the readUntil flag to compare with preview's message ID
+  optional bool read = 2;
+
+  // A list of users involved in this conversation.
+  // Does not include the requesting user, who can anyway be assumed to be a participant.
+  repeated string users = 3;
+
+  // A preview of the latest message in this conversation
+  optional DirectMessage preview = 4;
+
+  // TODO: This field should replace the read field above.
+  // We added a field here for backwards compatibility
+  optional string readUntil = 5;
+}
+
+// A message is any direct communication between users
+// It optionally includes a text and/or attachment but at least one of them.
+// To avoid confusing with other "Message" Java types, we'll call this DirectMessage
+// Direct messages are stored directly in cassandra. See Store#addMessage for details.
+// To add a new message, use the NewMessage type given below.
+message DirectMessage {
+  // The message id. Returned to clients.
+  optional string id = 1;
+
+  // The time when this message was sent.
+  optional int64 timestamp = 2;
+
+  // The text accompanying the message.
+  optional string text = 3;
+
+  // The URI of the attachment in the message.
+  optional string attachment = 4;
+
+  // The sender for this message. Should never be set by app.
+  // We'll store in the cassandra storage for later use.
+  optional string sender = 5;
+
+  // The timestamp when the attachment has been played
+  repeated PlayState playStates = 6;
+}
+
+message PlayState {
+  // A user who played the message attachment
+  optional string user = 1;
+
+  // The time the user played the message attachment
+  optional int64 timePlayed = 2;
+
+  // If the user the data is being served to is the user
+  optional bool self = 3;
+}
+
+message NewMessage {
+  // The text accompanying the message.
+  optional string text = 1;
+
+  // The URI of the attachment in the message.
+  optional string attachment = 2;
+
+  // The recipients who should get this message.
+  repeated string recipients = 3;
+}
+
+message DirectMessageList {
+  repeated DirectMessage messages = 1;
+  // TODO: Other offset and information about messages go here.
+}
+
+// A list of the types of events that can be sent.
+enum EventType {
+  UNKNOWN_EVENT = 0;
+  NEW_MESSAGE = 1;
+  READ_CONVERSATION = 2;
+  UNREAD_COUNT_CHANGE = 3;
+  PLAYED_ATTACHMENT = 4;
+  CONVERSATION_STATE_UPDATE = 5;
+}
+
+// Published events through pubsub to synchronize clients
+message MessagingEvent {
+  optional EventType type = 1;
+
+  // Set when type is NEW_MESSAGE
+  optional NewMessageEvent newMessage = 2;
+
+  // Set when type is READ_CONVERSATION
+  optional ReadConversationEvent readConversation = 3;
+
+  // Set when type is UNREAD_COUNT_CHANGE
+  optional UnreadCountChangeEvent unreadCountChange = 4;
+
+  // Set when type is PLAYED_ATTACHMENT
+  optional PlayedAttachmentEvent playedAttachment = 5;
+
+  // Set when a conversation type (category) has been updated. Used by block feature.
+  optional ConversationStateUpdate conversationStateUpdate = 6;
+}
+
+message NewMessageEvent {
+  // The conversation for which there was a new message.
+  optional Conversation conversation = 1;
+
+  // The read state for the conversation PRIOR to the new message.
+  // This flag indicates to the client if it should up the count
+  // of the unread messages or stick to the same.
+  optional bool wasRead = 2;
+}
+
+message ReadConversationEvent {
+  // The URI of the user who read the conversation.
+  optional string user = 1;
+
+  // The conversation that was read.
+  optional string conversationId = 2;
+
+  // The message until which the user read the conversation.
+  optional string messageId = 3;
+}
+
+message PlayedAttachmentEvent {
+  // The conversation in which the message attachment was played.
+  optional string conversationId = 1;
+
+  // The message in which the user played the attachment.
+  optional string messageId = 2;
+
+  // The time the attachment was played
+  optional PlayState playState = 3;
+}
+
+message UnreadCountChangeEvent {
+  // The amount by which to alter the inbox unread count
+  optional int32 delta = 1;
+
+  // If set, just use this value for the total unread count
+  optional int32 total = 2;
+}
+
+message MessageUpdate {
+  // According to current product, reading a particular message implies
+  // all previous messages of the same conversation is also read by the user.
+  optional bool read = 1;
+
+  // Played refers to the time the attachment in the message that was played.
+  optional bool played = 2;
+}
+
+enum ConversationState {
+  DEFAULT_CONVERSATION_STATE = 0;
+  BLOCKED = 1;
+  UNBLOCKED = 2;
+}
+
+message ConversationStateUpdate {
+  // The conversation state after the update.
+  optional ConversationState state = 1;
+
+  // The conversation that was updated
+  optional Conversation conversation = 2;
+}

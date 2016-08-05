@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html class="glue1">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="css/glue1.css">
+
+    <!-- build:css all.css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- endbuild -->
+  </head>
+  <!-- Unfortunately the Link app data injector can't cope with line-breaks inside the body tag -->
+  <body data-scroll-area data-bind="css: { 'show-error-screen': showErrorScreen }">
+
+    <div id="collection-album-wrapper" class="collection-album" data-play-source="library-collection-album"></div>
+
+    <div id="error-wrapper"></div>
+
+    <!-- build:js all.js -->
+    <script src="bundle.js"></script>
+    <!-- endbuild -->
+
+    <script src="https://cdn.ravenjs.com/1.1.15/jquery,native/raven.min.js"></script>
+  </body>
+</html>

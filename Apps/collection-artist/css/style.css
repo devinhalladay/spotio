@@ -1,0 +1,87 @@
+body.show-offline-screen,
+body.throbber-is-visible {
+  overflow: hidden;
+}
+.error-and-offline {
+  position: fixed;
+}
+/* TODO: Fix this is GLUE instead */
+.tl-time {
+  text-overflow: clip !important;
+}
+/* FIXME: For some reason, the tooltip injects a 'null'
+   string at the bottom of the HTML. For now, since we don't use
+   the tooltips anyway. This might be auto-solved when using views
+   and glue fully.
+ */
+#tooltip {
+  display: none !important;
+}
+.nux-screen {
+  display: table;
+  height: 100%;
+  width: 100%;
+  padding-top: 10%;
+}
+.nux-screen .nux-screen-inner-box {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.nux-screen .nux-screen-inner-box .nux-icon {
+  line-height: 128px;
+}
+.nux-screen .nux-screen-inner-box .nux-songs-icon:before {
+  font-family: "glue1-spoticon";
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  line-height: inherit;
+  vertical-align: bottom;
+  content: "\f157";
+  font-size: 128px;
+}
+.nux-screen .nux-screen-inner-box .nux-albums-icon:before {
+  font-family: "glue1-spoticon";
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  line-height: inherit;
+  vertical-align: bottom;
+  content: "\f1C1";
+  font-size: 128px;
+}
+.nux-screen .nux-screen-inner-box .nux-artists-icon:before {
+  font-family: "glue1-spoticon";
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  line-height: inherit;
+  vertical-align: bottom;
+  content: "\f103";
+  font-size: 128px;
+}
+.ca-hidden,
+.ca-hidden * {
+  visibility: hidden !important;
+}
+.ca-removed {
+  position: absolute;
+  visibility: hidden;
+  z-index: -1;
+}
+/* Start atamon GLUE override hacks */
+header.header .h-data {
+  padding-top: 15px;
+}
+header.header section.h-main-content {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* End atamon GLUE override hacks */

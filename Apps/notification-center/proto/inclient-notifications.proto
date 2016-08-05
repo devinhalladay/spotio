@@ -1,0 +1,165 @@
+package spotify.inclient_notifications.proto;
+
+// Social Reaction types
+enum SocialReactionType {
+    UNKNOWN_SOCIAL_REACTION = 0;
+    LIKED_SOCIAL_REACTION = 1;
+    STREAMED_SOCIAL_REACTION = 2;
+    RESHARED_SOCIAL_REACTION = 3;
+}
+
+// Story types from bouncer
+enum BouncerStoryType {
+    FOLLOWED_PROFILE_BOUNCER_STORY = 0; // user, artist or merged profile
+    PUBLISHED_PLAYLIST_BOUNCER_STORY = 1;
+    FOLLOWED_PLAYLIST_BOUNCER_STORY = 2;
+    SHARED_URI_BOUNCER_STORY = 3;
+}
+
+message SocialReactionObject {
+    optional SocialReactionType reaction = 1;
+
+    // The creator of the story. Recipient of the nofication
+    optional string story_creator = 2;
+
+    // Story ID in bouncer
+    optional string story_id = 3;
+
+    // The story type as defined in bouncer
+    optional BouncerStoryType story_type = 4;
+
+    // The item that was part of the social story
+    optional string item_uri = 5;
+
+    // The time when the reaction happened
+    optional int64 reaction_time_ms = 6;
+}
+
+
+enum AppType {
+  TYPE_UNKNOWN_APP = 0;
+  TYPE_IOS_APP = 1;
+  TYPE_ANDROID_APP = 2;
+  TYPE_LINK_APP = 3;
+  TYPE_MFT_LAUNCH = 4;
+  TYPE_MFT_REMINDER = 5;
+  TYPE_MFT_SEASON = 6;
+}
+
+message User {
+  optional string canonical_username = 1;
+  optional string real_name = 2;
+}
+
+message PlaylistSubObject {
+  optional string uri = 1;
+  optional User owner = 2;
+  optional User profile_user = 4; // if known
+}
+
+message TrackAddObject {
+  optional int32 track_count = 1;
+  optional string uri = 2;
+  repeated string track_uri = 3; // not necessarily all
+}
+
+message AlbumReleaseObject {
+  optional string album_gid = 1;
+  optional string artist_gid = 2;
+  optional string album_name = 3;
+  optional string artist_name = 4;
+  optional string track_gid = 5;  // used if you want to link to a specifik track in an album
+  optional string track_name = 6; // name of the above track
+  optional bool exclusive = 7;
+}
+
+message ApplicationReleaseObject {
+  optional AppType app = 1;
+  optional string uri = 2;
+  optional string image_url = 3;
+  optional bool new_app = 4;
+}
+
+message MessagePlayedObject {
+  optional string thread_id = 1;
+  optional string message_id = 2;
+  optional string attachment_uri = 3;
+  optional User user = 4;
+}
+
+message InClientNotificationData {
+
+  optional int32 version = 1;
+
+  optional NotificationState state = 2;
+
+  repeated User subject = 4;
+
+  optional int32 subject_total = 5;
+
+  optional string notification_verb = 6;
+
+  repeated PlaylistSubObject playlist_sub_object = 8;
+
+  repeated TrackAddObject track_add_object = 10;
+
+  repeated AlbumReleaseObject album_release_object = 11;
+
+  repeated ApplicationReleaseObject application_release_object=12;
+
+  repeated SocialReactionObject social_reaction_object = 13; // Simply forward the event data
+
+  repeated MessagePlayedObject message_played_object = 14;
+}
+
+
+enum NotificationType {
+  TYPE_UNKNOWN_NOTIFICATION = 0;
+  TYPE_RESET_NOTIFICATION = 1;
+  TYPE_IN_CLIENT_NOTIFICATION = 5;
+}
+
+message Notification {
+  // The version of this message.
+  optional int32 version = 1;
+
+  // The type of the notification.
+  optional NotificationType type = 2;
+
+  optional InClientNotificationData in_client_data = 5;
+
+  optional bool dry = 7;
+}
+
+
+message NotificationState {
+  //optional bytes notification_id = 1; // UUID
+  optional bool seen = 2;
+  optional bool dismissed = 3;
+  optional bool followed_through = 4;
+
+  optional string notification_id_hex = 5; // used by the client, since boink mangles the bytes
+  optional string state_id_hex = 6; // used by the client, since boink mangles the bytes
+
+  //optional bytes state_id = 7;
+
+  //optional float OBSOLETE_notification_id_ticks = 8; // since the client can't do UUID -> ticks (stupid JS)
+  //optional float OBSOLETE_state_id_ticks = 9;
+
+  optional int64 notification_id_ms = 10;
+  optional int64 state_id_ms = 11;
+}
+
+message NotificationList {
+  repeated Notification notification = 1;
+}
+
+message NotificationStateList {
+  repeated NotificationState state = 1;
+}
+
+message NotificationCounts {
+  optional int32 version = 1;
+
+  optional int32 active = 2;
+}
