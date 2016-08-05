@@ -1,0 +1,504 @@
+/**
+ * Forms
+ *
+ * Markup: <form role="form">
+ *   <div class="form-group">
+ *     <label for="exampleInputEmail1">Email address</label>
+ *     <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+ *   </div>
+ *   <div class="form-group">
+ *     <label for="exampleInputPassword1">Password</label>
+ *     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+ *   </div>
+ *   <div class="form-group">
+ *     <label for="exampleInputFile">File input</label>
+ *     <input type="file" id="exampleInputFile">
+ *     <p class="help-block">Example block-level help text here.</p>
+ *   </div>
+ *   <div class="checkbox">
+ *     <label>
+ *       <input type="checkbox"> Check me out
+ *     </label>
+ *   </div>
+ *   <div class="form-group">
+ *     <textarea style="height: 80px" class="form-control" placeholder="Type your message here..."></textarea>
+ *   </div>
+ *   <button type="submit" class="button">Submit</button>
+ * </form>
+ *
+ * Styleguide 25.5
+ */
+/**
+ * Inline Form
+ *
+ * Markup: <form class="form-inline" role="form">
+ *   <div class="form-group">
+ *     <label class="sr-only" for="exampleInputEmail2">Email address</label>
+ *     <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+ *   </div>
+ *   <div class="form-group">
+ *     <label class="sr-only" for="exampleInputPassword2">Password</label>
+ *     <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+ *   </div>
+ *   <div class="checkbox">
+ *     <label>
+ *       <input type="checkbox"> Remember me
+ *     </label>
+ *   </div>
+ *   <button type="submit" class="button">Sign in</button>
+ * </form>
+ *
+ * Styleguide 25.5.1
+ */
+/**
+ * Horizontal Form
+ *
+ * Markup: <form class="form-horizontal" role="form">
+ *   <div class="form-group">
+ *     <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+ *     <div class="col-sm-10">
+ *       <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+ *     </div>
+ *   </div>
+ *   <div class="form-group">
+ *     <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+ *     <div class="col-sm-10">
+ *       <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+ *     </div>
+ *   </div>
+ *   <div class="form-group">
+ *     <div class="col-sm-offset-2 col-sm-10">
+ *       <div class="checkbox">
+ *         <label>
+ *           <input type="checkbox"> Remember me
+ *         </label>
+ *       </div>
+ *     </div>
+ *   </div>
+ *   <div class="form-group">
+ *     <div class="col-sm-offset-2 col-sm-10">
+ *       <button type="submit" class="button">Sign in</button>
+ *     </div>
+ *   </div>
+ * </form>
+ *
+ * Styleguide 25.5.2
+ */
+/**
+ * Checks and Radio Buttons
+ *
+ * Markup: <div class="checkbox">
+ *   <label>
+ *     <input type="checkbox" value="">
+ *     Option one is this and that&mdash;be sure to include why it's great
+ *   </label>
+ * </div>
+ * <div class="radio">
+ *   <label>
+ *     <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+ *     Option one is this and that&mdash;be sure to include why it's great
+ *   </label>
+ * </div>
+ * <div class="radio">
+ *   <label>
+ *     <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+ *     Option two can be something else and selecting it will deselect option one
+ *   </label>
+ * </div>
+ *
+ * Styleguide 25.5.2
+ */
+/**
+ * Checks and Radio Buttons Inline
+ *
+ * Markup: <label class="checkbox-inline">
+ *   <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+ * </label>
+ * <label class="checkbox-inline">
+ *   <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+ * </label>
+ * <label class="checkbox-inline">
+ *   <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+ * </label>
+ *
+ *
+ * Styleguide 25.5.3
+ */
+/**
+ * Selects
+ *
+ * <span class="text-danger">We don't support selects as they cannot be styled
+ * reliably. Please use a button and a dropdown.</span>
+ *
+ * Styleguide 25.5.4
+ */
+/**
+ * States and Sizes
+ *
+ * Markup: <form role="form">
+ *   <fieldset disabled>
+ *     <div class="form-group">
+ *       <label for="disabledTextInput">Disabled input</label>
+ *       <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+ *     </div>
+ *     <div class="checkbox">
+ *       <label>
+ *         <input type="checkbox"> Can't check this
+ *       </label>
+ *     </div>
+ *     <button type="submit" class="button">Submit</button>
+ *   </fieldset>
+ *   <br>
+ *   <div class="form-group has-success">
+ *     <label class="control-label" for="inputSuccess">Input with success</label>
+ *     <input type="text" class="form-control" id="inputSuccess">
+ *   </div>
+ *   <div class="form-group has-warning">
+ *     <label class="control-label" for="inputWarning">Input with warning</label>
+ *     <input type="text" class="form-control" id="inputWarning">
+ *   </div>
+ *   <div class="form-group has-error">
+ *     <label class="control-label" for="inputError">Input with error</label>
+ *     <input type="text" class="form-control" id="inputError">
+ *   </div>
+ * </form>
+ *
+ * Styleguide 25.5.5
+ */
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: 21px;
+  line-height: inherit;
+  color: #A0A0A0;
+  border: 0;
+  border-bottom: 1px solid #282828;
+}
+label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+input[type="search"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 2px 0 0;
+  margin-top: 1px \9;
+  /* IE8-9 */
+  line-height: normal;
+}
+input[type="file"] {
+  display: block;
+}
+select[multiple],
+select[size] {
+  height: auto;
+}
+select optgroup {
+  font-size: inherit;
+  font-style: inherit;
+  font-family: inherit;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  height: auto;
+}
+output {
+  display: block;
+  padding-top: 4px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #404040;
+  vertical-align: middle;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: 31px;
+  padding: 5px 12px 4px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #404040;
+  vertical-align: middle;
+  background-color: #FFFFFF;
+  background-image: none;
+  border: 1px solid #FFFFFF;
+  border-radius: 3px;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+.form-control:focus {
+  border-color: #FFFFFF;
+  outline: 0;
+  background-color: #FFFFFF;
+  color: #181818;
+}
+.form-control:-moz-placeholder {
+  color: #404040;
+}
+.form-control::-moz-placeholder {
+  color: #404040;
+}
+.form-control:-ms-input-placeholder {
+  color: #404040;
+}
+.form-control::-webkit-input-placeholder {
+  color: #404040;
+}
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control {
+  cursor: not-allowed;
+  background-color: #A0A0A0;
+}
+textarea.form-control {
+  height: auto;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.radio,
+.checkbox {
+  display: block;
+  min-height: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  vertical-align: middle;
+}
+.radio label,
+.checkbox label {
+  display: inline;
+  margin-bottom: 0;
+  font-weight: 200;
+  cursor: pointer;
+}
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  float: left;
+  margin-left: -20px;
+}
+.radio + .radio,
+.checkbox + .checkbox {
+  margin-top: -5px;
+}
+.radio-inline,
+.checkbox-inline {
+  display: inline-block;
+  padding-left: 20px;
+  margin-bottom: 0;
+  vertical-align: middle;
+  font-weight: 400;
+  cursor: pointer;
+}
+.radio-inline + .radio-inline,
+.checkbox-inline + .checkbox-inline {
+  margin-top: 0;
+  margin-left: 10px;
+}
+input[type="radio"][disabled],
+input[type="checkbox"][disabled],
+.radio[disabled],
+.radio-inline[disabled],
+.checkbox[disabled],
+.checkbox-inline[disabled],
+fieldset[disabled] input[type="radio"],
+fieldset[disabled] input[type="checkbox"],
+fieldset[disabled] .radio,
+fieldset[disabled] .radio-inline,
+fieldset[disabled] .checkbox,
+fieldset[disabled] .checkbox-inline {
+  cursor: not-allowed;
+}
+.input-sm {
+  height: 22px;
+  padding: 2px 10px;
+  font-size: 12px;
+  line-height: 16px;
+  border-radius: 3px;
+}
+select.input-sm {
+  height: 22px;
+  line-height: 22px;
+}
+textarea.input-sm {
+  height: auto;
+}
+.input-lg {
+  height: 50px;
+  padding: 6px 16px;
+  font-size: 28px;
+  line-height: 36px;
+  border-radius: 3px;
+}
+select.input-lg {
+  height: 50px;
+  line-height: 50px;
+}
+textarea.input-lg {
+  height: auto;
+}
+.has-warning .help-block,
+.has-warning .control-label,
+.has-warning .radio,
+.has-warning .checkbox,
+.has-warning .radio-inline,
+.has-warning .checkbox-inline {
+  color: #FFFFFF;
+}
+.has-warning .form-control {
+  border-color: #FFFFFF;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.has-warning .form-control:focus {
+  border-color: #e6e6e6;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ffffff;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ffffff;
+}
+.has-error .help-block,
+.has-error .control-label,
+.has-error .radio,
+.has-error .checkbox,
+.has-error .radio-inline,
+.has-error .checkbox-inline {
+  color: #CD1A2B;
+}
+.has-error .form-control {
+  border-color: #CD1A2B;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.has-error .form-control:focus {
+  border-color: #a01422;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #eb626f;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #eb626f;
+}
+.has-success .help-block,
+.has-success .control-label,
+.has-success .radio,
+.has-success .checkbox,
+.has-success .radio-inline,
+.has-success .checkbox-inline {
+  color: $primary-accent-color;
+}
+.has-success .form-control {
+  border-color: $primary-accent-color;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.has-success .form-control:focus {
+  border-color: #18a94c;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #6feb9c;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #6feb9c;
+}
+.form-control-static {
+  margin-bottom: 0;
+}
+.help-block {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #e0e0e0;
+}
+@media (min-width: 586px) {
+  .form-inline .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .form-inline .form-control {
+    display: inline-block;
+  }
+  .form-inline .radio,
+  .form-inline .checkbox {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  .form-inline .radio input[type="radio"],
+  .form-inline .checkbox input[type="checkbox"] {
+    float: none;
+    margin-left: 0;
+  }
+}
+.form-horizontal .control-label,
+.form-horizontal .radio,
+.form-horizontal .checkbox,
+.form-horizontal .radio-inline,
+.form-horizontal .checkbox-inline {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 6px;
+}
+.form-horizontal .form-group {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+.form-horizontal .form-group:before,
+.form-horizontal .form-group:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.form-horizontal .form-group:after {
+  clear: both;
+}
+.form-horizontal .form-group .row {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+@media (min-width: 586px) {
+  .form-horizontal .form-group {
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+  .form-horizontal .form-group .row {
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+}
+@media (min-width: 854px) {
+  .form-horizontal .form-group {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .form-horizontal .form-group .row {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+}
+@media (min-width: 1274px) {
+  .form-horizontal .form-group {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  .form-horizontal .form-group .row {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+.form-horizontal .form-control-static {
+  padding-top: 4px;
+}
+@media (min-width: 586px) {
+  .form-horizontal .control-label {
+    text-align: right;
+  }
+}
