@@ -13,10 +13,10 @@ end
 desc "Compile Apps directories into .spa template files"
 task :spa do
   puts "\n## Zipping apps"
-  status = system('pushd Apps; for i in *; do zip -r ../build/Apps/$i.zip $i; done; popd')
+  status = system('pushd Apps; for i in *; do zip -r ../dist/$i.zip $i; done; popd')
   puts status ? "Success" : "Failed"
   puts "\n## Moving .zip files to .spa files"
-  status = system('for file in build/Apps/*.zip; do mv "${file}" "${file/%.zip/.spa}"; done')
+  status = system('for file in dist/*.zip; do mv "${file}" "${file/%.zip/.spa}"; done')
   puts status ? "Success" : "Failed"
 end
 
@@ -32,6 +32,12 @@ task :compile do
   puts status ? "Success" : "Failed"
   Rake::Task["spa"].invoke
   puts "\n## Done!"
+end
+
+desc "Install built .spa files into your spotify app"
+task :install do
+  puts "\n## Installing .spa files in your Spotify.app"
+  status = system('mv build/')
 end
 
 # desc "Notify various services about new content"
