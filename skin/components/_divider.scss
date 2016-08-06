@@ -1,0 +1,154 @@
+/**
+ * Dividers
+ *
+ * Small divider with or without title. In use on album page between regular tracks and additional tracks.
+ *
+ * Styleguide 30.1
+ */
+/**
+ * Horizontal rules
+ *
+ * Markup: <hr>
+ *
+ * Styleguide 30.1.1
+ */
+hr {
+  margin: 5px 0;
+  border: 0;
+  border-top: 1px solid #282828;
+}
+/**
+ * Default divider
+ *
+ * Markup: <div class="divider"><span class="divider-title">Some Title</span></div>
+ *
+ * Styleguide 30.1.2
+ */
+.divider {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #282828;
+  line-height: 1px;
+  margin: 12px 0;
+}
+.divider .divider-title {
+  background-color: #181818;
+  padding: 0 6px;
+  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.015em;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #A0A0A0;
+}
+.section-divider-fixed-wrapper {
+  position: fixed;
+  width: 100%;
+  min-width: 586px;
+  top: 46px;
+  left: 0;
+  z-index: 99;
+  background-image: -webkit-gradient(linear, left 50%, left 100%, from(#181818), to(rgba(24, 24, 24, 0.6)));
+  background-image: -moz-linear-gradient(top, #181818 50%, rgba(24, 24, 24, 0.6) 100%);
+  background-image: linear-gradient(to bottom, #181818 50%, rgba(24, 24, 24, 0.6) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff181818', endColorstr='#99181818', GradientType=0);
+}
+.section-divider-fixed-wrapper .section-divider {
+  margin-bottom: 0;
+}
+/**
+ * Section divider
+ *
+ * Markup:
+ *   <div class="section-divider">
+ *     <div>Some cool section</div>
+ *     <a class="section-auxiliary">Some Action</a>
+ *   </div>
+ *   <div class="section-divider section-divider-borderless">
+ *     <div>Some cool section</div>
+ *   </div>
+ *   <div class="section-divider">
+ *     <h2>Normailizes header sizes</h2>
+ *     <div class="section-auxiliary">
+ *       <div class="button-group">
+ *         <a class="button button-icon-with-stroke spoticon-list-view-16" href="#" data-view-mode="lists"></a>
+ *         <a class="button button-icon-with-stroke spoticon-grid-view-16" href="#" data-view-mode="covers"></a>
+ *       </div>
+ *     </div>
+ *   </div>
+ *   <div class="section-divider">
+ *     <a>Works with links</a>
+ *     <a class="section-auxiliary">Some Action</a>
+ *   </div>
+ *
+ * Styleguide 30.1.3
+ */
+.section-divider {
+  border-bottom: 1px solid #282828;
+  margin: 0 0 16px;
+  padding: 26px 0 4px;
+  position: relative;
+  color: #FFFFFF;
+}
+.section-divider:before,
+.section-divider:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.section-divider:after {
+  clear: both;
+}
+.section-divider > * {
+  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: normal;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-transform: normal;
+  margin: 0;
+}
+.section-divider > *:first-child {
+  float: left;
+}
+.section-divider.section-divider-borderless {
+  border-bottom: 0px;
+  margin-bottom: 8px;
+  padding-bottom: 0px;
+}
+.section-divider .section-auxiliary {
+  float: right;
+}
+.section-divider .section-auxiliary a {
+  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.015em;
+  font-weight: 200;
+  color: #A0A0A0;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+}
+.section-divider .section-auxiliary a:hover {
+  color: #FFFFFF;
+}
+.section-divider-small {
+  border-bottom: 0;
+  margin-bottom: 8px;
+  padding-bottom: 0;
+}
+.section-divider-small > * {
+  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.015em;
+  font-weight: 200;
+  color: #FFFFFF;
+  text-transform: normal;
+  margin: 0;
+}
