@@ -1,0 +1,87 @@
+.top-artist {
+  margin-bottom: 20px;
+  position: relative;
+  background: linear-gradient(#181818, #0a1a2d);
+  padding-bottom: 20px;
+}
+.top-artist .row {
+  position: relative;
+  display: flex;
+}
+.top-artist__info {
+  line-height: 1;
+  text-align: right;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.top-artist__info-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.top-artist__name {
+  color: #FFFFFF;
+  line-height: 1.2;
+  border-bottom: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.top-artist__listeners {
+  font-size: 24px;
+  font-weight: 100;
+}
+.top-artist__radio .mo-info.meta {
+  height: 90px;
+}
+.top-artist__radio .mo-meta {
+  position: relative;
+}
+.top-artist__popular {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.top-artist__popular-table .tl-listen-count {
+  line-height: 0;
+  font-size: 0;
+  width: 0;
+  padding: 0;
+}
+.top-artist__popular-table .tl-number-wrap {
+  display: none;
+}
+.top-artist__popular-table .tl-row:hover .tl-cell {
+  background: rgba(70, 135, 214, 0.25);
+}
+.top-artist__popular-table .tl-cell {
+  border-top: 1px solid rgba(70, 135, 214, 0.2);
+}
+.top-artist__popular-table .tracklist-popular {
+  border-bottom: 1px solid rgba(70, 135, 214, 0.2);
+}
+.h-data {
+  position: absolute;
+  bottom: 0;
+  margin-left: 0;
+  padding-left: 0;
+  width: auto;
+}
+.header-image {
+  min-height: auto;
+}
+.header-image:before {
+  background: linear-gradient(30deg, #2D46B9, #F573A0);
+  opacity: .75;
+}
+.artist-table {
+  padding-top: 20px;
+}
+.artist-table .tl-listen-count {
+  width: 190px;
+}
+.artist-table .tl-image-wrapper {
+  padding: 4px;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html class="glue1">
+<head>
+  <meta charset="utf-8">
+  <title>Play Queue</title>
+
+  <link rel="stylesheet" href="css/glue1.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body data-scroll-area>
+  <div id="outer">
+    <div class="container">
+      <h1 id="main-title">Play Queue</h1>
+    </div>
+    <div id="navbar"></div>
+    <div id="containers" class="container">
+      <div id="queue-container" data-navbar-view-id="queue">
+        <div id="queue-tracklist"></div>
+        <div id="queue-error" class="empty-container"></div>
+      </div>
+      <div id="history-container" data-navbar-view-id="history">
+        <div id="history-tracklist"></div>
+        <div id="history-error" class="empty-container"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html class="glue1">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/glue1.css">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body class="share">
+	<div class="popover-interior js-bounding-rect" style="display:block; width: 450px">
+
+		<script type="text/javascript">
+			// HACK (super): we want to avoid jumping around, so apply the class as
+			// soon as this div is available if on desktop.
+			if (window._getSpotifyModule && !window.__spotify) {
+				document.querySelector('.popover-interior').className += ' desktop';
+			}
+		</script>
+
+		<div class="popover-title clearfix" id="tabs">
+			<div class="popover-nav">
+				<ul class="nav">
+					<!-- &nbsp; is to ensure a height while waiting for translations to load -->
+					<li><a href="#" data-container="share" data-string="postTab" draggable="false">&nbsp;</a></li>
+					<li><a href="#" data-container="send" data-string="sendTab" draggable="false">&nbsp;</a></li>
+					<li><a href="#" data-container="embed" data-string="embedTab" draggable="false">&nbsp;</a></li>
+				</ul>
+			</div>
+		</div>
+
+
+		<div class="popover-content">
+
+			<div id="resource" class="row standard-grid">
+				<!--
+				Use a media object template here just to prevent UI jitter while waiting
+				for the JS / resources to load, which will eventually completely replace this
+				-->
+				<div class=" media horizontal col-sm-12 col-md-12 col-lg-12">
+					<div>
+						<div class="media-image ">
+							<a class="media-placeholder" href="#">
+								<svg viewBox="0 0 10 10" preserveAspectRatio="xMidYMid meet">
+									<text class="playlist-placeholder" x="5" y="9.8"></text>
+									<text class="album-placeholder" x="5" y="9.8"></text>
+									<text class="artist-placeholder" x="5" y="9.8"></text>
+									<text class="user-placeholder" x="5" y="9.8"></text>
+								</svg>
+							</a>
+							<a class="media-image-internal" href="#"></a>
+						</div>
+						<div class="media-info">
+							<a class="media-info-link" href="#"></a>
+							<a class="media-title" title="" href="#">
+								<span>
+									<span class="ellipsis"> </span>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section id="share" class="row standard-grid">
+				<div class="col-sm-12 col-md-12 col-lg-12">
+					<textarea name="msg-to-share" class="message form-control" tabindex="1" maxlength="500"></textarea>
+				</div>
+
+				<div class="col-sm-12 col-md-12 col-lg-12 networks-section">
+					<ul id="networks">
+						<li id="networks-label"><span></span></li>
+						<li data-network="facebook"><span class="icon"></span></li>
+						<li data-network="twitter"><span class="icon"></span></li>
+						<li data-network="tumblr"><span class="icon"></span></li>
+						<div id="share-options"><span data-string="optionsLink"></a></div>
+					</ul>
+				</div>
+
+			</section>
+
+			<section id="send">
+				<div class="input-wrapper">
+					<div id="user-list" class="form-control">
+						<input
+							class="form-control recipients"
+							data-attribute="placeholder"
+							data-string="fieldTo"
+							maxlength="36"
+							type="text"
+							tabindex="1">
+						<div id="user-results"></div>
+					</div>
+				</div>
+				<div class="textarea-wrapper">
+					<textarea name="msg-to-send" class="message form-control" tabindex="2"></textarea>
+				</div>
+			</section>
+
+			<section id="embed">
+				<div class="embed-wrapper">
+					<h2><span data-string="embedSize"></span></h2>
+					<div class="embed-sizes">
+						<label>
+							<input name="embed-size" data-size="basic" value="basic" id="embed-size1" type="radio"></input>
+							<b data-string="embedSizeBasicLabel"></b> <small data-string="embedSizeBasicDimensions"></small>
+						</label>
+
+						<label>
+							<input name="embed-size" data-size="detail" value="detail" id="embed-size2" type="radio"></input>
+							<b data-string="embedSizeDetailLabel"></b> <small data-string="embedSizeDetailDimensions"></small>
+						</label>
+
+						<a href="#" target="_blank" id="embed-advanced" data-string="embedAdvanced"></a>
+					</div>
+
+					<h2><span data-string="embedPreview"></span></h2>
+					<div class="embed-button-preview">
+						<div class="embed-button-prevent-click"></div>
+						<div class="embed-iframewrapper-basic"></div>
+						<div class="embed-iframewrapper-detail"></div>
+					</div>
+
+					<h2><span data-string="embedCode"></span></h2>
+					<div class="embed-code">
+						<input type="text" name="embed-code" class="embed-code form-control" tabindex="2"></input>
+					</div>
+				</div>
+			</section>
+
+			<section id="options">
+
+				<!-- Yes, a _second_ nav... otherwise too difficult to manipulate main nav -->
+				<div class="popover-title clearfix">
+					<ul class="nav options-back">
+						<li><a class="spoticon-chevron-left-16 js-options-back"></a></li>
+					</ul>
+					<div class="popover-nav">
+						<ul class="nav">
+							<li><a href="#" data-container="options" data-string="optionsTitle">&nbsp;</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="auth" data-network="facebook">
+					<div class="connect-head">
+						<div class="icon-wrapper">
+							<div class="throbber"><div></div></div>
+							<span class="icon"></span>
+						</div>
+
+						<div class="connect-info small">
+							<span class="state"></span><br />
+							<span class="account"></span>
+						</div>
+					</div>
+
+					<div class="connect"></div>
+				</div>
+				<hr>
+				<div class="auth unknown" data-network="twitter">
+					<div class="connect-head">
+						<div class="icon-wrapper">
+							<div class="throbber"><div></div></div>
+							<span class="icon"></span>
+						</div>
+
+						<div class="connect-info small">
+							<span class="state"></span><br />
+							<span class="account"></span>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<div class="auth unknown" data-network="tumblr">
+					<div class="connect-head">
+						<div class="icon-wrapper">
+							<div class="throbber"><div></div></div>
+							<span class="icon"></span>
+						</div>
+
+						<div class="connect-info small">
+							<span class="state"></span><br />
+							<span class="account"></span>
+						</div>
+					</div>
+
+					<div class="connect">
+						<div class="username-wrapper col-xs-6">
+							<input class="form-control" name="username" data-attribute="placeholder" data-string="fieldUsername" type="email">
+						</div>
+						<div class="password-wrapper col-xs-6">
+							<input class="form-control" name="password" data-attribute="placeholder" data-string="fieldPassword" type="password">
+						</div>
+						<div class="password-disclaimer col-xs-12 small" data-string="optionsDisclaimer"></div>
+					</div>
+				</div>
+			</section>
+
+			<section id="error">
+
+				<!-- Yes, a _third_ nav... otherwise too difficult to manipulate main nav -->
+				<div class="popover-title clearfix">
+					<div class="popover-nav">
+						<ul class="nav">
+							<li><a href="#" data-string="errorTitle">&nbsp;</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="popover-content">
+					<p></p>
+					<div class="actions"></div>
+				</div>
+
+			</section>
+
+		</div> <!-- /popover-content -->
+
+		<div class="popover-footer" id="primary-controls">
+			<div class="throbber"><div></div></div>
+			<!-- &nbsp; to ensure height while waiting for translations -->
+			<button class="button button-with-stroke js-cancel-button">&nbsp;</button>
+			<button class="button button-green js-ok-button">&nbsp;</button>
+		</div>
+
+	</div> <!-- /popover -->
+
+<script src="bundle.js"></script>
+
+</body>
+</html>

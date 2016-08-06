@@ -1,0 +1,154 @@
+html {
+  overflow-y: hidden;
+}
+html,
+body {
+  background: #000000;
+  height: 100%;
+}
+#main,
+.app {
+  height: 100%;
+}
+.nav {
+  border-bottom: 0px;
+}
+.navbar {
+  background: transparent;
+}
+.app {
+  position: relative;
+}
+.app-header {
+  height: 118px;
+}
+.sections {
+  background: #181818;
+  position: absolute;
+  left: 0px;
+  top: 118px;
+  right: 0px;
+  bottom: 0px;
+  overflow-y: scroll;
+}
+.close-button-container {
+  position: fixed;
+  top: 10px;
+  right: 18px;
+}
+.user-container .user {
+  border-bottom: 1px solid #282828;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+.user-container .user > .media-object {
+  width: 45px;
+}
+.user-container .user > .name {
+  padding-left: 63px;
+  padding-top: 12px;
+}
+.user-container .user > .button-add {
+  margin-top: 8px;
+}
+.user:first-child {
+  border-top: 0;
+}
+.friends_tab .follow-all-container {
+  margin-top: 18px;
+}
+.friends_tab .facebook-friends-count {
+  padding-top: 8px;
+  position: relative;
+  color: #FFFFFF;
+  padding-top: 25px;
+  padding-bottom: 4px;
+  width: 370px;
+}
+.friends_tab .facebook-friends-count .facebook-icon {
+  margin-right: 10px;
+  width: 14px;
+  border-radius: 3px;
+  position: relative;
+  top: -2px;
+}
+.filter-container {
+  position: relative;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.filter-container .form-control {
+  padding-left: 25px;
+  background: #282828;
+  border-color: #181818;
+  color: #A0A0A0;
+  height: 26px;
+  padding-top: 4px;
+}
+.filter-container::before {
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  z-index: 9;
+  color: #FFFFFF;
+  font-size: 14px;
+}
+hr {
+  border-color: #282828;
+}
+.featured_tab {
+  padding-top: 10px;
+}
+.section-error {
+  position: relative;
+  top: 20px;
+}
+.connect-to-facebook {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 66px;
+}
+.connect-to-facebook .title {
+  margin-bottom: 21px;
+}
+.connect-to-facebook .disclaimer {
+  margin-top: 50px;
+}
+.glue2 .button-facebook {
+  box-shadow: 0px 0px 0px 1px #3B5998;
+  background: #3B5998;
+  color: #FFFFFF;
+}
+.glue2 .button-facebook:after {
+  box-shadow: 0px 0px 0px 1px #3B5998;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 500px;
+  content: "";
+}
+.glue2 .button-facebook:hover {
+  box-shadow: 0px 0px 0px 1px #3B5998;
+}
+.glue2 .button-facebook.contextmenu-active,
+.glue2 .button-facebook:hover:active {
+  background: #2f477a;
+  color: #cccccc;
+  box-shadow: 0px 0px 0px 1px #2f477a;
+}
+.glue2 .button-facebook.contextmenu-active:after,
+.glue2 .button-facebook:hover:active:after {
+  box-shadow: 0 0 0 1px #2f477a;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .glue2 .button-facebook:hover {
+    box-shadow: 0px 0px 0px 1px #3B5998;
+  }
+  .glue2 .button-facebook.contextmenu-active,
+  .glue2 .button-facebook:hover:active {
+    box-shadow: 0px 0px 0px 1px #2f477a;
+  }
+}

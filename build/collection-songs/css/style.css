@@ -1,0 +1,29 @@
+#error-placeholder {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: none;
+}
+.error-and-offline {
+  display: block;
+}
+.error-and-offline .error-content {
+  display: block;
+}
+.error-and-offline .nux-songs-icon {
+  line-height: 128px;
+  margin-bottom: 16px;
+}
+.error-and-offline .nux-songs-icon:before {
+  font-family: "glue1-spoticon";
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  line-height: inherit;
+  vertical-align: bottom;
+  content: "\f157";
+  font-size: 128px;
+}

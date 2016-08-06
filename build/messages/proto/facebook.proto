@@ -1,0 +1,180 @@
+message Credential {
+  optional string facebook_uid = 1;
+  optional string access_token = 2;
+}
+
+message EnableRequest {
+  optional Credential credential = 1;
+}
+
+message EnableReply {
+  optional Credential credential = 1;
+}
+
+message DisableRequest {
+  optional Credential credential = 1;
+}
+
+message RevokeRequest {
+  optional Credential credential = 1;
+}
+
+message InspectCredentialRequest {
+  optional Credential credential = 1;
+}
+
+message InspectCredentialReply {
+  optional Credential alternative_credential = 1;
+  optional bool app_user = 2;
+  optional bool permanent_error = 3;
+  optional bool transient_error = 4;
+}
+
+message UserState {
+  optional Credential credential = 1;
+}
+
+message UpdateUserStateRequest {
+  optional Credential credential = 1;
+}
+
+message OpenGraphError {
+  repeated string permanent = 1;
+  repeated string invalid_token = 2;
+  repeated string retries = 3;
+}
+
+message OpenGraphScrobble {
+  optional int32 create_delay = 1;
+}
+
+message OpenGraphConfig {
+  optional OpenGraphError error = 1;
+  optional OpenGraphScrobble scrobble = 2;
+}
+
+message AuthConfig {
+  optional string url = 1;
+  repeated string permissions = 2;
+  repeated string blacklist = 3;
+  repeated string whitelist = 4;
+  repeated string cancel = 5;
+}
+
+message ConfigReply {
+  optional string domain = 1;
+  optional string app_id = 2;
+  optional string app_namespace = 3;
+  optional AuthConfig auth = 4;
+  optional OpenGraphConfig og = 5;
+}
+
+message UserFields {
+  optional bool app_user = 1;
+  optional bool display_name = 2;
+  optional bool first_name = 3;
+  optional bool middle_name = 4;
+  optional bool last_name = 5;
+  optional bool picture_large = 6;
+  optional bool picture_square = 7;
+  optional bool gender = 8;
+  optional bool email = 9;
+}
+
+message UserOptions {
+  optional bool cache_is_king = 1;
+}
+
+message UserRequest {
+  optional UserOptions options = 1;
+  optional UserFields fields = 2;
+}
+
+message User {
+  optional string spotify_username = 1;
+  optional string facebook_uid = 2;
+  optional bool app_user = 3;
+  optional string display_name = 4;
+  optional string first_name = 5;
+  optional string middle_name = 6;
+  optional string last_name = 7;
+  optional string picture_large = 8;
+  optional string picture_square = 9;
+  optional string gender = 10;
+  optional string email = 11;
+}
+
+message FriendsFields {
+  optional bool app_user = 1;
+  optional bool display_name = 2;
+  optional bool picture_large = 6;
+}
+
+message FriendsOptions {
+  optional int32 limit = 1;
+  optional int32 offset = 2;
+  optional bool cache_is_king = 3;
+  optional bool app_friends = 4;
+  optional bool non_app_friends = 5;
+}
+
+message FriendsRequest {
+  optional FriendsOptions options = 1;
+  optional FriendsFields fields = 2;
+}
+
+message FriendsReply {
+  repeated User friends = 1;
+  optional bool more = 2;
+}
+
+message ShareRequest {
+  optional Credential credential = 1;
+  optional string uri = 2;
+  optional string message_text = 3;
+}
+
+message ShareReply {
+  optional string post_id = 1;
+}
+
+message InboxRequest {
+  optional Credential credential = 1;
+  repeated string facebook_uids = 3;
+  optional string message_text = 4;
+  optional string message_link = 5;
+}
+
+message InboxReply {
+  optional string message_id = 1;
+  optional string thread_id = 2;
+}
+
+message PermissionsOptions {
+  optional bool cache_is_king = 1;
+}
+
+message PermissionsRequest {
+  optional Credential credential = 1;
+  optional PermissionsOptions options = 2;
+}
+
+message PermissionsReply {
+  repeated string permissions = 1;
+}
+
+message GrantPermissionsRequest {
+  optional Credential credential = 1;
+  repeated string permissions = 2;
+}
+
+message GrantPermissionsReply {
+  repeated string granted = 1;
+  repeated string failed = 2;
+}
+
+message TransferRequest {
+  optional Credential credential = 1;
+  optional string source_username = 2;
+  optional string target_username = 3;
+}

@@ -1,0 +1,55 @@
+// Proto definitions for hermes APIs for Spotify's social graph.
+
+package spotify.socialgraph.proto;
+
+// User list and count requests
+
+message CountReply {
+    repeated int32 counts = 1;
+}
+
+message UserListRequest {
+    // TODO(neville): sort options or requests for specific attributes
+    optional string last_result = 1;  // last result seen in the previous request
+    optional int32 count = 2;         // number of relations to return
+    optional bool include_length = 3; // include total length in reply
+}
+
+message UserListReply {
+    repeated User users = 1;   // list of users with appropriate attributes set
+    optional int32 length = 2; // total number of relations
+}
+
+message User {
+    optional string username = 1;
+    optional int32 subscriber_count = 2;
+    optional int32 subscription_count = 3;
+}
+
+message ArtistListReply {
+    repeated Artist artists = 1; // list of artists with appropriate attributes set
+    optional int32 length = 2;   // total number of relations
+}
+
+message Artist {
+    optional string artistid = 1;
+    optional int32 subscriber_count = 2;
+}
+
+message StringListRequest {
+    repeated string args = 1; // list of users or artists, depending on the request
+}
+
+message StringListReply {
+    repeated string reply = 1; // list of users or artists, depending on the request
+}
+
+message MergedProfileRequest {
+    optional string username = 1;
+    optional string artistid = 2;
+}
+
+message MergedProfileReply {
+    optional string username = 1;
+    optional string artistid = 2;
+}

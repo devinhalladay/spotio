@@ -1,0 +1,496 @@
+/**
+ * Variables used to control positioning.
+ */
+/**
+ * Global styles & overrides.
+ */
+html,
+body,
+#main {
+  background: transparent;
+  height: 100%;
+  overflow-y: hidden;
+}
+.full-screen-modal {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.full-screen-modal__close {
+  position: absolute;
+  right: 0;
+  padding: 8vh 6vw;
+  z-index: 1;
+}
+.full-screen-modal__close:hover {
+  color: #FFFFFF;
+}
+.full-screen-modal--container {
+  z-index: 1;
+  height: 100%;
+}
+.full-screen-modal--container .main-header {
+  padding: 8vh 6vw;
+}
+.full-screen-modal--container:after {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.7);
+}
+.full-screen-modal--container > div {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  content: ' ';
+  left: 0;
+  right: 0;
+}
+.full-screen-modal--container > div:not(.modal-backdrop--hidden) {
+  background-color: rgba(24, 24, 24, 0.8);
+}
+/**
+ * Our modal component styles.
+ */
+.image-carousel {
+  overflow: hidden;
+  width: 100%;
+}
+.image-carousel .crsl-inner {
+  transform: translateZ(0);
+}
+.image-carousel .image-wrapper {
+  max-width: 100vw;
+  max-height: 100vh;
+  display: block;
+  padding: 12vh 12vw;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.image-carousel img {
+  max-width: 76vw;
+  max-height: 76vh;
+  display: block;
+  margin: 0 auto;
+}
+.image-carousel-item {
+  width: 100%;
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+  height: 100vh;
+}
+.image-carousel__close {
+  position: absolute;
+  right: 0;
+  padding: 8vh 6vw;
+  z-index: 1;
+}
+.image-carousel__close:hover {
+  color: #FFFFFF;
+}
+.image-carousel__count {
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 14px;
+  color: #A0A0A0;
+  font-weight: 400;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  height: 12vh;
+  margin: 0;
+  line-height: 12vh;
+}
+.image-carousel__count .current-slide {
+  color: #FFFFFF;
+}
+.image-carousel--prev,
+.image-carousel--next {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  transform: translateY(-50%);
+  margin: 0 6vw;
+}
+.image-carousel--next {
+  right: 0;
+}
+@keyframes fade-in-error {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.full-screen-modal--edit-header-image .full-screen-modal__close {
+  display: none;
+}
+.edit-header-image--pending {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+}
+.edit-header-image--error {
+  color: #fceaeb;
+  position: absolute;
+  z-index: 30;
+  margin: 0;
+  left: 0;
+  right: 0;
+  background: rgba(205, 26, 43, 0.7);
+  padding: 1em;
+  width: 100%;
+  opacity: 0;
+  animation: fade-in-error 0.5s forwards;
+}
+.edit-header-image--error-dismiss {
+  float: right;
+}
+.edit-header-image--retry {
+  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -0.005em;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-transform: normal;
+  position: relative;
+  top: 35%;
+  text-align: center;
+}
+.edit-header-image--container {
+  padding: 0;
+  max-width: 1490px;
+  height: 100%;
+  margin: 0 auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
+  background: #000000 url(/img/guidelines-bg.png) no-repeat bottom left;
+  background-size: 100vh;
+  background-attachment: local;
+}
+.edit-header-image--container input[type="file"] {
+  cursor: pointer;
+  -webkit-appearance: none;
+  position: absolute;
+  top: -999em;
+  left: 0;
+  width: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.edit-header-image--info {
+  width: 575px;
+  padding: 0 0 1em 5vw;
+  text-align: left;
+  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+}
+.header-image--placeholder {
+  position: relative;
+  margin: 0;
+}
+.header-image--placeholder:first-child {
+  margin-left: 0;
+}
+.header-image--placeholder:last-child {
+  margin-right: 0;
+}
+.header-image--placeholder h2 {
+  font-size: 1em;
+  opacity: 0.3;
+}
+.header-image--placeholder input[type="range"].slider {
+  width: 320px;
+  position: absolute;
+  top: 295px;
+  left: 50%;
+  margin-left: -160px;
+}
+.header-image--overlay {
+  position: absolute;
+  z-index: 15;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  margin: 0;
+  display: table;
+  text-align: center;
+  background-color: rgba(70, 135, 214, 0.2);
+}
+.header-image--controls {
+  position: absolute;
+  z-index: 20;
+  top: 10px;
+  right: 0;
+  text-align: right;
+}
+.header-image--controls .button {
+  margin-left: 12px;
+}
+.content-table {
+  display: table;
+  width: 100%;
+  height: 60vh;
+  padding: 2em 0 0;
+}
+.content-table > div {
+  display: table-cell;
+  vertical-align: top;
+  text-align: center;
+}
+.content-table > div:first-child {
+  width: 445px;
+}
+.content-table > div:last-child {
+  text-align: left;
+  vertical-align: top;
+  overflow: hidden;
+}
+.placeholder--container {
+  position: relative;
+}
+.placeholder-desktop {
+  height: 320px;
+  overflow: hidden;
+}
+.placeholder-desktop:after {
+  content: "";
+  position: absolute;
+  display: block;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  top: 320px;
+  height: 44px;
+  margin-top: -44px;
+  background: rgba(24, 24, 24, 0.7);
+}
+.placeholder-desktop .header-image--overlay {
+  top: -125px;
+}
+.placeholder-desktop .image-canvas--container {
+  position: relative;
+  width: 100%;
+}
+.placeholder-mobile {
+  margin: 2em 100px 0 0;
+  width: 380px;
+  height: 401px;
+  padding-left: 22px;
+  padding-top: 81px;
+}
+.placeholder-mobile:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 653px;
+  background: url(/img/iphone.png) no-repeat top center;
+  background-size: 320px;
+}
+.placeholder-mobile .header-image--overlay {
+  left: 22px;
+  top: 81px;
+  width: 276px;
+  height: 492px;
+}
+.placeholder-mobile .header-image--overlay .placeholder--label {
+  top: -125px;
+}
+.placeholder-avatar {
+  text-align: center;
+  margin: 0;
+  z-index: 50;
+  position: absolute;
+  left: 20px;
+  top: 125px;
+}
+.placeholder-avatar .image-canvas--container {
+  display: inline-block;
+}
+.placeholder-avatar .header-image--overlay {
+  left: 50%;
+  margin-left: -65px;
+}
+.placeholder-avatar input[type="range"].slider {
+  width: 130px;
+  margin-left: -65px;
+  display: block;
+  top: 170px;
+}
+.placeholder--label {
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+  text-align: center;
+  line-height: 1;
+  font-size: 0.9em;
+  color: rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+}
+.placeholder--label:before {
+  display: block;
+  color: #fff;
+  margin-bottom: 4px;
+}
+.info--heading {
+  font-weight: 400;
+  font-size: 42px;
+}
+.info--heading:before {
+  content: "";
+  display: block;
+  background: url(/img/guidelines-img.png) no-repeat top center;
+  background-size: contain;
+  height: 23vh;
+  width: 450px;
+}
+.info--content {
+  max-width: 445px;
+}
+.bold-text {
+  font-weight: bold;
+  color: white;
+}
+/**
+ * Slider implementation. This currently does not exist in `spotify-glue-cat`,
+ * but we should definitely upstream this somehow.
+ */
+input[type=range].slider {
+  position: relative;
+  z-index: 20;
+  -webkit-appearance: none;
+  /* Hides the slider so that custom slider can be made */
+  width: 100%;
+  background: #404040;
+  border: none;
+  border-radius: 2px;
+  height: 4px;
+}
+input[type=range].slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  cursor: pointer;
+  background: #ffffff;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+  display: block;
+  height: 12px;
+  width: 12px;
+}
+input[type=range].slider:focus {
+  outline: none;
+  /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+.tooltip--container {
+  position: absolute;
+  z-index: 30;
+  width: 240px;
+  padding: 1.5em;
+  margin-left: 15px;
+  background: #4687D6;
+  color: #FFFFFF;
+  transition: opacity 0.2s ease-in;
+}
+.tooltip--container:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  margin-top: -15px;
+  border-color: transparent #4687D6 transparent transparent;
+  border-width: 15px 15px 15px 0;
+  border-style: solid;
+}
+.tooltip--title {
+  margin: 0;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: normal;
+  line-height: 3;
+}
+.tooltip--text {
+  font-weight: 100;
+}
+#context-menu {
+  margin-top: 15px;
+}
+#context-menu:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  margin-left: -15px;
+  border-color: transparent transparent #333333 transparent;
+  border-width: 0 15px 15px 15px;
+  border-style: solid;
+}
+.image-canvas--container {
+  position: relative;
+}
+.image-canvas--container:after {
+  content: attr(data-tooltip);
+  font-size: 0.9em;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: move;
+  text-align: center;
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  top: 50%;
+  margin-top: -0.5em;
+  width: 100%;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+.image-canvas--container.image-canvas--panning:after {
+  opacity: 0;
+}
+.image-canvas--container.image-canvas--disabled:after {
+  display: none;
+}
+.image-canvas--canvas {
+  z-index: 10;
+  position: relative;
+  cursor: move;
+  display: block;
+}
+.image-canvas--disabled .image-canvas--canvas {
+  cursor: default;
+}
+.image-canvas--outline {
+  position: absolute;
+  border: 1px dashed rgba(255, 255, 255, 0.75);
+  transition: opacity 0.2s ease-in-out;
+}
+/**
+ * Polyfills for Phantom JS because it doesn't support flexbox.
+ */
+.phantom-js .header-image--placeholder {
+  float: left;
+}

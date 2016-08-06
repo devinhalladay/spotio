@@ -1,0 +1,29 @@
+enum StoryType {
+    FOLLOWED_PROFILE = 0;  // user, artist, or merged profile
+    PUBLISHED_PLAYLIST = 1;
+    FOLLOWED_PLAYLIST = 2;
+    SHARED_URI = 3;
+}
+
+message SocialStory {
+    // id, timestamp and username can be decorated by bouncer
+    optional string id = 1;
+    optional StoryType type = 2;
+    optional int64 timestamp = 3;
+    optional string username = 4;
+    optional string uri = 5;
+    optional Metadata metadata = 6;
+}
+
+message Metadata {
+    optional string summary = 1;
+}
+
+message SocialStoryList {
+    repeated SocialStory stories = 1;
+}
+
+message SocialReactionList {
+    repeated string usernames = 1;
+    optional int64 count = 2;
+}
