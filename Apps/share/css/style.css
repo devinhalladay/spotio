@@ -1,29 +1,28 @@
-@charset "utf-8";
 /* General styles */
 html,
 body {
   height: 100%;
   margin: 0;
-  overflow: hidden;
-}
+  overflow: hidden; }
+
 .popover-content h2 {
   font-size: 14px;
   color: #A0A0A0;
-  margin: 0;
-}
+  margin: 0; }
+
 .popover-content textarea {
-  resize: none;
-}
+  resize: none; }
+
 .btn {
-  cursor: pointer;
-}
+  cursor: pointer; }
+
 .popover-content section {
-  display: none;
-}
+  display: none; }
+
 #resource {
   position: relative;
-  /* HACK allow cover */
-}
+  /* HACK allow cover */ }
+
 /*
 	HACK: Cover the resource (media object) to prevent it from being
 	clicked or hovered.
@@ -37,144 +36,144 @@ body {
   bottom: 0;
   left: 0;
   background-color: transparent;
-  z-index: 1000;
-}
+  z-index: 1000; }
+
 /*
 	HACK: Glue will eventually provide this, which prevents large
 	padding on desktop.
 */
 .popover-interior.desktop .popover-footer {
-  padding-bottom: 0px;
-}
+  padding-bottom: 0px; }
+
 .popover-footer .btn {
-  margin: 5px;
-}
+  margin: 5px; }
+
 body.error #error,
 body.share #share,
 body.send #send,
 body.embed #embed,
 body.options #options {
-  display: block;
-}
+  display: block; }
+
 body.sending .cancel {
-  display: none;
-}
+  display: none; }
+
 .popover-footer .throbber {
   display: none;
   float: left;
-  top: -5px;
-}
+  top: -5px; }
+
 body.sending .popover-footer .throbber {
-  display: inline-block;
-}
+  display: inline-block; }
+
 #share .placeholder-poly-label {
   top: 5px;
-  left: 22px;
-}
+  left: 22px; }
+
 #send .placeholder-poly-label {
   top: 5px;
-  left: 14px;
-}
+  left: 14px; }
+
 /* For the recipients autocomplete box */
 #user-list .placeholder-poly-label {
   left: 12px;
-  top: 6px;
-}
+  top: 6px; }
+
 /* Network Toggle Icons */
 #networks [data-network] .icon {
   background-repeat: no-repeat;
   display: block;
   height: 24px;
-  width: 24px;
-}
+  width: 24px; }
+
 #networks [data-network] .icon {
-  background-image: url(../images/socialmediaicons_small.png);
-}
+  background-image: url(../images/socialmediaicons_small.png); }
+
 #networks [data-network]:active .icon {
-  opacity: 0.3;
-}
+  opacity: 0.3; }
+
 #networks .selected[data-network=facebook] .icon {
-  background-position: 0 0;
-}
+  background-position: 0 0; }
+
 #networks .selected[data-network=twitter] .icon {
-  background-position: 0 -24px;
-}
+  background-position: 0 -24px; }
+
 #networks .selected[data-network=tumblr] .icon {
-  background-position: 0 -48px;
-}
+  background-position: 0 -48px; }
+
 #networks [data-network=facebook] .icon {
-  background-position: -24px 0;
-}
+  background-position: -24px 0; }
+
 #networks [data-network=twitter] .icon {
-  background-position: -24px -24px;
-}
+  background-position: -24px -24px; }
+
 #networks [data-network=tumblr] .icon {
-  background-position: -24px -48px;
-}
+  background-position: -24px -48px; }
+
 /* End Network Toggle Icons */
 /* Network Settings Icons */
 #options [data-network] .icon {
-  background-image: url(../images/socialmediaicons_big.png);
-}
+  background-image: url(../images/socialmediaicons_big.png); }
+
 #options [data-network] .icon {
   background-repeat: no-repeat;
   display: block;
   height: 32px;
-  width: 32px;
-}
+  width: 32px; }
+
 #options [data-network=facebook] .icon {
-  background-position: 0 0;
-}
+  background-position: 0 0; }
+
 #options [data-network=twitter] .icon {
-  background-position: 0 -32px;
-}
+  background-position: 0 -32px; }
+
 #options [data-network=tumblr] .icon {
-  background-position: 0 -64px;
-}
+  background-position: 0 -64px; }
+
 /* End Settings Icons */
 /* Share view */
 #share textarea {
-  height: 135px;
-}
+  height: 135px; }
+
 #share ul {
   padding-left: 0px;
-  margin: 0;
-}
+  margin: 0; }
+
 #share .networks-section {
   padding-top: 14px;
   margin-bottom: 4px;
-  /* override standard-grid */
-}
+  /* override standard-grid */ }
+
 #networks {
   display: flex;
-  align-items: center;
-}
+  align-items: center; }
+
 #networks-label {
-  margin-right: 2px;
-}
+  margin-right: 2px; }
+
 #networks li {
   display: inline;
   list-style: none;
-  margin-right: 5px;
-}
+  margin-right: 5px; }
+
 #share-options span {
-  cursor: pointer;
-}
+  cursor: pointer; }
+
 #share-options span:hover {
   color: #FFFFFF;
-  text-decoration: underline;
-}
+  text-decoration: underline; }
+
 #networks li:last-child {
-  margin-right: 0;
-}
+  margin-right: 0; }
+
 #share-options {
   color: #A0A0A0;
   flex-grow: 1;
-  text-align: right;
-}
+  text-align: right; }
+
 #send textarea {
-  height: 182px;
-}
+  height: 182px; }
+
 /* Send to a friend view */
 #user-list {
   background: #FFFFFF;
@@ -183,11 +182,11 @@ body.sending .popover-footer .throbber {
   margin-bottom: 5px;
   padding: 4px 12px;
   position: relative;
-  height: auto;
-}
+  height: auto; }
+
 #user-list.focus {
-  background: #FFFFFF;
-}
+  background: #FFFFFF; }
+
 #user-list input {
   background: transparent;
   border: none;
@@ -199,8 +198,8 @@ body.sending .popover-footer .throbber {
   -o-transition: none;
   transition: none;
   height: auto;
-  /* override glue .form-control */
-}
+  /* override glue .form-control */ }
+
 #user-list .selected-user {
   background: #282828;
   border-radius: 3px;
@@ -212,12 +211,12 @@ body.sending .popover-footer .throbber {
   line-height: 16px;
   margin: 4px 5px 3px 0;
   padding: 0 6px;
-  text-shadow: none;
-}
+  text-shadow: none; }
+
 #user-list .delete {
   opacity: .3;
-  padding-left: 4px;
-}
+  padding-left: 4px; }
+
 #user-list .delete:before {
   font-family: "glue1-spoticon";
   font-style: normal;
@@ -228,11 +227,11 @@ body.sending .popover-footer .throbber {
   line-height: inherit;
   vertical-align: bottom;
   content: "\f160";
-  font-size: 10px;
-}
+  font-size: 10px; }
+
 #user-list .delete:hover {
-  opacity: 1;
-}
+  opacity: 1; }
+
 #user-results {
   display: none;
   position: absolute;
@@ -240,110 +239,110 @@ body.sending .popover-footer .throbber {
   left: -1px;
   right: -1px;
   z-index: 10;
-  background-color: #181818;
-}
+  background-color: #181818; }
+
 #user-results .throbber {
-  margin: 0 auto;
-}
+  margin: 0 auto; }
+
 #user-results .throbber-item {
-  display: none;
-}
+  display: none; }
+
 #user-results.loading .throbber-item {
-  display: block;
-}
+  display: block; }
+
 #user-results.loading .no-results {
-  display: none;
-}
+  display: none; }
+
 #user-results .no-results {
   color: #888;
-  text-align: center;
-}
+  text-align: center; }
+
 /* Options view */
 body.options #resource {
-  display: none;
-}
+  display: none; }
+
 body.options .popover-content {
-  padding: 0;
-}
+  padding: 0; }
+
 #options {
-  position: relative;
-}
+  position: relative; }
+
 #options .auth {
   padding: 15px 0;
-  position: relative;
-}
+  position: relative; }
+
 #options .throbber {
   display: none;
   top: -6px;
-  left: -4px;
-}
+  left: -4px; }
+
 #options .connecting .throbber {
-  display: block;
-}
+  display: block; }
+
 #options .connecting .icon {
-  display: none;
-}
+  display: none; }
+
 #options .auth .icon {
-  float: left;
-}
+  float: left; }
+
 #options .auth button {
   width: 70px;
   /* Enough space to accommodate both "Connect" and "Disconnect" */
-  float: right;
-}
+  float: right; }
+
 #options .account {
-  display: none;
-}
+  display: none; }
+
 #options .connected .account {
   display: inline-block;
-  font-weight: 400;
-}
+  font-weight: 400; }
+
 #options .state {
-  color: #A0A0A0;
-}
+  color: #A0A0A0; }
+
 #options .error .state {
-  color: #c00;
-}
+  color: #c00; }
+
 #options .connected .state,
 #options .error .state,
 #options .unknown .state {
-  display: inline-block;
-}
+  display: inline-block; }
+
 #options .connect-head {
-  overflow: auto;
-}
+  overflow: auto; }
+
 #options .connect-head > button {
   float: right;
   margin-right: 7px;
   margin-top: 12px;
-  width: auto;
-}
+  width: auto; }
+
 #options .connect-info {
   display: inline-block;
   margin-top: 6px;
-  width: 50%;
-}
+  width: 50%; }
+
 #options .settings-info {
   display: inline-block;
   margin: 6px;
   width: 35%;
   float: right;
-  text-align: right;
-}
+  text-align: right; }
+
 #options .connect {
-  overflow: auto;
-}
+  overflow: auto; }
+
 #options .connect .password-disclaimer {
-  padding-top: 3px;
-}
+  padding-top: 3px; }
+
 #options .icon-wrapper {
   float: left;
   height: 50px;
   width: 50px;
   padding: 10px;
   overflow: hidden;
-  /* Prevent throbber from overflowing */
-}
+  /* Prevent throbber from overflowing */ }
+
 #options .options-back {
   position: absolute;
   top: -3px;
@@ -351,83 +350,82 @@ body.options .popover-content {
   border-bottom: none;
   /* Override glue .nav */
   z-index: 1000;
-  /* Ensure title bar does not cover */
-}
+  /* Ensure title bar does not cover */ }
+
 .disclaimer {
   font-size: 11px;
-  margin: 5px;
-}
+  margin: 5px; }
+
 #options .placeholder-poly-label {
   top: 6px;
-  left: 21px;
-}
+  left: 21px; }
+
 /* Error view */
 body.error #resource {
-  display: none;
-}
+  display: none; }
+
 body.error .popover > .popover-content {
-  padding: 0;
-}
+  padding: 0; }
+
 /******************************************************************************
 * Placeholder Polyfill (Required)
 ******************************************************************************/
 .placeholder-poly-parent {
-  position: relative;
-}
+  position: relative; }
+
 .placeholder-poly-label {
   color: #404040;
   font-size: 14px;
-  position: absolute;
-}
+  position: absolute; }
+
 /* Embed tab */
 #embed {
-  top: 63px;
-}
+  top: 63px; }
+
 body.embed #resource {
-  display: none;
-}
+  display: none; }
+
 .embed-iframe {
   border: 0;
   margin: 0;
   padding: 0;
   background-color: #fff;
-  line-spacing: 0;
-}
+  line-spacing: 0; }
+
 .embed-wrapper {
-  padding: 0px 10px 10px 10px;
-}
+  padding: 0px 10px 10px 10px; }
+
 div.embed-code {
   top: 0px;
-  bottom: 0px;
-}
+  bottom: 0px; }
+
 a#embed-advanced {
   display: inline-block;
   float: right;
   color: #666;
-  margin-top: 2px;
-}
+  margin-top: 2px; }
+
 .embed-sizes label {
   margin-bottom: 10px;
-  margin-right: 10px;
-}
+  margin-right: 10px; }
+
 .embed-button-preview {
   height: auto;
   text-align: center;
   position: relative;
-  margin-bottom: 10px;
-}
+  margin-bottom: 10px; }
+
 .embed-button-prevent-click {
   position: absolute;
   height: 100%;
   width: 100%;
   z-index: 10;
-  background-color: transparent;
-}
+  background-color: transparent; }
+
 /* invite-mode */
 /* Remove once https://abtesting.spotify.net/#/tests/75 has ended*/
 .invite-mode #tabs {
-  display: none;
-}
+  display: none; }
+
 .invite-mode #resource {
-  display: none;
-}
+  display: none; }

@@ -1,12 +1,12 @@
 #album-page {
-  padding-bottom: 20px;
-}
+  padding-bottom: 20px; }
+
 .header.header-album {
-  margin-bottom: 22px;
-}
+  margin-bottom: 22px; }
+
 #album-tracks {
-  margin-bottom: 20px;
-}
+  margin-bottom: 20px; }
+
 #offline-notice,
 .throbber,
 .error {
@@ -14,29 +14,28 @@
   top: 50%;
   width: 100%;
   margin-top: -5%;
-  text-align: center;
-}
+  text-align: center; }
+
 .error {
   display: none;
-  margin-top: -12%;
-}
+  margin-top: -12%; }
+
 .similar-albums {
-  position: relative;
-}
+  position: relative; }
+
 .copyrights {
   font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
   font-size: 12px;
   line-height: 16px;
-  letter-spacing: 0.015em;
-}
+  letter-spacing: 0.015em; }
+
 /* RELEASE WINDOW NOTIFICATIONS */
 .release-window-notification {
   border: 1px solid #282828;
   color: #A0A0A0;
   margin-bottom: 20px;
   text-align: center;
-  padding: 38px 70px;
-}
+  padding: 38px 70px; }
+
 .release-windowed .header.header-album {
-  margin-bottom: 16px;
-}
+  margin-bottom: 16px; }

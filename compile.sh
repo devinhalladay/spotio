@@ -1,15 +1,12 @@
 # Compile Sass
-sass skin/glue1.scss:dist/glue1.css
-rm -f dist/*.map
+sass --sourcemap=none skin/glue1.scss:dist/glue1.css
+
+for name in skin/apps/*.scss
+  do sudo sass --sourcemap=none $name Apps/$(basename $name .scss)/css/style.css
+done
 
 # Filter build/glue1.css into all app dirs
 find Apps/. -type d -name "css" -print0 | xargs -0 -I {} sudo cp dist/glue1.css {}
-
-# Convert app dirs to .spa files
-# sh spa.sh
-
-# Move everything in apps to build/
-# cp -r "Apps"/* "build/Apps/"
 
 # Download latest Spotify binary and extract it to .tmp
 curl https://download.spotify.com/Spotify.dmg --create-dirs -o .tmp/Spotify.dmg

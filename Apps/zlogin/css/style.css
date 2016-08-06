@@ -2,66 +2,66 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background: #181818;
-}
+  background: #181818; }
+
 a {
-  cursor: pointer;
-}
+  cursor: pointer; }
+
 .message {
   display: none;
-  margin-bottom: 10px;
-}
+  margin-bottom: 10px; }
+
 #main,
 #throbber {
-  display: none;
-}
+  display: none; }
+
 #main {
   background: url(../images/background.jpg) no-repeat top center;
   background-size: cover;
   transition: 0.2s opacity;
-  height: 100%;
-}
+  height: 100%; }
+
 #container {
   display: table;
   width: 100%;
-  height: 100%;
-}
+  height: 100%; }
+
 .container-row {
-  display: table-row;
-}
+  display: table-row; }
+
 #logo-container {
   text-align: center;
-  position: relative;
-}
+  position: relative; }
+
 #logo {
   display: table-cell;
   vertical-align: bottom;
-  padding-bottom: 46px;
-}
+  padding-bottom: 46px; }
+
 .logo-image {
   width: 190px;
-  height: 58px;
-}
+  height: 58px; }
+
 input {
-  margin-top: 5px;
-}
+  margin-top: 5px; }
+
 #login {
   margin: 0 auto;
   text-align: center;
-  width: 304px;
-}
+  width: 304px; }
+
 #login-submit {
-  margin-top: 15px;
-}
+  margin-top: 15px; }
+
 img {
-  pointer-events: none;
-}
+  pointer-events: none; }
+
 #login-button-facebook {
-  width: 100%;
-}
+  width: 100%; }
+
 #login-button {
-  margin-top: 20px;
-}
+  margin-top: 20px; }
+
 #login-or {
   overflow: hidden;
   margin: 20px auto;
@@ -69,8 +69,8 @@ img {
   width: 100%;
   position: relative;
   height: 16px;
-  cursor: default;
-}
+  cursor: default; }
+
 #login-or:before,
 #login-or:after {
   background-color: #404040;
@@ -79,44 +79,44 @@ img {
   height: 1px;
   position: relative;
   vertical-align: middle;
-  width: 50%;
-}
+  width: 50%; }
+
 #login-or:before {
   right: 0.5em;
-  margin-left: -50%;
-}
+  margin-left: -50%; }
+
 #login-or:after {
   left: 0.5em;
-  margin-right: -50%;
-}
+  margin-right: -50%; }
+
 #login-message {
-  cursor: default;
-}
+  cursor: default; }
+
 .form-control {
   background-color: #333333 !important;
   border: 0 !important;
-  color: #FFFFFF !important;
-}
+  color: #FFFFFF !important; }
+
 .form-control::-webkit-input-placeholder {
-  color: #A0A0A0 !important;
-}
+  color: #A0A0A0 !important; }
+
 .form-control:focus {
   border-color: #404040 !important;
   outline: 0 !important;
   background-color: #404040 !important;
-  color: #FFFFFF !important;
-}
+  color: #FFFFFF !important; }
+
 .remember-me {
   height: 22px;
-  margin-bottom: 20px;
-}
+  margin-bottom: 20px; }
+
 #remember-me-field {
-  float: right;
-}
+  float: right; }
+
 #rememberme-label {
   float: left;
-  margin: 0;
-}
+  margin: 0; }
+
 #bottom-links {
   text-align: center;
   width: 100%;
@@ -128,13 +128,12 @@ img {
   color: #A0A0A0;
   text-transform: uppercase;
   letter-spacing: 0.16em;
-  line-height: 35px;
-}
+  line-height: 35px; }
+
 html {
-  -webkit-app-region: drag;
-}
+  -webkit-app-region: drag; }
+
 html #login,
 html #remember-me-field > div,
 html #bottom-links > a {
-  -webkit-app-region: no-drag;
-}
+  -webkit-app-region: no-drag; }
