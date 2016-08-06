@@ -84,8 +84,8 @@
   }
 }
 .header-old-chrome-style {
-  background: #282828;
-  border-bottom: 1px solid #181818;
+  background: $main-view-bg-color;
+  border-bottom: 2px solid $primary-border-color;
 }
 .header-new-chrome-style {
   background: #000000;
@@ -412,7 +412,7 @@
 }
 .capping-full-screen-message .cfsm-close-btn.active.contextmenu-active,
 .capping-full-screen-message .cfsm-close-btn.active:not(:disabled):hover {
-  color: #1df269;
+  color: $primary-accent-color;
 }
 .capping-full-screen-message .cfsm-close-btn.drop-target-active {
   color: #000000;
@@ -515,7 +515,7 @@
   overflow-x: hidden;
   padding-top: 10px;
   min-height: 0px !important;
-  background-color: #282828;
+  background-color: $secondary-view-bg-color;
 }
 .navbar-old-chrome-style.sidebar-scroll-element:focus {
   outline: none;
@@ -990,11 +990,11 @@
 .navbar-old-chrome-style.sidebar-scroll-element::-webkit-scrollbar,
 .navbar-old-chrome-style.sidebar-scroll-element::-webkit-scrollbar-track,
 .navbar-old-chrome-style.sidebar-scroll-element::-webkit-scrollbar-corner {
-  background-color: #282828;
+  background-color: $secondary-view-bg-color;
 }
 .navbar-old-chrome-style.sidebar-scroll-element::-webkit-scrollbar-thumb {
-  border: solid 1px #282828;
-  background-color: #333333;
+  border: solid 1px $secondary-view-bg-color;
+  background-color: #DCE1E4;
 }
 .navbar-old-chrome-style.sidebar-scroll-element .main-menu-nav {
   margin-bottom: 20px !important;
@@ -6247,6 +6247,8 @@ body.remotebar #connect-container-background-new-chrome-style {
   padding: 3px 20px 2px 26px;
   display: block;
   border-radius: 12px;
+  background-color: $input-bg-color;
+  border: 2px solid $primary-border-color;
 }
 .view-search .search-form input[type=search]::-webkit-input-placeholder {
   color: #282828;
@@ -7916,7 +7918,7 @@ body {
   height: 100%;
   width: 100%;
   -webkit-user-select: none;
-  background-color: #282828;
+  background-color: $secondary-view-bg-color;
   overflow: hidden !important;
 }
 input[type=text],
@@ -8004,7 +8006,7 @@ ul {
   outline: 0;
 }
 .sidebar-old-chrome-style {
-  background-color: #282828;
+  background-color: $secondary-view-bg-color;
 }
 .sidebar-old-chrome-style #offline-global-progress {
   display: none;
@@ -8013,5 +8015,5 @@ ul {
   z-index: 995;
 }
 .sidebar-new-chrome-style {
-  background-color: #000000;
+  background-color: $secondary-view-bg-color;
 }

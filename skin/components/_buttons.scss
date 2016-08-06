@@ -207,11 +207,11 @@
 }
 .button.button-green.contextmenu-active,
 .button.button-green:not(:disabled):hover {
-  background-color: #1bd85e;
+  background-color: $primary-accent-color;
   color: #ffffff;
 }
 .button.button-green:not(:disabled):hover:active {
-  background: #179443;
+  background: primary-accent-color--dark;
   color: #cccccc;
   transform: scale(1);
 }
@@ -1416,11 +1416,11 @@
 }
 .button.button-large.button-green.contextmenu-active,
 .button.button-large.button-green:not(:disabled):hover {
-  background-color: #1bd85e;
+  background-color: $primary-accent-color;
   color: #ffffff;
 }
 .button.button-large.button-green:not(:disabled):hover:active {
-  background: #179443;
+  background: primary-accent-color--dark;
   color: #cccccc;
   transform: scale(1);
 }
@@ -2632,11 +2632,11 @@
 }
 .button.button-small.button-green.contextmenu-active,
 .button.button-small.button-green:not(:disabled):hover {
-  background-color: #1bd85e;
+  background-color: $primary-accent-color;
   color: #ffffff;
 }
 .button.button-small.button-green:not(:disabled):hover:active {
-  background: #179443;
+  background: primary-accent-color--dark;
   color: #cccccc;
   transform: scale(1);
 }
