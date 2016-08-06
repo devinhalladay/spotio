@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!--
+Scroll bars are actually not in overlay mode. The about page is an iframe within
+the artist view, so it's using the scroll bars from the artist view (and so the
+scroll bars in this page are disabled). To make the grid system play nice, put
+it into overlay scroll bar mode.
+-->
+<html class="glue1 using-overlay-scroll-bars">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/glue1.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="container" id="main" data-log-context="creator-about">
+
+  </div>
+
+  <script src="bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html class="glue1">
+  <head>
+    <meta charset="utf-8">
+    <title>Spotify - Login</title>
+    <link rel="stylesheet" href="css/glue1.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body data-scroll-area>
+    <div id="main">
+      <div id="container">
+        <div class="container-row" id="logo-container">
+          <div id="logo">
+            <img class="logo-image" src="images/logo.svg">
+          </div>
+        </div>
+        <div class="container-row" id="content">
+          <div id="login">
+            <!-- Facebook Login -->
+            <button id="login-button-facebook" type="button" class="button button-facebook"></button>
+            <div id="login-or"></div>
+
+            <!-- Spotify Login -->
+            <form role="form">
+             <div class="form-group" id="username-group">
+                <input id="username-field" type="text" name="username" autofocus="true" class="form-control">
+              </div>
+              <div class="form-group" id="password-group">
+                <input id="password-field" type="password" name="password" class="form-control">
+              </div>
+              <div class="remember-me">
+                <label for="remember-me-field" id="rememberme-label"></label>
+                <div id="remember-me-field" role="checkbox" aria-checked="false" tabindex="0"
+                  class="slider enabled" data-slider="data-slider">
+                  <div></div>
+                </div>
+              </div>
+              <div id="login-message" class="alert alert-danger message">
+                <span id="login-message-text"></span>
+              </div>
+             <button id="login-button" type="submit" class="button button-green"></button>
+            </form>
+          </div>
+        </div>
+        <div class="flex"></div>
+        <div id="bottom-links">
+          <a href="https://www.spotify.com/redirect/signup?utm_source=spotify&utm_medium=product-KM&utm_campaign=signup-link-loginpage" id="signup" target="_new"></a><br/>
+          <a href="https://www.spotify.com/redirect/password-reset" id="forgot" target="_new"></a><br/>
+          <a href="#" id="preferences" target="_new"></a>
+        </div>
+      </div>
+    </div>
+    <div id="throbber" class="throbber-initial"><div></div></div>
+    <script type="text/javascript" src="bundle.js"></script>
+  </body>
+</html>

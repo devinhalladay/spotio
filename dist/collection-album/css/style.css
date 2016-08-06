@@ -1,0 +1,97 @@
+body.show-offline-screen {
+  overflow: hidden;
+}
+.error-and-offline {
+  position: fixed;
+}
+.throbber-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #181818;
+}
+/* Override crazy default in glue */
+.tl-time {
+  text-overflow: clip !important;
+}
+.tracklist-wrapper {
+  margin-bottom: 20px;
+}
+/* Do show Save-button since we're disabling right-click for */
+.collection-album .collection-header-small .header-controllers .btn-add {
+  display: inline-block;
+}
+.collection-album .header.album.header-inline > .container {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+.collection-album .header-bar {
+  margin-bottom: 14px;
+}
+#copyrights {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.nux-screen {
+  display: table;
+  height: 100%;
+  width: 100%;
+  padding-top: 10%;
+}
+.nux-screen .nux-screen-inner-box {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.nux-screen .nux-screen-inner-box .nux-icon {
+  line-height: 128px;
+}
+.nux-screen .nux-screen-inner-box .nux-songs-icon:before {
+  font-family: "glue1-spoticon";
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  line-height: inherit;
+  vertical-align: bottom;
+  content: "\f157";
+  font-size: 128px;
+}
+.nux-screen .nux-screen-inner-box .nux-albums-icon:before {
+  font-family: "glue1-spoticon";
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  line-height: inherit;
+  vertical-align: bottom;
+  content: "\f1C1";
+  font-size: 128px;
+}
+.nux-screen .nux-screen-inner-box .nux-artists-icon:before {
+  font-family: "glue1-spoticon";
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  line-height: inherit;
+  vertical-align: bottom;
+  content: "\f101";
+  font-size: 128px;
+}
+/* Start atamon GLUE override hacks */
+header.header .h-data {
+  padding-top: 5px;
+}
+header.header section.h-main-content {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* End atamon GLUE override hacks */
