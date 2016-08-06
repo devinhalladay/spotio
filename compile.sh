@@ -3,7 +3,7 @@ sass skin/glue1.scss:dist/glue1.css
 rm -f dist/*.map
 
 # Filter build/glue1.css into all app dirs
-find Apps/. -type d -name "css" -print0 | xargs -0 -I {} cp dist/glue1.css {}
+find Apps/. -type d -name "css" -print0 | xargs -0 -I {} sudo cp dist/glue1.css {}
 
 # Convert app dirs to .spa files
 # sh spa.sh
@@ -21,7 +21,7 @@ sudo chmod -R 755 .tmp/Spotify.app
 sudo rm -rf .tmp/Spotify.app/Contents/Resources/Apps/*.spa
 
 # Copy over our built App code to the app in .tmp
-sudo cp -r "Apps"/* ".tmp/Spotify.app/Contents/Resources/Apps/"
+sudo cp -r "Apps/"* ".tmp/Spotify.app/Contents/Resources/Apps/"
 
 # Move our compiled app into /dist
 sudo cp -r ".tmp/Spotify.app" "dist/"

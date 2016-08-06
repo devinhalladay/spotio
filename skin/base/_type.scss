@@ -215,7 +215,7 @@ a.text-success:focus,
   color: #9cf1ba;
 }
 .inverted-text {
-  color: #282828;
+  color: #dbdbdb;
   -webkit-font-smoothing: antialiased;
 }
 .inverted-text a {
@@ -577,7 +577,7 @@ blockquote,
 .blockquote {
   padding: 10px 20px;
   margin: 0 0 13.6px;
-  border-left: 3px solid #282828;
+  border-left: 3px solid #dbdbdb;
   line-height: 1.25;
 }
 blockquote small,
@@ -599,7 +599,7 @@ blockquote.pull-right,
   float: right;
   padding-right: 15px;
   padding-left: 0;
-  border-right: 5px solid #282828;
+  border-right: 5px solid #dbdbdb;
   border-left: 0;
 }
 blockquote.pull-right p,
@@ -684,13 +684,13 @@ pre {
 code {
   padding: 2px 4px;
   font-size: 85%;
-  background-color: #282828;
+  background-color: #dbdbdb;
   white-space: nowrap;
   border-radius: 4px;
 }
 pre {
   padding: 10px;
-  background-color: #282828;
+  background-color: #dbdbdb;
   color: #A0A0A0;
   display: block;
   font-size: 13px;

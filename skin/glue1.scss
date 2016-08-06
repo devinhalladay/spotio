@@ -172,7 +172,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #282828;
+  background-color: #dbdbdb;
   position: relative;
   z-index: 4;
   padding: 0 10px;
@@ -732,13 +732,13 @@
   margin-right: 12px;
 }
 .h-bar {
-  border-top: 1px solid #282828;
-  border-bottom: 1px solid #282828;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
   line-height: 36px;
   margin: 0;
 }
 .h-search-bar {
-  border-top: 1px solid #282828;
+  border-top: 1px solid #dbdbdb;
   line-height: 36px;
   margin: 0;
 }
@@ -844,7 +844,7 @@
   display: block;
 }
 .h-search-suggestions {
-  background: #282828;
+  background: #dbdbdb;
   border-radius: 3px;
   display: none;
   position: absolute;
@@ -885,7 +885,7 @@
   background-position: 50% 0;
   background-size: cover;
   background-color: black;
-  border-bottom: 1px solid #282828;
+  border-bottom: 1px solid #dbdbdb;
   min-height: 320px;
   max-width: 1480px;
 }
@@ -1117,7 +1117,7 @@
   top: 0;
 }
 .h-sticky-header .h-sticky-container {
-  border-bottom: 1px solid #282828;
+  border-bottom: 1px solid #dbdbdb;
   padding-bottom: 16px;
   padding-top: 16px;
 }
@@ -1364,7 +1364,7 @@
 .tracklist-station,
 .tracklist-trackset,
 .tracklist-search {
-  border-bottom: 1px solid #282828;
+  border-bottom: 1px solid #dbdbdb;
   color: #A0A0A0;
   table-layout: fixed;
   width: 100%;
@@ -1372,7 +1372,7 @@
 .tl-header th,
 .tl-cell {
   padding: 0 0 0 12px;
-  border-top: 1px solid #282828;
+  border-top: 1px solid #dbdbdb;
   position: relative;
 }
 .tl-header th {
@@ -1891,7 +1891,7 @@
   color: $primary-accent-color !important;
 }
 .tl-row:hover .tl-cell {
-  background: #282828;
+  background: #dbdbdb;
 }
 .tl-row:hover .tl-highlight {
   color: #ffffff;
@@ -2689,5 +2689,5 @@ th[data-sort]:hover {
   width: 40px;
 }
 .modal-social-user-list hr {
-  border-top-color: #282828;
+  border-top-color: #dbdbdb;
 }

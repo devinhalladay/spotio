@@ -18,10 +18,10 @@
   left: 0;
   height: 1px;
   position: absolute;
-  background-color: #282828;
+  background-color: #dbdbdb;
 }
 .etched-bottom {
-  border-bottom: 1px solid #282828;
+  border-bottom: 1px solid #dbdbdb;
 }
 .etched-bottom:after {
   display: block;
@@ -34,7 +34,7 @@
   background-color: #000000;
 }
 .etched-right {
-  border-right: 1px solid #282828;
+  border-right: 1px solid #dbdbdb;
 }
 .etched-right:after {
   display: block;
@@ -309,7 +309,7 @@
   left: 0;
   height: 1px;
   position: absolute;
-  background-color: #282828;
+  background-color: #dbdbdb;
 }
 .main-menu-nav,
 .main-menu-nav ul {
@@ -438,7 +438,7 @@
 .main-menu-nav ul {
   position: relative;
   border-top: 1px solid rgba(0, 0, 0, 0.8);
-  border-bottom: 1px solid #282828;
+  border-bottom: 1px solid #dbdbdb;
   background-color: rgba(0, 0, 0, 0.2);
 }
 .main-menu-nav ul:after {

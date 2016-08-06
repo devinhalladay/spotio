@@ -811,7 +811,7 @@
   font-size: 10px;
 }
 .mo-info {
-  background-color: #282828;
+  background-color: #dbdbdb;
   padding: 13px 8px 4px;
   height: 63px;
 }
@@ -891,9 +891,9 @@
   right: 0;
   top: 40px;
   width: 100%;
-  background-image: -webkit-gradient(linear, 70% top, 100% top, from(rgba(40, 40, 40, 0)), to(#282828));
-  background-image: -moz-linear-gradient(left, rgba(40, 40, 40, 0) 70%, #282828 100%);
-  background-image: linear-gradient(to right, rgba(40, 40, 40, 0) 70%, #282828 100%);
+  background-image: -webkit-gradient(linear, 70% top, 100% top, from(rgba(40, 40, 40, 0)), to(#dbdbdb));
+  background-image: -moz-linear-gradient(left, rgba(40, 40, 40, 0) 70%, #dbdbdb 100%);
+  background-image: linear-gradient(to right, rgba(40, 40, 40, 0) 70%, #dbdbdb 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00282828', endColorstr='#ff282828', GradientType=1);
 }
@@ -953,9 +953,9 @@
   right: 0;
   top: 20px;
   width: 100%;
-  background-image: -webkit-gradient(linear, 70% top, 100% top, from(rgba(40, 40, 40, 0)), to(#282828));
-  background-image: -moz-linear-gradient(left, rgba(40, 40, 40, 0) 70%, #282828 100%);
-  background-image: linear-gradient(to right, rgba(40, 40, 40, 0) 70%, #282828 100%);
+  background-image: -webkit-gradient(linear, 70% top, 100% top, from(rgba(40, 40, 40, 0)), to(#dbdbdb));
+  background-image: -moz-linear-gradient(left, rgba(40, 40, 40, 0) 70%, #dbdbdb 100%);
+  background-image: linear-gradient(to right, rgba(40, 40, 40, 0) 70%, #dbdbdb 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00282828', endColorstr='#ff282828', GradientType=1);
 }
@@ -1572,7 +1572,7 @@
   display: none;
 }
 .media-object.show-placeholder .mo-image-wrapper {
-  background-color: #282828;
+  background-color: #dbdbdb;
 }
 .media-object.show-placeholder .mo-image,
 .media-object.show-placeholder .mo-image-background {
@@ -1584,7 +1584,7 @@
 }
 .media-object-artist.show-placeholder .mo-image-background-color,
 .media-object-user.show-placeholder .mo-image-background-color {
-  background: #282828;
+  background: #dbdbdb;
   background-clip: content-box;
   border-radius: 500px;
   display: block;

@@ -11,16 +11,16 @@
 ::-webkit-scrollbar-thumb {
   border: 1px solid $main-view-bg-color;
   border-radius: 10px;
-  background-color: #282828;
+  background-color: #dbdbdb;
 }
 ::-webkit-scrollbar-corner {
   background-color: $main-view-bg-color;
 }
 body,
 html {
-  scrollbar-arrow-color: #282828;
+  scrollbar-arrow-color: #dbdbdb;
   scrollbar-track-color: $main-view-bg-color;
-  scrollbar-face-color: #282828;
+  scrollbar-face-color: #dbdbdb;
   scrollbar-highlight-color: $main-view-bg-color;
   scrollbar-3dlight-color: $main-view-bg-color;
   scrollbar-shadow-color: $main-view-bg-color;

@@ -384,7 +384,7 @@ a.text-success:focus,
   color: #9cf1ba; }
 
 .inverted-text {
-  color: #282828;
+  color: #dbdbdb;
   -webkit-font-smoothing: antialiased; }
 
 .inverted-text a {
@@ -746,7 +746,7 @@ blockquote,
 .blockquote {
   padding: 10px 20px;
   margin: 0 0 13.6px;
-  border-left: 3px solid #282828;
+  border-left: 3px solid #dbdbdb;
   line-height: 1.25; }
 
 blockquote small,
@@ -768,7 +768,7 @@ blockquote.pull-right,
   float: right;
   padding-right: 15px;
   padding-left: 0;
-  border-right: 5px solid #282828;
+  border-right: 5px solid #dbdbdb;
   border-left: 0; }
 
 blockquote.pull-right p,
@@ -852,13 +852,13 @@ pre {
 code {
   padding: 2px 4px;
   font-size: 85%;
-  background-color: #282828;
+  background-color: #dbdbdb;
   white-space: nowrap;
   border-radius: 4px; }
 
 pre {
   padding: 10px;
-  background-color: #282828;
+  background-color: #dbdbdb;
   color: #A0A0A0;
   display: block;
   font-size: 13px;
@@ -5132,16 +5132,16 @@ body,
 ::-webkit-scrollbar-thumb {
   border: 1px solid #ffffff;
   border-radius: 10px;
-  background-color: #282828; }
+  background-color: #dbdbdb; }
 
 ::-webkit-scrollbar-corner {
   background-color: #ffffff; }
 
 body,
 html {
-  scrollbar-arrow-color: #282828;
+  scrollbar-arrow-color: #dbdbdb;
   scrollbar-track-color: #ffffff;
-  scrollbar-face-color: #282828;
+  scrollbar-face-color: #dbdbdb;
   scrollbar-highlight-color: #ffffff;
   scrollbar-3dlight-color: #ffffff;
   scrollbar-shadow-color: #ffffff;
@@ -9009,7 +9009,7 @@ legend {
   line-height: inherit;
   color: #A0A0A0;
   border: 0;
-  border-bottom: 1px solid #282828; }
+  border-bottom: 1px solid #dbdbdb; }
 
 label {
   display: inline-block;
@@ -9665,7 +9665,7 @@ textarea.input-lg {
 hr {
   margin: 5px 0;
   border: 0;
-  border-top: 1px solid #282828; }
+  border-top: 1px solid #dbdbdb; }
 
 /**
  * Default divider
@@ -9677,7 +9677,7 @@ hr {
 .divider {
   width: 100%;
   text-align: center;
-  border-bottom: 1px solid #282828;
+  border-bottom: 1px solid #dbdbdb;
   line-height: 1px;
   margin: 12px 0; }
 
@@ -9737,7 +9737,7 @@ hr {
  * Styleguide 30.1.3
  */
 .section-divider {
-  border-bottom: 1px solid #282828;
+  border-bottom: 1px solid #dbdbdb;
   margin: 0 0 16px;
   padding: 26px 0 4px;
   position: relative;
@@ -9829,11 +9829,11 @@ th {
   padding: 8px;
   line-height: 20px;
   vertical-align: top;
-  border-top: 1px solid #282828;
+  border-top: 1px solid #dbdbdb;
   position: relative; }
 
 .table tbody > tr:last-child > td {
-  border-bottom: 1px solid #282828; }
+  border-bottom: 1px solid #dbdbdb; }
 
 .table thead th {
   border-top: 0; }
@@ -9880,8 +9880,8 @@ th {
   position: relative;
   display: block;
   padding: 10px;
-  border-bottom: 1px solid #282828;
-  border-top: 1px solid #282828;
+  border-bottom: 1px solid #dbdbdb;
+  border-top: 1px solid #dbdbdb;
   margin-top: -1px; }
 
 .list-group-item-heading,
@@ -9979,7 +9979,7 @@ a.list-group-item.active .list-group-item-text {
   line-height: 50px;
   margin-top: 0;
   padding: 0;
-  background-color: #282828;
+  background-color: #dbdbdb;
   background-clip: padding-box;
   transition: background 0.1s ease; }
 
@@ -10308,10 +10308,10 @@ a.list-group-item.active .list-group-item-text {
   cursor: pointer; }
 
 .share-object.list-group-item:hover {
-  background-color: #282828; }
+  background-color: #dbdbdb; }
 
 .share-object.list-group-item:active {
-  background-color: #282828; }
+  background-color: #dbdbdb; }
 
 .share-object.list-group-item.unread:before {
   display: block;
@@ -10432,7 +10432,7 @@ a.list-group-item.active .list-group-item-text {
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
-  border-bottom: 1px solid #282828; }
+  border-bottom: 1px solid #dbdbdb; }
 
 .nav.nav-justified {
   width: 100%; }
@@ -10568,7 +10568,7 @@ a.list-group-item.active .list-group-item-text {
   display: none; }
 
 .nav-stacked {
-  background-color: #282828;
+  background-color: #dbdbdb;
   border-radius: 3px; }
 
 .nav-stacked > li {
@@ -10795,10 +10795,10 @@ a.list-group-item.active .list-group-item-text {
   left: 0;
   height: 1px;
   position: absolute;
-  background-color: #282828; }
+  background-color: #dbdbdb; }
 
 .etched-bottom {
-  border-bottom: 1px solid #282828; }
+  border-bottom: 1px solid #dbdbdb; }
 
 .etched-bottom:after {
   display: block;
@@ -10811,7 +10811,7 @@ a.list-group-item.active .list-group-item-text {
   background-color: #000000; }
 
 .etched-right {
-  border-right: 1px solid #282828; }
+  border-right: 1px solid #dbdbdb; }
 
 .etched-right:after {
   display: block;
@@ -11082,7 +11082,7 @@ a.list-group-item.active .list-group-item-text {
   left: 0;
   height: 1px;
   position: absolute;
-  background-color: #282828; }
+  background-color: #dbdbdb; }
 
 .main-menu-nav,
 .main-menu-nav ul {
@@ -11211,7 +11211,7 @@ a.list-group-item.active .list-group-item-text {
 .main-menu-nav ul {
   position: relative;
   border-top: 1px solid rgba(0, 0, 0, 0.8);
-  border-bottom: 1px solid #282828;
+  border-bottom: 1px solid #dbdbdb;
   background-color: rgba(0, 0, 0, 0.2); }
 
 .main-menu-nav ul:after {
@@ -11847,7 +11847,7 @@ a.list-group-item.active .list-group-item-text {
  * Styleguide 50.6.2
  */
 .modal-generic {
-  background-color: #282828;
+  background-color: #dbdbdb;
   border-radius: 6px; }
 
 .modal-generic .modal-generic-title {
@@ -12232,8 +12232,8 @@ a.list-group-item.active .list-group-item-text {
   color: #A0A0A0;
   text-transform: uppercase;
   letter-spacing: 0.16em;
-  color: #282828;
-  text-shadow: 0px 0px #282828;
+  color: #dbdbdb;
+  text-shadow: 0px 0px #dbdbdb;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -12350,7 +12350,7 @@ a.list-group-item.active > .badge,
 
 .calendar-icon-day {
   background-color: #FFFFFF;
-  color: #282828;
+  color: #dbdbdb;
   height: 32px;
   line-height: 32px;
   font-size: 22px; }
@@ -13271,7 +13271,7 @@ a.list-group-item.active > .badge,
   font-size: 10px; }
 
 .mo-info {
-  background-color: #282828;
+  background-color: #dbdbdb;
   padding: 13px 8px 4px;
   height: 63px; }
 
@@ -13351,9 +13351,9 @@ a.list-group-item.active > .badge,
   right: 0;
   top: 40px;
   width: 100%;
-  background-image: -webkit-gradient(linear, 70% top, 100% top, from(rgba(40, 40, 40, 0)), to(#282828));
-  background-image: -moz-linear-gradient(left, rgba(40, 40, 40, 0) 70%, #282828 100%);
-  background-image: linear-gradient(to right, rgba(40, 40, 40, 0) 70%, #282828 100%);
+  background-image: -webkit-gradient(linear, 70% top, 100% top, from(rgba(40, 40, 40, 0)), to(#dbdbdb));
+  background-image: -moz-linear-gradient(left, rgba(40, 40, 40, 0) 70%, #dbdbdb 100%);
+  background-image: linear-gradient(to right, rgba(40, 40, 40, 0) 70%, #dbdbdb 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00282828', endColorstr='#ff282828', GradientType=1); }
 
@@ -13411,9 +13411,9 @@ a.list-group-item.active > .badge,
   right: 0;
   top: 20px;
   width: 100%;
-  background-image: -webkit-gradient(linear, 70% top, 100% top, from(rgba(40, 40, 40, 0)), to(#282828));
-  background-image: -moz-linear-gradient(left, rgba(40, 40, 40, 0) 70%, #282828 100%);
-  background-image: linear-gradient(to right, rgba(40, 40, 40, 0) 70%, #282828 100%);
+  background-image: -webkit-gradient(linear, 70% top, 100% top, from(rgba(40, 40, 40, 0)), to(#dbdbdb));
+  background-image: -moz-linear-gradient(left, rgba(40, 40, 40, 0) 70%, #dbdbdb 100%);
+  background-image: linear-gradient(to right, rgba(40, 40, 40, 0) 70%, #dbdbdb 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00282828', endColorstr='#ff282828', GradientType=1); }
 
@@ -13994,7 +13994,7 @@ a.list-group-item.active > .badge,
   display: none; }
 
 .media-object.show-placeholder .mo-image-wrapper {
-  background-color: #282828; }
+  background-color: #dbdbdb; }
 
 .media-object.show-placeholder .mo-image,
 .media-object.show-placeholder .mo-image-background {
@@ -14006,7 +14006,7 @@ a.list-group-item.active > .badge,
 
 .media-object-artist.show-placeholder .mo-image-background-color,
 .media-object-user.show-placeholder .mo-image-background-color {
-  background: #282828;
+  background: #dbdbdb;
   background-clip: content-box;
   border-radius: 500px;
   display: block;
@@ -14263,7 +14263,7 @@ a.list-group-item.active > .badge,
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #282828;
+  background-color: #dbdbdb;
   position: relative;
   z-index: 4;
   padding: 0 10px; }
@@ -14773,13 +14773,13 @@ a.list-group-item.active > .badge,
   margin-right: 12px; }
 
 .h-bar {
-  border-top: 1px solid #282828;
-  border-bottom: 1px solid #282828;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
   line-height: 36px;
   margin: 0; }
 
 .h-search-bar {
-  border-top: 1px solid #282828;
+  border-top: 1px solid #dbdbdb;
   line-height: 36px;
   margin: 0; }
 
@@ -14879,7 +14879,7 @@ a.list-group-item.active > .badge,
   display: block; }
 
 .h-search-suggestions {
-  background: #282828;
+  background: #dbdbdb;
   border-radius: 3px;
   display: none;
   position: absolute;
@@ -14920,7 +14920,7 @@ a.list-group-item.active > .badge,
   background-position: 50% 0;
   background-size: cover;
   background-color: black;
-  border-bottom: 1px solid #282828;
+  border-bottom: 1px solid #dbdbdb;
   min-height: 320px;
   max-width: 1480px; }
 
@@ -15147,7 +15147,7 @@ a.list-group-item.active > .badge,
   top: 0; }
 
 .h-sticky-header .h-sticky-container {
-  border-bottom: 1px solid #282828;
+  border-bottom: 1px solid #dbdbdb;
   padding-bottom: 16px;
   padding-top: 16px; }
 
@@ -15378,7 +15378,7 @@ a.list-group-item.active > .badge,
 .tracklist-station,
 .tracklist-trackset,
 .tracklist-search {
-  border-bottom: 1px solid #282828;
+  border-bottom: 1px solid #dbdbdb;
   color: #A0A0A0;
   table-layout: fixed;
   width: 100%; }
@@ -15386,7 +15386,7 @@ a.list-group-item.active > .badge,
 .tl-header th,
 .tl-cell {
   padding: 0 0 0 12px;
-  border-top: 1px solid #282828;
+  border-top: 1px solid #dbdbdb;
   position: relative; }
 
 .tl-header th {
@@ -15889,7 +15889,7 @@ a.list-group-item.active > .badge,
   color: #00ABED !important; }
 
 .tl-row:hover .tl-cell {
-  background: #282828; }
+  background: #dbdbdb; }
 
 .tl-row:hover .tl-highlight {
   color: #ffffff; }
@@ -16613,6 +16613,6 @@ th[data-sort]:hover {
   width: 40px; }
 
 .modal-social-user-list hr {
-  border-top-color: #282828; }
+  border-top-color: #dbdbdb; }
 
 /*# sourceMappingURL=glue1.css.map */
