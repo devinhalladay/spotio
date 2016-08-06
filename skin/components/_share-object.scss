@@ -1,0 +1,91 @@
+/**
+ * Share Items (No Background)
+ *
+ * These are used in notifications and in the discover cards. They have optional
+ * meta and quote fields.
+ *
+ * Template: share-items
+ * Data: demo-shares
+ *
+ * Styleguide 30.5
+ */
+/**
+ * Share Items (In list group)
+ *
+ * They can also have the `list-group-item` class
+ * (like in the notification popup).
+ *
+ * Template: share-items-list-group
+ * Data: demo-shares
+ * CodeDisplay: none
+ *
+ * Styleguide 30.5.1
+ */
+.share-object:before,
+.share-object:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.share-object:after {
+  clear: both;
+}
+.share-object .media-object {
+  width: 56px;
+  float: left;
+}
+.share-object .share-data,
+.share-object .share-meta {
+  margin-left: 68px;
+}
+.share-object .share-meta {
+  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.015em;
+  font-weight: 200;
+  color: #A0A0A0;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+}
+.share-object .share-quote {
+  margin-top: 16px;
+}
+.share-object .share-quote:before,
+.share-object .share-quote:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.share-object .share-quote:after {
+  clear: both;
+}
+.share-object.list-group-item {
+  border: 0;
+  border-bottom: 1px solid transparent;
+  margin-top: 0;
+  padding: 12px;
+  background-color: #181818;
+  background-clip: padding-box;
+  transition: background 0.1s ease;
+  cursor: pointer;
+}
+.share-object.list-group-item:hover {
+  background-color: #282828;
+}
+.share-object.list-group-item:active {
+  background-color: #282828;
+}
+.share-object.list-group-item.unread:before {
+  display: block;
+  background: #4687D6;
+  content: "";
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 2px;
+  z-index: 100;
+}

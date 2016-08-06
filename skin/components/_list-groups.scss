@@ -1,0 +1,392 @@
+/**
+ * List Groups
+ *
+ * Toggleable, contextual menu for displaying lists of links. Arrow can be added if needed.
+ *
+ * Styleguide 30.3
+ */
+/**
+ * Basic Example with a Badge
+ *
+ * Template: list-groups
+ *
+ * Styleguide 30.3.1
+ */
+/**
+ * Linked Items
+ *
+ * Template: list-groups-linked
+ *
+ * Styleguide 30.3.2
+ */
+/**
+ * Custom Content
+ *
+ * Add nearly any HTML within, even for linked list groups like the one below.
+ *
+ * Template: list-groups-custom
+ *
+ * Styleguide 30.3.3
+ */
+.list-group {
+  list-style: none;
+  margin-bottom: 20px;
+  padding-left: 0;
+}
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid #282828;
+  border-top: 1px solid #282828;
+  margin-top: -1px;
+}
+.list-group-item-heading,
+.list-group-item-text {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.list-group-item-heading {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.list-group-item-text {
+  margin-bottom: 0;
+  line-height: 1.3;
+}
+a.list-group-item {
+  cursor: default;
+  outline: 0;
+}
+a.list-group-item .list-group-item-heading {
+  color: #FFFFFF;
+}
+a.list-group-item .list-group-item-text {
+  color: #A0A0A0;
+}
+a.list-group-item:hover,
+a.list-group-item:focus {
+  text-decoration: none;
+  background-color: inherit;
+}
+a.list-group-item.active {
+  z-index: 2;
+  color: #FFFFFF;
+  background-color: #1DB954;
+  border-color: #1DB954;
+}
+a.list-group-item.active .list-group-item-heading {
+  color: inherit;
+}
+a.list-group-item.active .list-group-item-text {
+  color: inherit;
+}
+/**
+ * Media List Items
+ *
+ * This is the structure for list items (like in playlists, messages, and search popup.)
+ *
+ * Modifiers:
+ *
+ * - `.active` - gives a green active indicator.
+ * - `.large` - gives more padding and more options.
+ * - `.playable` - **only for `.large` items** - gives a play button on hover for the element.
+ * - `.playing`  - **only for `.large.playable` items** -- Shows the pause button.
+ *
+ * Auto-Modifiers:
+ *
+ * Some modifiers get added by the template based on the data that gets passed in.
+ *
+ * - `.multiline` - adjusts cell for two lines - added upon `subtitle` detection.
+ * - `.auxiliary` - adds right aligned info section - added upon `auxiliary` detection.
+ *
+ * Note: you can of course replicate this without using our templates, but why!
+ *
+ * Social-proof:
+ *
+ * Social proof is rendered if the data is provided. See https://ghe.spotify.net/social/socialproof-service on how to decorate your
+ * items with social proof data. An example item would be:
+ * ```Json
+ * { "uri": "spotify:artist:00sAr10UTV1JZtHqxsLVn4",
+ *   "name": "Black Mountain",
+ *   "imageUrl": "https://d3rt1990lpmkn.cloudfront.net/unbranded/10b1e3bfd5f4a527032f34951260ade4c4004c1f",
+ *   "socialproof": {
+ *     "totalListeners": "10",
+ *     "listeners": [
+ *       { "name": "Karl" },
+ *       { "name": "Ada" }
+ *     ]
+ *   }
+ * }
+ * ```
+ *
+ * Template: list-group-item-media
+ * CodeDisplay: $list-group-item-media
+ * Data: list-group-demos
+ *
+ * Styleguide 30.3.4
+ */
+.list-group-item.list-group-item-media {
+  border: 0;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  height: 52px;
+  line-height: 50px;
+  margin-top: 0;
+  padding: 0;
+  background-color: #282828;
+  background-clip: padding-box;
+  transition: background 0.1s ease;
+}
+.list-group-item.list-group-item-media:last-child {
+  border-bottom: none;
+  height: 50px;
+}
+.list-group-item.list-group-item-media > a {
+  outline: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.list-group-item.list-group-item-media > a:hover,
+.list-group-item.list-group-item-media > a:active,
+.list-group-item.list-group-item-media > a:focus {
+  border-bottom: 1px solid transparent;
+}
+.list-group-item.list-group-item-media .media-object {
+  bottom: 0;
+  left: 0;
+  padding-bottom: 0;
+  position: absolute;
+  top: 0;
+  transition: background 0.2s ease;
+  width: 50px;
+}
+.list-group-item.list-group-item-media .media-object-artist,
+.list-group-item.list-group-item-media .media-object-user {
+  padding: 5px;
+}
+.list-group-item.list-group-item-media.active {
+  background-color: #333333;
+  border-color: transparent;
+}
+.list-group-item.list-group-item-media.active:before {
+  background: #1DB954;
+  content: "";
+  height: 100%;
+  position: absolute;
+  right: 0;
+  width: 2px;
+  z-index: 100;
+}
+.list-group-item.list-group-item-media.unread:before {
+  background: #4687D6;
+  content: "";
+  height: 100%;
+  position: absolute;
+  right: 0;
+  width: 2px;
+  z-index: 100;
+}
+.list-group-item.list-group-item-media:hover {
+  background-color: #333333;
+}
+.list-group-item.list-group-item-media.multiline .item-data {
+  line-height: 1.5;
+  padding-top: 5px;
+}
+.list-group-item.list-group-item-media.multiline .item-data > span {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.list-group-item.list-group-item-media .item-data {
+  height: 100%;
+  padding: 0 10px 0 60px;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.list-group-item.list-group-item-media.more {
+  height: 38px;
+  line-height: 36px;
+  padding-left: 10px;
+}
+.list-group-item.list-group-item-media.more:before {
+  font-family: "glue1-spoticon";
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  line-height: inherit;
+  vertical-align: bottom;
+  content: "\f110";
+  font-size: 16px;
+}
+.list-group-item.list-group-item-media.more:before {
+  position: absolute;
+  right: 5px;
+}
+.list-group-item.list-group-item-media.more:hover {
+  border-bottom-color: transparent;
+}
+.list-group-item.list-group-item-media .button {
+  height: 44px;
+  width: 44px;
+}
+.list-group-item.list-group-item-media.large {
+  height: 72px;
+}
+.list-group-item.list-group-item-media.large .media-object {
+  left: 10px;
+  top: 10px;
+  bottom: 10px;
+}
+.list-group-item.list-group-item-media.large .media-object-artist,
+.list-group-item.list-group-item-media.large .media-object-user {
+  padding: 0;
+}
+.list-group-item.list-group-item-media.large .item-data {
+  padding-left: 70px;
+  line-height: 70px;
+}
+.list-group-item.list-group-item-media.large.multiline .item-data {
+  line-height: 24px;
+  padding-top: 12px;
+}
+.list-group-item.list-group-item-media.large.auxiliary .item-data {
+  padding-right: 100px;
+}
+.list-group-item.list-group-item-media.large.auxiliary .text-meta {
+  font-size: 11px;
+}
+.list-group-item.list-group-item-media.large.auxiliary .auxiliary-box {
+  position: absolute;
+  top: 9px;
+  right: 10px;
+  bottom: 0;
+  width: 80px;
+  max-width: 80px;
+  text-align: right;
+}
+.list-group-item.list-group-item-media.large.auxiliary .auxiliary-icon {
+  line-height: 1.5;
+  color: #A0A0A0;
+}
+.list-group-item.list-group-item-media .list-group-item-media-play {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  visibility: hidden;
+}
+.list-group-item.list-group-item-media.playable.large:hover .list-group-item-media-play {
+  visibility: visible;
+}
+.list-group-item.list-group-item-media.playable.large:hover .media-object {
+  visibility: hidden;
+}
+.list-group-item.list-group-item-media.playable.large.playing .list-group-item-media-play {
+  visibility: visible;
+  border-color: #FFFFFF;
+}
+.list-group-item.list-group-item-media.playable.large.playing .list-group-item-media-play:before {
+  content: "\f131";
+}
+.list-group-item.list-group-item-media.playable.large.playing .media-object {
+  visibility: hidden;
+}
+.list-group-item > .badge,
+.list-group-item > .glyphicon-chevron-right {
+  float: right;
+}
+.list-group-item > .glyphicon + .badge {
+  margin-right: 5px;
+}
+/**
+ * Social Media List Items
+ *
+ * These are used in follow, profile and artist apps.
+ *
+ * Template: list-group-item-social
+ * Data: social-list-item
+ *
+ * Styleguide 30.3.6
+ */
+.list-group-item.list-group-item-social {
+  padding-left: 0;
+  padding-right: 0;
+}
+.list-group-item.list-group-item-social table {
+  width: 100%;
+  max-width: 100%;
+  table-layout: fixed;
+}
+.list-group-item.list-group-item-social td:first-child {
+  width: 100px;
+  min-width: 100px;
+}
+.list-group-item.list-group-item-social td:nth-child(2) {
+  width: 100%;
+}
+.list-group-item.list-group-item-social td:nth-child(2) > div {
+  position: relative;
+  height: 100%;
+}
+.list-group-item.list-group-item-social td:nth-child(2) > div > div {
+  position: absolute;
+  left: 10px;
+  top: -35px;
+  right: 0;
+}
+.list-group-item.list-group-item-social td:nth-child(2) > div > div > span {
+  max-width: 100%;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.list-group-item.list-group-item-social td:nth-child(3) {
+  width: 0px;
+}
+.list-group-item.list-group-item-social .remove {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+.list-group-item.list-group-item-social:hover .remove {
+  display: inline;
+}
+.list-group-item.list-group-item-social .pull-bottom {
+  margin-top: 16px;
+}
+/**
+ * Artist Page Latest Release Item
+ *
+ * This is used on the artist page for artists displaying
+ * Latest Release item. (example: U2)
+ */
+.list-group-item.list-group-item-media.artist-latest-release {
+  height: 76px;
+}
+.list-group-item.list-group-item-media.artist-latest-release .item-data {
+  padding-left: 96px;
+}
+.list-group-item.list-group-item-media.artist-latest-release .media-object,
+.list-group-item.list-group-item-media.artist-latest-release .mo-placeholder {
+  top: 0px;
+  left: 0px;
+  width: 76px;
+  height: 76px;
+}
+.list-group-item.list-group-item-media.artist-latest-release .text-secondary {
+  color: #A0A0A0;
+  font-size: 12px;
+}

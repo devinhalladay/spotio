@@ -1,0 +1,91 @@
+/**
+ * Carousel
+ *
+ * For sideways paging content. The paging is done by changing the `left`
+ * attribute of the `.carousel-inner` element.
+ *
+ * Template: carousel
+ *
+ * Styleguide 30.2
+ */
+.carousel {
+  overflow: hidden;
+}
+.crsl-inner {
+  white-space: nowrap;
+  word-spacing: 0;
+  position: relative;
+  left: 0%;
+  will-change: left;
+  -webkit-transition: left 0.5s ease-in-out;
+  -moz-transition: left 0.5s ease-in-out;
+  -o-transition: left 0.5s ease-in-out;
+  transition: left 0.5s ease-in-out;
+}
+.crsl-inner.crsl-inner-drag {
+  -webkit-transition: 0s;
+  -moz-transition: 0s;
+  -o-transition: 0s;
+  transition: 0s;
+}
+.crsl-inner.crsl-inner-swipe {
+  -webkit-transition: left 0.3s ease-out;
+  -moz-transition: left 0.3s ease-out;
+  -o-transition: left 0.3s ease-out;
+  transition: left 0.3s ease-out;
+}
+.crsl-inner .crsl-item {
+  white-space: normal;
+}
+.crsl-inner .crsl-item.col-xs-1,
+.crsl-inner .crsl-item.col-xs-2,
+.crsl-inner .crsl-item.col-xs-3,
+.crsl-inner .crsl-item.col-xs-4,
+.crsl-inner .crsl-item.col-xs-5,
+.crsl-inner .crsl-item.col-xs-6,
+.crsl-inner .crsl-item.col-xs-7,
+.crsl-inner .crsl-item.col-xs-8,
+.crsl-inner .crsl-item.col-xs-9,
+.crsl-inner .crsl-item.col-xs-10,
+.crsl-inner .crsl-item.col-xs-11,
+.crsl-inner .crsl-item.col-xs-12,
+.crsl-inner .crsl-item.col-sm-1,
+.crsl-inner .crsl-item.col-sm-2,
+.crsl-inner .crsl-item.col-sm-3,
+.crsl-inner .crsl-item.col-sm-4,
+.crsl-inner .crsl-item.col-sm-5,
+.crsl-inner .crsl-item.col-sm-6,
+.crsl-inner .crsl-item.col-sm-7,
+.crsl-inner .crsl-item.col-sm-8,
+.crsl-inner .crsl-item.col-sm-9,
+.crsl-inner .crsl-item.col-sm-10,
+.crsl-inner .crsl-item.col-sm-11,
+.crsl-inner .crsl-item.col-sm-12,
+.crsl-inner .crsl-item.col-md-1,
+.crsl-inner .crsl-item.col-md-2,
+.crsl-inner .crsl-item.col-md-3,
+.crsl-inner .crsl-item.col-md-4,
+.crsl-inner .crsl-item.col-md-5,
+.crsl-inner .crsl-item.col-md-6,
+.crsl-inner .crsl-item.col-md-7,
+.crsl-inner .crsl-item.col-md-8,
+.crsl-inner .crsl-item.col-md-9,
+.crsl-inner .crsl-item.col-md-10,
+.crsl-inner .crsl-item.col-md-11,
+.crsl-inner .crsl-item.col-md-12,
+.crsl-inner .crsl-item.col-lg-1,
+.crsl-inner .crsl-item.col-lg-2,
+.crsl-inner .crsl-item.col-lg-3,
+.crsl-inner .crsl-item.col-lg-4,
+.crsl-inner .crsl-item.col-lg-5,
+.crsl-inner .crsl-item.col-lg-6,
+.crsl-inner .crsl-item.col-lg-7,
+.crsl-inner .crsl-item.col-lg-8,
+.crsl-inner .crsl-item.col-lg-9,
+.crsl-inner .crsl-item.col-lg-10,
+.crsl-inner .crsl-item.col-lg-11,
+.crsl-inner .crsl-item.col-lg-12 {
+  float: none;
+  display: inline-block;
+  vertical-align: top;
+}

@@ -1,0 +1,120 @@
+/**
+ * Navbars
+ *
+ * These are cool navbars.
+ * NOTE: Navbars are meant to be the full width of the page (otherwise they are just navs).
+ * So if your window is small these demos will look broken.
+ *
+ * Template: navbar
+ *
+ * Styleguide 40.3
+ */
+.navbar {
+  position: relative;
+  z-index: 1000;
+  min-height: 44px;
+}
+.navbar:before,
+.navbar:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.navbar:after {
+  clear: both;
+}
+.header-artist .navbar {
+  background-color: rgba(24, 24, 24, 0.8);
+}
+.navbar.sticky-top {
+  background-color: rgba(24, 24, 24, 0.8);
+  z-index: 1020;
+}
+.navbar-fixed-wrapper {
+  height: 44px;
+}
+.navbar-nav {
+  margin: 0;
+}
+.navbar-nav > li > a {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.navbar-nav:not(.no-overflow-menu) {
+  visibility: hidden;
+}
+.navbar-nav:not(.no-overflow-menu) li.last-visible {
+  margin-right: 0;
+}
+@media (max-width: 585px) {
+  .navbar-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+  }
+  .navbar-nav .open .dropdown-menu > li > a,
+  .navbar-nav .open .dropdown-menu .dropdown-header {
+    padding: 5px 15px 5px 25px;
+  }
+  .navbar-nav .open .dropdown-menu > li > a {
+    line-height: 20px;
+  }
+  .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-nav .open .dropdown-menu > li > a:focus {
+    background-image: none;
+  }
+}
+.navbar-nav > li {
+  float: left;
+}
+.navbar-nav > li.navbar-right {
+  float: right;
+}
+.navbar-nav > li > a {
+  line-height: 44px;
+}
+.navbar.large {
+  min-height: 60px;
+}
+.navbar.large .navbar-nav > li > a {
+  line-height: 60px;
+}
+.navbar-left {
+  float: left;
+}
+.navbar-right {
+  float: right;
+}
+.navbar-nav > li > .dropdown-menu {
+  margin-top: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+.navbar.sticky-bottom .navbar-nav > li > .dropdown-menu,
+.navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.navbar-nav.pull-right > li > .dropdown-menu,
+.navbar-nav > li > .dropdown-menu.pull-right {
+  left: auto;
+  right: 0;
+}
+.navbar-btn {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.navbar-text {
+  float: left;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: 10px;
+  margin-right: 10px;
+}

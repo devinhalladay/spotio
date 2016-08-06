@@ -1,0 +1,242 @@
+/**
+ * Simple Navs
+ *
+ * .nav-justified  - Justified nav.
+ * .nav-pills               - Pill style.
+ * .nav-pills.nav-justified - Pill style justified.
+ * .nav-stacked             - Vertical nav.
+ *
+ * Template: navs
+ *
+ * Styleguide 40.2
+ */
+.nav {
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  border-bottom: 1px solid #282828;
+}
+.nav.nav-justified {
+  width: 100%;
+}
+.nav.nav-justified > li {
+  float: none;
+  display: table-cell;
+  width: 1%;
+}
+.nav.nav-justified > li > a {
+  text-align: center;
+}
+.nav:before,
+.nav:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.nav:after {
+  clear: both;
+}
+.nav > li {
+  position: relative;
+  display: block;
+  margin: 0 15px;
+  float: left;
+}
+.nav > li:first-child,
+.nav > li:first-child .navbar-text {
+  margin-left: 0;
+}
+.nav > li:last-child {
+  margin-right: 0;
+}
+.nav > li > a {
+  position: relative;
+  display: block;
+  line-height: 44px;
+  color: #A0A0A0;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 14px;
+  transition: color 0.2s;
+  border-bottom: none;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  border-bottom: none;
+  color: #FFFFFF;
+}
+.nav > li > a:after {
+  content: ' ';
+  background-color: transparent;
+  bottom: 0;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  transition: background-color 0.5s;
+}
+.nav > li > p {
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 14px;
+}
+.nav > li.active > a {
+  color: #FFFFFF;
+}
+.nav > li.active > a:after {
+  background-color: #1DB954;
+}
+.nav > li.disabled > a {
+  color: #A0A0A0;
+}
+.nav > li.disabled > a:hover,
+.nav > li.disabled > a:focus {
+  color: #A0A0A0;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: default;
+}
+.nav > li + .nav-header {
+  margin-top: 9px;
+}
+.nav.open > a,
+.nav.open > a:hover,
+.nav.open > a:focus {
+  color: #fff;
+  background-color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+.nav.open > a .caret,
+.nav.open > a:hover .caret,
+.nav.open > a:focus .caret {
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+}
+.nav > .pull-right {
+  float: right;
+}
+.nav .nav-divider {
+  height: 2px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+  border-bottom: 1px solid #fff;
+}
+.nav-pills {
+  border-bottom: none;
+}
+.nav-pills > li {
+  float: left;
+}
+.nav-pills > li:first-child {
+  margin-left: 0;
+}
+.nav-pills > li > a {
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.nav-pills > li + li > a {
+  margin-left: 2px;
+}
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  color: #fff;
+  background-color: #1DB954;
+}
+.nav-pills > li.active > a:after {
+  display: none;
+}
+.nav-stacked {
+  background-color: #282828;
+  border-radius: 3px;
+}
+.nav-stacked > li {
+  float: none;
+}
+.nav-stacked > li:first-child {
+  margin-left: 15px;
+}
+.nav-stacked > li:last-child {
+  margin-right: 15px;
+}
+.nav-stacked > li.active a {
+  color: #FFFFFF;
+}
+.nav-stacked > li.active a:after {
+  bottom: 1px;
+}
+.nav-stacked > li a {
+  color: #A0A0A0;
+  line-height: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-transform: none;
+  letter-spacing: 0px;
+  font-size: 14px;
+}
+.nav-stacked > li + li {
+  border-top: 1px solid #333333;
+}
+.nav-stacked > li + li > a {
+  margin-top: 2px;
+  margin-left: 0;
+}
+.nav-justified {
+  width: 100%;
+}
+.nav-justified > li {
+  float: none;
+  display: table-cell;
+  width: 1%;
+}
+.nav-justified > li > a {
+  text-align: center;
+}
+.nav-header {
+  display: block;
+  padding: 3px 15px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #A0A0A0;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+}
+.tabbable:before,
+.tabbable:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.tabbable:after {
+  clear: both;
+}
+.tab-content > .tab-pane,
+.pill-content > .pill-pane {
+  display: none;
+}
+.tab-content > .active,
+.pill-content > .active {
+  display: block;
+}
+.nav .caret {
+  border-top-color: #A0A0A0;
+  border-bottom-color: #A0A0A0;
+}
+.nav .active .caret {
+  border-top-color: #FFFFFF;
+  border-bottom-color: #FFFFFF;
+}
+.nav a:hover .caret {
+  border-top-color: #FFFFFF;
+  border-bottom-color: #FFFFFF;
+}
+.nav-tabs .dropdown-menu {
+  margin-top: -1px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
