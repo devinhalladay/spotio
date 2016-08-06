@@ -1,0 +1,72 @@
+/**
+ * Slider
+ *
+ * Markup:
+ *   <div class="slider {$modifiers}" onclick="this.className = 'slider enabled';"><div></div></div>
+ *
+ * .enabled - For sliders that are enabled
+ * .disabled - For sliders that are unchangeable
+ *
+ * Styleguide 60.4
+ */
+.slider {
+  background: #000000;
+  border: 2px solid #404040;
+  border-radius: 11px;
+  height: 22px;
+  position: relative;
+  transition: border 1.2s linear;
+  transition: background 0.4s ease;
+  width: 36px;
+}
+.slider.enabled {
+  background: #1DB954;
+  border-color: transparent;
+}
+.slider.enabled div {
+  left: 15px;
+  background: #FFFFFF;
+}
+.slider div {
+  background: #A0A0A0;
+  border-radius: inherit;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.75), 0 0 3px rgba(0, 0, 0, 0.3);
+  height: 22px;
+  left: -5px;
+  position: absolute;
+  top: -2px;
+  width: 22px;
+  transition: all 0.4s ease;
+}
+.slider:active div {
+  background: #FFFFFF;
+  width: 26px;
+}
+.slider.enabled:active div {
+  left: 15px;
+}
+.slider:hover div {
+  background: #FFFFFF;
+}
+.slider.disabled {
+  background: #333333;
+  border-color: transparent;
+  pointer-events: none;
+}
+.slider.disabled div {
+  background: #404040;
+  box-shadow: none;
+}
+.slider.disabled:active div {
+  background: #404040;
+  width: 22px;
+}
+.slider.disabled:hover div {
+  background: #404040;
+}
+.slider.disabled.enabled:active div {
+  left: 15px;
+}
+.slider:focus {
+  outline: 0;
+}

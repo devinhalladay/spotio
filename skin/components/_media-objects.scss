@@ -1,0 +1,1764 @@
+.media-object {
+  position: relative;
+}
+.mo-wrapper {
+  overflow: hidden;
+}
+.mo-image-wrapper {
+  height: 100%;
+  overflow: hidden;
+  padding-bottom: 100%;
+  position: relative;
+}
+.mo-wide-image-wrapper {
+  height: 100%;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+.mo-wide-image {
+  -webkit-backface-visibility: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.mo-image,
+.mo-image-background,
+.mo-image-background-color {
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.mo-image {
+  -webkit-backface-visibility: hidden;
+  background-repeat: no-repeat;
+}
+.mo-image-background-color {
+  background-color: #000000;
+}
+.mo-image-background {
+  background-repeat: no-repeat;
+  background-size: 140%;
+  opacity: 0.2;
+}
+.media-object-artist .mo-image,
+.media-object-user .mo-image {
+  bottom: 10px;
+  border-radius: 500px;
+  height: auto;
+  left: 10px;
+  right: 10px;
+  top: 10px;
+  width: auto;
+}
+.mo-add,
+.mo-play,
+.mo-more,
+.mo-delete {
+  cursor: default;
+  max-height: none;
+  position: absolute;
+  top: 50%;
+  visibility: hidden;
+  z-index: 4;
+}
+.mo-add:focus,
+.mo-play:focus,
+.mo-more:focus,
+.mo-delete:focus {
+  outline: none;
+}
+.media-object .mo-add {
+  left: 16%;
+}
+.media-object .mo-add:before {
+  content: "\f139";
+}
+.media-object .mo-add,
+.media-object .mo-more {
+  height: 32px;
+  line-height: 30px;
+  padding-top: 2px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-radius: 16px;
+  background: transparent;
+  color: #A0A0A0;
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: transform, box-shadow, color, background-color;
+  width: 32px;
+  padding-left: 0;
+  padding-right: 0;
+  margin: -17px 0 0 -17px;
+}
+.media-object .mo-add .b-alt-text,
+.media-object .mo-more .b-alt-text {
+  margin-top: -30px;
+}
+.media-object .mo-add.contextmenu-active,
+.media-object .mo-more.contextmenu-active,
+.media-object .mo-add:not(:disabled):hover,
+.media-object .mo-more:not(:disabled):hover {
+  background-color: transparent;
+  color: #FFFFFF;
+}
+.media-object .mo-add:not(:disabled):hover:active,
+.media-object .mo-more:not(:disabled):hover:active {
+  background: transparent;
+  color: #808080;
+  transform: scale(1);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .media-object .mo-add:not(:disabled):hover:active,
+  .media-object .mo-more:not(:disabled):hover:active {
+    transform: scale(1);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .media-object .mo-add,
+  .media-object .mo-more {
+    transition-duration: 50ms;
+  }
+}
+.media-object .mo-add:after,
+.media-object .mo-more:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .media-object .mo-add:after,
+  .media-object .mo-more:after {
+    transition-duration: 50ms;
+  }
+}
+.media-object .mo-add.contextmenu-active,
+.media-object .mo-more.contextmenu-active,
+.media-object .mo-add:not(:disabled):hover,
+.media-object .mo-more:not(:disabled):hover {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .media-object .mo-add.contextmenu-active,
+  .media-object .mo-more.contextmenu-active,
+  .media-object .mo-add:not(:disabled):hover,
+  .media-object .mo-more:not(:disabled):hover {
+    transition-duration: 66ms;
+  }
+}
+.media-object .mo-add.contextmenu-active:after,
+.media-object .mo-more.contextmenu-active:after,
+.media-object .mo-add:not(:disabled):hover:after,
+.media-object .mo-more:not(:disabled):hover:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .media-object .mo-add.contextmenu-active:after,
+  .media-object .mo-more.contextmenu-active:after,
+  .media-object .mo-add:not(:disabled):hover:after,
+  .media-object .mo-more:not(:disabled):hover:after {
+    transition-duration: 66ms;
+  }
+}
+.media-object .mo-add:not(:disabled):hover:active,
+.media-object .mo-more:not(:disabled):hover:active {
+  transition: none;
+}
+.media-object .mo-add:not(:disabled):hover:active:after,
+.media-object .mo-more:not(:disabled):hover:active:after {
+  transition: none;
+}
+.media-object .mo-add:before,
+.media-object .mo-more:before {
+  font-family: "glue1-spoticon";
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  line-height: inherit;
+  vertical-align: bottom;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: left;
+  border-radius: 500px;
+  line-height: 32px;
+  font-size: 32px;
+  padding-left: 0px;
+  width: calc(100% - 0px);
+}
+.media-object .mo-add.button-play:before,
+.media-object .mo-more.button-play:before {
+  content: "\f132";
+}
+.media-object .mo-add.button-play.playing:not(:hover),
+.media-object .mo-more.button-play.playing:not(:hover),
+.tl-row.playing .media-object .mo-add.button-play:not(:hover),
+.tl-row.playing .media-object .mo-more.button-play:not(:hover),
+.tl-row.playing.media-object .mo-add.button-play:not(:hover),
+.tl-row.playing.media-object .mo-more.button-play:not(:hover),
+.media-object.playing .media-object .mo-add.button-play:not(:hover),
+.media-object.playing .media-object .mo-more.button-play:not(:hover),
+.media-object.playing.media-object .mo-add.button-play:not(:hover),
+.media-object.playing.media-object .mo-more.button-play:not(:hover) {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+.media-object .mo-add.button-play.playing:not(:hover):after,
+.media-object .mo-more.button-play.playing:not(:hover):after,
+.tl-row.playing .media-object .mo-add.button-play:not(:hover):after,
+.tl-row.playing .media-object .mo-more.button-play:not(:hover):after,
+.tl-row.playing.media-object .mo-add.button-play:not(:hover):after,
+.tl-row.playing.media-object .mo-more.button-play:not(:hover):after,
+.media-object.playing .media-object .mo-add.button-play:not(:hover):after,
+.media-object.playing .media-object .mo-more.button-play:not(:hover):after,
+.media-object.playing.media-object .mo-add.button-play:not(:hover):after,
+.media-object.playing.media-object .mo-more.button-play:not(:hover):after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 500px;
+  box-shadow: inset 0 0 0 1px transparent;
+}
+.media-object .mo-add.button-play.playing:not(:hover).contextmenu-active,
+.media-object .mo-more.button-play.playing:not(:hover).contextmenu-active,
+.tl-row.playing .media-object .mo-add.button-play:not(:hover).contextmenu-active,
+.tl-row.playing .media-object .mo-more.button-play:not(:hover).contextmenu-active,
+.tl-row.playing.media-object .mo-add.button-play:not(:hover).contextmenu-active,
+.tl-row.playing.media-object .mo-more.button-play:not(:hover).contextmenu-active,
+.media-object.playing .media-object .mo-add.button-play:not(:hover).contextmenu-active,
+.media-object.playing .media-object .mo-more.button-play:not(:hover).contextmenu-active,
+.media-object.playing.media-object .mo-add.button-play:not(:hover).contextmenu-active,
+.media-object.playing.media-object .mo-more.button-play:not(:hover).contextmenu-active,
+.media-object .mo-add.button-play.playing:not(:hover):not(:disabled):hover,
+.media-object .mo-more.button-play.playing:not(:hover):not(:disabled):hover,
+.tl-row.playing .media-object .mo-add.button-play:not(:hover):not(:disabled):hover,
+.tl-row.playing .media-object .mo-more.button-play:not(:hover):not(:disabled):hover,
+.tl-row.playing.media-object .mo-add.button-play:not(:hover):not(:disabled):hover,
+.tl-row.playing.media-object .mo-more.button-play:not(:hover):not(:disabled):hover,
+.media-object.playing .media-object .mo-add.button-play:not(:hover):not(:disabled):hover,
+.media-object.playing .media-object .mo-more.button-play:not(:hover):not(:disabled):hover,
+.media-object.playing.media-object .mo-add.button-play:not(:hover):not(:disabled):hover,
+.media-object.playing.media-object .mo-more.button-play:not(:hover):not(:disabled):hover {
+  box-shadow: inset 0 0 0 1px transparent, 0 0 0 1px transparent;
+}
+.media-object .mo-add.button-play.playing:not(:hover).contextmenu-active:after,
+.media-object .mo-more.button-play.playing:not(:hover).contextmenu-active:after,
+.tl-row.playing .media-object .mo-add.button-play:not(:hover).contextmenu-active:after,
+.tl-row.playing .media-object .mo-more.button-play:not(:hover).contextmenu-active:after,
+.tl-row.playing.media-object .mo-add.button-play:not(:hover).contextmenu-active:after,
+.tl-row.playing.media-object .mo-more.button-play:not(:hover).contextmenu-active:after,
+.media-object.playing .media-object .mo-add.button-play:not(:hover).contextmenu-active:after,
+.media-object.playing .media-object .mo-more.button-play:not(:hover).contextmenu-active:after,
+.media-object.playing.media-object .mo-add.button-play:not(:hover).contextmenu-active:after,
+.media-object.playing.media-object .mo-more.button-play:not(:hover).contextmenu-active:after,
+.media-object .mo-add.button-play.playing:not(:hover):not(:disabled):hover:after,
+.media-object .mo-more.button-play.playing:not(:hover):not(:disabled):hover:after,
+.tl-row.playing .media-object .mo-add.button-play:not(:hover):not(:disabled):hover:after,
+.tl-row.playing .media-object .mo-more.button-play:not(:hover):not(:disabled):hover:after,
+.tl-row.playing.media-object .mo-add.button-play:not(:hover):not(:disabled):hover:after,
+.tl-row.playing.media-object .mo-more.button-play:not(:hover):not(:disabled):hover:after,
+.media-object.playing .media-object .mo-add.button-play:not(:hover):not(:disabled):hover:after,
+.media-object.playing .media-object .mo-more.button-play:not(:hover):not(:disabled):hover:after,
+.media-object.playing.media-object .mo-add.button-play:not(:hover):not(:disabled):hover:after,
+.media-object.playing.media-object .mo-more.button-play:not(:hover):not(:disabled):hover:after {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .media-object .mo-add.button-play.playing:not(:hover).contextmenu-active,
+  .media-object .mo-more.button-play.playing:not(:hover).contextmenu-active,
+  .tl-row.playing .media-object .mo-add.button-play:not(:hover).contextmenu-active,
+  .tl-row.playing .media-object .mo-more.button-play:not(:hover).contextmenu-active,
+  .tl-row.playing.media-object .mo-add.button-play:not(:hover).contextmenu-active,
+  .tl-row.playing.media-object .mo-more.button-play:not(:hover).contextmenu-active,
+  .media-object.playing .media-object .mo-add.button-play:not(:hover).contextmenu-active,
+  .media-object.playing .media-object .mo-more.button-play:not(:hover).contextmenu-active,
+  .media-object.playing.media-object .mo-add.button-play:not(:hover).contextmenu-active,
+  .media-object.playing.media-object .mo-more.button-play:not(:hover).contextmenu-active,
+  .media-object .mo-add.button-play.playing:not(:hover):not(:disabled):hover,
+  .media-object .mo-more.button-play.playing:not(:hover):not(:disabled):hover,
+  .tl-row.playing .media-object .mo-add.button-play:not(:hover):not(:disabled):hover,
+  .tl-row.playing .media-object .mo-more.button-play:not(:hover):not(:disabled):hover,
+  .tl-row.playing.media-object .mo-add.button-play:not(:hover):not(:disabled):hover,
+  .tl-row.playing.media-object .mo-more.button-play:not(:hover):not(:disabled):hover,
+  .media-object.playing .media-object .mo-add.button-play:not(:hover):not(:disabled):hover,
+  .media-object.playing .media-object .mo-more.button-play:not(:hover):not(:disabled):hover,
+  .media-object.playing.media-object .mo-add.button-play:not(:hover):not(:disabled):hover,
+  .media-object.playing.media-object .mo-more.button-play:not(:hover):not(:disabled):hover {
+    box-shadow: inset 0 0 0 1px transparent;
+  }
+  .media-object .mo-add.button-play.playing:not(:hover).contextmenu-active:after,
+  .media-object .mo-more.button-play.playing:not(:hover).contextmenu-active:after,
+  .tl-row.playing .media-object .mo-add.button-play:not(:hover).contextmenu-active:after,
+  .tl-row.playing .media-object .mo-more.button-play:not(:hover).contextmenu-active:after,
+  .tl-row.playing.media-object .mo-add.button-play:not(:hover).contextmenu-active:after,
+  .tl-row.playing.media-object .mo-more.button-play:not(:hover).contextmenu-active:after,
+  .media-object.playing .media-object .mo-add.button-play:not(:hover).contextmenu-active:after,
+  .media-object.playing .media-object .mo-more.button-play:not(:hover).contextmenu-active:after,
+  .media-object.playing.media-object .mo-add.button-play:not(:hover).contextmenu-active:after,
+  .media-object.playing.media-object .mo-more.button-play:not(:hover).contextmenu-active:after,
+  .media-object .mo-add.button-play.playing:not(:hover):not(:disabled):hover:after,
+  .media-object .mo-more.button-play.playing:not(:hover):not(:disabled):hover:after,
+  .tl-row.playing .media-object .mo-add.button-play:not(:hover):not(:disabled):hover:after,
+  .tl-row.playing .media-object .mo-more.button-play:not(:hover):not(:disabled):hover:after,
+  .tl-row.playing.media-object .mo-add.button-play:not(:hover):not(:disabled):hover:after,
+  .tl-row.playing.media-object .mo-more.button-play:not(:hover):not(:disabled):hover:after,
+  .media-object.playing .media-object .mo-add.button-play:not(:hover):not(:disabled):hover:after,
+  .media-object.playing .media-object .mo-more.button-play:not(:hover):not(:disabled):hover:after,
+  .media-object.playing.media-object .mo-add.button-play:not(:hover):not(:disabled):hover:after,
+  .media-object.playing.media-object .mo-more.button-play:not(:hover):not(:disabled):hover:after {
+    box-shadow: inset 0 0 0 1px transparent;
+  }
+}
+.media-object .mo-add.button-play.playing:not(:hover):not(:disabled):hover:active,
+.media-object .mo-more.button-play.playing:not(:hover):not(:disabled):hover:active,
+.tl-row.playing .media-object .mo-add.button-play:not(:hover):not(:disabled):hover:active,
+.tl-row.playing .media-object .mo-more.button-play:not(:hover):not(:disabled):hover:active,
+.tl-row.playing.media-object .mo-add.button-play:not(:hover):not(:disabled):hover:active,
+.tl-row.playing.media-object .mo-more.button-play:not(:hover):not(:disabled):hover:active,
+.media-object.playing .media-object .mo-add.button-play:not(:hover):not(:disabled):hover:active,
+.media-object.playing .media-object .mo-more.button-play:not(:hover):not(:disabled):hover:active,
+.media-object.playing.media-object .mo-add.button-play:not(:hover):not(:disabled):hover:active,
+.media-object.playing.media-object .mo-more.button-play:not(:hover):not(:disabled):hover:active {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+.media-object .mo-add.button-play.playing:not(:hover):not(:disabled):hover:active:after,
+.media-object .mo-more.button-play.playing:not(:hover):not(:disabled):hover:active:after,
+.tl-row.playing .media-object .mo-add.button-play:not(:hover):not(:disabled):hover:active:after,
+.tl-row.playing .media-object .mo-more.button-play:not(:hover):not(:disabled):hover:active:after,
+.tl-row.playing.media-object .mo-add.button-play:not(:hover):not(:disabled):hover:active:after,
+.tl-row.playing.media-object .mo-more.button-play:not(:hover):not(:disabled):hover:active:after,
+.media-object.playing .media-object .mo-add.button-play:not(:hover):not(:disabled):hover:active:after,
+.media-object.playing .media-object .mo-more.button-play:not(:hover):not(:disabled):hover:active:after,
+.media-object.playing.media-object .mo-add.button-play:not(:hover):not(:disabled):hover:active:after,
+.media-object.playing.media-object .mo-more.button-play:not(:hover):not(:disabled):hover:active:after {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+.media-object .mo-add.button-play.playing:not(:hover):before,
+.media-object .mo-more.button-play.playing:not(:hover):before,
+.tl-row.playing .media-object .mo-add.button-play:not(:hover):before,
+.tl-row.playing .media-object .mo-more.button-play:not(:hover):before,
+.tl-row.playing.media-object .mo-add.button-play:not(:hover):before,
+.tl-row.playing.media-object .mo-more.button-play:not(:hover):before,
+.media-object.playing .media-object .mo-add.button-play:not(:hover):before,
+.media-object.playing .media-object .mo-more.button-play:not(:hover):before,
+.media-object.playing.media-object .mo-add.button-play:not(:hover):before,
+.media-object.playing.media-object .mo-more.button-play:not(:hover):before {
+  content: "\f1D0";
+  padding-left: -2px;
+  width: calc(100% - -2px);
+}
+.media-object .mo-add.button-play.playing:hover:before,
+.media-object .mo-more.button-play.playing:hover:before,
+.tl-row.playing .media-object .mo-add.button-play:hover:before,
+.tl-row.playing .media-object .mo-more.button-play:hover:before,
+.tl-row.playing.media-object .mo-add.button-play:hover:before,
+.tl-row.playing.media-object .mo-more.button-play:hover:before,
+.media-object.playing .media-object .mo-add.button-play:hover:before,
+.media-object.playing .media-object .mo-more.button-play:hover:before,
+.media-object.playing.media-object .mo-add.button-play:hover:before,
+.media-object.playing.media-object .mo-more.button-play:hover:before {
+  content: "\f130";
+}
+.media-object .mo-add.active,
+.media-object .mo-more.active {
+  color: $primary-accent-color;
+}
+.media-object .mo-add.active.contextmenu-active,
+.media-object .mo-more.active.contextmenu-active,
+.media-object .mo-add.active:not(:disabled):hover,
+.media-object .mo-more.active:not(:disabled):hover {
+  color: #1df269;
+}
+.media-object .mo-add.drop-target-active,
+.media-object .mo-more.drop-target-active {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+.media-object .mo-add.drop-target-active.contextmenu-active,
+.media-object .mo-more.drop-target-active.contextmenu-active,
+.media-object .mo-add.drop-target-active:not(:disabled):hover,
+.media-object .mo-more.drop-target-active:not(:disabled):hover {
+  color: #000000;
+}
+.media-object .mo-add.drop-target-active.contextmenu-active,
+.media-object .mo-more.drop-target-active.contextmenu-active,
+.media-object .mo-add.drop-target-active:not(:disabled):hover,
+.media-object .mo-more.drop-target-active:not(:disabled):hover {
+  background-color: #FFFFFF;
+}
+.media-object .mo-play {
+  height: 56px;
+  line-height: 54px;
+  padding-top: 2px;
+  padding-left: 56px;
+  padding-right: 56px;
+  border-radius: 28px;
+  background: rgba(24, 24, 24, 0.7);
+  color: #FFFFFF;
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: transform, box-shadow, color, background-color;
+  box-shadow: inset 0 0 0 1px #A0A0A0;
+  width: 56px;
+  padding-left: 0;
+  padding-right: 0;
+  left: 50%;
+  margin: -28px 0 0 -28px;
+}
+.media-object .mo-play .b-alt-text {
+  margin-top: -54px;
+}
+.media-object .mo-play.contextmenu-active,
+.media-object .mo-play:not(:disabled):hover {
+  background-color: rgba(24, 24, 24, 0.7);
+  color: #ffffff;
+}
+.media-object .mo-play:not(:disabled):hover:active {
+  background: rgba(16, 16, 16, 0.76);
+  color: #cccccc;
+  transform: scale(1);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .media-object .mo-play:not(:disabled):hover:active {
+    transform: scale(1);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .media-object .mo-play {
+    transition-duration: 50ms;
+  }
+}
+.media-object .mo-play:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .media-object .mo-play:after {
+    transition-duration: 50ms;
+  }
+}
+.media-object .mo-play.contextmenu-active,
+.media-object .mo-play:not(:disabled):hover {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .media-object .mo-play.contextmenu-active,
+  .media-object .mo-play:not(:disabled):hover {
+    transition-duration: 66ms;
+  }
+}
+.media-object .mo-play.contextmenu-active:after,
+.media-object .mo-play:not(:disabled):hover:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .media-object .mo-play.contextmenu-active:after,
+  .media-object .mo-play:not(:disabled):hover:after {
+    transition-duration: 66ms;
+  }
+}
+.media-object .mo-play:not(:disabled):hover:active {
+  transition: none;
+}
+.media-object .mo-play:not(:disabled):hover:active:after {
+  transition: none;
+}
+.media-object .mo-play:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 500px;
+  box-shadow: inset 0 0 0 1px #A0A0A0;
+}
+.media-object .mo-play.contextmenu-active,
+.media-object .mo-play:not(:disabled):hover {
+  box-shadow: inset 0 0 0 1px #FFFFFF, 0 0 0 1px transparent;
+}
+.media-object .mo-play.contextmenu-active:after,
+.media-object .mo-play:not(:disabled):hover:after {
+  box-shadow: inset 0 0 0 1px #FFFFFF;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .media-object .mo-play.contextmenu-active,
+  .media-object .mo-play:not(:disabled):hover {
+    box-shadow: inset 0 0 0 1px #FFFFFF;
+  }
+  .media-object .mo-play.contextmenu-active:after,
+  .media-object .mo-play:not(:disabled):hover:after {
+    box-shadow: inset 0 0 0 1px #FFFFFF;
+  }
+}
+.media-object .mo-play:not(:disabled):hover:active {
+  box-shadow: inset 0 0 0 1px #808080;
+}
+.media-object .mo-play:not(:disabled):hover:active:after {
+  box-shadow: inset 0 0 0 1px #808080;
+}
+.media-object .mo-play.contextmenu-active,
+.media-object .mo-play:not(:disabled):hover {
+  transform: scale(1.07142857);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .media-object .mo-play.contextmenu-active,
+  .media-object .mo-play:not(:disabled):hover {
+    transform: scale(1.07142857);
+  }
+}
+.media-object .mo-play:before {
+  font-family: "glue1-spoticon";
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  line-height: inherit;
+  vertical-align: bottom;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: left;
+  border-radius: 500px;
+  line-height: 56px;
+  font-size: 28px;
+  padding-left: 14px;
+  width: calc(100% - 14px);
+}
+.media-object .mo-play.button-play:before {
+  content: "\f132";
+}
+.media-object .mo-play.button-play.playing:not(:hover),
+.tl-row.playing .media-object .mo-play.button-play:not(:hover),
+.tl-row.playing.media-object .mo-play.button-play:not(:hover),
+.media-object.playing .media-object .mo-play.button-play:not(:hover),
+.media-object.playing.media-object .mo-play.button-play:not(:hover) {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+.media-object .mo-play.button-play.playing:not(:hover):after,
+.tl-row.playing .media-object .mo-play.button-play:not(:hover):after,
+.tl-row.playing.media-object .mo-play.button-play:not(:hover):after,
+.media-object.playing .media-object .mo-play.button-play:not(:hover):after,
+.media-object.playing.media-object .mo-play.button-play:not(:hover):after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 500px;
+  box-shadow: inset 0 0 0 1px transparent;
+}
+.media-object .mo-play.button-play.playing:not(:hover).contextmenu-active,
+.tl-row.playing .media-object .mo-play.button-play:not(:hover).contextmenu-active,
+.tl-row.playing.media-object .mo-play.button-play:not(:hover).contextmenu-active,
+.media-object.playing .media-object .mo-play.button-play:not(:hover).contextmenu-active,
+.media-object.playing.media-object .mo-play.button-play:not(:hover).contextmenu-active,
+.media-object .mo-play.button-play.playing:not(:hover):not(:disabled):hover,
+.tl-row.playing .media-object .mo-play.button-play:not(:hover):not(:disabled):hover,
+.tl-row.playing.media-object .mo-play.button-play:not(:hover):not(:disabled):hover,
+.media-object.playing .media-object .mo-play.button-play:not(:hover):not(:disabled):hover,
+.media-object.playing.media-object .mo-play.button-play:not(:hover):not(:disabled):hover {
+  box-shadow: inset 0 0 0 1px transparent, 0 0 0 1px transparent;
+}
+.media-object .mo-play.button-play.playing:not(:hover).contextmenu-active:after,
+.tl-row.playing .media-object .mo-play.button-play:not(:hover).contextmenu-active:after,
+.tl-row.playing.media-object .mo-play.button-play:not(:hover).contextmenu-active:after,
+.media-object.playing .media-object .mo-play.button-play:not(:hover).contextmenu-active:after,
+.media-object.playing.media-object .mo-play.button-play:not(:hover).contextmenu-active:after,
+.media-object .mo-play.button-play.playing:not(:hover):not(:disabled):hover:after,
+.tl-row.playing .media-object .mo-play.button-play:not(:hover):not(:disabled):hover:after,
+.tl-row.playing.media-object .mo-play.button-play:not(:hover):not(:disabled):hover:after,
+.media-object.playing .media-object .mo-play.button-play:not(:hover):not(:disabled):hover:after,
+.media-object.playing.media-object .mo-play.button-play:not(:hover):not(:disabled):hover:after {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .media-object .mo-play.button-play.playing:not(:hover).contextmenu-active,
+  .tl-row.playing .media-object .mo-play.button-play:not(:hover).contextmenu-active,
+  .tl-row.playing.media-object .mo-play.button-play:not(:hover).contextmenu-active,
+  .media-object.playing .media-object .mo-play.button-play:not(:hover).contextmenu-active,
+  .media-object.playing.media-object .mo-play.button-play:not(:hover).contextmenu-active,
+  .media-object .mo-play.button-play.playing:not(:hover):not(:disabled):hover,
+  .tl-row.playing .media-object .mo-play.button-play:not(:hover):not(:disabled):hover,
+  .tl-row.playing.media-object .mo-play.button-play:not(:hover):not(:disabled):hover,
+  .media-object.playing .media-object .mo-play.button-play:not(:hover):not(:disabled):hover,
+  .media-object.playing.media-object .mo-play.button-play:not(:hover):not(:disabled):hover {
+    box-shadow: inset 0 0 0 1px transparent;
+  }
+  .media-object .mo-play.button-play.playing:not(:hover).contextmenu-active:after,
+  .tl-row.playing .media-object .mo-play.button-play:not(:hover).contextmenu-active:after,
+  .tl-row.playing.media-object .mo-play.button-play:not(:hover).contextmenu-active:after,
+  .media-object.playing .media-object .mo-play.button-play:not(:hover).contextmenu-active:after,
+  .media-object.playing.media-object .mo-play.button-play:not(:hover).contextmenu-active:after,
+  .media-object .mo-play.button-play.playing:not(:hover):not(:disabled):hover:after,
+  .tl-row.playing .media-object .mo-play.button-play:not(:hover):not(:disabled):hover:after,
+  .tl-row.playing.media-object .mo-play.button-play:not(:hover):not(:disabled):hover:after,
+  .media-object.playing .media-object .mo-play.button-play:not(:hover):not(:disabled):hover:after,
+  .media-object.playing.media-object .mo-play.button-play:not(:hover):not(:disabled):hover:after {
+    box-shadow: inset 0 0 0 1px transparent;
+  }
+}
+.media-object .mo-play.button-play.playing:not(:hover):not(:disabled):hover:active,
+.tl-row.playing .media-object .mo-play.button-play:not(:hover):not(:disabled):hover:active,
+.tl-row.playing.media-object .mo-play.button-play:not(:hover):not(:disabled):hover:active,
+.media-object.playing .media-object .mo-play.button-play:not(:hover):not(:disabled):hover:active,
+.media-object.playing.media-object .mo-play.button-play:not(:hover):not(:disabled):hover:active {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+.media-object .mo-play.button-play.playing:not(:hover):not(:disabled):hover:active:after,
+.tl-row.playing .media-object .mo-play.button-play:not(:hover):not(:disabled):hover:active:after,
+.tl-row.playing.media-object .mo-play.button-play:not(:hover):not(:disabled):hover:active:after,
+.media-object.playing .media-object .mo-play.button-play:not(:hover):not(:disabled):hover:active:after,
+.media-object.playing.media-object .mo-play.button-play:not(:hover):not(:disabled):hover:active:after {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+.media-object .mo-play.button-play.playing:not(:hover):before,
+.tl-row.playing .media-object .mo-play.button-play:not(:hover):before,
+.tl-row.playing.media-object .mo-play.button-play:not(:hover):before,
+.media-object.playing .media-object .mo-play.button-play:not(:hover):before,
+.media-object.playing.media-object .mo-play.button-play:not(:hover):before {
+  content: "\f1D0";
+  padding-left: 12.25px;
+  width: calc(100% - 12.25px);
+}
+.media-object .mo-play.button-play.playing:hover:before,
+.tl-row.playing .media-object .mo-play.button-play:hover:before,
+.tl-row.playing.media-object .mo-play.button-play:hover:before,
+.media-object.playing .media-object .mo-play.button-play:hover:before,
+.media-object.playing.media-object .mo-play.button-play:hover:before {
+  content: "\f130";
+}
+.media-object .mo-play:disabled:not(.current) {
+  pointer-events: auto;
+}
+.media-object.playing .mo-play,
+.media-object .mo-play.playing {
+  visibility: visible;
+}
+.media-object.added .mo-add:before {
+  content: "\f1C9" !important;
+}
+.media-object.added .mo-add:hover:not(.just-changed):not(.stay-added):before {
+  content: "\f1C5" !important;
+}
+.mo-more {
+  left: 84%;
+}
+.mo-delete {
+  top: 13px;
+  right: 18px;
+  margin: 0;
+}
+.mo-delete:before {
+  content: "\f161";
+  font-size: 24px;
+}
+.mo-image-wrapper:hover .mo-add,
+.mo-wide-image-wrapper:hover .mo-add,
+.mo-image-wrapper:hover .mo-more,
+.mo-wide-image-wrapper:hover .mo-more,
+.mo-image-wrapper:hover .mo-play,
+.mo-wide-image-wrapper:hover .mo-play,
+.mo-image-wrapper:hover .mo-overlay,
+.mo-wide-image-wrapper:hover .mo-overlay,
+.mo-image-wrapper:hover .mo-delete,
+.mo-wide-image-wrapper:hover .mo-delete {
+  visibility: visible;
+}
+.mo-overlay {
+  background: rgba(0, 0, 0, 0.75);
+  height: 100%;
+  position: absolute;
+  visibility: hidden;
+  width: 105%;
+  z-index: 3;
+}
+@keyframes previewing {
+  0% {
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    border-color: #FFFFFF;
+  }
+  100% {
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+}
+@-webkit-keyframes previewing {
+  0% {
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    border-color: #FFFFFF;
+  }
+  100% {
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+}
+.media-object.previewing .mo-play {
+  -webkit-animation: previewing 1.3s linear infinite;
+  animation: previewing 1.3s linear infinite;
+}
+.media-object.previewing .mo-play:after {
+  -webkit-animation: previewing 1.3s linear infinite;
+  animation: previewing 1.3s linear infinite;
+}
+.mo-placeholder {
+  font-family: "glue1-spoticon";
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+  line-height: inherit;
+  font-size: 9.5px;
+  height: 60%;
+  left: 20%;
+  position: absolute;
+  text-anchor: middle;
+  top: 20%;
+  vertical-align: bottom;
+  width: 60%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.media-object .album-placeholder,
+.media-object .artist-placeholder,
+.media-object .playlist-placeholder,
+.media-object .playlist-folder-placeholder,
+.media-object .user-placeholder,
+.media-object .genre-placeholder,
+.media-object .collection-placeholder,
+.media-object .local-files-placeholder {
+  display: none;
+  fill: #404040;
+}
+.media-object-album .album-placeholder {
+  display: block;
+}
+.media-object-artist .artist-placeholder {
+  display: block;
+}
+.media-object-playlist .playlist-placeholder {
+  display: block;
+}
+.media-object-playlist-folder .playlist-folder-placeholder {
+  display: block;
+}
+.media-object-user .user-placeholder {
+  display: block;
+}
+.media-object-genre .genre-placeholder {
+  display: block;
+}
+.media-object-collection .collection-placeholder {
+  display: block;
+}
+.media-object-local-files .local-files-placeholder {
+  display: block;
+}
+.mo-verified {
+  background-color: #4687D6;
+  border-radius: 100px;
+  bottom: 14%;
+  color: #FFFFFF;
+  display: none;
+  font-size: 16px;
+  height: 20px;
+  line-height: 20px;
+  margin: 0 -10px -10px 0;
+  position: absolute;
+  right: 23%;
+  width: 20px;
+}
+.mo-verified .spoticon-check-16 {
+  display: block;
+  text-align: center;
+}
+.mo-verified .spoticon-check-16:before {
+  font-size: 12px;
+  line-height: inherit;
+}
+.media-object-simple.media-object-artist .mo-verified,
+.media-object-simple.media-object-user .mo-verified,
+.media-object-transparent.media-object-artist .mo-verified,
+.media-object-transparent.media-object-user .mo-verified {
+  bottom: 9%;
+  right: 20%;
+}
+.media-object-artist.verified .mo-verified,
+.media-object-user.verified .mo-verified {
+  display: block;
+}
+.media-object-small.media-object-horizontal .mo-verified {
+  height: 14px;
+  line-height: 15px;
+  margin: 0 -7px -7px 0;
+  width: 14px;
+}
+.media-object-small.media-object-horizontal .mo-verified .spoticon-check-16:before {
+  font-size: 10px;
+}
+.mo-info {
+  background-color: #282828;
+  padding: 13px 8px 4px;
+  height: 63px;
+}
+.mo-info.description {
+  height: 117px;
+}
+.mo-info.meta {
+  height: 94px;
+}
+.mo-info.subtitle {
+  height: 90px;
+}
+.mo-info.description.meta {
+  height: 144px;
+}
+.mo-info.description.subtitle {
+  height: 144px;
+}
+.mo-info.subtitle.meta {
+  height: 121px;
+}
+.mo-info.subtitle.meta.description {
+  height: 175px;
+}
+.mo-info.socialproof.description {
+  height: 154px;
+}
+.mo-info.socialproof.meta {
+  height: 131px;
+}
+.mo-info.socialproof.subtitle {
+  height: 127px;
+}
+.mo-info.socialproof.description.meta {
+  height: 181px;
+}
+.mo-info.socialproof.description.subtitle {
+  height: 181px;
+}
+.mo-info.socialproof.subtitle.meta {
+  height: 158px;
+}
+.mo-info.socialproof.subtitle.meta.description {
+  height: 212px;
+}
+.mo-info-wrapper {
+  height: 100%;
+  position: relative;
+}
+.mo-description,
+.mo-meta,
+.mo-subtitle,
+.mo-title {
+  display: block;
+  margin: 0 0 8px;
+  max-width: 100%;
+}
+.mo-description {
+  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.015em;
+  margin-bottom: 8px;
+  line-height: 20px;
+  max-height: 60px;
+  overflow: hidden;
+  position: relative;
+  white-space: normal;
+}
+.mo-description .ellipsis {
+  content: ' ';
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 20px;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  width: 100%;
+  background-image: -webkit-gradient(linear, 70% top, 100% top, from(rgba(40, 40, 40, 0)), to(#282828));
+  background-image: -moz-linear-gradient(left, rgba(40, 40, 40, 0) 70%, #282828 100%);
+  background-image: linear-gradient(to right, rgba(40, 40, 40, 0) 70%, #282828 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00282828', endColorstr='#ff282828', GradientType=1);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .mo-description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    /* number of lines to show */
+    -webkit-box-orient: vertical;
+  }
+  .mo-description .ellipsis {
+    display: none !important;
+  }
+}
+.mo-meta {
+  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.015em;
+  font-weight: 200;
+  color: #A0A0A0;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 16px;
+  bottom: 0;
+  position: absolute;
+}
+.mo-subtitle {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.mo-title-border {
+  border-bottom: 1px solid transparent;
+}
+.mo-title {
+  border-bottom: none;
+  line-height: 20px;
+  max-height: 40px;
+  overflow: hidden;
+  position: relative;
+  white-space: normal;
+}
+.mo-title .ellipsis {
+  content: ' ';
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 20px;
+  position: absolute;
+  right: 0;
+  top: 20px;
+  width: 100%;
+  background-image: -webkit-gradient(linear, 70% top, 100% top, from(rgba(40, 40, 40, 0)), to(#282828));
+  background-image: -moz-linear-gradient(left, rgba(40, 40, 40, 0) 70%, #282828 100%);
+  background-image: linear-gradient(to right, rgba(40, 40, 40, 0) 70%, #282828 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00282828', endColorstr='#ff282828', GradientType=1);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .mo-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* number of lines to show */
+    -webkit-box-orient: vertical;
+  }
+  .mo-title .ellipsis {
+    display: none !important;
+  }
+}
+.mo-title:hover .mo-title-border {
+  border-bottom-color: currentcolor;
+}
+.media-object-horizontal {
+  height: 100px;
+}
+.media-object-horizontal .mo-image-wrapper {
+  float: left;
+  padding: 0;
+  height: 100px;
+  width: 100px;
+}
+.media-object-horizontal .mo-overlay {
+  height: 100%;
+  width: 100%;
+}
+.media-object-horizontal .mo-info {
+  padding-right: 16px;
+  padding-left: 16px;
+  margin-left: 100px;
+  min-height: 100px;
+  height: 100px !important;
+}
+.media-object-horizontal .mo-add,
+.media-object-horizontal .mo-more,
+.media-object-horizontal .mo-description {
+  display: none;
+}
+.media-object-horizontal .facepile .mo-image-wrapper {
+  height: auto;
+  padding-bottom: 100%;
+  width: 100%;
+}
+.media-object-medium.media-object-horizontal {
+  height: 76px;
+}
+.media-object-medium.media-object-horizontal .mo-image-wrapper {
+  height: 76px;
+  width: 76px;
+}
+.media-object-medium.media-object-horizontal .mo-info {
+  margin-left: 76px;
+  min-height: 76px;
+  height: 76px !important;
+}
+.media-object-medium.media-object-horizontal .button.mo-play {
+  margin: -18px 0 0 -18px;
+  height: 36px;
+  line-height: 34px;
+  padding-top: 2px;
+  padding-left: 36px;
+  padding-right: 36px;
+  border-radius: 18px;
+  background: rgba(24, 24, 24, 0.7);
+  color: #FFFFFF;
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: transform, box-shadow, color, background-color;
+  box-shadow: inset 0 0 0 1px #A0A0A0;
+  width: 36px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.media-object-medium.media-object-horizontal .button.mo-play .b-alt-text {
+  margin-top: -34px;
+}
+.media-object-medium.media-object-horizontal .button.mo-play.contextmenu-active,
+.media-object-medium.media-object-horizontal .button.mo-play:not(:disabled):hover {
+  background-color: rgba(24, 24, 24, 0.7);
+  color: #ffffff;
+}
+.media-object-medium.media-object-horizontal .button.mo-play:not(:disabled):hover:active {
+  background: rgba(16, 16, 16, 0.76);
+  color: #cccccc;
+  transform: scale(1);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .media-object-medium.media-object-horizontal .button.mo-play:not(:disabled):hover:active {
+    transform: scale(1);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .media-object-medium.media-object-horizontal .button.mo-play {
+    transition-duration: 50ms;
+  }
+}
+.media-object-medium.media-object-horizontal .button.mo-play:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .media-object-medium.media-object-horizontal .button.mo-play:after {
+    transition-duration: 50ms;
+  }
+}
+.media-object-medium.media-object-horizontal .button.mo-play.contextmenu-active,
+.media-object-medium.media-object-horizontal .button.mo-play:not(:disabled):hover {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .media-object-medium.media-object-horizontal .button.mo-play.contextmenu-active,
+  .media-object-medium.media-object-horizontal .button.mo-play:not(:disabled):hover {
+    transition-duration: 66ms;
+  }
+}
+.media-object-medium.media-object-horizontal .button.mo-play.contextmenu-active:after,
+.media-object-medium.media-object-horizontal .button.mo-play:not(:disabled):hover:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .media-object-medium.media-object-horizontal .button.mo-play.contextmenu-active:after,
+  .media-object-medium.media-object-horizontal .button.mo-play:not(:disabled):hover:after {
+    transition-duration: 66ms;
+  }
+}
+.media-object-medium.media-object-horizontal .button.mo-play:not(:disabled):hover:active {
+  transition: none;
+}
+.media-object-medium.media-object-horizontal .button.mo-play:not(:disabled):hover:active:after {
+  transition: none;
+}
+.media-object-medium.media-object-horizontal .button.mo-play:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 500px;
+  box-shadow: inset 0 0 0 1px #A0A0A0;
+}
+.media-object-medium.media-object-horizontal .button.mo-play.contextmenu-active,
+.media-object-medium.media-object-horizontal .button.mo-play:not(:disabled):hover {
+  box-shadow: inset 0 0 0 1px #FFFFFF, 0 0 0 1px transparent;
+}
+.media-object-medium.media-object-horizontal .button.mo-play.contextmenu-active:after,
+.media-object-medium.media-object-horizontal .button.mo-play:not(:disabled):hover:after {
+  box-shadow: inset 0 0 0 1px #FFFFFF;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .media-object-medium.media-object-horizontal .button.mo-play.contextmenu-active,
+  .media-object-medium.media-object-horizontal .button.mo-play:not(:disabled):hover {
+    box-shadow: inset 0 0 0 1px #FFFFFF;
+  }
+  .media-object-medium.media-object-horizontal .button.mo-play.contextmenu-active:after,
+  .media-object-medium.media-object-horizontal .button.mo-play:not(:disabled):hover:after {
+    box-shadow: inset 0 0 0 1px #FFFFFF;
+  }
+}
+.media-object-medium.media-object-horizontal .button.mo-play:not(:disabled):hover:active {
+  box-shadow: inset 0 0 0 1px #808080;
+}
+.media-object-medium.media-object-horizontal .button.mo-play:not(:disabled):hover:active:after {
+  box-shadow: inset 0 0 0 1px #808080;
+}
+.media-object-medium.media-object-horizontal .button.mo-play.contextmenu-active,
+.media-object-medium.media-object-horizontal .button.mo-play:not(:disabled):hover {
+  transform: scale(1.11111111);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .media-object-medium.media-object-horizontal .button.mo-play.contextmenu-active,
+  .media-object-medium.media-object-horizontal .button.mo-play:not(:disabled):hover {
+    transform: scale(1.11111111);
+  }
+}
+.media-object-medium.media-object-horizontal .button.mo-play:before {
+  font-family: "glue1-spoticon";
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  line-height: inherit;
+  vertical-align: bottom;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: left;
+  border-radius: 500px;
+  line-height: 36px;
+  font-size: 18px;
+  padding-left: 9px;
+  width: calc(100% - 9px);
+}
+.media-object-medium.media-object-horizontal .button.mo-play.button-play:before {
+  content: "\f132";
+}
+.media-object-medium.media-object-horizontal .button.mo-play.button-play.playing:not(:hover),
+.tl-row.playing .media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover),
+.tl-row.playing.media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover),
+.media-object.playing .media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover),
+.media-object.playing.media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover) {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+.media-object-medium.media-object-horizontal .button.mo-play.button-play.playing:not(:hover):after,
+.tl-row.playing .media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover):after,
+.tl-row.playing.media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover):after,
+.media-object.playing .media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover):after,
+.media-object.playing.media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover):after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 500px;
+  box-shadow: inset 0 0 0 1px transparent;
+}
+.media-object-medium.media-object-horizontal .button.mo-play.button-play.playing:not(:hover).contextmenu-active,
+.tl-row.playing .media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover).contextmenu-active,
+.tl-row.playing.media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover).contextmenu-active,
+.media-object.playing .media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover).contextmenu-active,
+.media-object.playing.media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover).contextmenu-active,
+.media-object-medium.media-object-horizontal .button.mo-play.button-play.playing:not(:hover):not(:disabled):hover,
+.tl-row.playing .media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover,
+.tl-row.playing.media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover,
+.media-object.playing .media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover,
+.media-object.playing.media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover {
+  box-shadow: inset 0 0 0 1px transparent, 0 0 0 1px transparent;
+}
+.media-object-medium.media-object-horizontal .button.mo-play.button-play.playing:not(:hover).contextmenu-active:after,
+.tl-row.playing .media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover).contextmenu-active:after,
+.tl-row.playing.media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover).contextmenu-active:after,
+.media-object.playing .media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover).contextmenu-active:after,
+.media-object.playing.media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover).contextmenu-active:after,
+.media-object-medium.media-object-horizontal .button.mo-play.button-play.playing:not(:hover):not(:disabled):hover:after,
+.tl-row.playing .media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover:after,
+.tl-row.playing.media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover:after,
+.media-object.playing .media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover:after,
+.media-object.playing.media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover:after {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .media-object-medium.media-object-horizontal .button.mo-play.button-play.playing:not(:hover).contextmenu-active,
+  .tl-row.playing .media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover).contextmenu-active,
+  .tl-row.playing.media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover).contextmenu-active,
+  .media-object.playing .media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover).contextmenu-active,
+  .media-object.playing.media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover).contextmenu-active,
+  .media-object-medium.media-object-horizontal .button.mo-play.button-play.playing:not(:hover):not(:disabled):hover,
+  .tl-row.playing .media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover,
+  .tl-row.playing.media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover,
+  .media-object.playing .media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover,
+  .media-object.playing.media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover {
+    box-shadow: inset 0 0 0 1px transparent;
+  }
+  .media-object-medium.media-object-horizontal .button.mo-play.button-play.playing:not(:hover).contextmenu-active:after,
+  .tl-row.playing .media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover).contextmenu-active:after,
+  .tl-row.playing.media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover).contextmenu-active:after,
+  .media-object.playing .media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover).contextmenu-active:after,
+  .media-object.playing.media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover).contextmenu-active:after,
+  .media-object-medium.media-object-horizontal .button.mo-play.button-play.playing:not(:hover):not(:disabled):hover:after,
+  .tl-row.playing .media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover:after,
+  .tl-row.playing.media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover:after,
+  .media-object.playing .media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover:after,
+  .media-object.playing.media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover:after {
+    box-shadow: inset 0 0 0 1px transparent;
+  }
+}
+.media-object-medium.media-object-horizontal .button.mo-play.button-play.playing:not(:hover):not(:disabled):hover:active,
+.tl-row.playing .media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover:active,
+.tl-row.playing.media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover:active,
+.media-object.playing .media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover:active,
+.media-object.playing.media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover:active {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+.media-object-medium.media-object-horizontal .button.mo-play.button-play.playing:not(:hover):not(:disabled):hover:active:after,
+.tl-row.playing .media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover:active:after,
+.tl-row.playing.media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover:active:after,
+.media-object.playing .media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover:active:after,
+.media-object.playing.media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover:active:after {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+.media-object-medium.media-object-horizontal .button.mo-play.button-play.playing:not(:hover):before,
+.tl-row.playing .media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover):before,
+.tl-row.playing.media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover):before,
+.media-object.playing .media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover):before,
+.media-object.playing.media-object-medium.media-object-horizontal .button.mo-play.button-play:not(:hover):before {
+  content: "\f1D0";
+  padding-left: 7.875px;
+  width: calc(100% - 7.875px);
+}
+.media-object-medium.media-object-horizontal .button.mo-play.button-play.playing:hover:before,
+.tl-row.playing .media-object-medium.media-object-horizontal .button.mo-play.button-play:hover:before,
+.tl-row.playing.media-object-medium.media-object-horizontal .button.mo-play.button-play:hover:before,
+.media-object.playing .media-object-medium.media-object-horizontal .button.mo-play.button-play:hover:before,
+.media-object.playing.media-object-medium.media-object-horizontal .button.mo-play.button-play:hover:before {
+  content: "\f130";
+}
+.media-object-small .mo-add,
+.media-object-small .mo-more,
+.media-object-small .mo-subtitle,
+.media-object-small .mo-description,
+.media-object-small .facepile,
+.media-object-small .facepile-badge {
+  display: none;
+}
+.media-object-small .mo-info {
+  height: 60px !important;
+}
+.media-object-small.media-object-horizontal {
+  height: 50px;
+}
+.media-object-small.media-object-horizontal .mo-image-wrapper {
+  height: 50px;
+  width: 50px;
+}
+.media-object-small.media-object-horizontal.media-object-artist .mo-image,
+.media-object-small.media-object-horizontal.media-object-user .mo-image {
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  top: 5px;
+}
+.media-object-small.media-object-horizontal .mo-info {
+  margin-left: 50px;
+  min-height: 50px;
+  height: 50px !important;
+}
+.media-object-small.media-object-horizontal .button.mo-play {
+  margin: -18px 0 0 -18px;
+  height: 36px;
+  line-height: 34px;
+  padding-top: 2px;
+  padding-left: 36px;
+  padding-right: 36px;
+  border-radius: 18px;
+  background: rgba(24, 24, 24, 0.7);
+  color: #FFFFFF;
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: transform, box-shadow, color, background-color;
+  box-shadow: inset 0 0 0 1px #A0A0A0;
+  width: 36px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.media-object-small.media-object-horizontal .button.mo-play .b-alt-text {
+  margin-top: -34px;
+}
+.media-object-small.media-object-horizontal .button.mo-play.contextmenu-active,
+.media-object-small.media-object-horizontal .button.mo-play:not(:disabled):hover {
+  background-color: rgba(24, 24, 24, 0.7);
+  color: #ffffff;
+}
+.media-object-small.media-object-horizontal .button.mo-play:not(:disabled):hover:active {
+  background: rgba(16, 16, 16, 0.76);
+  color: #cccccc;
+  transform: scale(1);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .media-object-small.media-object-horizontal .button.mo-play:not(:disabled):hover:active {
+    transform: scale(1);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .media-object-small.media-object-horizontal .button.mo-play {
+    transition-duration: 50ms;
+  }
+}
+.media-object-small.media-object-horizontal .button.mo-play:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .media-object-small.media-object-horizontal .button.mo-play:after {
+    transition-duration: 50ms;
+  }
+}
+.media-object-small.media-object-horizontal .button.mo-play.contextmenu-active,
+.media-object-small.media-object-horizontal .button.mo-play:not(:disabled):hover {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .media-object-small.media-object-horizontal .button.mo-play.contextmenu-active,
+  .media-object-small.media-object-horizontal .button.mo-play:not(:disabled):hover {
+    transition-duration: 66ms;
+  }
+}
+.media-object-small.media-object-horizontal .button.mo-play.contextmenu-active:after,
+.media-object-small.media-object-horizontal .button.mo-play:not(:disabled):hover:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .media-object-small.media-object-horizontal .button.mo-play.contextmenu-active:after,
+  .media-object-small.media-object-horizontal .button.mo-play:not(:disabled):hover:after {
+    transition-duration: 66ms;
+  }
+}
+.media-object-small.media-object-horizontal .button.mo-play:not(:disabled):hover:active {
+  transition: none;
+}
+.media-object-small.media-object-horizontal .button.mo-play:not(:disabled):hover:active:after {
+  transition: none;
+}
+.media-object-small.media-object-horizontal .button.mo-play:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 500px;
+  box-shadow: inset 0 0 0 1px #A0A0A0;
+}
+.media-object-small.media-object-horizontal .button.mo-play.contextmenu-active,
+.media-object-small.media-object-horizontal .button.mo-play:not(:disabled):hover {
+  box-shadow: inset 0 0 0 1px #FFFFFF, 0 0 0 1px transparent;
+}
+.media-object-small.media-object-horizontal .button.mo-play.contextmenu-active:after,
+.media-object-small.media-object-horizontal .button.mo-play:not(:disabled):hover:after {
+  box-shadow: inset 0 0 0 1px #FFFFFF;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .media-object-small.media-object-horizontal .button.mo-play.contextmenu-active,
+  .media-object-small.media-object-horizontal .button.mo-play:not(:disabled):hover {
+    box-shadow: inset 0 0 0 1px #FFFFFF;
+  }
+  .media-object-small.media-object-horizontal .button.mo-play.contextmenu-active:after,
+  .media-object-small.media-object-horizontal .button.mo-play:not(:disabled):hover:after {
+    box-shadow: inset 0 0 0 1px #FFFFFF;
+  }
+}
+.media-object-small.media-object-horizontal .button.mo-play:not(:disabled):hover:active {
+  box-shadow: inset 0 0 0 1px #808080;
+}
+.media-object-small.media-object-horizontal .button.mo-play:not(:disabled):hover:active:after {
+  box-shadow: inset 0 0 0 1px #808080;
+}
+.media-object-small.media-object-horizontal .button.mo-play.contextmenu-active,
+.media-object-small.media-object-horizontal .button.mo-play:not(:disabled):hover {
+  transform: scale(1.11111111);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .media-object-small.media-object-horizontal .button.mo-play.contextmenu-active,
+  .media-object-small.media-object-horizontal .button.mo-play:not(:disabled):hover {
+    transform: scale(1.11111111);
+  }
+}
+.media-object-small.media-object-horizontal .button.mo-play:before {
+  font-family: "glue1-spoticon";
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  line-height: inherit;
+  vertical-align: bottom;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: left;
+  border-radius: 500px;
+  line-height: 36px;
+  font-size: 18px;
+  padding-left: 9px;
+  width: calc(100% - 9px);
+}
+.media-object-small.media-object-horizontal .button.mo-play.button-play:before {
+  content: "\f132";
+}
+.media-object-small.media-object-horizontal .button.mo-play.button-play.playing:not(:hover),
+.tl-row.playing .media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover),
+.tl-row.playing.media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover),
+.media-object.playing .media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover),
+.media-object.playing.media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover) {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+.media-object-small.media-object-horizontal .button.mo-play.button-play.playing:not(:hover):after,
+.tl-row.playing .media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover):after,
+.tl-row.playing.media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover):after,
+.media-object.playing .media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover):after,
+.media-object.playing.media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover):after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 500px;
+  box-shadow: inset 0 0 0 1px transparent;
+}
+.media-object-small.media-object-horizontal .button.mo-play.button-play.playing:not(:hover).contextmenu-active,
+.tl-row.playing .media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover).contextmenu-active,
+.tl-row.playing.media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover).contextmenu-active,
+.media-object.playing .media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover).contextmenu-active,
+.media-object.playing.media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover).contextmenu-active,
+.media-object-small.media-object-horizontal .button.mo-play.button-play.playing:not(:hover):not(:disabled):hover,
+.tl-row.playing .media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover,
+.tl-row.playing.media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover,
+.media-object.playing .media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover,
+.media-object.playing.media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover {
+  box-shadow: inset 0 0 0 1px transparent, 0 0 0 1px transparent;
+}
+.media-object-small.media-object-horizontal .button.mo-play.button-play.playing:not(:hover).contextmenu-active:after,
+.tl-row.playing .media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover).contextmenu-active:after,
+.tl-row.playing.media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover).contextmenu-active:after,
+.media-object.playing .media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover).contextmenu-active:after,
+.media-object.playing.media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover).contextmenu-active:after,
+.media-object-small.media-object-horizontal .button.mo-play.button-play.playing:not(:hover):not(:disabled):hover:after,
+.tl-row.playing .media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover:after,
+.tl-row.playing.media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover:after,
+.media-object.playing .media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover:after,
+.media-object.playing.media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover:after {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .media-object-small.media-object-horizontal .button.mo-play.button-play.playing:not(:hover).contextmenu-active,
+  .tl-row.playing .media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover).contextmenu-active,
+  .tl-row.playing.media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover).contextmenu-active,
+  .media-object.playing .media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover).contextmenu-active,
+  .media-object.playing.media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover).contextmenu-active,
+  .media-object-small.media-object-horizontal .button.mo-play.button-play.playing:not(:hover):not(:disabled):hover,
+  .tl-row.playing .media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover,
+  .tl-row.playing.media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover,
+  .media-object.playing .media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover,
+  .media-object.playing.media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover {
+    box-shadow: inset 0 0 0 1px transparent;
+  }
+  .media-object-small.media-object-horizontal .button.mo-play.button-play.playing:not(:hover).contextmenu-active:after,
+  .tl-row.playing .media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover).contextmenu-active:after,
+  .tl-row.playing.media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover).contextmenu-active:after,
+  .media-object.playing .media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover).contextmenu-active:after,
+  .media-object.playing.media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover).contextmenu-active:after,
+  .media-object-small.media-object-horizontal .button.mo-play.button-play.playing:not(:hover):not(:disabled):hover:after,
+  .tl-row.playing .media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover:after,
+  .tl-row.playing.media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover:after,
+  .media-object.playing .media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover:after,
+  .media-object.playing.media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover:after {
+    box-shadow: inset 0 0 0 1px transparent;
+  }
+}
+.media-object-small.media-object-horizontal .button.mo-play.button-play.playing:not(:hover):not(:disabled):hover:active,
+.tl-row.playing .media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover:active,
+.tl-row.playing.media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover:active,
+.media-object.playing .media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover:active,
+.media-object.playing.media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover:active {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+.media-object-small.media-object-horizontal .button.mo-play.button-play.playing:not(:hover):not(:disabled):hover:active:after,
+.tl-row.playing .media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover:active:after,
+.tl-row.playing.media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover:active:after,
+.media-object.playing .media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover:active:after,
+.media-object.playing.media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover):not(:disabled):hover:active:after {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+.media-object-small.media-object-horizontal .button.mo-play.button-play.playing:not(:hover):before,
+.tl-row.playing .media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover):before,
+.tl-row.playing.media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover):before,
+.media-object.playing .media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover):before,
+.media-object.playing.media-object-small.media-object-horizontal .button.mo-play.button-play:not(:hover):before {
+  content: "\f1D0";
+  padding-left: 7.875px;
+  width: calc(100% - 7.875px);
+}
+.media-object-small.media-object-horizontal .button.mo-play.button-play.playing:hover:before,
+.tl-row.playing .media-object-small.media-object-horizontal .button.mo-play.button-play:hover:before,
+.tl-row.playing.media-object-small.media-object-horizontal .button.mo-play.button-play:hover:before,
+.media-object.playing .media-object-small.media-object-horizontal .button.mo-play.button-play:hover:before,
+.media-object.playing.media-object-small.media-object-horizontal .button.mo-play.button-play:hover:before {
+  content: "\f130";
+}
+.media-object-small.media-object-horizontal .mo-subtitle,
+.media-object-small.media-object-horizontal .mo-delete {
+  display: none;
+}
+.media-object-small.media-object-horizontal .mo-title {
+  margin-top: 3px;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.media-object-small.media-object-horizontal.media-object-transparent .mo-image {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+@-moz-document url-prefix() {
+  .media-object-small.media-object-horizontal .mo-play:before {
+    top: 0px !important;
+  }
+}
+.media-object-radio .mo-add,
+.media-object-radio .mo-more {
+  display: none;
+}
+.media-object-radio .mo-play:before {
+  content: "\f1C7" !important;
+}
+.media-object-link .mo-add,
+.media-object-link .mo-more,
+.media-object-link .mo-play,
+.media-object-link .mo-overlay,
+.media-object-link .mo-delete {
+  display: none;
+}
+.media-object.show-placeholder .mo-image-wrapper {
+  background-color: #282828;
+}
+.media-object.show-placeholder .mo-image,
+.media-object.show-placeholder .mo-image-background {
+  display: none;
+}
+.media-object-artist.show-placeholder .mo-image-wrapper,
+.media-object-user.show-placeholder .mo-image-wrapper {
+  background: transparent;
+}
+.media-object-artist.show-placeholder .mo-image-background-color,
+.media-object-user.show-placeholder .mo-image-background-color {
+  background: #282828;
+  background-clip: content-box;
+  border-radius: 500px;
+  display: block;
+  padding: 10px;
+}
+.media-object-artist.show-placeholder .mo-placeholder,
+.media-object-user.show-placeholder .mo-placeholder {
+  z-index: 2;
+}
+.media-object-artist.show-placeholder.media-object-image .mo-image-background-color,
+.media-object-user.show-placeholder.media-object-image .mo-image-background-color {
+  padding: 0;
+}
+.media-object-simple .mo-image-background,
+.media-object-transparent .mo-image-background {
+  display: none;
+}
+.media-object-simple .mo-image-wrapper,
+.media-object-simple .mo-image-background-color,
+.media-object-transparent .mo-image-wrapper,
+.media-object-transparent .mo-image-background-color {
+  background: transparent;
+}
+.media-object-simple.media-object-artist .mo-image,
+.media-object-simple.media-object-user .mo-image,
+.media-object-transparent.media-object-artist .mo-image,
+.media-object-transparent.media-object-user .mo-image {
+  top: 0;
+  left: 0;
+  bottom: auto;
+  right: auto;
+  width: 100%;
+  height: 100%;
+}
+.media-object-transparent .mo-info {
+  background: transparent;
+}
+.media-object-transparent.media-object-artist .mo-overlay,
+.media-object-transparent.media-object-user .mo-overlay {
+  border-radius: 50%;
+}
+.media-object-station .mo-image-background-color,
+.media-object-station .mo-verified {
+  display: none;
+}
+.media-object-station .mo-station-layer {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+.media-object-station .mo-image {
+  -webkit-filter: blur(40px);
+  -moz-filter: blur(40px);
+  -o-filter: blur(40px);
+  -ms-filter: blur(40px);
+  filter: blur(40px);
+}
+.media-object-station .mo-station-highlight {
+  opacity: .6;
+}
+.media-object-station .mo-station-mask {
+  background-image: url("https://d2j0f09xqmv212.cloudfront.net/images/station-wave.svg");
+}
+.media-object-station .mo-station-overlay {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+.media-object-station .mo-station-overlay {
+  height: 46.46%;
+  left: 26.77%;
+  top: 26.77%;
+  width: 46.46%;
+}
+.media-object-station.media-object-station-artist .mo-station-overlay {
+  border-radius: 32767px;
+  height: 51.52%;
+  left: 24.24%;
+  top: 24.24%;
+  width: 51.52%;
+}
+.not-visible {
+  visibility: hidden !important;
+}
+/**
+ * Media Object
+ *
+ * Template: media-object
+ * Data: media-object-demo
+ *
+ * .playing             - Playing
+ * .previewing          - Animation for when the user is previewing the context.
+ * .added               - Added / Saved
+ * .verified            - Verified (only affects artist and user objects)
+ * .media-object-link   - No controllers or overlay
+ * .media-object-radio  - Radio Media Object (remove actions except Play and alters icon)
+ * .show-placeholder    - Show the placeholder (actually hides the image/background).
+ *
+ * Styleguide 70.2
+ */
+/**
+ * Media Object - Alternative Meta
+ *
+ * There is a matrix of possibilities with the media objects.
+ * They can have or not have subtitles, description and meta-text.
+ * Each of these matrixes has a specific height so they can be aligned in a grid.
+ * <span class="text-warning">You should not put multiple variations in the same
+ * grid like we have done here.</span>
+ *
+ * Template: media-object-custom-1
+ * Data: media-object-demo-with-extras
+ * CodeDisplay: none
+ *
+ * Styleguide 70.3
+ */
+/**
+ * Media Object - Small
+ *
+ * Just like the big one but minus auxiliary controls, and subtitle.
+ *
+ * Template: media-object-small
+ * Data: media-object-demo
+ *
+ * Styleguide 70.5
+ */
+/**
+ * Media Object - Horizontal
+ *
+ * These take the exact same markup and modifiers as the regular media objects,
+ * but usually take different column classes.
+ *
+ * Template: media-object-horizontal
+ * Data: media-object-demo
+ *
+ * .playing                  - Playing
+ * .previewing               - Animation for when the user is previewing the context.
+ * .verified                 - Verified (only affects artist and user objects)
+ * .media-object-link        - No controllers
+ * .media-object-small       - For very small horizontal layouts
+ * .media-object-transparent - Removes all backgrounds
+ * .show-placeholder         - Show the placeholder (same as the original)
+ *
+ * Styleguide 70.6
+ */
+/**
+ * Media Image
+ *
+ * Like the media object but without the text section. The same modifiers is valid as with the default media object.
+ *
+ * Template: media-image
+ * Data: media-object-demo
+ *
+ * .show-placeholder                      - Removes padding on artist and user to have the circle occupy the full size.
+ * .media-object-simple                   - No Background + expanded circular images
+ * .media-object-link.media-object-simple - Combine both and you get a very nice image.
+ *
+ * Styleguide 70.7
+ */
+/**
+ * Media Object
+ *
+ * Template: media-object-station
+ * Data: media-object-demo
+ *
+ * .playing              - Playing
+ * .previewing           - Animation for when the user is previewing the context.
+ * .added                - Added / Saved
+ * .verified             - Verified (only affects artist and user objects)
+ * .media-object-link    - No controllers or overlay
+ * .media-object-station - Station Media Object
+ * .show-placeholder     - Show the placeholder (actually hides the image/background).
+ *
+ * Styleguide 70.8
+ */

@@ -1,0 +1,79 @@
+/**
+ * Badges
+ *
+ * Styleguide 60.2
+ */
+/**
+ * Base badge
+ *
+ * Markup: <a href="#">Inbox <span class="badge">42</span></a>
+ *
+ * Styleguide 60.2.1
+ */
+.badge {
+  background-color: #4687D6;
+  border-radius: 10px;
+  color: #FFFFFF;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1;
+  min-width: 10px;
+  padding: 4px 7px 2px;
+  position: relative;
+  text-align: center;
+  text-shadow: none;
+  top: -1px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.badge:empty {
+  display: none;
+}
+a.badge:hover,
+a.badge:focus {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+a.list-group-item.active > .badge,
+.nav-pills > .active > a > .badge {
+  background-color: #fff;
+  color: #FFFFFF;
+}
+.nav-pills > li > a > .badge {
+  margin-left: 3px;
+}
+/**
+ * Calendar icon
+ *
+ * Markup:
+ *   <div class="calendar-icon">
+ *     <div class="calendar-icon-month">Dec</div>
+ *     <div class="calendar-icon-day">6</div>
+ *   </div>
+ *
+ * Styleguide 60.3
+ */
+.calendar-icon {
+  margin-right: 10px;
+  margin-top: 2px;
+  float: left;
+  text-align: center;
+  width: 42px;
+  height: 42px;
+  font-weight: bold;
+}
+.calendar-icon-month {
+  font-size: 11px;
+  text-transform: uppercase;
+  background-color: #f80046;
+  color: #FFFFFF;
+  height: 16px;
+}
+.calendar-icon-day {
+  background-color: #FFFFFF;
+  color: #282828;
+  height: 32px;
+  line-height: 32px;
+  font-size: 22px;
+}

@@ -1,0 +1,324 @@
+/**
+ * Alerts
+ *
+ * Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.
+ * To add a close-icon just add an element with the class .close
+ *
+ * Styleguide 50.5
+ */
+/**
+ *  Contextual
+ *
+ * .alert-success     - Successful message
+ * .alert-danger      - Warning message
+ * .alert-info        - Informational message
+ *
+ * Template: alerts
+ *
+ * Styleguide 50.5.1
+ */
+/**
+ *  Contextual (two lines)
+ *
+ * .alert-success     - Successful message
+ *
+ * Template: alerts-multiline
+ *
+ * Styleguide 50.5.1
+ */
+.alert {
+  color: #FFFFFF;
+  padding: 6px 35px;
+  margin-bottom: 20px;
+  background-color: #4687D6;
+  position: relative;
+  overflow: hidden;
+}
+.alert .alert-link {
+  color: #ffffff;
+}
+.alert .alert-link:hover {
+  color: #ffffff;
+}
+.alert:before {
+  color: #ffffff;
+}
+.alert h4 {
+  margin-top: 0;
+  color: inherit;
+}
+.alert hr {
+  border-top-color: #3179d1;
+}
+.alert .close {
+  height: 26px;
+  line-height: 24px;
+  padding-top: 2px;
+  padding-left: 26px;
+  padding-right: 26px;
+  border-radius: 13px;
+  background: transparent;
+  color: #FFFFFF;
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: transform, box-shadow, color, background-color;
+  width: 26px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: -14px;
+  position: absolute;
+  right: 3px;
+  top: 50%;
+}
+.alert .close:before {
+  font-family: "glue1-spoticon";
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  line-height: inherit;
+  vertical-align: bottom;
+  content: "\f160";
+  font-size: 16px;
+}
+.alert .close .b-alt-text {
+  margin-top: -24px;
+}
+.alert .close.contextmenu-active,
+.alert .close:not(:disabled):hover {
+  background-color: transparent;
+  color: #ffffff;
+}
+.alert .close:not(:disabled):hover:active {
+  background: transparent;
+  color: #cccccc;
+  transform: scale(1);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .alert .close:not(:disabled):hover:active {
+    transform: scale(1);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .alert .close {
+    transition-duration: 50ms;
+  }
+}
+.alert .close:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .alert .close:after {
+    transition-duration: 50ms;
+  }
+}
+.alert .close.contextmenu-active,
+.alert .close:not(:disabled):hover {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .alert .close.contextmenu-active,
+  .alert .close:not(:disabled):hover {
+    transition-duration: 66ms;
+  }
+}
+.alert .close.contextmenu-active:after,
+.alert .close:not(:disabled):hover:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .alert .close.contextmenu-active:after,
+  .alert .close:not(:disabled):hover:after {
+    transition-duration: 66ms;
+  }
+}
+.alert .close:not(:disabled):hover:active {
+  transition: none;
+}
+.alert .close:not(:disabled):hover:active:after {
+  transition: none;
+}
+.alert .close:before {
+  font-family: "glue1-spoticon";
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  line-height: inherit;
+  vertical-align: bottom;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: left;
+  border-radius: 500px;
+  line-height: 26px;
+  font-size: 16px;
+  padding-left: 5px;
+  width: calc(100% - 5px);
+}
+.alert .close.button-play:before {
+  content: "\f132";
+}
+.alert .close.button-play.playing:not(:hover),
+.tl-row.playing .alert .close.button-play:not(:hover),
+.tl-row.playing.alert .close.button-play:not(:hover),
+.media-object.playing .alert .close.button-play:not(:hover),
+.media-object.playing.alert .close.button-play:not(:hover) {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+.alert .close.button-play.playing:not(:hover):after,
+.tl-row.playing .alert .close.button-play:not(:hover):after,
+.tl-row.playing.alert .close.button-play:not(:hover):after,
+.media-object.playing .alert .close.button-play:not(:hover):after,
+.media-object.playing.alert .close.button-play:not(:hover):after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 500px;
+  box-shadow: inset 0 0 0 1px transparent;
+}
+.alert .close.button-play.playing:not(:hover).contextmenu-active,
+.tl-row.playing .alert .close.button-play:not(:hover).contextmenu-active,
+.tl-row.playing.alert .close.button-play:not(:hover).contextmenu-active,
+.media-object.playing .alert .close.button-play:not(:hover).contextmenu-active,
+.media-object.playing.alert .close.button-play:not(:hover).contextmenu-active,
+.alert .close.button-play.playing:not(:hover):not(:disabled):hover,
+.tl-row.playing .alert .close.button-play:not(:hover):not(:disabled):hover,
+.tl-row.playing.alert .close.button-play:not(:hover):not(:disabled):hover,
+.media-object.playing .alert .close.button-play:not(:hover):not(:disabled):hover,
+.media-object.playing.alert .close.button-play:not(:hover):not(:disabled):hover {
+  box-shadow: inset 0 0 0 1px transparent, 0 0 0 1px transparent;
+}
+.alert .close.button-play.playing:not(:hover).contextmenu-active:after,
+.tl-row.playing .alert .close.button-play:not(:hover).contextmenu-active:after,
+.tl-row.playing.alert .close.button-play:not(:hover).contextmenu-active:after,
+.media-object.playing .alert .close.button-play:not(:hover).contextmenu-active:after,
+.media-object.playing.alert .close.button-play:not(:hover).contextmenu-active:after,
+.alert .close.button-play.playing:not(:hover):not(:disabled):hover:after,
+.tl-row.playing .alert .close.button-play:not(:hover):not(:disabled):hover:after,
+.tl-row.playing.alert .close.button-play:not(:hover):not(:disabled):hover:after,
+.media-object.playing .alert .close.button-play:not(:hover):not(:disabled):hover:after,
+.media-object.playing.alert .close.button-play:not(:hover):not(:disabled):hover:after {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .alert .close.button-play.playing:not(:hover).contextmenu-active,
+  .tl-row.playing .alert .close.button-play:not(:hover).contextmenu-active,
+  .tl-row.playing.alert .close.button-play:not(:hover).contextmenu-active,
+  .media-object.playing .alert .close.button-play:not(:hover).contextmenu-active,
+  .media-object.playing.alert .close.button-play:not(:hover).contextmenu-active,
+  .alert .close.button-play.playing:not(:hover):not(:disabled):hover,
+  .tl-row.playing .alert .close.button-play:not(:hover):not(:disabled):hover,
+  .tl-row.playing.alert .close.button-play:not(:hover):not(:disabled):hover,
+  .media-object.playing .alert .close.button-play:not(:hover):not(:disabled):hover,
+  .media-object.playing.alert .close.button-play:not(:hover):not(:disabled):hover {
+    box-shadow: inset 0 0 0 1px transparent;
+  }
+  .alert .close.button-play.playing:not(:hover).contextmenu-active:after,
+  .tl-row.playing .alert .close.button-play:not(:hover).contextmenu-active:after,
+  .tl-row.playing.alert .close.button-play:not(:hover).contextmenu-active:after,
+  .media-object.playing .alert .close.button-play:not(:hover).contextmenu-active:after,
+  .media-object.playing.alert .close.button-play:not(:hover).contextmenu-active:after,
+  .alert .close.button-play.playing:not(:hover):not(:disabled):hover:after,
+  .tl-row.playing .alert .close.button-play:not(:hover):not(:disabled):hover:after,
+  .tl-row.playing.alert .close.button-play:not(:hover):not(:disabled):hover:after,
+  .media-object.playing .alert .close.button-play:not(:hover):not(:disabled):hover:after,
+  .media-object.playing.alert .close.button-play:not(:hover):not(:disabled):hover:after {
+    box-shadow: inset 0 0 0 1px transparent;
+  }
+}
+.alert .close.button-play.playing:not(:hover):not(:disabled):hover:active,
+.tl-row.playing .alert .close.button-play:not(:hover):not(:disabled):hover:active,
+.tl-row.playing.alert .close.button-play:not(:hover):not(:disabled):hover:active,
+.media-object.playing .alert .close.button-play:not(:hover):not(:disabled):hover:active,
+.media-object.playing.alert .close.button-play:not(:hover):not(:disabled):hover:active {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+.alert .close.button-play.playing:not(:hover):not(:disabled):hover:active:after,
+.tl-row.playing .alert .close.button-play:not(:hover):not(:disabled):hover:active:after,
+.tl-row.playing.alert .close.button-play:not(:hover):not(:disabled):hover:active:after,
+.media-object.playing .alert .close.button-play:not(:hover):not(:disabled):hover:active:after,
+.media-object.playing.alert .close.button-play:not(:hover):not(:disabled):hover:active:after {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+.alert .close.button-play.playing:not(:hover):before,
+.tl-row.playing .alert .close.button-play:not(:hover):before,
+.tl-row.playing.alert .close.button-play:not(:hover):before,
+.media-object.playing .alert .close.button-play:not(:hover):before,
+.media-object.playing.alert .close.button-play:not(:hover):before {
+  content: "\f1D0";
+  padding-left: 4px;
+  width: calc(100% - 4px);
+}
+.alert .close.button-play.playing:hover:before,
+.tl-row.playing .alert .close.button-play:hover:before,
+.tl-row.playing.alert .close.button-play:hover:before,
+.media-object.playing .alert .close.button-play:hover:before,
+.media-object.playing.alert .close.button-play:hover:before {
+  content: "\f130";
+}
+.alert:before {
+  font-family: "glue1-spoticon";
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  line-height: inherit;
+  vertical-align: bottom;
+  content: "\f11e";
+  font-size: 16px;
+}
+.alert:before {
+  left: 10px;
+  margin-top: -9.5px;
+  position: absolute;
+  top: 50%;
+}
+.alert a {
+  border-bottom: solid 1px #FFFFFF !important;
+  color: #FFFFFF !important;
+}
+.alert-success {
+  background-color: #1DB954;
+}
+.alert-success .alert-link {
+  color: #ffffff;
+}
+.alert-success .alert-link:hover {
+  color: #ffffff;
+}
+.alert-success:before {
+  color: #ffffff;
+}
+.alert-danger {
+  background-color: #CD1A2B;
+}
+.alert-danger .alert-link {
+  color: #ffffff;
+}
+.alert-danger .alert-link:hover {
+  color: #ffffff;
+}
+.alert-danger:before {
+  color: #ffffff;
+}
+.alert-info {
+  background-color: #4687D6;
+}
+.alert-info .alert-link {
+  color: #ffffff;
+}
+.alert-info .alert-link:hover {
+  color: #ffffff;
+}
+.alert-info:before {
+  color: #ffffff;
+}

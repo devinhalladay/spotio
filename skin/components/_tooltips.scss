@@ -1,0 +1,274 @@
+/**
+ * Tooltips
+ *
+ * These are used to display informational text.
+ *
+ * Template: tooltip
+ *
+ * Styleguide 50.3
+ */
+.tooltip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1030;
+  display: block;
+  visibility: visible;
+  font-size: 12px;
+  line-height: 1.4;
+  padding: 3px 8px;
+  color: #A0A0A0;
+  text-decoration: none;
+  background-color: #333333;
+  border-radius: 3px;
+  pointer-events: none;
+}
+.tooltip:not(.no-arrow).arrow-top {
+  margin-top: 5px;
+}
+.tooltip:not(.no-arrow).arrow-top:before {
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: "";
+  border: 5px solid transparent;
+}
+.tooltip:not(.no-arrow).arrow-top:before {
+  top: -10px;
+  left: 50%;
+  margin-left: -5px;
+  margin-right: -5px;
+  border-bottom: 5px solid #333333;
+}
+.tooltip:not(.no-arrow).arrow-bottom {
+  margin-bottom: 5px;
+}
+.tooltip:not(.no-arrow).arrow-bottom:before {
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: "";
+  border: 5px solid transparent;
+}
+.tooltip:not(.no-arrow).arrow-bottom:before {
+  bottom: -10px;
+  left: 50%;
+  margin-left: -5px;
+  margin-right: -5px;
+  border-top: 5px solid #333333;
+}
+.tooltip:not(.no-arrow).arrow-right {
+  margin-right: 5px;
+}
+.tooltip:not(.no-arrow).arrow-right:before {
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: "";
+  border: 5px solid transparent;
+}
+.tooltip:not(.no-arrow).arrow-right:before {
+  right: -10px;
+  top: 50%;
+  margin-top: -5px;
+  margin-bottom: -5px;
+  border-left: 5px solid #333333;
+}
+.tooltip:not(.no-arrow).arrow-left {
+  margin-left: 5px;
+}
+.tooltip:not(.no-arrow).arrow-left:before {
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: "";
+  border: 5px solid transparent;
+}
+.tooltip:not(.no-arrow).arrow-left:before {
+  left: -10px;
+  top: 50%;
+  margin-top: -5px;
+  margin-bottom: -5px;
+  border-right: 5px solid #333333;
+}
+.tooltip:not(.no-arrow).arrow-position-left:before {
+  left: 20px;
+}
+.tooltip:not(.no-arrow).arrow-position-right:before {
+  left: auto;
+  right: 20px;
+}
+.tooltip:not(.no-arrow).arrow-position-top:before {
+  top: 20px;
+}
+.tooltip:not(.no-arrow).arrow-position-bottom:before {
+  top: auto;
+  bottom: 20px;
+}
+.tooltip.text .tooltip-inner {
+  background-color: #333333;
+  display: block;
+  text-align: center;
+}
+.tooltip.tooltip-large {
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 6px 10px;
+}
+.tooltip-arrow-top,
+.tooltip-arrow-bottom {
+  border-left: 5px solid transparent;
+  border-bottom: 5px solid #333333;
+  border-right: 5px solid transparent;
+  height: 0;
+  margin-left: -5px;
+  position: absolute;
+  top: -5px;
+  display: none;
+  width: 0;
+}
+.tooltip-arrow-top.visible,
+.tooltip-arrow-bottom.visible {
+  display: block;
+}
+.tooltip-arrow-bottom {
+  border-top: 5px solid #333333;
+  border-bottom: 0;
+  bottom: -5px;
+  top: auto;
+}
+@-webkit-keyframes tooltipShow {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tooltipShow {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#tooltip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1030;
+  display: block;
+  visibility: visible;
+  font-size: 12px;
+  line-height: 1.4;
+  padding: 3px 8px;
+  color: #A0A0A0;
+  text-decoration: none;
+  background-color: #333333;
+  border-radius: 3px;
+  pointer-events: none;
+  opacity: 0;
+  max-width: 350px;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+#tooltip:not(.no-arrow).arrow-top {
+  margin-top: 5px;
+}
+#tooltip:not(.no-arrow).arrow-top:before {
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: "";
+  border: 5px solid transparent;
+}
+#tooltip:not(.no-arrow).arrow-top:before {
+  top: -10px;
+  left: 50%;
+  margin-left: -5px;
+  margin-right: -5px;
+  border-bottom: 5px solid #333333;
+}
+#tooltip:not(.no-arrow).arrow-bottom {
+  margin-bottom: 5px;
+}
+#tooltip:not(.no-arrow).arrow-bottom:before {
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: "";
+  border: 5px solid transparent;
+}
+#tooltip:not(.no-arrow).arrow-bottom:before {
+  bottom: -10px;
+  left: 50%;
+  margin-left: -5px;
+  margin-right: -5px;
+  border-top: 5px solid #333333;
+}
+#tooltip:not(.no-arrow).arrow-right {
+  margin-right: 5px;
+}
+#tooltip:not(.no-arrow).arrow-right:before {
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: "";
+  border: 5px solid transparent;
+}
+#tooltip:not(.no-arrow).arrow-right:before {
+  right: -10px;
+  top: 50%;
+  margin-top: -5px;
+  margin-bottom: -5px;
+  border-left: 5px solid #333333;
+}
+#tooltip:not(.no-arrow).arrow-left {
+  margin-left: 5px;
+}
+#tooltip:not(.no-arrow).arrow-left:before {
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: "";
+  border: 5px solid transparent;
+}
+#tooltip:not(.no-arrow).arrow-left:before {
+  left: -10px;
+  top: 50%;
+  margin-top: -5px;
+  margin-bottom: -5px;
+  border-right: 5px solid #333333;
+}
+#tooltip:not(.no-arrow).arrow-position-left:before {
+  left: 20px;
+}
+#tooltip:not(.no-arrow).arrow-position-right:before {
+  left: auto;
+  right: 20px;
+}
+#tooltip:not(.no-arrow).arrow-position-top:before {
+  top: 20px;
+}
+#tooltip:not(.no-arrow).arrow-position-bottom:before {
+  top: auto;
+  bottom: 20px;
+}
+#tooltip.visible {
+  opacity: 1;
+  -webkit-animation: tooltipShow 1s ease forwards;
+  animation: tooltipShow 1s ease forwards;
+}
+#tooltip.visible.instant {
+  opacity: 1;
+  -webkit-animation: none;
+  animation: none;
+}

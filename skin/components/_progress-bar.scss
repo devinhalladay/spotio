@@ -1,0 +1,67 @@
+/**
+ * Progress Bar
+ *
+ * The bar will occupy the full width of the parent container.
+ * When the progress bar is being used apply .active to the wrapper to make the
+ * handle look pressed. It will also enforce the expanded height while dragging.
+ *
+ * Length indication is controlled by setting the left property of the .handle and the
+ * inverted right value of the .inner bar (1% done is 99% etc).
+ *
+ * Currently used in the player (web) for song position.
+ *
+ * Markup:
+ *   <div style="width: 150px;">
+ *   <div class="progress-bar-wrapper {$modifiers}">
+ *   <div class="progress-bar"><div class="inner"><div class="handle"></div></div></div>
+ *   </div>
+ *   </div>
+ *
+ * .active - To be controlled with JavaScript to indicate user interaction.
+ *
+ * Styleguide 60.5
+ */
+.progress-bar,
+.progress-bar .inner {
+  background: #404040;
+  border-radius: 2px;
+  height: 4px;
+  left: 0;
+  margin-top: -2px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+.progress-bar .inner {
+  background: $primary-accent-color;
+  bottom: 0;
+  height: inherit;
+  left: 0;
+  position: absolute;
+  right: auto;
+}
+.progress-bar .handle {
+  background: #FFFFFF;
+  border-radius: 50%;
+  border: 3px solid #FFFFFF;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+  display: block;
+  height: 12px;
+  opacity: 0;
+  position: absolute;
+  right: -6px;
+  top: -4px;
+  width: 12px;
+}
+.progress-bar-wrapper {
+  height: 20px;
+  position: relative;
+}
+.progress-bar-wrapper.handle:hover .handle,
+.progress-bar-wrapper.active .handle {
+  opacity: 1;
+}
+.progress-bar-wrapper.active .handle {
+  background-color: #FFFFFF;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4), inset 2px 2px 3px rgba(0, 0, 0, 0.45);
+}

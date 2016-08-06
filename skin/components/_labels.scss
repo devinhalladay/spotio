@@ -1,0 +1,71 @@
+/**
+ * Labels
+ *
+ * For labeling stuff...
+ *
+ * .label-danger    - To indicate danger.
+ * .label-success   - To indicate success.
+ * .label-warning   - To warn...
+ * .label-info      - To inform!
+ *
+ * Template: labels
+ *
+ * Styleguide 60.1
+ */
+.label {
+  display: inline;
+  padding: .5em .6em .35em;
+  font-size: 12px;
+  line-height: 1;
+  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.015em;
+  font-weight: 200;
+  color: #A0A0A0;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #282828;
+  text-shadow: 0px 0px #282828;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-color: #A0A0A0;
+  border-radius: .25em;
+  font-weight: 400;
+}
+.label[href]:hover,
+.label[href]:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #878787;
+}
+.label-danger {
+  background-color: #CD1A2B;
+}
+.label-danger[href]:hover,
+.label-danger[href]:focus {
+  background-color: #a01422;
+}
+.label-success {
+  background-color: #1DB954;
+}
+.label-success[href]:hover,
+.label-success[href]:focus {
+  background-color: #168d40;
+}
+.label-warning {
+  background-color: #4687D6;
+}
+.label-warning[href]:hover,
+.label-warning[href]:focus {
+  background-color: #2a6dbf;
+}
+.label-info {
+  background-color: #4687D6;
+}
+.label-info[href]:hover,
+.label-info[href]:focus {
+  background-color: #2a6dbf;
+}
