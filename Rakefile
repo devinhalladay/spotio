@@ -34,11 +34,11 @@ task :compile do
   puts "\n## Done!"
 end
 
-desc "Install built .spa files into your spotify app"
-task :install do
-  puts "\n## Installing .spa files in your Spotify.app"
-  status = system('mv build/')
-end
+# desc "Install built .spa files into your spotify app"
+# task :install do
+#   puts "\n## Installing .spa files in your Spotify.app"
+#   status = system('mv build/')
+# end
 
 # desc "Notify various services about new content"
 #   task :ping => [:pingomatic, :sitemapgoogle, :sitemapbing] do
