@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
+<dictionary title="Dictionary">
+	<suite name="Spotify Suite" code="spfy" description="Spotify specific classes.">
+		<enumeration name="ePlS" code="ePlS">
+			<enumerator name="stopped" code="kPSS">
+				<cocoa integer-value="0"/>
+			</enumerator>
+			<enumerator name="playing" code="kPSP">
+				<cocoa integer-value="1"/>
+			</enumerator>
+			<enumerator name="paused" code="kPSp">
+				<cocoa integer-value="2"/>
+			</enumerator>
+		</enumeration>
+		<value-type name="image data" code="spIm" description="Image data in TIFF format.">
+			<cocoa class="NSImage"/>
+		</value-type>
+		<class name="application" code="capp" description="The Spotify application.">
+			<cocoa class="ClientApplication"/>
+			<property name="current track" code="pTrk" description="The current playing track." type="track" access="r">
+				<cocoa key="currentTrack"/>
+			</property>
+			<property name="sound volume" code="pVol" description="The sound output volume (0 = minimum, 100 = maximum)" type="integer">
+				<cocoa key="soundVolume"/>
+			</property>
+			<property name="player state" code="pPlS" description="Is Spotify stopped, paused, or playing?" type="ePlS" access="r">
+				<cocoa key="playerState"/>
+			</property>
+			<property name="player position" code="pPos" description="The player’s position within the currently playing track in seconds." type="real">
+				<cocoa key="playbackPosition"/>
+			</property>
+			<property name="repeating enabled" code="pReE" description="Is repeating enabled in the current playback context?" type="boolean" access="r">
+				<cocoa key="repeatEnabled"/>
+			</property>
+			<property name="repeating" code="pRep" description="Is repeating on or off?" type="boolean">
+				<cocoa key="repeat"/>
+			</property>
+			<property name="shuffling enabled" code="pReE" description="Is shuffling enabled in the current playback context?" type="boolean" access="r">
+				<cocoa key="shuffleEnabled"/>
+			</property>
+			<property name="shuffling" code="pShu" description="Is shuffling on or off?" type="boolean">
+				<cocoa key="shuffle"/>
+			</property>
+		</class>
+		<class name="track" code="spTr" description="A Spotify track." plural="tracks">
+			<cocoa class="SPAppleScriptTrack"/>
+			<property name="artist" code="pArt" description="The artist of the track." type="text" access="r">
+				<cocoa key="artist"/>
+			</property>
+			<property name="album" code="pAlb" description="The album of the track." type="text" access="r">
+				<cocoa key="album"/>
+			</property>
+			<property name="disc number" code="pDsN" description="The disc number of the track." type="integer" access="r">
+				<cocoa key="discNumber"/>
+			</property>
+			<property name="duration" code="pDur" description="The length of the track in seconds." type="integer" access="r">
+				<cocoa key="duration"/>
+			</property>
+			<property name="played count" code="pPlC" description="The number of times this track has been played." type="integer" access="r">
+				<cocoa key="playCount"/>
+			</property>
+			<property name="track number" code="pTrN" description="The index of the track in its album." type="integer" access="r">
+				<cocoa key="trackNumber"/>
+			</property>
+			<property name="starred" code="spSt" description="Is the track starred?" type="boolean" access="r">
+				<cocoa key="starred"/>
+			</property>
+			<property name="popularity" code="spPo" description="How popular is this track? 0-100" type="integer" access="r">
+				<cocoa key="popularity"/>
+			</property>
+			<property name="id" code="ID  " description="The ID of the item." type="text" access="r">
+				<cocoa key="applescriptID"/>
+			</property>
+			<property name="name" code="pnam" description="The name of the track." type="text" access="r">
+				<cocoa key="title"/>
+			</property>
+			<property name="artwork url" code="aUrl" description="The URL of the track%apos;s album cover." type="text" access="r">
+				<cocoa key="coverURL"/>
+			</property>
+			<property name="artwork" code="tAwk" description="The property is deprecated and will never be set. Use the 'artwork url' instead." type="image data" access="r">
+				<cocoa key="cover"/>
+			</property>
+			<property name="album artist" code="pAlA" description="That album artist of the track." type="text" access="r">
+				<cocoa key="albumArtist"/>
+			</property>
+			<property name="spotify url" code="spur" description="The URL of the track." type="text">
+				<cocoa key="spotifyURL"/>
+			</property>
+		</class>
+		<command name="next track" code="spfyNext" description="Skip to the next track.">
+			<cocoa class="SPNextTrackScriptCommand"/>
+		</command>
+		<command name="previous track" code="spfyPrev" description="Skip to the previous track.">
+			<cocoa class="SPPreviousTrackScriptCommand"/>
+		</command>
+		<command name="playpause" code="spfyPlPs" description="Toggle play/pause.">
+			<cocoa class="SPPlayPauseScriptCommand"/>
+		</command>
+		<command name="pause" code="spfyPaus" description="Pause playback.">
+			<cocoa class="SPPauseScriptCommand"/>
+		</command>
+		<command name="play" code="spfyPlay" description="Resume playback.">
+			<cocoa class="SPPlayScriptCommand"/>
+		</command>
+		<command name="play track" code="spfyPCtx" description="Start playback of a track in the given context.">
+			<cocoa class="SPPlayTrackScriptCommand"/>
+			<direct-parameter description="the URI of the track to play" type="text"/>
+			<parameter name="in context" code="cotx" description="the URI of the context to play in" type="text" optional="yes">
+				<cocoa key="context"/>
+			</parameter>
+		</command>
+	</suite>
+	<!-- <xi:include href="file:///System/Library/ScriptingDefinitions/CocoaStandard.sdef" xpointer="xpointer(/dictionary/suite)"/> -->
+	<suite name="Standard Suite" code="????" description="Common classes and commands for most applications.">
+		<cocoa name="NSCoreSuite"/>
+		<class name="application" code="capp" description="The application&apos;s top level scripting object.">
+			<cocoa class="NSApplication"/>
+			<property name="name" code="pnam" description="The name of the application." type="text" access="r"/>
+			<property name="frontmost" code="pisf" description="Is this the frontmost (active) application?" type="boolean" access="r">
+				<cocoa key="isActive"/>
+			</property>
+			<property name="version" code="vers" description="The version of the application." type="text" access="r"/>
+			<responds-to command="quit">
+				<cocoa method="handleQuitScriptCommand:"/>
+			</responds-to>
+		</class>
+	</suite>
+</dictionary>

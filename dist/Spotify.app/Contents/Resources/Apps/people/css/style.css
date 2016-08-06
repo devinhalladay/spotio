@@ -1,0 +1,34 @@
+.people-background {
+  background-image: url('https://d2j0f09xqmv212.cloudfront.net/images/error-bg.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+.people-background-mask {
+  content: ' ';
+  background-color: rgba(0, 0, 0, 0.75);
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+.people-header {
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
+}
+.people {
+  position: relative;
+}
+.people ul {
+  margin: 15px 0;
+  padding: 0px;
+  display: block;
+  list-style: none;
+  text-align: center;
+}
+.people ul li {
+  display: inline;
+}

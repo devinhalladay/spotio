@@ -1,0 +1,174 @@
+.throbberWrapper {
+  position: fixed;
+  top: 59px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #181818;
+  z-index: 999;
+}
+.throbberWrapper .throbber-large {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -35px;
+  margin-top: -35px;
+}
+.throbberLoader {
+  height: 60px;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #181818;
+  opacity: 0.8;
+}
+.throbberLoader .throbber {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -20px;
+  margin-top: -20px;
+}
+::-webkit-scrollbar:horizontal {
+  height: 10px !important;
+}
+/* ==========================================================================
+  HEADER
+  ========================================================================== */
+.s-header {
+  padding: 0 !important;
+  position: relative;
+}
+.s-header.rows-1 {
+  height: 220px !important;
+  margin-bottom: 25px;
+}
+.s-header.rows-2 {
+  height: 440px !important;
+  margin-bottom: 25px;
+}
+.s-header .pod {
+  position: absolute;
+}
+.s-header .title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+}
+/* ==========================================================================
+  GLUE OVERRIDES
+  ========================================================================== */
+.tl-popularity {
+  width: 72px;
+}
+.pop-meter {
+  width: 46px;
+}
+.pop-meter-background:after {
+  box-shadow: 4px 0 0 0 #404040, 8px 0 0 0 #404040, 12px 0 0 0 #404040, 16px 0 0 0 #404040, 20px 0 0 0 #404040, 24px 0 0 0 #404040, 28px 0 0 0 #404040, 32px 0 0 0 #404040, 36px 0 0 0 #404040, 40px 0 0 0 #404040, 44px 0 0 0 #404040, 48px 0 0 0 #404040;
+}
+.pop-meter-overlay:after {
+  box-shadow: 4px 0 0 0 #A0A0A0, 8px 0 0 0 #A0A0A0, 12px 0 0 0 #A0A0A0, 16px 0 0 0 #A0A0A0, 20px 0 0 0 #A0A0A0, 24px 0 0 0 #A0A0A0, 28px 0 0 0 #A0A0A0, 32px 0 0 0 #A0A0A0, 36px 0 0 0 #A0A0A0, 40px 0 0 0 #A0A0A0, 44px 0 0 0 #A0A0A0, 48px 0 0 0 #A0A0A0;
+}
+.disable-link {
+  pointer-events: none !important;
+  cursor: default !important;
+  color: #404040 !important;
+}
+.hide-auxiliary-controls .mo-add,
+.hide-auxiliary-controls .mo-more {
+  display: none !important;
+}
+.s-header .mo-add,
+.s-header .mo-more {
+  display: none !important;
+}
+@media screen and (max-width: 700px) {
+  .mo-add,
+  .mo-more {
+    display: none !important;
+  }
+}
+.s-header .media-object {
+  width: 100px !important;
+}
+.s-header .media-object .mo-info {
+  height: 60px !important;
+  padding: 3px 5px !important;
+}
+.s-header .media-object .mo-info .mo-title {
+  margin-bottom: 0 !important;
+}
+.s-header .media-object .mo-info .mo-subtitle {
+  margin-top: 0 !important;
+  font-size: 85%;
+}
+.grid {
+  margin: 0 !important;
+  overflow: hidden;
+}
+.grid li {
+  display: block;
+  float: left;
+}
+.s-header .media-object-playlist .mo-subtitle,
+.s-header .mo-meta {
+  display: none;
+}
+.s-header .mo-verified {
+  right: 18% !important;
+  bottom: 18% !important;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+}
+.s-header .mo-verified span:before {
+  font-size: 12px;
+}
+.alert {
+  margin: 0 !important;
+}
+/* ==========================================================================
+  QUERY BAR
+  ========================================================================== */
+.s-query div {
+  height: 59px;
+  line-height: 59px;
+  border-bottom: 1px solid #282828;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.s-query div h3 {
+  display: inline !important;
+  margin: 0 !important;
+}
+/* ==========================================================================
+  NO RESULTS
+  ========================================================================== */
+html.full-height,
+html.full-height > body,
+html.full-height > body > .container {
+  height: 100%;
+  max-width: none !important;
+}
+.no-result {
+  margin: 100px auto 0;
+  text-align: center;
+}
+.no-result p {
+  line-height: 1.3 !important;
+  word-wrap: break-word;
+}
+.no-result i {
+  display: block;
+  line-height: 1.5;
+  color: #404040;
+  text-align: center;
+}
+.no-result i:before {
+  font-size: 112px;
+}

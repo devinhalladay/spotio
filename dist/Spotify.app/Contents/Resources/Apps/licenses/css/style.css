@@ -1,0 +1,71 @@
+::-webkit-scrollbar {
+  width: 0;
+}
+body > .scrollbar-track {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 10000;
+}
+.scrollbar-view {
+  overflow-y: scroll;
+  position: relative;
+  will-change: transform;
+}
+.scrollbar-view > .scrollbar-track {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+.scrollbar-track {
+  width: 16px;
+  opacity: 0;
+  transition: opacity 500ms;
+}
+.scrollbar-track.always-visible {
+  transition: none;
+}
+.scrollbar-track.visible {
+  transition: none;
+  opacity: 1;
+}
+.scrollbar-track.expanded {
+  transition: opacity 500ms, width 100ms;
+  width: 18px;
+  background-color: rgba(160, 160, 160, 0.05);
+  cursor: default;
+}
+.scrollbar-track.expanded.always-visible {
+  transition: none;
+}
+.scrollbar-track.expanded.visible {
+  transition: width 100ms;
+}
+.scrollbar-thumb {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 0;
+  border-radius: 16px;
+  border: 4px solid transparent;
+  background-clip: content-box;
+  background-color: rgba(160, 160, 160, 0.4);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0 20px;
+}
+.page-wrapper {
+  overflow: hidden;
+}
+.scrollbar-track.expanded {
+  background-color: rgba(160, 160, 160, 0.2);
+}
+.scrollbar-thumb {
+  background-color: rgba(160, 160, 160, 0.8);
+}

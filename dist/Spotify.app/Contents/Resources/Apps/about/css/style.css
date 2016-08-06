@@ -1,0 +1,70 @@
+#page {
+  padding: 25px 25px 10px;
+  max-width: 830px;
+  margin: 0 auto;
+  text-align: center;
+}
+#upgrade-pending,
+#upgrade-downloading,
+#upgrade-downloaded {
+  color: #FFFFFF;
+  margin: 10px 0 20px 0;
+  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.015em;
+  font-weight: 200;
+  color: #A0A0A0;
+  text-transform: normal;
+  display: none;
+}
+#upgrade-pending.visible,
+#upgrade-downloading.visible,
+#upgrade-downloaded.visible {
+  display: block;
+}
+#upgrade-pending a,
+#upgrade-downloading a,
+#upgrade-downloaded a {
+  color: #FFFFFF;
+}
+#copyright {
+  margin: 40px 0;
+  font-size: 14px;
+}
+#marquee {
+  margin: 15px 0;
+  overflow: hidden;
+  position: relative;
+}
+#content p {
+  padding: 25px 0 5px 0;
+}
+#version {
+  cursor: text;
+  -webkit-user-select: text;
+}
+#content ul {
+  display: block;
+  list-style: none;
+  margin: 10px 0 0;
+}
+#content ul li {
+  display: inline-block;
+  padding: 5px;
+}
+#content ul li img {
+  height: 30px;
+  padding: 4px;
+}
+.logo-image {
+  width: 190px;
+  height: 58px;
+  margin-bottom: 32px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  user-drag: none;
+}

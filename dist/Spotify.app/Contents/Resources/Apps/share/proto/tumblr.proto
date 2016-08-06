@@ -1,0 +1,30 @@
+// Part of socialnetworks.git project's proto/{twitter,tumblr}.proto3
+
+message TumblrAuthToken{
+        optional string token = 1;
+        optional string secret = 2;
+}
+
+message TumblrUserInfo {
+        optional TumblrAuthToken auth_token = 1;
+        // In the future, this field could be repeated.
+        // since a user can have multiple blogs on tumblr.
+        optional string blog_name = 2;
+}
+
+// Credentials are used to negotiate for auth token. We use xAuth.
+message TumblrCredentials {
+        optional string email = 1;
+        optional string password = 2;
+}
+
+message TumblrPost {
+        optional string message = 1;
+        optional string spotify_link = 2;
+        optional TumblrAuthToken auth_token = 3;
+        optional string blog_name = 4;
+
+        // This field will be the title for the open.spotify link post
+        // This is used instead of audio when a link shared is not UPB-playable
+        optional string link_title = 5;
+}

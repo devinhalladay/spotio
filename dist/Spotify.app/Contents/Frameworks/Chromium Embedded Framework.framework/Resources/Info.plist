@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BreakpadProduct</key>
+	<string>Chromium Embedded Framework_Mac</string>
+	<key>BreakpadProductDisplay</key>
+	<string>Chromium Embedded Framework</string>
+	<key>BreakpadReportInterval</key>
+	<string>3600</string>
+	<key>BreakpadSendAndExit</key>
+	<string>YES</string>
+	<key>BreakpadSkipConfirm</key>
+	<string>YES</string>
+	<key>BreakpadURL</key>
+	<string>https://crashdump.spotify.com:443</string>
+	<key>BreakpadVersion</key>
+	<string>51.0.2704.84</string>
+	<key>BuildMachineOSBuild</key>
+	<string>14E46</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleExecutable</key>
+	<string>Chromium Embedded Framework</string>
+	<key>CFBundleIdentifier</key>
+	<string>org.chromium.ContentShell.framework</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>FMWK</string>
+	<key>CFBundleShortVersionString</key>
+	<string>51.0.2704.84</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>2704.84</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTSDKBuild</key>
+	<string>10.11</string>
+	<key>DTSDKName</key>
+	<string>macosx10.1110.11</string>
+	<key>DTXcode</key>
+	<string>0711</string>
+	<key>DTXcodeBuild</key>
+	<string>7B1005</string>
+	<key>SCMRevision</key>
+	<string>38fd4ea549900bb7a3b958a96b7f2270c3410fdd</string>
+</dict>
+</plist>
