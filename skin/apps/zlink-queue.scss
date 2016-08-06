@@ -1,0 +1,32 @@
+#outer.empty {
+  min-height: 100%;
+}
+.empty-container {
+  display: none;
+}
+.empty-container.visible {
+  display: block;
+}
+.empty-content {
+  margin: 0 auto;
+  text-align: center;
+}
+.empty-content .message {
+  margin: 1em auto 2em auto;
+  max-width: 320px;
+}
+.empty-content .button {
+  margin: 0 5px;
+}
+#history-tracklist {
+  margin-top: 24px;
+}
+[data-button=clear-queue] {
+  /* Prevent section jumping when clearing queue */
+  margin-top: -5px;
+  /* Align baseline of button text with section header text */
+  margin-bottom: -2px;
+}
+.tl-row.hidden {
+  display: none;
+}

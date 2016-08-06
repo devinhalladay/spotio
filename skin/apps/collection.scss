@@ -1,0 +1,119 @@
+body {
+  padding-top: 0px;
+}
+body.show-offline-screen {
+  overflow: hidden;
+}
+.error-and-offline {
+  position: fixed;
+}
+/*
+  We want to offset the content by 47px to adjust for the header, but
+  we can't put the padding on the body, since it affects elements with
+  fixed position. Instead, we put the padding on the container element.
+*/
+body.show-nav > .container {
+  padding-top: 47px;
+}
+body.show-nav .albums-page,
+body.show-nav .artists-page {
+  padding-top: 47px;
+}
+body,
+html {
+  height: 100%;
+}
+.tab-panel {
+  position: absolute;
+}
+.tab-panel.full-width {
+  width: 100%;
+  height: 100%;
+}
+.full-height {
+  height: 100%;
+}
+.artists-page .viewport-container,
+.albums-page .viewport-container {
+  padding-top: 15px;
+}
+.artists-page:not(.all-controls-on-artist-cards) .media-object .mo-add,
+.artists-page:not(.all-controls-on-artist-cards) .media-object .mo-more {
+  display: none;
+}
+.container {
+  /**
+   * Force hardware acceleration on the grid
+   * list to make scrolling perform much better
+   */
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.throbber-wrapper {
+  height: 100%;
+}
+.throbber-wrapper .sp-throbber {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  text-align: center;
+  width: 100%;
+  margin-top: -11px;
+  margin-left: -11px;
+}
+.error-message {
+  text-align: center;
+  width: 100%;
+  font-size: 30px;
+  color: #666;
+}
+.error-message-centered {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+}
+body.show-offline-screen {
+  overflow: hidden;
+}
+.sorting-select .dropdown .dropdown-menu {
+  margin-top: 0;
+}
+/* .app-navigation is fixed by default in glue, but that plays TREMENDOUSLY
+bad with scroll performance on large lists. */
+.unfixed .app-navigation {
+  position: absolute !important;
+}
+/* To cover the old app state when in the process
+   of loading a new one. */
+.curtain {
+  position: fixed;
+  background-color: #181818;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 99999;
+}
+/* TODO: Fix these is GLUE instead */
+.tl-time {
+  text-overflow: clip !important;
+}
+.tl-date-added {
+  width: 90px;
+}
+.mo-more {
+  background: none;
+}
+.error-and-offline .hdr-l:empty {
+  margin: 0;
+}
+/*
+  Fixes https://jira.spotify.net/browse/KM-5218
+
+  This has been fixed in GLUE >= 19.0.2, but as we will not upgrade to that
+  version within the foreseeable future, we cherry-pick the fix here. The
+  backstory to the bug is here https://ghe.spotify.net/design/glue/pull/572
+*/
+a:focus {
+  outline: none;
+}

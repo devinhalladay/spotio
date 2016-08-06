@@ -1,0 +1,22 @@
+.loading-container {
+  display: none;
+}
+.loading .loading-container {
+  display: block;
+}
+.show-error-screen .online-content,
+.show-offline-screen .online-content,
+.offline .online-content {
+  display: none;
+}
+.single-media-object {
+  width: 300px;
+}
+.about-info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.my-loader {
+  margin-top: 20px;
+}

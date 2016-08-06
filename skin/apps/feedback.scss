@@ -1,0 +1,25 @@
+html {
+  overflow-y: hidden;
+}
+.feedback-form {
+  padding: 2rem 1rem;
+}
+.feedback-form__description-label {
+  display: block;
+  margin-bottom: 1rem;
+}
+.feedback-form__description-input {
+  display: block;
+  height: 20rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.feedback-form__buttons {
+  position: absolute;
+  right: 0;
+  bottom: 1rem;
+  left: 0;
+}
+.feedback-form__submit {
+  margin-top: 1rem;
+}

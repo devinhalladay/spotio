@@ -1,3 +1,5 @@
+employeeFeaturesEnabled = true;
+
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 module.exports = {
   "settings": "Einstellungen",
@@ -3972,7 +3974,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   var buffer = "", stack1, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression, self=this;
 
 function program1(depth0,data) {
-  
+
   var buffer = "", stack1, helper, options;
   buffer += "\n<section id=\"accessibility\">\n  <div class=\"section-divider\">\n    <h2>"
     + escapeExpression((helper = helpers.loc || (depth0 && depth0.loc),options={hash:{},data:data},helper ? helper.call(depth0, "accessibility", options) : helperMissing.call(depth0, "loc", "accessibility", options)))
@@ -3983,7 +3985,7 @@ function program1(depth0,data) {
   return buffer;
   }
 function program2(depth0,data) {
-  
+
   var buffer = "", stack1, helper, options;
   buffer += "\n    ";
   stack1 = (helper = helpers.loc || (depth0 && depth0.loc),options={hash:{},data:data},helper ? helper.call(depth0, "accessibilityColors", options) : helperMissing.call(depth0, "loc", "accessibilityColors", options));
@@ -4450,7 +4452,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   var buffer = "", stack1, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression, self=this;
 
 function program1(depth0,data) {
-  
+
   var buffer = "", stack1, helper, options;
   buffer += "\n<section id=\"compatibility\">\n  <div class=\"section-divider\">\n    <h2>"
     + escapeExpression((helper = helpers.loc || (depth0 && depth0.loc),options={hash:{},data:data},helper ? helper.call(depth0, "compatibility", options) : helperMissing.call(depth0, "loc", "compatibility", options)))
@@ -4461,7 +4463,7 @@ function program1(depth0,data) {
   return buffer;
   }
 function program2(depth0,data) {
-  
+
   var buffer = "", stack1, helper, options;
   buffer += "\n    ";
   stack1 = (helper = helpers.loc || (depth0 && depth0.loc),options={hash:{},data:data},helper ? helper.call(depth0, "enableHardwareAcceleration", options) : helperMissing.call(depth0, "loc", "enableHardwareAcceleration", options));
@@ -4537,7 +4539,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   var buffer = "", stack1, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression, self=this;
 
 function program1(depth0,data) {
-  
+
   var buffer = "", helper, options;
   buffer += "\n<div id=\"devices\">\n  <div class=\"section-divider\">\n    <h2>"
     + escapeExpression((helper = helpers.loc || (depth0 && depth0.loc),options={hash:{},data:data},helper ? helper.call(depth0, "devices", options) : helperMissing.call(depth0, "loc", "devices", options)))
@@ -4662,7 +4664,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   var buffer = "", stack1, helper, options, helperMissing=helpers.helperMissing, self=this;
 
 function program1(depth0,data) {
-  
+
   var buffer = "", stack1, helper, options;
   buffer += "\n    ";
   stack1 = (helper = helpers.loc || (depth0 && depth0.loc),options={hash:{},data:data},helper ? helper.call(depth0, "friendFeed", options) : helperMissing.call(depth0, "loc", "friendFeed", options));
@@ -4918,7 +4920,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   var buffer = "", stack1, helper, options, helperMissing=helpers.helperMissing, self=this;
 
 function program1(depth0,data) {
-  
+
   var buffer = "", stack1, helper, options;
   buffer += "\n    ";
   stack1 = (helper = helpers.loc || (depth0 && depth0.loc),options={hash:{},data:data},helper ? helper.call(depth0, "showMusicAnnouncements", options) : helperMissing.call(depth0, "loc", "showMusicAnnouncements", options));
@@ -5051,7 +5053,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   var buffer = "", stack1, helper, options, helperMissing=helpers.helperMissing, self=this;
 
 function program1(depth0,data) {
-  
+
   var buffer = "", stack1, helper, options;
   buffer += "\n    ";
   stack1 = (helper = helpers.loc || (depth0 && depth0.loc),options={hash:{},data:data},helper ? helper.call(depth0, "showTrackNotifications", options) : helperMissing.call(depth0, "loc", "showTrackNotifications", options));
@@ -5076,7 +5078,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   var buffer = "", stack1, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression, self=this;
 
 function program1(depth0,data) {
-  
+
   var buffer = "", helper, options;
   buffer += "\n<section id=\"display\">\n  <div class=\"section-divider\">\n    <h2>"
     + escapeExpression((helper = helpers.loc || (depth0 && depth0.loc),options={hash:{},data:data},helper ? helper.call(depth0, "display", options) : helperMissing.call(depth0, "loc", "display", options)))
@@ -5200,7 +5202,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   var buffer = "", stack1, helper, options, helperMissing=helpers.helperMissing, self=this;
 
 function program1(depth0,data) {
-  
+
   var buffer = "", stack1, helper, options;
   buffer += "\n    ";
   stack1 = (helper = helpers.loc || (depth0 && depth0.loc),options={hash:{},data:data},helper ? helper.call(depth0, "showUnavailableTracks", options) : helperMissing.call(depth0, "loc", "showUnavailableTracks", options));
@@ -5264,7 +5266,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   var buffer = "", stack1, functionType="function", escapeExpression=this.escapeExpression, helperMissing=helpers.helperMissing, self=this;
 
 function program1(depth0,data) {
-  
+
   var buffer = "", stack1, helper, options;
   buffer += "\n<section id=\"apps\">\n  <div class=\"section-divider section-divider-small\">\n    <h3>"
     + escapeExpression((helper = helpers.loc || (depth0 && depth0.loc),options={hash:{},data:data},helper ? helper.call(depth0, "appLinks", options) : helperMissing.call(depth0, "loc", "appLinks", options)))
@@ -5275,7 +5277,7 @@ function program1(depth0,data) {
   return buffer;
   }
 function program2(depth0,data) {
-  
+
   var buffer = "", stack1;
   buffer += "\n    <a href=\"spotify:app:"
     + escapeExpression(((stack1 = (data == null || data === false ? data : data.key)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
@@ -5358,7 +5360,7 @@ exports.model = model;
 
 var live = require('../../../../libs/spotify-live');
 
-var isEmployee = !!(global.__spotify && global.__spotify.product_state && global.__spotify.product_state.employee === '1');
+var isEmployee = employeeFeaturesEnabled;
 
 /**
  * Social live model
@@ -5530,7 +5532,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   var buffer = "", stack1, self=this, helperMissing=helpers.helperMissing;
 
 function program1(depth0,data) {
-  
+
   var buffer = "", stack1, helper, options;
   buffer += "\n<section id=\"search-proxy\">\n  <div class=\"section-divider section-divider-small\">\n    <h3>Search proxy</h3>\n  </div>\n\n  ";
   stack1 = (helper = helpers.sliderSetting || (depth0 && depth0.sliderSetting),options={hash:{},inverse:self.noop,fn:self.program(2, program2, data),data:data},helper ? helper.call(depth0, "settings:employee-features:search-proxy", "proxyEnabled", options) : helperMissing.call(depth0, "sliderSetting", "settings:employee-features:search-proxy", "proxyEnabled", options));
@@ -5542,8 +5544,8 @@ function program1(depth0,data) {
   return buffer;
   }
 function program2(depth0,data) {
-  
-  
+
+
   return "\n    Override searchview settings\n  ";
   }
 
@@ -5562,7 +5564,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   var buffer = "", stack1, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression, self=this;
 
 function program1(depth0,data) {
-  
+
   var buffer = "", helper, options;
   buffer += "\n<section id=\"employee-features\">\n  <div class=\"section-divider\">\n    <h2>"
     + escapeExpression((helper = helpers.loc || (depth0 && depth0.loc),options={hash:{},data:data},helper ? helper.call(depth0, "employeeFeatures", options) : helperMissing.call(depth0, "loc", "employeeFeatures", options)))
@@ -5751,7 +5753,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   var buffer = "", stack1, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression, self=this;
 
 function program1(depth0,data) {
-  
+
   var buffer = "", stack1, helper, options;
   buffer += "\n<section id=\"language\">\n  <div class=\"section-divider\">\n    <h4>"
     + escapeExpression((helper = helpers.loc || (depth0 && depth0.loc),options={hash:{},data:data},helper ? helper.call(depth0, "language", options) : helperMissing.call(depth0, "loc", "language", options)))
@@ -5762,7 +5764,7 @@ function program1(depth0,data) {
   return buffer;
   }
 function program2(depth0,data) {
-  
+
   var buffer = "", stack1, helper, options;
   buffer += "\n    ";
   stack1 = (helper = helpers.loc || (depth0 && depth0.loc),options={hash:{},data:data},helper ? helper.call(depth0, "selectLanguage", options) : helperMissing.call(depth0, "loc", "selectLanguage", options));
@@ -6048,7 +6050,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   var buffer = "", stack1, functionType="function", self=this, helperMissing=helpers.helperMissing;
 
 function program1(depth0,data) {
-  
+
   var buffer = "", stack1, helper, options;
   buffer += "\n  ";
   stack1 = (helper = helpers.sliderSetting || (depth0 && depth0.sliderSetting),options={hash:{},inverse:self.noop,fn:self.program(2, program2, data),data:data},helper ? helper.call(depth0, (depth0 && depth0.uri), "enabled", options) : helperMissing.call(depth0, "sliderSetting", (depth0 && depth0.uri), "enabled", options));
@@ -6057,7 +6059,7 @@ function program1(depth0,data) {
   return buffer;
   }
 function program2(depth0,data) {
-  
+
   var stack1, helper;
   if (helper = helpers.name) { stack1 = helper.call(depth0, {hash:{},data:data}); }
   else { helper = (depth0 && depth0.name); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
@@ -6082,7 +6084,7 @@ helpers = this.merge(helpers, Handlebars.helpers); partials = this.merge(partial
   var buffer = "", stack1, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression, self=this;
 
 function program1(depth0,data) {
-  
+
   var buffer = "", stack1, helper, options;
   buffer += "\n<section id=\"local-files\">\n  <div class=\"section-divider\">\n    <h2>"
     + escapeExpression((helper = helpers.loc || (depth0 && depth0.loc),options={hash:{},data:data},helper ? helper.call(depth0, "localFiles", options) : helperMissing.call(depth0, "loc", "localFiles", options)))
@@ -6270,7 +6272,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   var buffer = "", stack1, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression, self=this;
 
 function program1(depth0,data) {
-  
+
   var buffer = "", stack1, helper, options;
   buffer += "\n<section id=\"music-quality\">\n  <div class=\"section-divider\">\n    <h2>"
     + escapeExpression((helper = helpers.loc || (depth0 && depth0.loc),options={hash:{},data:data},helper ? helper.call(depth0, "musicQuality", options) : helperMissing.call(depth0, "loc", "musicQuality", options)))
@@ -6281,7 +6283,7 @@ function program1(depth0,data) {
   return buffer;
   }
 function program2(depth0,data) {
-  
+
   var buffer = "", stack1, helper, options;
   buffer += "\n    ";
   stack1 = (helper = helpers.loc || (depth0 && depth0.loc),options={hash:{},data:data},helper ? helper.call(depth0, "hqStreaming", options) : helperMissing.call(depth0, "loc", "hqStreaming", options));
@@ -6615,7 +6617,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   var buffer = "", stack1, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression, self=this;
 
 function program1(depth0,data) {
-  
+
   var buffer = "", stack1, helper, options;
   buffer += "\n<section id=\"playback\">\n  <div class=\"section-divider\">\n    <h2>"
     + escapeExpression((helper = helpers.loc || (depth0 && depth0.loc),options={hash:{},data:data},helper ? helper.call(depth0, "playback", options) : helperMissing.call(depth0, "loc", "playback", options)))
@@ -6629,7 +6631,7 @@ function program1(depth0,data) {
   return buffer;
   }
 function program2(depth0,data) {
-  
+
   var buffer = "", stack1, helper, options;
   buffer += "\n      ";
   stack1 = (helper = helpers.loc || (depth0 && depth0.loc),options={hash:{},data:data},helper ? helper.call(depth0, "crossfadeTracks", options) : helperMissing.call(depth0, "loc", "crossfadeTracks", options));
@@ -6639,7 +6641,7 @@ function program2(depth0,data) {
   }
 
 function program4(depth0,data) {
-  
+
   var buffer = "", stack1, helper, options;
   buffer += "\n      ";
   stack1 = (helper = helpers.loc || (depth0 && depth0.loc),options={hash:{},data:data},helper ? helper.call(depth0, "sameVolume", options) : helperMissing.call(depth0, "loc", "sameVolume", options));
@@ -7141,7 +7143,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   var buffer = "", stack1, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression, self=this;
 
 function program1(depth0,data) {
-  
+
   var buffer = "", stack1, helper, options;
   buffer += "\n<section id=\"proxy\">\n  <div class=\"section-divider\">\n    <h2>"
     + escapeExpression((helper = helpers.loc || (depth0 && depth0.loc),options={hash:{},data:data},helper ? helper.call(depth0, "Proxy", options) : helperMissing.call(depth0, "loc", "Proxy", options)))
@@ -7167,7 +7169,7 @@ function program1(depth0,data) {
   return buffer;
   }
 function program2(depth0,data) {
-  
+
   var buffer = "", stack1, helper, options;
   buffer += "\n    ";
   stack1 = (helper = helpers.loc || (depth0 && depth0.loc),options={hash:{},data:data},helper ? helper.call(depth0, "selectProxy", options) : helperMissing.call(depth0, "loc", "selectProxy", options));
@@ -7388,7 +7390,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   var buffer = "", stack1, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression, self=this;
 
 function program1(depth0,data) {
-  
+
   var buffer = "", stack1, helper, options;
   buffer += "\n<section id=\"facebook-section\">\n  <div class=\"section-divider section-divider-small\">\n    <h3>"
     + escapeExpression((helper = helpers.loc || (depth0 && depth0.loc),options={hash:{},data:data},helper ? helper.call(depth0, "facebook", options) : helperMissing.call(depth0, "loc", "facebook", options)))
@@ -7399,7 +7401,7 @@ function program1(depth0,data) {
   return buffer;
   }
 function program2(depth0,data) {
-  
+
   var buffer = "", stack1, helper, options;
   buffer += "\n      ";
   stack1 = (helper = helpers.loc || (depth0 && depth0.loc),options={hash:{},data:data},helper ? helper.call(depth0, "shareOnFacebook", options) : helperMissing.call(depth0, "loc", "shareOnFacebook", options));
@@ -7678,7 +7680,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   var buffer = "", stack1, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression, self=this;
 
 function program1(depth0,data) {
-  
+
   var buffer = "", helper, options;
   buffer += "\n<section class=\"lastfm-oauth\">\n  <div class=\"section-divider section-divider-small\">\n    <h3>"
     + escapeExpression((helper = helpers.loc || (depth0 && depth0.loc),options={hash:{},data:data},helper ? helper.call(depth0, "lastfm", options) : helperMissing.call(depth0, "loc", "lastfm", options)))
@@ -8093,7 +8095,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   var buffer = "", stack1, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression, self=this;
 
 function program1(depth0,data) {
-  
+
   var buffer = "", stack1, helper, options;
   buffer += "\n<section class=\"lastfm incognito-state\">\n  <div class=\"section-divider section-divider-small\">\n    <h3>"
     + escapeExpression((helper = helpers.loc || (depth0 && depth0.loc),options={hash:{},data:data},helper ? helper.call(depth0, "lastfm", options) : helperMissing.call(depth0, "loc", "lastfm", options)))
@@ -8409,7 +8411,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   var buffer = "", stack1, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression, self=this;
 
 function program1(depth0,data) {
-  
+
   var buffer = "", stack1, helper, options;
   buffer += "\n<section class=\"spotify\">\n  <div class=\"section-divider section-divider-small\">\n    <h3>"
     + escapeExpression((helper = helpers.loc || (depth0 && depth0.loc),options={hash:{},data:data},helper ? helper.call(depth0, "spotify", options) : helperMissing.call(depth0, "loc", "spotify", options)))
@@ -8432,7 +8434,7 @@ function program1(depth0,data) {
   return buffer;
   }
 function program2(depth0,data) {
-  
+
   var buffer = "", stack1, helper, options;
   buffer += "\n    ";
   stack1 = (helper = helpers.loc || (depth0 && depth0.loc),options={hash:{},data:data},helper ? helper.call(depth0, "newPlaylistsPublic", options) : helperMissing.call(depth0, "loc", "newPlaylistsPublic", options));
@@ -8442,7 +8444,7 @@ function program2(depth0,data) {
   }
 
 function program4(depth0,data) {
-  
+
   var buffer = "", stack1, helper, options;
   buffer += "\n    ";
   stack1 = (helper = helpers.loc || (depth0 && depth0.loc),options={hash:{},data:data},helper ? helper.call(depth0, "privateSession", options) : helperMissing.call(depth0, "loc", "privateSession", options));
@@ -8452,7 +8454,7 @@ function program4(depth0,data) {
   }
 
 function program6(depth0,data) {
-  
+
   var buffer = "", stack1, helper, options;
   buffer += "\n    ";
   stack1 = (helper = helpers.loc || (depth0 && depth0.loc),options={hash:{},data:data},helper ? helper.call(depth0, "publishActivity", options) : helperMissing.call(depth0, "loc", "publishActivity", options));
@@ -8462,7 +8464,7 @@ function program6(depth0,data) {
   }
 
 function program8(depth0,data) {
-  
+
   var buffer = "", stack1, helper, options;
   buffer += "\n    ";
   stack1 = (helper = helpers.loc || (depth0 && depth0.loc),options={hash:{},data:data},helper ? helper.call(depth0, "publishActivityTopListener", options) : helperMissing.call(depth0, "loc", "publishActivityTopListener", options));
@@ -8472,7 +8474,7 @@ function program8(depth0,data) {
   }
 
 function program10(depth0,data) {
-  
+
   var buffer = "", stack1, helper, options;
   buffer += "\n    ";
   stack1 = (helper = helpers.loc || (depth0 && depth0.loc),options={hash:{},data:data},helper ? helper.call(depth0, "publishTopArtists", options) : helperMissing.call(depth0, "loc", "publishTopArtists", options));
@@ -8496,7 +8498,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   var buffer = "", stack1, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression, self=this;
 
 function program1(depth0,data) {
-  
+
   var buffer = "", helper, options;
   buffer += "\n<section id=\"social\">\n  <div class=\"section-divider\">\n    <h2>"
     + escapeExpression((helper = helpers.loc || (depth0 && depth0.loc),options={hash:{},data:data},helper ? helper.call(depth0, "social", options) : helperMissing.call(depth0, "loc", "social", options)))
@@ -8627,7 +8629,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   var buffer = "", stack1, helperMissing=helpers.helperMissing, self=this;
 
 function program1(depth0,data) {
-  
+
   var buffer = "", stack1;
   buffer += "\n<div id=\"auto-open\">\n  ";
   stack1 = helpers['if'].call(depth0, ((stack1 = (depth0 && depth0.autostart)),stack1 == null || stack1 === false ? stack1 : stack1.enabled), {hash:{},inverse:self.noop,fn:self.program(2, program2, data),data:data});
@@ -8636,7 +8638,7 @@ function program1(depth0,data) {
   return buffer;
   }
 function program2(depth0,data) {
-  
+
   var buffer = "", stack1, helper, options;
   buffer += "\n    ";
   stack1 = (helper = helpers.selectSetting || (depth0 && depth0.selectSetting),options={hash:{},inverse:self.noop,fn:self.program(3, program3, data),data:data},helper ? helper.call(depth0, "settings:auto-open", "mode", ((stack1 = (depth0 && depth0.autostart)),stack1 == null || stack1 === false ? stack1 : stack1.options), options) : helperMissing.call(depth0, "selectSetting", "settings:auto-open", "mode", ((stack1 = (depth0 && depth0.autostart)),stack1 == null || stack1 === false ? stack1 : stack1.options), options));
@@ -8645,7 +8647,7 @@ function program2(depth0,data) {
   return buffer;
   }
 function program3(depth0,data) {
-  
+
   var buffer = "", stack1, helper, options;
   buffer += "\n      ";
   stack1 = (helper = helpers.loc || (depth0 && depth0.loc),options={hash:{},data:data},helper ? helper.call(depth0, "autostart", options) : helperMissing.call(depth0, "loc", "autostart", options));
@@ -8779,7 +8781,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   var buffer = "", stack1, helper, options, helperMissing=helpers.helperMissing, self=this;
 
 function program1(depth0,data) {
-  
+
   var buffer = "", stack1, helper, options;
   buffer += "\n    ";
   stack1 = (helper = helpers.loc || (depth0 && depth0.loc),options={hash:{},data:data},helper ? helper.call(depth0, "closeShouldMinimize", options) : helperMissing.call(depth0, "loc", "closeShouldMinimize", options));
@@ -8887,7 +8889,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   var buffer = "", stack1, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression, self=this;
 
 function program1(depth0,data) {
-  
+
   var buffer = "", helper, options;
   buffer += "\n<section id=\"window-handling\">\n  <div class=\"section-divider\">\n    <h2>"
     + escapeExpression((helper = helpers.loc || (depth0 && depth0.loc),options={hash:{},data:data},helper ? helper.call(depth0, "startupAndWindowBehavior", options) : helperMissing.call(depth0, "loc", "startupAndWindowBehavior", options)))
@@ -8995,7 +8997,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   var stack1, helperMissing=helpers.helperMissing, self=this;
 
 function program1(depth0,data) {
-  
+
   var buffer = "", stack1, helper, options;
   buffer += "\n<div id=\"webhelper\">\n  ";
   stack1 = (helper = helpers.sliderSetting || (depth0 && depth0.sliderSetting),options={hash:{},inverse:self.noop,fn:self.program(2, program2, data),data:data},helper ? helper.call(depth0, "settings:web-helper", "webhelper", options) : helperMissing.call(depth0, "sliderSetting", "settings:web-helper", "webhelper", options));
@@ -9004,7 +9006,7 @@ function program1(depth0,data) {
   return buffer;
   }
 function program2(depth0,data) {
-  
+
   var buffer = "", stack1, helper, options;
   buffer += "\n    ";
   stack1 = (helper = helpers.loc || (depth0 && depth0.loc),options={hash:{},data:data},helper ? helper.call(depth0, "webhelper", options) : helperMissing.call(depth0, "loc", "webhelper", options));
@@ -9049,19 +9051,19 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   var buffer = "", stack1, helper, options, functionType="function", escapeExpression=this.escapeExpression, self=this, helperMissing=helpers.helperMissing;
 
 function program1(depth0,data) {
-  
-  
+
+
   return " enabled";
   }
 
 function program3(depth0,data) {
-  
-  
+
+
   return " disabled";
   }
 
 function program5(depth0,data) {
-  
+
   var buffer = "", stack1, helper;
   buffer += "data-uri=\"";
   if (helper = helpers.uri) { stack1 = helper.call(depth0, {hash:{},data:data}); }
@@ -9072,7 +9074,7 @@ function program5(depth0,data) {
   }
 
 function program7(depth0,data) {
-  
+
   var buffer = "", stack1, helper;
   buffer += "data-slider-range-property=\"";
   if (helper = helpers.property) { stack1 = helper.call(depth0, {hash:{},data:data}); }
@@ -9083,7 +9085,7 @@ function program7(depth0,data) {
   }
 
 function program9(depth0,data) {
-  
+
   var buffer = "", stack1, helper;
   buffer += "data-slider-range-allowed-property=\"";
   if (helper = helpers.allowedProperty) { stack1 = helper.call(depth0, {hash:{},data:data}); }
@@ -9172,7 +9174,7 @@ helpers = this.merge(helpers, Handlebars.helpers); partials = this.merge(partial
   var buffer = "", stack1, helper, options, self=this, functionType="function", escapeExpression=this.escapeExpression, helperMissing=helpers.helperMissing;
 
 function program1(depth0,data) {
-  
+
   var stack1;
   stack1 = self.invokePartial(partials['../../../libs/spotify-glue-cat/templates/v1/media-image-no-link.hbs'], '../../../libs/spotify-glue-cat/templates/v1/media-image-no-link.hbs', depth0, helpers, partials, data);
   if(stack1 || stack1 === 0) { return stack1; }
@@ -9203,8 +9205,8 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   var buffer = "", stack1, helper, options, self=this, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
 
 function program1(depth0,data) {
-  
-  
+
+
   return " class=\"hidden\" ";
   }
 
@@ -14079,8 +14081,8 @@ helpers = this.merge(helpers, Handlebars.helpers); partials = this.merge(partial
   var buffer = "", stack1, helper, options, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression, functionType="function", self=this, blockHelperMissing=helpers.blockHelperMissing;
 
 function program1(depth0,data) {
-  
-  
+
+
   return "data-context";
   }
 
@@ -14116,7 +14118,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   var buffer = "", stack1, helper, options, functionType="function", escapeExpression=this.escapeExpression, self=this, helperMissing=helpers.helperMissing;
 
 function program1(depth0,data) {
-  
+
   var buffer = "", stack1;
   buffer += "\n  <div class=\"mo-image-background-color\">\n    ";
   stack1 = helpers['if'].call(depth0, (depth0 && depth0.imageUrl), {hash:{},inverse:self.noop,fn:self.program(2, program2, data),data:data});
@@ -14125,7 +14127,7 @@ function program1(depth0,data) {
   return buffer;
   }
 function program2(depth0,data) {
-  
+
   var buffer = "", stack1, helper;
   buffer += "\n      <div class=\"mo-image-background\" style=\"background-image: url('";
   if (helper = helpers.imageUrl) { stack1 = helper.call(depth0, {hash:{},data:data}); }
@@ -14136,7 +14138,7 @@ function program2(depth0,data) {
   }
 
 function program4(depth0,data) {
-  
+
   var buffer = "", stack1;
   buffer += "\n  <div class=\"mo-wide-image\" ";
   stack1 = helpers['if'].call(depth0, (depth0 && depth0.imageUrl), {hash:{},inverse:self.noop,fn:self.program(5, program5, data),data:data});
@@ -14145,7 +14147,7 @@ function program4(depth0,data) {
   return buffer;
   }
 function program5(depth0,data) {
-  
+
   var buffer = "", stack1, helper;
   buffer += "style=\"background-image: url('";
   if (helper = helpers.imageUrl) { stack1 = helper.call(depth0, {hash:{},data:data}); }
@@ -14156,7 +14158,7 @@ function program5(depth0,data) {
   }
 
 function program7(depth0,data) {
-  
+
   var buffer = "", stack1;
   buffer += "\n  <div class=\"mo-image\" ";
   stack1 = helpers['if'].call(depth0, (depth0 && depth0.imageUrl), {hash:{},inverse:self.noop,fn:self.program(5, program5, data),data:data});
@@ -14184,7 +14186,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   var buffer = "", stack1, functionType="function", escapeExpression=this.escapeExpression, self=this, helperMissing=helpers.helperMissing;
 
 function program1(depth0,data) {
-  
+
   var buffer = "", stack1, helper;
   buffer += "data-select=\"";
   if (helper = helpers.id) { stack1 = helper.call(depth0, {hash:{},data:data}); }
@@ -14195,13 +14197,13 @@ function program1(depth0,data) {
   }
 
 function program3(depth0,data) {
-  
-  
+
+
   return "data-select";
   }
 
 function program5(depth0,data) {
-  
+
   var buffer = "", stack1, helper;
   buffer += "data-uri=\"";
   if (helper = helpers.uri) { stack1 = helper.call(depth0, {hash:{},data:data}); }
@@ -14212,7 +14214,7 @@ function program5(depth0,data) {
   }
 
 function program7(depth0,data) {
-  
+
   var buffer = "", stack1, helper;
   buffer += "data-select-property=\"";
   if (helper = helpers.property) { stack1 = helper.call(depth0, {hash:{},data:data}); }
@@ -14223,7 +14225,7 @@ function program7(depth0,data) {
   }
 
 function program9(depth0,data) {
-  
+
   var buffer = "", stack1, helper;
   buffer += "aria-labelledby=\"";
   if (helper = helpers.labelId) { stack1 = helper.call(depth0, {hash:{},data:data}); }
@@ -14234,7 +14236,7 @@ function program9(depth0,data) {
   }
 
 function program11(depth0,data,depth1) {
-  
+
   var buffer = "", stack1, helper, options;
   buffer += "\n     <option\n       ";
   stack1 = (helper = helpers.compare || (depth1 && depth1.compare),options={hash:{},inverse:self.noop,fn:self.program(12, program12, data),data:data},helper ? helper.call(depth0, (data == null || data === false ? data : data.key), (depth1 && depth1.selected), options) : helperMissing.call(depth0, "compare", (data == null || data === false ? data : data.key), (depth1 && depth1.selected), options));
@@ -14247,8 +14249,8 @@ function program11(depth0,data,depth1) {
   return buffer;
   }
 function program12(depth0,data) {
-  
-  
+
+
   return "\n         selected=\"selected\"\n       ";
   }
 
@@ -14280,37 +14282,37 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   var buffer = "", stack1, helper, options, functionType="function", escapeExpression=this.escapeExpression, self=this, helperMissing=helpers.helperMissing;
 
 function program1(depth0,data) {
-  
-  
+
+
   return "true";
   }
 
 function program3(depth0,data) {
-  
-  
+
+
   return "false";
   }
 
 function program5(depth0,data) {
-  
-  
+
+
   return " enabled";
   }
 
 function program7(depth0,data) {
-  
-  
+
+
   return " disabled";
   }
 
 function program9(depth0,data) {
-  
-  
+
+
   return "aria-disabled=\"true\"";
   }
 
 function program11(depth0,data) {
-  
+
   var buffer = "", stack1, helper;
   buffer += "data-slider=\"";
   if (helper = helpers.id) { stack1 = helper.call(depth0, {hash:{},data:data}); }
@@ -14321,13 +14323,13 @@ function program11(depth0,data) {
   }
 
 function program13(depth0,data) {
-  
-  
+
+
   return "data-slider";
   }
 
 function program15(depth0,data) {
-  
+
   var buffer = "", stack1, helper;
   buffer += "aria-labelledby=\"";
   if (helper = helpers.labelId) { stack1 = helper.call(depth0, {hash:{},data:data}); }
@@ -14338,7 +14340,7 @@ function program15(depth0,data) {
   }
 
 function program17(depth0,data) {
-  
+
   var buffer = "", stack1, helper;
   buffer += "data-uri=\"";
   if (helper = helpers.uri) { stack1 = helper.call(depth0, {hash:{},data:data}); }
@@ -14349,7 +14351,7 @@ function program17(depth0,data) {
   }
 
 function program19(depth0,data) {
-  
+
   var buffer = "", stack1, helper;
   buffer += "data-slider-property=\"";
   if (helper = helpers.property) { stack1 = helper.call(depth0, {hash:{},data:data}); }
@@ -14360,7 +14362,7 @@ function program19(depth0,data) {
   }
 
 function program21(depth0,data) {
-  
+
   var buffer = "", stack1, helper;
   buffer += "data-slider-allowed-property=\"";
   if (helper = helpers.allowedProperty) { stack1 = helper.call(depth0, {hash:{},data:data}); }
@@ -23695,8 +23697,8 @@ function registerDefaultHelpers(instance) {
       } else {
         for(var key in context) {
           if(context.hasOwnProperty(key)) {
-            if(data) { 
-              data.key = key; 
+            if(data) {
+              data.key = key;
               data.index = i;
               data.first = (i === 0);
             }
@@ -28185,7 +28187,7 @@ EventEmitter.prototype.emit = function(type, opt_params) {
 /**
  * Emits an event on the emitter.
  *
- * This method invokes all the added event listeners of the `type` of the 
+ * This method invokes all the added event listeners of the `type` of the
  * `event` provided in the order they were added, passing in the `event` as an
  * argument.
  *

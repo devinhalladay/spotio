@@ -29,3 +29,8 @@ sudo cp -r ".tmp/Spotify.app" "dist/"
 # Final step: unmount and delete our temporary DMG
 hdiutil detach /Volumes/Spotify
 rm -rf .tmp/Spotify.dmg
+
+# Copy style.css files from App folders to skin/apps/_[folder].scss
+# for name in Apps/*/*/style.css
+#   do cp $name skin/apps/$(name="${name%/*/*}" && echo "${name##*/}").scss
+# done
