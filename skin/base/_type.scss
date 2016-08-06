@@ -219,7 +219,7 @@ a.text-success:focus,
   -webkit-font-smoothing: antialiased;
 }
 .inverted-text a {
-  color: #181818;
+  color: $main-view-bg-color;
 }
 .inverted-text a:hover {
   color: #000000;

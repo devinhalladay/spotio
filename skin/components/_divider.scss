@@ -32,7 +32,7 @@ hr {
   margin: 12px 0;
 }
 .divider .divider-title {
-  background-color: #181818;
+  background-color: $main-view-bg-color;
   padding: 0 6px;
   font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
   font-size: 11px;
@@ -50,9 +50,9 @@ hr {
   top: 46px;
   left: 0;
   z-index: 99;
-  background-image: -webkit-gradient(linear, left 50%, left 100%, from(#181818), to(rgba(24, 24, 24, 0.6)));
-  background-image: -moz-linear-gradient(top, #181818 50%, rgba(24, 24, 24, 0.6) 100%);
-  background-image: linear-gradient(to bottom, #181818 50%, rgba(24, 24, 24, 0.6) 100%);
+  background-image: -webkit-gradient(linear, left 50%, left 100%, from($main-view-bg-color), to(rgba(24, 24, 24, 0.6)));
+  background-image: -moz-linear-gradient(top, $main-view-bg-color 50%, rgba(24, 24, 24, 0.6) 100%);
+  background-image: linear-gradient(to bottom, $main-view-bg-color 50%, rgba(24, 24, 24, 0.6) 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff181818', endColorstr='#99181818', GradientType=0);
 }

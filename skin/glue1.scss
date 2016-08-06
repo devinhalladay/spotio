@@ -114,7 +114,7 @@
  * Styleguide 70.20
  */
 .puff {
-  background-color: #181818;
+  background-color: $main-view-bg-color;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -610,7 +610,7 @@
  * Styleguide 80.3
  */
 .header {
-  background: #181818;
+  background: $main-view-bg-color;
   clear: left;
   margin: 0 auto;
   position: relative;
@@ -670,9 +670,9 @@
   right: 0;
   top: 20px;
   width: 100%;
-  background-image: -webkit-gradient(linear, 70% top, 100% top, from(rgba(24, 24, 24, 0)), to(#181818));
-  background-image: -moz-linear-gradient(left, rgba(24, 24, 24, 0) 70%, #181818 100%);
-  background-image: linear-gradient(to right, rgba(24, 24, 24, 0) 70%, #181818 100%);
+  background-image: -webkit-gradient(linear, 70% top, 100% top, from(rgba(24, 24, 24, 0)), to($main-view-bg-color));
+  background-image: -moz-linear-gradient(left, rgba(24, 24, 24, 0) 70%, $main-view-bg-color 100%);
+  background-image: linear-gradient(to right, rgba(24, 24, 24, 0) 70%, $main-view-bg-color 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00181818', endColorstr='#ff181818', GradientType=1);
 }
@@ -750,7 +750,7 @@
   padding-bottom: 10px;
 }
 .h-search-field-wrapper.sticky-top {
-  background-color: #181818;
+  background-color: $main-view-bg-color;
   position: fixed;
   z-index: 1020;
   left: 0 !important;
@@ -923,7 +923,7 @@
   right: auto;
 }
 .header-artist.version_1-5:before {
-  background: linear-gradient(transparent, #181818);
+  background: linear-gradient(transparent, $main-view-bg-color);
 }
 .header-artist.header-image {
   background-image: url('https://d2j0f09xqmv212.cloudfront.net/images/standard-artist-header.png');
@@ -1104,7 +1104,7 @@
   width: 100%;
 }
 .h-sticky-header .h-sticky-header-inner {
-  background-color: #181818;
+  background-color: $main-view-bg-color;
   overflow: hidden;
   padding: 0;
   width: 100%;
@@ -1796,11 +1796,11 @@
   display: inline-block;
 }
 .tl-row.selected + .tl-row .td-cell {
-  border-top-color: #181818;
+  border-top-color: $main-view-bg-color;
 }
 .tl-row.selected .tl-cell {
   background-color: #333333;
-  border-color: #181818;
+  border-color: $main-view-bg-color;
 }
 .tl-row.added .tl-save .button {
   visibility: visible;

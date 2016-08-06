@@ -90,7 +90,7 @@
   left: 0;
   width: 90px;
   z-index: 1000;
-  background-color: #181818;
+  background-color: $main-view-bg-color;
 }
 .main-menu.narrow-menu .logo {
   display: block;
@@ -326,7 +326,7 @@
   height: 100%;
   overflow-y: auto;
   overflow-x: hidden;
-  background-color: #181818;
+  background-color: $main-view-bg-color;
   min-height: 100%;
 }
 .main-menu.wide-menu a:not(.button),

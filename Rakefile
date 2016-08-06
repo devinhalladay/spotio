@@ -24,6 +24,15 @@ task :compile do
   puts status ? "Success" : "Failed"
 end
 
+desc "Compile Apps directories into .spa template files"
+task :spa do
+  puts "\n## Compiling Apps/* dirs to build/*.spa"
+  status = system("zip -r archive_name.zip folder_to_compress")
+  find Apps -maxdepth 1 -type d -print0 | xargs -0 -I {} cp build/glue1.css {}
+
+  for i in Apps/*/; do zip -r "build/${i%/}.zip" "$i"; done
+end
+
 # desc "Notify various services about new content"
 #   task :ping => [:pingomatic, :sitemapgoogle, :sitemapbing] do
 # end
