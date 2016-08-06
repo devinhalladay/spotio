@@ -12,16 +12,12 @@ end
 
 desc "Compile Apps directories into .spa template files"
 task :spa do
-  # puts "\n## Compiling Apps/* dirs to build/*.spa"
-  # status = system('for i in Apps/*; do zip -r "build/${i%}.zip" $i/*; done')
-  # puts status ? "Success" : "Failed"
-  # `find Apps -type d -maxdepth 1 -print0 | xargs -0 -I {} zip -r build/*.zip {}`
-  # pushd
-  # app_dirs = system('find Apps -type d -maxdepth 1 -print')
-  system('find Apps -type d -maxdepth 1 -print').each do
-    puts dir
-  end
-  #  -exec zip -r build/'{}'.zip . -i 'cd {}' \;
+  puts "\n## Zipping apps"
+  status = system('pushd Apps; for i in *; do zip -r ../build/Apps/$i.zip $i; done; popd')
+  puts status ? "Success" : "Failed"
+  puts "\n## Moving .zip files to .spa files"
+  status = system('for file in build/Apps/*.zip; do mv "${file}" "${file/%.zip/.spa}"; done')
+  puts status ? "Success" : "Failed"
 end
 
 desc "Compile Sass to build/glue1.css"
