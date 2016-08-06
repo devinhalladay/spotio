@@ -1,55 +1,49 @@
 body {
   font-size: 12px;
-  min-width: 100px;
-}
+  min-width: 100px; }
+
 html,
 body,
 #main {
-  height: 100%;
-}
+  height: 100%; }
+
 .offline #throbber {
   /* ensure throbber is not still animating behind offline overlay */
-  display: none;
-}
+  display: none; }
+
 .nux {
-  display: none;
-}
+  display: none; }
+
 .nux .nux-cta {
   background-image: url(../img/nux_cta_bg.png);
   min-height: 217px;
   padding: 0px 22px;
   overflow: hidden;
-  text-align: center;
-}
+  text-align: center; }
+
 @media screen and (max-width: 100px) {
   .nux .nux-cta {
-    background: #181818;
-  }
-}
+    background: #181818; } }
 .nux .nux-cta h4 {
-  margin-top: 40px;
-}
+  margin-top: 40px; }
+
 @media screen and (max-width: 100px) {
   .nux .nux-cta h4 {
-    display: none;
-  }
-}
+    display: none; } }
 .nux .nux-cta .find-friends,
 .nux .nux-cta .find-friends-small {
-  margin-top: 20px;
-}
+  margin-top: 20px; }
+
 .nux .nux-feed-example {
   background-image: url(../img/nux_feed_bg.png);
-  min-height: 820px;
-}
+  min-height: 820px; }
+
 @media screen and (max-width: 100px) {
   .nux .nux-feed-example {
-    display: none;
-  }
-}
+    display: none; } }
 .app-title {
-  margin-bottom: 26px;
-}
+  margin-bottom: 26px; }
+
 .card {
   position: absolute;
   top: 0px;
@@ -60,42 +54,36 @@ body,
   padding-left: 14px;
   width: 100%;
   background-color: #181818;
-  display: flex;
-}
+  display: flex; }
+
 @media screen and (max-width: 100px) {
   .card {
-    padding-left: 0;
-  }
-}
+    padding-left: 0; } }
 .context-info {
   flex: 1;
-  overflow: hidden;
-}
+  overflow: hidden; }
+
 .friend:hover .user-play-button .mo-image-wrapper .mo-play,
 .friend:hover .user-play-button .mo-image-wrapper .mo-overlay {
-  visibility: visible;
-}
+  visibility: visible; }
+
 @media screen and (max-width: 100px) {
   .friend:hover .user-play-button .mo-image-wrapper .mo-play,
   .friend:hover .user-play-button .mo-image-wrapper .mo-overlay {
-    visibility: hidden;
-  }
-}
+    visibility: hidden; } }
 .friend .user {
   margin-top: 11px;
-  margin-bottom: 3px;
-}
+  margin-bottom: 3px; }
+
 .friend .user.has-context {
-  margin-top: 0;
-}
+  margin-top: 0; }
+
 .friend .user-image.has-context {
-  margin-top: 20px;
-}
+  margin-top: 20px; }
+
 @media screen and (max-width: 100px) {
   .friend .user-image.has-context {
-    margin-top: 0px;
-  }
-}
+    margin-top: 0px; } }
 .friend .user .name {
   font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
   font-size: 14px;
@@ -103,50 +91,48 @@ body,
   letter-spacing: 0.015em;
   font-weight: 200;
   text-transform: normal;
-  color: #FFFFFF;
-}
+  color: #FFFFFF; }
+
 .friend .user-image {
   position: relative;
   width: 40px;
   height: 40px;
-  margin-right: 13px;
-}
+  margin-right: 13px; }
+
 .friend .song-title {
-  line-height: 14px;
-}
+  line-height: 14px; }
+
 .friend .context {
-  margin-top: 2px;
-}
+  margin-top: 2px; }
+
 .friend .status-containers {
   float: right;
   overflow: hidden;
-  margin-right: 8px;
-}
+  margin-right: 8px; }
+
 .friend .active-indicator,
 .friend .from-now {
   margin-left: 5px;
-  overflow: hidden;
-}
+  overflow: hidden; }
+
 @media screen and (max-width: 100px) {
   .friend .active-indicator,
   .friend .from-now {
-    position: absolute;
-  }
+    position: absolute; }
+
   .friend .status-containers {
     width: 14px;
     height: 14px;
     margin-top: 13px;
-    float: left;
-  }
+    float: left; }
+
   .friend .user-image {
-    margin-left: 3px;
-  }
+    margin-left: 3px; }
+
   .friend .from-now {
     width: 13px;
     height: 13px;
-    visibility: hidden !important;
-  }
-}
+    visibility: hidden !important; } }
 .friend .user-play-button {
   width: 100%;
   height: 100%;
@@ -154,31 +140,31 @@ body,
   top: 0;
   left: 0;
   /* Always show a user placeholder, since we're pretending the mo is a user
-    with a different context */
-}
+    with a different context */ }
+
 .friend .user-play-button .mo-overlay {
-  border-radius: 100%;
-}
+  border-radius: 100%; }
+
 .friend .user-play-button .mo-wrapper,
 .friend .user-play-button .mo-image-wrapper {
-  overflow: visible;
-}
+  overflow: visible; }
+
 .friend .user-play-button .mo-image,
 .friend .user-play-button .mo-image-wrapper {
   /* force all context-types to appear rounded, since we pretend
       that they are playable users */
-  border-radius: 500px;
-}
+  border-radius: 500px; }
+
 .friend .user-play-button .mo-placeholder .album-placeholder,
 .friend .user-play-button .mo-placeholder .artist-placeholder,
 .friend .user-play-button .mo-placeholder .playlist-placeholder,
 .friend .user-play-button .mo-placeholder .playlist-folder-placeholder,
 .friend .user-play-button .mo-placeholder .genre-placeholder {
-  display: none;
-}
+  display: none; }
+
 .friend .user-play-button .mo-placeholder .user-placeholder {
-  display: block;
-}
+  display: block; }
+
 .friend .user-play-button .button.mo-play {
   height: 40px;
   line-height: 38px;
@@ -194,68 +180,58 @@ body,
   width: 40px;
   padding-left: 0;
   padding-right: 0;
-  margin: -20px 0px 0px -20px;
-}
+  margin: -20px 0px 0px -20px; }
+
 .friend .user-play-button .button.mo-play .b-alt-text {
-  margin-top: -38px;
-}
+  margin-top: -38px; }
+
 .friend .user-play-button .button.mo-play.contextmenu-active,
 .friend .user-play-button .button.mo-play:not(:disabled):hover {
   background-color: rgba(24, 24, 24, 0.7);
-  color: #ffffff;
-}
+  color: #ffffff; }
+
 .friend .user-play-button .button.mo-play:not(:disabled):hover:active {
   background: rgba(16, 16, 16, 0.76);
   color: #cccccc;
-  transform: scale(1);
-}
+  transform: scale(1); }
+
 @media (-webkit-min-device-pixel-ratio: 2) {
   .friend .user-play-button .button.mo-play:not(:disabled):hover:active {
-    transform: scale(1);
-  }
-}
+    transform: scale(1); } }
 @media (-webkit-min-device-pixel-ratio: 2) {
   .friend .user-play-button .button.mo-play {
-    transition-duration: 50ms;
-  }
-}
+    transition-duration: 50ms; } }
 .friend .user-play-button .button.mo-play:after {
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
-  transition-property: box-shadow;
-}
+  transition-property: box-shadow; }
+
 @media (-webkit-min-device-pixel-ratio: 2) {
   .friend .user-play-button .button.mo-play:after {
-    transition-duration: 50ms;
-  }
-}
+    transition-duration: 50ms; } }
 .friend .user-play-button .button.mo-play.contextmenu-active,
 .friend .user-play-button .button.mo-play:not(:disabled):hover {
   transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
-  transition-property: transform, box-shadow, color, background-color;
-}
+  transition-property: transform, box-shadow, color, background-color; }
+
 @media (-webkit-min-device-pixel-ratio: 2) {
   .friend .user-play-button .button.mo-play.contextmenu-active,
   .friend .user-play-button .button.mo-play:not(:disabled):hover {
-    transition-duration: 66ms;
-  }
-}
+    transition-duration: 66ms; } }
 .friend .user-play-button .button.mo-play.contextmenu-active:after,
 .friend .user-play-button .button.mo-play:not(:disabled):hover:after {
   transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
-  transition-property: box-shadow;
-}
+  transition-property: box-shadow; }
+
 @media (-webkit-min-device-pixel-ratio: 2) {
   .friend .user-play-button .button.mo-play.contextmenu-active:after,
   .friend .user-play-button .button.mo-play:not(:disabled):hover:after {
-    transition-duration: 66ms;
-  }
-}
+    transition-duration: 66ms; } }
 .friend .user-play-button .button.mo-play:not(:disabled):hover:active {
-  transition: none;
-}
+  transition: none; }
+
 .friend .user-play-button .button.mo-play:not(:disabled):hover:active:after {
-  transition: none;
-}
+  transition: none; }
+
 .friend .user-play-button .button.mo-play:after {
   content: '';
   position: absolute;
@@ -264,42 +240,38 @@ body,
   bottom: 0;
   left: 0;
   border-radius: 500px;
-  box-shadow: inset 0 0 0 1px #A0A0A0;
-}
+  box-shadow: inset 0 0 0 1px #A0A0A0; }
+
 .friend .user-play-button .button.mo-play.contextmenu-active,
 .friend .user-play-button .button.mo-play:not(:disabled):hover {
-  box-shadow: inset 0 0 0 1px #FFFFFF, 0 0 0 1px transparent;
-}
+  box-shadow: inset 0 0 0 1px #FFFFFF, 0 0 0 1px transparent; }
+
 .friend .user-play-button .button.mo-play.contextmenu-active:after,
 .friend .user-play-button .button.mo-play:not(:disabled):hover:after {
-  box-shadow: inset 0 0 0 1px #FFFFFF;
-}
+  box-shadow: inset 0 0 0 1px #FFFFFF; }
+
 @media (-webkit-min-device-pixel-ratio: 2) {
   .friend .user-play-button .button.mo-play.contextmenu-active,
   .friend .user-play-button .button.mo-play:not(:disabled):hover {
-    box-shadow: inset 0 0 0 1px #FFFFFF;
-  }
+    box-shadow: inset 0 0 0 1px #FFFFFF; }
+
   .friend .user-play-button .button.mo-play.contextmenu-active:after,
   .friend .user-play-button .button.mo-play:not(:disabled):hover:after {
-    box-shadow: inset 0 0 0 1px #FFFFFF;
-  }
-}
+    box-shadow: inset 0 0 0 1px #FFFFFF; } }
 .friend .user-play-button .button.mo-play:not(:disabled):hover:active {
-  box-shadow: inset 0 0 0 1px #808080;
-}
+  box-shadow: inset 0 0 0 1px #808080; }
+
 .friend .user-play-button .button.mo-play:not(:disabled):hover:active:after {
-  box-shadow: inset 0 0 0 1px #808080;
-}
+  box-shadow: inset 0 0 0 1px #808080; }
+
 .friend .user-play-button .button.mo-play.contextmenu-active,
 .friend .user-play-button .button.mo-play:not(:disabled):hover {
-  transform: scale(1.1);
-}
+  transform: scale(1.1); }
+
 @media (-webkit-min-device-pixel-ratio: 2) {
   .friend .user-play-button .button.mo-play.contextmenu-active,
   .friend .user-play-button .button.mo-play:not(:disabled):hover {
-    transform: scale(1.1);
-  }
-}
+    transform: scale(1.1); } }
 .friend .user-play-button .button.mo-play:before {
   font-family: "glue1-spoticon";
   font-style: normal;
@@ -317,18 +289,18 @@ body,
   line-height: 40px;
   font-size: 20px;
   padding-left: 10px;
-  width: calc(100% - 10px);
-}
+  width: calc(100% - 10px); }
+
 .friend .user-play-button .button.mo-play.button-play:before {
-  content: "\f132";
-}
+  content: "\f132"; }
+
 .friend .user-play-button .button.mo-play.button-play.playing:not(:hover),
 .tl-row.playing .friend .user-play-button .button.mo-play.button-play:not(:hover),
 .tl-row.playing.friend .user-play-button .button.mo-play.button-play:not(:hover),
 .media-object.playing .friend .user-play-button .button.mo-play.button-play:not(:hover),
 .media-object.playing.friend .user-play-button .button.mo-play.button-play:not(:hover) {
-  box-shadow: inset 0 0 0 1px transparent;
-}
+  box-shadow: inset 0 0 0 1px transparent; }
+
 .friend .user-play-button .button.mo-play.button-play.playing:not(:hover):after,
 .tl-row.playing .friend .user-play-button .button.mo-play.button-play:not(:hover):after,
 .tl-row.playing.friend .user-play-button .button.mo-play.button-play:not(:hover):after,
@@ -341,8 +313,8 @@ body,
   bottom: 0;
   left: 0;
   border-radius: 500px;
-  box-shadow: inset 0 0 0 1px transparent;
-}
+  box-shadow: inset 0 0 0 1px transparent; }
+
 .friend .user-play-button .button.mo-play.button-play.playing:not(:hover).contextmenu-active,
 .tl-row.playing .friend .user-play-button .button.mo-play.button-play:not(:hover).contextmenu-active,
 .tl-row.playing.friend .user-play-button .button.mo-play.button-play:not(:hover).contextmenu-active,
@@ -353,8 +325,8 @@ body,
 .tl-row.playing.friend .user-play-button .button.mo-play.button-play:not(:hover):not(:disabled):hover,
 .media-object.playing .friend .user-play-button .button.mo-play.button-play:not(:hover):not(:disabled):hover,
 .media-object.playing.friend .user-play-button .button.mo-play.button-play:not(:hover):not(:disabled):hover {
-  box-shadow: inset 0 0 0 1px transparent, 0 0 0 1px transparent;
-}
+  box-shadow: inset 0 0 0 1px transparent, 0 0 0 1px transparent; }
+
 .friend .user-play-button .button.mo-play.button-play.playing:not(:hover).contextmenu-active:after,
 .tl-row.playing .friend .user-play-button .button.mo-play.button-play:not(:hover).contextmenu-active:after,
 .tl-row.playing.friend .user-play-button .button.mo-play.button-play:not(:hover).contextmenu-active:after,
@@ -365,8 +337,8 @@ body,
 .tl-row.playing.friend .user-play-button .button.mo-play.button-play:not(:hover):not(:disabled):hover:after,
 .media-object.playing .friend .user-play-button .button.mo-play.button-play:not(:hover):not(:disabled):hover:after,
 .media-object.playing.friend .user-play-button .button.mo-play.button-play:not(:hover):not(:disabled):hover:after {
-  box-shadow: inset 0 0 0 1px transparent;
-}
+  box-shadow: inset 0 0 0 1px transparent; }
+
 @media (-webkit-min-device-pixel-ratio: 2) {
   .friend .user-play-button .button.mo-play.button-play.playing:not(:hover).contextmenu-active,
   .tl-row.playing .friend .user-play-button .button.mo-play.button-play:not(:hover).contextmenu-active,
@@ -378,8 +350,8 @@ body,
   .tl-row.playing.friend .user-play-button .button.mo-play.button-play:not(:hover):not(:disabled):hover,
   .media-object.playing .friend .user-play-button .button.mo-play.button-play:not(:hover):not(:disabled):hover,
   .media-object.playing.friend .user-play-button .button.mo-play.button-play:not(:hover):not(:disabled):hover {
-    box-shadow: inset 0 0 0 1px transparent;
-  }
+    box-shadow: inset 0 0 0 1px transparent; }
+
   .friend .user-play-button .button.mo-play.button-play.playing:not(:hover).contextmenu-active:after,
   .tl-row.playing .friend .user-play-button .button.mo-play.button-play:not(:hover).contextmenu-active:after,
   .tl-row.playing.friend .user-play-button .button.mo-play.button-play:not(:hover).contextmenu-active:after,
@@ -390,23 +362,21 @@ body,
   .tl-row.playing.friend .user-play-button .button.mo-play.button-play:not(:hover):not(:disabled):hover:after,
   .media-object.playing .friend .user-play-button .button.mo-play.button-play:not(:hover):not(:disabled):hover:after,
   .media-object.playing.friend .user-play-button .button.mo-play.button-play:not(:hover):not(:disabled):hover:after {
-    box-shadow: inset 0 0 0 1px transparent;
-  }
-}
+    box-shadow: inset 0 0 0 1px transparent; } }
 .friend .user-play-button .button.mo-play.button-play.playing:not(:hover):not(:disabled):hover:active,
 .tl-row.playing .friend .user-play-button .button.mo-play.button-play:not(:hover):not(:disabled):hover:active,
 .tl-row.playing.friend .user-play-button .button.mo-play.button-play:not(:hover):not(:disabled):hover:active,
 .media-object.playing .friend .user-play-button .button.mo-play.button-play:not(:hover):not(:disabled):hover:active,
 .media-object.playing.friend .user-play-button .button.mo-play.button-play:not(:hover):not(:disabled):hover:active {
-  box-shadow: inset 0 0 0 1px transparent;
-}
+  box-shadow: inset 0 0 0 1px transparent; }
+
 .friend .user-play-button .button.mo-play.button-play.playing:not(:hover):not(:disabled):hover:active:after,
 .tl-row.playing .friend .user-play-button .button.mo-play.button-play:not(:hover):not(:disabled):hover:active:after,
 .tl-row.playing.friend .user-play-button .button.mo-play.button-play:not(:hover):not(:disabled):hover:active:after,
 .media-object.playing .friend .user-play-button .button.mo-play.button-play:not(:hover):not(:disabled):hover:active:after,
 .media-object.playing.friend .user-play-button .button.mo-play.button-play:not(:hover):not(:disabled):hover:active:after {
-  box-shadow: inset 0 0 0 1px transparent;
-}
+  box-shadow: inset 0 0 0 1px transparent; }
+
 .friend .user-play-button .button.mo-play.button-play.playing:not(:hover):before,
 .tl-row.playing .friend .user-play-button .button.mo-play.button-play:not(:hover):before,
 .tl-row.playing.friend .user-play-button .button.mo-play.button-play:not(:hover):before,
@@ -414,46 +384,44 @@ body,
 .media-object.playing.friend .user-play-button .button.mo-play.button-play:not(:hover):before {
   content: "\f1D0";
   padding-left: 8.75px;
-  width: calc(100% - 8.75px);
-}
+  width: calc(100% - 8.75px); }
+
 .friend .user-play-button .button.mo-play.button-play.playing:hover:before,
 .tl-row.playing .friend .user-play-button .button.mo-play.button-play:hover:before,
 .tl-row.playing.friend .user-play-button .button.mo-play.button-play:hover:before,
 .media-object.playing .friend .user-play-button .button.mo-play.button-play:hover:before,
 .media-object.playing.friend .user-play-button .button.mo-play.button-play:hover:before {
-  content: "\f130";
-}
+  content: "\f130"; }
+
 .friend .user-play-button.playing .button.mo-play:not(:hover):before {
   padding-left: 8.75px;
-  width: calc(100% - 8.75px);
-}
+  width: calc(100% - 8.75px); }
+
 .glue2 .friend .user-play-button .button.mo-play {
   width: 40px;
-  height: 40px;
-}
+  height: 40px; }
+
 .glue2 .friend .user-play-button .button.mo-play:before {
   line-height: 40px;
   font-size: 28px;
   padding-left: 6px;
-  width: calc(100% - 6px);
-}
+  width: calc(100% - 6px); }
+
 .card.inactive-friends-divider {
-  padding: 0px;
-}
+  padding: 0px; }
+
 .card.inactive-friends-divider .section-divider {
   padding: 19px 0 0px 0px;
   margin: 0 13px;
   border-bottom: none;
-  border-top: 1px solid #222326;
-}
+  border-top: 1px solid #222326; }
+
 @media screen and (max-width: 100px) {
   .card.inactive-friends-divider .section-divider {
-    padding-top: 0;
-  }
+    padding-top: 0; }
+
   .card.inactive-friends-divider .section-divider h3 {
-    display: none;
-  }
-}
+    display: none; } }
 .card.inactive-friends-divider .section-divider > * {
   font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
   font-size: 18px;
@@ -461,92 +429,77 @@ body,
   letter-spacing: normal;
   font-weight: 400;
   color: #FFFFFF;
-  text-transform: normal;
-}
+  text-transform: normal; }
+
 .drop-target-active {
   background-color: #FFFFFF;
-  color: #444;
-}
+  color: #444; }
+
 .drop-target-active .user .name {
-  color: #444;
-}
+  color: #444; }
+
 :not(.spot-enabled) .friend .status-containers.active .active-indicator {
-  display: block;
-}
+  display: block; }
+
 :not(.spot-enabled) .friend .status-containers.active .from-now {
-  display: none;
-}
+  display: none; }
+
 :not(.spot-enabled) .friend .status-containers:not(.active) .active-indicator {
-  display: none;
-}
+  display: none; }
+
 :not(.spot-enabled) .friend .status-containers:not(.active) .from-now {
-  display: block;
-}
+  display: block; }
+
 .active-indicator {
   width: 13px;
   height: 13px;
   overflow: hidden;
   background-size: auto 100%;
   -webkit-animation: speaker-a 0.8s steps(5, end) 5 forwards;
-  background-image: url(../img/speaker_sprite.png);
-}
+  background-image: url(../img/speaker_sprite.png); }
+
 @-webkit-keyframes speaker-a {
   from {
-    background-position: 0%;
-  }
+    background-position: 0%; }
   to {
-    background-position: 100%;
-  }
-}
+    background-position: 100%; } }
 @-webkit-keyframes speaker-b {
   from {
-    background-position: 0%;
-  }
+    background-position: 0%; }
   to {
-    background-position: 100%;
-  }
-}
+    background-position: 100%; } }
 .find-friends-button-container {
   padding: 34px 0;
   text-align: center;
-  display: block;
-}
+  display: block; }
+
 .social-icons-card {
-  padding: 8px 8px 7px 14px;
-}
+  padding: 8px 8px 7px 14px; }
+
 .social-icons-card img {
   display: inline-block;
-  cursor: pointer;
-}
+  cursor: pointer; }
+
 @media screen and (max-width: 100px) {
   .context-info {
-    display: none;
-  }
-}
+    display: none; } }
 .find-friends-small {
-  display: none;
-}
+  display: none; }
+
 @media screen and (max-width: 100px) {
   .find-friends-small {
-    display: block;
-  }
-}
+    display: block; } }
 @media screen and (max-width: 100px) {
   .find-friends {
-    display: none;
-  }
-}
+    display: none; } }
 .container {
-  min-width: 100px;
-}
+  min-width: 100px; }
+
 .new-chrome-style body {
-  background: #000000;
-}
+  background: #000000; }
+
 @media screen and (max-width: 100px) {
   .new-chrome-style .nux .nux-cta {
-    background: #000000;
-  }
-}
+    background: #000000; } }
 .new-chrome-style .card {
-  background-color: #000000;
-}
+  background-color: #000000; }

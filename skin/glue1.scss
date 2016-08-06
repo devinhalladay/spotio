@@ -1238,7 +1238,7 @@
   width: 8px;
 }
 .trend-mark.trend-up {
-  color: $primary-accent-color;
+  color: $spotify-green;
 }
 .trend-mark.trend-down {
   color: #CD1A2B;
@@ -2017,7 +2017,7 @@
   display: inline-block;
   line-height: inherit;
   vertical-align: bottom;
-  color: #00ABED;
+  color: $primary-accent-color;
   font-size: 14px;
 }
 .tl-sort-asc:after {

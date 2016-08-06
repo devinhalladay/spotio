@@ -74,8 +74,8 @@ a.list-group-item:focus {
 a.list-group-item.active {
   z-index: 2;
   color: #FFFFFF;
-  background-color: #00ABED;
-  border-color: #00ABED;
+  background-color: $primary-accent-color;
+  border-color: $primary-accent-color;
 }
 a.list-group-item.active .list-group-item-heading {
   color: inherit;
@@ -175,7 +175,7 @@ a.list-group-item.active .list-group-item-text {
   border-color: transparent;
 }
 .list-group-item.list-group-item-media.active:before {
-  background: #00ABED;
+  background: $primary-accent-color;
   content: "";
   height: 100%;
   position: absolute;

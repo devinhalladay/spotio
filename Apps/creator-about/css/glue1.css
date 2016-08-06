@@ -371,7 +371,7 @@ a.text-danger:focus,
   color: #f18f98; }
 
 .text-success {
-  color: #1ED660; }
+  color: #00ABED; }
 
 .text-success a,
 a.text-success {
@@ -16614,5 +16614,3 @@ th[data-sort]:hover {
 
 .modal-social-user-list hr {
   border-top-color: #dbdbdb; }
-
-/*# sourceMappingURL=glue1.css.map */

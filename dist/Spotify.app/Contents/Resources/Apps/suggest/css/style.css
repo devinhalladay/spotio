@@ -5,22 +5,22 @@
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 2;
-}
+  z-index: 2; }
+
 .throbberWrapper .throbber {
   position: absolute;
   top: 50%;
   left: 50%;
   margin-top: -20px;
-  margin-left: -20px;
-}
+  margin-left: -20px; }
+
 .throbberWrapper.initial {
-  top: 0;
-}
+  top: 0; }
+
 html,
 body {
-  height: 100%;
-}
+  height: 100%; }
+
 body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -28,97 +28,97 @@ body {
   position: relative;
   padding: 0;
   background-color: #282828;
-  min-width: 239px;
-}
+  min-width: 239px; }
+
 ul {
-  margin-bottom: 0 !important;
-}
+  margin-bottom: 0 !important; }
+
 .content {
-  padding: 0 20px 0 0;
-}
+  padding: 0 20px 0 0; }
+
 .view-content {
-  height: 100%;
-}
+  height: 100%; }
+
 .view-content .results,
 .view-content .history {
-  display: none;
-}
+  display: none; }
+
 .view-content[data-state="results"] .results,
 .view-content[data-state="history"] .history {
-  display: block;
-}
+  display: block; }
+
 /* ==========================================================================
    Highlight
    ========================================================================== */
 strong,
 .item-subtitle strong {
-  font-weight: 400;
-}
+  font-weight: 400; }
+
 strong {
-  color: #ffffff !important;
-}
+  color: #ffffff !important; }
+
 .item-subtitle strong {
-  color: #bababa !important;
-}
+  color: #bababa !important; }
+
 /* ==========================================================================
    GLUE OVERRIDES
    ========================================================================== */
 .mo-image {
-  -webkit-backface-visibility: visible !important;
-}
+  -webkit-backface-visibility: visible !important; }
+
 li > a {
-  color: #FFFFFF !important;
-}
+  color: #FFFFFF !important; }
+
 [data-uri^="spotify:track"] .mo-info,
 [data-uri^="spotify:internal:topresult:spotify:track"] .mo-info {
-  margin-left: 0 !important;
-}
+  margin-left: 0 !important; }
+
 [data-uri^="spotify:track"] .mo-image-wrapper,
 [data-uri^="spotify:internal:topresult:spotify:track"] .mo-image-wrapper {
-  display: none !important;
-}
+  display: none !important; }
+
 .mo-title {
-  display: none !important;
-}
+  display: none !important; }
+
 .mo-info {
-  padding-top: 15px !important;
-}
+  padding-top: 15px !important; }
+
 .has-subtitle .mo-info {
-  padding-top: 5px !important;
-}
+  padding-top: 5px !important; }
+
 .item-title,
 .item-subtitle {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  display: block;
-}
+  display: block; }
+
 .item-title {
   margin: 0 !important;
-  line-height: 21px !important;
-}
+  line-height: 21px !important; }
+
 .mo-info {
   padding-left: 10px !important;
   padding-right: 10px !important;
-  background-color: transparent !important;
-}
+  background-color: transparent !important; }
+
 .list-group-item.list-group-item-media.more {
   border-bottom: 2px solid transparent !important;
-  margin-bottom: 0 !important;
-}
+  margin-bottom: 0 !important; }
+
 .mo-image-background-color {
-  display: none !important;
-}
+  display: none !important; }
+
 .mo-image.fade-able {
   -webkit-transition: opacity 300ms;
   -moz-transition: opacity 300ms;
   -o-transition: opacity 300ms;
   transition: opacity 300ms;
-  opacity: 1;
-}
+  opacity: 1; }
+
 .mo-image.fade-out {
-  opacity: 0;
-}
+  opacity: 0; }
+
 /*
 This is needed for desktop, it's a super hack for CEF.
 If not added, searching for a uri and then removing it, to render
@@ -130,8 +130,8 @@ recent searches - hover state will be broken.
   -moz-transform: none !important;
   -ms-transform: none !important;
   -o-transform: none !important;
-  transform: none !important;
-}
+  transform: none !important; }
+
 /* ==========================================================================
    Icons
    ========================================================================== */
@@ -145,8 +145,8 @@ recent searches - hover state will be broken.
   height: 20px;
   position: absolute;
   top: 9px;
-  right: 7px;
-}
+  right: 7px; }
+
 /* ==========================================================================
    Item
    ========================================================================== */
@@ -164,11 +164,11 @@ recent searches - hover state will be broken.
   -webkit-transition: background-color ease-in-out 100ms;
   -moz-transition: background-color ease-in-out 100ms;
   -o-transition: background-color ease-in-out 100ms;
-  transition: background-color ease-in-out 100ms;
-}
+  transition: background-color ease-in-out 100ms; }
+
 .selectable .item-subtitle {
-  color: #A0A0A0 !important;
-}
+  color: #A0A0A0 !important; }
+
 .selectable > a {
   position: absolute;
   top: 0;
@@ -176,11 +176,11 @@ recent searches - hover state will be broken.
   right: 0;
   bottom: 0;
   border-bottom: 0 !important;
-  z-index: 1;
-}
+  z-index: 1; }
+
 .selectable:last-child {
-  margin-bottom: 0 !important;
-}
+  margin-bottom: 0 !important; }
+
 .selectable .label {
   color: #A0A0A0;
   background: transparent;
@@ -190,18 +190,18 @@ recent searches - hover state will be broken.
   vertical-align: 10%;
   border: 1px solid #4d4d4d;
   font-size: 10px;
-  margin-right: 5px;
-}
+  margin-right: 5px; }
+
 .selectable.selected {
-  background-color: #4d4d4d !important;
-}
+  background-color: #4d4d4d !important; }
+
 .selectable.selected .label {
   color: #bababa !important;
-  border-color: #666666 !important;
-}
+  border-color: #666666 !important; }
+
 .selectable.selected:hover {
-  cursor: pointer;
-}
+  cursor: pointer; }
+
 /* ==========================================================================
    Title
    ========================================================================== */
@@ -214,19 +214,19 @@ recent searches - hover state will be broken.
   font-weight: 200;
   color: #A0A0A0;
   text-transform: uppercase;
-  letter-spacing: 0.16em;
-}
+  letter-spacing: 0.16em; }
+
 .title > .linkable-title:hover {
   cursor: pointer;
-  color: #bababa;
-}
+  color: #bababa; }
+
 /* ==========================================================================
    History
    ========================================================================== */
 .history {
   width: 239px;
-  padding: 6px 8px;
-}
+  padding: 6px 8px; }
+
 .history .selectable {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -235,22 +235,21 @@ recent searches - hover state will be broken.
   margin-bottom: 0 !important;
   background-color: transparent !important;
   padding: 10px 25px 10px 10px;
-  border-color: #404040;
-}
+  border-color: #404040; }
+
 .history .selectable.selected {
-  background-color: #4d4d4d !important;
-}
+  background-color: #4d4d4d !important; }
+
 .history .selectable:first-child {
-  border-top: 0 !important;
-}
+  border-top: 0 !important; }
+
 .history .selectable:last-child {
-  border-bottom: 0 !important;
-}
+  border-bottom: 0 !important; }
+
 /* ==========================================================================
    Results
    ========================================================================== */
 .results {
   width: 239px;
   padding: 8px 11px;
-  overflow: hidden;
-}
+  overflow: hidden; }

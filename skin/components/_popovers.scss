@@ -183,7 +183,7 @@
   color: #FFFFFF;
 }
 .popover-nav .nav > li.active > a:after {
-  background-color: #00ABED;
+  background-color: $primary-accent-color;
 }
 .popover-nav .nav > li > a {
   color: rgba(255, 255, 255, 0.5);

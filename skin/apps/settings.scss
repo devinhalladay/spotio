@@ -1,3 +1,6 @@
+@import '../base/variables';
+
+
 #settings.is-incognito .incognito-state .slider {
   background: #333333;
   border-color: transparent;
@@ -85,7 +88,7 @@ body {
   clear: both;
 }
 .setting-row.active .col.action a {
-  color: #1DB954;
+  color: $primary-accent-color;
 }
 .setting-row.active small {
   display: block;

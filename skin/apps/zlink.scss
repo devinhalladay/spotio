@@ -1,3 +1,6 @@
+@import '../base/variables';
+
+
 /**
  * ZLink specific vars
  */
@@ -405,7 +408,7 @@
   content: "\f130";
 }
 .capping-full-screen-message .cfsm-close-btn.active {
-  color: #1ED660;
+  color: $primary-accent-color;
 }
 .capping-full-screen-message .cfsm-close-btn.active.contextmenu-active,
 .capping-full-screen-message .cfsm-close-btn.active:not(:disabled):hover {
@@ -580,7 +583,7 @@
   content: ' ';
   display: block;
   position: absolute;
-  border-right: 4px solid #1ED660;
+  border-right: 4px solid $primary-accent-color;
   left: 0;
   top: 0px;
   bottom: 0px;
@@ -885,7 +888,7 @@
   top: 0;
   right: 2px;
   height: 32px;
-  color: #1DB954;
+  color: $primary-accent-color;
 }
 .navbar-old-chrome-style.sidebar-scroll-element .offline.complete .edit {
   width: calc(100% - 78px);
@@ -1099,12 +1102,12 @@
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item:not(.folder).active > div:focus,
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item:not(.folder).active > a:focus,
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item.folder.active .title:focus {
-  color: #1DB954;
+  color: $primary-accent-color;
 }
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item:not(.folder).active > div:hover,
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item:not(.folder).active > a:hover,
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item.folder.active .title:hover {
-  color: #1ED660;
+  color: $primary-accent-color;
 }
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .playing-indicator {
   display: none;
@@ -1417,7 +1420,7 @@
 }
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item.offline.complete .offline-indicator {
   display: block;
-  color: #1DB954;
+  color: $primary-accent-color;
 }
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item.offline.complete.playing .offline-indicator {
   display: none;
@@ -1510,7 +1513,7 @@
   color: #FFFFFF;
 }
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item.active .drop-target-active {
-  color: #1ED660;
+  color: $primary-accent-color;
 }
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item.offline.waiting .drop-target-active,
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item.offline.complete .drop-target-active {
@@ -2102,7 +2105,7 @@
 }
 .view-player #connect #devices-label.remote,
 .view-player #connect #devices-icon.remote {
-  color: #1ED660;
+  color: $primary-accent-color;
 }
 .view-player #connect #devices-icon {
   margin: 0 8px;
@@ -2293,12 +2296,12 @@
   border-bottom: none;
 }
 .view-player #connect-picker #connect-container #connect-devices ul li.active {
-  color: #1DB954;
+  color: $primary-accent-color;
 }
 .view-player #connect-picker #connect-container #connect-devices ul li.active .device-title,
 .view-player #connect-picker #connect-container #connect-devices ul li.active .device-subtitle,
 .view-player #connect-picker #connect-container #connect-devices ul li.active .device-icon::before {
-  color: #1DB954;
+  color: $primary-accent-color;
 }
 .view-player #connect-picker #connect-container #connect-devices ul li.not-available .device-title,
 .view-player #connect-picker #connect-container #connect-devices ul li.not-available .device-subtitle {
@@ -2340,7 +2343,7 @@
 }
 .view-player .remote-playback-bar {
   display: none;
-  background-color: #1DB954;
+  background-color: $primary-accent-color;
   position: relative;
   left: 0;
   height: 20px;
@@ -2367,7 +2370,7 @@
   height: 0;
   content: "";
   border: 10px solid transparent;
-  border-bottom: 10px solid #1DB954;
+  border-bottom: 10px solid $primary-accent-color;
   right: 190px;
   position: absolute;
   top: -20px;
@@ -2473,13 +2476,13 @@ body.remotebar #connect-container-background {
 }
 #progressbar[data-saber-color='green'] .inner,
 #progress-bar-new[data-saber-color='green'] .inner {
-  box-shadow: 0 0 16px 1px #1ED660;
+  box-shadow: 0 0 16px 1px $primary-accent-color;
   background-image: -webkit-linear-gradient(top, #87dc5a 0%, #FFFFFF 30%, #FFFFFF 50%, #FFFFFF 70%, #87dc5a 100%);
   /* flicker intensity */
 }
 #progressbar[data-saber-color='green'] .inner:before,
 #progress-bar-new[data-saber-color='green'] .inner:before {
-  box-shadow: 0 0 16px 4px #1ED660;
+  box-shadow: 0 0 16px 4px $primary-accent-color;
 }
 #progressbar[data-saber-color='blue'] .inner,
 #progress-bar-new[data-saber-color='blue'] .inner {
@@ -3994,12 +3997,12 @@ body.remotebar #connect-container-background {
   outline: none;
 }
 .view-player-new #connect-picker-new-chrome-style #connect-container-new-chrome-style .connect-devices-new-chrome-style ul li.active {
-  color: #1DB954;
+  color: $primary-accent-color;
 }
 .view-player-new #connect-picker-new-chrome-style #connect-container-new-chrome-style .connect-devices-new-chrome-style ul li.active .device-title,
 .view-player-new #connect-picker-new-chrome-style #connect-container-new-chrome-style .connect-devices-new-chrome-style ul li.active .device-subtitle,
 .view-player-new #connect-picker-new-chrome-style #connect-container-new-chrome-style .connect-devices-new-chrome-style ul li.active .device-icon::before {
-  color: #1DB954;
+  color: $primary-accent-color;
 }
 .view-player-new #connect-picker-new-chrome-style #connect-container-new-chrome-style .connect-devices-new-chrome-style ul li.active .device-subtitle {
   text-transform: uppercase;
@@ -4026,7 +4029,7 @@ body.remotebar #connect-container-background {
 }
 .view-player-new .remote-playback-bar {
   display: none;
-  background-color: #1DB954;
+  background-color: $primary-accent-color;
   position: relative;
   left: 0;
   height: 20px;
@@ -4060,7 +4063,7 @@ body.remotebar #connect-container-background {
   height: 0;
   content: "";
   border: 10px solid transparent;
-  border-bottom: 10px solid #1DB954;
+  border-bottom: 10px solid $primary-accent-color;
   right: -10px;
   position: absolute;
   top: -20px;
@@ -4316,7 +4319,7 @@ body.remotebar #connect-container-background-new-chrome-style {
 }
 .view-player-new .player-controls-container .progress-container.progress-bar-enabled:hover .progress-bar .inner,
 .view-player-new .player-controls-container .progress-container.progress-bar-enabled.dragging-progress-bar .progress-bar .inner {
-  background-color: #1DB954;
+  background-color: $primary-accent-color;
 }
 .view-player-new .player-controls-container .progress-container:hover .elapsed,
 .view-player-new .player-controls-container .progress-container:hover .remaining {
@@ -4907,7 +4910,7 @@ body.remotebar #connect-container-background-new-chrome-style {
 }
 .view-player-new .player-controls-container .controls .previous.active,
 .view-player-new .player-controls-container .controls .next.active {
-  color: #1ED660;
+  color: $primary-accent-color;
 }
 .view-player-new .player-controls-container .controls .previous.active.contextmenu-active,
 .view-player-new .player-controls-container .controls .next.active.contextmenu-active,
@@ -5407,7 +5410,7 @@ body.remotebar #connect-container-background-new-chrome-style {
 .view-player-new .player-controls-container .controls .button-repeat.active,
 .view-player-new .player-controls-container .controls .button-thumbs-down.active,
 .view-player-new .player-controls-container .controls .button-thumbs-up.active {
-  color: #1ED660;
+  color: $primary-accent-color;
 }
 .view-player-new .player-controls-container .controls .button-shuffle.active.contextmenu-active,
 .view-player-new .player-controls-container .controls .button-repeat.active.contextmenu-active,
@@ -5832,7 +5835,7 @@ body.remotebar #connect-container-background-new-chrome-style {
 .view-player-new .extra-controls-container .button-lyrics.active,
 .view-player-new .extra-controls-container .button-queue.active,
 .view-player-new .extra-controls-container .button-devices.active {
-  color: #1ED660;
+  color: $primary-accent-color;
 }
 .view-player-new .extra-controls-container .button-lyrics.active.contextmenu-active,
 .view-player-new .extra-controls-container .button-queue.active.contextmenu-active,
@@ -5875,7 +5878,7 @@ body.remotebar #connect-container-background-new-chrome-style {
 }
 .view-player-new .extra-controls-container .volumebar-container .progress-bar-wrapper.active .inner,
 .view-player-new .extra-controls-container .volumebar-container .progress-bar-wrapper:hover .inner {
-  background: #1DB954;
+  background: $primary-accent-color;
 }
 .view-player-new .image-expanded .cover-image-link-wrapper {
   flex-basis: 0;
@@ -6189,7 +6192,7 @@ body.remotebar #connect-container-background-new-chrome-style {
   content: "\f130";
 }
 .view-player-new .nowplaying-add-button.active {
-  color: #1ED660;
+  color: $primary-accent-color;
 }
 .view-player-new .nowplaying-add-button.active.contextmenu-active,
 .view-player-new .nowplaying-add-button.active:not(:disabled):hover {
@@ -6208,7 +6211,7 @@ body.remotebar #connect-container-background-new-chrome-style {
   background-color: #FFFFFF;
 }
 .view-player-new .nowplaying-add-button.added {
-  color: #1ED660;
+  color: $primary-accent-color;
 }
 /* End Other styles */
 .view-search {
@@ -6806,7 +6809,7 @@ body.remotebar #connect-container-background-new-chrome-style {
   left: 0;
   width: 0;
   height: 5px;
-  background-color: #1ED660;
+  background-color: $primary-accent-color;
   transition: width 0.25s ease-out;
 }
 #view-modal .playlist-annotate .image-upload-progress-bar.no-transition {
@@ -7049,7 +7052,7 @@ body.remotebar #connect-container-background-new-chrome-style {
   }
 }
 #churned-locked-state .cancel-sub {
-  color: #1ED660;
+  color: $primary-accent-color;
 }
 #view-buddy-list {
   width: 256px;
@@ -7464,7 +7467,7 @@ body.remotebar #connect-container-background-new-chrome-style {
   content: "\f130";
 }
 .video-close-button.active {
-  color: #1ED660;
+  color: $primary-accent-color;
 }
 .video-close-button.active.contextmenu-active,
 .video-close-button.active:not(:disabled):hover {

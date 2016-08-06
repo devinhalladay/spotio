@@ -86,7 +86,7 @@
   color: #FFFFFF;
 }
 .nav > li.active > a:after {
-  background-color: #00ABED;
+  background-color: $primary-accent-color;
 }
 .nav > li.disabled > a {
   color: #A0A0A0;
@@ -145,7 +145,7 @@
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
   color: #fff;
-  background-color: #00ABED;
+  background-color: $primary-accent-color;
 }
 .nav-pills > li.active > a:after {
   display: none;

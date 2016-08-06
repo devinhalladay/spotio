@@ -1,3 +1,6 @@
+@import '../base/variables';
+
+
 h1 {
   margin-bottom: 30px;
 }
@@ -155,7 +158,7 @@ h1 {
   display: none;
 }
 .story .share-group .media-object-small.media-object-horizontal.playing .mo-title {
-  color: #1ED660;
+  color: $primary-accent-color;
 }
 .empty-state {
   background: #282828;
