@@ -1,0 +1,45 @@
+/**
+ * Drag & Drop
+ *
+ * Not much use for anyone except spotify-events.
+ *
+ * Markup:
+ *   <div class="dnd-image" draggable>Text
+ *   </div>
+ *
+ * Styleguide 60.7
+ */
+[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.dnd-image-shelter {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #181818;
+  width: 300px;
+  height: 300px;
+  z-index: -1;
+}
+.dnd-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  border: 1px solid black;
+  color: #444;
+  display: inline-block;
+  font-size: 13px;
+  padding: 3px 6px 1px 6px;
+  max-width: 300px;
+  max-height: 300px;
+  z-index: -2;
+}
+.tr-drag-indicator {
+  position: absolute;
+  border-top: 1px solid #1DB954;
+  pointer-events: none;
+}

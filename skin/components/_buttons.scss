@@ -1,0 +1,3953 @@
+/**
+ * Standard buttons
+ *
+ * <span class="text-warning">NOTE: Any button title must be in a `span` element
+ * and the span must not have spaces before or after it. This is to stop IE's fake
+ * depressing of the buttons when clicked.</span>
+ *
+ * Markup: <button type="button" class="button {$modifiers}">
+ *   Some button
+ * </button>
+ * <button type="button" class="button button-primary {$modifiers}">
+ *   Some button
+ * </button>
+ *
+ * Styleguide 25.1
+ */
+/**
+ * Icon buttons
+ *
+ * Styleguide 25.2
+ */
+/**
+ * With text
+ *
+ * Markup: <button type="button" class="button spoticon-radio-16">
+ *   Start Radio
+ * </button>
+ *
+ * Styleguide 25.2.1
+ */
+/**
+ * Without text
+ *
+ * Markup: <button type="button" class="button button-icon-only spoticon-more-16"></button>
+ * <button type="button" class="button button-icon-only spoticon-plus-16"></button>
+ * <button type="button" class="button button-icon-only spoticon-check-16"></button>
+ * <button type="button" class="button button-icon-only spoticon-radio-16"></button>
+ * <button type="button" class="button button-icon-only spoticon-pause-16"></button>
+ * <button type="button" class="button button-icon-only spoticon-play-16"></button>
+ * <button type="button" class="button button-icon-only spoticon-thumbs-down-16"></button>
+ * <button type="button" class="button button-icon-only spoticon-thumbs-up-16"></button>
+ *
+ * Styleguide 25.2.2
+ */
+/**
+ * Without text and circle
+ *
+ * Markup: <button type="button" class="button button-icon-only button-no-border spoticon-more-16"></button>
+ * <button type="button" class="button button-icon-only button-no-border spoticon-plus-16"></button>
+ * <button type="button" class="button button-icon-only button-no-border spoticon-check-16"></button>
+ * <button type="button" class="button button-icon-only button-no-border spoticon-radio-16"></button>
+ * <button type="button" class="button button-icon-only button-no-border spoticon-pause-16"></button>
+ * <button type="button" class="button button-icon-only button-no-border spoticon-play-16"></button>
+ * <button type="button" class="button button-icon-only button-no-border spoticon-thumbs-down-16"></button>
+ * <button type="button" class="button button-icon-only button-no-border spoticon-thumbs-up-16"></button>
+ *
+ * Styleguide 25.2.3
+ */
+/**
+ * Specific buttons
+ *
+ * Styleguide 25.3
+ */
+/**
+ * Play & Radio
+ *
+ * The play button will always have a playing/paused indicator, a play button should never just be text.
+ * Most of the time you probably want play to be the primary action too, so add .button-primary.
+ *
+ * Markup:
+ * <button type="button" class="button button-play">
+ *   <div class="b-play-text">Play</div>
+ *   <div class="b-radio-text">Start Radio</div>
+ *   <div class="b-pause-text b-alt-text">Pause</div>
+ * </button>
+ * <button type="button" class="button button-play button-icon-only">
+ *   <div class="b-play-text">Play</div>
+ *   <div class="b-radio-text">Start Radio</div>
+ *   <div class="b-pause-text b-alt-text">Pause</div>
+ * </button>
+ * <button type="button" class="button button-radio">
+ *   <div class="b-play-text">Play</div>
+ *   <div class="b-radio-text">Start Radio</div>
+ *   <div class="b-pause-text b-alt-text">Pause</div>
+ * </button>
+ * <button type="button" class="button button-radio button-icon-only">
+ *   <div class="b-play-text">Play</div>
+ *   <div class="b-radio-text">Start Radio</div>
+ *   <div class="b-pause-text b-alt-text">Pause</div>
+ * </button>
+ * <button type="button" class="button button-play button-primary">
+ *   <div class="b-play-text">Play</div>
+ *   <div class="b-radio-text">Start Radio</div>
+ *   <div class="b-pause-text b-alt-text">Pause</div>
+ * </button>
+ *
+ * Styleguide 25.3.1
+ */
+/**
+ * Save / Follow
+ *
+ * Markup:
+ * <button type="button" class="button button-add" data-button="add">
+ *   <div class="b-add-text">Save</div>
+ *   <div class="b-added-text b-alt-text">Saved</div>
+ *   <div class="b-remove-text b-alt-text">Remove</div>
+ * </button>
+ * <button type="button" class="button button-add button-icon-only" data-button="add">
+ *   <div class="b-add-text">Save</div>
+ *   <div class="b-added-text b-alt-text">Saved</div>
+ *   <div class="b-remove-text b-alt-text">Remove</div>
+ * </button>
+ * <button type="button" class="button button-add" data-button="add">
+ *   <div class="b-add-text">Follow</div>
+ *   <div class="b-added-text b-alt-text">Following</div>
+ *   <div class="b-remove-text b-alt-text">Unfollow</div>
+ * </button>
+ * <button type="button" class="button button-add button-icon-only" data-button="add">
+ *   <div class="b-add-text">Follow</div>
+ *   <div class="b-added-text b-alt-text">Following</div>
+ *   <div class="b-remove-text b-alt-text">Unfollow</div>
+ * </button>
+ *
+ * Styleguide 25.3.2
+ */
+/**
+ * Button Groups
+ *
+ * Styleguide 25.4
+ */
+/**
+ * With Icons
+ *
+ * Markup: <div class="button-group">
+ *   <button type="button" class="button button-icon-only spoticon-list-view-16"></button>
+ *   <button type="button" class="button button-icon-only spoticon-list-view-16 active"></button>
+ *   <button type="button" class="button button-icon-only spoticon-grid-view-16"></button>
+ *   <button type="button" class="button button-icon-only spoticon-grid-view-16 active"></button>
+ *   <button type="button" class="button button-icon-only spoticon-more-16"></button>
+ *   <button type="button" class="button button-icon-only spoticon-more-16 active"></button>
+ * </div>
+ *
+ * Styleguide 25.4.1
+ */
+/**
+ * With Single letters
+ *
+ * Markup: <div class="button-group">
+ *   <button type="button" class="button">A</button>
+ *   <button type="button" class="button active">A</button>
+ *   <button type="button" class="button">B</button>
+ *   <button type="button" class="button active">B</button>
+ *   <button type="button" class="button">C</button>
+ *   <button type="button" class="button active">C</button>
+ * </div>
+ *
+ * Styleguide 25.4.2
+ */
+
+
+.button {
+  cursor: default;
+  display: inline-block;
+  margin-bottom: 0;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  background-color: transparent;
+  border: 0;
+  z-index: 0;
+  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.button:focus {
+  outline: none;
+}
+.button:disabled:not(.current) {
+  cursor: default;
+  pointer-events: none;
+  opacity: 0.4;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .button {
+    backface-visibility: hidden;
+  }
+}
+.button.button-green {
+  height: 32px;
+  line-height: 30px;
+  padding-top: 2px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-radius: 16px;
+  background: #1DB954;
+  color: #FFFFFF;
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+.button.button-green .b-alt-text {
+  margin-top: -30px;
+}
+.button.button-green.contextmenu-active,
+.button.button-green:not(:disabled):hover {
+  background-color: #1bd85e;
+  color: #ffffff;
+}
+.button.button-green:not(:disabled):hover:active {
+  background: #179443;
+  color: #cccccc;
+  transform: scale(1);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-green:not(:disabled):hover:active {
+    transform: scale(1);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-green {
+    transition-duration: 50ms;
+  }
+}
+.button.button-green:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-green:after {
+    transition-duration: 50ms;
+  }
+}
+.button.button-green.contextmenu-active,
+.button.button-green:not(:disabled):hover {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-green.contextmenu-active,
+  .button.button-green:not(:disabled):hover {
+    transition-duration: 66ms;
+  }
+}
+.button.button-green.contextmenu-active:after,
+.button.button-green:not(:disabled):hover:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-green.contextmenu-active:after,
+  .button.button-green:not(:disabled):hover:after {
+    transition-duration: 66ms;
+  }
+}
+.button.button-green:not(:disabled):hover:active {
+  transition: none;
+}
+.button.button-green:not(:disabled):hover:active:after {
+  transition: none;
+}
+.button.button-green:not(:disabled):hover {
+  transform: scale(1.0625);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-green:not(:disabled):hover {
+    transform: scale(1.0625);
+  }
+}
+.button.button-white {
+  height: 32px;
+  line-height: 30px;
+  padding-top: 2px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-radius: 16px;
+  background: #FFFFFF;
+  color: #000000;
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+.button.button-white .b-alt-text {
+  margin-top: -30px;
+}
+.button.button-white.contextmenu-active,
+.button.button-white:not(:disabled):hover {
+  background-color: #ffffff;
+  color: #1f1414;
+}
+.button.button-white:not(:disabled):hover:active {
+  background: #cccccc;
+  color: #000000;
+  transform: scale(1);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-white:not(:disabled):hover:active {
+    transform: scale(1);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-white {
+    transition-duration: 50ms;
+  }
+}
+.button.button-white:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-white:after {
+    transition-duration: 50ms;
+  }
+}
+.button.button-white.contextmenu-active,
+.button.button-white:not(:disabled):hover {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-white.contextmenu-active,
+  .button.button-white:not(:disabled):hover {
+    transition-duration: 66ms;
+  }
+}
+.button.button-white.contextmenu-active:after,
+.button.button-white:not(:disabled):hover:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-white.contextmenu-active:after,
+  .button.button-white:not(:disabled):hover:after {
+    transition-duration: 66ms;
+  }
+}
+.button.button-white:not(:disabled):hover:active {
+  transition: none;
+}
+.button.button-white:not(:disabled):hover:active:after {
+  transition: none;
+}
+.button.button-white:not(:disabled):hover {
+  transform: scale(1.0625);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-white:not(:disabled):hover {
+    transform: scale(1.0625);
+  }
+}
+.button.button-blue {
+  height: 32px;
+  line-height: 30px;
+  padding-top: 2px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-radius: 16px;
+  background: #4687D6;
+  color: #FFFFFF;
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+.button.button-blue .b-alt-text {
+  margin-top: -30px;
+}
+.button.button-blue.contextmenu-active,
+.button.button-blue:not(:disabled):hover {
+  background-color: #4491ee;
+  color: #ffffff;
+}
+.button.button-blue:not(:disabled):hover:active {
+  background: #386cab;
+  color: #cccccc;
+  transform: scale(1);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-blue:not(:disabled):hover:active {
+    transform: scale(1);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-blue {
+    transition-duration: 50ms;
+  }
+}
+.button.button-blue:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-blue:after {
+    transition-duration: 50ms;
+  }
+}
+.button.button-blue.contextmenu-active,
+.button.button-blue:not(:disabled):hover {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-blue.contextmenu-active,
+  .button.button-blue:not(:disabled):hover {
+    transition-duration: 66ms;
+  }
+}
+.button.button-blue.contextmenu-active:after,
+.button.button-blue:not(:disabled):hover:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-blue.contextmenu-active:after,
+  .button.button-blue:not(:disabled):hover:after {
+    transition-duration: 66ms;
+  }
+}
+.button.button-blue:not(:disabled):hover:active {
+  transition: none;
+}
+.button.button-blue:not(:disabled):hover:active:after {
+  transition: none;
+}
+.button.button-blue:not(:disabled):hover {
+  transform: scale(1.0625);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-blue:not(:disabled):hover {
+    transform: scale(1.0625);
+  }
+}
+.button.button-red {
+  height: 32px;
+  line-height: 30px;
+  padding-top: 2px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-radius: 16px;
+  background: #CD1A2B;
+  color: #FFFFFF;
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+.button.button-red .b-alt-text {
+  margin-top: -30px;
+}
+.button.button-red.contextmenu-active,
+.button.button-red:not(:disabled):hover {
+  background-color: #eb182c;
+  color: #ffffff;
+}
+.button.button-red:not(:disabled):hover:active {
+  background: #a41522;
+  color: #cccccc;
+  transform: scale(1);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-red:not(:disabled):hover:active {
+    transform: scale(1);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-red {
+    transition-duration: 50ms;
+  }
+}
+.button.button-red:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-red:after {
+    transition-duration: 50ms;
+  }
+}
+.button.button-red.contextmenu-active,
+.button.button-red:not(:disabled):hover {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-red.contextmenu-active,
+  .button.button-red:not(:disabled):hover {
+    transition-duration: 66ms;
+  }
+}
+.button.button-red.contextmenu-active:after,
+.button.button-red:not(:disabled):hover:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-red.contextmenu-active:after,
+  .button.button-red:not(:disabled):hover:after {
+    transition-duration: 66ms;
+  }
+}
+.button.button-red:not(:disabled):hover:active {
+  transition: none;
+}
+.button.button-red:not(:disabled):hover:active:after {
+  transition: none;
+}
+.button.button-red:not(:disabled):hover {
+  transform: scale(1.0625);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-red:not(:disabled):hover {
+    transform: scale(1.0625);
+  }
+}
+.button.button-gray {
+  height: 32px;
+  line-height: 30px;
+  padding-top: 2px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-radius: 16px;
+  background: #404040;
+  color: #FFFFFF;
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+.button.button-gray .b-alt-text {
+  margin-top: -30px;
+}
+.button.button-gray.contextmenu-active,
+.button.button-gray:not(:disabled):hover {
+  background-color: #535353;
+  color: #ffffff;
+}
+.button.button-gray:not(:disabled):hover:active {
+  background: #333333;
+  color: #cccccc;
+  transform: scale(1);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-gray:not(:disabled):hover:active {
+    transform: scale(1);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-gray {
+    transition-duration: 50ms;
+  }
+}
+.button.button-gray:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-gray:after {
+    transition-duration: 50ms;
+  }
+}
+.button.button-gray.contextmenu-active,
+.button.button-gray:not(:disabled):hover {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-gray.contextmenu-active,
+  .button.button-gray:not(:disabled):hover {
+    transition-duration: 66ms;
+  }
+}
+.button.button-gray.contextmenu-active:after,
+.button.button-gray:not(:disabled):hover:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-gray.contextmenu-active:after,
+  .button.button-gray:not(:disabled):hover:after {
+    transition-duration: 66ms;
+  }
+}
+.button.button-gray:not(:disabled):hover:active {
+  transition: none;
+}
+.button.button-gray:not(:disabled):hover:active:after {
+  transition: none;
+}
+.button.button-gray:not(:disabled):hover {
+  transform: scale(1.0625);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-gray:not(:disabled):hover {
+    transform: scale(1.0625);
+  }
+}
+.button.button-with-stroke {
+  height: 32px;
+  line-height: 30px;
+  padding-top: 2px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-radius: 16px;
+  background: rgba(24, 24, 24, 0.7);
+  color: #FFFFFF;
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: transform, box-shadow, color, background-color;
+  box-shadow: inset 0 0 0 1px #A0A0A0;
+}
+.button.button-with-stroke .b-alt-text {
+  margin-top: -30px;
+}
+.button.button-with-stroke.contextmenu-active,
+.button.button-with-stroke:not(:disabled):hover {
+  background-color: rgba(24, 24, 24, 0.7);
+  color: #ffffff;
+}
+.button.button-with-stroke:not(:disabled):hover:active {
+  background: rgba(16, 16, 16, 0.76);
+  color: #cccccc;
+  transform: scale(1);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-with-stroke:not(:disabled):hover:active {
+    transform: scale(1);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-with-stroke {
+    transition-duration: 50ms;
+  }
+}
+.button.button-with-stroke:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-with-stroke:after {
+    transition-duration: 50ms;
+  }
+}
+.button.button-with-stroke.contextmenu-active,
+.button.button-with-stroke:not(:disabled):hover {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-with-stroke.contextmenu-active,
+  .button.button-with-stroke:not(:disabled):hover {
+    transition-duration: 66ms;
+  }
+}
+.button.button-with-stroke.contextmenu-active:after,
+.button.button-with-stroke:not(:disabled):hover:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-with-stroke.contextmenu-active:after,
+  .button.button-with-stroke:not(:disabled):hover:after {
+    transition-duration: 66ms;
+  }
+}
+.button.button-with-stroke:not(:disabled):hover:active {
+  transition: none;
+}
+.button.button-with-stroke:not(:disabled):hover:active:after {
+  transition: none;
+}
+.button.button-with-stroke:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 500px;
+  box-shadow: inset 0 0 0 1px #A0A0A0;
+}
+.button.button-with-stroke.contextmenu-active,
+.button.button-with-stroke:not(:disabled):hover {
+  box-shadow: inset 0 0 0 1px #FFFFFF, 0 0 0 1px transparent;
+}
+.button.button-with-stroke.contextmenu-active:after,
+.button.button-with-stroke:not(:disabled):hover:after {
+  box-shadow: inset 0 0 0 1px #FFFFFF;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-with-stroke.contextmenu-active,
+  .button.button-with-stroke:not(:disabled):hover {
+    box-shadow: inset 0 0 0 1px #FFFFFF;
+  }
+  .button.button-with-stroke.contextmenu-active:after,
+  .button.button-with-stroke:not(:disabled):hover:after {
+    box-shadow: inset 0 0 0 1px #FFFFFF;
+  }
+}
+.button.button-with-stroke:not(:disabled):hover:active {
+  box-shadow: inset 0 0 0 1px #808080;
+}
+.button.button-with-stroke:not(:disabled):hover:active:after {
+  box-shadow: inset 0 0 0 1px #808080;
+}
+.button.button-with-stroke.contextmenu-active,
+.button.button-with-stroke:not(:disabled):hover {
+  transform: scale(1.0625);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-with-stroke.contextmenu-active,
+  .button.button-with-stroke:not(:disabled):hover {
+    transform: scale(1.0625);
+  }
+}
+.button.button-with-stroke.added,
+.button.button-with-stroke.active {
+  height: 32px;
+  line-height: 30px;
+  padding-top: 2px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-radius: 16px;
+  background: rgba(24, 24, 24, 0.7);
+  color: $primary-accent-color;
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: transform, box-shadow, color, background-color;
+  box-shadow: inset 0 0 0 1px #A0A0A0;
+}
+.button.button-with-stroke.added .b-alt-text,
+.button.button-with-stroke.active .b-alt-text {
+  margin-top: -30px;
+}
+.button.button-with-stroke.added.contextmenu-active,
+.button.button-with-stroke.active.contextmenu-active,
+.button.button-with-stroke.added:not(:disabled):hover,
+.button.button-with-stroke.active:not(:disabled):hover {
+  background-color: rgba(24, 24, 24, 0.7);
+  color: $primary-accent-color;
+}
+.button.button-with-stroke.added:not(:disabled):hover:active,
+.button.button-with-stroke.active:not(:disabled):hover:active {
+  background: rgba(16, 16, 16, 0.76);
+  color: #18ab4d;
+  transform: scale(1);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-with-stroke.added:not(:disabled):hover:active,
+  .button.button-with-stroke.active:not(:disabled):hover:active {
+    transform: scale(1);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-with-stroke.added,
+  .button.button-with-stroke.active {
+    transition-duration: 50ms;
+  }
+}
+.button.button-with-stroke.added:after,
+.button.button-with-stroke.active:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-with-stroke.added:after,
+  .button.button-with-stroke.active:after {
+    transition-duration: 50ms;
+  }
+}
+.button.button-with-stroke.added.contextmenu-active,
+.button.button-with-stroke.active.contextmenu-active,
+.button.button-with-stroke.added:not(:disabled):hover,
+.button.button-with-stroke.active:not(:disabled):hover {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-with-stroke.added.contextmenu-active,
+  .button.button-with-stroke.active.contextmenu-active,
+  .button.button-with-stroke.added:not(:disabled):hover,
+  .button.button-with-stroke.active:not(:disabled):hover {
+    transition-duration: 66ms;
+  }
+}
+.button.button-with-stroke.added.contextmenu-active:after,
+.button.button-with-stroke.active.contextmenu-active:after,
+.button.button-with-stroke.added:not(:disabled):hover:after,
+.button.button-with-stroke.active:not(:disabled):hover:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-with-stroke.added.contextmenu-active:after,
+  .button.button-with-stroke.active.contextmenu-active:after,
+  .button.button-with-stroke.added:not(:disabled):hover:after,
+  .button.button-with-stroke.active:not(:disabled):hover:after {
+    transition-duration: 66ms;
+  }
+}
+.button.button-with-stroke.added:not(:disabled):hover:active,
+.button.button-with-stroke.active:not(:disabled):hover:active {
+  transition: none;
+}
+.button.button-with-stroke.added:not(:disabled):hover:active:after,
+.button.button-with-stroke.active:not(:disabled):hover:active:after {
+  transition: none;
+}
+.button.button-with-stroke.added:after,
+.button.button-with-stroke.active:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 500px;
+  box-shadow: inset 0 0 0 1px #A0A0A0;
+}
+.button.button-with-stroke.added.contextmenu-active,
+.button.button-with-stroke.active.contextmenu-active,
+.button.button-with-stroke.added:not(:disabled):hover,
+.button.button-with-stroke.active:not(:disabled):hover {
+  box-shadow: inset 0 0 0 1px #FFFFFF, 0 0 0 1px transparent;
+}
+.button.button-with-stroke.added.contextmenu-active:after,
+.button.button-with-stroke.active.contextmenu-active:after,
+.button.button-with-stroke.added:not(:disabled):hover:after,
+.button.button-with-stroke.active:not(:disabled):hover:after {
+  box-shadow: inset 0 0 0 1px #FFFFFF;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-with-stroke.added.contextmenu-active,
+  .button.button-with-stroke.active.contextmenu-active,
+  .button.button-with-stroke.added:not(:disabled):hover,
+  .button.button-with-stroke.active:not(:disabled):hover {
+    box-shadow: inset 0 0 0 1px #FFFFFF;
+  }
+  .button.button-with-stroke.added.contextmenu-active:after,
+  .button.button-with-stroke.active.contextmenu-active:after,
+  .button.button-with-stroke.added:not(:disabled):hover:after,
+  .button.button-with-stroke.active:not(:disabled):hover:after {
+    box-shadow: inset 0 0 0 1px #FFFFFF;
+  }
+}
+.button.button-with-stroke.added:not(:disabled):hover:active,
+.button.button-with-stroke.active:not(:disabled):hover:active {
+  box-shadow: inset 0 0 0 1px #808080;
+}
+.button.button-with-stroke.added:not(:disabled):hover:active:after,
+.button.button-with-stroke.active:not(:disabled):hover:active:after {
+  box-shadow: inset 0 0 0 1px #808080;
+}
+.button.button-with-stroke.added.contextmenu-active,
+.button.button-with-stroke.active.contextmenu-active,
+.button.button-with-stroke.added:not(:disabled):hover,
+.button.button-with-stroke.active:not(:disabled):hover {
+  transform: scale(1.0625);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-with-stroke.added.contextmenu-active,
+  .button.button-with-stroke.active.contextmenu-active,
+  .button.button-with-stroke.added:not(:disabled):hover,
+  .button.button-with-stroke.active:not(:disabled):hover {
+    transform: scale(1.0625);
+  }
+}
+.button.button-facebook {
+  height: 32px;
+  line-height: 30px;
+  padding-top: 2px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-radius: 16px;
+  background: #3b5998;
+  color: #FFFFFF;
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+.button.button-facebook .b-alt-text {
+  margin-top: -30px;
+}
+.button.button-facebook.contextmenu-active,
+.button.button-facebook:not(:disabled):hover {
+  background-color: #3761ba;
+  color: #ffffff;
+}
+.button.button-facebook:not(:disabled):hover:active {
+  background: #2f477a;
+  color: #cccccc;
+  transform: scale(1);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-facebook:not(:disabled):hover:active {
+    transform: scale(1);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-facebook {
+    transition-duration: 50ms;
+  }
+}
+.button.button-facebook:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-facebook:after {
+    transition-duration: 50ms;
+  }
+}
+.button.button-facebook.contextmenu-active,
+.button.button-facebook:not(:disabled):hover {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-facebook.contextmenu-active,
+  .button.button-facebook:not(:disabled):hover {
+    transition-duration: 66ms;
+  }
+}
+.button.button-facebook.contextmenu-active:after,
+.button.button-facebook:not(:disabled):hover:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-facebook.contextmenu-active:after,
+  .button.button-facebook:not(:disabled):hover:after {
+    transition-duration: 66ms;
+  }
+}
+.button.button-facebook:not(:disabled):hover:active {
+  transition: none;
+}
+.button.button-facebook:not(:disabled):hover:active:after {
+  transition: none;
+}
+.button.button-facebook:not(:disabled):hover {
+  transform: scale(1.0625);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-facebook:not(:disabled):hover {
+    transform: scale(1.0625);
+  }
+}
+.button.button-icon-only {
+  height: 32px;
+  line-height: 30px;
+  padding-top: 2px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-radius: 16px;
+  background: transparent;
+  color: #A0A0A0;
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: transform, box-shadow, color, background-color;
+  width: 32px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.button.button-icon-only .b-alt-text {
+  margin-top: -30px;
+}
+.button.button-icon-only.contextmenu-active,
+.button.button-icon-only:not(:disabled):hover {
+  background-color: transparent;
+  color: #FFFFFF;
+}
+.button.button-icon-only:not(:disabled):hover:active {
+  background: transparent;
+  color: #808080;
+  transform: scale(1);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-icon-only:not(:disabled):hover:active {
+    transform: scale(1);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-icon-only {
+    transition-duration: 50ms;
+  }
+}
+.button.button-icon-only:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-icon-only:after {
+    transition-duration: 50ms;
+  }
+}
+.button.button-icon-only.contextmenu-active,
+.button.button-icon-only:not(:disabled):hover {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-icon-only.contextmenu-active,
+  .button.button-icon-only:not(:disabled):hover {
+    transition-duration: 66ms;
+  }
+}
+.button.button-icon-only.contextmenu-active:after,
+.button.button-icon-only:not(:disabled):hover:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-icon-only.contextmenu-active:after,
+  .button.button-icon-only:not(:disabled):hover:after {
+    transition-duration: 66ms;
+  }
+}
+.button.button-icon-only:not(:disabled):hover:active {
+  transition: none;
+}
+.button.button-icon-only:not(:disabled):hover:active:after {
+  transition: none;
+}
+.button.button-icon-only:before {
+  font-family: "glue1-spoticon";
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  line-height: inherit;
+  vertical-align: bottom;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: left;
+  border-radius: 500px;
+  line-height: 32px;
+  font-size: 16px;
+  padding-left: 8px;
+  width: calc(100% - 8px);
+}
+.button.button-icon-only.button-play:before {
+  content: "\f132";
+}
+.button.button-icon-only.button-play.playing:not(:hover),
+.tl-row.playing .button.button-icon-only.button-play:not(:hover),
+.tl-row.playing.button.button-icon-only.button-play:not(:hover),
+.media-object.playing .button.button-icon-only.button-play:not(:hover),
+.media-object.playing.button.button-icon-only.button-play:not(:hover) {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+.button.button-icon-only.button-play.playing:not(:hover):after,
+.tl-row.playing .button.button-icon-only.button-play:not(:hover):after,
+.tl-row.playing.button.button-icon-only.button-play:not(:hover):after,
+.media-object.playing .button.button-icon-only.button-play:not(:hover):after,
+.media-object.playing.button.button-icon-only.button-play:not(:hover):after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 500px;
+  box-shadow: inset 0 0 0 1px transparent;
+}
+.button.button-icon-only.button-play.playing:not(:hover).contextmenu-active,
+.tl-row.playing .button.button-icon-only.button-play:not(:hover).contextmenu-active,
+.tl-row.playing.button.button-icon-only.button-play:not(:hover).contextmenu-active,
+.media-object.playing .button.button-icon-only.button-play:not(:hover).contextmenu-active,
+.media-object.playing.button.button-icon-only.button-play:not(:hover).contextmenu-active,
+.button.button-icon-only.button-play.playing:not(:hover):not(:disabled):hover,
+.tl-row.playing .button.button-icon-only.button-play:not(:hover):not(:disabled):hover,
+.tl-row.playing.button.button-icon-only.button-play:not(:hover):not(:disabled):hover,
+.media-object.playing .button.button-icon-only.button-play:not(:hover):not(:disabled):hover,
+.media-object.playing.button.button-icon-only.button-play:not(:hover):not(:disabled):hover {
+  box-shadow: inset 0 0 0 1px transparent, 0 0 0 1px transparent;
+}
+.button.button-icon-only.button-play.playing:not(:hover).contextmenu-active:after,
+.tl-row.playing .button.button-icon-only.button-play:not(:hover).contextmenu-active:after,
+.tl-row.playing.button.button-icon-only.button-play:not(:hover).contextmenu-active:after,
+.media-object.playing .button.button-icon-only.button-play:not(:hover).contextmenu-active:after,
+.media-object.playing.button.button-icon-only.button-play:not(:hover).contextmenu-active:after,
+.button.button-icon-only.button-play.playing:not(:hover):not(:disabled):hover:after,
+.tl-row.playing .button.button-icon-only.button-play:not(:hover):not(:disabled):hover:after,
+.tl-row.playing.button.button-icon-only.button-play:not(:hover):not(:disabled):hover:after,
+.media-object.playing .button.button-icon-only.button-play:not(:hover):not(:disabled):hover:after,
+.media-object.playing.button.button-icon-only.button-play:not(:hover):not(:disabled):hover:after {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-icon-only.button-play.playing:not(:hover).contextmenu-active,
+  .tl-row.playing .button.button-icon-only.button-play:not(:hover).contextmenu-active,
+  .tl-row.playing.button.button-icon-only.button-play:not(:hover).contextmenu-active,
+  .media-object.playing .button.button-icon-only.button-play:not(:hover).contextmenu-active,
+  .media-object.playing.button.button-icon-only.button-play:not(:hover).contextmenu-active,
+  .button.button-icon-only.button-play.playing:not(:hover):not(:disabled):hover,
+  .tl-row.playing .button.button-icon-only.button-play:not(:hover):not(:disabled):hover,
+  .tl-row.playing.button.button-icon-only.button-play:not(:hover):not(:disabled):hover,
+  .media-object.playing .button.button-icon-only.button-play:not(:hover):not(:disabled):hover,
+  .media-object.playing.button.button-icon-only.button-play:not(:hover):not(:disabled):hover {
+    box-shadow: inset 0 0 0 1px transparent;
+  }
+  .button.button-icon-only.button-play.playing:not(:hover).contextmenu-active:after,
+  .tl-row.playing .button.button-icon-only.button-play:not(:hover).contextmenu-active:after,
+  .tl-row.playing.button.button-icon-only.button-play:not(:hover).contextmenu-active:after,
+  .media-object.playing .button.button-icon-only.button-play:not(:hover).contextmenu-active:after,
+  .media-object.playing.button.button-icon-only.button-play:not(:hover).contextmenu-active:after,
+  .button.button-icon-only.button-play.playing:not(:hover):not(:disabled):hover:after,
+  .tl-row.playing .button.button-icon-only.button-play:not(:hover):not(:disabled):hover:after,
+  .tl-row.playing.button.button-icon-only.button-play:not(:hover):not(:disabled):hover:after,
+  .media-object.playing .button.button-icon-only.button-play:not(:hover):not(:disabled):hover:after,
+  .media-object.playing.button.button-icon-only.button-play:not(:hover):not(:disabled):hover:after {
+    box-shadow: inset 0 0 0 1px transparent;
+  }
+}
+.button.button-icon-only.button-play.playing:not(:hover):not(:disabled):hover:active,
+.tl-row.playing .button.button-icon-only.button-play:not(:hover):not(:disabled):hover:active,
+.tl-row.playing.button.button-icon-only.button-play:not(:hover):not(:disabled):hover:active,
+.media-object.playing .button.button-icon-only.button-play:not(:hover):not(:disabled):hover:active,
+.media-object.playing.button.button-icon-only.button-play:not(:hover):not(:disabled):hover:active {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+.button.button-icon-only.button-play.playing:not(:hover):not(:disabled):hover:active:after,
+.tl-row.playing .button.button-icon-only.button-play:not(:hover):not(:disabled):hover:active:after,
+.tl-row.playing.button.button-icon-only.button-play:not(:hover):not(:disabled):hover:active:after,
+.media-object.playing .button.button-icon-only.button-play:not(:hover):not(:disabled):hover:active:after,
+.media-object.playing.button.button-icon-only.button-play:not(:hover):not(:disabled):hover:active:after {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+.button.button-icon-only.button-play.playing:not(:hover):before,
+.tl-row.playing .button.button-icon-only.button-play:not(:hover):before,
+.tl-row.playing.button.button-icon-only.button-play:not(:hover):before,
+.media-object.playing .button.button-icon-only.button-play:not(:hover):before,
+.media-object.playing.button.button-icon-only.button-play:not(:hover):before {
+  content: "\f1D0";
+  padding-left: 7px;
+  width: calc(100% - 7px);
+}
+.button.button-icon-only.button-play.playing:hover:before,
+.tl-row.playing .button.button-icon-only.button-play:hover:before,
+.tl-row.playing.button.button-icon-only.button-play:hover:before,
+.media-object.playing .button.button-icon-only.button-play:hover:before,
+.media-object.playing.button.button-icon-only.button-play:hover:before {
+  content: "\f130";
+}
+.button.button-icon-only.active {
+  color: $primary-accent-color;
+}
+.button.button-icon-only.active.contextmenu-active,
+.button.button-icon-only.active:not(:disabled):hover {
+  color: #1df269;
+}
+.button.button-icon-only.drop-target-active {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+.button.button-icon-only.drop-target-active.contextmenu-active,
+.button.button-icon-only.drop-target-active:not(:disabled):hover {
+  color: #000000;
+}
+.button.button-icon-only.drop-target-active.contextmenu-active,
+.button.button-icon-only.drop-target-active:not(:disabled):hover {
+  background-color: #FFFFFF;
+}
+.button.button-icon-with-stroke {
+  height: 32px;
+  line-height: 30px;
+  padding-top: 2px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-radius: 16px;
+  background: rgba(24, 24, 24, 0.7);
+  color: #FFFFFF;
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: transform, box-shadow, color, background-color;
+  box-shadow: inset 0 0 0 1px #A0A0A0;
+  width: 32px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.button.button-icon-with-stroke .b-alt-text {
+  margin-top: -30px;
+}
+.button.button-icon-with-stroke.contextmenu-active,
+.button.button-icon-with-stroke:not(:disabled):hover {
+  background-color: rgba(24, 24, 24, 0.7);
+  color: #ffffff;
+}
+.button.button-icon-with-stroke:not(:disabled):hover:active {
+  background: rgba(16, 16, 16, 0.76);
+  color: #cccccc;
+  transform: scale(1);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-icon-with-stroke:not(:disabled):hover:active {
+    transform: scale(1);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-icon-with-stroke {
+    transition-duration: 50ms;
+  }
+}
+.button.button-icon-with-stroke:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-icon-with-stroke:after {
+    transition-duration: 50ms;
+  }
+}
+.button.button-icon-with-stroke.contextmenu-active,
+.button.button-icon-with-stroke:not(:disabled):hover {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-icon-with-stroke.contextmenu-active,
+  .button.button-icon-with-stroke:not(:disabled):hover {
+    transition-duration: 66ms;
+  }
+}
+.button.button-icon-with-stroke.contextmenu-active:after,
+.button.button-icon-with-stroke:not(:disabled):hover:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-icon-with-stroke.contextmenu-active:after,
+  .button.button-icon-with-stroke:not(:disabled):hover:after {
+    transition-duration: 66ms;
+  }
+}
+.button.button-icon-with-stroke:not(:disabled):hover:active {
+  transition: none;
+}
+.button.button-icon-with-stroke:not(:disabled):hover:active:after {
+  transition: none;
+}
+.button.button-icon-with-stroke:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 500px;
+  box-shadow: inset 0 0 0 1px #A0A0A0;
+}
+.button.button-icon-with-stroke.contextmenu-active,
+.button.button-icon-with-stroke:not(:disabled):hover {
+  box-shadow: inset 0 0 0 1px #FFFFFF, 0 0 0 1px transparent;
+}
+.button.button-icon-with-stroke.contextmenu-active:after,
+.button.button-icon-with-stroke:not(:disabled):hover:after {
+  box-shadow: inset 0 0 0 1px #FFFFFF;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-icon-with-stroke.contextmenu-active,
+  .button.button-icon-with-stroke:not(:disabled):hover {
+    box-shadow: inset 0 0 0 1px #FFFFFF;
+  }
+  .button.button-icon-with-stroke.contextmenu-active:after,
+  .button.button-icon-with-stroke:not(:disabled):hover:after {
+    box-shadow: inset 0 0 0 1px #FFFFFF;
+  }
+}
+.button.button-icon-with-stroke:not(:disabled):hover:active {
+  box-shadow: inset 0 0 0 1px #808080;
+}
+.button.button-icon-with-stroke:not(:disabled):hover:active:after {
+  box-shadow: inset 0 0 0 1px #808080;
+}
+.button.button-icon-with-stroke.contextmenu-active,
+.button.button-icon-with-stroke:not(:disabled):hover {
+  transform: scale(1.0625);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-icon-with-stroke.contextmenu-active,
+  .button.button-icon-with-stroke:not(:disabled):hover {
+    transform: scale(1.0625);
+  }
+}
+.button.button-icon-with-stroke:before {
+  font-family: "glue1-spoticon";
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  line-height: inherit;
+  vertical-align: bottom;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: left;
+  border-radius: 500px;
+  line-height: 32px;
+  font-size: 16px;
+  padding-left: 8px;
+  width: calc(100% - 8px);
+}
+.button.button-icon-with-stroke.button-play:before {
+  content: "\f132";
+}
+.button.button-icon-with-stroke.button-play.playing:not(:hover),
+.tl-row.playing .button.button-icon-with-stroke.button-play:not(:hover),
+.tl-row.playing.button.button-icon-with-stroke.button-play:not(:hover),
+.media-object.playing .button.button-icon-with-stroke.button-play:not(:hover),
+.media-object.playing.button.button-icon-with-stroke.button-play:not(:hover) {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+.button.button-icon-with-stroke.button-play.playing:not(:hover):after,
+.tl-row.playing .button.button-icon-with-stroke.button-play:not(:hover):after,
+.tl-row.playing.button.button-icon-with-stroke.button-play:not(:hover):after,
+.media-object.playing .button.button-icon-with-stroke.button-play:not(:hover):after,
+.media-object.playing.button.button-icon-with-stroke.button-play:not(:hover):after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 500px;
+  box-shadow: inset 0 0 0 1px transparent;
+}
+.button.button-icon-with-stroke.button-play.playing:not(:hover).contextmenu-active,
+.tl-row.playing .button.button-icon-with-stroke.button-play:not(:hover).contextmenu-active,
+.tl-row.playing.button.button-icon-with-stroke.button-play:not(:hover).contextmenu-active,
+.media-object.playing .button.button-icon-with-stroke.button-play:not(:hover).contextmenu-active,
+.media-object.playing.button.button-icon-with-stroke.button-play:not(:hover).contextmenu-active,
+.button.button-icon-with-stroke.button-play.playing:not(:hover):not(:disabled):hover,
+.tl-row.playing .button.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover,
+.tl-row.playing.button.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover,
+.media-object.playing .button.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover,
+.media-object.playing.button.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover {
+  box-shadow: inset 0 0 0 1px transparent, 0 0 0 1px transparent;
+}
+.button.button-icon-with-stroke.button-play.playing:not(:hover).contextmenu-active:after,
+.tl-row.playing .button.button-icon-with-stroke.button-play:not(:hover).contextmenu-active:after,
+.tl-row.playing.button.button-icon-with-stroke.button-play:not(:hover).contextmenu-active:after,
+.media-object.playing .button.button-icon-with-stroke.button-play:not(:hover).contextmenu-active:after,
+.media-object.playing.button.button-icon-with-stroke.button-play:not(:hover).contextmenu-active:after,
+.button.button-icon-with-stroke.button-play.playing:not(:hover):not(:disabled):hover:after,
+.tl-row.playing .button.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:after,
+.tl-row.playing.button.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:after,
+.media-object.playing .button.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:after,
+.media-object.playing.button.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:after {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-icon-with-stroke.button-play.playing:not(:hover).contextmenu-active,
+  .tl-row.playing .button.button-icon-with-stroke.button-play:not(:hover).contextmenu-active,
+  .tl-row.playing.button.button-icon-with-stroke.button-play:not(:hover).contextmenu-active,
+  .media-object.playing .button.button-icon-with-stroke.button-play:not(:hover).contextmenu-active,
+  .media-object.playing.button.button-icon-with-stroke.button-play:not(:hover).contextmenu-active,
+  .button.button-icon-with-stroke.button-play.playing:not(:hover):not(:disabled):hover,
+  .tl-row.playing .button.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover,
+  .tl-row.playing.button.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover,
+  .media-object.playing .button.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover,
+  .media-object.playing.button.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover {
+    box-shadow: inset 0 0 0 1px transparent;
+  }
+  .button.button-icon-with-stroke.button-play.playing:not(:hover).contextmenu-active:after,
+  .tl-row.playing .button.button-icon-with-stroke.button-play:not(:hover).contextmenu-active:after,
+  .tl-row.playing.button.button-icon-with-stroke.button-play:not(:hover).contextmenu-active:after,
+  .media-object.playing .button.button-icon-with-stroke.button-play:not(:hover).contextmenu-active:after,
+  .media-object.playing.button.button-icon-with-stroke.button-play:not(:hover).contextmenu-active:after,
+  .button.button-icon-with-stroke.button-play.playing:not(:hover):not(:disabled):hover:after,
+  .tl-row.playing .button.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:after,
+  .tl-row.playing.button.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:after,
+  .media-object.playing .button.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:after,
+  .media-object.playing.button.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:after {
+    box-shadow: inset 0 0 0 1px transparent;
+  }
+}
+.button.button-icon-with-stroke.button-play.playing:not(:hover):not(:disabled):hover:active,
+.tl-row.playing .button.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:active,
+.tl-row.playing.button.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:active,
+.media-object.playing .button.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:active,
+.media-object.playing.button.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:active {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+.button.button-icon-with-stroke.button-play.playing:not(:hover):not(:disabled):hover:active:after,
+.tl-row.playing .button.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:active:after,
+.tl-row.playing.button.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:active:after,
+.media-object.playing .button.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:active:after,
+.media-object.playing.button.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:active:after {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+.button.button-icon-with-stroke.button-play.playing:not(:hover):before,
+.tl-row.playing .button.button-icon-with-stroke.button-play:not(:hover):before,
+.tl-row.playing.button.button-icon-with-stroke.button-play:not(:hover):before,
+.media-object.playing .button.button-icon-with-stroke.button-play:not(:hover):before,
+.media-object.playing.button.button-icon-with-stroke.button-play:not(:hover):before {
+  content: "\f1D0";
+  padding-left: 7px;
+  width: calc(100% - 7px);
+}
+.button.button-icon-with-stroke.button-play.playing:hover:before,
+.tl-row.playing .button.button-icon-with-stroke.button-play:hover:before,
+.tl-row.playing.button.button-icon-with-stroke.button-play:hover:before,
+.media-object.playing .button.button-icon-with-stroke.button-play:hover:before,
+.media-object.playing.button.button-icon-with-stroke.button-play:hover:before {
+  content: "\f130";
+}
+.button.button-large.button-green {
+  height: 48px;
+  line-height: 46px;
+  padding-top: 2px;
+  padding-left: 48px;
+  padding-right: 48px;
+  border-radius: 24px;
+  background: #1DB954;
+  color: #FFFFFF;
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: transform, box-shadow, color, background-color;
+  font-size: 14px;
+}
+.button.button-large.button-green .b-alt-text {
+  margin-top: -46px;
+}
+.button.button-large.button-green.contextmenu-active,
+.button.button-large.button-green:not(:disabled):hover {
+  background-color: #1bd85e;
+  color: #ffffff;
+}
+.button.button-large.button-green:not(:disabled):hover:active {
+  background: #179443;
+  color: #cccccc;
+  transform: scale(1);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-green:not(:disabled):hover:active {
+    transform: scale(1);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-green {
+    transition-duration: 50ms;
+  }
+}
+.button.button-large.button-green:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-green:after {
+    transition-duration: 50ms;
+  }
+}
+.button.button-large.button-green.contextmenu-active,
+.button.button-large.button-green:not(:disabled):hover {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-green.contextmenu-active,
+  .button.button-large.button-green:not(:disabled):hover {
+    transition-duration: 66ms;
+  }
+}
+.button.button-large.button-green.contextmenu-active:after,
+.button.button-large.button-green:not(:disabled):hover:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-green.contextmenu-active:after,
+  .button.button-large.button-green:not(:disabled):hover:after {
+    transition-duration: 66ms;
+  }
+}
+.button.button-large.button-green:not(:disabled):hover:active {
+  transition: none;
+}
+.button.button-large.button-green:not(:disabled):hover:active:after {
+  transition: none;
+}
+.button.button-large.button-green:not(:disabled):hover {
+  transform: scale(1.08333333);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-green:not(:disabled):hover {
+    transform: scale(1.08333333);
+  }
+}
+.button.button-large.button-white {
+  height: 48px;
+  line-height: 46px;
+  padding-top: 2px;
+  padding-left: 48px;
+  padding-right: 48px;
+  border-radius: 24px;
+  background: #FFFFFF;
+  color: #000000;
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: transform, box-shadow, color, background-color;
+  font-size: 14px;
+}
+.button.button-large.button-white .b-alt-text {
+  margin-top: -46px;
+}
+.button.button-large.button-white.contextmenu-active,
+.button.button-large.button-white:not(:disabled):hover {
+  background-color: #ffffff;
+  color: #1f1414;
+}
+.button.button-large.button-white:not(:disabled):hover:active {
+  background: #cccccc;
+  color: #000000;
+  transform: scale(1);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-white:not(:disabled):hover:active {
+    transform: scale(1);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-white {
+    transition-duration: 50ms;
+  }
+}
+.button.button-large.button-white:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-white:after {
+    transition-duration: 50ms;
+  }
+}
+.button.button-large.button-white.contextmenu-active,
+.button.button-large.button-white:not(:disabled):hover {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-white.contextmenu-active,
+  .button.button-large.button-white:not(:disabled):hover {
+    transition-duration: 66ms;
+  }
+}
+.button.button-large.button-white.contextmenu-active:after,
+.button.button-large.button-white:not(:disabled):hover:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-white.contextmenu-active:after,
+  .button.button-large.button-white:not(:disabled):hover:after {
+    transition-duration: 66ms;
+  }
+}
+.button.button-large.button-white:not(:disabled):hover:active {
+  transition: none;
+}
+.button.button-large.button-white:not(:disabled):hover:active:after {
+  transition: none;
+}
+.button.button-large.button-white:not(:disabled):hover {
+  transform: scale(1.08333333);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-white:not(:disabled):hover {
+    transform: scale(1.08333333);
+  }
+}
+.button.button-large.button-blue {
+  height: 48px;
+  line-height: 46px;
+  padding-top: 2px;
+  padding-left: 48px;
+  padding-right: 48px;
+  border-radius: 24px;
+  background: #4687D6;
+  color: #FFFFFF;
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: transform, box-shadow, color, background-color;
+  font-size: 14px;
+}
+.button.button-large.button-blue .b-alt-text {
+  margin-top: -46px;
+}
+.button.button-large.button-blue.contextmenu-active,
+.button.button-large.button-blue:not(:disabled):hover {
+  background-color: #4491ee;
+  color: #ffffff;
+}
+.button.button-large.button-blue:not(:disabled):hover:active {
+  background: #386cab;
+  color: #cccccc;
+  transform: scale(1);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-blue:not(:disabled):hover:active {
+    transform: scale(1);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-blue {
+    transition-duration: 50ms;
+  }
+}
+.button.button-large.button-blue:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-blue:after {
+    transition-duration: 50ms;
+  }
+}
+.button.button-large.button-blue.contextmenu-active,
+.button.button-large.button-blue:not(:disabled):hover {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-blue.contextmenu-active,
+  .button.button-large.button-blue:not(:disabled):hover {
+    transition-duration: 66ms;
+  }
+}
+.button.button-large.button-blue.contextmenu-active:after,
+.button.button-large.button-blue:not(:disabled):hover:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-blue.contextmenu-active:after,
+  .button.button-large.button-blue:not(:disabled):hover:after {
+    transition-duration: 66ms;
+  }
+}
+.button.button-large.button-blue:not(:disabled):hover:active {
+  transition: none;
+}
+.button.button-large.button-blue:not(:disabled):hover:active:after {
+  transition: none;
+}
+.button.button-large.button-blue:not(:disabled):hover {
+  transform: scale(1.08333333);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-blue:not(:disabled):hover {
+    transform: scale(1.08333333);
+  }
+}
+.button.button-large.button-red {
+  height: 48px;
+  line-height: 46px;
+  padding-top: 2px;
+  padding-left: 48px;
+  padding-right: 48px;
+  border-radius: 24px;
+  background: #CD1A2B;
+  color: #FFFFFF;
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: transform, box-shadow, color, background-color;
+  font-size: 14px;
+}
+.button.button-large.button-red .b-alt-text {
+  margin-top: -46px;
+}
+.button.button-large.button-red.contextmenu-active,
+.button.button-large.button-red:not(:disabled):hover {
+  background-color: #eb182c;
+  color: #ffffff;
+}
+.button.button-large.button-red:not(:disabled):hover:active {
+  background: #a41522;
+  color: #cccccc;
+  transform: scale(1);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-red:not(:disabled):hover:active {
+    transform: scale(1);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-red {
+    transition-duration: 50ms;
+  }
+}
+.button.button-large.button-red:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-red:after {
+    transition-duration: 50ms;
+  }
+}
+.button.button-large.button-red.contextmenu-active,
+.button.button-large.button-red:not(:disabled):hover {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-red.contextmenu-active,
+  .button.button-large.button-red:not(:disabled):hover {
+    transition-duration: 66ms;
+  }
+}
+.button.button-large.button-red.contextmenu-active:after,
+.button.button-large.button-red:not(:disabled):hover:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-red.contextmenu-active:after,
+  .button.button-large.button-red:not(:disabled):hover:after {
+    transition-duration: 66ms;
+  }
+}
+.button.button-large.button-red:not(:disabled):hover:active {
+  transition: none;
+}
+.button.button-large.button-red:not(:disabled):hover:active:after {
+  transition: none;
+}
+.button.button-large.button-red:not(:disabled):hover {
+  transform: scale(1.08333333);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-red:not(:disabled):hover {
+    transform: scale(1.08333333);
+  }
+}
+.button.button-large.button-gray {
+  height: 48px;
+  line-height: 46px;
+  padding-top: 2px;
+  padding-left: 48px;
+  padding-right: 48px;
+  border-radius: 24px;
+  background: #404040;
+  color: #FFFFFF;
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: transform, box-shadow, color, background-color;
+  font-size: 14px;
+}
+.button.button-large.button-gray .b-alt-text {
+  margin-top: -46px;
+}
+.button.button-large.button-gray.contextmenu-active,
+.button.button-large.button-gray:not(:disabled):hover {
+  background-color: #535353;
+  color: #ffffff;
+}
+.button.button-large.button-gray:not(:disabled):hover:active {
+  background: #333333;
+  color: #cccccc;
+  transform: scale(1);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-gray:not(:disabled):hover:active {
+    transform: scale(1);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-gray {
+    transition-duration: 50ms;
+  }
+}
+.button.button-large.button-gray:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-gray:after {
+    transition-duration: 50ms;
+  }
+}
+.button.button-large.button-gray.contextmenu-active,
+.button.button-large.button-gray:not(:disabled):hover {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-gray.contextmenu-active,
+  .button.button-large.button-gray:not(:disabled):hover {
+    transition-duration: 66ms;
+  }
+}
+.button.button-large.button-gray.contextmenu-active:after,
+.button.button-large.button-gray:not(:disabled):hover:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-gray.contextmenu-active:after,
+  .button.button-large.button-gray:not(:disabled):hover:after {
+    transition-duration: 66ms;
+  }
+}
+.button.button-large.button-gray:not(:disabled):hover:active {
+  transition: none;
+}
+.button.button-large.button-gray:not(:disabled):hover:active:after {
+  transition: none;
+}
+.button.button-large.button-gray:not(:disabled):hover {
+  transform: scale(1.08333333);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-gray:not(:disabled):hover {
+    transform: scale(1.08333333);
+  }
+}
+.button.button-large.button-with-stroke {
+  height: 48px;
+  line-height: 46px;
+  padding-top: 2px;
+  padding-left: 48px;
+  padding-right: 48px;
+  border-radius: 24px;
+  background: rgba(24, 24, 24, 0.7);
+  color: #FFFFFF;
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: transform, box-shadow, color, background-color;
+  box-shadow: inset 0 0 0 1px #A0A0A0;
+  font-size: 14px;
+}
+.button.button-large.button-with-stroke .b-alt-text {
+  margin-top: -46px;
+}
+.button.button-large.button-with-stroke.contextmenu-active,
+.button.button-large.button-with-stroke:not(:disabled):hover {
+  background-color: rgba(24, 24, 24, 0.7);
+  color: #ffffff;
+}
+.button.button-large.button-with-stroke:not(:disabled):hover:active {
+  background: rgba(16, 16, 16, 0.76);
+  color: #cccccc;
+  transform: scale(1);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-with-stroke:not(:disabled):hover:active {
+    transform: scale(1);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-with-stroke {
+    transition-duration: 50ms;
+  }
+}
+.button.button-large.button-with-stroke:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-with-stroke:after {
+    transition-duration: 50ms;
+  }
+}
+.button.button-large.button-with-stroke.contextmenu-active,
+.button.button-large.button-with-stroke:not(:disabled):hover {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-with-stroke.contextmenu-active,
+  .button.button-large.button-with-stroke:not(:disabled):hover {
+    transition-duration: 66ms;
+  }
+}
+.button.button-large.button-with-stroke.contextmenu-active:after,
+.button.button-large.button-with-stroke:not(:disabled):hover:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-with-stroke.contextmenu-active:after,
+  .button.button-large.button-with-stroke:not(:disabled):hover:after {
+    transition-duration: 66ms;
+  }
+}
+.button.button-large.button-with-stroke:not(:disabled):hover:active {
+  transition: none;
+}
+.button.button-large.button-with-stroke:not(:disabled):hover:active:after {
+  transition: none;
+}
+.button.button-large.button-with-stroke:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 500px;
+  box-shadow: inset 0 0 0 1px #A0A0A0;
+}
+.button.button-large.button-with-stroke.contextmenu-active,
+.button.button-large.button-with-stroke:not(:disabled):hover {
+  box-shadow: inset 0 0 0 1px #FFFFFF, 0 0 0 1px transparent;
+}
+.button.button-large.button-with-stroke.contextmenu-active:after,
+.button.button-large.button-with-stroke:not(:disabled):hover:after {
+  box-shadow: inset 0 0 0 1px #FFFFFF;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-with-stroke.contextmenu-active,
+  .button.button-large.button-with-stroke:not(:disabled):hover {
+    box-shadow: inset 0 0 0 1px #FFFFFF;
+  }
+  .button.button-large.button-with-stroke.contextmenu-active:after,
+  .button.button-large.button-with-stroke:not(:disabled):hover:after {
+    box-shadow: inset 0 0 0 1px #FFFFFF;
+  }
+}
+.button.button-large.button-with-stroke:not(:disabled):hover:active {
+  box-shadow: inset 0 0 0 1px #808080;
+}
+.button.button-large.button-with-stroke:not(:disabled):hover:active:after {
+  box-shadow: inset 0 0 0 1px #808080;
+}
+.button.button-large.button-with-stroke.contextmenu-active,
+.button.button-large.button-with-stroke:not(:disabled):hover {
+  transform: scale(1.08333333);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-with-stroke.contextmenu-active,
+  .button.button-large.button-with-stroke:not(:disabled):hover {
+    transform: scale(1.08333333);
+  }
+}
+.button.button-large.button-with-stroke.added,
+.button.button-large.button-with-stroke.active {
+  height: 48px;
+  line-height: 46px;
+  padding-top: 2px;
+  padding-left: 48px;
+  padding-right: 48px;
+  border-radius: 24px;
+  background: rgba(24, 24, 24, 0.7);
+  color: $primary-accent-color;
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: transform, box-shadow, color, background-color;
+  box-shadow: inset 0 0 0 1px #A0A0A0;
+}
+.button.button-large.button-with-stroke.added .b-alt-text,
+.button.button-large.button-with-stroke.active .b-alt-text {
+  margin-top: -46px;
+}
+.button.button-large.button-with-stroke.added.contextmenu-active,
+.button.button-large.button-with-stroke.active.contextmenu-active,
+.button.button-large.button-with-stroke.added:not(:disabled):hover,
+.button.button-large.button-with-stroke.active:not(:disabled):hover {
+  background-color: rgba(24, 24, 24, 0.7);
+  color: $primary-accent-color;
+}
+.button.button-large.button-with-stroke.added:not(:disabled):hover:active,
+.button.button-large.button-with-stroke.active:not(:disabled):hover:active {
+  background: rgba(16, 16, 16, 0.76);
+  color: #18ab4d;
+  transform: scale(1);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-with-stroke.added:not(:disabled):hover:active,
+  .button.button-large.button-with-stroke.active:not(:disabled):hover:active {
+    transform: scale(1);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-with-stroke.added,
+  .button.button-large.button-with-stroke.active {
+    transition-duration: 50ms;
+  }
+}
+.button.button-large.button-with-stroke.added:after,
+.button.button-large.button-with-stroke.active:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-with-stroke.added:after,
+  .button.button-large.button-with-stroke.active:after {
+    transition-duration: 50ms;
+  }
+}
+.button.button-large.button-with-stroke.added.contextmenu-active,
+.button.button-large.button-with-stroke.active.contextmenu-active,
+.button.button-large.button-with-stroke.added:not(:disabled):hover,
+.button.button-large.button-with-stroke.active:not(:disabled):hover {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-with-stroke.added.contextmenu-active,
+  .button.button-large.button-with-stroke.active.contextmenu-active,
+  .button.button-large.button-with-stroke.added:not(:disabled):hover,
+  .button.button-large.button-with-stroke.active:not(:disabled):hover {
+    transition-duration: 66ms;
+  }
+}
+.button.button-large.button-with-stroke.added.contextmenu-active:after,
+.button.button-large.button-with-stroke.active.contextmenu-active:after,
+.button.button-large.button-with-stroke.added:not(:disabled):hover:after,
+.button.button-large.button-with-stroke.active:not(:disabled):hover:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-with-stroke.added.contextmenu-active:after,
+  .button.button-large.button-with-stroke.active.contextmenu-active:after,
+  .button.button-large.button-with-stroke.added:not(:disabled):hover:after,
+  .button.button-large.button-with-stroke.active:not(:disabled):hover:after {
+    transition-duration: 66ms;
+  }
+}
+.button.button-large.button-with-stroke.added:not(:disabled):hover:active,
+.button.button-large.button-with-stroke.active:not(:disabled):hover:active {
+  transition: none;
+}
+.button.button-large.button-with-stroke.added:not(:disabled):hover:active:after,
+.button.button-large.button-with-stroke.active:not(:disabled):hover:active:after {
+  transition: none;
+}
+.button.button-large.button-with-stroke.added:after,
+.button.button-large.button-with-stroke.active:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 500px;
+  box-shadow: inset 0 0 0 1px #A0A0A0;
+}
+.button.button-large.button-with-stroke.added.contextmenu-active,
+.button.button-large.button-with-stroke.active.contextmenu-active,
+.button.button-large.button-with-stroke.added:not(:disabled):hover,
+.button.button-large.button-with-stroke.active:not(:disabled):hover {
+  box-shadow: inset 0 0 0 1px #FFFFFF, 0 0 0 1px transparent;
+}
+.button.button-large.button-with-stroke.added.contextmenu-active:after,
+.button.button-large.button-with-stroke.active.contextmenu-active:after,
+.button.button-large.button-with-stroke.added:not(:disabled):hover:after,
+.button.button-large.button-with-stroke.active:not(:disabled):hover:after {
+  box-shadow: inset 0 0 0 1px #FFFFFF;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-with-stroke.added.contextmenu-active,
+  .button.button-large.button-with-stroke.active.contextmenu-active,
+  .button.button-large.button-with-stroke.added:not(:disabled):hover,
+  .button.button-large.button-with-stroke.active:not(:disabled):hover {
+    box-shadow: inset 0 0 0 1px #FFFFFF;
+  }
+  .button.button-large.button-with-stroke.added.contextmenu-active:after,
+  .button.button-large.button-with-stroke.active.contextmenu-active:after,
+  .button.button-large.button-with-stroke.added:not(:disabled):hover:after,
+  .button.button-large.button-with-stroke.active:not(:disabled):hover:after {
+    box-shadow: inset 0 0 0 1px #FFFFFF;
+  }
+}
+.button.button-large.button-with-stroke.added:not(:disabled):hover:active,
+.button.button-large.button-with-stroke.active:not(:disabled):hover:active {
+  box-shadow: inset 0 0 0 1px #808080;
+}
+.button.button-large.button-with-stroke.added:not(:disabled):hover:active:after,
+.button.button-large.button-with-stroke.active:not(:disabled):hover:active:after {
+  box-shadow: inset 0 0 0 1px #808080;
+}
+.button.button-large.button-with-stroke.added.contextmenu-active,
+.button.button-large.button-with-stroke.active.contextmenu-active,
+.button.button-large.button-with-stroke.added:not(:disabled):hover,
+.button.button-large.button-with-stroke.active:not(:disabled):hover {
+  transform: scale(1.08333333);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-with-stroke.added.contextmenu-active,
+  .button.button-large.button-with-stroke.active.contextmenu-active,
+  .button.button-large.button-with-stroke.added:not(:disabled):hover,
+  .button.button-large.button-with-stroke.active:not(:disabled):hover {
+    transform: scale(1.08333333);
+  }
+}
+.button.button-large.button-facebook {
+  height: 48px;
+  line-height: 46px;
+  padding-top: 2px;
+  padding-left: 48px;
+  padding-right: 48px;
+  border-radius: 24px;
+  background: #3b5998;
+  color: #FFFFFF;
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: transform, box-shadow, color, background-color;
+  font-size: 14px;
+}
+.button.button-large.button-facebook .b-alt-text {
+  margin-top: -46px;
+}
+.button.button-large.button-facebook.contextmenu-active,
+.button.button-large.button-facebook:not(:disabled):hover {
+  background-color: #3761ba;
+  color: #ffffff;
+}
+.button.button-large.button-facebook:not(:disabled):hover:active {
+  background: #2f477a;
+  color: #cccccc;
+  transform: scale(1);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-facebook:not(:disabled):hover:active {
+    transform: scale(1);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-facebook {
+    transition-duration: 50ms;
+  }
+}
+.button.button-large.button-facebook:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-facebook:after {
+    transition-duration: 50ms;
+  }
+}
+.button.button-large.button-facebook.contextmenu-active,
+.button.button-large.button-facebook:not(:disabled):hover {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-facebook.contextmenu-active,
+  .button.button-large.button-facebook:not(:disabled):hover {
+    transition-duration: 66ms;
+  }
+}
+.button.button-large.button-facebook.contextmenu-active:after,
+.button.button-large.button-facebook:not(:disabled):hover:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-facebook.contextmenu-active:after,
+  .button.button-large.button-facebook:not(:disabled):hover:after {
+    transition-duration: 66ms;
+  }
+}
+.button.button-large.button-facebook:not(:disabled):hover:active {
+  transition: none;
+}
+.button.button-large.button-facebook:not(:disabled):hover:active:after {
+  transition: none;
+}
+.button.button-large.button-facebook:not(:disabled):hover {
+  transform: scale(1.08333333);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-facebook:not(:disabled):hover {
+    transform: scale(1.08333333);
+  }
+}
+.button.button-large.button-icon-only {
+  height: 48px;
+  line-height: 46px;
+  padding-top: 2px;
+  padding-left: 48px;
+  padding-right: 48px;
+  border-radius: 24px;
+  background: transparent;
+  color: #A0A0A0;
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: transform, box-shadow, color, background-color;
+  width: 48px;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 14px;
+}
+.button.button-large.button-icon-only .b-alt-text {
+  margin-top: -46px;
+}
+.button.button-large.button-icon-only.contextmenu-active,
+.button.button-large.button-icon-only:not(:disabled):hover {
+  background-color: transparent;
+  color: #FFFFFF;
+}
+.button.button-large.button-icon-only:not(:disabled):hover:active {
+  background: transparent;
+  color: #808080;
+  transform: scale(1);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-icon-only:not(:disabled):hover:active {
+    transform: scale(1);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-icon-only {
+    transition-duration: 50ms;
+  }
+}
+.button.button-large.button-icon-only:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-icon-only:after {
+    transition-duration: 50ms;
+  }
+}
+.button.button-large.button-icon-only.contextmenu-active,
+.button.button-large.button-icon-only:not(:disabled):hover {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-icon-only.contextmenu-active,
+  .button.button-large.button-icon-only:not(:disabled):hover {
+    transition-duration: 66ms;
+  }
+}
+.button.button-large.button-icon-only.contextmenu-active:after,
+.button.button-large.button-icon-only:not(:disabled):hover:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-icon-only.contextmenu-active:after,
+  .button.button-large.button-icon-only:not(:disabled):hover:after {
+    transition-duration: 66ms;
+  }
+}
+.button.button-large.button-icon-only:not(:disabled):hover:active {
+  transition: none;
+}
+.button.button-large.button-icon-only:not(:disabled):hover:active:after {
+  transition: none;
+}
+.button.button-large.button-icon-only:before {
+  font-family: "glue1-spoticon";
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  line-height: inherit;
+  vertical-align: bottom;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: left;
+  border-radius: 500px;
+  line-height: 48px;
+  font-size: 24px;
+  padding-left: 12px;
+  width: calc(100% - 12px);
+}
+.button.button-large.button-icon-only.button-play:before {
+  content: "\f132";
+}
+.button.button-large.button-icon-only.button-play.playing:not(:hover),
+.tl-row.playing .button.button-large.button-icon-only.button-play:not(:hover),
+.tl-row.playing.button.button-large.button-icon-only.button-play:not(:hover),
+.media-object.playing .button.button-large.button-icon-only.button-play:not(:hover),
+.media-object.playing.button.button-large.button-icon-only.button-play:not(:hover) {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+.button.button-large.button-icon-only.button-play.playing:not(:hover):after,
+.tl-row.playing .button.button-large.button-icon-only.button-play:not(:hover):after,
+.tl-row.playing.button.button-large.button-icon-only.button-play:not(:hover):after,
+.media-object.playing .button.button-large.button-icon-only.button-play:not(:hover):after,
+.media-object.playing.button.button-large.button-icon-only.button-play:not(:hover):after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 500px;
+  box-shadow: inset 0 0 0 1px transparent;
+}
+.button.button-large.button-icon-only.button-play.playing:not(:hover).contextmenu-active,
+.tl-row.playing .button.button-large.button-icon-only.button-play:not(:hover).contextmenu-active,
+.tl-row.playing.button.button-large.button-icon-only.button-play:not(:hover).contextmenu-active,
+.media-object.playing .button.button-large.button-icon-only.button-play:not(:hover).contextmenu-active,
+.media-object.playing.button.button-large.button-icon-only.button-play:not(:hover).contextmenu-active,
+.button.button-large.button-icon-only.button-play.playing:not(:hover):not(:disabled):hover,
+.tl-row.playing .button.button-large.button-icon-only.button-play:not(:hover):not(:disabled):hover,
+.tl-row.playing.button.button-large.button-icon-only.button-play:not(:hover):not(:disabled):hover,
+.media-object.playing .button.button-large.button-icon-only.button-play:not(:hover):not(:disabled):hover,
+.media-object.playing.button.button-large.button-icon-only.button-play:not(:hover):not(:disabled):hover {
+  box-shadow: inset 0 0 0 1px transparent, 0 0 0 1px transparent;
+}
+.button.button-large.button-icon-only.button-play.playing:not(:hover).contextmenu-active:after,
+.tl-row.playing .button.button-large.button-icon-only.button-play:not(:hover).contextmenu-active:after,
+.tl-row.playing.button.button-large.button-icon-only.button-play:not(:hover).contextmenu-active:after,
+.media-object.playing .button.button-large.button-icon-only.button-play:not(:hover).contextmenu-active:after,
+.media-object.playing.button.button-large.button-icon-only.button-play:not(:hover).contextmenu-active:after,
+.button.button-large.button-icon-only.button-play.playing:not(:hover):not(:disabled):hover:after,
+.tl-row.playing .button.button-large.button-icon-only.button-play:not(:hover):not(:disabled):hover:after,
+.tl-row.playing.button.button-large.button-icon-only.button-play:not(:hover):not(:disabled):hover:after,
+.media-object.playing .button.button-large.button-icon-only.button-play:not(:hover):not(:disabled):hover:after,
+.media-object.playing.button.button-large.button-icon-only.button-play:not(:hover):not(:disabled):hover:after {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-icon-only.button-play.playing:not(:hover).contextmenu-active,
+  .tl-row.playing .button.button-large.button-icon-only.button-play:not(:hover).contextmenu-active,
+  .tl-row.playing.button.button-large.button-icon-only.button-play:not(:hover).contextmenu-active,
+  .media-object.playing .button.button-large.button-icon-only.button-play:not(:hover).contextmenu-active,
+  .media-object.playing.button.button-large.button-icon-only.button-play:not(:hover).contextmenu-active,
+  .button.button-large.button-icon-only.button-play.playing:not(:hover):not(:disabled):hover,
+  .tl-row.playing .button.button-large.button-icon-only.button-play:not(:hover):not(:disabled):hover,
+  .tl-row.playing.button.button-large.button-icon-only.button-play:not(:hover):not(:disabled):hover,
+  .media-object.playing .button.button-large.button-icon-only.button-play:not(:hover):not(:disabled):hover,
+  .media-object.playing.button.button-large.button-icon-only.button-play:not(:hover):not(:disabled):hover {
+    box-shadow: inset 0 0 0 1px transparent;
+  }
+  .button.button-large.button-icon-only.button-play.playing:not(:hover).contextmenu-active:after,
+  .tl-row.playing .button.button-large.button-icon-only.button-play:not(:hover).contextmenu-active:after,
+  .tl-row.playing.button.button-large.button-icon-only.button-play:not(:hover).contextmenu-active:after,
+  .media-object.playing .button.button-large.button-icon-only.button-play:not(:hover).contextmenu-active:after,
+  .media-object.playing.button.button-large.button-icon-only.button-play:not(:hover).contextmenu-active:after,
+  .button.button-large.button-icon-only.button-play.playing:not(:hover):not(:disabled):hover:after,
+  .tl-row.playing .button.button-large.button-icon-only.button-play:not(:hover):not(:disabled):hover:after,
+  .tl-row.playing.button.button-large.button-icon-only.button-play:not(:hover):not(:disabled):hover:after,
+  .media-object.playing .button.button-large.button-icon-only.button-play:not(:hover):not(:disabled):hover:after,
+  .media-object.playing.button.button-large.button-icon-only.button-play:not(:hover):not(:disabled):hover:after {
+    box-shadow: inset 0 0 0 1px transparent;
+  }
+}
+.button.button-large.button-icon-only.button-play.playing:not(:hover):not(:disabled):hover:active,
+.tl-row.playing .button.button-large.button-icon-only.button-play:not(:hover):not(:disabled):hover:active,
+.tl-row.playing.button.button-large.button-icon-only.button-play:not(:hover):not(:disabled):hover:active,
+.media-object.playing .button.button-large.button-icon-only.button-play:not(:hover):not(:disabled):hover:active,
+.media-object.playing.button.button-large.button-icon-only.button-play:not(:hover):not(:disabled):hover:active {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+.button.button-large.button-icon-only.button-play.playing:not(:hover):not(:disabled):hover:active:after,
+.tl-row.playing .button.button-large.button-icon-only.button-play:not(:hover):not(:disabled):hover:active:after,
+.tl-row.playing.button.button-large.button-icon-only.button-play:not(:hover):not(:disabled):hover:active:after,
+.media-object.playing .button.button-large.button-icon-only.button-play:not(:hover):not(:disabled):hover:active:after,
+.media-object.playing.button.button-large.button-icon-only.button-play:not(:hover):not(:disabled):hover:active:after {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+.button.button-large.button-icon-only.button-play.playing:not(:hover):before,
+.tl-row.playing .button.button-large.button-icon-only.button-play:not(:hover):before,
+.tl-row.playing.button.button-large.button-icon-only.button-play:not(:hover):before,
+.media-object.playing .button.button-large.button-icon-only.button-play:not(:hover):before,
+.media-object.playing.button.button-large.button-icon-only.button-play:not(:hover):before {
+  content: "\f1D0";
+  padding-left: 10.5px;
+  width: calc(100% - 10.5px);
+}
+.button.button-large.button-icon-only.button-play.playing:hover:before,
+.tl-row.playing .button.button-large.button-icon-only.button-play:hover:before,
+.tl-row.playing.button.button-large.button-icon-only.button-play:hover:before,
+.media-object.playing .button.button-large.button-icon-only.button-play:hover:before,
+.media-object.playing.button.button-large.button-icon-only.button-play:hover:before {
+  content: "\f130";
+}
+.button.button-large.button-icon-only.active {
+  color: $primary-accent-color;
+}
+.button.button-large.button-icon-only.active.contextmenu-active,
+.button.button-large.button-icon-only.active:not(:disabled):hover {
+  color: #1df269;
+}
+.button.button-large.button-icon-only.drop-target-active {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+.button.button-large.button-icon-only.drop-target-active.contextmenu-active,
+.button.button-large.button-icon-only.drop-target-active:not(:disabled):hover {
+  color: #000000;
+}
+.button.button-large.button-icon-only.drop-target-active.contextmenu-active,
+.button.button-large.button-icon-only.drop-target-active:not(:disabled):hover {
+  background-color: #FFFFFF;
+}
+.button.button-large.button-icon-with-stroke {
+  height: 48px;
+  line-height: 46px;
+  padding-top: 2px;
+  padding-left: 48px;
+  padding-right: 48px;
+  border-radius: 24px;
+  background: rgba(24, 24, 24, 0.7);
+  color: #FFFFFF;
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: transform, box-shadow, color, background-color;
+  box-shadow: inset 0 0 0 1px #A0A0A0;
+  width: 48px;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 14px;
+}
+.button.button-large.button-icon-with-stroke .b-alt-text {
+  margin-top: -46px;
+}
+.button.button-large.button-icon-with-stroke.contextmenu-active,
+.button.button-large.button-icon-with-stroke:not(:disabled):hover {
+  background-color: rgba(24, 24, 24, 0.7);
+  color: #ffffff;
+}
+.button.button-large.button-icon-with-stroke:not(:disabled):hover:active {
+  background: rgba(16, 16, 16, 0.76);
+  color: #cccccc;
+  transform: scale(1);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-icon-with-stroke:not(:disabled):hover:active {
+    transform: scale(1);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-icon-with-stroke {
+    transition-duration: 50ms;
+  }
+}
+.button.button-large.button-icon-with-stroke:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-icon-with-stroke:after {
+    transition-duration: 50ms;
+  }
+}
+.button.button-large.button-icon-with-stroke.contextmenu-active,
+.button.button-large.button-icon-with-stroke:not(:disabled):hover {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-icon-with-stroke.contextmenu-active,
+  .button.button-large.button-icon-with-stroke:not(:disabled):hover {
+    transition-duration: 66ms;
+  }
+}
+.button.button-large.button-icon-with-stroke.contextmenu-active:after,
+.button.button-large.button-icon-with-stroke:not(:disabled):hover:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-icon-with-stroke.contextmenu-active:after,
+  .button.button-large.button-icon-with-stroke:not(:disabled):hover:after {
+    transition-duration: 66ms;
+  }
+}
+.button.button-large.button-icon-with-stroke:not(:disabled):hover:active {
+  transition: none;
+}
+.button.button-large.button-icon-with-stroke:not(:disabled):hover:active:after {
+  transition: none;
+}
+.button.button-large.button-icon-with-stroke:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 500px;
+  box-shadow: inset 0 0 0 1px #A0A0A0;
+}
+.button.button-large.button-icon-with-stroke.contextmenu-active,
+.button.button-large.button-icon-with-stroke:not(:disabled):hover {
+  box-shadow: inset 0 0 0 1px #FFFFFF, 0 0 0 1px transparent;
+}
+.button.button-large.button-icon-with-stroke.contextmenu-active:after,
+.button.button-large.button-icon-with-stroke:not(:disabled):hover:after {
+  box-shadow: inset 0 0 0 1px #FFFFFF;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-icon-with-stroke.contextmenu-active,
+  .button.button-large.button-icon-with-stroke:not(:disabled):hover {
+    box-shadow: inset 0 0 0 1px #FFFFFF;
+  }
+  .button.button-large.button-icon-with-stroke.contextmenu-active:after,
+  .button.button-large.button-icon-with-stroke:not(:disabled):hover:after {
+    box-shadow: inset 0 0 0 1px #FFFFFF;
+  }
+}
+.button.button-large.button-icon-with-stroke:not(:disabled):hover:active {
+  box-shadow: inset 0 0 0 1px #808080;
+}
+.button.button-large.button-icon-with-stroke:not(:disabled):hover:active:after {
+  box-shadow: inset 0 0 0 1px #808080;
+}
+.button.button-large.button-icon-with-stroke.contextmenu-active,
+.button.button-large.button-icon-with-stroke:not(:disabled):hover {
+  transform: scale(1.08333333);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-icon-with-stroke.contextmenu-active,
+  .button.button-large.button-icon-with-stroke:not(:disabled):hover {
+    transform: scale(1.08333333);
+  }
+}
+.button.button-large.button-icon-with-stroke:before {
+  font-family: "glue1-spoticon";
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  line-height: inherit;
+  vertical-align: bottom;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: left;
+  border-radius: 500px;
+  line-height: 48px;
+  font-size: 24px;
+  padding-left: 12px;
+  width: calc(100% - 12px);
+}
+.button.button-large.button-icon-with-stroke.button-play:before {
+  content: "\f132";
+}
+.button.button-large.button-icon-with-stroke.button-play.playing:not(:hover),
+.tl-row.playing .button.button-large.button-icon-with-stroke.button-play:not(:hover),
+.tl-row.playing.button.button-large.button-icon-with-stroke.button-play:not(:hover),
+.media-object.playing .button.button-large.button-icon-with-stroke.button-play:not(:hover),
+.media-object.playing.button.button-large.button-icon-with-stroke.button-play:not(:hover) {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+.button.button-large.button-icon-with-stroke.button-play.playing:not(:hover):after,
+.tl-row.playing .button.button-large.button-icon-with-stroke.button-play:not(:hover):after,
+.tl-row.playing.button.button-large.button-icon-with-stroke.button-play:not(:hover):after,
+.media-object.playing .button.button-large.button-icon-with-stroke.button-play:not(:hover):after,
+.media-object.playing.button.button-large.button-icon-with-stroke.button-play:not(:hover):after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 500px;
+  box-shadow: inset 0 0 0 1px transparent;
+}
+.button.button-large.button-icon-with-stroke.button-play.playing:not(:hover).contextmenu-active,
+.tl-row.playing .button.button-large.button-icon-with-stroke.button-play:not(:hover).contextmenu-active,
+.tl-row.playing.button.button-large.button-icon-with-stroke.button-play:not(:hover).contextmenu-active,
+.media-object.playing .button.button-large.button-icon-with-stroke.button-play:not(:hover).contextmenu-active,
+.media-object.playing.button.button-large.button-icon-with-stroke.button-play:not(:hover).contextmenu-active,
+.button.button-large.button-icon-with-stroke.button-play.playing:not(:hover):not(:disabled):hover,
+.tl-row.playing .button.button-large.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover,
+.tl-row.playing.button.button-large.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover,
+.media-object.playing .button.button-large.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover,
+.media-object.playing.button.button-large.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover {
+  box-shadow: inset 0 0 0 1px transparent, 0 0 0 1px transparent;
+}
+.button.button-large.button-icon-with-stroke.button-play.playing:not(:hover).contextmenu-active:after,
+.tl-row.playing .button.button-large.button-icon-with-stroke.button-play:not(:hover).contextmenu-active:after,
+.tl-row.playing.button.button-large.button-icon-with-stroke.button-play:not(:hover).contextmenu-active:after,
+.media-object.playing .button.button-large.button-icon-with-stroke.button-play:not(:hover).contextmenu-active:after,
+.media-object.playing.button.button-large.button-icon-with-stroke.button-play:not(:hover).contextmenu-active:after,
+.button.button-large.button-icon-with-stroke.button-play.playing:not(:hover):not(:disabled):hover:after,
+.tl-row.playing .button.button-large.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:after,
+.tl-row.playing.button.button-large.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:after,
+.media-object.playing .button.button-large.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:after,
+.media-object.playing.button.button-large.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:after {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-large.button-icon-with-stroke.button-play.playing:not(:hover).contextmenu-active,
+  .tl-row.playing .button.button-large.button-icon-with-stroke.button-play:not(:hover).contextmenu-active,
+  .tl-row.playing.button.button-large.button-icon-with-stroke.button-play:not(:hover).contextmenu-active,
+  .media-object.playing .button.button-large.button-icon-with-stroke.button-play:not(:hover).contextmenu-active,
+  .media-object.playing.button.button-large.button-icon-with-stroke.button-play:not(:hover).contextmenu-active,
+  .button.button-large.button-icon-with-stroke.button-play.playing:not(:hover):not(:disabled):hover,
+  .tl-row.playing .button.button-large.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover,
+  .tl-row.playing.button.button-large.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover,
+  .media-object.playing .button.button-large.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover,
+  .media-object.playing.button.button-large.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover {
+    box-shadow: inset 0 0 0 1px transparent;
+  }
+  .button.button-large.button-icon-with-stroke.button-play.playing:not(:hover).contextmenu-active:after,
+  .tl-row.playing .button.button-large.button-icon-with-stroke.button-play:not(:hover).contextmenu-active:after,
+  .tl-row.playing.button.button-large.button-icon-with-stroke.button-play:not(:hover).contextmenu-active:after,
+  .media-object.playing .button.button-large.button-icon-with-stroke.button-play:not(:hover).contextmenu-active:after,
+  .media-object.playing.button.button-large.button-icon-with-stroke.button-play:not(:hover).contextmenu-active:after,
+  .button.button-large.button-icon-with-stroke.button-play.playing:not(:hover):not(:disabled):hover:after,
+  .tl-row.playing .button.button-large.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:after,
+  .tl-row.playing.button.button-large.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:after,
+  .media-object.playing .button.button-large.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:after,
+  .media-object.playing.button.button-large.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:after {
+    box-shadow: inset 0 0 0 1px transparent;
+  }
+}
+.button.button-large.button-icon-with-stroke.button-play.playing:not(:hover):not(:disabled):hover:active,
+.tl-row.playing .button.button-large.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:active,
+.tl-row.playing.button.button-large.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:active,
+.media-object.playing .button.button-large.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:active,
+.media-object.playing.button.button-large.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:active {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+.button.button-large.button-icon-with-stroke.button-play.playing:not(:hover):not(:disabled):hover:active:after,
+.tl-row.playing .button.button-large.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:active:after,
+.tl-row.playing.button.button-large.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:active:after,
+.media-object.playing .button.button-large.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:active:after,
+.media-object.playing.button.button-large.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:active:after {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+.button.button-large.button-icon-with-stroke.button-play.playing:not(:hover):before,
+.tl-row.playing .button.button-large.button-icon-with-stroke.button-play:not(:hover):before,
+.tl-row.playing.button.button-large.button-icon-with-stroke.button-play:not(:hover):before,
+.media-object.playing .button.button-large.button-icon-with-stroke.button-play:not(:hover):before,
+.media-object.playing.button.button-large.button-icon-with-stroke.button-play:not(:hover):before {
+  content: "\f1D0";
+  padding-left: 10.5px;
+  width: calc(100% - 10.5px);
+}
+.button.button-large.button-icon-with-stroke.button-play.playing:hover:before,
+.tl-row.playing .button.button-large.button-icon-with-stroke.button-play:hover:before,
+.tl-row.playing.button.button-large.button-icon-with-stroke.button-play:hover:before,
+.media-object.playing .button.button-large.button-icon-with-stroke.button-play:hover:before,
+.media-object.playing.button.button-large.button-icon-with-stroke.button-play:hover:before {
+  content: "\f130";
+}
+.button.button-small.button-green {
+  height: 24px;
+  line-height: 22px;
+  padding-top: 2px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 12px;
+  background: #1DB954;
+  color: #FFFFFF;
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+.button.button-small.button-green .b-alt-text {
+  margin-top: -22px;
+}
+.button.button-small.button-green.contextmenu-active,
+.button.button-small.button-green:not(:disabled):hover {
+  background-color: #1bd85e;
+  color: #ffffff;
+}
+.button.button-small.button-green:not(:disabled):hover:active {
+  background: #179443;
+  color: #cccccc;
+  transform: scale(1);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-green:not(:disabled):hover:active {
+    transform: scale(1);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-green {
+    transition-duration: 50ms;
+  }
+}
+.button.button-small.button-green:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-green:after {
+    transition-duration: 50ms;
+  }
+}
+.button.button-small.button-green.contextmenu-active,
+.button.button-small.button-green:not(:disabled):hover {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-green.contextmenu-active,
+  .button.button-small.button-green:not(:disabled):hover {
+    transition-duration: 66ms;
+  }
+}
+.button.button-small.button-green.contextmenu-active:after,
+.button.button-small.button-green:not(:disabled):hover:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-green.contextmenu-active:after,
+  .button.button-small.button-green:not(:disabled):hover:after {
+    transition-duration: 66ms;
+  }
+}
+.button.button-small.button-green:not(:disabled):hover:active {
+  transition: none;
+}
+.button.button-small.button-green:not(:disabled):hover:active:after {
+  transition: none;
+}
+.button.button-small.button-green:not(:disabled):hover {
+  transform: scale(1.08333333);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-green:not(:disabled):hover {
+    transform: scale(1.08333333);
+  }
+}
+.button.button-small.button-white {
+  height: 24px;
+  line-height: 22px;
+  padding-top: 2px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 12px;
+  background: #FFFFFF;
+  color: #000000;
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+.button.button-small.button-white .b-alt-text {
+  margin-top: -22px;
+}
+.button.button-small.button-white.contextmenu-active,
+.button.button-small.button-white:not(:disabled):hover {
+  background-color: #ffffff;
+  color: #1f1414;
+}
+.button.button-small.button-white:not(:disabled):hover:active {
+  background: #cccccc;
+  color: #000000;
+  transform: scale(1);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-white:not(:disabled):hover:active {
+    transform: scale(1);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-white {
+    transition-duration: 50ms;
+  }
+}
+.button.button-small.button-white:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-white:after {
+    transition-duration: 50ms;
+  }
+}
+.button.button-small.button-white.contextmenu-active,
+.button.button-small.button-white:not(:disabled):hover {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-white.contextmenu-active,
+  .button.button-small.button-white:not(:disabled):hover {
+    transition-duration: 66ms;
+  }
+}
+.button.button-small.button-white.contextmenu-active:after,
+.button.button-small.button-white:not(:disabled):hover:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-white.contextmenu-active:after,
+  .button.button-small.button-white:not(:disabled):hover:after {
+    transition-duration: 66ms;
+  }
+}
+.button.button-small.button-white:not(:disabled):hover:active {
+  transition: none;
+}
+.button.button-small.button-white:not(:disabled):hover:active:after {
+  transition: none;
+}
+.button.button-small.button-white:not(:disabled):hover {
+  transform: scale(1.08333333);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-white:not(:disabled):hover {
+    transform: scale(1.08333333);
+  }
+}
+.button.button-small.button-blue {
+  height: 24px;
+  line-height: 22px;
+  padding-top: 2px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 12px;
+  background: #4687D6;
+  color: #FFFFFF;
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+.button.button-small.button-blue .b-alt-text {
+  margin-top: -22px;
+}
+.button.button-small.button-blue.contextmenu-active,
+.button.button-small.button-blue:not(:disabled):hover {
+  background-color: #4491ee;
+  color: #ffffff;
+}
+.button.button-small.button-blue:not(:disabled):hover:active {
+  background: #386cab;
+  color: #cccccc;
+  transform: scale(1);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-blue:not(:disabled):hover:active {
+    transform: scale(1);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-blue {
+    transition-duration: 50ms;
+  }
+}
+.button.button-small.button-blue:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-blue:after {
+    transition-duration: 50ms;
+  }
+}
+.button.button-small.button-blue.contextmenu-active,
+.button.button-small.button-blue:not(:disabled):hover {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-blue.contextmenu-active,
+  .button.button-small.button-blue:not(:disabled):hover {
+    transition-duration: 66ms;
+  }
+}
+.button.button-small.button-blue.contextmenu-active:after,
+.button.button-small.button-blue:not(:disabled):hover:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-blue.contextmenu-active:after,
+  .button.button-small.button-blue:not(:disabled):hover:after {
+    transition-duration: 66ms;
+  }
+}
+.button.button-small.button-blue:not(:disabled):hover:active {
+  transition: none;
+}
+.button.button-small.button-blue:not(:disabled):hover:active:after {
+  transition: none;
+}
+.button.button-small.button-blue:not(:disabled):hover {
+  transform: scale(1.08333333);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-blue:not(:disabled):hover {
+    transform: scale(1.08333333);
+  }
+}
+.button.button-small.button-red {
+  height: 24px;
+  line-height: 22px;
+  padding-top: 2px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 12px;
+  background: #CD1A2B;
+  color: #FFFFFF;
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+.button.button-small.button-red .b-alt-text {
+  margin-top: -22px;
+}
+.button.button-small.button-red.contextmenu-active,
+.button.button-small.button-red:not(:disabled):hover {
+  background-color: #eb182c;
+  color: #ffffff;
+}
+.button.button-small.button-red:not(:disabled):hover:active {
+  background: #a41522;
+  color: #cccccc;
+  transform: scale(1);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-red:not(:disabled):hover:active {
+    transform: scale(1);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-red {
+    transition-duration: 50ms;
+  }
+}
+.button.button-small.button-red:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-red:after {
+    transition-duration: 50ms;
+  }
+}
+.button.button-small.button-red.contextmenu-active,
+.button.button-small.button-red:not(:disabled):hover {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-red.contextmenu-active,
+  .button.button-small.button-red:not(:disabled):hover {
+    transition-duration: 66ms;
+  }
+}
+.button.button-small.button-red.contextmenu-active:after,
+.button.button-small.button-red:not(:disabled):hover:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-red.contextmenu-active:after,
+  .button.button-small.button-red:not(:disabled):hover:after {
+    transition-duration: 66ms;
+  }
+}
+.button.button-small.button-red:not(:disabled):hover:active {
+  transition: none;
+}
+.button.button-small.button-red:not(:disabled):hover:active:after {
+  transition: none;
+}
+.button.button-small.button-red:not(:disabled):hover {
+  transform: scale(1.08333333);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-red:not(:disabled):hover {
+    transform: scale(1.08333333);
+  }
+}
+.button.button-small.button-gray {
+  height: 24px;
+  line-height: 22px;
+  padding-top: 2px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 12px;
+  background: #404040;
+  color: #FFFFFF;
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+.button.button-small.button-gray .b-alt-text {
+  margin-top: -22px;
+}
+.button.button-small.button-gray.contextmenu-active,
+.button.button-small.button-gray:not(:disabled):hover {
+  background-color: #535353;
+  color: #ffffff;
+}
+.button.button-small.button-gray:not(:disabled):hover:active {
+  background: #333333;
+  color: #cccccc;
+  transform: scale(1);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-gray:not(:disabled):hover:active {
+    transform: scale(1);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-gray {
+    transition-duration: 50ms;
+  }
+}
+.button.button-small.button-gray:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-gray:after {
+    transition-duration: 50ms;
+  }
+}
+.button.button-small.button-gray.contextmenu-active,
+.button.button-small.button-gray:not(:disabled):hover {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-gray.contextmenu-active,
+  .button.button-small.button-gray:not(:disabled):hover {
+    transition-duration: 66ms;
+  }
+}
+.button.button-small.button-gray.contextmenu-active:after,
+.button.button-small.button-gray:not(:disabled):hover:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-gray.contextmenu-active:after,
+  .button.button-small.button-gray:not(:disabled):hover:after {
+    transition-duration: 66ms;
+  }
+}
+.button.button-small.button-gray:not(:disabled):hover:active {
+  transition: none;
+}
+.button.button-small.button-gray:not(:disabled):hover:active:after {
+  transition: none;
+}
+.button.button-small.button-gray:not(:disabled):hover {
+  transform: scale(1.08333333);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-gray:not(:disabled):hover {
+    transform: scale(1.08333333);
+  }
+}
+.button.button-small.button-with-stroke {
+  height: 24px;
+  line-height: 22px;
+  padding-top: 2px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 12px;
+  background: rgba(24, 24, 24, 0.7);
+  color: #FFFFFF;
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: transform, box-shadow, color, background-color;
+  box-shadow: inset 0 0 0 1px #A0A0A0;
+}
+.button.button-small.button-with-stroke .b-alt-text {
+  margin-top: -22px;
+}
+.button.button-small.button-with-stroke.contextmenu-active,
+.button.button-small.button-with-stroke:not(:disabled):hover {
+  background-color: rgba(24, 24, 24, 0.7);
+  color: #ffffff;
+}
+.button.button-small.button-with-stroke:not(:disabled):hover:active {
+  background: rgba(16, 16, 16, 0.76);
+  color: #cccccc;
+  transform: scale(1);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-with-stroke:not(:disabled):hover:active {
+    transform: scale(1);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-with-stroke {
+    transition-duration: 50ms;
+  }
+}
+.button.button-small.button-with-stroke:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-with-stroke:after {
+    transition-duration: 50ms;
+  }
+}
+.button.button-small.button-with-stroke.contextmenu-active,
+.button.button-small.button-with-stroke:not(:disabled):hover {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-with-stroke.contextmenu-active,
+  .button.button-small.button-with-stroke:not(:disabled):hover {
+    transition-duration: 66ms;
+  }
+}
+.button.button-small.button-with-stroke.contextmenu-active:after,
+.button.button-small.button-with-stroke:not(:disabled):hover:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-with-stroke.contextmenu-active:after,
+  .button.button-small.button-with-stroke:not(:disabled):hover:after {
+    transition-duration: 66ms;
+  }
+}
+.button.button-small.button-with-stroke:not(:disabled):hover:active {
+  transition: none;
+}
+.button.button-small.button-with-stroke:not(:disabled):hover:active:after {
+  transition: none;
+}
+.button.button-small.button-with-stroke:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 500px;
+  box-shadow: inset 0 0 0 1px #A0A0A0;
+}
+.button.button-small.button-with-stroke.contextmenu-active,
+.button.button-small.button-with-stroke:not(:disabled):hover {
+  box-shadow: inset 0 0 0 1px #FFFFFF, 0 0 0 1px transparent;
+}
+.button.button-small.button-with-stroke.contextmenu-active:after,
+.button.button-small.button-with-stroke:not(:disabled):hover:after {
+  box-shadow: inset 0 0 0 1px #FFFFFF;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-with-stroke.contextmenu-active,
+  .button.button-small.button-with-stroke:not(:disabled):hover {
+    box-shadow: inset 0 0 0 1px #FFFFFF;
+  }
+  .button.button-small.button-with-stroke.contextmenu-active:after,
+  .button.button-small.button-with-stroke:not(:disabled):hover:after {
+    box-shadow: inset 0 0 0 1px #FFFFFF;
+  }
+}
+.button.button-small.button-with-stroke:not(:disabled):hover:active {
+  box-shadow: inset 0 0 0 1px #808080;
+}
+.button.button-small.button-with-stroke:not(:disabled):hover:active:after {
+  box-shadow: inset 0 0 0 1px #808080;
+}
+.button.button-small.button-with-stroke.contextmenu-active,
+.button.button-small.button-with-stroke:not(:disabled):hover {
+  transform: scale(1.08333333);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-with-stroke.contextmenu-active,
+  .button.button-small.button-with-stroke:not(:disabled):hover {
+    transform: scale(1.08333333);
+  }
+}
+.button.button-small.button-with-stroke.added,
+.button.button-small.button-with-stroke.active {
+  height: 24px;
+  line-height: 22px;
+  padding-top: 2px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 12px;
+  background: rgba(24, 24, 24, 0.7);
+  color: $primary-accent-color;
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: transform, box-shadow, color, background-color;
+  box-shadow: inset 0 0 0 1px #A0A0A0;
+}
+.button.button-small.button-with-stroke.added .b-alt-text,
+.button.button-small.button-with-stroke.active .b-alt-text {
+  margin-top: -22px;
+}
+.button.button-small.button-with-stroke.added.contextmenu-active,
+.button.button-small.button-with-stroke.active.contextmenu-active,
+.button.button-small.button-with-stroke.added:not(:disabled):hover,
+.button.button-small.button-with-stroke.active:not(:disabled):hover {
+  background-color: rgba(24, 24, 24, 0.7);
+  color: $primary-accent-color;
+}
+.button.button-small.button-with-stroke.added:not(:disabled):hover:active,
+.button.button-small.button-with-stroke.active:not(:disabled):hover:active {
+  background: rgba(16, 16, 16, 0.76);
+  color: #18ab4d;
+  transform: scale(1);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-with-stroke.added:not(:disabled):hover:active,
+  .button.button-small.button-with-stroke.active:not(:disabled):hover:active {
+    transform: scale(1);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-with-stroke.added,
+  .button.button-small.button-with-stroke.active {
+    transition-duration: 50ms;
+  }
+}
+.button.button-small.button-with-stroke.added:after,
+.button.button-small.button-with-stroke.active:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-with-stroke.added:after,
+  .button.button-small.button-with-stroke.active:after {
+    transition-duration: 50ms;
+  }
+}
+.button.button-small.button-with-stroke.added.contextmenu-active,
+.button.button-small.button-with-stroke.active.contextmenu-active,
+.button.button-small.button-with-stroke.added:not(:disabled):hover,
+.button.button-small.button-with-stroke.active:not(:disabled):hover {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-with-stroke.added.contextmenu-active,
+  .button.button-small.button-with-stroke.active.contextmenu-active,
+  .button.button-small.button-with-stroke.added:not(:disabled):hover,
+  .button.button-small.button-with-stroke.active:not(:disabled):hover {
+    transition-duration: 66ms;
+  }
+}
+.button.button-small.button-with-stroke.added.contextmenu-active:after,
+.button.button-small.button-with-stroke.active.contextmenu-active:after,
+.button.button-small.button-with-stroke.added:not(:disabled):hover:after,
+.button.button-small.button-with-stroke.active:not(:disabled):hover:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-with-stroke.added.contextmenu-active:after,
+  .button.button-small.button-with-stroke.active.contextmenu-active:after,
+  .button.button-small.button-with-stroke.added:not(:disabled):hover:after,
+  .button.button-small.button-with-stroke.active:not(:disabled):hover:after {
+    transition-duration: 66ms;
+  }
+}
+.button.button-small.button-with-stroke.added:not(:disabled):hover:active,
+.button.button-small.button-with-stroke.active:not(:disabled):hover:active {
+  transition: none;
+}
+.button.button-small.button-with-stroke.added:not(:disabled):hover:active:after,
+.button.button-small.button-with-stroke.active:not(:disabled):hover:active:after {
+  transition: none;
+}
+.button.button-small.button-with-stroke.added:after,
+.button.button-small.button-with-stroke.active:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 500px;
+  box-shadow: inset 0 0 0 1px #A0A0A0;
+}
+.button.button-small.button-with-stroke.added.contextmenu-active,
+.button.button-small.button-with-stroke.active.contextmenu-active,
+.button.button-small.button-with-stroke.added:not(:disabled):hover,
+.button.button-small.button-with-stroke.active:not(:disabled):hover {
+  box-shadow: inset 0 0 0 1px #FFFFFF, 0 0 0 1px transparent;
+}
+.button.button-small.button-with-stroke.added.contextmenu-active:after,
+.button.button-small.button-with-stroke.active.contextmenu-active:after,
+.button.button-small.button-with-stroke.added:not(:disabled):hover:after,
+.button.button-small.button-with-stroke.active:not(:disabled):hover:after {
+  box-shadow: inset 0 0 0 1px #FFFFFF;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-with-stroke.added.contextmenu-active,
+  .button.button-small.button-with-stroke.active.contextmenu-active,
+  .button.button-small.button-with-stroke.added:not(:disabled):hover,
+  .button.button-small.button-with-stroke.active:not(:disabled):hover {
+    box-shadow: inset 0 0 0 1px #FFFFFF;
+  }
+  .button.button-small.button-with-stroke.added.contextmenu-active:after,
+  .button.button-small.button-with-stroke.active.contextmenu-active:after,
+  .button.button-small.button-with-stroke.added:not(:disabled):hover:after,
+  .button.button-small.button-with-stroke.active:not(:disabled):hover:after {
+    box-shadow: inset 0 0 0 1px #FFFFFF;
+  }
+}
+.button.button-small.button-with-stroke.added:not(:disabled):hover:active,
+.button.button-small.button-with-stroke.active:not(:disabled):hover:active {
+  box-shadow: inset 0 0 0 1px #808080;
+}
+.button.button-small.button-with-stroke.added:not(:disabled):hover:active:after,
+.button.button-small.button-with-stroke.active:not(:disabled):hover:active:after {
+  box-shadow: inset 0 0 0 1px #808080;
+}
+.button.button-small.button-with-stroke.added.contextmenu-active,
+.button.button-small.button-with-stroke.active.contextmenu-active,
+.button.button-small.button-with-stroke.added:not(:disabled):hover,
+.button.button-small.button-with-stroke.active:not(:disabled):hover {
+  transform: scale(1.08333333);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-with-stroke.added.contextmenu-active,
+  .button.button-small.button-with-stroke.active.contextmenu-active,
+  .button.button-small.button-with-stroke.added:not(:disabled):hover,
+  .button.button-small.button-with-stroke.active:not(:disabled):hover {
+    transform: scale(1.08333333);
+  }
+}
+.button.button-small.button-facebook {
+  height: 24px;
+  line-height: 22px;
+  padding-top: 2px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 12px;
+  background: #3b5998;
+  color: #FFFFFF;
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+.button.button-small.button-facebook .b-alt-text {
+  margin-top: -22px;
+}
+.button.button-small.button-facebook.contextmenu-active,
+.button.button-small.button-facebook:not(:disabled):hover {
+  background-color: #3761ba;
+  color: #ffffff;
+}
+.button.button-small.button-facebook:not(:disabled):hover:active {
+  background: #2f477a;
+  color: #cccccc;
+  transform: scale(1);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-facebook:not(:disabled):hover:active {
+    transform: scale(1);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-facebook {
+    transition-duration: 50ms;
+  }
+}
+.button.button-small.button-facebook:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-facebook:after {
+    transition-duration: 50ms;
+  }
+}
+.button.button-small.button-facebook.contextmenu-active,
+.button.button-small.button-facebook:not(:disabled):hover {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-facebook.contextmenu-active,
+  .button.button-small.button-facebook:not(:disabled):hover {
+    transition-duration: 66ms;
+  }
+}
+.button.button-small.button-facebook.contextmenu-active:after,
+.button.button-small.button-facebook:not(:disabled):hover:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-facebook.contextmenu-active:after,
+  .button.button-small.button-facebook:not(:disabled):hover:after {
+    transition-duration: 66ms;
+  }
+}
+.button.button-small.button-facebook:not(:disabled):hover:active {
+  transition: none;
+}
+.button.button-small.button-facebook:not(:disabled):hover:active:after {
+  transition: none;
+}
+.button.button-small.button-facebook:not(:disabled):hover {
+  transform: scale(1.08333333);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-facebook:not(:disabled):hover {
+    transform: scale(1.08333333);
+  }
+}
+.button.button-small.button-icon-only {
+  height: 24px;
+  line-height: 22px;
+  padding-top: 2px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 12px;
+  background: transparent;
+  color: #A0A0A0;
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: transform, box-shadow, color, background-color;
+  width: 24px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.button.button-small.button-icon-only .b-alt-text {
+  margin-top: -22px;
+}
+.button.button-small.button-icon-only.contextmenu-active,
+.button.button-small.button-icon-only:not(:disabled):hover {
+  background-color: transparent;
+  color: #FFFFFF;
+}
+.button.button-small.button-icon-only:not(:disabled):hover:active {
+  background: transparent;
+  color: #808080;
+  transform: scale(1);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-icon-only:not(:disabled):hover:active {
+    transform: scale(1);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-icon-only {
+    transition-duration: 50ms;
+  }
+}
+.button.button-small.button-icon-only:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-icon-only:after {
+    transition-duration: 50ms;
+  }
+}
+.button.button-small.button-icon-only.contextmenu-active,
+.button.button-small.button-icon-only:not(:disabled):hover {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-icon-only.contextmenu-active,
+  .button.button-small.button-icon-only:not(:disabled):hover {
+    transition-duration: 66ms;
+  }
+}
+.button.button-small.button-icon-only.contextmenu-active:after,
+.button.button-small.button-icon-only:not(:disabled):hover:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-icon-only.contextmenu-active:after,
+  .button.button-small.button-icon-only:not(:disabled):hover:after {
+    transition-duration: 66ms;
+  }
+}
+.button.button-small.button-icon-only:not(:disabled):hover:active {
+  transition: none;
+}
+.button.button-small.button-icon-only:not(:disabled):hover:active:after {
+  transition: none;
+}
+.button.button-small.button-icon-only:before {
+  font-family: "glue1-spoticon";
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  line-height: inherit;
+  vertical-align: bottom;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: left;
+  border-radius: 500px;
+  line-height: 24px;
+  font-size: 12px;
+  padding-left: 6px;
+  width: calc(100% - 6px);
+}
+.button.button-small.button-icon-only.button-play:before {
+  content: "\f132";
+}
+.button.button-small.button-icon-only.button-play.playing:not(:hover),
+.tl-row.playing .button.button-small.button-icon-only.button-play:not(:hover),
+.tl-row.playing.button.button-small.button-icon-only.button-play:not(:hover),
+.media-object.playing .button.button-small.button-icon-only.button-play:not(:hover),
+.media-object.playing.button.button-small.button-icon-only.button-play:not(:hover) {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+.button.button-small.button-icon-only.button-play.playing:not(:hover):after,
+.tl-row.playing .button.button-small.button-icon-only.button-play:not(:hover):after,
+.tl-row.playing.button.button-small.button-icon-only.button-play:not(:hover):after,
+.media-object.playing .button.button-small.button-icon-only.button-play:not(:hover):after,
+.media-object.playing.button.button-small.button-icon-only.button-play:not(:hover):after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 500px;
+  box-shadow: inset 0 0 0 1px transparent;
+}
+.button.button-small.button-icon-only.button-play.playing:not(:hover).contextmenu-active,
+.tl-row.playing .button.button-small.button-icon-only.button-play:not(:hover).contextmenu-active,
+.tl-row.playing.button.button-small.button-icon-only.button-play:not(:hover).contextmenu-active,
+.media-object.playing .button.button-small.button-icon-only.button-play:not(:hover).contextmenu-active,
+.media-object.playing.button.button-small.button-icon-only.button-play:not(:hover).contextmenu-active,
+.button.button-small.button-icon-only.button-play.playing:not(:hover):not(:disabled):hover,
+.tl-row.playing .button.button-small.button-icon-only.button-play:not(:hover):not(:disabled):hover,
+.tl-row.playing.button.button-small.button-icon-only.button-play:not(:hover):not(:disabled):hover,
+.media-object.playing .button.button-small.button-icon-only.button-play:not(:hover):not(:disabled):hover,
+.media-object.playing.button.button-small.button-icon-only.button-play:not(:hover):not(:disabled):hover {
+  box-shadow: inset 0 0 0 1px transparent, 0 0 0 1px transparent;
+}
+.button.button-small.button-icon-only.button-play.playing:not(:hover).contextmenu-active:after,
+.tl-row.playing .button.button-small.button-icon-only.button-play:not(:hover).contextmenu-active:after,
+.tl-row.playing.button.button-small.button-icon-only.button-play:not(:hover).contextmenu-active:after,
+.media-object.playing .button.button-small.button-icon-only.button-play:not(:hover).contextmenu-active:after,
+.media-object.playing.button.button-small.button-icon-only.button-play:not(:hover).contextmenu-active:after,
+.button.button-small.button-icon-only.button-play.playing:not(:hover):not(:disabled):hover:after,
+.tl-row.playing .button.button-small.button-icon-only.button-play:not(:hover):not(:disabled):hover:after,
+.tl-row.playing.button.button-small.button-icon-only.button-play:not(:hover):not(:disabled):hover:after,
+.media-object.playing .button.button-small.button-icon-only.button-play:not(:hover):not(:disabled):hover:after,
+.media-object.playing.button.button-small.button-icon-only.button-play:not(:hover):not(:disabled):hover:after {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-icon-only.button-play.playing:not(:hover).contextmenu-active,
+  .tl-row.playing .button.button-small.button-icon-only.button-play:not(:hover).contextmenu-active,
+  .tl-row.playing.button.button-small.button-icon-only.button-play:not(:hover).contextmenu-active,
+  .media-object.playing .button.button-small.button-icon-only.button-play:not(:hover).contextmenu-active,
+  .media-object.playing.button.button-small.button-icon-only.button-play:not(:hover).contextmenu-active,
+  .button.button-small.button-icon-only.button-play.playing:not(:hover):not(:disabled):hover,
+  .tl-row.playing .button.button-small.button-icon-only.button-play:not(:hover):not(:disabled):hover,
+  .tl-row.playing.button.button-small.button-icon-only.button-play:not(:hover):not(:disabled):hover,
+  .media-object.playing .button.button-small.button-icon-only.button-play:not(:hover):not(:disabled):hover,
+  .media-object.playing.button.button-small.button-icon-only.button-play:not(:hover):not(:disabled):hover {
+    box-shadow: inset 0 0 0 1px transparent;
+  }
+  .button.button-small.button-icon-only.button-play.playing:not(:hover).contextmenu-active:after,
+  .tl-row.playing .button.button-small.button-icon-only.button-play:not(:hover).contextmenu-active:after,
+  .tl-row.playing.button.button-small.button-icon-only.button-play:not(:hover).contextmenu-active:after,
+  .media-object.playing .button.button-small.button-icon-only.button-play:not(:hover).contextmenu-active:after,
+  .media-object.playing.button.button-small.button-icon-only.button-play:not(:hover).contextmenu-active:after,
+  .button.button-small.button-icon-only.button-play.playing:not(:hover):not(:disabled):hover:after,
+  .tl-row.playing .button.button-small.button-icon-only.button-play:not(:hover):not(:disabled):hover:after,
+  .tl-row.playing.button.button-small.button-icon-only.button-play:not(:hover):not(:disabled):hover:after,
+  .media-object.playing .button.button-small.button-icon-only.button-play:not(:hover):not(:disabled):hover:after,
+  .media-object.playing.button.button-small.button-icon-only.button-play:not(:hover):not(:disabled):hover:after {
+    box-shadow: inset 0 0 0 1px transparent;
+  }
+}
+.button.button-small.button-icon-only.button-play.playing:not(:hover):not(:disabled):hover:active,
+.tl-row.playing .button.button-small.button-icon-only.button-play:not(:hover):not(:disabled):hover:active,
+.tl-row.playing.button.button-small.button-icon-only.button-play:not(:hover):not(:disabled):hover:active,
+.media-object.playing .button.button-small.button-icon-only.button-play:not(:hover):not(:disabled):hover:active,
+.media-object.playing.button.button-small.button-icon-only.button-play:not(:hover):not(:disabled):hover:active {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+.button.button-small.button-icon-only.button-play.playing:not(:hover):not(:disabled):hover:active:after,
+.tl-row.playing .button.button-small.button-icon-only.button-play:not(:hover):not(:disabled):hover:active:after,
+.tl-row.playing.button.button-small.button-icon-only.button-play:not(:hover):not(:disabled):hover:active:after,
+.media-object.playing .button.button-small.button-icon-only.button-play:not(:hover):not(:disabled):hover:active:after,
+.media-object.playing.button.button-small.button-icon-only.button-play:not(:hover):not(:disabled):hover:active:after {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+.button.button-small.button-icon-only.button-play.playing:not(:hover):before,
+.tl-row.playing .button.button-small.button-icon-only.button-play:not(:hover):before,
+.tl-row.playing.button.button-small.button-icon-only.button-play:not(:hover):before,
+.media-object.playing .button.button-small.button-icon-only.button-play:not(:hover):before,
+.media-object.playing.button.button-small.button-icon-only.button-play:not(:hover):before {
+  content: "\f1D0";
+  padding-left: 5.25px;
+  width: calc(100% - 5.25px);
+}
+.button.button-small.button-icon-only.button-play.playing:hover:before,
+.tl-row.playing .button.button-small.button-icon-only.button-play:hover:before,
+.tl-row.playing.button.button-small.button-icon-only.button-play:hover:before,
+.media-object.playing .button.button-small.button-icon-only.button-play:hover:before,
+.media-object.playing.button.button-small.button-icon-only.button-play:hover:before {
+  content: "\f130";
+}
+.button.button-small.button-icon-only.active {
+  color: $primary-accent-color;
+}
+.button.button-small.button-icon-only.active.contextmenu-active,
+.button.button-small.button-icon-only.active:not(:disabled):hover {
+  color: #1df269;
+}
+.button.button-small.button-icon-only.drop-target-active {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+.button.button-small.button-icon-only.drop-target-active.contextmenu-active,
+.button.button-small.button-icon-only.drop-target-active:not(:disabled):hover {
+  color: #000000;
+}
+.button.button-small.button-icon-only.drop-target-active.contextmenu-active,
+.button.button-small.button-icon-only.drop-target-active:not(:disabled):hover {
+  background-color: #FFFFFF;
+}
+.button.button-small.button-icon-with-stroke {
+  height: 24px;
+  line-height: 22px;
+  padding-top: 2px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 12px;
+  background: rgba(24, 24, 24, 0.7);
+  color: #FFFFFF;
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: transform, box-shadow, color, background-color;
+  box-shadow: inset 0 0 0 1px #A0A0A0;
+  width: 24px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.button.button-small.button-icon-with-stroke .b-alt-text {
+  margin-top: -22px;
+}
+.button.button-small.button-icon-with-stroke.contextmenu-active,
+.button.button-small.button-icon-with-stroke:not(:disabled):hover {
+  background-color: rgba(24, 24, 24, 0.7);
+  color: #ffffff;
+}
+.button.button-small.button-icon-with-stroke:not(:disabled):hover:active {
+  background: rgba(16, 16, 16, 0.76);
+  color: #cccccc;
+  transform: scale(1);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-icon-with-stroke:not(:disabled):hover:active {
+    transform: scale(1);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-icon-with-stroke {
+    transition-duration: 50ms;
+  }
+}
+.button.button-small.button-icon-with-stroke:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-icon-with-stroke:after {
+    transition-duration: 50ms;
+  }
+}
+.button.button-small.button-icon-with-stroke.contextmenu-active,
+.button.button-small.button-icon-with-stroke:not(:disabled):hover {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: transform, box-shadow, color, background-color;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-icon-with-stroke.contextmenu-active,
+  .button.button-small.button-icon-with-stroke:not(:disabled):hover {
+    transition-duration: 66ms;
+  }
+}
+.button.button-small.button-icon-with-stroke.contextmenu-active:after,
+.button.button-small.button-icon-with-stroke:not(:disabled):hover:after {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: box-shadow;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-icon-with-stroke.contextmenu-active:after,
+  .button.button-small.button-icon-with-stroke:not(:disabled):hover:after {
+    transition-duration: 66ms;
+  }
+}
+.button.button-small.button-icon-with-stroke:not(:disabled):hover:active {
+  transition: none;
+}
+.button.button-small.button-icon-with-stroke:not(:disabled):hover:active:after {
+  transition: none;
+}
+.button.button-small.button-icon-with-stroke:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 500px;
+  box-shadow: inset 0 0 0 1px #A0A0A0;
+}
+.button.button-small.button-icon-with-stroke.contextmenu-active,
+.button.button-small.button-icon-with-stroke:not(:disabled):hover {
+  box-shadow: inset 0 0 0 1px #FFFFFF, 0 0 0 1px transparent;
+}
+.button.button-small.button-icon-with-stroke.contextmenu-active:after,
+.button.button-small.button-icon-with-stroke:not(:disabled):hover:after {
+  box-shadow: inset 0 0 0 1px #FFFFFF;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-icon-with-stroke.contextmenu-active,
+  .button.button-small.button-icon-with-stroke:not(:disabled):hover {
+    box-shadow: inset 0 0 0 1px #FFFFFF;
+  }
+  .button.button-small.button-icon-with-stroke.contextmenu-active:after,
+  .button.button-small.button-icon-with-stroke:not(:disabled):hover:after {
+    box-shadow: inset 0 0 0 1px #FFFFFF;
+  }
+}
+.button.button-small.button-icon-with-stroke:not(:disabled):hover:active {
+  box-shadow: inset 0 0 0 1px #808080;
+}
+.button.button-small.button-icon-with-stroke:not(:disabled):hover:active:after {
+  box-shadow: inset 0 0 0 1px #808080;
+}
+.button.button-small.button-icon-with-stroke.contextmenu-active,
+.button.button-small.button-icon-with-stroke:not(:disabled):hover {
+  transform: scale(1.08333333);
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-icon-with-stroke.contextmenu-active,
+  .button.button-small.button-icon-with-stroke:not(:disabled):hover {
+    transform: scale(1.08333333);
+  }
+}
+.button.button-small.button-icon-with-stroke:before {
+  font-family: "glue1-spoticon";
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  line-height: inherit;
+  vertical-align: bottom;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: left;
+  border-radius: 500px;
+  line-height: 24px;
+  font-size: 12px;
+  padding-left: 6px;
+  width: calc(100% - 6px);
+}
+.button.button-small.button-icon-with-stroke.button-play:before {
+  content: "\f132";
+}
+.button.button-small.button-icon-with-stroke.button-play.playing:not(:hover),
+.tl-row.playing .button.button-small.button-icon-with-stroke.button-play:not(:hover),
+.tl-row.playing.button.button-small.button-icon-with-stroke.button-play:not(:hover),
+.media-object.playing .button.button-small.button-icon-with-stroke.button-play:not(:hover),
+.media-object.playing.button.button-small.button-icon-with-stroke.button-play:not(:hover) {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+.button.button-small.button-icon-with-stroke.button-play.playing:not(:hover):after,
+.tl-row.playing .button.button-small.button-icon-with-stroke.button-play:not(:hover):after,
+.tl-row.playing.button.button-small.button-icon-with-stroke.button-play:not(:hover):after,
+.media-object.playing .button.button-small.button-icon-with-stroke.button-play:not(:hover):after,
+.media-object.playing.button.button-small.button-icon-with-stroke.button-play:not(:hover):after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 500px;
+  box-shadow: inset 0 0 0 1px transparent;
+}
+.button.button-small.button-icon-with-stroke.button-play.playing:not(:hover).contextmenu-active,
+.tl-row.playing .button.button-small.button-icon-with-stroke.button-play:not(:hover).contextmenu-active,
+.tl-row.playing.button.button-small.button-icon-with-stroke.button-play:not(:hover).contextmenu-active,
+.media-object.playing .button.button-small.button-icon-with-stroke.button-play:not(:hover).contextmenu-active,
+.media-object.playing.button.button-small.button-icon-with-stroke.button-play:not(:hover).contextmenu-active,
+.button.button-small.button-icon-with-stroke.button-play.playing:not(:hover):not(:disabled):hover,
+.tl-row.playing .button.button-small.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover,
+.tl-row.playing.button.button-small.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover,
+.media-object.playing .button.button-small.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover,
+.media-object.playing.button.button-small.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover {
+  box-shadow: inset 0 0 0 1px transparent, 0 0 0 1px transparent;
+}
+.button.button-small.button-icon-with-stroke.button-play.playing:not(:hover).contextmenu-active:after,
+.tl-row.playing .button.button-small.button-icon-with-stroke.button-play:not(:hover).contextmenu-active:after,
+.tl-row.playing.button.button-small.button-icon-with-stroke.button-play:not(:hover).contextmenu-active:after,
+.media-object.playing .button.button-small.button-icon-with-stroke.button-play:not(:hover).contextmenu-active:after,
+.media-object.playing.button.button-small.button-icon-with-stroke.button-play:not(:hover).contextmenu-active:after,
+.button.button-small.button-icon-with-stroke.button-play.playing:not(:hover):not(:disabled):hover:after,
+.tl-row.playing .button.button-small.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:after,
+.tl-row.playing.button.button-small.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:after,
+.media-object.playing .button.button-small.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:after,
+.media-object.playing.button.button-small.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:after {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button.button-small.button-icon-with-stroke.button-play.playing:not(:hover).contextmenu-active,
+  .tl-row.playing .button.button-small.button-icon-with-stroke.button-play:not(:hover).contextmenu-active,
+  .tl-row.playing.button.button-small.button-icon-with-stroke.button-play:not(:hover).contextmenu-active,
+  .media-object.playing .button.button-small.button-icon-with-stroke.button-play:not(:hover).contextmenu-active,
+  .media-object.playing.button.button-small.button-icon-with-stroke.button-play:not(:hover).contextmenu-active,
+  .button.button-small.button-icon-with-stroke.button-play.playing:not(:hover):not(:disabled):hover,
+  .tl-row.playing .button.button-small.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover,
+  .tl-row.playing.button.button-small.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover,
+  .media-object.playing .button.button-small.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover,
+  .media-object.playing.button.button-small.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover {
+    box-shadow: inset 0 0 0 1px transparent;
+  }
+  .button.button-small.button-icon-with-stroke.button-play.playing:not(:hover).contextmenu-active:after,
+  .tl-row.playing .button.button-small.button-icon-with-stroke.button-play:not(:hover).contextmenu-active:after,
+  .tl-row.playing.button.button-small.button-icon-with-stroke.button-play:not(:hover).contextmenu-active:after,
+  .media-object.playing .button.button-small.button-icon-with-stroke.button-play:not(:hover).contextmenu-active:after,
+  .media-object.playing.button.button-small.button-icon-with-stroke.button-play:not(:hover).contextmenu-active:after,
+  .button.button-small.button-icon-with-stroke.button-play.playing:not(:hover):not(:disabled):hover:after,
+  .tl-row.playing .button.button-small.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:after,
+  .tl-row.playing.button.button-small.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:after,
+  .media-object.playing .button.button-small.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:after,
+  .media-object.playing.button.button-small.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:after {
+    box-shadow: inset 0 0 0 1px transparent;
+  }
+}
+.button.button-small.button-icon-with-stroke.button-play.playing:not(:hover):not(:disabled):hover:active,
+.tl-row.playing .button.button-small.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:active,
+.tl-row.playing.button.button-small.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:active,
+.media-object.playing .button.button-small.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:active,
+.media-object.playing.button.button-small.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:active {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+.button.button-small.button-icon-with-stroke.button-play.playing:not(:hover):not(:disabled):hover:active:after,
+.tl-row.playing .button.button-small.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:active:after,
+.tl-row.playing.button.button-small.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:active:after,
+.media-object.playing .button.button-small.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:active:after,
+.media-object.playing.button.button-small.button-icon-with-stroke.button-play:not(:hover):not(:disabled):hover:active:after {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+.button.button-small.button-icon-with-stroke.button-play.playing:not(:hover):before,
+.tl-row.playing .button.button-small.button-icon-with-stroke.button-play:not(:hover):before,
+.tl-row.playing.button.button-small.button-icon-with-stroke.button-play:not(:hover):before,
+.media-object.playing .button.button-small.button-icon-with-stroke.button-play:not(:hover):before,
+.media-object.playing.button.button-small.button-icon-with-stroke.button-play:not(:hover):before {
+  content: "\f1D0";
+  padding-left: 5.25px;
+  width: calc(100% - 5.25px);
+}
+.button.button-small.button-icon-with-stroke.button-play.playing:hover:before,
+.tl-row.playing .button.button-small.button-icon-with-stroke.button-play:hover:before,
+.tl-row.playing.button.button-small.button-icon-with-stroke.button-play:hover:before,
+.media-object.playing .button.button-small.button-icon-with-stroke.button-play:hover:before,
+.media-object.playing.button.button-small.button-icon-with-stroke.button-play:hover:before {
+  content: "\f130";
+}
+.b-alt-text {
+  opacity: 0;
+}
+.b-play-text,
+.b-pause-text,
+.b-add-text,
+.b-added-text,
+.b-remove-text {
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition-property: opacity;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .b-play-text,
+  .b-pause-text,
+  .b-add-text,
+  .b-added-text,
+  .b-remove-text {
+    transition-duration: 50ms;
+  }
+}
+.button:hover .b-play-text,
+.button:hover .b-pause-text,
+.button:hover .b-add-text,
+.button:hover .b-added-text,
+.button:hover .b-remove-text {
+  transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
+  transition-property: opacity;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .button:hover .b-play-text,
+  .button:hover .b-pause-text,
+  .button:hover .b-add-text,
+  .button:hover .b-added-text,
+  .button:hover .b-remove-text {
+    transition-duration: 66ms;
+  }
+}
+.button-play.button-icon-only .b-play-text,
+.button-play.button-icon-with-stroke .b-play-text,
+.button-play.button-icon-only .b-pause-text,
+.button-play.button-icon-with-stroke .b-pause-text {
+  display: none;
+}
+.button-play.playing .b-play-text,
+.header.playing .button-play .b-play-text {
+  opacity: 0;
+}
+.button-play.playing .b-pause-text,
+.header.playing .button-play .b-pause-text {
+  opacity: 1;
+}
+.button-add.button-icon-only .b-add-text,
+.button-add.button-icon-with-stroke .b-add-text,
+.button-add.button-icon-only .b-added-text,
+.button-add.button-icon-with-stroke .b-added-text,
+.button-add.button-icon-only .b-remove-text,
+.button-add.button-icon-with-stroke .b-remove-text {
+  display: none;
+}
+.button-add.button-icon-only:before,
+.button-add.button-icon-with-stroke:before {
+  content: "\f138";
+}
+.button-more:before {
+  content: "\f12c";
+}
+.button-thumbs-down:before {
+  content: "\f14e";
+}
+.button-thumbs-up:before {
+  content: "\f150";
+}
+.added .button-add .b-added-text,
+.button-add.added .b-added-text {
+  opacity: 1;
+}
+.added .button-add .b-add-text,
+.button-add.added .b-add-text {
+  opacity: 0;
+}
+.added .button-add.button-icon-only:before,
+.button-add.added.button-icon-only:before,
+.added .button-add.button-icon-with-stroke:before,
+.button-add.added.button-icon-with-stroke:before {
+  content: "\f10a";
+}
+.added .button-add.button-icon-only:hover:before,
+.button-add.added.button-icon-only:hover:before,
+.added .button-add.button-icon-with-stroke:hover:before,
+.button-add.added.button-icon-with-stroke:hover:before {
+  content: "\f160";
+}
+.added .button-add:hover .b-remove-text,
+.button-add.added:hover .b-remove-text {
+  opacity: 1;
+}
+.added .button-add:hover .b-added-text,
+.button-add.added:hover .b-added-text {
+  opacity: 0;
+}
+.added .button-add.just-changed,
+.button-add.added.just-changed,
+.added .button-add.stay-added,
+.button-add.added.stay-added {
+  border-color: #1DB954;
+}
+.added .button-add.just-changed .b-remove-text,
+.button-add.added.just-changed .b-remove-text,
+.added .button-add.stay-added .b-remove-text,
+.button-add.added.stay-added .b-remove-text {
+  opacity: 0;
+}
+.added .button-add.just-changed .b-added-text,
+.button-add.added.just-changed .b-added-text,
+.added .button-add.stay-added .b-added-text,
+.button-add.added.stay-added .b-added-text {
+  opacity: 1;
+}
+.added .button-add.just-changed.button-icon-only:before,
+.button-add.added.just-changed.button-icon-only:before,
+.added .button-add.stay-added.button-icon-only:before,
+.button-add.added.stay-added.button-icon-only:before,
+.added .button-add.just-changed.button-icon-with-stroke:before,
+.button-add.added.just-changed.button-icon-with-stroke:before,
+.added .button-add.stay-added.button-icon-with-stroke:before,
+.button-add.added.stay-added.button-icon-with-stroke:before {
+  content: "\f10a";
+}

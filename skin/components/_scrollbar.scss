@@ -1,0 +1,77 @@
+::-webkit-scrollbar-track {
+  background-color: #181818;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #181818;
+}
+::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  border: 1px solid #181818;
+  border-radius: 10px;
+  background-color: #282828;
+}
+::-webkit-scrollbar-corner {
+  background-color: #181818;
+}
+body,
+html {
+  scrollbar-arrow-color: #282828;
+  scrollbar-track-color: #181818;
+  scrollbar-face-color: #282828;
+  scrollbar-highlight-color: #181818;
+  scrollbar-3dlight-color: #181818;
+  scrollbar-shadow-color: #181818;
+  scrollbar-darkshadow-color: #181818;
+}
+.scrollbar-view {
+  overflow-y: scroll;
+  position: relative;
+  will-change: transform;
+}
+.scrollbar-view::-webkit-scrollbar {
+  width: 0;
+}
+.scrollbar-view > .scrollbar-track {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+}
+.scrollbar-track {
+  width: 10px;
+  opacity: 0;
+  transition: opacity 500ms;
+}
+.scrollbar-track.visible {
+  transition: none;
+  opacity: 1;
+}
+.scrollbar-track.expanded {
+  transition: opacity 500ms, width 100ms;
+  width: 12px;
+  background-color: rgba(160, 160, 160, 0.05);
+  cursor: default;
+}
+.scrollbar-track.expanded.always-visible {
+  transition: none;
+  width: 10px;
+}
+.scrollbar-track.expanded.visible {
+  transition: width 100ms;
+}
+.scrollbar-thumb {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 0;
+  transform: translate3d(0, 0, 0);
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background-clip: content-box;
+  background-color: rgba(160, 160, 160, 0.4);
+}
