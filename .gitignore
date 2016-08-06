@@ -3,3 +3,4 @@ build/glue1.css
 build/Spotify.app
 build/Apps
 .tmp
+Gemfile.lock
