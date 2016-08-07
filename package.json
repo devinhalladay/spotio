@@ -1,0 +1,22 @@
+{
+  "name": "spotio",
+  "version": "1.0.0",
+  "description": "An Rdio theme for Spotify.app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devinhalladay/spotio.git"
+  },
+  "author": "Devin Halladay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devinhalladay/spotio/issues"
+  },
+  "homepage": "https://github.com/devinhalladay/spotio#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1"
+  }
+}
