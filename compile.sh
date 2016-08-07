@@ -1,35 +1,33 @@
 # Compile Sass
+echo "## Compiling sass from skin/..."
+echo "\n## Processing glue1.scss..."
 sass --sourcemap=none skin/glue1.scss:dist/glue1.css
 
+echo "## Processing individual App sass..."
 for name in skin/apps/*.scss
   do sudo sass --sourcemap=none $name Apps/$(basename $name .scss)/css/style.css
 done
 
 # Filter build/glue1.css into all app dirs
+echo "\n## Placing processed glue1.css into all App directories"
 find Apps/. -type d -name "css" -print0 | xargs -0 -I {} sudo cp dist/glue1.css {}
 
-# Download latest Spotify binary and extract it to .tmp
-curl https://download.spotify.com/Spotify.dmg --create-dirs -o .tmp/Spotify.dmg
-hdiutil attach .tmp/Spotify.dmg
-sudo cp -R "/Volumes/Spotify/Spotify.app" .tmp/
-sudo chmod -R 755 .tmp/Spotify.app
-
 # Remove all the .spa files in the app
+echo "\n## Removing .spa files from Spotify.app"
 sudo rm -rf .tmp/Spotify.app/Contents/Resources/Apps/*.spa
 
 # Copy over our built App code to the app in .tmp
+echo "\n## Moving compiled app code into Spotify.app"
 sudo cp -r "Apps/"* ".tmp/Spotify.app/Contents/Resources/Apps/"
 
 # Move our compiled app into /dist
+echo "\n## Moving Spotify.app to dist/"
 sudo cp -r ".tmp/Spotify.app" "dist/"
 
-# Chmod again because the chromium embedded framework is a piece of steaming shit
-sudo chmod -R 755 dist/Spotify.app
+echo "\n## Done! Your customized Spotify.app is available for launch at dist/Spotify.app"
 
-# Final step: unmount and delete our temporary DMG
-hdiutil detach /Volumes/Spotify
-sudo rm -rf .tmp/Spotify.dmg
-sudo rm -rf .tmp/Spotify.app
+# Chmod again because the chromium embedded framework is a piece of steaming shit
+# sudo chmod -R 755 dist/Spotify.app
 
 # Copy style.css files from App folders to skin/apps/_[folder].scss
 # for name in Apps/*/*/style.css

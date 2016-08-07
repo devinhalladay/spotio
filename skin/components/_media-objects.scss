@@ -679,7 +679,7 @@
   visibility: visible;
 }
 .mo-overlay {
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba($main-view-bg-color, 0.75);
   height: 100%;
   position: absolute;
   visibility: hidden;

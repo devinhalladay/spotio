@@ -13147,7 +13147,7 @@ a.list-group-item.active > .badge,
   visibility: visible; }
 
 .mo-overlay {
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(255, 255, 255, 0.75);
   height: 100%;
   position: absolute;
   visibility: hidden;
