@@ -10834,7 +10834,7 @@ a.list-group-item.active .list-group-item-text {
 
 .main-menu.narrow-menu a,
 .main-menu.wide-menu a {
-  color: #A0A0A0;
+  color: #9CA6AC;
   text-decoration: none;
   position: relative;
   font-weight: 400; }
@@ -10891,7 +10891,7 @@ a.list-group-item.active .list-group-item-text {
 
 .main-menu.narrow-menu a.active,
 .main-menu.narrow-menu a.selected {
-  color: #FFFFFF; }
+  color: #56666F; }
 
 .main-menu.narrow-menu a.active:after,
 .main-menu.narrow-menu a.selected:after {

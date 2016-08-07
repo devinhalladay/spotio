@@ -57,7 +57,7 @@
 }
 .main-menu.narrow-menu a,
 .main-menu.wide-menu a {
-  color: #A0A0A0;
+  color: $secondary-text-color;
   text-decoration: none;
   position: relative;
   font-weight: 400;
@@ -114,7 +114,7 @@
 }
 .main-menu.narrow-menu a.active,
 .main-menu.narrow-menu a.selected {
-  color: #FFFFFF;
+  color: $primary-text-color;
 }
 .main-menu.narrow-menu a.active:after,
 .main-menu.narrow-menu a.selected:after {
