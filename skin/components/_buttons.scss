@@ -1141,7 +1141,7 @@
 }
 .button.button-icon-only.active.contextmenu-active,
 .button.button-icon-only.active:not(:disabled):hover {
-  color: #1df269;
+  color: $primary-accent-color--light;
 }
 .button.button-icon-only.drop-target-active {
   color: #000000;
@@ -2357,7 +2357,7 @@
 }
 .button.button-large.button-icon-only.active.contextmenu-active,
 .button.button-large.button-icon-only.active:not(:disabled):hover {
-  color: #1df269;
+  color: $primary-accent-color--light;
 }
 .button.button-large.button-icon-only.drop-target-active {
   color: #000000;
@@ -3566,7 +3566,7 @@
 }
 .button.button-small.button-icon-only.active.contextmenu-active,
 .button.button-small.button-icon-only.active:not(:disabled):hover {
-  color: #1df269;
+  color: $primary-accent-color--light;
 }
 .button.button-small.button-icon-only.drop-target-active {
   color: #000000;

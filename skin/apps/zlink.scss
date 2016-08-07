@@ -1134,11 +1134,11 @@
 }
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .playing-indicator.contextmenu-active,
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .playing-indicator:not(:disabled):hover {
-  background-color: rgba(24, 24, 24, 0.7);
+  background-color: $secondary-view-bg-color;
   color: $primary-text-color;
 }
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .playing-indicator:not(:disabled):hover:active {
-  background: rgba(16, 16, 16, 0.76);
+  background: $secondary-view-bg-color;
   color: $secondary-text-color-hover;
   transform: scale(1);
 }
@@ -4916,7 +4916,7 @@ body.remotebar #connect-container-background-new-chrome-style {
 .view-player-new .player-controls-container .controls .next.active.contextmenu-active,
 .view-player-new .player-controls-container .controls .previous.active:not(:disabled):hover,
 .view-player-new .player-controls-container .controls .next.active:not(:disabled):hover {
-  color: #1df269;
+  color: $primary-accent-color--light;
 }
 .view-player-new .player-controls-container .controls .previous.drop-target-active,
 .view-player-new .player-controls-container .controls .next.drop-target-active {
@@ -5420,7 +5420,7 @@ body.remotebar #connect-container-background-new-chrome-style {
 .view-player-new .player-controls-container .controls .button-repeat.active:not(:disabled):hover,
 .view-player-new .player-controls-container .controls .button-thumbs-down.active:not(:disabled):hover,
 .view-player-new .player-controls-container .controls .button-thumbs-up.active:not(:disabled):hover {
-  color: #1df269;
+  color: $primary-accent-color--light;
 }
 .view-player-new .player-controls-container .controls .button-shuffle.drop-target-active,
 .view-player-new .player-controls-container .controls .button-repeat.drop-target-active,
@@ -5843,7 +5843,7 @@ body.remotebar #connect-container-background-new-chrome-style {
 .view-player-new .extra-controls-container .button-lyrics.active:not(:disabled):hover,
 .view-player-new .extra-controls-container .button-queue.active:not(:disabled):hover,
 .view-player-new .extra-controls-container .button-devices.active:not(:disabled):hover {
-  color: #1df269;
+  color: $primary-accent-color--light;
 }
 .view-player-new .extra-controls-container .button-lyrics.drop-target-active,
 .view-player-new .extra-controls-container .button-queue.drop-target-active,
@@ -6196,7 +6196,7 @@ body.remotebar #connect-container-background-new-chrome-style {
 }
 .view-player-new .nowplaying-add-button.active.contextmenu-active,
 .view-player-new .nowplaying-add-button.active:not(:disabled):hover {
-  color: #1df269;
+  color: $primary-accent-color--light;
 }
 .view-player-new .nowplaying-add-button.drop-target-active {
   color: #000000;
@@ -7473,7 +7473,7 @@ body.remotebar #connect-container-background-new-chrome-style {
 }
 .video-close-button.active.contextmenu-active,
 .video-close-button.active:not(:disabled):hover {
-  color: #1df269;
+  color: $primary-accent-color--light;
 }
 .video-close-button.drop-target-active {
   color: #000000;

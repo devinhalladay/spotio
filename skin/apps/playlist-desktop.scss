@@ -313,7 +313,7 @@ body.loaded-tracklist .throbber-tracklist {
   z-index: 1000;
 }
 .sticky-clone thead {
-  background: #181818;
+  background: $secondary-view-bg-color;
 }
 .tl-cell > * {
   line-height: 40px;

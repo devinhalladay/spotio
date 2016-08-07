@@ -6294,7 +6294,7 @@ html {
 
 .button.button-icon-only.active.contextmenu-active,
 .button.button-icon-only.active:not(:disabled):hover {
-  color: #1df269; }
+  color: #00a7ff; }
 
 .button.button-icon-only.drop-target-active {
   color: #000000;
@@ -7382,7 +7382,7 @@ html {
 
 .button.button-large.button-icon-only.active.contextmenu-active,
 .button.button-large.button-icon-only.active:not(:disabled):hover {
-  color: #1df269; }
+  color: #00a7ff; }
 
 .button.button-large.button-icon-only.drop-target-active {
   color: #000000;
@@ -8463,7 +8463,7 @@ html {
 
 .button.button-small.button-icon-only.active.contextmenu-active,
 .button.button-small.button-icon-only.active:not(:disabled):hover {
-  color: #1df269; }
+  color: #00a7ff; }
 
 .button.button-small.button-icon-only.drop-target-active {
   color: #000000;
@@ -12861,7 +12861,7 @@ a.list-group-item.active > .badge,
 .media-object .mo-more.active.contextmenu-active,
 .media-object .mo-add.active:not(:disabled):hover,
 .media-object .mo-more.active:not(:disabled):hover {
-  color: #1df269; }
+  color: #00a7ff; }
 
 .media-object .mo-add.drop-target-active,
 .media-object .mo-more.drop-target-active {

@@ -377,7 +377,7 @@
 .media-object .mo-more.active.contextmenu-active,
 .media-object .mo-add.active:not(:disabled):hover,
 .media-object .mo-more.active:not(:disabled):hover {
-  color: #1df269;
+  color: $primary-accent-color--light;
 }
 .media-object .mo-add.drop-target-active,
 .media-object .mo-more.drop-target-active {
