@@ -72,7 +72,7 @@
   border-bottom: 2px solid #E5E8EA; }
 
 .header-new-chrome-style {
-  background: #000000; }
+  background: #ffffff; }
 
 .flex-col-container {
   display: flex;
@@ -1917,20 +1917,20 @@
   margin-right: 10px; }
 
 .profile:hover {
-  color: #FFFFFF; }
+  color: #008CD6; }
 
 .profile:hover .spoticon-user-16,
 .profile:hover .avatar.incognito {
   background-color: #333333;
-  color: #FFFFFF;
-  box-shadow: 0px 0px 0px 1px #FFFFFF; }
+  color: #56666F;
+  box-shadow: 0px 0px 0px 1px #56666F; }
 
 .profile:hover .spoticon-user-16:after,
 .profile:hover .avatar.incognito:after {
-  box-shadow: 0px 0px 0px 1px #FFFFFF; }
+  box-shadow: 0px 0px 0px 1px #56666F; }
 
 .profile:active {
-  color: #FFFFFF; }
+  color: #56666F; }
 
 .profile .button {
   color: #56666F; }

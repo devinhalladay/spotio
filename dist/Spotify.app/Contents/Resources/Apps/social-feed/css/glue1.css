@@ -12601,12 +12601,12 @@ a.list-group-item.active > .badge,
 .media-object .mo-add:not(:disabled):hover,
 .media-object .mo-more:not(:disabled):hover {
   background-color: transparent;
-  color: #FFFFFF; }
+  color: #56666F; }
 
 .media-object .mo-add:not(:disabled):hover:active,
 .media-object .mo-more:not(:disabled):hover:active {
   background: transparent;
-  color: #808080;
+  color: #8b949a;
   transform: scale(1); }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
@@ -12878,7 +12878,7 @@ a.list-group-item.active > .badge,
 .media-object .mo-more.drop-target-active.contextmenu-active,
 .media-object .mo-add.drop-target-active:not(:disabled):hover,
 .media-object .mo-more.drop-target-active:not(:disabled):hover {
-  background-color: #FFFFFF; }
+  background-color: #56666F; }
 
 .media-object .mo-play {
   height: 56px;
@@ -12888,10 +12888,10 @@ a.list-group-item.active > .badge,
   padding-right: 56px;
   border-radius: 28px;
   background: rgba(24, 24, 24, 0.7);
-  color: #FFFFFF;
+  color: #56666F;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: transform, box-shadow, color, background-color;
-  box-shadow: inset 0 0 0 1px #A0A0A0;
+  box-shadow: inset 0 0 0 1px #E5E8EA;
   width: 56px;
   padding-left: 0;
   padding-right: 0;
@@ -12904,11 +12904,11 @@ a.list-group-item.active > .badge,
 .media-object .mo-play.contextmenu-active,
 .media-object .mo-play:not(:disabled):hover {
   background-color: rgba(24, 24, 24, 0.7);
-  color: #ffffff; }
+  color: #56666F; }
 
 .media-object .mo-play:not(:disabled):hover:active {
   background: rgba(16, 16, 16, 0.76);
-  color: #cccccc;
+  color: #8b949a;
   transform: scale(1); }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
@@ -12956,29 +12956,29 @@ a.list-group-item.active > .badge,
   bottom: 0;
   left: 0;
   border-radius: 500px;
-  box-shadow: inset 0 0 0 1px #A0A0A0; }
+  box-shadow: inset 0 0 0 1px #E5E8EA; }
 
 .media-object .mo-play.contextmenu-active,
 .media-object .mo-play:not(:disabled):hover {
-  box-shadow: inset 0 0 0 1px #FFFFFF, 0 0 0 1px transparent; }
+  box-shadow: inset 0 0 0 1px #56666F, 0 0 0 1px transparent; }
 
 .media-object .mo-play.contextmenu-active:after,
 .media-object .mo-play:not(:disabled):hover:after {
-  box-shadow: inset 0 0 0 1px #FFFFFF; }
+  box-shadow: inset 0 0 0 1px #56666F; }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
   .media-object .mo-play.contextmenu-active,
   .media-object .mo-play:not(:disabled):hover {
-    box-shadow: inset 0 0 0 1px #FFFFFF; }
+    box-shadow: inset 0 0 0 1px #56666F; }
 
   .media-object .mo-play.contextmenu-active:after,
   .media-object .mo-play:not(:disabled):hover:after {
-    box-shadow: inset 0 0 0 1px #FFFFFF; } }
+    box-shadow: inset 0 0 0 1px #56666F; } }
 .media-object .mo-play:not(:disabled):hover:active {
-  box-shadow: inset 0 0 0 1px #808080; }
+  box-shadow: inset 0 0 0 1px #8b949a; }
 
 .media-object .mo-play:not(:disabled):hover:active:after {
-  box-shadow: inset 0 0 0 1px #808080; }
+  box-shadow: inset 0 0 0 1px #8b949a; }
 
 .media-object .mo-play.contextmenu-active,
 .media-object .mo-play:not(:disabled):hover {
