@@ -65,7 +65,7 @@
 .nav > li > a:hover,
 .nav > li > a:focus {
   border-bottom: none;
-  color: #FFFFFF;
+  color: $primary-text-color;
 }
 .nav > li > a:after {
   content: ' ';
@@ -83,7 +83,7 @@
   font-size: 14px;
 }
 .nav > li.active > a {
-  color: #FFFFFF;
+  color: $primary-accent-color;
 }
 .nav > li.active > a:after {
   background-color: $primary-accent-color;

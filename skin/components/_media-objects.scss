@@ -404,7 +404,7 @@
   padding-right: 56px;
   border-radius: 28px;
   background: rgba(24, 24, 24, 0.7);
-  color: $primary-text-color;
+  color: $primary-border-color;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: transform, box-shadow, color, background-color;
   box-shadow: inset 0 0 0 1px $primary-border-color;
@@ -420,11 +420,11 @@
 .media-object .mo-play.contextmenu-active,
 .media-object .mo-play:not(:disabled):hover {
   background-color: rgba(24, 24, 24, 0.7);
-  color: $primary-text-color;
+  color: #ffffff;
 }
 .media-object .mo-play:not(:disabled):hover:active {
   background: rgba(16, 16, 16, 0.76);
-  color: $secondary-text-color-hover;
+  color: #ffffff;
   transform: scale(1);
 }
 @media (-webkit-min-device-pixel-ratio: 2) {
@@ -811,7 +811,7 @@
   font-size: 10px;
 }
 .mo-info {
-  background-color: #dbdbdb;
+  background-color: $primary-border-color;
   padding: 13px 8px 4px;
   height: 63px;
 }
@@ -891,9 +891,9 @@
   right: 0;
   top: 40px;
   width: 100%;
-  background-image: -webkit-gradient(linear, 70% top, 100% top, from(rgba(40, 40, 40, 0)), to(#dbdbdb));
-  background-image: -moz-linear-gradient(left, rgba(40, 40, 40, 0) 70%, #dbdbdb 100%);
-  background-image: linear-gradient(to right, rgba(40, 40, 40, 0) 70%, #dbdbdb 100%);
+  background-image: -webkit-gradient(linear, 70% top, 100% top, from(rgba(40, 40, 40, 0)), to($primary-border-color));
+  background-image: -moz-linear-gradient(left, rgba(40, 40, 40, 0) 70%, $primary-border-color 100%);
+  background-image: linear-gradient(to right, rgba(40, 40, 40, 0) 70%, $primary-border-color 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00282828', endColorstr='#ff282828', GradientType=1);
 }
@@ -953,9 +953,9 @@
   right: 0;
   top: 20px;
   width: 100%;
-  background-image: -webkit-gradient(linear, 70% top, 100% top, from(rgba(40, 40, 40, 0)), to(#dbdbdb));
-  background-image: -moz-linear-gradient(left, rgba(40, 40, 40, 0) 70%, #dbdbdb 100%);
-  background-image: linear-gradient(to right, rgba(40, 40, 40, 0) 70%, #dbdbdb 100%);
+  background-image: -webkit-gradient(linear, 70% top, 100% top, from(rgba(40, 40, 40, 0)), to($primary-border-color));
+  background-image: -moz-linear-gradient(left, rgba(40, 40, 40, 0) 70%, $primary-border-color 100%);
+  background-image: linear-gradient(to right, rgba(40, 40, 40, 0) 70%, $primary-border-color 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00282828', endColorstr='#ff282828', GradientType=1);
 }
@@ -1025,7 +1025,7 @@
   padding-left: 36px;
   padding-right: 36px;
   border-radius: 18px;
-  background: rgba(24, 24, 24, 0.7);
+  background: rgba($primary-text-color, 0.7);
   color: #FFFFFF;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: transform, box-shadow, color, background-color;
@@ -1039,7 +1039,7 @@
 }
 .media-object-medium.media-object-horizontal .button.mo-play.contextmenu-active,
 .media-object-medium.media-object-horizontal .button.mo-play:not(:disabled):hover {
-  background-color: rgba(24, 24, 24, 0.7);
+  background-color: rgba($primary-text-color, 0.7);
   color: #ffffff;
 }
 .media-object-medium.media-object-horizontal .button.mo-play:not(:disabled):hover:active {
@@ -1572,7 +1572,7 @@
   display: none;
 }
 .media-object.show-placeholder .mo-image-wrapper {
-  background-color: #dbdbdb;
+  background-color: $primary-border-color;
 }
 .media-object.show-placeholder .mo-image,
 .media-object.show-placeholder .mo-image-background {
@@ -1584,7 +1584,7 @@
 }
 .media-object-artist.show-placeholder .mo-image-background-color,
 .media-object-user.show-placeholder .mo-image-background-color {
-  background: #dbdbdb;
+  background: $primary-border-color;
   background-clip: content-box;
   border-radius: 500px;
   display: block;

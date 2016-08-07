@@ -25,10 +25,10 @@
   clear: both;
 }
 .header-artist .navbar {
-  background-color: rgba(24, 24, 24, 0.8);
+  background-color: rgba($primary-border-color, 0.8);
 }
 .navbar.sticky-top {
-  background-color: rgba(24, 24, 24, 0.8);
+  background-color: rgba($primary-border-color, 0.8);
   z-index: 1020;
 }
 .navbar-fixed-wrapper {

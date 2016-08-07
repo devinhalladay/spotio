@@ -10,8 +10,8 @@
  * Styleguide 60.4
  */
 .slider {
-  background: #000000;
-  border: 2px solid #404040;
+  background: $secondary-view-bg-color;
+  border: 2px solid $primary-border-color;
   border-radius: 11px;
   height: 22px;
   position: relative;
@@ -28,7 +28,7 @@
   background: #FFFFFF;
 }
 .slider div {
-  background: #A0A0A0;
+  background: $primary-border-color;
   border-radius: inherit;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.75), 0 0 3px rgba(0, 0, 0, 0.3);
   height: 22px;
@@ -49,20 +49,20 @@
   background: #FFFFFF;
 }
 .slider.disabled {
-  background: #333333;
+  background: $primary-border-color;
   border-color: transparent;
   pointer-events: none;
 }
 .slider.disabled div {
-  background: #404040;
+  background: $primary-border-color;
   box-shadow: none;
 }
 .slider.disabled:active div {
-  background: #404040;
+  background: $primary-border-color;
   width: 22px;
 }
 .slider.disabled:hover div {
-  background: #404040;
+  background: $primary-border-color;
 }
 .slider.disabled.enabled:active div {
   left: 15px;

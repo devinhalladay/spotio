@@ -136,7 +136,7 @@ a.list-group-item.active .list-group-item-text {
   line-height: 50px;
   margin-top: 0;
   padding: 0;
-  background-color: $secondary-text-color;
+  background-color: $secondary-view-bg-color;
   background-clip: padding-box;
   transition: background 0.1s ease;
 }
@@ -171,7 +171,7 @@ a.list-group-item.active .list-group-item-text {
   padding: 5px;
 }
 .list-group-item.list-group-item-media.active {
-  background-color: #333333;
+  background-color: $primary-border-color;
   border-color: transparent;
 }
 .list-group-item.list-group-item-media.active:before {
@@ -193,7 +193,7 @@ a.list-group-item.active .list-group-item-text {
   z-index: 100;
 }
 .list-group-item.list-group-item-media:hover {
-  background-color: #333333;
+  background-color: $primary-border-color;
 }
 .list-group-item.list-group-item-media.multiline .item-data {
   line-height: 1.5;
