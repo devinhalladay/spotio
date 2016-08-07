@@ -1521,8 +1521,8 @@
   padding-left: 28px;
   padding-right: 28px;
   border-radius: 14px;
-  background: rgba(24, 24, 24, 0.7);
-  color: $primary-text-color;
+  background: $secondary-text-color;
+  color: #ffffff;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: transform, box-shadow, color, background-color;
   box-shadow: inset 0 0 0 1px $primary-border-color;
@@ -1535,12 +1535,12 @@
 }
 .tl-row .button-play.contextmenu-active,
 .tl-row .button-play:not(:disabled):hover {
-  background-color: rgba(24, 24, 24, 0.7);
-  color: $primary-text-color;
+  background-color: $secondary-text-color;
+  color: #ffffff;
 }
 .tl-row .button-play:not(:disabled):hover:active {
-  background: rgba(16, 16, 16, 0.76);
-  color: $secondary-text-color-hover;
+  background: $secondary-text-color;
+  color: #ffffff;
   transform: scale(1);
 }
 @media (-webkit-min-device-pixel-ratio: 2) {
@@ -1914,11 +1914,11 @@
 }
 .tl-row:hover .tl-more .button:before,
 .tl-row:hover .tl-save .button:before {
-  color: #FFFFFF;
+  color: $secondary-text-color;
 }
 .tl-row:hover .tl-more .button:hover:before,
 .tl-row:hover .tl-save .button:hover:before {
-  color: #FFFFFF;
+  color: $secondary-text-color;
 }
 .tl-row:hover.current.thumbs-none .tl-thumbs .button {
   visibility: visible;
@@ -1927,7 +1927,7 @@
   color: #A0A0A0;
 }
 .tl-row:hover.current.thumbs-none .tl-thumbs .button:hover:before {
-  color: #FFFFFF;
+  color: $secondary-text-color;
 }
 .tl-row:hover.offline-waiting .tl-save .button.button-add.hover:before,
 .tl-row:hover.offline-downloading .tl-save .button.button-add.hover:before {
