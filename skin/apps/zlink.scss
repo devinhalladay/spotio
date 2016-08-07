@@ -1900,7 +1900,7 @@
   border: none !important;
 }
 .now-playing-new-chrome-style {
-  border-top: 1px solid #282828;
+  border-top: 2px solid #282828;
   margin-bottom: -1px;
 }
 .now-playing-new-chrome-style .caption {
@@ -2557,12 +2557,12 @@ body.remotebar #connect-container-background {
   display: block;
 }
 .view-player {
-  background: #282828;
-  border-top: 1px solid #181818;
+  background: $main-view-bg-color;
+  border-top: 2px solid $primary-border-color;
   height: 61px;
   width: 100%;
   min-width: 500px;
-  color: #FFFFFF;
+  color: $primary-text-color;
   overflow: hidden;
 }
 .view-player.player-new-chrome-style {
