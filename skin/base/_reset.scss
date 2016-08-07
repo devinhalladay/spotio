@@ -6,7 +6,7 @@
 html {
   font-size: 62.5%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  color: #A0A0A0;
+  color: $primary-text-color;
   overflow-y: scroll;
 }
 body {
@@ -17,7 +17,7 @@ body {
   letter-spacing: 0.015em;
   font-weight: 200;
   text-transform: normal;
-  color: #A0A0A0;
+  color: $primary-text-color;
   position: relative;
   min-height: 100vh;
   -webkit-touch-callout: none;
@@ -55,20 +55,20 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #FFFFFF;
+  color: $primary-text-color;
   text-decoration: none;
   cursor: pointer;
   border-bottom: 1px solid transparent;
 }
 a:hover:not(.button),
 a:focus:not(.button) {
-  color: #ffffff;
+  color: $primary-text-color;
   text-decoration: none;
   border-bottom-color: currentcolor;
 }
 a:hover:not(.button):active,
 a:focus:not(.button):active {
-  color: #d9d9d9;
+  color: $secondary-text-color;
 }
 a:active {
   background-color: transparent;

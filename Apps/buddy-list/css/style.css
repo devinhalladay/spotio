@@ -23,7 +23,7 @@ body,
 
 @media screen and (max-width: 100px) {
   .nux .nux-cta {
-    background: #181818; } }
+    background: #FAFAFC; } }
 .nux .nux-cta h4 {
   margin-top: 40px; }
 
@@ -91,7 +91,7 @@ body,
   letter-spacing: 0.015em;
   font-weight: 200;
   text-transform: normal;
-  color: #FFFFFF; }
+  color: #56666F; }
 
 .friend .user-image {
   position: relative;

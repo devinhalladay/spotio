@@ -64,19 +64,19 @@
 }
 .main-menu.narrow-menu a:hover,
 .main-menu.wide-menu a:hover {
-  color: #ededed;
+  color: $primary-text-color;
 }
 .main-menu.narrow-menu a.active,
 .main-menu.wide-menu a.active,
 .main-menu.narrow-menu a.selected,
 .main-menu.wide-menu a.selected {
-  color: #FFFFFF;
+  color: $primary-text-color;
 }
 .main-menu.narrow-menu a.active:hover,
 .main-menu.wide-menu a.active:hover,
 .main-menu.narrow-menu a.selected:hover,
 .main-menu.wide-menu a.selected:hover {
-  color: #FFFFFF;
+  color: $primary-text-color;
 }
 .main-menu.narrow-menu li,
 .main-menu.wide-menu li {
@@ -376,7 +376,7 @@
   text-align: center;
 }
 .main-menu.wide-menu li.folder .folder-disclosure:hover {
-  color: #FFFFFF;
+  color: $primary-text-color;
 }
 .main-menu.wide-menu li.folder .folder-disclosure:before {
   font-size: 24px;

@@ -409,7 +409,7 @@
   border-color: #fff; }
 
 #view-content {
-  background-color: #181818;
+  background-color: #ffffff;
   position: relative; }
 
 #view-content.disablePointerEvents {
@@ -6816,7 +6816,7 @@ body.remotebar #connect-container-background-new-chrome-style {
   min-width: 140px;
   max-width: 400px;
   position: relative;
-  background-color: #181818; }
+  background-color: #FAFAFC; }
 
 @media screen and (max-width: 1190px) {
   #view-buddy-list {
@@ -7644,7 +7644,7 @@ input[type=search]:focus {
   outline: none; }
 
 iframe {
-  background-color: #181818;
+  background-color: #ffffff;
   border: 0; }
 
 ul {
@@ -7657,7 +7657,7 @@ ul {
   position: absolute;
   z-index: 9999;
   opacity: 1;
-  background-color: #282828;
+  background-color: #ffffff;
   transition: all 1s ease; }
 
 #loading .throbber-initial {

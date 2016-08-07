@@ -139,13 +139,13 @@ cite {
  */
 .text-secondary a,
 a.text-secondary {
-  color: #A0A0A0;
+  color: $secondary-text-color;
 }
 a.text-secondary:hover,
 .text-secondary a:hover,
 a.text-secondary:focus,
 .text-secondary a:focus {
-  color: #d3d3d3;
+  color: $secondary-text-color-hover;
 }
 .text-meta {
   font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
@@ -153,7 +153,7 @@ a.text-secondary:focus,
   line-height: 16px;
   letter-spacing: 0.015em;
   font-weight: 200;
-  color: #A0A0A0;
+  color: $secondary-text-color;
   text-transform: uppercase;
   letter-spacing: 0.16em;
 }
@@ -163,17 +163,17 @@ a.text-secondary:focus,
   font-size: 14px;
 }
 .text-muted {
-  color: #A0A0A0;
+  color: $secondary-text-color;
 }
 .text-muted a,
 a.text-muted {
-  color: #A0A0A0;
+  color: $secondary-text-color;
 }
 a.text-muted:hover,
 .text-muted a:hover,
 a.text-muted:focus,
 .text-muted a:focus {
-  color: #bababa;
+  color: $secondary-text-color-hover;
 }
 .text-warning {
   color: #FFFFFF;
@@ -215,7 +215,7 @@ a.text-success:focus,
   color: #9cf1ba;
 }
 .inverted-text {
-  color: #dbdbdb;
+  color: $secondary-text-color;
   -webkit-font-smoothing: antialiased;
 }
 .inverted-text a {
@@ -316,7 +316,7 @@ h2,
 h3,
 h4,
 h5 {
-  color: #FFFFFF;
+  color: $primary-text-color;
   cursor: default;
 }
 .hdr-xxl a,
@@ -330,7 +330,7 @@ h2 a,
 h3 a,
 h4 a,
 h5 a {
-  color: #FFFFFF;
+  color: $primary-text-color;
 }
 .hdr-xxl,
 .hdr-xl,
@@ -355,7 +355,7 @@ h1,
   line-height: 56px;
   letter-spacing: -0.005em;
   font-weight: 400;
-  color: #FFFFFF;
+  color: $primary-text-color;
   text-transform: normal;
 }
 h2,
@@ -365,7 +365,7 @@ h2,
   line-height: 44px;
   letter-spacing: -0.005em;
   font-weight: 400;
-  color: #FFFFFF;
+  color: $primary-text-color;
   text-transform: normal;
 }
 h3,
@@ -375,7 +375,7 @@ h3,
   line-height: 36px;
   letter-spacing: -0.005em;
   font-weight: 400;
-  color: #FFFFFF;
+  color: $primary-text-color;
   text-transform: normal;
 }
 h4,
@@ -385,7 +385,7 @@ h4,
   line-height: 24px;
   letter-spacing: normal;
   font-weight: 400;
-  color: #FFFFFF;
+  color: $primary-text-color;
   text-transform: normal;
 }
 h5,
@@ -395,7 +395,7 @@ h5,
   line-height: 20px;
   letter-spacing: 0.015em;
   font-weight: 200;
-  color: #FFFFFF;
+  color: $primary-text-color;
   text-transform: normal;
 }
 .hdr-m small,
@@ -554,7 +554,7 @@ dd {
 abbr[title],
 abbr[data-original-title] {
   cursor: help;
-  border-bottom: 1px dotted #A0A0A0;
+  border-bottom: 1px dotted $primary-border-color;
 }
 abbr.initialism {
   font-size: 90%;
@@ -577,7 +577,7 @@ blockquote,
 .blockquote {
   padding: 10px 20px;
   margin: 0 0 13.6px;
-  border-left: 3px solid #dbdbdb;
+  border-left: 3px solid $primary-border-color;
   line-height: 1.25;
 }
 blockquote small,
@@ -586,7 +586,7 @@ blockquote .small,
 .blockquote .small {
   display: block;
   line-height: 20px;
-  color: #A0A0A0;
+  color: $secondary-text-color;
 }
 blockquote small:before,
 .blockquote small:before,
@@ -599,7 +599,7 @@ blockquote.pull-right,
   float: right;
   padding-right: 15px;
   padding-left: 0;
-  border-right: 5px solid #dbdbdb;
+  border-right: 5px solid $primary-border-color;
   border-left: 0;
 }
 blockquote.pull-right p,
@@ -679,19 +679,19 @@ code,
 pre {
   font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
   font-size: 12px;
-  color: #A0A0A0;
+  color: $secondary-text-color;
 }
 code {
   padding: 2px 4px;
   font-size: 85%;
-  background-color: #dbdbdb;
+  background-color: $secondary-view-bg-color;
   white-space: nowrap;
   border-radius: 4px;
 }
 pre {
   padding: 10px;
-  background-color: #dbdbdb;
-  color: #A0A0A0;
+  background-color: $secondary-view-bg-color;
+  color: $secondary-text-color;
   display: block;
   font-size: 13px;
   line-height: 20px;
@@ -702,7 +702,7 @@ pre {
 }
 pre code {
   font-size: 13px;
-  color: #A0A0A0;
+  color: $secondary-text-color;
 }
 pre.prettyprint {
   margin-bottom: 20px;

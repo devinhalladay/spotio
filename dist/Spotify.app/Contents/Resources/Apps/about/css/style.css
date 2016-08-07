@@ -7,14 +7,14 @@
 #upgrade-pending,
 #upgrade-downloading,
 #upgrade-downloaded {
-  color: #FFFFFF;
+  color: #56666F;
   margin: 10px 0 20px 0;
   font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.015em;
   font-weight: 200;
-  color: #A0A0A0;
+  color: #9CA6AC;
   text-transform: normal;
   display: none; }
 
@@ -26,7 +26,7 @@
 #upgrade-pending a,
 #upgrade-downloading a,
 #upgrade-downloaded a {
-  color: #FFFFFF; }
+  color: #56666F; }
 
 #copyright {
   margin: 40px 0;

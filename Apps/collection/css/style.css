@@ -87,7 +87,7 @@ bad with scroll performance on large lists. */
    of loading a new one. */
 .curtain {
   position: fixed;
-  background-color: #181818;
+  background-color: #fff;
   width: 100%;
   height: 100%;
   left: 0;

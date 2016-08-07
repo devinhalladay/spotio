@@ -8,7 +8,7 @@
   line-height: 16px;
   letter-spacing: 0.015em;
   font-weight: 200;
-  color: #A0A0A0;
+  color: $secondary-text-color;
   text-transform: uppercase;
   letter-spacing: 0.16em;
 }
@@ -23,7 +23,7 @@
   margin-bottom: 0;
 }
 .search .search-item .mo-info.subtitle .item-title {
-  color: #A0A0A0;
+  color: $secondary-text-color;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -477,7 +477,7 @@
 /* NOTIFICATION BOX (RELEASE WINDOW, CUSTOM MESSAGE ETC.) */
 .notification-box {
   border: 1px solid #282828;
-  color: #A0A0A0;
+  color: $secondary-text-color;
   text-align: center;
   padding: 38px 70px;
 }

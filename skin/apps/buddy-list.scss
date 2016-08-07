@@ -26,7 +26,7 @@ body,
 }
 @media screen and (max-width: 100px) {
   .nux .nux-cta {
-    background: #181818;
+    background: $secondary-view-bg-color;
   }
 }
 .nux .nux-cta h4 {
@@ -106,7 +106,7 @@ body,
   letter-spacing: 0.015em;
   font-weight: 200;
   text-transform: normal;
-  color: #FFFFFF;
+  color: $primary-text-color;
 }
 .friend .user-image {
   position: relative;
