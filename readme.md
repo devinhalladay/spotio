@@ -7,6 +7,9 @@ I sorely miss Rdio. It was the perfect music streaming service: quality streamin
 
 ---
 
+## TODO
+- [ ] Streaming build system so I don't need to keep rebuilding and recompiling every single Sass file when I make a single change.
+
 ## Install
 
 *Note: not tested on Windows, but in theory this approach will also work on the Windows Spotify app*
