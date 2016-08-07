@@ -23,9 +23,13 @@ sudo cp -r "Apps/"* ".tmp/Spotify.app/Contents/Resources/Apps/"
 # Move our compiled app into /dist
 sudo cp -r ".tmp/Spotify.app" "dist/"
 
+# Chmod again because the chromium embedded framework is a piece of steaming shit
+sudo chmod -R 755 dist/Spotify.app
+
 # Final step: unmount and delete our temporary DMG
 hdiutil detach /Volumes/Spotify
-rm -rf .tmp/Spotify.dmg
+sudo rm -rf .tmp/Spotify.dmg
+sudo rm -rf .tmp/Spotify.app
 
 # Copy style.css files from App folders to skin/apps/_[folder].scss
 # for name in Apps/*/*/style.css

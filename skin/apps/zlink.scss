@@ -137,7 +137,7 @@
   line-height: 20px;
   letter-spacing: 0.015em;
   font-weight: 200;
-  color: #A0A0A0;
+  color: $primary-text-color;
   text-transform: normal;
   line-height: 40px;
 }
@@ -217,7 +217,7 @@
   padding-right: 24px;
   border-radius: 12px;
   background: transparent;
-  color: #A0A0A0;
+  color: $primary-text-color;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: transform, box-shadow, color, background-color;
   width: 24px;
@@ -521,7 +521,7 @@
   outline: none;
 }
 .navbar-old-chrome-style.sidebar-scroll-element h2 {
-  color: #adafb2;
+  color: $primary-text-color;
   padding-left: 15px;
   margin: 0;
   font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
@@ -529,13 +529,13 @@
   line-height: 16px;
   letter-spacing: 0.015em;
   font-weight: 200;
-  color: #A0A0A0;
+  color: $primary-text-color;
   text-transform: uppercase;
   letter-spacing: 0.16em;
 }
 .navbar-old-chrome-style.sidebar-scroll-element a:not(.button),
 .navbar-old-chrome-style.sidebar-scroll-element .item {
-  color: #adafb2;
+  color: $primary-text-color;
   text-decoration: none;
   position: relative;
   font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
@@ -543,7 +543,7 @@
   line-height: 20px;
   letter-spacing: 0.015em;
   font-weight: 200;
-  color: #A0A0A0;
+  color: $primary-text-color;
   text-transform: normal;
   cursor: default;
   display: block;
@@ -601,7 +601,7 @@
 }
 .navbar-old-chrome-style.sidebar-scroll-element .menu-accessory:before {
   font-size: 16px;
-  color: #adafb2;
+  color: $primary-text-color;
 }
 .navbar-old-chrome-style.sidebar-scroll-element .menu-accessory.media {
   margin-top: 5px;
@@ -632,7 +632,7 @@
   color: #FFFFFF;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: transform, box-shadow, color, background-color;
-  box-shadow: inset 0 0 0 1px #A0A0A0;
+  box-shadow: inset 0 0 0 1px $primary-text-color;
   width: 28px;
   padding-left: 0;
   padding-right: 0;
@@ -709,7 +709,7 @@
   bottom: 0;
   left: 0;
   border-radius: 500px;
-  box-shadow: inset 0 0 0 1px #A0A0A0;
+  box-shadow: inset 0 0 0 1px $primary-text-color;
 }
 .navbar-old-chrome-style.sidebar-scroll-element .playing-indicator.contextmenu-active,
 .navbar-old-chrome-style.sidebar-scroll-element .playing-indicator:not(:disabled):hover {
@@ -931,7 +931,7 @@
   outline: none;
   margin-left: -28px;
   padding: 6px;
-  color: #adafb2;
+  color: $primary-text-color;
 }
 .navbar-old-chrome-style.sidebar-scroll-element .annotate-hint-button:hover {
   color: #606266;
@@ -1045,7 +1045,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  color: #A0A0A0;
+  color: $primary-text-color;
   line-height: 24px;
   margin: 24px 24px 0 24px;
 }
@@ -1083,7 +1083,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 24px 0 24px;
-  color: #A0A0A0;
+  color: $primary-text-color;
   cursor: default;
   height: 32px;
   line-height: 32px;
@@ -1124,7 +1124,7 @@
   color: #FFFFFF;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: transform, box-shadow, color, background-color;
-  box-shadow: inset 0 0 0 1px #A0A0A0;
+  box-shadow: inset 0 0 0 1px $primary-text-color;
   width: 28px;
   padding-left: 0;
   padding-right: 0;
@@ -1197,7 +1197,7 @@
   bottom: 0;
   left: 0;
   border-radius: 500px;
-  box-shadow: inset 0 0 0 1px #A0A0A0;
+  box-shadow: inset 0 0 0 1px $primary-text-color;
 }
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .playing-indicator.contextmenu-active,
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .playing-indicator:not(:disabled):hover {
@@ -1399,7 +1399,7 @@
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .offline-indicator {
   display: none;
   flex: 0 0 28px;
-  color: #A0A0A0;
+  color: $primary-text-color;
   margin-left: 8px;
 }
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .offline-indicator:before {
@@ -1460,7 +1460,7 @@
   top: 0;
   right: -12px;
   padding: 0 8px;
-  color: #A0A0A0;
+  color: $primary-text-color;
 }
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .annotate-hint-button:hover {
   color: #181818;
@@ -1478,7 +1478,7 @@
   height: 28px;
   line-height: 28px;
   margin-left: 8px;
-  color: #A0A0A0;
+  color: $primary-text-color;
   text-align: center;
   transition: 0.1s transform linear;
   -webkit-transform-origin: 50% 50%;
@@ -1528,7 +1528,7 @@
   line-height: 20px;
   letter-spacing: 0.015em;
   font-weight: 200;
-  color: #A0A0A0;
+  color: $primary-text-color;
   text-transform: normal;
   padding: 9px 24px 9px 24px;
   position: relative;
@@ -1538,7 +1538,7 @@
   top: 0;
   left: 0;
   margin: 0;
-  background-color: #A0A0A0;
+  background-color: $primary-text-color;
   height: 1px;
   width: 0%;
   transition: width 0.4s;
@@ -1550,7 +1550,7 @@
   line-height: 20px;
   letter-spacing: 0.015em;
   font-weight: 200;
-  color: #A0A0A0;
+  color: $primary-text-color;
   text-transform: normal;
   font-weight: normal;
 }
@@ -1591,7 +1591,7 @@
 .new-playlist-old-chrome-style {
   height: 48px;
   line-height: 48px;
-  color: #adafb2;
+  color: $primary-text-color;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -1608,10 +1608,10 @@
   height: 26px;
   line-height: 25px;
   border-radius: 13px;
-  box-shadow: 0px 0px 0px 1px #A0A0A0;
+  box-shadow: 0px 0px 0px 1px $primary-text-color;
 }
 .new-playlist-old-chrome-style .new-playlist-icon:after {
-  box-shadow: 0px 0px 0px 1px #A0A0A0;
+  box-shadow: 0px 0px 0px 1px $primary-text-color;
   position: absolute;
   top: 0;
   left: 0;
@@ -1672,7 +1672,7 @@
 }
 .new-playlist-new-chrome-style .new-playlist-button,
 .new-playlist-new-chrome-style .new-playlist-text {
-  color: #A0A0A0;
+  color: $primary-text-color;
 }
 .new-playlist-new-chrome-style .new-playlist-button {
   flex: 0 0 28px;
@@ -1749,7 +1749,7 @@
 }
 #view-now-playing a,
 #view-now-playing button {
-  color: #adafb2;
+  color: $primary-text-color;
 }
 #view-now-playing a:hover,
 #view-now-playing button:hover {
@@ -1993,7 +1993,7 @@
   color: #FFFFFF;
 }
 .profile .button {
-  color: #A0A0A0;
+  color: $primary-text-color;
 }
 .profile .avatar {
   background-size: cover;
@@ -2010,12 +2010,12 @@
 .profile .avatar.incognito {
   width: 26px;
   height: 26px;
-  box-shadow: 0px 0px 0px 1px #A0A0A0;
+  box-shadow: 0px 0px 0px 1px $primary-text-color;
   position: relative;
 }
 .profile .avatar.spoticon-user-16:after,
 .profile .avatar.incognito:after {
-  box-shadow: 0px 0px 0px 1px #A0A0A0;
+  box-shadow: 0px 0px 0px 1px $primary-text-color;
   position: absolute;
   top: 0;
   left: 0;
@@ -2031,7 +2031,7 @@
   left: 5px;
 }
 .profile .avatar.incognito {
-  color: #A0A0A0;
+  color: $primary-text-color;
 }
 .profile .username {
   white-space: nowrap;
@@ -2044,7 +2044,7 @@
 }
 .dropdown > button {
   margin: 0 10px;
-  color: #A0A0A0;
+  color: $primary-text-color;
 }
 .dropdown > button:hover {
   color: #FFFFFF;
@@ -2084,7 +2084,7 @@
 }
 .view-player #connect #devices-label {
   text-transform: uppercase;
-  color: #A0A0A0;
+  color: $primary-text-color;
   font-size: 11px;
   text-overflow: ellipsis;
   max-width: 200px;
@@ -2101,7 +2101,7 @@
   color: #34da70;
 }
 .view-player #connect #connecticon {
-  color: #A0A0A0;
+  color: $primary-text-color;
 }
 .view-player #connect #devices-label.remote,
 .view-player #connect #devices-icon.remote {
@@ -2109,7 +2109,7 @@
 }
 .view-player #connect #devices-icon {
   margin: 0 8px;
-  color: #A0A0A0;
+  color: $primary-text-color;
 }
 .view-player #connect-picker {
   display: none;
@@ -2269,7 +2269,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  color: #A0A0A0;
+  color: $primary-text-color;
 }
 .view-player #connect-picker #connect-container #connect-devices ul li .device-subtitle {
   font-size: 10pt;
@@ -2287,7 +2287,7 @@
 }
 .view-player #connect-picker #connect-container #connect-devices ul li .device-icon:before {
   font-size: 12px;
-  color: #A0A0A0;
+  color: $primary-text-color;
 }
 .view-player #connect-picker #connect-container #connect-devices ul li:focus {
   outline: none;
@@ -2305,7 +2305,7 @@
 }
 .view-player #connect-picker #connect-container #connect-devices ul li.not-available .device-title,
 .view-player #connect-picker #connect-container #connect-devices ul li.not-available .device-subtitle {
-  color: #A0A0A0;
+  color: $primary-text-color;
 }
 .view-player #connect-picker #connect-container #connect-devices ul li.not-available .device,
 .view-player #connect-picker #connect-container #connect-devices ul li.not-available .device-icon {
@@ -2588,7 +2588,7 @@ body.remotebar #connect-container-background {
   padding-right: 22px;
   border-radius: 11px;
   background: transparent;
-  color: #A0A0A0;
+  color: $primary-text-color;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: transform, box-shadow, color, background-color;
   width: 22px;
@@ -2877,10 +2877,10 @@ body.remotebar #connect-container-background {
   padding-right: 44px;
   border-radius: 22px;
   background: transparent;
-  color: #A0A0A0;
+  color: $primary-text-color;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: transform, box-shadow, color, background-color;
-  box-shadow: inset 0 0 0 1px #A0A0A0;
+  box-shadow: inset 0 0 0 1px $primary-text-color;
   width: 44px;
   padding-left: 0;
   padding-right: 0;
@@ -2953,7 +2953,7 @@ body.remotebar #connect-container-background {
   bottom: 0;
   left: 0;
   border-radius: 500px;
-  box-shadow: inset 0 0 0 1px #A0A0A0;
+  box-shadow: inset 0 0 0 1px $primary-text-color;
 }
 .view-player #controls #play.contextmenu-active,
 .view-player #controls #play:not(:disabled):hover {
@@ -3113,7 +3113,7 @@ body.remotebar #connect-container-background {
   content: "\f130";
 }
 .view-player #controls #play.button-play.playing:not(:hover) {
-  box-shadow: inset 0 0 0 1px #A0A0A0;
+  box-shadow: inset 0 0 0 1px $primary-text-color;
 }
 .view-player #controls #play.button-play.playing:not(:hover):after {
   content: '';
@@ -3123,31 +3123,31 @@ body.remotebar #connect-container-background {
   bottom: 0;
   left: 0;
   border-radius: 500px;
-  box-shadow: inset 0 0 0 1px #A0A0A0;
+  box-shadow: inset 0 0 0 1px $primary-text-color;
 }
 .view-player #controls #play.button-play.playing:not(:hover).contextmenu-active,
 .view-player #controls #play.button-play.playing:not(:hover):not(:disabled):hover {
-  box-shadow: inset 0 0 0 1px #A0A0A0, 0 0 0 1px transparent;
+  box-shadow: inset 0 0 0 1px $primary-text-color, 0 0 0 1px transparent;
 }
 .view-player #controls #play.button-play.playing:not(:hover).contextmenu-active:after,
 .view-player #controls #play.button-play.playing:not(:hover):not(:disabled):hover:after {
-  box-shadow: inset 0 0 0 1px #A0A0A0;
+  box-shadow: inset 0 0 0 1px $primary-text-color;
 }
 @media (-webkit-min-device-pixel-ratio: 2) {
   .view-player #controls #play.button-play.playing:not(:hover).contextmenu-active,
   .view-player #controls #play.button-play.playing:not(:hover):not(:disabled):hover {
-    box-shadow: inset 0 0 0 1px #A0A0A0;
+    box-shadow: inset 0 0 0 1px $primary-text-color;
   }
   .view-player #controls #play.button-play.playing:not(:hover).contextmenu-active:after,
   .view-player #controls #play.button-play.playing:not(:hover):not(:disabled):hover:after {
-    box-shadow: inset 0 0 0 1px #A0A0A0;
+    box-shadow: inset 0 0 0 1px $primary-text-color;
   }
 }
 .view-player #controls #play.button-play.playing:not(:hover):not(:disabled):hover:active {
-  box-shadow: inset 0 0 0 1px #A0A0A0;
+  box-shadow: inset 0 0 0 1px $primary-text-color;
 }
 .view-player #controls #play.button-play.playing:not(:hover):not(:disabled):hover:active:after {
-  box-shadow: inset 0 0 0 1px #A0A0A0;
+  box-shadow: inset 0 0 0 1px $primary-text-color;
 }
 .view-player #controls #play.button-play.playing:not(:hover):before {
   content: "\f1D3";
@@ -3177,7 +3177,7 @@ body.remotebar #connect-container-background {
   margin-right: 27px;
 }
 .view-player #volumebar-container .inner {
-  background: #A0A0A0;
+  background: $primary-text-color;
 }
 .view-player #volumebar-icon {
   display: inline-block;
@@ -3190,7 +3190,7 @@ body.remotebar #connect-container-background {
 }
 .view-player #elapsed,
 .view-player #remaining {
-  color: #A0A0A0;
+  color: $primary-text-color;
   display: block;
   font-size: 11px;
   width: 35px;
@@ -3199,7 +3199,7 @@ body.remotebar #connect-container-background {
   display: block;
   margin: 0 10px;
   text-transform: uppercase;
-  color: #A0A0A0;
+  color: $primary-text-color;
   font-size: 11px;
 }
 .view-player #lyrics-button:hover {
@@ -3240,7 +3240,7 @@ body.remotebar #connect-container-background {
     padding-right: 18px;
     border-radius: 9px;
     background: transparent;
-    color: #A0A0A0;
+    color: $primary-text-color;
     transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
     transition-property: transform, box-shadow, color, background-color;
     width: 18px;
@@ -3449,10 +3449,10 @@ body.remotebar #connect-container-background {
     padding-right: 34px;
     border-radius: 17px;
     background: transparent;
-    color: #A0A0A0;
+    color: $primary-text-color;
     transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
     transition-property: transform, box-shadow, color, background-color;
-    box-shadow: inset 0 0 0 1px #A0A0A0;
+    box-shadow: inset 0 0 0 1px $primary-text-color;
     width: 34px;
     padding-left: 0;
     padding-right: 0;
@@ -3498,7 +3498,7 @@ body.remotebar #connect-container-background {
     bottom: 0;
     left: 0;
     border-radius: 500px;
-    box-shadow: inset 0 0 0 1px #A0A0A0;
+    box-shadow: inset 0 0 0 1px $primary-text-color;
   }
   .view-player #controls #play.contextmenu-active,
   .view-player #controls #play:not(:disabled):hover {
@@ -3616,7 +3616,7 @@ body.remotebar #connect-container-background {
     content: "\f130";
   }
   .view-player #controls #play.button-play.playing:not(:hover) {
-    box-shadow: inset 0 0 0 1px #A0A0A0;
+    box-shadow: inset 0 0 0 1px $primary-text-color;
   }
   .view-player #controls #play.button-play.playing:not(:hover):after {
     content: '';
@@ -3626,21 +3626,21 @@ body.remotebar #connect-container-background {
     bottom: 0;
     left: 0;
     border-radius: 500px;
-    box-shadow: inset 0 0 0 1px #A0A0A0;
+    box-shadow: inset 0 0 0 1px $primary-text-color;
   }
   .view-player #controls #play.button-play.playing:not(:hover).contextmenu-active,
   .view-player #controls #play.button-play.playing:not(:hover):not(:disabled):hover {
-    box-shadow: inset 0 0 0 1px #A0A0A0, 0 0 0 1px transparent;
+    box-shadow: inset 0 0 0 1px $primary-text-color, 0 0 0 1px transparent;
   }
   .view-player #controls #play.button-play.playing:not(:hover).contextmenu-active:after,
   .view-player #controls #play.button-play.playing:not(:hover):not(:disabled):hover:after {
-    box-shadow: inset 0 0 0 1px #A0A0A0;
+    box-shadow: inset 0 0 0 1px $primary-text-color;
   }
   .view-player #controls #play.button-play.playing:not(:hover):not(:disabled):hover:active {
-    box-shadow: inset 0 0 0 1px #A0A0A0;
+    box-shadow: inset 0 0 0 1px $primary-text-color;
   }
   .view-player #controls #play.button-play.playing:not(:hover):not(:disabled):hover:active:after {
-    box-shadow: inset 0 0 0 1px #A0A0A0;
+    box-shadow: inset 0 0 0 1px $primary-text-color;
   }
   .view-player #controls #play.button-play.playing:not(:hover):before {
     content: "\f1D3";
@@ -3807,11 +3807,11 @@ body.remotebar #connect-container-background {
 @media (max-height: 768px) and (-webkit-min-device-pixel-ratio: 2) {
   .view-player #controls #play.button-play.playing:not(:hover).contextmenu-active,
   .view-player #controls #play.button-play.playing:not(:hover):not(:disabled):hover {
-    box-shadow: inset 0 0 0 1px #A0A0A0;
+    box-shadow: inset 0 0 0 1px $primary-text-color;
   }
   .view-player #controls #play.button-play.playing:not(:hover).contextmenu-active:after,
   .view-player #controls #play.button-play.playing:not(:hover):not(:disabled):hover:after {
-    box-shadow: inset 0 0 0 1px #A0A0A0;
+    box-shadow: inset 0 0 0 1px $primary-text-color;
   }
 }
 .view-player-new #connect-picker-new-chrome-style {
@@ -3973,7 +3973,7 @@ body.remotebar #connect-container-background {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  color: #A0A0A0;
+  color: $primary-text-color;
 }
 .view-player-new #connect-picker-new-chrome-style #connect-container-new-chrome-style .connect-devices-new-chrome-style ul li .device-subtitle {
   font-size: 10pt;
@@ -3991,7 +3991,7 @@ body.remotebar #connect-container-background {
 }
 .view-player-new #connect-picker-new-chrome-style #connect-container-new-chrome-style .connect-devices-new-chrome-style ul li .device-icon:before {
   font-size: 12px;
-  color: #A0A0A0;
+  color: $primary-text-color;
 }
 .view-player-new #connect-picker-new-chrome-style #connect-container-new-chrome-style .connect-devices-new-chrome-style ul li:focus {
   outline: none;
@@ -4009,7 +4009,7 @@ body.remotebar #connect-container-background {
 }
 .view-player-new #connect-picker-new-chrome-style #connect-container-new-chrome-style .connect-devices-new-chrome-style ul li.not-available .device-title,
 .view-player-new #connect-picker-new-chrome-style #connect-container-new-chrome-style .connect-devices-new-chrome-style ul li.not-available .device-subtitle {
-  color: #A0A0A0;
+  color: $primary-text-color;
 }
 .view-player-new #connect-picker-new-chrome-style #connect-container-new-chrome-style .connect-devices-new-chrome-style ul li.not-available .device,
 .view-player-new #connect-picker-new-chrome-style #connect-container-new-chrome-style .connect-devices-new-chrome-style ul li.not-available .device-icon {
@@ -4297,14 +4297,14 @@ body.remotebar #connect-container-background-new-chrome-style {
 .view-player-new .player-controls-container .progress-container .remaining {
   opacity: 0;
   transition: opacity 0.1s ease-in-out;
-  color: #A0A0A0;
+  color: $primary-text-color;
   font-size: 11px;
   line-height: 11px;
   width: 35px;
   margin-left: 14px;
 }
 .view-player-new .player-controls-container .progress-container .progress-bar .inner {
-  background-color: #A0A0A0;
+  background-color: $primary-text-color;
 }
 .view-player-new .player-controls-container .progress-container .progress-bar .handle {
   box-shadow: none;
@@ -4341,10 +4341,10 @@ body.remotebar #connect-container-background-new-chrome-style {
   padding-right: 32px;
   border-radius: 16px;
   background: transparent;
-  color: #A0A0A0;
+  color: $primary-text-color;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: transform, box-shadow, color, background-color;
-  box-shadow: inset 0 0 0 1px #A0A0A0;
+  box-shadow: inset 0 0 0 1px $primary-text-color;
   width: 32px;
   padding-left: 0;
   padding-right: 0;
@@ -4417,7 +4417,7 @@ body.remotebar #connect-container-background-new-chrome-style {
   bottom: 0;
   left: 0;
   border-radius: 500px;
-  box-shadow: inset 0 0 0 1px #A0A0A0;
+  box-shadow: inset 0 0 0 1px $primary-text-color;
 }
 .view-player-new .player-controls-container .controls .button-play.contextmenu-active,
 .view-player-new .player-controls-container .controls .button-play:not(:disabled):hover {
@@ -4577,7 +4577,7 @@ body.remotebar #connect-container-background-new-chrome-style {
   content: "\f130";
 }
 .view-player-new .player-controls-container .controls .button-play.button-play.playing:not(:hover) {
-  box-shadow: inset 0 0 0 1px #A0A0A0;
+  box-shadow: inset 0 0 0 1px $primary-text-color;
 }
 .view-player-new .player-controls-container .controls .button-play.button-play.playing:not(:hover):after {
   content: '';
@@ -4587,31 +4587,31 @@ body.remotebar #connect-container-background-new-chrome-style {
   bottom: 0;
   left: 0;
   border-radius: 500px;
-  box-shadow: inset 0 0 0 1px #A0A0A0;
+  box-shadow: inset 0 0 0 1px $primary-text-color;
 }
 .view-player-new .player-controls-container .controls .button-play.button-play.playing:not(:hover).contextmenu-active,
 .view-player-new .player-controls-container .controls .button-play.button-play.playing:not(:hover):not(:disabled):hover {
-  box-shadow: inset 0 0 0 1px #A0A0A0, 0 0 0 1px transparent;
+  box-shadow: inset 0 0 0 1px $primary-text-color, 0 0 0 1px transparent;
 }
 .view-player-new .player-controls-container .controls .button-play.button-play.playing:not(:hover).contextmenu-active:after,
 .view-player-new .player-controls-container .controls .button-play.button-play.playing:not(:hover):not(:disabled):hover:after {
-  box-shadow: inset 0 0 0 1px #A0A0A0;
+  box-shadow: inset 0 0 0 1px $primary-text-color;
 }
 @media (-webkit-min-device-pixel-ratio: 2) {
   .view-player-new .player-controls-container .controls .button-play.button-play.playing:not(:hover).contextmenu-active,
   .view-player-new .player-controls-container .controls .button-play.button-play.playing:not(:hover):not(:disabled):hover {
-    box-shadow: inset 0 0 0 1px #A0A0A0;
+    box-shadow: inset 0 0 0 1px $primary-text-color;
   }
   .view-player-new .player-controls-container .controls .button-play.button-play.playing:not(:hover).contextmenu-active:after,
   .view-player-new .player-controls-container .controls .button-play.button-play.playing:not(:hover):not(:disabled):hover:after {
-    box-shadow: inset 0 0 0 1px #A0A0A0;
+    box-shadow: inset 0 0 0 1px $primary-text-color;
   }
 }
 .view-player-new .player-controls-container .controls .button-play.button-play.playing:not(:hover):not(:disabled):hover:active {
-  box-shadow: inset 0 0 0 1px #A0A0A0;
+  box-shadow: inset 0 0 0 1px $primary-text-color;
 }
 .view-player-new .player-controls-container .controls .button-play.button-play.playing:not(:hover):not(:disabled):hover:active:after {
-  box-shadow: inset 0 0 0 1px #A0A0A0;
+  box-shadow: inset 0 0 0 1px $primary-text-color;
 }
 .view-player-new .player-controls-container .controls .button-play.button-play.playing:not(:hover):before {
   content: "\f1D3";
@@ -4628,7 +4628,7 @@ body.remotebar #connect-container-background-new-chrome-style {
   padding-right: 32px;
   border-radius: 16px;
   background: transparent;
-  color: #A0A0A0;
+  color: $primary-text-color;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: transform, box-shadow, color, background-color;
   width: 32px;
@@ -4946,7 +4946,7 @@ body.remotebar #connect-container-background-new-chrome-style {
   padding-right: 24px;
   border-radius: 12px;
   background: transparent;
-  color: #A0A0A0;
+  color: $primary-text-color;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: transform, box-shadow, color, background-color;
   width: 24px;
@@ -5462,7 +5462,7 @@ body.remotebar #connect-container-background-new-chrome-style {
   padding-right: 32px;
   border-radius: 16px;
   background: transparent;
-  color: #A0A0A0;
+  color: $primary-text-color;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: transform, box-shadow, color, background-color;
   width: 32px;
@@ -5871,7 +5871,7 @@ body.remotebar #connect-container-background-new-chrome-style {
   width: 56px;
 }
 .view-player-new .extra-controls-container .volumebar-container .progress-bar-wrapper .inner {
-  background: #A0A0A0;
+  background: $primary-text-color;
 }
 .view-player-new .extra-controls-container .volumebar-container .progress-bar-wrapper .handle {
   box-shadow: none;
@@ -5969,10 +5969,10 @@ body.remotebar #connect-container-background-new-chrome-style {
   line-height: 16px;
   letter-spacing: 0.015em;
   line-height: 18px;
-  color: #A0A0A0;
+  color: $primary-text-color;
 }
 .view-player-new .artist a {
-  color: #A0A0A0;
+  color: $primary-text-color;
 }
 .view-player-new .artist a:hover {
   color: #FFFFFF;
@@ -5997,7 +5997,7 @@ body.remotebar #connect-container-background-new-chrome-style {
   padding-right: 24px;
   border-radius: 12px;
   background: transparent;
-  color: #A0A0A0;
+  color: $primary-text-color;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: transform, box-shadow, color, background-color;
   width: 24px;
@@ -6248,7 +6248,7 @@ body.remotebar #connect-container-background-new-chrome-style {
   display: block;
   border-radius: 12px;
   background-color: $input-bg-color;
-  border: 2px solid $primary-border-color;
+  border: 1px solid $primary-border-color;
 }
 .view-search .search-form input[type=search]::-webkit-input-placeholder {
   color: #282828;
@@ -6456,7 +6456,7 @@ body.remotebar #connect-container-background-new-chrome-style {
   position: absolute;
   right: 0px;
   top: 1px;
-  color: #A0A0A0;
+  color: $primary-text-color;
   background: #181818;
   font-size: 24px;
   padding: 10px 11px 11px 13px;
@@ -6748,7 +6748,7 @@ body.remotebar #connect-container-background-new-chrome-style {
   z-index: 5;
 }
 #view-modal .playlist-annotate.drag.drag-valid .dropzone-wrapper {
-  outline: 2px dashed #A0A0A0;
+  outline: 2px dashed $primary-text-color;
 }
 #view-modal .playlist-annotate.drag.drag-valid .dropzone-wrapper .dropzone-error-message {
   display: none;
@@ -6826,7 +6826,7 @@ body.remotebar #connect-container-background-new-chrome-style {
 }
 #view-modal .playlist-annotate .placeholder,
 #view-modal .playlist-annotate .description-field-wrapper::-webkit-input-placeholder {
-  color: #A0A0A0;
+  color: $primary-text-color;
 }
 #view-modal .playlist-annotate .show-placeholder .placeholder {
   display: block;
@@ -7278,7 +7278,7 @@ body.remotebar #connect-container-background-new-chrome-style {
   padding-right: 24px;
   border-radius: 12px;
   background: transparent;
-  color: #A0A0A0;
+  color: $primary-text-color;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: transform, box-shadow, color, background-color;
   width: 24px;
@@ -7989,7 +7989,7 @@ ul {
 }
 #offline-global-progress-old-chrome-style p {
   margin: 0;
-  background-color: #A0A0A0;
+  background-color: $primary-text-color;
   height: 1px;
   position: absolute;
   width: 0%;
