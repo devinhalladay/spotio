@@ -517,7 +517,7 @@
   padding-left: 32px;
   padding-right: 32px;
   border-radius: 16px;
-  background: #404040;
+  background: $primary-text-color;
   color: #FFFFFF;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: transform, box-shadow, color, background-color;
@@ -527,12 +527,12 @@
 }
 .button.button-gray.contextmenu-active,
 .button.button-gray:not(:disabled):hover {
-  background-color: #535353;
+  background-color: $secondary-text-color-hover;
   color: #ffffff;
 }
 .button.button-gray:not(:disabled):hover:active {
-  background: #333333;
-  color: #cccccc;
+  background: $primary-text-color;
+  color: #ffffff;
   transform: scale(1);
 }
 @media (-webkit-min-device-pixel-ratio: 2) {
@@ -597,23 +597,23 @@
   padding-left: 32px;
   padding-right: 32px;
   border-radius: 16px;
-  background: rgba(24, 24, 24, 0.7);
+  background: $primary-accent-color;
   color: #FFFFFF;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: transform, box-shadow, color, background-color;
-  box-shadow: inset 0 0 0 1px #A0A0A0;
+  box-shadow: inset 0 0 0 1px $primary-border-color;
 }
 .button.button-with-stroke .b-alt-text {
   margin-top: -30px;
 }
 .button.button-with-stroke.contextmenu-active,
 .button.button-with-stroke:not(:disabled):hover {
-  background-color: rgba(24, 24, 24, 0.7);
+  background-color: $primary-accent-color;
   color: #ffffff;
 }
 .button.button-with-stroke:not(:disabled):hover:active {
-  background: rgba(16, 16, 16, 0.76);
-  color: #cccccc;
+  background: $primary-accent-color;
+  color: #ffffff;
   transform: scale(1);
 }
 @media (-webkit-min-device-pixel-ratio: 2) {
@@ -671,7 +671,7 @@
   bottom: 0;
   left: 0;
   border-radius: 500px;
-  box-shadow: inset 0 0 0 1px #A0A0A0;
+  box-shadow: inset 0 0 0 1px $primary-border-color;
 }
 .button.button-with-stroke.contextmenu-active,
 .button.button-with-stroke:not(:disabled):hover {

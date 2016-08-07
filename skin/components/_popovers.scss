@@ -45,7 +45,7 @@
   z-index: 1010;
   display: none;
   text-align: left;
-  background-color: #333333;
+  background-color: $secondary-view-bg-color;
   -webkit-bg-clip: padding-box;
   -moz-bg-clip: padding;
   background-clip: padding-box;
@@ -67,7 +67,7 @@
   left: 50%;
   margin-left: -10px;
   margin-right: -10px;
-  border-bottom: 10px solid #333333;
+  border-bottom: 10px solid $primary-border-color;
 }
 .popover:not(.no-arrow).arrow-bottom {
   margin-bottom: 10px;
@@ -84,7 +84,7 @@
   left: 50%;
   margin-left: -10px;
   margin-right: -10px;
-  border-top: 10px solid #333333;
+  border-top: 10px solid $primary-border-color;
 }
 .popover:not(.no-arrow).arrow-right {
   margin-right: 10px;
@@ -101,7 +101,7 @@
   top: 50%;
   margin-top: -10px;
   margin-bottom: -10px;
-  border-left: 10px solid #333333;
+  border-left: 10px solid $primary-border-color;
 }
 .popover:not(.no-arrow).arrow-left {
   margin-left: 10px;
@@ -118,7 +118,7 @@
   top: 50%;
   margin-top: -10px;
   margin-bottom: -10px;
-  border-right: 10px solid #333333;
+  border-right: 10px solid $primary-border-color;
 }
 .popover:not(.no-arrow).arrow-position-left:before {
   left: 20px;
@@ -135,13 +135,13 @@
   bottom: 20px;
 }
 .popover:not(.no-arrow).arrow-top:before {
-  border-bottom-color: #333333;
+  border-bottom-color: $primary-border-color;
 }
 .popover.arrow-right.arrow-position-top:before {
-  border-left-color: #333333;
+  border-left-color: $primary-border-color;
 }
 .popover.arrow-left.arrow-position-top:before {
-  border-right-color: #333333;
+  border-right-color: $primary-border-color;
 }
 .popover-title {
   font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
@@ -153,10 +153,10 @@
   margin: 0;
   padding: 2px 8px 0;
   line-height: 36px;
-  color: #FFFFFF;
+  color: $primary-text-color;
   text-align: center;
-  background-color: #333333;
-  border-bottom: 1px solid #404040;
+  background-color: $main-view-bg-color;
+  border-bottom: 1px solid $primary-border-color;
   border-radius: 5px 5px 0 0;
   position: relative;
   display: block;
@@ -180,7 +180,7 @@
   border-bottom: 0;
 }
 .popover-nav .nav > li.active > a {
-  color: #FFFFFF;
+  color: $primary-text-color;
 }
 .popover-nav .nav > li.active > a:after {
   background-color: $primary-accent-color;
@@ -198,7 +198,7 @@
   width: auto;
 }
 .popover-nav .nav > li:hover a {
-  color: #FFFFFF;
+  color: $primary-text-color;
 }
 .popover-content,
 .popover-footer,
@@ -216,8 +216,8 @@
  * This is a dark area a the bottom of a popover that should be used for fine print.
  */
 .popover-addendum {
-  background-color: #333333;
-  color: #A0A0A0;
+  background-color: $primary-border-color;
+  color: $secondary-text-color;
   font-size: 12px;
   line-height: 16px;
   border-top: 1px solid $main-view-bg-color;
@@ -272,7 +272,7 @@
   bottom: 0;
   left: 0;
   z-index: -9999;
-  background-color: #000;
+  background-color: $main-view-bg-color;
   opacity: 0;
   filter: alpha(opacity=0);
   -webkit-transition: opacity 0.3s linear;
@@ -309,7 +309,7 @@
   top: 50%;
 }
 .popover-interior {
-  background-color: #333333;
+  background-color: $main-view-bg-color;
   border-radius: 6px;
 }
 .popover-interior.desktop {
@@ -339,7 +339,7 @@
  * Styleguide 50.6.2
  */
 .modal-generic {
-  background-color: #dbdbdb;
+  background-color: $primary-border-color;
   border-radius: 6px;
 }
 .modal-generic .modal-generic-title {
@@ -348,9 +348,9 @@
   line-height: 20px;
   letter-spacing: 0.015em;
   font-weight: 200;
-  color: #FFFFFF;
+  color: $primary-text-color;
   text-transform: normal;
-  background: #333333;
+  background: $primary-border-color;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   text-align: center;

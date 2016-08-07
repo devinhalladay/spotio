@@ -955,7 +955,7 @@
   transform: rotate(-90deg);
 }
 .navbar-old-chrome-style.sidebar-scroll-element .folder .menu-accessory:hover:before {
-  color: #fcfcfc;
+  color: $primary-text-color;
 }
 .navbar-old-chrome-style.sidebar-scroll-element .folder.expanded .menu-accessory {
   -webkit-transform: rotate(0deg);
@@ -1597,7 +1597,7 @@
   white-space: nowrap;
   -webkit-user-select: none;
   position: relative;
-  border-top: solid 1px #181818;
+  border-top: solid 1px $primary-border-color;
   cursor: default;
 }
 .new-playlist-old-chrome-style .new-playlist-icon {
@@ -1850,7 +1850,7 @@
   min-height: 100%;
 }
 .now-playing-old-chrome-style {
-  border-top: 1px solid #181818;
+  border-top: 1px solid $primary-border-color;
 }
 .now-playing-old-chrome-style.transitioning .large figure {
   transition: height 0.2s ease-in-out;
@@ -2605,12 +2605,12 @@ body.remotebar #connect-container-background {
 .view-player #controls #previous:not(:disabled):hover,
 .view-player #controls #next:not(:disabled):hover {
   background-color: transparent;
-  color: #FFFFFF;
+  color: $primary-text-color;
 }
 .view-player #controls #previous:not(:disabled):hover:active,
 .view-player #controls #next:not(:disabled):hover:active {
   background: transparent;
-  color: #808080;
+  color: $secondary-text-color-hover;
   transform: scale(1);
 }
 @media (-webkit-min-device-pixel-ratio: 2) {
@@ -2891,11 +2891,11 @@ body.remotebar #connect-container-background {
 .view-player #controls #play.contextmenu-active,
 .view-player #controls #play:not(:disabled):hover {
   background-color: transparent;
-  color: #FFFFFF;
+  color: $primary-text-color;
 }
 .view-player #controls #play:not(:disabled):hover:active {
   background: transparent;
-  color: #808080;
+  color: $secondary-text-color-hover;
   transform: scale(1);
 }
 @media (-webkit-min-device-pixel-ratio: 2) {
@@ -2957,27 +2957,27 @@ body.remotebar #connect-container-background {
 }
 .view-player #controls #play.contextmenu-active,
 .view-player #controls #play:not(:disabled):hover {
-  box-shadow: inset 0 0 0 1px #FFFFFF, 0 0 0 1px transparent;
+  box-shadow: inset 0 0 0 1px $primary-text-color, 0 0 0 1px transparent;
 }
 .view-player #controls #play.contextmenu-active:after,
 .view-player #controls #play:not(:disabled):hover:after {
-  box-shadow: inset 0 0 0 1px #FFFFFF;
+  box-shadow: inset 0 0 0 1px $primary-text-color;
 }
 @media (-webkit-min-device-pixel-ratio: 2) {
   .view-player #controls #play.contextmenu-active,
   .view-player #controls #play:not(:disabled):hover {
-    box-shadow: inset 0 0 0 1px #FFFFFF;
+    box-shadow: inset 0 0 0 1px $primary-text-color;
   }
   .view-player #controls #play.contextmenu-active:after,
   .view-player #controls #play:not(:disabled):hover:after {
-    box-shadow: inset 0 0 0 1px #FFFFFF;
+    box-shadow: inset 0 0 0 1px $primary-text-color;
   }
 }
 .view-player #controls #play:not(:disabled):hover:active {
-  box-shadow: inset 0 0 0 1px #808080;
+  box-shadow: inset 0 0 0 1px $secondary-text-color-hover;
 }
 .view-player #controls #play:not(:disabled):hover:active:after {
-  box-shadow: inset 0 0 0 1px #808080;
+  box-shadow: inset 0 0 0 1px $secondary-text-color-hover;
 }
 .view-player #controls #play.contextmenu-active,
 .view-player #controls #play:not(:disabled):hover {
