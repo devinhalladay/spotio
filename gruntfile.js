@@ -92,12 +92,12 @@ module.exports = function(grunt) {
     watch: {
       glue: { // Watch our GLUE file separately from App sass
         files: ['skin/**/*.scss', '!skin/apps/*.scss'],
-        tasks: ['sass:glue', 'copy:glue']
+        tasks: ['sass:glue', 'copy:glue', 'copy:apps']
       },
       apps: { // Watch App-specific sass separately from GLUE
         files: ['skin/apps/*.scss', 'skin/base/_variables.scss'],
-        tasks: ['sass:apps']
-      }
+        tasks: ['sass:apps', 'copy:apps']
+      },
     },
 
     // Delete files
