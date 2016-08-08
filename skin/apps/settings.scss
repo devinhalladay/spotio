@@ -25,7 +25,7 @@ body {
   min-height: 100%;
   width: 100%;
   -webkit-user-select: none;
-  background: #181818;
+  background: $main-view-bg-color;
 }
 .loading-screen {
   position: absolute;
@@ -34,7 +34,7 @@ body {
   left: 0;
   right: 0;
   z-index: 100;
-  background-color: #181818;
+  background-color: $main-view-bg-color;
 }
 .loading-screen .throbber {
   margin: auto auto;
@@ -75,7 +75,7 @@ body {
   margin-bottom: 13px;
 }
 .setting-row {
-  color: #A0A0A0;
+  color: $secondary-text-color;
 }
 .setting-row:before,
 .setting-row:after {
@@ -144,7 +144,7 @@ body {
 }
 .setting-row small {
   display: none;
-  color: #A0A0A0;
+  color: $secondary-text-color;
 }
 .setting-row .col {
   padding: 15px 0;

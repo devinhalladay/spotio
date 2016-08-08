@@ -43,7 +43,7 @@
   height: 40px;
   margin-bottom: 0;
   border-color: #404040;
-  color: #FFFFFF;
+  color: #56666F;
   background-color: #333333;
   margin-bottom: 2px;
   height: 50px;
@@ -55,7 +55,7 @@
 
 /* line 53, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .search .search-item.selectable .item-subtitle {
-  color: #A0A0A0; }
+  color: #9CA6AC; }
 
 /* line 56, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .search .search-item.selectable > a {
@@ -112,7 +112,7 @@
 .edit-pinned-item__header {
   margin-bottom: 7px;
   padding-top: 20px;
-  color: #FFFFFF;
+  color: #56666F;
   width: 100%;
   position: relative;
   top: -7px; }
@@ -146,7 +146,7 @@
   top: 0;
   overflow: visible;
   right: 0;
-  color: #FFFFFF; }
+  color: #56666F; }
 
 /* line 135, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .edit-pinned-item__controls:focus {
@@ -352,7 +352,7 @@
 
 /* line 310, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .row.summary .tracklist-popular tr:nth-child(5) td {
-  border-bottom: 1px solid #282828; }
+  border-bottom: 1px solid #E5E8EA; }
 
 /* line 313, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .row.summary .list-group.no-latest-release .list-group-item:nth-child(n+5) {
@@ -365,7 +365,7 @@
 /* line 319, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .no-top-tracks {
   align-items: center;
-  border: 1px solid #282828;
+  border: 1px solid #E5E8EA;
   display: flex;
   height: 235px;
   margin-top: 30px;
@@ -385,7 +385,7 @@
 
 /* line 337, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .tours a:hover .calendar-icon .calendar-icon-day {
-  background-color: #FFFFFF; }
+  background-color: #56666F; }
 
 /* line 340, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .tours .tour-details {
@@ -478,7 +478,7 @@
 
 /* line 415, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .merch-popup-description {
-  color: #FFFFFF;
+  color: #56666F;
   height: 240px;
   padding-left: 314px;
   overflow-y: auto; }
@@ -552,7 +552,7 @@
 /* line 478, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .notification-box {
   border: 1px solid #282828;
-  color: #FAFAFC;
+  color: #f2f3f6;
   text-align: center;
   padding: 38px 70px; }
 

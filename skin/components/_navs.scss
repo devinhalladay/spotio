@@ -15,7 +15,7 @@
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
-  border-bottom: 1px solid #dbdbdb;
+  border-bottom: 1px solid $primary-border-color;
 }
 .nav.nav-justified {
   width: 100%;
@@ -55,7 +55,7 @@
   position: relative;
   display: block;
   line-height: 44px;
-  color: #A0A0A0;
+  color: $secondary-text-color;
   text-transform: uppercase;
   letter-spacing: 0.16em;
   font-size: 14px;
@@ -89,11 +89,11 @@
   background-color: $primary-accent-color;
 }
 .nav > li.disabled > a {
-  color: #A0A0A0;
+  color: $secondary-text-color;
 }
 .nav > li.disabled > a:hover,
 .nav > li.disabled > a:focus {
-  color: #A0A0A0;
+  color: $secondary-text-color;
   text-decoration: none;
   background-color: transparent;
   cursor: default;
@@ -104,15 +104,15 @@
 .nav.open > a,
 .nav.open > a:hover,
 .nav.open > a:focus {
-  color: #fff;
-  background-color: #FFFFFF;
-  border-color: #FFFFFF;
+  color: $primary-text-color;
+  background-color: $primary-text-color;
+  border-color: $primary-text-color;
 }
 .nav.open > a .caret,
 .nav.open > a:hover .caret,
 .nav.open > a:focus .caret {
-  border-top-color: #fff;
-  border-bottom-color: #fff;
+  border-top-color: $primary-text-color;
+  border-bottom-color: $primary-text-color;
 }
 .nav > .pull-right {
   float: right;
@@ -121,8 +121,8 @@
   height: 2px;
   margin: 9px 0;
   overflow: hidden;
-  background-color: #e5e5e5;
-  border-bottom: 1px solid #fff;
+  background-color: $primary-border-color;
+  border-bottom: 1px solid $primary-border-color;
 }
 .nav-pills {
   border-bottom: none;
@@ -151,7 +151,7 @@
   display: none;
 }
 .nav-stacked {
-  background-color: #dbdbdb;
+  background-color: $primary-border-color;
   border-radius: 3px;
 }
 .nav-stacked > li {
@@ -164,13 +164,13 @@
   margin-right: 15px;
 }
 .nav-stacked > li.active a {
-  color: #FFFFFF;
+  color: $primary-text-color;
 }
 .nav-stacked > li.active a:after {
   bottom: 1px;
 }
 .nav-stacked > li a {
-  color: #A0A0A0;
+  color: $secondary-text-color;
   line-height: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -179,7 +179,7 @@
   font-size: 14px;
 }
 .nav-stacked > li + li {
-  border-top: 1px solid #333333;
+  border-top: 1px solid $primary-border-color;
 }
 .nav-stacked > li + li > a {
   margin-top: 2px;
@@ -201,7 +201,7 @@
   padding: 3px 15px;
   font-size: 12px;
   line-height: 20px;
-  color: #A0A0A0;
+  color: $secondary-text-color;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   text-transform: uppercase;
 }
@@ -224,16 +224,16 @@
   display: block;
 }
 .nav .caret {
-  border-top-color: #A0A0A0;
-  border-bottom-color: #A0A0A0;
+  border-top-color: $secondary-text-color;
+  border-bottom-color: $secondary-text-color;
 }
 .nav .active .caret {
-  border-top-color: #FFFFFF;
-  border-bottom-color: #FFFFFF;
+  border-top-color: $primary-text-color;
+  border-bottom-color: $primary-text-color;
 }
 .nav a:hover .caret {
-  border-top-color: #FFFFFF;
-  border-bottom-color: #FFFFFF;
+  border-top-color: $primary-text-color;
+  border-bottom-color: $primary-text-color;
 }
 .nav-tabs .dropdown-menu {
   margin-top: -1px;

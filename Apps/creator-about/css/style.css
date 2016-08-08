@@ -159,7 +159,7 @@ html {
 /* line 145, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .listening .global-position {
   padding: 27px 0;
-  color: #FFFFFF; }
+  color: #56666F; }
 
 /* line 149, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .listening .global-position h3 {
@@ -327,7 +327,7 @@ html {
 .listening .monthly__data-description {
   font-size: 14px;
   line-height: 1;
-  color: #FFFFFF;
+  color: #56666F;
   font-weight: 100; }
 
 /* line 301, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
@@ -900,7 +900,7 @@ html {
 
 /* line 800, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .locations .city__description {
-  color: #FFFFFF;
+  color: #56666F;
   display: inline-block; }
 
 /* line 804, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */

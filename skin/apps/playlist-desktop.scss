@@ -28,7 +28,7 @@
   letter-spacing: normal;
 }
 .playlist-extender-content .playlist-extender-title-wrapper:hover > .toggle-recommendations-arrow {
-  color: #FFFFFF;
+  color: $primary-text-color;
 }
 .playlist-extender-content .toggle-recommendations-arrow {
   position: relative;
@@ -61,7 +61,7 @@ button[data-button="add-recommendation"] {
   padding-left: 28px;
   padding-right: 28px;
   border-radius: 14px;
-  background: #404040;
+  background: $primary-accent-color;
   color: #FFFFFF;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: transform, box-shadow, color, background-color;
@@ -71,12 +71,12 @@ button[data-button="add-recommendation"] .b-alt-text {
 }
 button[data-button="add-recommendation"].contextmenu-active,
 button[data-button="add-recommendation"]:not(:disabled):hover {
-  background-color: #535353;
+  background-color: $primary-accent-color--light;
   color: #ffffff;
 }
 button[data-button="add-recommendation"]:not(:disabled):hover:active {
-  background: #333333;
-  color: #cccccc;
+  background: $primary-accent-color--dark;
+  color: #ffffff;
   transform: scale(1);
 }
 @media (-webkit-min-device-pixel-ratio: 2) {
@@ -223,7 +223,7 @@ body.loaded-tracklist .throbber-tracklist {
   margin: 0 5px;
 }
 .empty-filtered-content {
-  border-top: 1px solid #282828;
+  border-top: 1px solid $primary-border-color;
   padding: 10px 0;
 }
 .empty-filtered-content .remove-filter-button {
@@ -232,7 +232,7 @@ body.loaded-tracklist .throbber-tracklist {
 }
 .local-files .header .media-object .local-files-placeholder {
   display: block;
-  fill: #404040;
+  fill: $secondary-text-color;
   cursor: default;
 }
 .throbber-initial.throbber-tracklist {
@@ -274,7 +274,7 @@ body.loaded-tracklist .throbber-tracklist {
   font-size: 60px;
   line-height: 60px;
   text-align: center;
-  color: #FFFFFF;
+  color: $primary-text-color;
 }
 #header.annotate-enabled .h-media .media-object:hover:after {
   content: '';

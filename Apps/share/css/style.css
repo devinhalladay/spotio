@@ -9,7 +9,7 @@ body {
 /* line 12, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 .popover-content h2 {
   font-size: 14px;
-  color: #A0A0A0;
+  color: #9CA6AC;
   margin: 0; }
 
 /* line 17, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
@@ -198,7 +198,7 @@ body.sending .popover-footer .throbber {
 
 /* line 166, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #share-options span:hover {
-  color: #FFFFFF;
+  color: #56666F;
   text-decoration: underline; }
 
 /* line 170, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
@@ -207,7 +207,7 @@ body.sending .popover-footer .throbber {
 
 /* line 173, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #share-options {
-  color: #A0A0A0;
+  color: #9CA6AC;
   flex-grow: 1;
   text-align: right; }
 
@@ -364,7 +364,7 @@ body.options .popover-content {
 
 /* line 304, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #options .state {
-  color: #A0A0A0; }
+  color: #9CA6AC; }
 
 /* line 307, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #options .error .state {

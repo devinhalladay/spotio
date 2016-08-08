@@ -28,7 +28,7 @@ body {
   min-height: 100%;
   width: 100%;
   -webkit-user-select: none;
-  background: #181818; }
+  background: #ffffff; }
 
 /* line 30, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .loading-screen {
@@ -38,7 +38,7 @@ body {
   left: 0;
   right: 0;
   z-index: 100;
-  background-color: #181818; }
+  background-color: #ffffff; }
 
 /* line 39, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .loading-screen .throbber {
@@ -91,7 +91,7 @@ body {
 
 /* line 77, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .setting-row {
-  color: #A0A0A0; }
+  color: #9CA6AC; }
 
 /* line 80, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .setting-row:before,
@@ -172,7 +172,7 @@ body {
 /* line 145, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .setting-row small {
   display: none;
-  color: #A0A0A0; }
+  color: #9CA6AC; }
 
 /* line 149, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .setting-row .col {

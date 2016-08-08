@@ -5,7 +5,7 @@ html {
 /* line 7, /Users/Devin/GitHub/spotio/skin/apps/findfriends.scss */
 html,
 body {
-  background: #000000;
+  background: #E5E8EA;
   height: 100%; }
 
 /* line 12, /Users/Devin/GitHub/spotio/skin/apps/findfriends.scss */
@@ -31,7 +31,7 @@ body {
 
 /* line 28, /Users/Devin/GitHub/spotio/skin/apps/findfriends.scss */
 .sections {
-  background: #181818;
+  background: #f2f3f6;
   position: absolute;
   left: 0px;
   top: 118px;
@@ -47,7 +47,7 @@ body {
 
 /* line 42, /Users/Devin/GitHub/spotio/skin/apps/findfriends.scss */
 .user-container .user {
-  border-bottom: 1px solid #282828;
+  border-bottom: 1px solid #E5E8EA;
   margin-bottom: 10px;
   padding-bottom: 10px; }
 
@@ -76,12 +76,13 @@ body {
 .friends_tab .facebook-friends-count {
   padding-top: 8px;
   position: relative;
-  color: #FFFFFF;
+  color: #56666F;
   padding-top: 25px;
   padding-bottom: 4px;
-  width: 370px; }
+  width: 370px;
+  padding-bottom: 18px; }
 
-/* line 71, /Users/Devin/GitHub/spotio/skin/apps/findfriends.scss */
+/* line 72, /Users/Devin/GitHub/spotio/skin/apps/findfriends.scss */
 .friends_tab .facebook-friends-count .facebook-icon {
   margin-right: 10px;
   width: 14px;
@@ -89,65 +90,65 @@ body {
   position: relative;
   top: -2px; }
 
-/* line 78, /Users/Devin/GitHub/spotio/skin/apps/findfriends.scss */
+/* line 79, /Users/Devin/GitHub/spotio/skin/apps/findfriends.scss */
 .filter-container {
   position: relative;
   margin-top: 16px;
   margin-bottom: 16px; }
 
-/* line 83, /Users/Devin/GitHub/spotio/skin/apps/findfriends.scss */
+/* line 84, /Users/Devin/GitHub/spotio/skin/apps/findfriends.scss */
 .filter-container .form-control {
   padding-left: 25px;
-  background: #282828;
-  border-color: #181818;
-  color: #A0A0A0;
+  background: #f2f3f6;
+  border-color: #9CA6AC;
+  color: #56666F;
   height: 26px;
   padding-top: 4px; }
 
-/* line 91, /Users/Devin/GitHub/spotio/skin/apps/findfriends.scss */
+/* line 92, /Users/Devin/GitHub/spotio/skin/apps/findfriends.scss */
 .filter-container::before {
   position: absolute;
   top: 4px;
   left: 5px;
   z-index: 9;
-  color: #FFFFFF;
+  color: #56666F;
   font-size: 14px; }
 
-/* line 99, /Users/Devin/GitHub/spotio/skin/apps/findfriends.scss */
+/* line 100, /Users/Devin/GitHub/spotio/skin/apps/findfriends.scss */
 hr {
-  border-color: #282828; }
+  border-color: #E5E8EA; }
 
-/* line 102, /Users/Devin/GitHub/spotio/skin/apps/findfriends.scss */
+/* line 103, /Users/Devin/GitHub/spotio/skin/apps/findfriends.scss */
 .featured_tab {
   padding-top: 10px; }
 
-/* line 105, /Users/Devin/GitHub/spotio/skin/apps/findfriends.scss */
+/* line 106, /Users/Devin/GitHub/spotio/skin/apps/findfriends.scss */
 .section-error {
   position: relative;
   top: 20px; }
 
-/* line 109, /Users/Devin/GitHub/spotio/skin/apps/findfriends.scss */
+/* line 110, /Users/Devin/GitHub/spotio/skin/apps/findfriends.scss */
 .connect-to-facebook {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   margin-top: 66px; }
 
-/* line 115, /Users/Devin/GitHub/spotio/skin/apps/findfriends.scss */
+/* line 116, /Users/Devin/GitHub/spotio/skin/apps/findfriends.scss */
 .connect-to-facebook .title {
   margin-bottom: 21px; }
 
-/* line 118, /Users/Devin/GitHub/spotio/skin/apps/findfriends.scss */
+/* line 119, /Users/Devin/GitHub/spotio/skin/apps/findfriends.scss */
 .connect-to-facebook .disclaimer {
   margin-top: 50px; }
 
-/* line 121, /Users/Devin/GitHub/spotio/skin/apps/findfriends.scss */
+/* line 122, /Users/Devin/GitHub/spotio/skin/apps/findfriends.scss */
 .glue2 .button-facebook {
   box-shadow: 0px 0px 0px 1px #3B5998;
   background: #3B5998;
   color: #FFFFFF; }
 
-/* line 126, /Users/Devin/GitHub/spotio/skin/apps/findfriends.scss */
+/* line 127, /Users/Devin/GitHub/spotio/skin/apps/findfriends.scss */
 .glue2 .button-facebook:after {
   box-shadow: 0px 0px 0px 1px #3B5998;
   position: absolute;
@@ -158,27 +159,27 @@ hr {
   border-radius: 500px;
   content: ""; }
 
-/* line 136, /Users/Devin/GitHub/spotio/skin/apps/findfriends.scss */
+/* line 137, /Users/Devin/GitHub/spotio/skin/apps/findfriends.scss */
 .glue2 .button-facebook:hover {
   box-shadow: 0px 0px 0px 1px #3B5998; }
 
-/* line 139, /Users/Devin/GitHub/spotio/skin/apps/findfriends.scss */
+/* line 140, /Users/Devin/GitHub/spotio/skin/apps/findfriends.scss */
 .glue2 .button-facebook.contextmenu-active,
 .glue2 .button-facebook:hover:active {
   background: #2f477a;
   color: #cccccc;
   box-shadow: 0px 0px 0px 1px #2f477a; }
 
-/* line 145, /Users/Devin/GitHub/spotio/skin/apps/findfriends.scss */
+/* line 146, /Users/Devin/GitHub/spotio/skin/apps/findfriends.scss */
 .glue2 .button-facebook.contextmenu-active:after,
 .glue2 .button-facebook:hover:active:after {
   box-shadow: 0 0 0 1px #2f477a; }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 150, /Users/Devin/GitHub/spotio/skin/apps/findfriends.scss */
+  /* line 151, /Users/Devin/GitHub/spotio/skin/apps/findfriends.scss */
   .glue2 .button-facebook:hover {
     box-shadow: 0px 0px 0px 1px #3B5998; }
-  /* line 153, /Users/Devin/GitHub/spotio/skin/apps/findfriends.scss */
+  /* line 154, /Users/Devin/GitHub/spotio/skin/apps/findfriends.scss */
   .glue2 .button-facebook.contextmenu-active,
   .glue2 .button-facebook:hover:active {
     box-shadow: 0px 0px 0px 1px #2f477a; } }

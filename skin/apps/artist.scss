@@ -40,7 +40,7 @@
   height: 40px;
   margin-bottom: 0;
   border-color: #404040;
-  color: #FFFFFF;
+  color: $primary-text-color;
   background-color: #333333;
   margin-bottom: 2px;
   height: 50px;
@@ -51,7 +51,7 @@
   transition: background-color ease-in-out 100ms;
 }
 .search .search-item.selectable .item-subtitle {
-  color: #A0A0A0;
+  color: $secondary-text-color;
 }
 .search .search-item.selectable > a {
   position: absolute;
@@ -98,7 +98,7 @@
 .edit-pinned-item__header {
   margin-bottom: 7px;
   padding-top: 20px;
-  color: #FFFFFF;
+  color: $primary-text-color;
   width: 100%;
   position: relative;
   top: -7px;
@@ -130,7 +130,7 @@
   top: 0;
   overflow: visible;
   right: 0;
-  color: #FFFFFF;
+  color: $primary-text-color;
 }
 .edit-pinned-item__controls:focus {
   outline: none;
@@ -308,7 +308,7 @@
   display: none;
 }
 .row.summary .tracklist-popular tr:nth-child(5) td {
-  border-bottom: 1px solid #282828;
+  border-bottom: 1px solid $primary-border-color;
 }
 .row.summary .list-group.no-latest-release .list-group-item:nth-child(n+5) {
   display: none;
@@ -318,7 +318,7 @@
 }
 .no-top-tracks {
   align-items: center;
-  border: 1px solid #282828;
+  border: 1px solid $primary-border-color;
   display: flex;
   height: 235px;
   margin-top: 30px;
@@ -335,7 +335,7 @@
   text-decoration: none;
 }
 .tours a:hover .calendar-icon .calendar-icon-day {
-  background-color: #FFFFFF;
+  background-color: $primary-text-color;
 }
 .tours .tour-details {
   line-height: 1.3;
@@ -413,7 +413,7 @@
   background-repeat: no-repeat;
 }
 .merch-popup-description {
-  color: #FFFFFF;
+  color: $primary-text-color;
   height: 240px;
   padding-left: 314px;
   overflow-y: auto;

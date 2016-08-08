@@ -32,7 +32,7 @@
 
 /* line 30, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
 .playlist-extender-content .playlist-extender-title-wrapper:hover > .toggle-recommendations-arrow {
-  color: #FFFFFF; }
+  color: #56666F; }
 
 /* line 33, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
 .playlist-extender-content .toggle-recommendations-arrow {
@@ -72,7 +72,7 @@ button[data-button="add-recommendation"] {
   padding-left: 28px;
   padding-right: 28px;
   border-radius: 14px;
-  background: #404040;
+  background: #008CD6;
   color: #FFFFFF;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: transform, box-shadow, color, background-color; }
@@ -84,13 +84,13 @@ button[data-button="add-recommendation"] .b-alt-text {
 /* line 72, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
 button[data-button="add-recommendation"].contextmenu-active,
 button[data-button="add-recommendation"]:not(:disabled):hover {
-  background-color: #535353;
+  background-color: #00a7ff;
   color: #ffffff; }
 
 /* line 77, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
 button[data-button="add-recommendation"]:not(:disabled):hover:active {
-  background: #333333;
-  color: #cccccc;
+  background: #0566a4;
+  color: #ffffff;
   transform: scale(1); }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
@@ -267,7 +267,7 @@ body.loaded-tracklist .throbber-tracklist {
 
 /* line 225, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
 .empty-filtered-content {
-  border-top: 1px solid #282828;
+  border-top: 1px solid #E5E8EA;
   padding: 10px 0; }
 
 /* line 229, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
@@ -278,7 +278,7 @@ body.loaded-tracklist .throbber-tracklist {
 /* line 233, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
 .local-files .header .media-object .local-files-placeholder {
   display: block;
-  fill: #404040;
+  fill: #9CA6AC;
   cursor: default; }
 
 /* line 238, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
@@ -326,7 +326,7 @@ body.loaded-tracklist .throbber-tracklist {
   font-size: 60px;
   line-height: 60px;
   text-align: center;
-  color: #FFFFFF; }
+  color: #56666F; }
 
 /* line 279, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
 #header.annotate-enabled .h-media .media-object:hover:after {
@@ -372,7 +372,7 @@ body.loaded-tracklist .throbber-tracklist {
 
 /* line 315, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
 .sticky-clone thead {
-  background: #FAFAFC; }
+  background: #f2f3f6; }
 
 /* line 318, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
 .tl-cell > * {

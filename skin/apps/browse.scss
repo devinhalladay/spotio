@@ -39,7 +39,7 @@
   height: 24px;
   border: none;
   background: none;
-  color: #FFFFFF;
+  color: $primary-text-color;
   opacity: .3;
   transition: opacity .5s;
 }
@@ -698,7 +698,7 @@ html.glue2 #view-video-ad .saf-video-takeover-btn-max {
   margin-bottom: 20px;
 }
 .bfs-tracklist.summary tr:nth-child(5) td {
-  border-bottom: 1px solid #282828;
+  border-bottom: 1px solid $primary-border-color;
 }
 .bfs-tracklist.summary tr:nth-child(n+6) {
   display: none;
@@ -725,7 +725,7 @@ html.glue2 #view-video-ad .saf-video-takeover-btn-max {
   line-height: 24px;
   letter-spacing: normal;
   font-weight: 400;
-  color: #FFFFFF;
+  color: $primary-text-color;
   text-transform: normal;
   margin: 0;
 }
@@ -735,7 +735,7 @@ html.glue2 #view-video-ad .saf-video-takeover-btn-max {
   line-height: 16px;
   letter-spacing: 0.015em;
   font-weight: 200;
-  color: #A0A0A0;
+  color: $secondary-text-color;
   text-transform: uppercase;
   letter-spacing: 0.16em;
 }
@@ -745,7 +745,7 @@ html.glue2 #view-video-ad .saf-video-takeover-btn-max {
   line-height: 24px;
   letter-spacing: normal;
   font-weight: 400;
-  color: #FFFFFF;
+  color: $primary-text-color;
   text-transform: normal;
 }
 .section-divider-description {
@@ -758,7 +758,7 @@ html.glue2 #view-video-ad .saf-video-takeover-btn-max {
   letter-spacing: 0.015em;
   font-weight: 200;
   text-transform: normal;
-  color: #A0A0A0;
+  color: $secondary-text-color;
 }
 .grid-button {
   margin-bottom: 20px;

@@ -177,7 +177,7 @@ legend {
   margin-bottom: 20px;
   font-size: 21px;
   line-height: inherit;
-  color: #A0A0A0;
+  color: $secondary-text-color;
   border: 0;
   border-bottom: 1px solid #dbdbdb;
 }
@@ -228,11 +228,11 @@ output {
   padding: 5px 12px 4px;
   font-size: 14px;
   line-height: 20px;
-  color: #404040;
+  color: $primary-text-color;
   vertical-align: middle;
-  background-color: #FFFFFF;
+  background-color: $primary-border-color;
   background-image: none;
-  border: 1px solid #FFFFFF;
+  border: 1px solid $primary-border-color;
   border-radius: 3px;
   -webkit-transition: all 0.1s ease-in-out;
   -moz-transition: all 0.1s ease-in-out;
@@ -240,28 +240,28 @@ output {
   transition: all 0.1s ease-in-out;
 }
 .form-control:focus {
-  border-color: #FFFFFF;
+  border-color: $secondary-text-color;
   outline: 0;
-  background-color: #FFFFFF;
-  color: $main-view-bg-color;
+  background-color: $primary-border-color;
+  color: $primary-text-color;
 }
 .form-control:-moz-placeholder {
-  color: #404040;
+  color: $secondary-text-color;
 }
 .form-control::-moz-placeholder {
-  color: #404040;
+  color: $secondary-text-color;
 }
 .form-control:-ms-input-placeholder {
-  color: #404040;
+  color: $secondary-text-color;
 }
 .form-control::-webkit-input-placeholder {
-  color: #404040;
+  color: $secondary-text-color;
 }
 .form-control[disabled],
 .form-control[readonly],
 fieldset[disabled] .form-control {
   cursor: not-allowed;
-  background-color: #A0A0A0;
+  background-color: $secondary-text-color;
 }
 textarea.form-control {
   height: auto;
@@ -413,7 +413,7 @@ textarea.input-lg {
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #e0e0e0;
+  color: $primary-text-color;
 }
 @media (min-width: 586px) {
   .form-inline .form-group {

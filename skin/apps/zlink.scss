@@ -1027,11 +1027,11 @@
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element::-webkit-scrollbar,
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element::-webkit-scrollbar-track,
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element::-webkit-scrollbar-corner {
-  background-color: #000000;
+  background-color: $secondary-view-bg-color;
 }
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element::-webkit-scrollbar-thumb {
-  border: solid 1px #000000;
-  background-color: #282828;
+  border: solid 1px $primary-border-color;
+  background-color: $secondary-text-color;
 }
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element h2 {
   font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;

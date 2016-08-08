@@ -42,7 +42,7 @@
   height: 24px;
   border: none;
   background: none;
-  color: #FFFFFF;
+  color: #56666F;
   opacity: .3;
   transition: opacity .5s; }
 
@@ -309,7 +309,7 @@
   position: absolute;
   bottom: 0;
   z-index: 1;
-  box-shadow: 0 52px 105px 121px #FAFAFC; }
+  box-shadow: 0 52px 105px 121px #f2f3f6; }
 
 /* line 275, /Users/Devin/GitHub/spotio/skin/apps/browse.scss */
 .ne-left-fade {
@@ -805,7 +805,7 @@ html.glue2 #view-video-ad .saf-video-takeover-btn-max {
 
 /* line 700, /Users/Devin/GitHub/spotio/skin/apps/browse.scss */
 .bfs-tracklist.summary tr:nth-child(5) td {
-  border-bottom: 1px solid #282828; }
+  border-bottom: 1px solid #E5E8EA; }
 
 /* line 703, /Users/Devin/GitHub/spotio/skin/apps/browse.scss */
 .bfs-tracklist.summary tr:nth-child(n+6) {
@@ -838,7 +838,7 @@ html.glue2 #view-video-ad .saf-video-takeover-btn-max {
   line-height: 24px;
   letter-spacing: normal;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #56666F;
   text-transform: normal;
   margin: 0; }
 
@@ -849,7 +849,7 @@ html.glue2 #view-video-ad .saf-video-takeover-btn-max {
   line-height: 16px;
   letter-spacing: 0.015em;
   font-weight: 200;
-  color: #A0A0A0;
+  color: #9CA6AC;
   text-transform: uppercase;
   letter-spacing: 0.16em; }
 
@@ -860,7 +860,7 @@ html.glue2 #view-video-ad .saf-video-takeover-btn-max {
   line-height: 24px;
   letter-spacing: normal;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #56666F;
   text-transform: normal; }
 
 /* line 751, /Users/Devin/GitHub/spotio/skin/apps/browse.scss */
@@ -874,7 +874,7 @@ html.glue2 #view-video-ad .saf-video-takeover-btn-max {
   letter-spacing: 0.015em;
   font-weight: 200;
   text-transform: normal;
-  color: #A0A0A0; }
+  color: #9CA6AC; }
 
 /* line 763, /Users/Devin/GitHub/spotio/skin/apps/browse.scss */
 .grid-button {

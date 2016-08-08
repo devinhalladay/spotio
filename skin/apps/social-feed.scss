@@ -5,7 +5,7 @@ h1 {
   margin-bottom: 30px;
 }
 .suggestions {
-  background: #282828;
+  background: $secondary-view-bg-color;
   padding: 0 16px 16px;
 }
 .suggestions.fixed {
@@ -13,7 +13,7 @@ h1 {
   top: 20px;
 }
 .suggestions .section-divider {
-  border-bottom-color: #333333;
+  border-bottom-color: $primary-border-color;
   padding: 18px 0 4px;
 }
 .suggestions .suggestion {
@@ -50,25 +50,25 @@ h1 {
   line-height: 16px;
   letter-spacing: 0.015em;
   font-weight: 200;
-  color: #A0A0A0;
+  color: $secondary-text-color;
   text-transform: uppercase;
   letter-spacing: 0.16em;
   white-space: nowrap;
 }
 .reactions .count {
-  color: #FFFFFF;
+  color: $primary-text-color;
   display: inline-block;
   margin: 10px 0;
   padding: 2px 0;
 }
 .story {
-  background: #282828;
+  background: $secondary-view-bg-color;
   font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.015em;
   font-weight: 200;
-  color: #A0A0A0;
+  color: $secondary-text-color;
   text-transform: normal;
   margin-bottom: 20px;
   overflow: hidden;
@@ -102,22 +102,22 @@ h1 {
   line-height: 16px;
   letter-spacing: 0.015em;
   font-weight: 200;
-  color: #A0A0A0;
+  color: $secondary-text-color;
   text-transform: uppercase;
   letter-spacing: 0.16em;
 }
 .story .share-group .lead {
-  color: #FFFFFF;
+  color: $primary-text-color;
   font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.015em;
   font-weight: 200;
-  color: #A0A0A0;
+  color: $secondary-text-color;
   text-transform: normal;
 }
 .story .share-group .resource {
-  border-color: #333333;
+  border-color: $primary-border-color;
   border-style: solid none;
   border-width: 1px;
 }
@@ -161,14 +161,14 @@ h1 {
   color: $primary-accent-color;
 }
 .empty-state {
-  background: #282828;
+  background: $secondary-view-bg-color;
   height: 400px;
   margin-bottom: 16px;
   position: relative;
   width: 100%;
 }
 .empty-state i {
-  color: #FFFFFF;
+  color: $primary-text-color;
   line-height: 48px;
 }
 .empty-state i:before {
@@ -184,7 +184,7 @@ h1 {
   font-size: 48px;
 }
 .empty-state p {
-  color: #A0A0A0;
+  color: $secondary-text-color;
 }
 .empty-state .message {
   text-align: center;

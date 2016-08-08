@@ -195,7 +195,7 @@
   font-size: 24px;
 }
 .main-menu.narrow-menu a#nav-settings.active {
-  color: #FFFFFF;
+  color: $primary-accent-color;
 }
 .main-menu.narrow-menu a#nav-settings.active:after {
   display: none;
@@ -438,7 +438,7 @@
 .main-menu-nav ul {
   position: relative;
   border-top: 1px solid rgba(0, 0, 0, 0.8);
-  border-bottom: 1px solid #dbdbdb;
+  border-bottom: 1px solid $primary-border-color;
   background-color: rgba(0, 0, 0, 0.2);
 }
 .main-menu-nav ul:after {

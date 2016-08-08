@@ -4,7 +4,7 @@ h1 {
 
 /* line 7, /Users/Devin/GitHub/spotio/skin/apps/social-feed.scss */
 .suggestions {
-  background: #282828;
+  background: #f2f3f6;
   padding: 0 16px 16px; }
 
 /* line 11, /Users/Devin/GitHub/spotio/skin/apps/social-feed.scss */
@@ -14,7 +14,7 @@ h1 {
 
 /* line 15, /Users/Devin/GitHub/spotio/skin/apps/social-feed.scss */
 .suggestions .section-divider {
-  border-bottom-color: #333333;
+  border-bottom-color: #E5E8EA;
   padding: 18px 0 4px; }
 
 /* line 19, /Users/Devin/GitHub/spotio/skin/apps/social-feed.scss */
@@ -58,27 +58,27 @@ h1 {
   line-height: 16px;
   letter-spacing: 0.015em;
   font-weight: 200;
-  color: #A0A0A0;
+  color: #9CA6AC;
   text-transform: uppercase;
   letter-spacing: 0.16em;
   white-space: nowrap; }
 
 /* line 58, /Users/Devin/GitHub/spotio/skin/apps/social-feed.scss */
 .reactions .count {
-  color: #FFFFFF;
+  color: #56666F;
   display: inline-block;
   margin: 10px 0;
   padding: 2px 0; }
 
 /* line 64, /Users/Devin/GitHub/spotio/skin/apps/social-feed.scss */
 .story {
-  background: #282828;
+  background: #f2f3f6;
   font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.015em;
   font-weight: 200;
-  color: #A0A0A0;
+  color: #9CA6AC;
   text-transform: normal;
   margin-bottom: 20px;
   overflow: hidden;
@@ -120,24 +120,24 @@ h1 {
   line-height: 16px;
   letter-spacing: 0.015em;
   font-weight: 200;
-  color: #A0A0A0;
+  color: #9CA6AC;
   text-transform: uppercase;
   letter-spacing: 0.16em; }
 
 /* line 109, /Users/Devin/GitHub/spotio/skin/apps/social-feed.scss */
 .story .share-group .lead {
-  color: #FFFFFF;
+  color: #56666F;
   font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.015em;
   font-weight: 200;
-  color: #A0A0A0;
+  color: #9CA6AC;
   text-transform: normal; }
 
 /* line 119, /Users/Devin/GitHub/spotio/skin/apps/social-feed.scss */
 .story .share-group .resource {
-  border-color: #333333;
+  border-color: #E5E8EA;
   border-style: solid none;
   border-width: 1px; }
 
@@ -191,7 +191,7 @@ h1 {
 
 /* line 163, /Users/Devin/GitHub/spotio/skin/apps/social-feed.scss */
 .empty-state {
-  background: #282828;
+  background: #f2f3f6;
   height: 400px;
   margin-bottom: 16px;
   position: relative;
@@ -199,7 +199,7 @@ h1 {
 
 /* line 170, /Users/Devin/GitHub/spotio/skin/apps/social-feed.scss */
 .empty-state i {
-  color: #FFFFFF;
+  color: #56666F;
   line-height: 48px; }
 
 /* line 174, /Users/Devin/GitHub/spotio/skin/apps/social-feed.scss */
@@ -217,7 +217,7 @@ h1 {
 
 /* line 186, /Users/Devin/GitHub/spotio/skin/apps/social-feed.scss */
 .empty-state p {
-  color: #A0A0A0; }
+  color: #9CA6AC; }
 
 /* line 189, /Users/Devin/GitHub/spotio/skin/apps/social-feed.scss */
 .empty-state .message {

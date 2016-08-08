@@ -145,7 +145,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #dbdbdb;
+  background-color: $primary-border-color;
   position: relative;
   z-index: 4;
   padding: 0 10px;
@@ -159,7 +159,7 @@
   line-height: 20px;
   letter-spacing: 0.015em;
   font-weight: 200;
-  color: #FFFFFF;
+  color: $primary-text-color;
   text-transform: normal;
   border-bottom: 1px solid transparent;
 }
@@ -776,13 +776,13 @@
   pointer-events: none;
 }
 .h-search-wrapper:hover:before {
-  color: #FFFFFF;
+  color: $primary-text-color;
 }
 .h-search-wrapper:hover .h-search::-webkit-input-placeholder {
-  color: #FFFFFF;
+  color: $primary-text-color;
 }
 .h-search-wrapper:hover .h-search::-moz-placeholder {
-  color: #FFFFFF;
+  color: $primary-text-color;
 }
 .h-search {
   width: 100%;
@@ -790,7 +790,7 @@
   background: transparent;
   border: 0;
   border-radius: 3px;
-  color: #FFFFFF;
+  color: $primary-text-color;
   display: block;
   outline: 0;
   padding-bottom: 0;
@@ -811,13 +811,13 @@
   width: 36px;
 }
 .h-search-close:hover {
-  color: #FFFFFF;
+  color: $primary-text-color;
 }
 .focus .h-search-close {
   display: block;
 }
 .h-search-suggestions {
-  background: #dbdbdb;
+  background: $primary-border-color;
   border-radius: 3px;
   display: none;
   position: absolute;
@@ -834,7 +834,7 @@
 }
 .h-search-suggestion {
   border-radius: 3px;
-  color: #A0A0A0;
+  color: $secondary-text-color;
   cursor: pointer;
   padding-left: 36px;
   padding-right: 10px;
@@ -857,7 +857,7 @@
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
-  background-color: black;
+  background-color: $main-view-bg-color;
   border-bottom: 1px solid $primary-border-color;
   min-height: 320px;
   max-width: 1480px;
@@ -2380,7 +2380,7 @@ th[data-sort]:hover {
   padding-left: 26px;
   padding-right: 26px;
   border-radius: 13px;
-  background: #A0A0A0;
+  background: $secondary-text-color;
   color: #FFFFFF;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: transform, box-shadow, color, background-color;
@@ -2400,8 +2400,8 @@ th[data-sort]:hover {
   color: #ffffff;
 }
 .facepile-badge:not(:disabled):hover:active {
-  background: #808080;
-  color: #cccccc;
+  background: $secondary-text-color;
+  color: $primary-text-color;
   transform: scale(1);
 }
 @media (-webkit-min-device-pixel-ratio: 2) {

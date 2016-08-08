@@ -6,7 +6,7 @@ html {
 }
 html,
 body {
-  background: #000000;
+  background: $primary-border-color;
   height: 100%;
 }
 #main,
@@ -26,7 +26,7 @@ body {
   height: 118px;
 }
 .sections {
-  background: #181818;
+  background: $secondary-view-bg-color;
   position: absolute;
   left: 0px;
   top: 118px;
@@ -40,7 +40,7 @@ body {
   right: 18px;
 }
 .user-container .user {
-  border-bottom: 1px solid #282828;
+  border-bottom: 1px solid $primary-border-color;
   margin-bottom: 10px;
   padding-bottom: 10px;
 }
@@ -63,10 +63,11 @@ body {
 .friends_tab .facebook-friends-count {
   padding-top: 8px;
   position: relative;
-  color: #FFFFFF;
+  color: $primary-text-color;
   padding-top: 25px;
   padding-bottom: 4px;
   width: 370px;
+  padding-bottom: 18px;
 }
 .friends_tab .facebook-friends-count .facebook-icon {
   margin-right: 10px;
@@ -82,9 +83,9 @@ body {
 }
 .filter-container .form-control {
   padding-left: 25px;
-  background: #282828;
-  border-color: #181818;
-  color: #A0A0A0;
+  background: $secondary-view-bg-color;
+  border-color: $secondary-text-color;
+  color: $primary-text-color;
   height: 26px;
   padding-top: 4px;
 }
@@ -93,11 +94,11 @@ body {
   top: 4px;
   left: 5px;
   z-index: 9;
-  color: #FFFFFF;
+  color: $primary-text-color;
   font-size: 14px;
 }
 hr {
-  border-color: #282828;
+  border-color: $primary-border-color;
 }
 .featured_tab {
   padding-top: 10px;

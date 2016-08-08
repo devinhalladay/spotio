@@ -187,7 +187,7 @@ recent searches - hover state will be broken.
   -o-user-select: none;
   user-select: none;
   color: #FFFFFF !important;
-  background-color: #FAFAFC !important;
+  background-color: #f2f3f6 !important;
   margin-bottom: 2px;
   height: 50px;
   position: relative;

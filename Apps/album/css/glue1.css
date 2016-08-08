@@ -402,19 +402,19 @@ a.text-muted:focus,
 
 /* line 178, /Users/Devin/GitHub/spotio/skin/base/_type.scss */
 .text-warning {
-  color: #FFFFFF; }
+  color: #56666F; }
 
 /* line 181, /Users/Devin/GitHub/spotio/skin/base/_type.scss */
 .text-warning a,
 a.text-warning {
-  color: #FFFFFF; }
+  color: #56666F; }
 
 /* line 185, /Users/Devin/GitHub/spotio/skin/base/_type.scss */
 a.text-warning:hover,
 .text-warning a:hover,
 a.text-warning:focus,
 .text-warning a:focus {
-  color: #FFFFFF; }
+  color: #0566a4; }
 
 /* line 191, /Users/Devin/GitHub/spotio/skin/base/_type.scss */
 .text-danger {
@@ -961,14 +961,14 @@ pre {
 code {
   padding: 2px 4px;
   font-size: 85%;
-  background-color: #FAFAFC;
+  background-color: #f2f3f6;
   white-space: nowrap;
   border-radius: 4px; }
 
 /* line 691, /Users/Devin/GitHub/spotio/skin/base/_type.scss */
 pre {
   padding: 10px;
-  background-color: #FAFAFC;
+  background-color: #f2f3f6;
   color: #9CA6AC;
   display: block;
   font-size: 13px;
@@ -5714,7 +5714,7 @@ body,
 ::-webkit-scrollbar-thumb {
   border: 1px solid #ffffff;
   border-radius: 10px;
-  background-color: #dbdbdb; }
+  background-color: #9CA6AC; }
 
 /* line 16, /Users/Devin/GitHub/spotio/skin/utilities/_scrollbar.scss */
 ::-webkit-scrollbar-corner {
@@ -5723,9 +5723,9 @@ body,
 /* line 19, /Users/Devin/GitHub/spotio/skin/utilities/_scrollbar.scss */
 body,
 html {
-  scrollbar-arrow-color: #dbdbdb;
+  scrollbar-arrow-color: #9CA6AC;
   scrollbar-track-color: #ffffff;
-  scrollbar-face-color: #dbdbdb;
+  scrollbar-face-color: #9CA6AC;
   scrollbar-highlight-color: #ffffff;
   scrollbar-3dlight-color: #ffffff;
   scrollbar-shadow-color: #ffffff;
@@ -10442,7 +10442,7 @@ legend {
   margin-bottom: 20px;
   font-size: 21px;
   line-height: inherit;
-  color: #A0A0A0;
+  color: #9CA6AC;
   border: 0;
   border-bottom: 1px solid #dbdbdb; }
 
@@ -10502,11 +10502,11 @@ output {
   padding: 5px 12px 4px;
   font-size: 14px;
   line-height: 20px;
-  color: #404040;
+  color: #56666F;
   vertical-align: middle;
-  background-color: #FFFFFF;
+  background-color: #E5E8EA;
   background-image: none;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #E5E8EA;
   border-radius: 3px;
   -webkit-transition: all 0.1s ease-in-out;
   -moz-transition: all 0.1s ease-in-out;
@@ -10515,33 +10515,33 @@ output {
 
 /* line 242, /Users/Devin/GitHub/spotio/skin/components/_forms.scss */
 .form-control:focus {
-  border-color: #FFFFFF;
+  border-color: #9CA6AC;
   outline: 0;
-  background-color: #FFFFFF;
-  color: #ffffff; }
+  background-color: #E5E8EA;
+  color: #56666F; }
 
 /* line 248, /Users/Devin/GitHub/spotio/skin/components/_forms.scss */
 .form-control:-moz-placeholder {
-  color: #404040; }
+  color: #9CA6AC; }
 
 /* line 251, /Users/Devin/GitHub/spotio/skin/components/_forms.scss */
 .form-control::-moz-placeholder {
-  color: #404040; }
+  color: #9CA6AC; }
 
 /* line 254, /Users/Devin/GitHub/spotio/skin/components/_forms.scss */
 .form-control:-ms-input-placeholder {
-  color: #404040; }
+  color: #9CA6AC; }
 
 /* line 257, /Users/Devin/GitHub/spotio/skin/components/_forms.scss */
 .form-control::-webkit-input-placeholder {
-  color: #404040; }
+  color: #9CA6AC; }
 
 /* line 260, /Users/Devin/GitHub/spotio/skin/components/_forms.scss */
 .form-control[disabled],
 .form-control[readonly],
 fieldset[disabled] .form-control {
   cursor: not-allowed;
-  background-color: #A0A0A0; }
+  background-color: #9CA6AC; }
 
 /* line 266, /Users/Devin/GitHub/spotio/skin/components/_forms.scss */
 textarea.form-control {
@@ -10719,7 +10719,7 @@ textarea.input-lg {
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #e0e0e0; }
+  color: #56666F; }
 
 @media (min-width: 586px) {
   /* line 419, /Users/Devin/GitHub/spotio/skin/components/_forms.scss */
@@ -10854,7 +10854,7 @@ textarea.input-lg {
 
 /* line 38, /Users/Devin/GitHub/spotio/skin/components/_dropdowns.scss */
 .dropdown-interior-menu {
-  background-color: #FAFAFC;
+  background-color: #f2f3f6;
   padding: 0;
   margin: 0;
   list-style: none; }
@@ -10872,7 +10872,7 @@ textarea.input-lg {
   font-weight: 200;
   text-transform: normal;
   color: #9CA6AC;
-  box-shadow: inset 0 1px 0 #FAFAFC;
+  box-shadow: inset 0 1px 0 #f2f3f6;
   white-space: nowrap;
   border-bottom: none; }
 
@@ -10937,7 +10937,7 @@ textarea.input-lg {
   padding: 0;
   margin: 0;
   list-style: none;
-  background-color: #FAFAFC;
+  background-color: #f2f3f6;
   border: 1px solid #E5E8EA;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 3px;
@@ -11284,11 +11284,11 @@ hr {
  */
 /* line 89, /Users/Devin/GitHub/spotio/skin/components/_divider.scss */
 .section-divider {
-  border-bottom: 1px solid #dbdbdb;
+  border-bottom: 1px solid #E5E8EA;
   margin: 0 0 16px;
   padding: 26px 0 4px;
   position: relative;
-  color: #FFFFFF; }
+  color: #56666F; }
 
 /* line 96, /Users/Devin/GitHub/spotio/skin/components/_divider.scss */
 .section-divider:before,
@@ -11309,7 +11309,7 @@ hr {
   line-height: 24px;
   letter-spacing: normal;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #56666F;
   text-transform: normal;
   margin: 0; }
 
@@ -11334,13 +11334,13 @@ hr {
   line-height: 16px;
   letter-spacing: 0.015em;
   font-weight: 200;
-  color: #A0A0A0;
+  color: #9CA6AC;
   text-transform: uppercase;
   letter-spacing: 0.16em; }
 
 /* line 137, /Users/Devin/GitHub/spotio/skin/components/_divider.scss */
 .section-divider .section-auxiliary a:hover {
-  color: #FFFFFF; }
+  color: #56666F; }
 
 /* line 140, /Users/Devin/GitHub/spotio/skin/components/_divider.scss */
 .section-divider-small {
@@ -11355,7 +11355,7 @@ hr {
   line-height: 20px;
   letter-spacing: 0.015em;
   font-weight: 200;
-  color: #FFFFFF;
+  color: #56666F;
   text-transform: normal;
   margin: 0; }
 
@@ -11556,7 +11556,7 @@ a.list-group-item.active .list-group-item-text {
   line-height: 50px;
   margin-top: 0;
   padding: 0;
-  background-color: #FAFAFC;
+  background-color: #f2f3f6;
   background-clip: padding-box;
   transition: background 0.1s ease; }
 
@@ -12077,7 +12077,7 @@ a.list-group-item.active .list-group-item-text {
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
-  border-bottom: 1px solid #dbdbdb; }
+  border-bottom: 1px solid #E5E8EA; }
 
 /* line 20, /Users/Devin/GitHub/spotio/skin/components/_navs.scss */
 .nav.nav-justified {
@@ -12126,7 +12126,7 @@ a.list-group-item.active .list-group-item-text {
   position: relative;
   display: block;
   line-height: 44px;
-  color: #A0A0A0;
+  color: #9CA6AC;
   text-transform: uppercase;
   letter-spacing: 0.16em;
   font-size: 14px;
@@ -12166,12 +12166,12 @@ a.list-group-item.active .list-group-item-text {
 
 /* line 91, /Users/Devin/GitHub/spotio/skin/components/_navs.scss */
 .nav > li.disabled > a {
-  color: #A0A0A0; }
+  color: #9CA6AC; }
 
 /* line 94, /Users/Devin/GitHub/spotio/skin/components/_navs.scss */
 .nav > li.disabled > a:hover,
 .nav > li.disabled > a:focus {
-  color: #A0A0A0;
+  color: #9CA6AC;
   text-decoration: none;
   background-color: transparent;
   cursor: default; }
@@ -12184,16 +12184,16 @@ a.list-group-item.active .list-group-item-text {
 .nav.open > a,
 .nav.open > a:hover,
 .nav.open > a:focus {
-  color: #fff;
-  background-color: #FFFFFF;
-  border-color: #FFFFFF; }
+  color: #56666F;
+  background-color: #56666F;
+  border-color: #56666F; }
 
 /* line 111, /Users/Devin/GitHub/spotio/skin/components/_navs.scss */
 .nav.open > a .caret,
 .nav.open > a:hover .caret,
 .nav.open > a:focus .caret {
-  border-top-color: #fff;
-  border-bottom-color: #fff; }
+  border-top-color: #56666F;
+  border-bottom-color: #56666F; }
 
 /* line 117, /Users/Devin/GitHub/spotio/skin/components/_navs.scss */
 .nav > .pull-right {
@@ -12204,8 +12204,8 @@ a.list-group-item.active .list-group-item-text {
   height: 2px;
   margin: 9px 0;
   overflow: hidden;
-  background-color: #e5e5e5;
-  border-bottom: 1px solid #fff; }
+  background-color: #E5E8EA;
+  border-bottom: 1px solid #E5E8EA; }
 
 /* line 127, /Users/Devin/GitHub/spotio/skin/components/_navs.scss */
 .nav-pills {
@@ -12242,7 +12242,7 @@ a.list-group-item.active .list-group-item-text {
 
 /* line 153, /Users/Devin/GitHub/spotio/skin/components/_navs.scss */
 .nav-stacked {
-  background-color: #dbdbdb;
+  background-color: #E5E8EA;
   border-radius: 3px; }
 
 /* line 157, /Users/Devin/GitHub/spotio/skin/components/_navs.scss */
@@ -12259,7 +12259,7 @@ a.list-group-item.active .list-group-item-text {
 
 /* line 166, /Users/Devin/GitHub/spotio/skin/components/_navs.scss */
 .nav-stacked > li.active a {
-  color: #FFFFFF; }
+  color: #56666F; }
 
 /* line 169, /Users/Devin/GitHub/spotio/skin/components/_navs.scss */
 .nav-stacked > li.active a:after {
@@ -12267,7 +12267,7 @@ a.list-group-item.active .list-group-item-text {
 
 /* line 172, /Users/Devin/GitHub/spotio/skin/components/_navs.scss */
 .nav-stacked > li a {
-  color: #A0A0A0;
+  color: #9CA6AC;
   line-height: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -12277,7 +12277,7 @@ a.list-group-item.active .list-group-item-text {
 
 /* line 181, /Users/Devin/GitHub/spotio/skin/components/_navs.scss */
 .nav-stacked > li + li {
-  border-top: 1px solid #333333; }
+  border-top: 1px solid #E5E8EA; }
 
 /* line 184, /Users/Devin/GitHub/spotio/skin/components/_navs.scss */
 .nav-stacked > li + li > a {
@@ -12304,7 +12304,7 @@ a.list-group-item.active .list-group-item-text {
   padding: 3px 15px;
   font-size: 12px;
   line-height: 20px;
-  color: #A0A0A0;
+  color: #9CA6AC;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   text-transform: uppercase; }
 
@@ -12332,18 +12332,18 @@ a.list-group-item.active .list-group-item-text {
 
 /* line 226, /Users/Devin/GitHub/spotio/skin/components/_navs.scss */
 .nav .caret {
-  border-top-color: #A0A0A0;
-  border-bottom-color: #A0A0A0; }
+  border-top-color: #9CA6AC;
+  border-bottom-color: #9CA6AC; }
 
 /* line 230, /Users/Devin/GitHub/spotio/skin/components/_navs.scss */
 .nav .active .caret {
-  border-top-color: #FFFFFF;
-  border-bottom-color: #FFFFFF; }
+  border-top-color: #56666F;
+  border-bottom-color: #56666F; }
 
 /* line 234, /Users/Devin/GitHub/spotio/skin/components/_navs.scss */
 .nav a:hover .caret {
-  border-top-color: #FFFFFF;
-  border-bottom-color: #FFFFFF; }
+  border-top-color: #56666F;
+  border-bottom-color: #56666F; }
 
 /* line 238, /Users/Devin/GitHub/spotio/skin/components/_navs.scss */
 .nav-tabs .dropdown-menu {
@@ -12722,7 +12722,7 @@ a.list-group-item.active .list-group-item-text {
 
 /* line 197, /Users/Devin/GitHub/spotio/skin/components/_main-menu.scss */
 .main-menu.narrow-menu a#nav-settings.active {
-  color: #FFFFFF; }
+  color: #008CD6; }
 
 /* line 200, /Users/Devin/GitHub/spotio/skin/components/_main-menu.scss */
 .main-menu.narrow-menu a#nav-settings.active:after {
@@ -12997,7 +12997,7 @@ a.list-group-item.active .list-group-item-text {
 .main-menu-nav ul {
   position: relative;
   border-top: 1px solid rgba(0, 0, 0, 0.8);
-  border-bottom: 1px solid #dbdbdb;
+  border-bottom: 1px solid #E5E8EA;
   background-color: rgba(0, 0, 0, 0.2); }
 
 /* line 444, /Users/Devin/GitHub/spotio/skin/components/_main-menu.scss */
@@ -13386,7 +13386,7 @@ a.list-group-item.active .list-group-item-text {
   z-index: 1010;
   display: none;
   text-align: left;
-  background-color: #FAFAFC;
+  background-color: #f2f3f6;
   -webkit-bg-clip: padding-box;
   -moz-bg-clip: padding;
   background-clip: padding-box;
@@ -13516,8 +13516,8 @@ a.list-group-item.active .list-group-item-text {
   line-height: 36px;
   color: #56666F;
   text-align: center;
-  background-color: #ffffff;
-  border-bottom: 1px solid #E5E8EA;
+  background-color: #E5E8EA;
+  border-bottom: 1px solid #9CA6AC;
   border-radius: 5px 5px 0 0;
   position: relative;
   display: block;
@@ -13651,7 +13651,7 @@ a.list-group-item.active .list-group-item-text {
   bottom: 0;
   left: 0;
   z-index: -9999;
-  background-color: #ffffff;
+  background-color: #f2f3f6;
   opacity: 0;
   filter: alpha(opacity=0);
   -webkit-transition: opacity 0.3s linear;
@@ -13695,7 +13695,7 @@ a.list-group-item.active .list-group-item-text {
 
 /* line 311, /Users/Devin/GitHub/spotio/skin/components/_popovers.scss */
 .popover-interior {
-  background-color: #ffffff;
+  background-color: #f2f3f6;
   border-radius: 6px; }
 
 /* line 315, /Users/Devin/GitHub/spotio/skin/components/_popovers.scss */
@@ -13775,9 +13775,9 @@ a.list-group-item.active .list-group-item-text {
   line-height: 20px;
   letter-spacing: 0.015em;
   font-weight: 200;
-  color: #A0A0A0;
+  color: #9CA6AC;
   text-transform: normal;
-  color: #FFFFFF;
+  color: #56666F;
   padding: 20px; }
 
 /**
@@ -14170,11 +14170,11 @@ a.list-group-item.active .list-group-item-text {
   line-height: 16px;
   letter-spacing: 0.015em;
   font-weight: 200;
-  color: #FAFAFC;
+  color: #f2f3f6;
   text-transform: uppercase;
   letter-spacing: 0.16em;
-  color: #FAFAFC;
-  text-shadow: 0px 0px #FAFAFC;
+  color: #f2f3f6;
+  text-shadow: 0px 0px #f2f3f6;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -14326,7 +14326,7 @@ a.list-group-item.active > .badge,
  */
 /* line 12, /Users/Devin/GitHub/spotio/skin/components/_slider.scss */
 .slider {
-  background: #FAFAFC;
+  background: #f2f3f6;
   border: 2px solid #E5E8EA;
   border-radius: 11px;
   height: 22px;
@@ -16524,7 +16524,7 @@ a.list-group-item.active > .badge,
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #dbdbdb;
+  background-color: #E5E8EA;
   position: relative;
   z-index: 4;
   padding: 0 10px; }
@@ -16540,7 +16540,7 @@ a.list-group-item.active > .badge,
   line-height: 20px;
   letter-spacing: 0.015em;
   font-weight: 200;
-  color: #FFFFFF;
+  color: #56666F;
   text-transform: normal;
   border-bottom: 1px solid transparent; }
 
@@ -17200,15 +17200,15 @@ a.list-group-item.active > .badge,
 
 /* line 778, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-search-wrapper:hover:before {
-  color: #FFFFFF; }
+  color: #56666F; }
 
 /* line 781, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-search-wrapper:hover .h-search::-webkit-input-placeholder {
-  color: #FFFFFF; }
+  color: #56666F; }
 
 /* line 784, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-search-wrapper:hover .h-search::-moz-placeholder {
-  color: #FFFFFF; }
+  color: #56666F; }
 
 /* line 787, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-search {
@@ -17217,7 +17217,7 @@ a.list-group-item.active > .badge,
   background: transparent;
   border: 0;
   border-radius: 3px;
-  color: #FFFFFF;
+  color: #56666F;
   display: block;
   outline: 0;
   padding-bottom: 0;
@@ -17241,7 +17241,7 @@ a.list-group-item.active > .badge,
 
 /* line 813, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-search-close:hover {
-  color: #FFFFFF; }
+  color: #56666F; }
 
 /* line 816, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .focus .h-search-close {
@@ -17249,7 +17249,7 @@ a.list-group-item.active > .badge,
 
 /* line 819, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-search-suggestions {
-  background: #dbdbdb;
+  background: #E5E8EA;
   border-radius: 3px;
   display: none;
   position: absolute;
@@ -17268,7 +17268,7 @@ a.list-group-item.active > .badge,
 /* line 835, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-search-suggestion {
   border-radius: 3px;
-  color: #A0A0A0;
+  color: #9CA6AC;
   cursor: pointer;
   padding-left: 36px;
   padding-right: 10px; }
@@ -17295,7 +17295,7 @@ a.list-group-item.active > .badge,
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
-  background-color: black;
+  background-color: #ffffff;
   border-bottom: 1px solid #E5E8EA;
   min-height: 320px;
   max-width: 1480px; }
@@ -18946,7 +18946,7 @@ th[data-sort]:hover {
   padding-left: 26px;
   padding-right: 26px;
   border-radius: 13px;
-  background: #A0A0A0;
+  background: #9CA6AC;
   color: #FFFFFF;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: transform, box-shadow, color, background-color;
@@ -18969,8 +18969,8 @@ th[data-sort]:hover {
 
 /* line 2402, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .facepile-badge:not(:disabled):hover:active {
-  background: #808080;
-  color: #cccccc;
+  background: #9CA6AC;
+  color: #56666F;
   transform: scale(1); }
 
 @media (-webkit-min-device-pixel-ratio: 2) {

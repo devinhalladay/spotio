@@ -588,7 +588,7 @@
   overflow-x: hidden;
   padding-top: 10px;
   min-height: 0px !important;
-  background-color: #FAFAFC; }
+  background-color: #f2f3f6; }
 
 /* line 520, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .navbar-old-chrome-style.sidebar-scroll-element:focus {
@@ -1131,11 +1131,11 @@
 .navbar-old-chrome-style.sidebar-scroll-element::-webkit-scrollbar,
 .navbar-old-chrome-style.sidebar-scroll-element::-webkit-scrollbar-track,
 .navbar-old-chrome-style.sidebar-scroll-element::-webkit-scrollbar-corner {
-  background-color: #FAFAFC; }
+  background-color: #f2f3f6; }
 
 /* line 995, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .navbar-old-chrome-style.sidebar-scroll-element::-webkit-scrollbar-thumb {
-  border: solid 1px #FAFAFC;
+  border: solid 1px #f2f3f6;
   background-color: #DCE1E4; }
 
 /* line 999, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
@@ -1177,12 +1177,12 @@
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element::-webkit-scrollbar,
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element::-webkit-scrollbar-track,
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element::-webkit-scrollbar-corner {
-  background-color: #000000; }
+  background-color: #f2f3f6; }
 
 /* line 1032, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element::-webkit-scrollbar-thumb {
-  border: solid 1px #000000;
-  background-color: #282828; }
+  border: solid 1px #E5E8EA;
+  background-color: #9CA6AC; }
 
 /* line 1036, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element h2 {
@@ -1301,12 +1301,12 @@
 /* line 1135, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .playing-indicator.contextmenu-active,
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .playing-indicator:not(:disabled):hover {
-  background-color: #FAFAFC;
+  background-color: #f2f3f6;
   color: #56666F; }
 
 /* line 1140, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .playing-indicator:not(:disabled):hover:active {
-  background: #FAFAFC;
+  background: #f2f3f6;
   color: #8b949a;
   transform: scale(1); }
 
@@ -7936,7 +7936,7 @@ body.remotebar #connect-container-background-new-chrome-style {
   min-width: 140px;
   max-width: 400px;
   position: relative;
-  background-color: #FAFAFC; }
+  background-color: #f2f3f6; }
 
 @media screen and (max-width: 1190px) {
   /* line 7067, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
@@ -8890,7 +8890,7 @@ body {
   height: 100%;
   width: 100%;
   -webkit-user-select: none;
-  background-color: #FAFAFC;
+  background-color: #f2f3f6;
   overflow: hidden !important; }
 
 /* line 7924, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
@@ -8996,7 +8996,7 @@ ul {
 
 /* line 8008, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .sidebar-old-chrome-style {
-  background-color: #FAFAFC; }
+  background-color: #f2f3f6; }
 
 /* line 8011, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .sidebar-old-chrome-style #offline-global-progress {
@@ -9008,4 +9008,4 @@ ul {
 
 /* line 8017, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .sidebar-new-chrome-style {
-  background-color: #FAFAFC; }
+  background-color: #f2f3f6; }

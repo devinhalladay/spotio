@@ -176,17 +176,17 @@ a.text-muted:focus,
   color: $secondary-text-color-hover;
 }
 .text-warning {
-  color: #FFFFFF;
+  color: $primary-text-color;
 }
 .text-warning a,
 a.text-warning {
-  color: #FFFFFF;
+  color: $primary-text-color;
 }
 a.text-warning:hover,
 .text-warning a:hover,
 a.text-warning:focus,
 .text-warning a:focus {
-  color: #FFFFFF;
+  color: $primary-accent-color--dark;
 }
 .text-danger {
   color: #CD1A2B;

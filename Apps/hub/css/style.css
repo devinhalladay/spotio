@@ -860,7 +860,7 @@ html.glue2 #view-video-ad .saf-video-takeover-btn-max {
   line-height: 24px;
   letter-spacing: normal;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #56666F;
   text-transform: normal;
   margin: 0; }
 
@@ -871,7 +871,7 @@ html.glue2 #view-video-ad .saf-video-takeover-btn-max {
   line-height: 16px;
   letter-spacing: 0.015em;
   font-weight: 200;
-  color: #A0A0A0;
+  color: #9CA6AC;
   text-transform: uppercase;
   letter-spacing: 0.16em; }
 
@@ -882,7 +882,7 @@ html.glue2 #view-video-ad .saf-video-takeover-btn-max {
   line-height: 24px;
   letter-spacing: normal;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #56666F;
   text-transform: normal; }
 
 /* line 771, /Users/Devin/GitHub/spotio/skin/apps/hub.scss */
@@ -896,7 +896,7 @@ html.glue2 #view-video-ad .saf-video-takeover-btn-max {
   letter-spacing: 0.015em;
   font-weight: 200;
   text-transform: normal;
-  color: #A0A0A0; }
+  color: #9CA6AC; }
 
 /* line 783, /Users/Devin/GitHub/spotio/skin/apps/hub.scss */
 .grid-button {

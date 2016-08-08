@@ -155,8 +155,8 @@
   line-height: 36px;
   color: $primary-text-color;
   text-align: center;
-  background-color: $main-view-bg-color;
-  border-bottom: 1px solid $primary-border-color;
+  background-color: $primary-border-color;
+  border-bottom: 1px solid $secondary-text-color;
   border-radius: 5px 5px 0 0;
   position: relative;
   display: block;
@@ -272,7 +272,7 @@
   bottom: 0;
   left: 0;
   z-index: -9999;
-  background-color: $main-view-bg-color;
+  background-color: $secondary-view-bg-color;
   opacity: 0;
   filter: alpha(opacity=0);
   -webkit-transition: opacity 0.3s linear;
@@ -309,7 +309,7 @@
   top: 50%;
 }
 .popover-interior {
-  background-color: $main-view-bg-color;
+  background-color: $secondary-view-bg-color;
   border-radius: 6px;
 }
 .popover-interior.desktop {
@@ -380,8 +380,8 @@
   line-height: 20px;
   letter-spacing: 0.015em;
   font-weight: 200;
-  color: #A0A0A0;
+  color: $secondary-text-color;
   text-transform: normal;
-  color: #FFFFFF;
+  color: $primary-text-color;
   padding: 20px;
 }

@@ -144,7 +144,7 @@ html {
 }
 .listening .global-position {
   padding: 27px 0;
-  color: #FFFFFF;
+  color: $primary-text-color;
 }
 .listening .global-position h3 {
   margin: 0;
@@ -295,7 +295,7 @@ html {
 .listening .monthly__data-description {
   font-size: 14px;
   line-height: 1;
-  color: #FFFFFF;
+  color: $primary-text-color;
   font-weight: 100;
 }
 .listening .monthly__data-delta {
@@ -798,7 +798,7 @@ html {
   line-height: 38px;
 }
 .locations .city__description {
-  color: #FFFFFF;
+  color: $primary-text-color;
   display: inline-block;
 }
 .locations .city__country {

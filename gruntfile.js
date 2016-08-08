@@ -86,25 +86,25 @@ module.exports = function(grunt) {
           dest: '.tmp/Spotify.app/Contents/Resources/Apps/',
         }]
       },
-      spotifyapp: { // Copy completed Spotify.app to dist/
-        files: [{
-          expand: true,
-          cwd: '.tmp/',
-          src: ['Spotify.app/**'],
-          dest: 'dist/',
-        }]
-      },
+      // spotifyapp: { // Copy completed Spotify.app to dist/
+      //   files: [{
+      //     expand: true,
+      //     cwd: '.tmp/',
+      //     src: ['Spotify.app/**'],
+      //     dest: 'dist/',
+      //   }]
+      // },
     },
 
     // Watch and build
     watch: {
       glue: { // Watch our GLUE file separately from App sass
         files: ['skin/**/*.scss', '!skin/apps/*.scss'],
-        tasks: ['sass:glue', 'copy:glue', 'copy:apps', 'copy:spotifyapp']
+        tasks: ['sass:glue', 'copy:glue', 'copy:apps', 'shell:copyspotifyapp']
       },
       apps: { // Watch App-specific sass separately from GLUE
         files: ['skin/apps/*.scss', 'skin/base/_variables.scss'],
-        tasks: ['sass:apps', 'copy:apps', 'copy:spotifyapp']
+        tasks: ['sass:apps', 'copy:apps', 'shell:copyspotifyapp']
       },
     },
 
@@ -138,6 +138,9 @@ module.exports = function(grunt) {
           'cp -R "/Volumes/Spotify/Spotify.app" .tmp/',
           'hdiutil detach /Volumes/Spotify'
         ].join('&&')
+      },
+      copyspotifyapp: {
+        command: 'cp -r ".tmp/Spotify.app" "dist/"'
       }
     },
 
