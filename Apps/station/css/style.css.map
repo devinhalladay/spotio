@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAGA,kBAAmB;EACjB,OAAO,EAAE,IAAI;;AAEf,2BAA4B;EAC1B,OAAO,EAAE,KAAK;;AAEhB;;wBAEyB;EACvB,OAAO,EAAE,IAAI;;AAEf,oBAAqB;EACnB,KAAK,EAAE,KAAK;;AAEd,gBAAiB;EACf,UAAU,EAAE,IAAI;EAChB,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;;AAEX,UAAW;EACT,UAAU,EAAE,IAAI",
-"sources": ["../../../skin/apps/station.scss"],
-"names": [],
-"file": "style.css"
-}

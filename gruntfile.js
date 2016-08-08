@@ -3,7 +3,7 @@ module.exports = function(grunt) {
     sass: {
       glue: {
         options: {
-          sourcemap: none
+          sourcemap: 'none'
         },
         files: [{
           expand: true,
@@ -15,7 +15,7 @@ module.exports = function(grunt) {
       },
       apps: {
         options: {
-          sourcemap: none
+          sourcemap: 'none'
         },
         files: [{
           expand: true,
