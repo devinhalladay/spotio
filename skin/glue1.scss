@@ -896,8 +896,14 @@
   right: auto;
 }
 .header-artist.version_1-5:before {
-  background: linear-gradient(transparent, $main-view-bg-color);
+  background: -moz-linear-gradient(top,  rgba(255,255,255,0.83) 0%, rgba(255,255,255,0.83) 28%, rgba(255,255,255,0.92) 58%, rgba(255,255,255,1) 77%, rgba(255,255,255,1) 100%);
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,0.83) 0%,rgba(255,255,255,0.83) 28%,rgba(255,255,255,0.92) 58%,rgba(255,255,255,1) 77%,rgba(255,255,255,1) 100%);
+  background: linear-gradient(to bottom,  rgba(255,255,255,0.83) 0%,rgba(255,255,255,0.83) 28%,rgba(255,255,255,0.92) 58%,rgba(255,255,255,1) 77%,rgba(255,255,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4ffffff', endColorstr='#ffffff',GradientType=0 );
+
+  opacity: 0.95;
 }
+
 .header-artist.header-image {
   background-image: url('https://d2j0f09xqmv212.cloudfront.net/images/standard-artist-header.png');
   background-size: cover;

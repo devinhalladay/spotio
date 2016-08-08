@@ -13,6 +13,7 @@ I sorely miss Rdio. It was the perfect music streaming service: quality streamin
 - `sudo grunt clean:oldApps`: Deletes old apps in .tmp
 - `sudo grunt download`: Downloads latest spotify binary and places it in .tmp/
 - `sudo grunt shell:extract`: Extracts the most recently downloaded Spotify.app from .tmp/Spotify.dmg
+- `grunt compress`: Compress your Spotify.app into a distributable .zip
 
 ## TODO
 - [x] Streaming build system so I don't need to keep rebuilding and recompiling every single Sass file when I make a single change.

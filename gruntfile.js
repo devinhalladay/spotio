@@ -89,8 +89,9 @@ module.exports = function(grunt) {
       spotifyapp: { // Copy completed Spotify.app to dist/
         files: [{
           expand: true,
-          src: ['.tmp/Spotify.app'],
-          dest: 'dist/Spotify.app',
+          cwd: '.tmp/',
+          src: ['Spotify.app/**'],
+          dest: 'dist/Spotify.app/',
         }]
       },
     },
@@ -145,7 +146,7 @@ module.exports = function(grunt) {
         options: {
           archive: 'dist/Spotify.zip'
         },
-      files: [{expand: true, src: ['Spotify.zip'], dest: '/'}]
+        files: [{cwd: 'dist', expand: true, src: ['Spotify.app/**/*'], dest: '/'}]
       }
     },
   });
@@ -163,4 +164,5 @@ module.exports = function(grunt) {
   // Run tasks
   grunt.registerTask('default', ['sass', 'watch']);
   grunt.registerTask('download', ['mkdir', 'curl', 'shell:extract']);
+  grunt.registerTask('copyapp', ['mkdir', 'curl', 'shell:extract']);
 };

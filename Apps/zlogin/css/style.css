@@ -91,7 +91,7 @@ img {
 /* line 77, /Users/Devin/GitHub/spotio/skin/apps/zlogin.scss */
 #login-or:before,
 #login-or:after {
-  background-color: #404040;
+  background-color: #ffffff;
   content: "";
   display: inline-block;
   height: 1px;
@@ -115,20 +115,20 @@ img {
 
 /* line 98, /Users/Devin/GitHub/spotio/skin/apps/zlogin.scss */
 .form-control {
-  background-color: #333333 !important;
+  background-color: #ffffff !important;
   border: 0 !important;
-  color: #FFFFFF !important; }
+  color: #56666F !important; }
 
 /* line 103, /Users/Devin/GitHub/spotio/skin/apps/zlogin.scss */
 .form-control::-webkit-input-placeholder {
-  color: #A0A0A0 !important; }
+  color: #9CA6AC !important; }
 
 /* line 106, /Users/Devin/GitHub/spotio/skin/apps/zlogin.scss */
 .form-control:focus {
-  border-color: #404040 !important;
+  border-color: #008CD6 !important;
   outline: 0 !important;
-  background-color: #404040 !important;
-  color: #FFFFFF !important; }
+  background-color: #ffffff !important;
+  color: #56666F !important; }
 
 /* line 112, /Users/Devin/GitHub/spotio/skin/apps/zlogin.scss */
 .remember-me {
@@ -153,7 +153,7 @@ img {
   line-height: 16px;
   letter-spacing: 0.015em;
   font-weight: 200;
-  color: #A0A0A0;
+  color: #9CA6AC;
   text-transform: uppercase;
   letter-spacing: 0.16em;
   line-height: 35px; }

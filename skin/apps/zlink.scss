@@ -230,11 +230,11 @@
 .capping-full-screen-message .cfsm-close-btn.contextmenu-active,
 .capping-full-screen-message .cfsm-close-btn:not(:disabled):hover {
   background-color: transparent;
-  color: #FFFFFF;
+  color: $primary-accent-color;
 }
 .capping-full-screen-message .cfsm-close-btn:not(:disabled):hover:active {
   background: transparent;
-  color: #808080;
+  color: $primary-accent-color--light;
   transform: scale(1);
 }
 @media (-webkit-min-device-pixel-ratio: 2) {
