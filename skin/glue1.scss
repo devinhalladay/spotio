@@ -87,7 +87,7 @@
  * Styleguide 70.20
  */
 .puff {
-  background-color: $main-view-bg-color;
+  background-color: $secondary-view-bg-color;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -583,7 +583,7 @@
  * Styleguide 80.3
  */
 .header {
-  background: $main-view-bg-color;
+  background: $header-bg-color;
   clear: left;
   margin: 0 auto;
   position: relative;
@@ -2396,7 +2396,7 @@ th[data-sort]:hover {
 }
 .facepile-badge.contextmenu-active,
 .facepile-badge:not(:disabled):hover {
-  background-color: #bb9898;
+  background-color: $primary-accent-color;
   color: #ffffff;
 }
 .facepile-badge:not(:disabled):hover:active {

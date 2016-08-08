@@ -6160,8 +6160,8 @@ html {
   padding-left: 32px;
   padding-right: 32px;
   border-radius: 16px;
-  background: #FFFFFF;
-  color: #000000;
+  background: #E5E8EA;
+  color: #56666F;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: transform, box-shadow, color, background-color; }
 
@@ -6172,13 +6172,13 @@ html {
 /* line 288, /Users/Devin/GitHub/spotio/skin/components/_buttons.scss */
 .button.button-white.contextmenu-active,
 .button.button-white:not(:disabled):hover {
-  background-color: #ffffff;
-  color: #1f1414; }
+  background-color: #E5E8EA;
+  color: #9CA6AC; }
 
 /* line 293, /Users/Devin/GitHub/spotio/skin/components/_buttons.scss */
 .button.button-white:not(:disabled):hover:active {
-  background: #cccccc;
-  color: #000000;
+  background: #9CA6AC;
+  color: #56666F;
   transform: scale(1); }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
@@ -6430,7 +6430,7 @@ html {
   padding-left: 32px;
   padding-right: 32px;
   border-radius: 16px;
-  background: #56666F;
+  background: #9CA6AC;
   color: #FFFFFF;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: transform, box-shadow, color, background-color; }
@@ -6520,11 +6520,11 @@ html {
   padding-left: 32px;
   padding-right: 32px;
   border-radius: 16px;
-  background: #008CD6;
-  color: #FFFFFF;
+  background: #f2f3f6;
+  color: #56666F;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: transform, box-shadow, color, background-color;
-  box-shadow: inset 0 0 0 1px #E5E8EA; }
+  border: 1px solid #E5E8EA; }
 
 /* line 606, /Users/Devin/GitHub/spotio/skin/components/_buttons.scss */
 .button.button-with-stroke .b-alt-text {
@@ -6533,13 +6533,13 @@ html {
 /* line 609, /Users/Devin/GitHub/spotio/skin/components/_buttons.scss */
 .button.button-with-stroke.contextmenu-active,
 .button.button-with-stroke:not(:disabled):hover {
-  background-color: #008CD6;
-  color: #ffffff; }
+  background-color: #E5E8EA;
+  color: #56666F; }
 
 /* line 614, /Users/Devin/GitHub/spotio/skin/components/_buttons.scss */
 .button.button-with-stroke:not(:disabled):hover:active {
-  background: #008CD6;
-  color: #ffffff;
+  background: #E5E8EA;
+  color: #56666F;
   transform: scale(1); }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
@@ -6755,7 +6755,7 @@ html {
   bottom: 0;
   left: 0;
   border-radius: 500px;
-  box-shadow: inset 0 0 0 1px #A0A0A0; }
+  box-shadow: inset 0 0 0 1px #9CA6AC; }
 
 /* line 813, /Users/Devin/GitHub/spotio/skin/components/_buttons.scss */
 .button.button-with-stroke.added.contextmenu-active,
@@ -6909,7 +6909,7 @@ html {
   padding-right: 32px;
   border-radius: 16px;
   background: transparent;
-  color: #A0A0A0;
+  color: #9CA6AC;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: transform, box-shadow, color, background-color;
   width: 32px;
@@ -6924,12 +6924,12 @@ html {
 .button.button-icon-only.contextmenu-active,
 .button.button-icon-only:not(:disabled):hover {
   background-color: transparent;
-  color: #FFFFFF; }
+  color: #00a7ff; }
 
 /* line 964, /Users/Devin/GitHub/spotio/skin/components/_buttons.scss */
 .button.button-icon-only:not(:disabled):hover:active {
   background: transparent;
-  color: #808080;
+  color: #0566a4;
   transform: scale(1); }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
@@ -7153,7 +7153,7 @@ html {
   color: #FFFFFF;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: transform, box-shadow, color, background-color;
-  box-shadow: inset 0 0 0 1px #A0A0A0;
+  box-shadow: inset 0 0 0 1px #9CA6AC;
   width: 32px;
   padding-left: 0;
   padding-right: 0; }
@@ -7235,7 +7235,7 @@ html {
   bottom: 0;
   left: 0;
   border-radius: 500px;
-  box-shadow: inset 0 0 0 1px #A0A0A0; }
+  box-shadow: inset 0 0 0 1px #9CA6AC; }
 
 /* line 1244, /Users/Devin/GitHub/spotio/skin/components/_buttons.scss */
 .button.button-icon-with-stroke.contextmenu-active,
@@ -7876,7 +7876,7 @@ html {
   color: #FFFFFF;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: transform, box-shadow, color, background-color;
-  box-shadow: inset 0 0 0 1px #A0A0A0;
+  box-shadow: inset 0 0 0 1px #9CA6AC;
   font-size: 14px; }
 
 /* line 1820, /Users/Devin/GitHub/spotio/skin/components/_buttons.scss */
@@ -7956,7 +7956,7 @@ html {
   bottom: 0;
   left: 0;
   border-radius: 500px;
-  box-shadow: inset 0 0 0 1px #A0A0A0; }
+  box-shadow: inset 0 0 0 1px #9CA6AC; }
 
 /* line 1890, /Users/Devin/GitHub/spotio/skin/components/_buttons.scss */
 .button.button-large.button-with-stroke.contextmenu-active,
@@ -8010,7 +8010,7 @@ html {
   color: #008CD6;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: transform, box-shadow, color, background-color;
-  box-shadow: inset 0 0 0 1px #A0A0A0; }
+  box-shadow: inset 0 0 0 1px #9CA6AC; }
 
 /* line 1938, /Users/Devin/GitHub/spotio/skin/components/_buttons.scss */
 .button.button-large.button-with-stroke.added .b-alt-text,
@@ -8108,7 +8108,7 @@ html {
   bottom: 0;
   left: 0;
   border-radius: 500px;
-  box-shadow: inset 0 0 0 1px #A0A0A0; }
+  box-shadow: inset 0 0 0 1px #9CA6AC; }
 
 /* line 2027, /Users/Devin/GitHub/spotio/skin/components/_buttons.scss */
 .button.button-large.button-with-stroke.added.contextmenu-active,
@@ -8263,7 +8263,7 @@ html {
   padding-right: 48px;
   border-radius: 24px;
   background: transparent;
-  color: #A0A0A0;
+  color: #9CA6AC;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: transform, box-shadow, color, background-color;
   width: 48px;
@@ -8508,7 +8508,7 @@ html {
   color: #FFFFFF;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: transform, box-shadow, color, background-color;
-  box-shadow: inset 0 0 0 1px #A0A0A0;
+  box-shadow: inset 0 0 0 1px #9CA6AC;
   width: 48px;
   padding-left: 0;
   padding-right: 0;
@@ -8591,7 +8591,7 @@ html {
   bottom: 0;
   left: 0;
   border-radius: 500px;
-  box-shadow: inset 0 0 0 1px #A0A0A0; }
+  box-shadow: inset 0 0 0 1px #9CA6AC; }
 
 /* line 2461, /Users/Devin/GitHub/spotio/skin/components/_buttons.scss */
 .button.button-large.button-icon-with-stroke.contextmenu-active,
@@ -9227,7 +9227,7 @@ html {
   color: #FFFFFF;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: transform, box-shadow, color, background-color;
-  box-shadow: inset 0 0 0 1px #A0A0A0; }
+  box-shadow: inset 0 0 0 1px #9CA6AC; }
 
 /* line 3031, /Users/Devin/GitHub/spotio/skin/components/_buttons.scss */
 .button.button-small.button-with-stroke .b-alt-text {
@@ -9306,7 +9306,7 @@ html {
   bottom: 0;
   left: 0;
   border-radius: 500px;
-  box-shadow: inset 0 0 0 1px #A0A0A0; }
+  box-shadow: inset 0 0 0 1px #9CA6AC; }
 
 /* line 3101, /Users/Devin/GitHub/spotio/skin/components/_buttons.scss */
 .button.button-small.button-with-stroke.contextmenu-active,
@@ -9360,7 +9360,7 @@ html {
   color: #ffffff;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: transform, box-shadow, color, background-color;
-  box-shadow: inset 0 0 0 1px #A0A0A0; }
+  box-shadow: inset 0 0 0 1px #9CA6AC; }
 
 /* line 3149, /Users/Devin/GitHub/spotio/skin/components/_buttons.scss */
 .button.button-small.button-with-stroke.added .b-alt-text,
@@ -9458,7 +9458,7 @@ html {
   bottom: 0;
   left: 0;
   border-radius: 500px;
-  box-shadow: inset 0 0 0 1px #A0A0A0; }
+  box-shadow: inset 0 0 0 1px #9CA6AC; }
 
 /* line 3238, /Users/Devin/GitHub/spotio/skin/components/_buttons.scss */
 .button.button-small.button-with-stroke.added.contextmenu-active,
@@ -9612,7 +9612,7 @@ html {
   padding-right: 24px;
   border-radius: 12px;
   background: transparent;
-  color: #A0A0A0;
+  color: #9CA6AC;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: transform, box-shadow, color, background-color;
   width: 24px;
@@ -9856,7 +9856,7 @@ html {
   color: #FFFFFF;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: transform, box-shadow, color, background-color;
-  box-shadow: inset 0 0 0 1px #A0A0A0;
+  box-shadow: inset 0 0 0 1px #9CA6AC;
   width: 24px;
   padding-left: 0;
   padding-right: 0; }
@@ -9938,7 +9938,7 @@ html {
   bottom: 0;
   left: 0;
   border-radius: 500px;
-  box-shadow: inset 0 0 0 1px #A0A0A0; }
+  box-shadow: inset 0 0 0 1px #9CA6AC; }
 
 /* line 3669, /Users/Devin/GitHub/spotio/skin/components/_buttons.scss */
 .button.button-small.button-icon-with-stroke.contextmenu-active,
@@ -13730,7 +13730,7 @@ a.list-group-item.active .list-group-item-text {
  */
 /* line 341, /Users/Devin/GitHub/spotio/skin/components/_popovers.scss */
 .modal-generic {
-  background-color: #E5E8EA;
+  background-color: #f2f3f6;
   border-radius: 6px; }
 
 /* line 345, /Users/Devin/GitHub/spotio/skin/components/_popovers.scss */
@@ -14520,7 +14520,7 @@ a.list-group-item.active > .badge,
 
 /* line 41, /Users/Devin/GitHub/spotio/skin/components/_media-objects.scss */
 .mo-image-background-color {
-  background-color: #000000; }
+  background-color: #f2f3f6; }
 
 /* line 44, /Users/Devin/GitHub/spotio/skin/components/_media-objects.scss */
 .mo-image-background {
@@ -14576,7 +14576,7 @@ a.list-group-item.active > .badge,
   padding-right: 32px;
   border-radius: 16px;
   background: transparent;
-  color: #A0A0A0;
+  color: #56666F;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: transform, box-shadow, color, background-color;
   width: 32px;
@@ -14595,13 +14595,13 @@ a.list-group-item.active > .badge,
 .media-object .mo-add:not(:disabled):hover,
 .media-object .mo-more:not(:disabled):hover {
   background-color: transparent;
-  color: #56666F; }
+  color: #008CD6; }
 
 /* line 110, /Users/Devin/GitHub/spotio/skin/components/_media-objects.scss */
 .media-object .mo-add:not(:disabled):hover:active,
 .media-object .mo-more:not(:disabled):hover:active {
   background: transparent;
-  color: #8b949a;
+  color: #0566a4;
   transform: scale(1); }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
@@ -16458,7 +16458,7 @@ a.list-group-item.active > .badge,
  */
 /* line 89, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .puff {
-  background-color: #ffffff;
+  background-color: #f2f3f6;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -16980,7 +16980,7 @@ a.list-group-item.active > .badge,
  */
 /* line 585, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .header {
-  background: #ffffff;
+  background: #FCFCFC;
   clear: left;
   margin: 0 auto;
   position: relative; }
@@ -18964,7 +18964,7 @@ th[data-sort]:hover {
 /* line 2397, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .facepile-badge.contextmenu-active,
 .facepile-badge:not(:disabled):hover {
-  background-color: #bb9898;
+  background-color: #008CD6;
   color: #ffffff; }
 
 /* line 2402, /Users/Devin/GitHub/spotio/skin/glue1.scss */

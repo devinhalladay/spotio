@@ -39,7 +39,7 @@
   background-repeat: no-repeat;
 }
 .mo-image-background-color {
-  background-color: #000000;
+  background-color: $secondary-view-bg-color;
 }
 .mo-image-background {
   background-repeat: no-repeat;
@@ -88,7 +88,7 @@
   padding-right: 32px;
   border-radius: 16px;
   background: transparent;
-  color: #A0A0A0;
+  color: $primary-text-color;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: transform, box-shadow, color, background-color;
   width: 32px;
@@ -105,12 +105,12 @@
 .media-object .mo-add:not(:disabled):hover,
 .media-object .mo-more:not(:disabled):hover {
   background-color: transparent;
-  color: $primary-text-color;
+  color: $primary-accent-color;
 }
 .media-object .mo-add:not(:disabled):hover:active,
 .media-object .mo-more:not(:disabled):hover:active {
   background: transparent;
-  color: $secondary-text-color-hover;
+  color: $primary-accent-color--dark;
   transform: scale(1);
 }
 @media (-webkit-min-device-pixel-ratio: 2) {
