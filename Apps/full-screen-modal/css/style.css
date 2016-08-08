@@ -129,6 +129,7 @@ body,
     opacity: 0; }
   100% {
     opacity: 1; } }
+
 .full-screen-modal--edit-header-image .full-screen-modal__close {
   display: none; }
 

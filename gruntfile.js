@@ -15,10 +15,10 @@ module.exports = function(grunt) {
           expand: true,
           cwd: "skin/apps",
           src: ["*.scss"],
-          dest: "build/Apps/",
+          dest: "Apps/",
           ext: ".css",
           rename: function(dest, src) {
-            return dest + src.slice(0, -4) + "/" + 'style.css';
+            return dest + src.slice(0, -4) + "/css/" + 'style.css';
           }
         }]
       },

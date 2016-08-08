@@ -79,9 +79,11 @@ button[data-button="add-recommendation"]:not(:disabled):hover:active {
 @media (-webkit-min-device-pixel-ratio: 2) {
   button[data-button="add-recommendation"]:not(:disabled):hover:active {
     transform: scale(1); } }
+
 @media (-webkit-min-device-pixel-ratio: 2) {
   button[data-button="add-recommendation"] {
     transition-duration: 50ms; } }
+
 button[data-button="add-recommendation"]:after {
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: box-shadow; }
@@ -89,6 +91,7 @@ button[data-button="add-recommendation"]:after {
 @media (-webkit-min-device-pixel-ratio: 2) {
   button[data-button="add-recommendation"]:after {
     transition-duration: 50ms; } }
+
 button[data-button="add-recommendation"].contextmenu-active,
 button[data-button="add-recommendation"]:not(:disabled):hover {
   transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
@@ -98,6 +101,7 @@ button[data-button="add-recommendation"]:not(:disabled):hover {
   button[data-button="add-recommendation"].contextmenu-active,
   button[data-button="add-recommendation"]:not(:disabled):hover {
     transition-duration: 66ms; } }
+
 button[data-button="add-recommendation"].contextmenu-active:after,
 button[data-button="add-recommendation"]:not(:disabled):hover:after {
   transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
@@ -107,6 +111,7 @@ button[data-button="add-recommendation"]:not(:disabled):hover:after {
   button[data-button="add-recommendation"].contextmenu-active:after,
   button[data-button="add-recommendation"]:not(:disabled):hover:after {
     transition-duration: 66ms; } }
+
 button[data-button="add-recommendation"]:not(:disabled):hover:active {
   transition: none; }
 
@@ -114,11 +119,12 @@ button[data-button="add-recommendation"]:not(:disabled):hover:active:after {
   transition: none; }
 
 button[data-button="add-recommendation"]:not(:disabled):hover {
-  transform: scale(1.07143); }
+  transform: scale(1.07142857); }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
   button[data-button="add-recommendation"]:not(:disabled):hover {
-    transform: scale(1.07143); } }
+    transform: scale(1.07142857); } }
+
 html,
 body {
   height: 100%; }
@@ -336,12 +342,13 @@ body.loaded-tracklist .throbber-tracklist {
   .sponsored .h-title,
   .sponsored .h-description {
     margin-right: 70px; }
-
   .sponsored .sponsored-logo {
     top: 29px; } }
+
 @media (max-width: 700px) {
   .fresh-playlist-button {
     display: none; } }
+
 @media (max-width: 1000px) {
   .playlist-followers-label {
     display: none !important; } }
