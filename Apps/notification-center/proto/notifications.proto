@@ -1,0 +1,352 @@
+package spotify.notifications.proto;
+
+
+message PlaylistSubEventData {
+  optional string uri = 1;
+  optional string owner_username = 2;
+  optional string subscriber_username = 3;
+  optional string profile_username = 4; // if known
+}
+
+
+message PlaylistUpdateEventData {
+  optional string uri = 1;
+  optional string owner_username = 2;
+  optional int32 added_tracks_number = 3;
+  repeated string added_tracks = 4; // not necessarily all
+  optional bool no_delay_for_testing = 5; // deprecated, use Event.no_delay_for_testing instead
+  optional bool skip_first_event_check = 6;
+}
+
+
+message InboxMessageEventData {
+  optional string recipient = 1;
+  repeated string item_uris = 2;
+  optional string message = 3;
+}
+
+
+// Social Reaction types
+enum SocialReactionType {
+    UNKNOWN_SOCIAL_REACTION = 0;
+    LIKED_SOCIAL_REACTION = 1;
+    STREAMED_SOCIAL_REACTION = 2;
+    RESHARED_SOCIAL_REACTION = 3;
+}
+
+// Story types from bouncer
+enum BouncerStoryType {
+    FOLLOWED_PROFILE_BOUNCER_STORY = 0; // user, artist or merged profile
+    PUBLISHED_PLAYLIST_BOUNCER_STORY = 1;
+    FOLLOWED_PLAYLIST_BOUNCER_STORY = 2;
+    SHARED_URI_BOUNCER_STORY = 3;
+}
+
+message SocialReactionEventData {
+    optional SocialReactionType reaction = 1;
+
+    // The creator of the story. Recipient of the nofication
+    optional string story_creator = 2;
+
+    // Story ID in bouncer
+    optional string story_id = 3;
+
+    // The story type as defined in bouncer
+    optional BouncerStoryType story_type = 4;
+
+    // The item that was part of the social story
+    optional string item_uri = 5;
+
+    // The time when the reaction happened
+    optional int64 reaction_time_ms = 6;
+}
+
+
+message SignupEventData {
+  optional string signed_up_username = 1;
+  optional int64 signup_time_ms = 2; // in ms since epoch
+  optional string single_recipient_username_for_testing_DEPRECATED = 3;
+  optional int32 activation_tutorial_step = 4;
+}
+
+
+message ResetEventData {
+  optional string channel = 1;
+  repeated string reset_usernames = 2;
+}
+
+message NewFollowerEventData {
+  optional string subscriber_username = 1; // the follower
+  optional string subscribing_to = 2; // the one being followed (recipient)
+  optional bool playlist_sub = 3;  // did the follow come from a playlist subscription?
+  // Social doesn't know the uri of the subscribed playlist that caused the follow relation
+  // Regardless, knowing that the source was a playlist subscription helps delay and verify message
+}
+
+message NewRadioStationEventData {
+  optional string owner_username = 1;
+  optional bool mobile_free_radio = 2;
+  optional bool opengraph_posted = 3;
+  optional string radio_station_uri = 4;  // should not be set if not public!
+}
+
+message NewMfrUserEventData {
+  optional string new_username = 1;
+  optional string first_listened = 2;
+  optional string last_listened  = 3;
+  optional string radio_station_uri = 4;
+}
+
+
+message AlbumData {
+    optional string album_gid = 1;
+    optional string countries = 2;  // comma separated ISO 3166-1 alpha-2
+    optional string label = 3;
+    optional string licensor = 4;
+    optional string feed = 5;
+}
+
+
+enum SignOffState {
+  UNKNOWN_SIGN_OFF = 0;
+  CONFIRMED_SIGN_OFF = 1;
+  REMOVED_SIGN_OFF = 2;
+}
+
+
+message AlbumReleaseEventData {
+    optional string album_gid = 1;  // 32 character hex gid
+    optional string artist_gid = 2;  // 32 character hex gid
+    optional string countries = 3;  // comma separated ISO 3166-1 alpha-2
+    // set this to True if you want to send a notification for an album recorded
+    // by a blacklisted artist
+    optional bool blacklisted_artist = 4;
+    repeated AlbumData albums = 5;  // 32 character hex gids (to replace album_gid above)
+    optional SignOffState signed_off = 6;
+    optional string sign_off_comment = 7;
+    optional int32 sign_off_follower_count = 8;
+}
+
+message ArtistRecommendationEventData {
+    repeated string username_batch = 1;
+    repeated string top_artist_gid = 2;  // 32 character hex gid
+    optional int32 seed = 3;
+}
+
+message DominoRecommendationEventData {
+    repeated string username_batch = 1;
+    optional int32 seed = 2;
+}
+
+enum AppType {
+  TYPE_UNKNOWN_APP = 0;
+  TYPE_IOS_APP = 1;
+  TYPE_ANDROID_APP = 2;
+  TYPE_LINK_APP = 3;
+  TYPE_MFT_LAUNCH = 4;
+  TYPE_MFT_REMINDER = 5;
+  TYPE_MFT_SEASON = 6;
+}
+
+message ApplicationReleaseEventData {
+  optional AppType app = 1;
+  optional string uri = 2;
+  optional string image_url = 3;
+  optional bool new_app = 4;
+  repeated string recipients = 5;
+}
+
+enum EventType {
+  TYPE_UNKNOWN_EVENT = 0;
+  TYPE_PLAYLIST_SUB = 4;
+  TYPE_SIGNUP = 5;
+  TYPE_RESET = 6;
+  TYPE_PLAYLIST_UPDATE = 7;
+  TYPE_NEW_FOLLOWER = 8;
+  TYPE_NEW_RADIO_STATION = 9;
+  TYPE_NEW_MFR_USER = 10;
+  TYPE_ALBUM_RELEASE = 11;
+  TYPE_ARTIST_RECOMMENDATION = 12;
+  TYPE_INBOX_MESSAGE = 17;
+  TYPE_APPLICATION_RELEASE = 18;
+  TYPE_SIGNUP_ACTIVATION_TUTORIAL = 19;
+  TYPE_DOMINO_RECOMMENDATION = 20;
+  TYPE_SOCIAL_REACTION = 22;
+}
+
+message Event {
+  // The version of this message.
+  optional int32 version = 1;
+
+  // The type of the notification.
+  optional EventType type = 2;
+
+  // The person whose action generated this notification.
+  optional string initiator_username = 3;
+
+  optional PlaylistSubEventData playlist_sub_data = 4;
+  optional SignupEventData signup_data = 5;
+  optional ResetEventData reset_data = 6;
+  optional PlaylistUpdateEventData playlist_update_data = 7;
+  optional NewFollowerEventData new_follower_data = 8;
+  optional NewRadioStationEventData new_radio_station_data = 9;
+
+  optional bool no_delay_for_testing = 10;
+
+  optional NewMfrUserEventData new_mfr_user_data = 11;
+  optional AlbumReleaseEventData album_release_data = 12;
+  optional ArtistRecommendationEventData artist_recommendation_data = 13;
+
+  optional bool no_frequency_check_for_testing = 14;
+  repeated string recipient_override_for_testing = 15;
+  optional bool dry_for_testing = 16;
+
+  optional InboxMessageEventData inbox_message_data = 17;
+  optional ApplicationReleaseEventData application_release_data = 18;
+  optional DominoRecommendationEventData domino_recommendation_data = 20;
+  optional SocialReactionEventData social_reaction_data = 22;
+
+  repeated string skip_channels = 21;
+}
+
+
+message EmailNotificationData {
+  optional string template_category = 1;
+  optional string template_payload = 2;
+  optional string template_url_override = 3;
+  optional string to_address = 4;
+  optional string to_name = 5;
+  optional bool dry = 6;
+}
+
+message User {
+  optional string canonical_username = 1;
+  optional string real_name = 2;
+}
+
+message PlaylistSubObject {
+  optional string uri = 1;
+  optional User owner = 2;
+  optional User profile_user = 4; // if known
+}
+
+message TrackAddObject {
+  optional int32 track_count = 1;
+  optional string uri = 2;
+  repeated string track_uri = 3; // not necessarily all
+}
+
+message AlbumReleaseObject {
+  optional string album_gid = 1;
+  optional string artist_gid = 2;
+  optional string album_name = 3;
+  optional string artist_name = 4;
+  optional string track_gid = 5;  // used if you want to link to a specifik track in an album
+  optional string track_name = 6; // name of the above track
+  optional bool exclusive = 7;
+}
+
+message ApplicationReleaseObject {
+  optional AppType app = 1;
+  optional string uri = 2;
+  optional string image_url = 3;
+  optional bool new_app = 4;
+}
+
+message InClientNotificationData {
+
+  optional int32 version = 1;
+
+  optional NotificationState state = 2;
+
+  repeated User subject = 4;
+
+  optional int32 subject_total = 5;
+
+  optional string notification_verb = 6;
+
+  repeated PlaylistSubObject playlist_sub_object = 8;
+
+  repeated TrackAddObject track_add_object = 10;
+
+  repeated AlbumReleaseObject album_release_object = 11;
+
+  repeated ApplicationReleaseObject application_release_object=12;
+
+  repeated SocialReactionEventData social_reaction_object = 13; // Simply forward the event data
+}
+
+
+message PushNotificationData {
+  optional int32 version = 1;
+
+  optional string certificate_type = 2;
+
+  optional string text = 3;
+
+  optional string uri = 4;
+
+  optional string tag = 5;
+
+  optional bool play = 6;
+}
+
+
+enum NotificationType {
+  TYPE_UNKNOWN_NOTIFICATION = 0;
+  TYPE_RESET_NOTIFICATION = 1;
+  TYPE_EMAIL_NOTIFICATION = 4;
+  TYPE_IN_CLIENT_NOTIFICATION = 5;
+  TYPE_STATE_UPDATE_NOTIFICATION = 7;
+  TYPE_PUSH_NOTIFICATION = 8;
+}
+
+message Notification {
+  // The version of this message.
+  optional int32 version = 1;
+
+  // The type of the notification.
+  optional NotificationType type = 2;
+
+  // The event whose response action generated this notification.
+  //optional bytes source_event_id = 3;
+
+  optional EmailNotificationData email_data = 4;
+  optional InClientNotificationData in_client_data = 5;
+  optional PushNotificationData push_data = 6;
+
+  optional bool dry = 7;
+}
+
+
+message NotificationState {
+  //optional bytes notification_id = 1; // UUID
+  optional bool seen = 2;
+  optional bool dismissed = 3;
+  optional bool followed_through = 4;
+
+  optional string notification_id_hex = 5; // used by the client, since boink mangles the bytes
+  optional string state_id_hex = 6; // used by the client, since boink mangles the bytes
+
+  //optional bytes state_id = 7;
+
+  //optional float OBSOLETE_notification_id_ticks = 8; // since the client can't do UUID -> ticks (stupid JS)
+  //optional float OBSOLETE_state_id_ticks = 9;
+
+  optional int64 notification_id_ms = 10;
+  optional int64 state_id_ms = 11;
+}
+
+message NotificationList {
+  repeated Notification notification = 1;
+}
+
+message NotificationStateList {
+  repeated NotificationState state = 1;
+}
+
+message NotificationCounts {
+  optional int32 version = 1;
+
+  optional int32 active = 2;
+}
