@@ -24,9 +24,12 @@ module.exports = function(grunt) {
       },
     },
     watch: {
-      source: {
+      sass: {
         files: ['skin/**/*.scss'],
-        tasks: ['sass']
+        tasks: ['sass'],
+        options: {
+          spawn: false
+        }
       }
     }
   });
