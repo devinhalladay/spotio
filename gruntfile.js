@@ -6,8 +6,9 @@ module.exports = function(grunt) {
     sass: {
       options: {
         sourceMap: false,
+        sourceComments: true
       },
-      glue: {
+      glue: { // Process GLUE Sass
         files: [{
           expand: true,
           cwd: "skin",
@@ -16,13 +17,14 @@ module.exports = function(grunt) {
           ext: ".css"
         }]
       },
-      apps: {
+      apps: { // Process App-specific Sass
         files: [{
           expand: true,
           cwd: "skin/apps",
           src: ["*.scss"],
           dest: "Apps/",
           ext: ".css",
+          // The function below is a hack to move compiled CSS files into /Apps/[filename_base]/css/style.css
           rename: function(dest, src) {
             return dest + src.slice(0, -4) + "/css/" + 'style.css';
           }
@@ -37,10 +39,10 @@ module.exports = function(grunt) {
         tasks: ['sass']
       }
     }
-
   });
 
   // Load dependencies
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-sass');
 

@@ -1,12 +1,12 @@
 # Compile Sass
-echo "## Compiling sass from skin/..."
-echo "\n## Processing glue1.scss..."
-sass --sourcemap=none skin/glue1.scss:dist/glue1.css
+# echo "## Compiling sass from skin/..."
+# echo "\n## Processing glue1.scss..."
+# sass --sourcemap=none skin/glue1.scss:dist/glue1.css
 
-echo "## Processing individual App sass..."
-for name in skin/apps/*.scss
-  do sudo sass --sourcemap=none $name Apps/$(basename $name .scss)/css/style.css
-done
+# echo "## Processing individual App sass..."
+# for name in skin/apps/*.scss
+#   do sudo sass --sourcemap=none $name Apps/$(basename $name .scss)/css/style.css
+# done
 
 # Filter build/glue1.css into all app dirs
 echo "\n## Placing processed glue1.css into all App directories"
