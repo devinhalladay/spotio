@@ -91,7 +91,7 @@ module.exports = function(grunt) {
           expand: true,
           cwd: '.tmp/',
           src: ['Spotify.app/**'],
-          dest: 'dist/Spotify.app/',
+          dest: 'dist/',
         }]
       },
     },
