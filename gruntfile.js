@@ -15,7 +15,7 @@ module.exports = function(grunt) {
           expand: true,
           cwd: "skin/apps",
           src: ["*.scss"],
-          dest: "test/apps/",
+          dest: "build/Apps/",
           ext: ".css",
           rename: function(dest, src) {
             return dest + src.slice(0, -4) + "/" + 'style.css';
