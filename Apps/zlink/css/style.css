@@ -456,12 +456,12 @@
 
 /* line 410, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .capping-full-screen-message .cfsm-close-btn.active {
-  color: #008CD6; }
+  color: green; }
 
 /* line 413, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .capping-full-screen-message .cfsm-close-btn.active.contextmenu-active,
 .capping-full-screen-message .cfsm-close-btn.active:not(:disabled):hover {
-  color: #008CD6; }
+  color: green; }
 
 /* line 417, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .capping-full-screen-message .cfsm-close-btn.drop-target-active {
@@ -665,7 +665,7 @@
   content: ' ';
   display: block;
   position: absolute;
-  border-right: 4px solid #008CD6;
+  border-right: 4px solid green;
   left: 0;
   top: 0px;
   bottom: 0px;
@@ -1006,7 +1006,7 @@
   top: 0;
   right: 2px;
   height: 32px;
-  color: #008CD6; }
+  color: green; }
 
 /* line 893, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .navbar-old-chrome-style.sidebar-scroll-element .offline.complete .edit {
@@ -1265,13 +1265,13 @@
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item:not(.folder).active > div:focus,
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item:not(.folder).active > a:focus,
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item.folder.active .title:focus {
-  color: #008CD6; }
+  color: green; }
 
 /* line 1107, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item:not(.folder).active > div:hover,
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item:not(.folder).active > a:hover,
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item.folder.active .title:hover {
-  color: #008CD6; }
+  color: green; }
 
 /* line 1112, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .playing-indicator {
@@ -1623,7 +1623,7 @@
 /* line 1421, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item.offline.complete .offline-indicator {
   display: block;
-  color: #008CD6; }
+  color: green; }
 
 /* line 1425, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item.offline.complete.playing .offline-indicator {
@@ -1733,7 +1733,7 @@
 
 /* line 1515, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item.active .drop-target-active {
-  color: #008CD6; }
+  color: green; }
 
 /* line 1518, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item.offline.waiting .drop-target-active,
@@ -1873,7 +1873,7 @@
 .new-playlist-old-chrome-style:hover,
 .show-focus .new-playlist-old-chrome-style:focus {
   color: #ffffff;
-  background: #008CD6; }
+  background: green; }
 
 /* line 1641, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .new-playlist-old-chrome-style:hover .new-playlist-icon,
@@ -1889,7 +1889,7 @@
 /* line 1650, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .new-playlist-old-chrome-style.drop-target-active {
   color: #ffffff;
-  background: #008CD6; }
+  background: green; }
 
 /* line 1654, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .new-playlist-new-chrome-style {
@@ -2283,7 +2283,7 @@
 
 /* line 1979, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .profile:hover {
-  color: #008CD6; }
+  color: green; }
 
 /* line 1982, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .profile:hover .spoticon-user-16,
@@ -2435,7 +2435,7 @@
 /* line 2106, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .view-player #connect #devices-label.remote,
 .view-player #connect #devices-icon.remote {
-  color: #008CD6; }
+  color: green; }
 
 /* line 2110, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .view-player #connect #devices-icon {
@@ -2657,13 +2657,13 @@
 
 /* line 2298, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .view-player #connect-picker #connect-container #connect-devices ul li.active {
-  color: #008CD6; }
+  color: green; }
 
 /* line 2301, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .view-player #connect-picker #connect-container #connect-devices ul li.active .device-title,
 .view-player #connect-picker #connect-container #connect-devices ul li.active .device-subtitle,
 .view-player #connect-picker #connect-container #connect-devices ul li.active .device-icon::before {
-  color: #008CD6; }
+  color: green; }
 
 /* line 2306, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .view-player #connect-picker #connect-container #connect-devices ul li.not-available .device-title,
@@ -2716,7 +2716,7 @@
 /* line 2344, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .view-player .remote-playback-bar {
   display: none;
-  background-color: #008CD6;
+  background-color: green;
   position: relative;
   left: 0;
   height: 20px;
@@ -2746,7 +2746,7 @@
   height: 0;
   content: "";
   border: 10px solid transparent;
-  border-bottom: 10px solid #008CD6;
+  border-bottom: 10px solid green;
   right: 190px;
   position: absolute;
   top: -20px; }
@@ -2857,14 +2857,14 @@ body.remotebar #connect-container-background {
 /* line 2477, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 #progressbar[data-saber-color='green'] .inner,
 #progress-bar-new[data-saber-color='green'] .inner {
-  box-shadow: 0 0 16px 1px #008CD6;
+  box-shadow: 0 0 16px 1px green;
   background-image: -webkit-linear-gradient(top, #87dc5a 0%, #FFFFFF 30%, #FFFFFF 50%, #FFFFFF 70%, #87dc5a 100%);
   /* flicker intensity */ }
 
 /* line 2483, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 #progressbar[data-saber-color='green'] .inner:before,
 #progress-bar-new[data-saber-color='green'] .inner:before {
-  box-shadow: 0 0 16px 4px #008CD6; }
+  box-shadow: 0 0 16px 4px green; }
 
 /* line 2487, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 #progressbar[data-saber-color='blue'] .inner,
@@ -4493,13 +4493,13 @@ body.remotebar #connect-container-background {
 
 /* line 3999, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .view-player-new #connect-picker-new-chrome-style #connect-container-new-chrome-style .connect-devices-new-chrome-style ul li.active {
-  color: #008CD6; }
+  color: green; }
 
 /* line 4002, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .view-player-new #connect-picker-new-chrome-style #connect-container-new-chrome-style .connect-devices-new-chrome-style ul li.active .device-title,
 .view-player-new #connect-picker-new-chrome-style #connect-container-new-chrome-style .connect-devices-new-chrome-style ul li.active .device-subtitle,
 .view-player-new #connect-picker-new-chrome-style #connect-container-new-chrome-style .connect-devices-new-chrome-style ul li.active .device-icon::before {
-  color: #008CD6; }
+  color: green; }
 
 /* line 4007, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .view-player-new #connect-picker-new-chrome-style #connect-container-new-chrome-style .connect-devices-new-chrome-style ul li.active .device-subtitle {
@@ -4533,7 +4533,7 @@ body.remotebar #connect-container-background {
 /* line 4030, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .view-player-new .remote-playback-bar {
   display: none;
-  background-color: #008CD6;
+  background-color: green;
   position: relative;
   left: 0;
   height: 20px;
@@ -4572,7 +4572,7 @@ body.remotebar #connect-container-background {
   height: 0;
   content: "";
   border: 10px solid transparent;
-  border-bottom: 10px solid #008CD6;
+  border-bottom: 10px solid green;
   right: -10px;
   position: absolute;
   top: -20px; }
@@ -4871,7 +4871,7 @@ body.remotebar #connect-container-background-new-chrome-style {
 /* line 4320, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .view-player-new .player-controls-container .progress-container.progress-bar-enabled:hover .progress-bar .inner,
 .view-player-new .player-controls-container .progress-container.progress-bar-enabled.dragging-progress-bar .progress-bar .inner {
-  background-color: #008CD6; }
+  background-color: green; }
 
 /* line 4324, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .view-player-new .player-controls-container .progress-container:hover .elapsed,
@@ -5516,7 +5516,7 @@ body.remotebar #connect-container-background-new-chrome-style {
 /* line 4911, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .view-player-new .player-controls-container .controls .previous.active,
 .view-player-new .player-controls-container .controls .next.active {
-  color: #008CD6; }
+  color: green; }
 
 /* line 4915, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .view-player-new .player-controls-container .controls .previous.active.contextmenu-active,
@@ -6040,7 +6040,7 @@ body.remotebar #connect-container-background-new-chrome-style {
 .view-player-new .player-controls-container .controls .button-repeat.active,
 .view-player-new .player-controls-container .controls .button-thumbs-down.active,
 .view-player-new .player-controls-container .controls .button-thumbs-up.active {
-  color: #008CD6; }
+  color: green; }
 
 /* line 5415, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .view-player-new .player-controls-container .controls .button-shuffle.active.contextmenu-active,
@@ -6490,7 +6490,7 @@ body.remotebar #connect-container-background-new-chrome-style {
 .view-player-new .extra-controls-container .button-lyrics.active,
 .view-player-new .extra-controls-container .button-queue.active,
 .view-player-new .extra-controls-container .button-devices.active {
-  color: #008CD6; }
+  color: green; }
 
 /* line 5840, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .view-player-new .extra-controls-container .button-lyrics.active.contextmenu-active,
@@ -6541,7 +6541,7 @@ body.remotebar #connect-container-background-new-chrome-style {
 /* line 5879, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .view-player-new .extra-controls-container .volumebar-container .progress-bar-wrapper.active .inner,
 .view-player-new .extra-controls-container .volumebar-container .progress-bar-wrapper:hover .inner {
-  background: #008CD6; }
+  background: green; }
 
 /* line 5883, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .view-player-new .image-expanded .cover-image-link-wrapper {
@@ -6901,7 +6901,7 @@ body.remotebar #connect-container-background-new-chrome-style {
 
 /* line 6194, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .view-player-new .nowplaying-add-button.active {
-  color: #008CD6; }
+  color: green; }
 
 /* line 6197, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .view-player-new .nowplaying-add-button.active.contextmenu-active,
@@ -6925,7 +6925,7 @@ body.remotebar #connect-container-background-new-chrome-style {
 
 /* line 6213, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .view-player-new .nowplaying-add-button.added {
-  color: #008CD6; }
+  color: green; }
 
 /* End Other styles */
 /* line 6217, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
@@ -6991,7 +6991,7 @@ body.remotebar #connect-container-background-new-chrome-style {
 /* line 6266, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .search-suggest iframe {
   max-height: 100%;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 4px #ffffff;
   border-radius: 5px; }
 
 /* line 6271, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
@@ -7635,7 +7635,7 @@ body.remotebar #connect-container-background-new-chrome-style {
   left: 0;
   width: 0;
   height: 5px;
-  background-color: #008CD6;
+  background-color: green;
   transition: width 0.25s ease-out; }
 
 /* line 6817, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
@@ -7928,7 +7928,7 @@ body.remotebar #connect-container-background-new-chrome-style {
 
 /* line 7056, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 #churned-locked-state .cancel-sub {
-  color: #008CD6; }
+  color: green; }
 
 /* line 7059, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 #view-buddy-list {
@@ -8372,7 +8372,7 @@ body.remotebar #connect-container-background-new-chrome-style {
 
 /* line 7471, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .video-close-button.active {
-  color: #008CD6; }
+  color: green; }
 
 /* line 7474, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .video-close-button.active.contextmenu-active,
