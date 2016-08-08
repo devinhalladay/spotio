@@ -142,6 +142,7 @@ module.exports = function(grunt) {
   });
 
   // Load dependencies
+  grunt.loadNpmTasks('grunt-contrib-compress');
   grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-mkdir');
   grunt.loadNpmTasks('grunt-curl');
