@@ -78,25 +78,32 @@ module.exports = function(grunt) {
           { src: 'dist/glue1.css', dest: 'Apps/zlogin/css/glue1.css' },
         ]
       },
-      apps: {
+      apps: { // Copy App directories into .tmp/Spotify.app
         files: [{
           expand: true,
           cwd: 'Apps',
           src: ['**/*'],
           dest: '.tmp/Spotify.app/Contents/Resources/Apps/',
         }]
-      }
+      },
+      spotifyapp: { // Copy completed Spotify.app to dist/
+        files: [{
+          expand: true,
+          src: ['.tmp/Spotify.app'],
+          dest: 'dist/Spotify.app/',
+        }]
+      },
     },
 
     // Watch and build
     watch: {
       glue: { // Watch our GLUE file separately from App sass
         files: ['skin/**/*.scss', '!skin/apps/*.scss'],
-        tasks: ['sass:glue', 'copy:glue', 'copy:apps']
+        tasks: ['sass:glue', 'copy:glue', 'copy:apps', 'copy:spotifyapp']
       },
       apps: { // Watch App-specific sass separately from GLUE
         files: ['skin/apps/*.scss', 'skin/base/_variables.scss'],
-        tasks: ['sass:apps', 'copy:apps']
+        tasks: ['sass:apps', 'copy:apps', 'copy:spotifyapp']
       },
     },
 
@@ -104,6 +111,11 @@ module.exports = function(grunt) {
     clean: {
       // Delete .spa files
       spa: ['.tmp/Spotify.app/Contents/Resources/Apps/*.spa'],
+      oldApps: {
+        files: {
+          src: ['.tmp/Spotify.app', '.tmp/Spotify.dmg']
+        }
+      }
     },
   });
 

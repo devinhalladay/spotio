@@ -21,10 +21,10 @@
 # sudo cp -r "Apps/"* ".tmp/Spotify.app/Contents/Resources/Apps/"
 
 # Move our compiled app into /dist
-echo "\n## Moving Spotify.app to dist/"
-sudo cp -r ".tmp/Spotify.app" "dist/"
+# echo "\n## Moving Spotify.app to dist/"
+# sudo cp -r ".tmp/Spotify.app" "dist/"
 
-echo "\n## Done! Your customized Spotify.app is available for launch at dist/Spotify.app"
+# echo "\n## Done! Your customized Spotify.app is available for launch at dist/Spotify.app"
 
 # Chmod again because the chromium embedded framework is a piece of steaming shit
 # sudo chmod -R 755 dist/Spotify.app

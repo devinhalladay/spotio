@@ -10,6 +10,7 @@ I sorely miss Rdio. It was the perfect music streaming service: quality streamin
 ## DOCS
 - `sudo grunt`: Build all CSS and watch for changes
 - `sudo grunt clean`: Deletes all `.spa` files from .tmp/Spotify.app
+- `sudo grunt clean:oldApps`: Deletes old apps in .tmp
 
 ## TODO
 - [x] Streaming build system so I don't need to keep rebuilding and recompiling every single Sass file when I make a single change.
