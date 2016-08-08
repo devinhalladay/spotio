@@ -1,9 +1,12 @@
+/* line 4, /Users/Devin/GitHub/spotio/skin/apps/collection.scss */
 body {
   padding-top: 0px; }
 
+/* line 7, /Users/Devin/GitHub/spotio/skin/apps/collection.scss */
 body.show-offline-screen {
   overflow: hidden; }
 
+/* line 10, /Users/Devin/GitHub/spotio/skin/apps/collection.scss */
 .error-and-offline {
   position: fixed; }
 
@@ -12,35 +15,44 @@ body.show-offline-screen {
   we can't put the padding on the body, since it affects elements with
   fixed position. Instead, we put the padding on the container element.
 */
+/* line 18, /Users/Devin/GitHub/spotio/skin/apps/collection.scss */
 body.show-nav > .container {
   padding-top: 47px; }
 
+/* line 21, /Users/Devin/GitHub/spotio/skin/apps/collection.scss */
 body.show-nav .albums-page,
 body.show-nav .artists-page {
   padding-top: 47px; }
 
+/* line 25, /Users/Devin/GitHub/spotio/skin/apps/collection.scss */
 body,
 html {
   height: 100%; }
 
+/* line 29, /Users/Devin/GitHub/spotio/skin/apps/collection.scss */
 .tab-panel {
   position: absolute; }
 
+/* line 32, /Users/Devin/GitHub/spotio/skin/apps/collection.scss */
 .tab-panel.full-width {
   width: 100%;
   height: 100%; }
 
+/* line 36, /Users/Devin/GitHub/spotio/skin/apps/collection.scss */
 .full-height {
   height: 100%; }
 
+/* line 39, /Users/Devin/GitHub/spotio/skin/apps/collection.scss */
 .artists-page .viewport-container,
 .albums-page .viewport-container {
   padding-top: 15px; }
 
+/* line 43, /Users/Devin/GitHub/spotio/skin/apps/collection.scss */
 .artists-page:not(.all-controls-on-artist-cards) .media-object .mo-add,
 .artists-page:not(.all-controls-on-artist-cards) .media-object .mo-more {
   display: none; }
 
+/* line 47, /Users/Devin/GitHub/spotio/skin/apps/collection.scss */
 .container {
   /**
    * Force hardware acceleration on the grid
@@ -49,9 +61,11 @@ html {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
 
+/* line 55, /Users/Devin/GitHub/spotio/skin/apps/collection.scss */
 .throbber-wrapper {
   height: 100%; }
 
+/* line 58, /Users/Devin/GitHub/spotio/skin/apps/collection.scss */
 .throbber-wrapper .sp-throbber {
   position: absolute;
   top: 50%;
@@ -61,30 +75,36 @@ html {
   margin-top: -11px;
   margin-left: -11px; }
 
+/* line 67, /Users/Devin/GitHub/spotio/skin/apps/collection.scss */
 .error-message {
   text-align: center;
   width: 100%;
   font-size: 30px;
   color: #666; }
 
+/* line 73, /Users/Devin/GitHub/spotio/skin/apps/collection.scss */
 .error-message-centered {
   position: absolute;
   top: 50%;
   left: 0px; }
 
+/* line 78, /Users/Devin/GitHub/spotio/skin/apps/collection.scss */
 body.show-offline-screen {
   overflow: hidden; }
 
+/* line 81, /Users/Devin/GitHub/spotio/skin/apps/collection.scss */
 .sorting-select .dropdown .dropdown-menu {
   margin-top: 0; }
 
 /* .app-navigation is fixed by default in glue, but that plays TREMENDOUSLY
 bad with scroll performance on large lists. */
+/* line 86, /Users/Devin/GitHub/spotio/skin/apps/collection.scss */
 .unfixed .app-navigation {
   position: absolute !important; }
 
 /* To cover the old app state when in the process
    of loading a new one. */
+/* line 91, /Users/Devin/GitHub/spotio/skin/apps/collection.scss */
 .curtain {
   position: fixed;
   background-color: #fff;
@@ -95,15 +115,19 @@ bad with scroll performance on large lists. */
   z-index: 99999; }
 
 /* TODO: Fix these is GLUE instead */
+/* line 101, /Users/Devin/GitHub/spotio/skin/apps/collection.scss */
 .tl-time {
   text-overflow: clip !important; }
 
+/* line 104, /Users/Devin/GitHub/spotio/skin/apps/collection.scss */
 .tl-date-added {
   width: 90px; }
 
+/* line 107, /Users/Devin/GitHub/spotio/skin/apps/collection.scss */
 .mo-more {
   background: none; }
 
+/* line 110, /Users/Devin/GitHub/spotio/skin/apps/collection.scss */
 .error-and-offline .hdr-l:empty {
   margin: 0; }
 
@@ -114,5 +138,6 @@ bad with scroll performance on large lists. */
   version within the foreseeable future, we cherry-pick the fix here. The
   backstory to the bug is here https://ghe.spotify.net/design/glue/pull/572
 */
+/* line 120, /Users/Devin/GitHub/spotio/skin/apps/collection.scss */
 a:focus {
   outline: none; }

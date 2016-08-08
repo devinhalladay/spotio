@@ -1,67 +1,84 @@
+/* line 4, /Users/Devin/GitHub/spotio/skin/apps/zlogin.scss */
 html,
 body {
   height: 100%;
   width: 100%;
   background: #ffffff; }
 
+/* line 10, /Users/Devin/GitHub/spotio/skin/apps/zlogin.scss */
 a {
   cursor: pointer; }
 
+/* line 13, /Users/Devin/GitHub/spotio/skin/apps/zlogin.scss */
 .message {
   display: none;
   margin-bottom: 10px; }
 
+/* line 17, /Users/Devin/GitHub/spotio/skin/apps/zlogin.scss */
 #main,
 #throbber {
   display: none; }
 
+/* line 21, /Users/Devin/GitHub/spotio/skin/apps/zlogin.scss */
 #main {
   background: url(../images/background.jpg) no-repeat top center;
   background-size: cover;
   transition: 0.2s opacity;
   height: 100%; }
 
+/* line 27, /Users/Devin/GitHub/spotio/skin/apps/zlogin.scss */
 #container {
   display: table;
   width: 100%;
   height: 100%; }
 
+/* line 32, /Users/Devin/GitHub/spotio/skin/apps/zlogin.scss */
 .container-row {
   display: table-row; }
 
+/* line 35, /Users/Devin/GitHub/spotio/skin/apps/zlogin.scss */
 #logo-container {
   text-align: center;
   position: relative; }
 
+/* line 39, /Users/Devin/GitHub/spotio/skin/apps/zlogin.scss */
 #logo {
   display: table-cell;
   vertical-align: bottom;
   padding-bottom: 46px; }
 
+/* line 44, /Users/Devin/GitHub/spotio/skin/apps/zlogin.scss */
 .logo-image {
   width: 190px;
   height: 58px; }
 
+/* line 48, /Users/Devin/GitHub/spotio/skin/apps/zlogin.scss */
 input {
   margin-top: 5px; }
 
+/* line 51, /Users/Devin/GitHub/spotio/skin/apps/zlogin.scss */
 #login {
   margin: 0 auto;
   text-align: center;
   width: 304px; }
 
+/* line 56, /Users/Devin/GitHub/spotio/skin/apps/zlogin.scss */
 #login-submit {
   margin-top: 15px; }
 
+/* line 59, /Users/Devin/GitHub/spotio/skin/apps/zlogin.scss */
 img {
   pointer-events: none; }
 
+/* line 62, /Users/Devin/GitHub/spotio/skin/apps/zlogin.scss */
 #login-button-facebook {
   width: 100%; }
 
+/* line 65, /Users/Devin/GitHub/spotio/skin/apps/zlogin.scss */
 #login-button {
   margin-top: 20px; }
 
+/* line 68, /Users/Devin/GitHub/spotio/skin/apps/zlogin.scss */
 #login-or {
   overflow: hidden;
   margin: 20px auto;
@@ -71,9 +88,10 @@ img {
   height: 16px;
   cursor: default; }
 
+/* line 77, /Users/Devin/GitHub/spotio/skin/apps/zlogin.scss */
 #login-or:before,
 #login-or:after {
-  background-color: #404040;
+  background-color: #ffffff;
   content: "";
   display: inline-block;
   height: 1px;
@@ -81,42 +99,52 @@ img {
   vertical-align: middle;
   width: 50%; }
 
+/* line 87, /Users/Devin/GitHub/spotio/skin/apps/zlogin.scss */
 #login-or:before {
   right: 0.5em;
   margin-left: -50%; }
 
+/* line 91, /Users/Devin/GitHub/spotio/skin/apps/zlogin.scss */
 #login-or:after {
   left: 0.5em;
   margin-right: -50%; }
 
+/* line 95, /Users/Devin/GitHub/spotio/skin/apps/zlogin.scss */
 #login-message {
   cursor: default; }
 
+/* line 98, /Users/Devin/GitHub/spotio/skin/apps/zlogin.scss */
 .form-control {
-  background-color: #333333 !important;
+  background-color: #ffffff !important;
   border: 0 !important;
-  color: #FFFFFF !important; }
+  color: #56666F !important; }
 
+/* line 103, /Users/Devin/GitHub/spotio/skin/apps/zlogin.scss */
 .form-control::-webkit-input-placeholder {
-  color: #A0A0A0 !important; }
+  color: #9CA6AC !important; }
 
+/* line 106, /Users/Devin/GitHub/spotio/skin/apps/zlogin.scss */
 .form-control:focus {
-  border-color: #404040 !important;
+  border-color: #008CD6 !important;
   outline: 0 !important;
-  background-color: #404040 !important;
-  color: #FFFFFF !important; }
+  background-color: #ffffff !important;
+  color: #56666F !important; }
 
+/* line 112, /Users/Devin/GitHub/spotio/skin/apps/zlogin.scss */
 .remember-me {
   height: 22px;
   margin-bottom: 20px; }
 
+/* line 116, /Users/Devin/GitHub/spotio/skin/apps/zlogin.scss */
 #remember-me-field {
   float: right; }
 
+/* line 119, /Users/Devin/GitHub/spotio/skin/apps/zlogin.scss */
 #rememberme-label {
   float: left;
   margin: 0; }
 
+/* line 123, /Users/Devin/GitHub/spotio/skin/apps/zlogin.scss */
 #bottom-links {
   text-align: center;
   width: 100%;
@@ -125,14 +153,16 @@ img {
   line-height: 16px;
   letter-spacing: 0.015em;
   font-weight: 200;
-  color: #A0A0A0;
+  color: #9CA6AC;
   text-transform: uppercase;
   letter-spacing: 0.16em;
   line-height: 35px; }
 
+/* line 136, /Users/Devin/GitHub/spotio/skin/apps/zlogin.scss */
 html {
   -webkit-app-region: drag; }
 
+/* line 139, /Users/Devin/GitHub/spotio/skin/apps/zlogin.scss */
 html #login,
 html #remember-me-field > div,
 html #bottom-links > a {

@@ -1,3 +1,4 @@
+/* line 4, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 .composer {
   border-top: 1px solid #404040;
   bottom: 0;
@@ -7,73 +8,93 @@
   width: 100%;
   z-index: 1; }
 
+/* line 13, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 .composer .controls {
   height: 45px;
   line-height: 25px;
   padding: 10px 0px;
   text-align: right; }
 
+/* line 19, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 .composer .entertosend-wrapper {
   display: inline-block;
   margin-right: 5px; }
 
+/* line 23, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 .composer .entertosend-wrapper .slider {
   display: inline-block;
   margin-left: 5px;
   margin-top: -2px;
   vertical-align: middle; }
 
+/* line 29, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 .composer textarea {
   height: 100px;
   resize: none; }
 
 @media (max-width: 853px) {
+  /* line 34, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
   .composer {
     padding-left: 20px; } }
+
 @media (max-width: 585px) {
+  /* line 39, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
   .composer {
     padding-left: 20px; } }
+
+/* line 43, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 #thread-body {
   height: 100%;
   padding-bottom: 170px; }
 
+/* line 47, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 #thread-body .scroller {
   padding-right: 12px; }
 
+/* line 50, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 #thread-nav {
   border-bottom: 1px solid #404040;
   box-shadow: none;
   height: 86px;
   padding-top: 33px; }
 
+/* line 56, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 #thread-nav h2 {
   margin: 0; }
 
+/* line 59, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 #thread-nav #back-to-convos {
   margin-top: 5px; }
 
+/* line 62, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 .msg-list .divider .divider-title {
   color: #A0A0A0; }
 
+/* line 65, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 .msg-list {
   padding-top: 46px;
   height: 100%;
   overflow-x: hidden;
   padding-right: 20px; }
 
+/* line 71, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 .msg-grp {
   margin: 25px 0; }
 
+/* line 74, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 .msg-grp-body {
   padding-left: 54px; }
 
+/* line 77, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 .msg-grp-heading {
   margin-bottom: 0; }
 
+/* line 80, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 .msg-grp-heading a {
   color: #FFFFFF;
   text-indent: -1px; }
 
+/* line 84, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 .msg-grp-message {
   -webkit-user-select: text;
   -moz-user-select: text;
@@ -82,42 +103,54 @@
   user-select: text;
   word-wrap: break-word; }
 
+/* line 92, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 .msg-grp-message > p {
   margin-right: 90px; }
 
+/* line 95, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 .msg-grp-message .time {
   float: right; }
 
+/* line 98, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 .msg-grp-message .send-failed {
   opacity: 0.4; }
 
+/* line 101, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 .msg-grp-usericon {
   height: 40px;
   position: relative;
   top: 4px;
   width: 40px; }
 
+/* line 107, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 .playstate-text {
   font-size: 13px;
   line-height: 24px;
   height: 24px;
   padding-top: 3px; }
 
+/* line 113, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 .playstate-text .icon-played {
   color: #008CD6; }
 
 @media (max-width: 853px) {
+  /* line 117, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
   #thread-body .scroller {
     padding-left: 8px; } }
+
 @media (max-width: 585px) {
+  /* line 122, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
   #thread-body .scroller {
     padding-left: 8px; } }
+
+/* line 126, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 #thread-list {
   height: 100%;
   overflow: hidden;
   padding-top: 86px;
   padding-bottom: 70px; }
 
+/* line 132, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 #thread-list-actions {
   border-top: 1px solid #404040;
   padding: 12px;
@@ -125,31 +158,40 @@
   width: 100%;
   z-index: 9999; }
 
+/* line 139, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 .thread-scroll-area {
   height: 100%; }
 
+/* line 142, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 .thread-scroll-area .list-group {
   margin-bottom: 0; }
 
+/* line 145, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 .thread-scroll-area .list-group-item .auxiliary-box {
   right: 20px !important; }
 
+/* line 148, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 .loading #thread-list-actions {
   display: none; }
 
 @media (max-width: 853px) {
+  /* line 152, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
   #thread-list {
     padding-right: 8px; }
-
+  /* line 155, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
   #thread-list-actions {
     padding-left: 20px; } }
+
 @media (max-width: 585px) {
+  /* line 160, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
   #thread-list {
     padding-right: 8px; }
-
+  /* line 163, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
   #thread-list-actions {
     padding-left: 20px; } }
+
 /* Temporary solution since it went missing in GLUE 9 */
+/* line 168, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 .fixed-container-wrapper {
   position: fixed;
   top: 0;
@@ -158,30 +200,38 @@
   height: 100%;
   z-index: 999999999; }
 
+/* line 176, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 .fixed-container-wrapper > .container {
   height: 100%; }
 
+/* line 179, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 .fixed-container-wrapper > .container > .row {
   height: 100%;
   position: relative; }
 
+/* line 183, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 body {
   line-height: 20px; }
 
+/* line 186, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 body,
 html,
 .row {
   height: 100%; }
 
+/* line 191, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 p {
   margin-bottom: 10px; }
 
+/* line 194, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 small {
   font-size: 12px; }
 
+/* line 197, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 textarea {
   color: inherit; }
 
+/* line 200, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 #app-title {
   border-bottom: 1px solid #404040;
   left: 8px;
@@ -190,20 +240,28 @@ textarea {
   top: 0; }
 
 @media (min-width: 586px) {
+  /* line 208, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
   #app-title {
     left: 8px;
     right: 8px; } }
+
 @media (min-width: 854px) {
+  /* line 214, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
   #app-title {
     left: 10px;
     right: 10px; } }
+
 @media (min-width: 1274px) {
+  /* line 220, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
   #app-title {
     left: 12px;
     right: 12px; } }
+
+/* line 225, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 .loading #app-title {
   display: none; }
 
+/* line 228, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 #block-user-confirm {
   display: none;
   margin: 0 auto;
@@ -211,40 +269,50 @@ textarea {
   text-align: center;
   top: 20px; }
 
+/* line 235, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 #block-user-modal {
   transition-duration: 0.05s;
   transition-timing-function: ease-in, linear; }
 
+/* line 239, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 #thread-not-selected h4,
 #no-threads h4 {
   background: url(../images/no-convo.png) 50% 100px no-repeat;
   padding-top: 210px;
   text-align: center; }
 
+/* line 245, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 .loading #thread-not-selected h4 {
   background: transparent; }
 
+/* line 248, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 .loading #no-threads {
   display: none; }
 
+/* line 251, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 .popover {
   overflow: hidden; }
 
+/* line 254, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 .nav {
   font-size: 14px; }
 
+/* line 257, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
 .text-aux {
   color: #A0A0A0; }
 
 @media (max-width: 853px) {
+  /* line 261, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
   #thread-not-selected {
     display: none; }
-
+  /* line 264, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
   #thread-nav {
     padding-top: 20px; }
-
+  /* line 267, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
   #thread-nav h2 {
     display: none; } }
+
 @media (min-width: 854px) {
+  /* line 272, /Users/Devin/GitHub/spotio/skin/apps/messages.scss */
   #thread-nav #back-to-convos {
     display: none; } }

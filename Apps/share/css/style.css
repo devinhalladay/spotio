@@ -1,24 +1,30 @@
 /* General styles */
+/* line 6, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 html,
 body {
   height: 100%;
   margin: 0;
   overflow: hidden; }
 
+/* line 12, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 .popover-content h2 {
   font-size: 14px;
   color: #A0A0A0;
   margin: 0; }
 
+/* line 17, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 .popover-content textarea {
   resize: none; }
 
+/* line 20, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 .btn {
   cursor: pointer; }
 
+/* line 23, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 .popover-content section {
   display: none; }
 
+/* line 26, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #resource {
   position: relative;
   /* HACK allow cover */ }
@@ -27,6 +33,7 @@ body {
 	HACK: Cover the resource (media object) to prevent it from being
 	clicked or hovered.
  */
+/* line 34, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 .media:after {
   content: '';
   display: block;
@@ -42,12 +49,15 @@ body {
 	HACK: Glue will eventually provide this, which prevents large
 	padding on desktop.
 */
+/* line 49, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 .popover-interior.desktop .popover-footer {
   padding-bottom: 0px; }
 
+/* line 52, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 .popover-footer .btn {
   margin: 5px; }
 
+/* line 55, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 body.error #error,
 body.share #share,
 body.send #send,
@@ -55,126 +65,158 @@ body.embed #embed,
 body.options #options {
   display: block; }
 
+/* line 62, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 body.sending .cancel {
   display: none; }
 
+/* line 65, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 .popover-footer .throbber {
   display: none;
   float: left;
   top: -5px; }
 
+/* line 70, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 body.sending .popover-footer .throbber {
   display: inline-block; }
 
+/* line 73, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #share .placeholder-poly-label {
   top: 5px;
   left: 22px; }
 
+/* line 77, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #send .placeholder-poly-label {
   top: 5px;
   left: 14px; }
 
 /* For the recipients autocomplete box */
+/* line 82, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #user-list .placeholder-poly-label {
   left: 12px;
   top: 6px; }
 
 /* Network Toggle Icons */
+/* line 87, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #networks [data-network] .icon {
   background-repeat: no-repeat;
   display: block;
   height: 24px;
   width: 24px; }
 
+/* line 93, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #networks [data-network] .icon {
   background-image: url(../images/socialmediaicons_small.png); }
 
+/* line 96, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #networks [data-network]:active .icon {
   opacity: 0.3; }
 
+/* line 99, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #networks .selected[data-network=facebook] .icon {
   background-position: 0 0; }
 
+/* line 102, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #networks .selected[data-network=twitter] .icon {
   background-position: 0 -24px; }
 
+/* line 105, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #networks .selected[data-network=tumblr] .icon {
   background-position: 0 -48px; }
 
+/* line 108, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #networks [data-network=facebook] .icon {
   background-position: -24px 0; }
 
+/* line 111, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #networks [data-network=twitter] .icon {
   background-position: -24px -24px; }
 
+/* line 114, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #networks [data-network=tumblr] .icon {
   background-position: -24px -48px; }
 
 /* End Network Toggle Icons */
 /* Network Settings Icons */
+/* line 119, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #options [data-network] .icon {
   background-image: url(../images/socialmediaicons_big.png); }
 
+/* line 122, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #options [data-network] .icon {
   background-repeat: no-repeat;
   display: block;
   height: 32px;
   width: 32px; }
 
+/* line 128, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #options [data-network=facebook] .icon {
   background-position: 0 0; }
 
+/* line 131, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #options [data-network=twitter] .icon {
   background-position: 0 -32px; }
 
+/* line 134, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #options [data-network=tumblr] .icon {
   background-position: 0 -64px; }
 
 /* End Settings Icons */
 /* Share view */
+/* line 139, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #share textarea {
   height: 135px; }
 
+/* line 142, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #share ul {
   padding-left: 0px;
   margin: 0; }
 
+/* line 146, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #share .networks-section {
   padding-top: 14px;
   margin-bottom: 4px;
   /* override standard-grid */ }
 
+/* line 151, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #networks {
   display: flex;
   align-items: center; }
 
+/* line 155, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #networks-label {
   margin-right: 2px; }
 
+/* line 158, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #networks li {
   display: inline;
   list-style: none;
   margin-right: 5px; }
 
+/* line 163, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #share-options span {
   cursor: pointer; }
 
+/* line 166, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #share-options span:hover {
   color: #FFFFFF;
   text-decoration: underline; }
 
+/* line 170, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #networks li:last-child {
   margin-right: 0; }
 
+/* line 173, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #share-options {
   color: #A0A0A0;
   flex-grow: 1;
   text-align: right; }
 
+/* line 178, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #send textarea {
   height: 182px; }
 
 /* Send to a friend view */
+/* line 182, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #user-list {
   background: #FFFFFF;
   border-radius: 3px;
@@ -184,9 +226,11 @@ body.sending .popover-footer .throbber {
   position: relative;
   height: auto; }
 
+/* line 191, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #user-list.focus {
   background: #FFFFFF; }
 
+/* line 194, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #user-list input {
   background: transparent;
   border: none;
@@ -200,6 +244,7 @@ body.sending .popover-footer .throbber {
   height: auto;
   /* override glue .form-control */ }
 
+/* line 207, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #user-list .selected-user {
   background: #282828;
   border-radius: 3px;
@@ -213,10 +258,12 @@ body.sending .popover-footer .throbber {
   padding: 0 6px;
   text-shadow: none; }
 
+/* line 220, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #user-list .delete {
   opacity: .3;
   padding-left: 4px; }
 
+/* line 224, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #user-list .delete:before {
   font-family: "glue1-spoticon";
   font-style: normal;
@@ -229,9 +276,11 @@ body.sending .popover-footer .throbber {
   content: "\f160";
   font-size: 10px; }
 
+/* line 236, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #user-list .delete:hover {
   opacity: 1; }
 
+/* line 239, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #user-results {
   display: none;
   position: absolute;
@@ -241,87 +290,110 @@ body.sending .popover-footer .throbber {
   z-index: 10;
   background-color: #181818; }
 
+/* line 248, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #user-results .throbber {
   margin: 0 auto; }
 
+/* line 251, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #user-results .throbber-item {
   display: none; }
 
+/* line 254, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #user-results.loading .throbber-item {
   display: block; }
 
+/* line 257, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #user-results.loading .no-results {
   display: none; }
 
+/* line 260, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #user-results .no-results {
   color: #888;
   text-align: center; }
 
 /* Options view */
+/* line 265, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 body.options #resource {
   display: none; }
 
+/* line 268, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 body.options .popover-content {
   padding: 0; }
 
+/* line 271, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #options {
   position: relative; }
 
+/* line 274, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #options .auth {
   padding: 15px 0;
   position: relative; }
 
+/* line 278, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #options .throbber {
   display: none;
   top: -6px;
   left: -4px; }
 
+/* line 283, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #options .connecting .throbber {
   display: block; }
 
+/* line 286, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #options .connecting .icon {
   display: none; }
 
+/* line 289, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #options .auth .icon {
   float: left; }
 
+/* line 292, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #options .auth button {
   width: 70px;
   /* Enough space to accommodate both "Connect" and "Disconnect" */
   float: right; }
 
+/* line 297, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #options .account {
   display: none; }
 
+/* line 300, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #options .connected .account {
   display: inline-block;
   font-weight: 400; }
 
+/* line 304, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #options .state {
   color: #A0A0A0; }
 
+/* line 307, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #options .error .state {
   color: #c00; }
 
+/* line 310, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #options .connected .state,
 #options .error .state,
 #options .unknown .state {
   display: inline-block; }
 
+/* line 315, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #options .connect-head {
   overflow: auto; }
 
+/* line 318, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #options .connect-head > button {
   float: right;
   margin-right: 7px;
   margin-top: 12px;
   width: auto; }
 
+/* line 324, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #options .connect-info {
   display: inline-block;
   margin-top: 6px;
   width: 50%; }
 
+/* line 329, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #options .settings-info {
   display: inline-block;
   margin: 6px;
@@ -329,12 +401,15 @@ body.options .popover-content {
   float: right;
   text-align: right; }
 
+/* line 336, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #options .connect {
   overflow: auto; }
 
+/* line 339, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #options .connect .password-disclaimer {
   padding-top: 3px; }
 
+/* line 342, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #options .icon-wrapper {
   float: left;
   height: 50px;
@@ -343,6 +418,7 @@ body.options .popover-content {
   overflow: hidden;
   /* Prevent throbber from overflowing */ }
 
+/* line 350, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #options .options-back {
   position: absolute;
   top: -3px;
@@ -352,39 +428,48 @@ body.options .popover-content {
   z-index: 1000;
   /* Ensure title bar does not cover */ }
 
+/* line 359, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 .disclaimer {
   font-size: 11px;
   margin: 5px; }
 
+/* line 363, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #options .placeholder-poly-label {
   top: 6px;
   left: 21px; }
 
 /* Error view */
+/* line 368, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 body.error #resource {
   display: none; }
 
+/* line 371, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 body.error .popover > .popover-content {
   padding: 0; }
 
 /******************************************************************************
 * Placeholder Polyfill (Required)
 ******************************************************************************/
+/* line 377, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 .placeholder-poly-parent {
   position: relative; }
 
+/* line 380, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 .placeholder-poly-label {
   color: #404040;
   font-size: 14px;
   position: absolute; }
 
 /* Embed tab */
+/* line 386, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #embed {
   top: 63px; }
 
+/* line 389, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 body.embed #resource {
   display: none; }
 
+/* line 392, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 .embed-iframe {
   border: 0;
   margin: 0;
@@ -392,29 +477,35 @@ body.embed #resource {
   background-color: #fff;
   line-spacing: 0; }
 
+/* line 399, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 .embed-wrapper {
   padding: 0px 10px 10px 10px; }
 
+/* line 402, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 div.embed-code {
   top: 0px;
   bottom: 0px; }
 
+/* line 406, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 a#embed-advanced {
   display: inline-block;
   float: right;
   color: #666;
   margin-top: 2px; }
 
+/* line 412, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 .embed-sizes label {
   margin-bottom: 10px;
   margin-right: 10px; }
 
+/* line 416, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 .embed-button-preview {
   height: auto;
   text-align: center;
   position: relative;
   margin-bottom: 10px; }
 
+/* line 422, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 .embed-button-prevent-click {
   position: absolute;
   height: 100%;
@@ -424,8 +515,10 @@ a#embed-advanced {
 
 /* invite-mode */
 /* Remove once https://abtesting.spotify.net/#/tests/75 has ended*/
+/* line 431, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 .invite-mode #tabs {
   display: none; }
 
+/* line 434, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 .invite-mode #resource {
   display: none; }

@@ -1,9 +1,11 @@
+/* line 3, /Users/Devin/GitHub/spotio/skin/apps/about.scss */
 #page {
   padding: 25px 25px 10px;
   max-width: 830px;
   margin: 0 auto;
   text-align: center; }
 
+/* line 9, /Users/Devin/GitHub/spotio/skin/apps/about.scss */
 #upgrade-pending,
 #upgrade-downloading,
 #upgrade-downloaded {
@@ -18,45 +20,55 @@
   text-transform: normal;
   display: none; }
 
+/* line 23, /Users/Devin/GitHub/spotio/skin/apps/about.scss */
 #upgrade-pending.visible,
 #upgrade-downloading.visible,
 #upgrade-downloaded.visible {
   display: block; }
 
+/* line 28, /Users/Devin/GitHub/spotio/skin/apps/about.scss */
 #upgrade-pending a,
 #upgrade-downloading a,
 #upgrade-downloaded a {
   color: #56666F; }
 
+/* line 33, /Users/Devin/GitHub/spotio/skin/apps/about.scss */
 #copyright {
   margin: 40px 0;
   font-size: 14px; }
 
+/* line 37, /Users/Devin/GitHub/spotio/skin/apps/about.scss */
 #marquee {
   margin: 15px 0;
   overflow: hidden;
   position: relative; }
 
+/* line 42, /Users/Devin/GitHub/spotio/skin/apps/about.scss */
 #content p {
   padding: 25px 0 5px 0; }
 
+/* line 45, /Users/Devin/GitHub/spotio/skin/apps/about.scss */
 #version {
   cursor: text;
   -webkit-user-select: text; }
 
+/* line 49, /Users/Devin/GitHub/spotio/skin/apps/about.scss */
 #content ul {
   display: block;
   list-style: none;
   margin: 10px 0 0; }
 
+/* line 54, /Users/Devin/GitHub/spotio/skin/apps/about.scss */
 #content ul li {
   display: inline-block;
   padding: 5px; }
 
+/* line 58, /Users/Devin/GitHub/spotio/skin/apps/about.scss */
 #content ul li img {
   height: 30px;
   padding: 4px; }
 
+/* line 62, /Users/Devin/GitHub/spotio/skin/apps/about.scss */
 .logo-image {
   width: 190px;
   height: 58px;

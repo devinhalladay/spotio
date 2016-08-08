@@ -1,22 +1,28 @@
+/* line 4, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 #settings.is-incognito .incognito-state .slider {
   background: #333333;
   border-color: transparent;
   pointer-events: none; }
 
+/* line 9, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 #settings.is-incognito .incognito-state .slider div {
   background: #404040;
   box-shadow: none; }
 
+/* line 13, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 #settings.is-incognito .incognito-state .slider:active div {
   background: #404040;
   width: 22px; }
 
+/* line 17, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 #settings.is-incognito .incognito-state .slider:hover div {
   background: #404040; }
 
+/* line 20, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 #settings.is-incognito .incognito-state .slider.enabled:active div {
   left: 15px; }
 
+/* line 23, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 html,
 body {
   min-height: 100%;
@@ -24,6 +30,7 @@ body {
   -webkit-user-select: none;
   background: #181818; }
 
+/* line 30, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .loading-screen {
   position: absolute;
   top: 0;
@@ -33,47 +40,60 @@ body {
   z-index: 100;
   background-color: #181818; }
 
+/* line 39, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .loading-screen .throbber {
   margin: auto auto;
   position: initial; }
 
+/* line 43, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 #prelogin-title {
   margin-top: 90px; }
 
+/* line 46, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 #header {
   margin: 40px 0 16px 0; }
 
+/* line 49, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 #header .upgrade {
   margin-right: 20px; }
 
+/* line 52, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 #header .mo-image-wrapper:hover .mo-overlay {
   visibility: hidden; }
 
+/* line 55, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 #header .button-container {
   margin-top: 20px; }
 
+/* line 58, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 #header .button-container button {
   margin-left: 6px;
   margin-right: 6px; }
 
+/* line 62, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 #header h1 {
   margin: 20px 0 0; }
 
+/* line 65, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .avatar {
   height: 120px;
   width: 120px;
   margin: 0 auto; }
 
+/* line 70, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 #settings .action-button {
   padding-top: 10px; }
 
+/* line 73, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 #local-files .button,
 #advanced-settings .button {
   margin-bottom: 13px; }
 
+/* line 77, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .setting-row {
   color: #A0A0A0; }
 
+/* line 80, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .setting-row:before,
 .setting-row:after {
   content: " ";
@@ -81,30 +101,37 @@ body {
   display: table;
   /* 2 */ }
 
+/* line 87, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .setting-row:after {
   clear: both; }
 
+/* line 90, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .setting-row.active .col.action a {
   color: #008CD6; }
 
+/* line 93, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .setting-row.active small {
   display: block; }
 
+/* line 96, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .setting-row.disabled,
 #settings.is-incognito .incognito-state,
 #settings.is-incognito .incognito-state .setting-row {
   color: #404040; }
 
+/* line 101, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .setting-row.disabled .col.action a,
 #settings.is-incognito .incognito-state .col.action a,
 #settings.is-incognito .incognito-state .setting-row .col.action a {
   color: #333333; }
 
+/* line 106, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .setting-row.disabled .col.action a:hover,
 #settings.is-incognito .incognito-state .col.action a:hover,
 #settings.is-incognito .incognito-state .setting-row .col.action a:hover {
   cursor: default; }
 
+/* line 111, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .setting-row.disabled .btn-info,
 #settings.is-incognito .incognito-state .btn-info,
 #settings.is-incognito .incognito-state .setting-row .btn-info {
@@ -113,6 +140,7 @@ body {
   opacity: 0.65;
   filter: alpha(opacity=65); }
 
+/* line 119, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .setting-row.disabled .btn-info:hover,
 .setting-row.disabled .btn-info:focus,
 .setting-row.disabled .btn-info:active,
@@ -128,46 +156,57 @@ body {
   opacity: 0.5;
   filter: alpha(opacity=50); }
 
+/* line 134, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .setting-row #facebook-description .avatar {
   width: 30px;
   height: 30px;
   display: inline-block;
   float: left; }
 
+/* line 140, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .setting-row #facebook-description span {
   line-height: 30px;
   margin-left: 10px;
   float: left; }
 
+/* line 145, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .setting-row small {
   display: none;
   color: #A0A0A0; }
 
+/* line 149, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .setting-row .col {
   padding: 15px 0;
   vertical-align: middle; }
 
+/* line 153, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .setting-row .col.description {
   float: left;
   padding-right: 15px;
   cursor: default; }
 
+/* line 158, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .setting-row .col.action {
   float: right;
   text-align: right; }
 
+/* line 162, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .setting-row .col.action input[type=checkbox] {
   float: right; }
 
+/* line 165, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .btn-group li {
   text-align: left; }
 
+/* line 168, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 #footer {
   margin-top: 40px; }
 
+/* line 171, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .hidden {
   visibility: hidden; }
 
+/* line 174, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .form-group input {
   display: inline-block;
   width: auto;
@@ -177,30 +216,37 @@ body {
   border-radius: 2px;
   background-color: #333333; }
 
+/* line 183, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .form-group input::-webkit-input-placeholder {
   color: #A0A0A0; }
 
+/* line 186, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .form-group input:focus {
   color: #FFFFFF;
   outline: 0;
   border-color: #404040;
   background-color: #404040; }
 
+/* line 192, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .form-group input[name=host],
 .form-group input[name=username],
 .form-group input[name=password] {
   width: 200px; }
 
+/* line 197, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .form-group input[name=port] {
   width: 70px; }
 
+/* line 200, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .form-group input[disabled] {
   color: #A0A0A0;
   background-color: #282828; }
 
+/* line 204, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .form-group input.error {
   border: 1px solid #CD1A2B; }
 
+/* line 207, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 select {
   min-width: 200px;
   background: #333333;
@@ -208,32 +254,39 @@ select {
   border: 0;
   height: 24px; }
 
+/* line 214, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 section .left {
   position: relative;
   float: left; }
 
+/* line 218, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 section .right {
   position: relative;
   float: right; }
 
+/* line 222, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 section#social .state .col.user {
   float: left; }
 
+/* line 225, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 section#social .user-input {
   padding-top: 0px; }
 
+/* line 228, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 section#playback .col.crossfade {
   display: block;
   position: relative;
   float: left;
   transition: opacity 0.2s; }
 
+/* line 234, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 section#playback .col.crossfade.disabled {
   opacity: 0; }
 
 /**
  * @TODO - abstract to GLUE
  */
+/* line 240, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .slider-range {
   display: inline-block;
   position: relative;
@@ -242,12 +295,15 @@ section#playback .col.crossfade.disabled {
   user-select: none;
   background: transparent; }
 
+/* line 248, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .slider-range.disabled.track {
   background: #282828; }
 
+/* line 251, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .slider-range.disabled .applied {
   background: #A0A0A0; }
 
+/* line 254, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .slider-range .container {
   display: block;
   position: relative;
@@ -256,27 +312,33 @@ section#playback .col.crossfade.disabled {
   margin: 0;
   padding: 0; }
 
+/* line 262, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .slider-range .container .progress-bar-wrapper {
   display: inline-block;
   position: relative;
   width: 230px; }
 
+/* line 267, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .slider-range .container .progress-bar-wrapper .handle {
   display: block;
   position: relative;
   left: -5px; }
 
+/* line 272, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .slider-range .container .duration {
   display: inline-block;
   position: relative;
   margin-left: 15px;
   cursor: default; }
 
+/* line 278, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 section#apps .button {
   margin: 8px 12px 8px 0; }
 
+/* line 281, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 html.prelogin {
   -webkit-app-region: drag; }
 
+/* line 284, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 html.prelogin #wrapper {
   -webkit-app-region: no-drag; }

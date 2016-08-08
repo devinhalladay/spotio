@@ -1,6 +1,8 @@
+/* line 4, /Users/Devin/GitHub/spotio/skin/apps/licenses.scss */
 ::-webkit-scrollbar {
   width: 0; }
 
+/* line 7, /Users/Devin/GitHub/spotio/skin/apps/licenses.scss */
 body > .scrollbar-track {
   position: fixed;
   right: 0;
@@ -8,41 +10,50 @@ body > .scrollbar-track {
   bottom: 0;
   z-index: 10000; }
 
+/* line 14, /Users/Devin/GitHub/spotio/skin/apps/licenses.scss */
 .scrollbar-view {
   overflow-y: scroll;
   position: relative;
   will-change: transform; }
 
+/* line 19, /Users/Devin/GitHub/spotio/skin/apps/licenses.scss */
 .scrollbar-view > .scrollbar-track {
   position: absolute;
   top: 0;
   right: 0;
   height: 100%; }
 
+/* line 25, /Users/Devin/GitHub/spotio/skin/apps/licenses.scss */
 .scrollbar-track {
   width: 16px;
   opacity: 0;
   transition: opacity 500ms; }
 
+/* line 30, /Users/Devin/GitHub/spotio/skin/apps/licenses.scss */
 .scrollbar-track.always-visible {
   transition: none; }
 
+/* line 33, /Users/Devin/GitHub/spotio/skin/apps/licenses.scss */
 .scrollbar-track.visible {
   transition: none;
   opacity: 1; }
 
+/* line 37, /Users/Devin/GitHub/spotio/skin/apps/licenses.scss */
 .scrollbar-track.expanded {
   transition: opacity 500ms, width 100ms;
   width: 18px;
   background-color: rgba(160, 160, 160, 0.05);
   cursor: default; }
 
+/* line 43, /Users/Devin/GitHub/spotio/skin/apps/licenses.scss */
 .scrollbar-track.expanded.always-visible {
   transition: none; }
 
+/* line 46, /Users/Devin/GitHub/spotio/skin/apps/licenses.scss */
 .scrollbar-track.expanded.visible {
   transition: width 100ms; }
 
+/* line 49, /Users/Devin/GitHub/spotio/skin/apps/licenses.scss */
 .scrollbar-thumb {
   position: absolute;
   top: 0;
@@ -54,17 +65,22 @@ body > .scrollbar-track {
   background-clip: content-box;
   background-color: rgba(160, 160, 160, 0.4); }
 
+/* line 60, /Users/Devin/GitHub/spotio/skin/apps/licenses.scss */
 * {
   box-sizing: border-box; }
 
+/* line 63, /Users/Devin/GitHub/spotio/skin/apps/licenses.scss */
 body {
   margin: 0 20px; }
 
+/* line 66, /Users/Devin/GitHub/spotio/skin/apps/licenses.scss */
 .page-wrapper {
   overflow: hidden; }
 
+/* line 69, /Users/Devin/GitHub/spotio/skin/apps/licenses.scss */
 .scrollbar-track.expanded {
   background-color: rgba(160, 160, 160, 0.2); }
 
+/* line 72, /Users/Devin/GitHub/spotio/skin/apps/licenses.scss */
 .scrollbar-thumb {
   background-color: rgba(160, 160, 160, 0.8); }

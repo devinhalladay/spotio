@@ -1,3 +1,4 @@
+/* line 4, /Users/Devin/GitHub/spotio/skin/apps/people.scss */
 .people-background {
   background-image: url("https://d2j0f09xqmv212.cloudfront.net/images/error-bg.jpg");
   background-attachment: fixed;
@@ -7,6 +8,7 @@
   margin: 0;
   overflow: hidden; }
 
+/* line 13, /Users/Devin/GitHub/spotio/skin/apps/people.scss */
 .people-background-mask {
   content: ' ';
   background-color: rgba(0, 0, 0, 0.75);
@@ -14,14 +16,17 @@
   margin: 0;
   overflow: hidden; }
 
+/* line 20, /Users/Devin/GitHub/spotio/skin/apps/people.scss */
 .people-header {
   padding: 20px;
   text-align: center;
   font-size: 16px; }
 
+/* line 25, /Users/Devin/GitHub/spotio/skin/apps/people.scss */
 .people {
   position: relative; }
 
+/* line 28, /Users/Devin/GitHub/spotio/skin/apps/people.scss */
 .people ul {
   margin: 15px 0;
   padding: 0px;
@@ -29,5 +34,6 @@
   list-style: none;
   text-align: center; }
 
+/* line 35, /Users/Devin/GitHub/spotio/skin/apps/people.scss */
 .people ul li {
   display: inline; }

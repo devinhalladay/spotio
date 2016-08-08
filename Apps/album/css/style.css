@@ -1,12 +1,16 @@
+/* line 4, /Users/Devin/GitHub/spotio/skin/apps/album.scss */
 #album-page {
   padding-bottom: 20px; }
 
+/* line 7, /Users/Devin/GitHub/spotio/skin/apps/album.scss */
 .header.header-album {
   margin-bottom: 22px; }
 
+/* line 10, /Users/Devin/GitHub/spotio/skin/apps/album.scss */
 #album-tracks {
   margin-bottom: 20px; }
 
+/* line 13, /Users/Devin/GitHub/spotio/skin/apps/album.scss */
 #offline-notice,
 .throbber,
 .error {
@@ -16,13 +20,16 @@
   margin-top: -5%;
   text-align: center; }
 
+/* line 22, /Users/Devin/GitHub/spotio/skin/apps/album.scss */
 .error {
   display: none;
   margin-top: -12%; }
 
+/* line 26, /Users/Devin/GitHub/spotio/skin/apps/album.scss */
 .similar-albums {
   position: relative; }
 
+/* line 29, /Users/Devin/GitHub/spotio/skin/apps/album.scss */
 .copyrights {
   font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
   font-size: 12px;
@@ -30,6 +37,7 @@
   letter-spacing: 0.015em; }
 
 /* RELEASE WINDOW NOTIFICATIONS */
+/* line 36, /Users/Devin/GitHub/spotio/skin/apps/album.scss */
 .release-window-notification {
   border: 1px solid #282828;
   color: #9CA6AC;
@@ -37,5 +45,6 @@
   text-align: center;
   padding: 38px 70px; }
 
+/* line 43, /Users/Devin/GitHub/spotio/skin/apps/album.scss */
 .release-windowed .header.header-album {
   margin-bottom: 16px; }

@@ -1,13 +1,16 @@
+/* line 4, /Users/Devin/GitHub/spotio/skin/apps/artist-chart.scss */
 .top-artist {
   margin-bottom: 20px;
   position: relative;
   background: linear-gradient(#181818, #0a1a2d);
   padding-bottom: 20px; }
 
+/* line 10, /Users/Devin/GitHub/spotio/skin/apps/artist-chart.scss */
 .top-artist .row {
   position: relative;
   display: flex; }
 
+/* line 14, /Users/Devin/GitHub/spotio/skin/apps/artist-chart.scss */
 .top-artist__info {
   line-height: 1;
   text-align: right;
@@ -15,12 +18,14 @@
   display: flex;
   flex-direction: column; }
 
+/* line 21, /Users/Devin/GitHub/spotio/skin/apps/artist-chart.scss */
 .top-artist__info-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 20px 0; }
 
+/* line 27, /Users/Devin/GitHub/spotio/skin/apps/artist-chart.scss */
 .top-artist__name {
   color: #FFFFFF;
   line-height: 1.2;
@@ -29,39 +34,49 @@
   justify-content: center;
   flex-direction: row; }
 
+/* line 35, /Users/Devin/GitHub/spotio/skin/apps/artist-chart.scss */
 .top-artist__listeners {
   font-size: 24px;
   font-weight: 100; }
 
+/* line 39, /Users/Devin/GitHub/spotio/skin/apps/artist-chart.scss */
 .top-artist__radio .mo-info.meta {
   height: 90px; }
 
+/* line 42, /Users/Devin/GitHub/spotio/skin/apps/artist-chart.scss */
 .top-artist__radio .mo-meta {
   position: relative; }
 
+/* line 45, /Users/Devin/GitHub/spotio/skin/apps/artist-chart.scss */
 .top-artist__popular {
   display: flex;
   justify-content: center;
   flex-direction: column; }
 
+/* line 50, /Users/Devin/GitHub/spotio/skin/apps/artist-chart.scss */
 .top-artist__popular-table .tl-listen-count {
   line-height: 0;
   font-size: 0;
   width: 0;
   padding: 0; }
 
+/* line 56, /Users/Devin/GitHub/spotio/skin/apps/artist-chart.scss */
 .top-artist__popular-table .tl-number-wrap {
   display: none; }
 
+/* line 59, /Users/Devin/GitHub/spotio/skin/apps/artist-chart.scss */
 .top-artist__popular-table .tl-row:hover .tl-cell {
   background: rgba(70, 135, 214, 0.25); }
 
+/* line 62, /Users/Devin/GitHub/spotio/skin/apps/artist-chart.scss */
 .top-artist__popular-table .tl-cell {
   border-top: 1px solid rgba(70, 135, 214, 0.2); }
 
+/* line 65, /Users/Devin/GitHub/spotio/skin/apps/artist-chart.scss */
 .top-artist__popular-table .tracklist-popular {
   border-bottom: 1px solid rgba(70, 135, 214, 0.2); }
 
+/* line 68, /Users/Devin/GitHub/spotio/skin/apps/artist-chart.scss */
 .h-data {
   position: absolute;
   bottom: 0;
@@ -69,18 +84,23 @@
   padding-left: 0;
   width: auto; }
 
+/* line 75, /Users/Devin/GitHub/spotio/skin/apps/artist-chart.scss */
 .header-image {
   min-height: auto; }
 
+/* line 78, /Users/Devin/GitHub/spotio/skin/apps/artist-chart.scss */
 .header-image:before {
   background: linear-gradient(30deg, #2D46B9, #F573A0);
   opacity: .75; }
 
+/* line 82, /Users/Devin/GitHub/spotio/skin/apps/artist-chart.scss */
 .artist-table {
   padding-top: 20px; }
 
+/* line 85, /Users/Devin/GitHub/spotio/skin/apps/artist-chart.scss */
 .artist-table .tl-listen-count {
   width: 190px; }
 
+/* line 88, /Users/Devin/GitHub/spotio/skin/apps/artist-chart.scss */
 .artist-table .tl-image-wrapper {
   padding: 4px; }

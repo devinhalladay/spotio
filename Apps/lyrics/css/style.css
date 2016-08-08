@@ -1,20 +1,26 @@
+/* line 4, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 .lyrics-header {
   margin-top: 1em; }
 
+/* line 7, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 .lyrics-header-container {
   margin-left: 1em;
   display: inline-block;
   vertical-align: middle; }
 
+/* line 12, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 #header {
   position: fixed; }
 
+/* line 15, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 .error-and-offline {
   display: block; }
 
+/* line 18, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 .error-and-offline .error-content {
   display: block; }
 
+/* line 21, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 .attribution-container {
   position: fixed;
   left: 0;
@@ -26,17 +32,21 @@
   opacity: 0.4;
   color: #fff; }
 
+/* line 32, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 .lyrics-context-menu-container {
   display: inline-block;
   vertical-align: middle; }
 
+/* line 36, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 .lyrics-context-menu-container .button-icon-only {
   border-color: #fff; }
 
+/* line 39, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 .lyrics-header .track {
   font-size: medium;
   color: #fff; }
 
+/* line 43, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 div.lyrics-lines-container,
 div.message-container {
   width: 100%;
@@ -47,12 +57,14 @@ div.message-container {
   left: 0;
   color: #fff; }
 
+/* line 53, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 div.message-container {
   top: 10%;
   right: 0;
   bottom: 0;
   left: 0; }
 
+/* line 59, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 div.fullscreen {
   width: 100%;
   height: 100%;
@@ -62,6 +74,7 @@ div.fullscreen {
   right: 100%;
   bottom: 100%; }
 
+/* line 68, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 div.lyrics-lines-container p,
 div.message-container .no-service-text-container {
   width: 100%;
@@ -75,9 +88,11 @@ div.message-container .no-service-text-container {
   -webkit-transition: top 0.25s, opacity 0.25s, font-size 0.25s;
   transition-timing-function: ease-out; }
 
+/* line 81, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 div.lyrics-lines-container .lyrics-list-full {
   margin-top: 30%; }
 
+/* line 84, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 div.lyrics-lines-container .lyrics-list-full p {
   font-size: 2em;
   line-height: 0.75em;
@@ -86,39 +101,47 @@ div.lyrics-lines-container .lyrics-list-full p {
   top: auto;
   transform: none; }
 
+/* line 92, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 div.lyrics-lines-container .lyrics-list-full p.attribution {
   font-size: inherit;
   font-weight: 200; }
 
+/* line 96, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 div.lyrics-lines-container p.no-lyrics-message {
   font-size: 3em;
   padding: 0.5em; }
 
+/* line 100, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 div.lyrics-lines-container p.index0 {
   top: -166%;
   opacity: 0;
   font-size: 5em; }
 
+/* line 105, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 div.lyrics-lines-container p.index1 {
   top: -100%;
   opacity: 1;
   font-size: 4em; }
 
+/* line 110, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 div.lyrics-lines-container p.index2 {
   top: -33%;
   opacity: 0.5;
   font-size: 3em; }
 
+/* line 115, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 div.lyrics-lines-container p.index3 {
   top: 33%;
   opacity: 0.25;
   font-size: 2em; }
 
+/* line 120, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 div.lyrics-lines-container p.index4 {
   top: 100%;
   opacity: 0;
   font-size: 1em; }
 
+/* line 125, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 div.visualization-container {
   position: absolute;
   width: 100%;
@@ -126,6 +149,7 @@ div.visualization-container {
   overflow: hidden;
   -webkit-transition: opacity 0.5s; }
 
+/* line 132, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 .options-button-container {
   position: absolute;
   bottom: 2%;
@@ -134,6 +158,7 @@ div.visualization-container {
   font-size: 1em;
   text-transform: uppercase; }
 
+/* line 140, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 .options-menu-container {
   position: absolute;
   bottom: 6%;
@@ -146,6 +171,7 @@ div.visualization-container {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
   -webkit-transition: opacity 0.25s; }
 
+/* line 152, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 .menu-row-select {
   position: absolute;
   top: 6%;
@@ -153,16 +179,19 @@ div.visualization-container {
   height: 44px;
   font-size: 1.25em; }
 
+/* line 159, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 .menu-row-select.disabled {
   color: #666;
   -webkit-transition: color 0.25s; }
 
+/* line 163, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 .menu-row-select table {
   width: 100%;
   height: 44px;
   background-color: transparent;
   text-align: center; }
 
+/* line 169, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 .menu-row-toggle {
   position: absolute;
   bottom: 6%;
@@ -170,6 +199,7 @@ div.visualization-container {
   width: 100%;
   height: 44px; }
 
+/* line 176, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 .options-menu p {
   width: 100%;
   margin: 0;
@@ -179,16 +209,19 @@ div.visualization-container {
   left: 8%;
   transform: translate(0, -50%); }
 
+/* line 185, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 .toggle-container {
   position: absolute;
   top: 50%;
   right: 8%;
   transform: translate(0, -50%); }
 
+/* line 191, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 .menu-hidden,
 .vis-hidden {
   opacity: 0; }
 
+/* line 195, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 .menu-row-select #cell-left,
 .menu-row-select #cell-right {
   position: relative;
@@ -196,6 +229,7 @@ div.visualization-container {
   height: 100%;
   text-align: center; }
 
+/* line 202, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 .menu-row-select #cell-left:after,
 .menu-row-select #cell-right:after {
   content: "";
@@ -212,27 +246,33 @@ div.visualization-container {
   z-index: 1;
   -webkit-transition: opacity 0.25s; }
 
+/* line 218, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 .menu-row-select.disabled #cell-left:after,
 .menu-row-select.disabled #cell-right:after {
   opacity: 0.2; }
 
+/* line 222, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 .menu-row-select #cell-left:after {
   background-image: url("../img/arrow_L.png"); }
 
+/* line 225, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 .menu-row-select #cell-right:after {
   background-image: url("../img/arrow_R.png"); }
 
+/* line 228, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 .menu-row-select #cell-middle {
   width: 147px;
   text-align: center;
   overflow: hidden; }
 
+/* line 233, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 .menu-row-select .innerWrapper {
   position: relative;
   width: 147px;
   height: 100%;
   overflow: hidden; }
 
+/* line 239, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 .menu-row-select p {
   width: 147px;
   margin: 0;
@@ -244,18 +284,23 @@ div.visualization-container {
   -webkit-transition: left 0.25s;
   transition-timing-function: ease-out; }
 
+/* line 250, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 .menu-row-select .item:nth-child(1) {
   left: -147px; }
 
+/* line 253, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 .menu-row-select .item:nth-child(2) {
   left: 0; }
 
+/* line 256, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 .menu-row-select .item:nth-child(n+3) {
   left: 147px; }
 
+/* line 259, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 div.message-container .no-service-text-container {
   top: 50%; }
 
+/* line 262, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 div.message-container .no-service-text-container .no-service-title {
   width: 600px;
   font-size: 4em;
@@ -265,6 +310,7 @@ div.message-container .no-service-text-container .no-service-title {
   margin-right: auto;
   margin-bottom: 0.5em; }
 
+/* line 271, /Users/Devin/GitHub/spotio/skin/apps/lyrics.scss */
 div.message-container .no-service-text-container .no-service-message {
   width: 600px;
   font-size: 1em;

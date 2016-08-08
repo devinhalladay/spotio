@@ -4,6 +4,7 @@
 /**
  * Global styles & overrides.
  */
+/* line 10, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 html,
 body,
 #main {
@@ -11,27 +12,33 @@ body,
   height: 100%;
   overflow-y: hidden; }
 
+/* line 17, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .full-screen-modal {
   overflow: hidden;
   width: 100%;
   height: 100%; }
 
+/* line 22, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .full-screen-modal__close {
   position: absolute;
   right: 0;
   padding: 8vh 6vw;
   z-index: 1; }
 
+/* line 28, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .full-screen-modal__close:hover {
   color: #FFFFFF; }
 
+/* line 31, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .full-screen-modal--container {
   z-index: 1;
   height: 100%; }
 
+/* line 35, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .full-screen-modal--container .main-header {
   padding: 8vh 6vw; }
 
+/* line 38, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .full-screen-modal--container:after {
   content: "";
   display: block;
@@ -43,6 +50,7 @@ body,
   z-index: -1;
   background: rgba(0, 0, 0, 0.7); }
 
+/* line 49, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .full-screen-modal--container > div {
   position: fixed;
   top: 0;
@@ -51,19 +59,23 @@ body,
   left: 0;
   right: 0; }
 
+/* line 57, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .full-screen-modal--container > div:not(.modal-backdrop--hidden) {
   background-color: rgba(24, 24, 24, 0.8); }
 
 /**
  * Our modal component styles.
  */
+/* line 63, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .image-carousel {
   overflow: hidden;
   width: 100%; }
 
+/* line 67, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .image-carousel .crsl-inner {
   transform: translateZ(0); }
 
+/* line 70, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .image-carousel .image-wrapper {
   max-width: 100vw;
   max-height: 100vh;
@@ -74,12 +86,14 @@ body,
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%); }
 
+/* line 80, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .image-carousel img {
   max-width: 76vw;
   max-height: 76vh;
   display: block;
   margin: 0 auto; }
 
+/* line 86, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .image-carousel-item {
   width: 100%;
   float: none;
@@ -87,15 +101,18 @@ body,
   vertical-align: middle;
   height: 100vh; }
 
+/* line 93, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .image-carousel__close {
   position: absolute;
   right: 0;
   padding: 8vh 6vw;
   z-index: 1; }
 
+/* line 99, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .image-carousel__close:hover {
   color: #FFFFFF; }
 
+/* line 102, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .image-carousel__count {
   text-transform: uppercase;
   letter-spacing: 0.16em;
@@ -110,9 +127,11 @@ body,
   margin: 0;
   line-height: 12vh; }
 
+/* line 116, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .image-carousel__count .current-slide {
   color: #FFFFFF; }
 
+/* line 119, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .image-carousel--prev,
 .image-carousel--next {
   position: absolute;
@@ -121,6 +140,7 @@ body,
   transform: translateY(-50%);
   margin: 0 6vw; }
 
+/* line 127, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .image-carousel--next {
   right: 0; }
 
@@ -129,9 +149,12 @@ body,
     opacity: 0; }
   100% {
     opacity: 1; } }
+
+/* line 138, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .full-screen-modal--edit-header-image .full-screen-modal__close {
   display: none; }
 
+/* line 141, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .edit-header-image--pending {
   position: absolute;
   width: 100%;
@@ -139,6 +162,7 @@ body,
   background: rgba(0, 0, 0, 0.7);
   z-index: 100; }
 
+/* line 148, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .edit-header-image--error {
   color: #fceaeb;
   position: absolute;
@@ -152,9 +176,11 @@ body,
   opacity: 0;
   animation: fade-in-error 0.5s forwards; }
 
+/* line 161, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .edit-header-image--error-dismiss {
   float: right; }
 
+/* line 164, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .edit-header-image--retry {
   font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
   font-size: 28px;
@@ -167,6 +193,7 @@ body,
   top: 35%;
   text-align: center; }
 
+/* line 176, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .edit-header-image--container {
   padding: 0;
   max-width: 1490px;
@@ -179,6 +206,7 @@ body,
   background-size: 100vh;
   background-attachment: local; }
 
+/* line 188, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .edit-header-image--container input[type="file"] {
   cursor: pointer;
   -webkit-appearance: none;
@@ -189,26 +217,32 @@ body,
   opacity: 0;
   z-index: 1; }
 
+/* line 198, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .edit-header-image--info {
   width: 575px;
   padding: 0 0 1em 5vw;
   text-align: left;
   font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif; }
 
+/* line 204, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .header-image--placeholder {
   position: relative;
   margin: 0; }
 
+/* line 208, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .header-image--placeholder:first-child {
   margin-left: 0; }
 
+/* line 211, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .header-image--placeholder:last-child {
   margin-right: 0; }
 
+/* line 214, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .header-image--placeholder h2 {
   font-size: 1em;
   opacity: 0.3; }
 
+/* line 218, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .header-image--placeholder input[type="range"].slider {
   width: 320px;
   position: absolute;
@@ -216,6 +250,7 @@ body,
   left: 50%;
   margin-left: -160px; }
 
+/* line 225, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .header-image--overlay {
   position: absolute;
   z-index: 15;
@@ -227,6 +262,7 @@ body,
   text-align: center;
   background-color: rgba(70, 135, 214, 0.2); }
 
+/* line 236, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .header-image--controls {
   position: absolute;
   z-index: 20;
@@ -234,35 +270,43 @@ body,
   right: 0;
   text-align: right; }
 
+/* line 243, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .header-image--controls .button {
   margin-left: 12px; }
 
+/* line 246, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .content-table {
   display: table;
   width: 100%;
   height: 60vh;
   padding: 2em 0 0; }
 
+/* line 252, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .content-table > div {
   display: table-cell;
   vertical-align: top;
   text-align: center; }
 
+/* line 257, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .content-table > div:first-child {
   width: 445px; }
 
+/* line 260, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .content-table > div:last-child {
   text-align: left;
   vertical-align: top;
   overflow: hidden; }
 
+/* line 265, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .placeholder--container {
   position: relative; }
 
+/* line 268, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .placeholder-desktop {
   height: 320px;
   overflow: hidden; }
 
+/* line 272, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .placeholder-desktop:after {
   content: "";
   position: absolute;
@@ -275,13 +319,16 @@ body,
   margin-top: -44px;
   background: rgba(24, 24, 24, 0.7); }
 
+/* line 284, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .placeholder-desktop .header-image--overlay {
   top: -125px; }
 
+/* line 287, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .placeholder-desktop .image-canvas--container {
   position: relative;
   width: 100%; }
 
+/* line 291, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .placeholder-mobile {
   margin: 2em 100px 0 0;
   width: 380px;
@@ -289,6 +336,7 @@ body,
   padding-left: 22px;
   padding-top: 81px; }
 
+/* line 298, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .placeholder-mobile:after {
   content: "";
   display: block;
@@ -300,15 +348,18 @@ body,
   background: url(/img/iphone.png) no-repeat top center;
   background-size: 320px; }
 
+/* line 309, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .placeholder-mobile .header-image--overlay {
   left: 22px;
   top: 81px;
   width: 276px;
   height: 492px; }
 
+/* line 315, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .placeholder-mobile .header-image--overlay .placeholder--label {
   top: -125px; }
 
+/* line 318, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .placeholder-avatar {
   text-align: center;
   margin: 0;
@@ -317,19 +368,23 @@ body,
   left: 20px;
   top: 125px; }
 
+/* line 326, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .placeholder-avatar .image-canvas--container {
   display: inline-block; }
 
+/* line 329, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .placeholder-avatar .header-image--overlay {
   left: 50%;
   margin-left: -65px; }
 
+/* line 333, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .placeholder-avatar input[type="range"].slider {
   width: 130px;
   margin-left: -65px;
   display: block;
   top: 170px; }
 
+/* line 339, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .placeholder--label {
   cursor: pointer;
   transition: opacity 0.2s ease-in-out;
@@ -343,15 +398,18 @@ body,
   display: table-cell;
   vertical-align: middle; }
 
+/* line 352, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .placeholder--label:before {
   display: block;
   color: #fff;
   margin-bottom: 4px; }
 
+/* line 357, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .info--heading {
   font-weight: 400;
   font-size: 42px; }
 
+/* line 361, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .info--heading:before {
   content: "";
   display: block;
@@ -360,9 +418,11 @@ body,
   height: 23vh;
   width: 450px; }
 
+/* line 369, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .info--content {
   max-width: 445px; }
 
+/* line 372, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .bold-text {
   font-weight: bold;
   color: white; }
@@ -371,6 +431,7 @@ body,
  * Slider implementation. This currently does not exist in `spotify-glue-cat`,
  * but we should definitely upstream this somehow.
  */
+/* line 380, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 input[type=range].slider {
   position: relative;
   z-index: 20;
@@ -382,6 +443,7 @@ input[type=range].slider {
   border-radius: 2px;
   height: 4px; }
 
+/* line 391, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 input[type=range].slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   cursor: pointer;
@@ -393,10 +455,12 @@ input[type=range].slider::-webkit-slider-thumb {
   height: 12px;
   width: 12px; }
 
+/* line 402, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 input[type=range].slider:focus {
   outline: none;
   /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */ }
 
+/* line 406, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .tooltip--container {
   position: absolute;
   z-index: 30;
@@ -407,6 +471,7 @@ input[type=range].slider:focus {
   color: #FFFFFF;
   transition: opacity 0.2s ease-in; }
 
+/* line 416, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .tooltip--container:before {
   content: "";
   display: block;
@@ -420,6 +485,7 @@ input[type=range].slider:focus {
   border-width: 15px 15px 15px 0;
   border-style: solid; }
 
+/* line 429, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .tooltip--title {
   margin: 0;
   font-size: 1em;
@@ -428,12 +494,15 @@ input[type=range].slider:focus {
   font-weight: normal;
   line-height: 3; }
 
+/* line 437, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .tooltip--text {
   font-weight: 100; }
 
+/* line 440, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 #context-menu {
   margin-top: 15px; }
 
+/* line 443, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 #context-menu:before {
   content: "";
   display: block;
@@ -447,9 +516,11 @@ input[type=range].slider:focus {
   border-width: 0 15px 15px 15px;
   border-style: solid; }
 
+/* line 456, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .image-canvas--container {
   position: relative; }
 
+/* line 459, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .image-canvas--container:after {
   content: attr(data-tooltip);
   font-size: 0.9em;
@@ -465,21 +536,26 @@ input[type=range].slider:focus {
   opacity: 1;
   transition: opacity 0.2s ease-in-out; }
 
+/* line 474, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .image-canvas--container.image-canvas--panning:after {
   opacity: 0; }
 
+/* line 477, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .image-canvas--container.image-canvas--disabled:after {
   display: none; }
 
+/* line 480, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .image-canvas--canvas {
   z-index: 10;
   position: relative;
   cursor: move;
   display: block; }
 
+/* line 486, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .image-canvas--disabled .image-canvas--canvas {
   cursor: default; }
 
+/* line 489, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .image-canvas--outline {
   position: absolute;
   border: 1px dashed rgba(255, 255, 255, 0.75);
@@ -488,5 +564,6 @@ input[type=range].slider:focus {
 /**
  * Polyfills for Phantom JS because it doesn't support flexbox.
  */
+/* line 497, /Users/Devin/GitHub/spotio/skin/apps/full-screen-modal.scss */
 .phantom-js .header-image--placeholder {
   float: left; }

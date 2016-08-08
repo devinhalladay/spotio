@@ -1,3 +1,4 @@
+/* line 4, /Users/Devin/GitHub/spotio/skin/apps/collection-songs.scss */
 #error-placeholder {
   position: absolute;
   width: 100%;
@@ -5,16 +6,20 @@
   top: 0;
   display: none; }
 
+/* line 11, /Users/Devin/GitHub/spotio/skin/apps/collection-songs.scss */
 .error-and-offline {
   display: block; }
 
+/* line 14, /Users/Devin/GitHub/spotio/skin/apps/collection-songs.scss */
 .error-and-offline .error-content {
   display: block; }
 
+/* line 17, /Users/Devin/GitHub/spotio/skin/apps/collection-songs.scss */
 .error-and-offline .nux-songs-icon {
   line-height: 128px;
   margin-bottom: 16px; }
 
+/* line 21, /Users/Devin/GitHub/spotio/skin/apps/collection-songs.scss */
 .error-and-offline .nux-songs-icon:before {
   font-family: "glue1-spoticon";
   font-style: normal;

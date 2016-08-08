@@ -1,7 +1,5 @@
-@import "vendor/normalize";
-
 @import "base/variables";
-
+@import "vendor/normalize";
 
 @keyframes glue-keyframes-rotate {
   0% {
@@ -13,19 +11,12 @@
 }
 
 @import "base/type";
-
 @import "base/reset";
-
 @import "objects/grid";
-
 @import "components/icons";
-
 @import "utilities/clearfix";
-
 @import "utilities/layout";
-
 @import "utilities/scrollbar";
-
 @import "utilities/drag-drop";
 
 .pre-scrollable {
@@ -56,41 +47,23 @@
 }
 
 @import "components/buttons";
-
 @import "components/forms";
-
 @import "components/dropdowns";
-
 @import "components/divider";
-
 @import "components/tables";
-
 @import "components/list-groups";
-
 @import "components/share-object";
-
 @import "components/carousel";
-
 @import "components/navs";
-
 @import "components/navbar";
-
 @import "components/main-menu";
-
 @import "components/tooltips";
-
 @import "components/popovers";
-
 @import "components/alerts";
-
 @import "components/labels";
-
 @import "components/badges";
-
 @import "components/slider";
-
 @import "components/progress-bar";
-
 @import "components/media-objects";
 
 /**
@@ -923,8 +896,14 @@
   right: auto;
 }
 .header-artist.version_1-5:before {
-  background: linear-gradient(transparent, $main-view-bg-color);
+  background: -moz-linear-gradient(top,  rgba(255,255,255,0.83) 0%, rgba(255,255,255,0.83) 28%, rgba(255,255,255,0.92) 58%, rgba(255,255,255,1) 77%, rgba(255,255,255,1) 100%);
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,0.83) 0%,rgba(255,255,255,0.83) 28%,rgba(255,255,255,0.92) 58%,rgba(255,255,255,1) 77%,rgba(255,255,255,1) 100%);
+  background: linear-gradient(to bottom,  rgba(255,255,255,0.83) 0%,rgba(255,255,255,0.83) 28%,rgba(255,255,255,0.92) 58%,rgba(255,255,255,1) 77%,rgba(255,255,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4ffffff', endColorstr='#ffffff',GradientType=0 );
+
+  opacity: 0.95;
 }
+
 .header-artist.header-image {
   background-image: url('https://d2j0f09xqmv212.cloudfront.net/images/standard-artist-header.png');
   background-size: cover;

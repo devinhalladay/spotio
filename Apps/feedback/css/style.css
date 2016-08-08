@@ -1,24 +1,30 @@
+/* line 4, /Users/Devin/GitHub/spotio/skin/apps/feedback.scss */
 html {
   overflow-y: hidden; }
 
+/* line 7, /Users/Devin/GitHub/spotio/skin/apps/feedback.scss */
 .feedback-form {
   padding: 2rem 1rem; }
 
+/* line 10, /Users/Devin/GitHub/spotio/skin/apps/feedback.scss */
 .feedback-form__description-label {
   display: block;
   margin-bottom: 1rem; }
 
+/* line 14, /Users/Devin/GitHub/spotio/skin/apps/feedback.scss */
 .feedback-form__description-input {
   display: block;
   height: 20rem;
   width: 100%;
   margin-bottom: 1rem; }
 
+/* line 20, /Users/Devin/GitHub/spotio/skin/apps/feedback.scss */
 .feedback-form__buttons {
   position: absolute;
   right: 0;
   bottom: 1rem;
   left: 0; }
 
+/* line 26, /Users/Devin/GitHub/spotio/skin/apps/feedback.scss */
 .feedback-form__submit {
   margin-top: 1rem; }

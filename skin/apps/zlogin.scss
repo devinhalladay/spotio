@@ -76,7 +76,7 @@ img {
 }
 #login-or:before,
 #login-or:after {
-  background-color: #404040;
+  background-color: #ffffff;
   content: "";
   display: inline-block;
   height: 1px;
@@ -96,18 +96,18 @@ img {
   cursor: default;
 }
 .form-control {
-  background-color: #333333 !important;
+  background-color: #ffffff !important;
   border: 0 !important;
-  color: #FFFFFF !important;
+  color: $primary-text-color !important;
 }
 .form-control::-webkit-input-placeholder {
-  color: #A0A0A0 !important;
+  color: $secondary-text-color !important;
 }
 .form-control:focus {
-  border-color: #404040 !important;
+  border-color: $primary-accent-color !important;
   outline: 0 !important;
-  background-color: #404040 !important;
-  color: #FFFFFF !important;
+  background-color: #ffffff !important;
+  color: $primary-text-color !important;
 }
 .remember-me {
   height: 22px;
@@ -128,7 +128,7 @@ img {
   line-height: 16px;
   letter-spacing: 0.015em;
   font-weight: 200;
-  color: #A0A0A0;
+  color: $secondary-text-color;
   text-transform: uppercase;
   letter-spacing: 0.16em;
   line-height: 35px;
