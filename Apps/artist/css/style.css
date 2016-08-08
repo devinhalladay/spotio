@@ -1,3 +1,4 @@
+/* line 4, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .search .search-title {
   margin: 16px 0 4px;
   font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
@@ -9,22 +10,27 @@
   text-transform: uppercase;
   letter-spacing: 0.16em; }
 
+/* line 15, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .search .search-item__mo {
   pointer-events: none; }
 
+/* line 18, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .search .search-item .mo-info.subtitle {
   padding-top: 5px;
   background-color: #333333; }
 
+/* line 22, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .search .search-item .mo-info.subtitle .mo-title {
   margin-bottom: 0; }
 
+/* line 25, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .search .search-item .mo-info.subtitle .item-title {
   color: #9CA6AC;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap; }
 
+/* line 31, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .search .search-item.selectable {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -47,9 +53,11 @@
   -o-transition: background-color ease-in-out 100ms;
   transition: background-color ease-in-out 100ms; }
 
+/* line 53, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .search .search-item.selectable .item-subtitle {
   color: #A0A0A0; }
 
+/* line 56, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .search .search-item.selectable > a {
   position: absolute;
   top: 0;
@@ -59,39 +67,48 @@
   border-bottom: 0;
   z-index: 1; }
 
+/* line 65, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .search .search-item.selectable:last-child {
   margin-bottom: 0; }
 
+/* line 68, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .search .search-item.selectable:hover,
 .search .search-item.selectable:focus,
 .search .search-item.selectable.selected {
   outline: none; }
 
+/* line 73, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .search .search-item.selectable:hover .mo-info.subtitle,
 .search .search-item.selectable:focus .mo-info.subtitle,
 .search .search-item.selectable.selected .mo-info.subtitle {
   background-color: #4d4d4d; }
 
+/* line 78, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .search .search-item.selectable:hover .label,
 .search .search-item.selectable:focus .label,
 .search .search-item.selectable.selected .label {
   color: #bababa;
   border-color: #666666; }
 
+/* line 84, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .search .search-item.selectable:hover:hover,
 .search .search-item.selectable:focus:hover,
 .search .search-item.selectable.selected:hover {
   cursor: pointer; }
 
+/* line 89, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .search .search-item.selectable.selected {
   background-color: #4d4d4d; }
 
+/* line 92, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .search .search-item.selectable:first-child {
   border-top: 0; }
 
+/* line 95, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .search .search-item.selectable:last-child {
   border-bottom: 0; }
 
+/* line 98, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .edit-pinned-item__header {
   margin-bottom: 7px;
   padding-top: 20px;
@@ -100,11 +117,13 @@
   position: relative;
   top: -7px; }
 
+/* line 106, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .edit-pinned-item__wrapper {
   border-radius: 31px 31px 0 0;
   width: 330px;
   display: inline-block; }
 
+/* line 111, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .edit-pinned-item__controls {
   cursor: default;
   display: inline-block;
@@ -129,21 +148,26 @@
   right: 0;
   color: #FFFFFF; }
 
+/* line 135, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .edit-pinned-item__controls:focus {
   outline: none; }
 
+/* line 138, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .edit-pinned-item__controls:disabled:not(.current) {
   cursor: default;
   pointer-events: none;
   opacity: 0.4; }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 144, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
   .edit-pinned-item__controls {
     backface-visibility: hidden; } }
 
+/* line 148, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .edit-pinned-item__controls .button {
   margin-left: 5px; }
 
+/* line 151, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .edit-pinned-item-button {
   cursor: default;
   display: inline-block;
@@ -167,21 +191,26 @@
   right: 0;
   color: #FFFFFF; }
 
+/* line 174, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .edit-pinned-item-button:focus {
   outline: none; }
 
+/* line 177, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .edit-pinned-item-button:disabled:not(.current) {
   cursor: default;
   pointer-events: none;
   opacity: 0.4; }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 183, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
   .edit-pinned-item-button {
     backface-visibility: hidden; } }
 
+/* line 187, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .edit-pinned-item-button .button {
   margin-left: 5px; }
 
+/* line 190, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .edit-pinned-item__list {
   overflow-y: auto;
   overflow-x: hidden;
@@ -194,40 +223,48 @@
   max-height: calc(100vh - 380px);
   top: 35px; }
 
+/* line 202, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .edit-pinned-item__form {
   position: relative;
   z-index: 5; }
 
+/* line 206, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .edit-pinned-item__mo > div {
   pointer-events: none; }
 
+/* line 209, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .edit-pinned-item__mo-wrapper {
   position: relative; }
 
+/* line 212, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .edit-pinned-item__remove {
   position: absolute;
   top: 0;
   right: 0;
   margin: 10px; }
 
+/* line 218, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .edit-pinned-item__item {
   background-color: #333333;
   padding: 5px;
   margin-bottom: 1px;
   height: 60px; }
 
+/* line 224, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .edit-pinned-item__label {
   position: absolute;
   line-height: 31px;
   padding: 0 8px;
   color: #000000; }
 
+/* line 230, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .edit-pinned-item__input:focus,
 .edit-pinned-item__input {
   padding-left: 31px;
   min-width: 330px;
   border-radius: 31px; }
 
+/* line 236, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .edit-pinned-item-empty {
   position: relative;
   height: 76px;
@@ -236,6 +273,7 @@
   padding-left: 86px;
   text-align: center; }
 
+/* line 244, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .edit-pinned-item-empty:before {
   content: "";
   width: 76px;
@@ -247,10 +285,12 @@
   left: -1px;
   float: left; }
 
+/* line 255, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .edit-pinned-item .subsection__list {
   list-style: none;
   padding: 0; }
 
+/* line 259, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 #message-container {
   display: none;
   position: absolute;
@@ -258,19 +298,23 @@
   width: 100%;
   height: 100%; }
 
+/* line 266, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 #message-container.show-offline-screen,
 #message-container.show-error-screen {
   display: block; }
 
+/* line 270, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .throbber {
   margin: 100px auto; }
 
 /*
   Header
  */
+/* line 276, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .header-artist.has-custom-image {
   background-position: center center; }
 
+/* line 279, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 #creator-about iframe {
   width: 100%;
   border: none;
@@ -281,35 +325,44 @@
   RELATED ARTISTS SUMMARY
 */
 @media (max-width: 853px) {
+  /* line 289, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
   .col-hidden {
     display: none; } }
 
 /*
   TOP TRACKS Listings
 */
+/* line 296, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 #toplist-row .tracklist-popular {
   margin-bottom: 20px; }
 
 /* related artists pane - expanded */
+/* line 300, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .list-group.no-latest-release .list-group-item:nth-child(n+9) {
   display: none; }
 
+/* line 303, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .row.summary {
   margin-bottom: 0;
   /* related artists pane - not expanded */ }
 
+/* line 307, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .row.summary .tracklist-popular tr:nth-child(n+6) {
   display: none; }
 
+/* line 310, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .row.summary .tracklist-popular tr:nth-child(5) td {
   border-bottom: 1px solid #282828; }
 
+/* line 313, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .row.summary .list-group.no-latest-release .list-group-item:nth-child(n+5) {
   display: none; }
 
+/* line 316, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .row.summary .list-group.has-latest-release .list-group-item:nth-child(n+8) {
   display: none; }
 
+/* line 319, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .no-top-tracks {
   align-items: center;
   border: 1px solid #282828;
@@ -319,33 +372,41 @@
   padding: 0 18px;
   text-align: center; }
 
+/* line 328, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .no-top-tracks h3 {
   margin-top: 0; }
 
 /*
   Artist Tour / Concert section
 */
+/* line 334, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .tours a:hover {
   text-decoration: none; }
 
+/* line 337, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .tours a:hover .calendar-icon .calendar-icon-day {
   background-color: #FFFFFF; }
 
+/* line 340, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .tours .tour-details {
   line-height: 1.3; }
 
+/* line 343, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .tours .tour-caption {
   color: #A0A0A0; }
 
+/* line 346, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .tours .tour-title {
   color: #FFFFFF; }
 
+/* line 349, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .tours .tour-location {
   color: #A0A0A0; }
 
 /*
   Modal popover
 */
+/* line 355, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .modal .popover-content {
   min-height: 328px;
   position: relative; }
@@ -353,11 +414,13 @@
 /*
   Merch
 */
+/* line 362, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .merch-list {
   margin: 0;
   padding: 0;
   list-style-type: none; }
 
+/* line 367, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .merch-item {
   width: 100px;
   height: 100px;
@@ -365,6 +428,7 @@
   margin-right: 20px;
   background-color: #fff; }
 
+/* line 374, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .merch-item a {
   width: 100%;
   height: 100%;
@@ -372,6 +436,7 @@
   overflow: hidden;
   border: none; }
 
+/* line 381, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .merch-item a span {
   height: 100px;
   width: 100px;
@@ -380,17 +445,21 @@
   background-repeat: no-repeat;
   background-position: center center; }
 
+/* line 389, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .merch-info {
   font-size: 11px;
   overflow: hidden;
   line-height: 14px; }
 
+/* line 394, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .merch-info div {
   margin-bottom: 2px; }
 
+/* line 397, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .merch-link {
   cursor: pointer; }
 
+/* line 400, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .merch-popup-image {
   background-color: #FFFFFF;
   width: 300px;
@@ -399,6 +468,7 @@
   left: 14px;
   top: 14px; }
 
+/* line 408, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .merch-popup-image div {
   width: 300px;
   height: 300px;
@@ -406,26 +476,31 @@
   background-position: 50% 50%;
   background-repeat: no-repeat; }
 
+/* line 415, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .merch-popup-description {
   color: #FFFFFF;
   height: 240px;
   padding-left: 314px;
   overflow-y: auto; }
 
+/* line 421, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .merch-popup-description div {
   margin-bottom: 10px; }
 
+/* line 424, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .merch-popup-buttons {
   position: absolute;
   bottom: 14px;
   left: 328px; }
 
+/* line 429, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .merch-popup-legal {
   color: #999;
   font-size: .85em;
   padding: 10px;
   position: absolute; }
 
+/* line 435, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .socialproof-popup .group-title {
   margin-top: 10px;
   margin-left: 10px;
@@ -438,62 +513,76 @@
   color: #FFFFFF;
   text-transform: normal; }
 
+/* line 447, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 #related {
   margin-top: 38px; }
 
 /* DISCOGRAPHY */
+/* line 451, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .discography .header-inline.header-album {
   margin-bottom: 20px; }
 
+/* line 454, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .discography ul.lists li.release-node {
   margin-bottom: 40px; }
 
+/* line 457, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .discography .carousel .release-node {
   margin-bottom: 20px; }
 
 /* CAROUSEL CONTROLS */
+/* line 461, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .discography .section-auxiliary.crsl-3-item,
 .discography .section-auxiliary.crsl-4-item,
 .discography .section-auxiliary.crsl-6-item {
   display: none; }
 
 @media (max-width: 1274px) {
+  /* line 467, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
   .discography .section-auxiliary.crsl-6-item {
     display: block; } }
 
 @media (max-width: 854px) {
+  /* line 472, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
   .discography .section-auxiliary.crsl-6-item,
   .discography .section-auxiliary.crsl-4-item {
     display: block; } }
 
 /* NOTIFICATION BOX (RELEASE WINDOW, CUSTOM MESSAGE ETC.) */
+/* line 478, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .notification-box {
   border: 1px solid #282828;
   color: #FAFAFC;
   text-align: center;
   padding: 38px 70px; }
 
+/* line 484, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .release-windowed .header-inline.header-album {
   margin-bottom: 15px; }
 
+/* line 487, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .release-window-message {
   margin-bottom: 20px; }
 
+/* line 490, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .custom-message {
   margin: 20px 0 0 0; }
 
 /**
  * Artist assets edit CTA's.
  */
+/* line 496, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 #latest-release-container {
   position: relative; }
 
+/* line 499, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .edit-header-image-cta {
   position: absolute;
   top: 10px;
   width: 100%;
   z-index: 10; }
 
+/* line 505, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .edit-header-image-cta .container {
   text-align: right; }
 
@@ -502,8 +591,10 @@
  * 'ck-related-artists-reporting styling' test.
  * Will be removed after test is complete.
  */
+/* line 513, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .related-artists-report-show.button {
   cursor: pointer; }
 
+/* line 516, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .related-artists-report-modal .throbber {
   margin: 10px auto; }

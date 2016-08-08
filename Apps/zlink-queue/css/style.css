@@ -1,31 +1,40 @@
+/* line 4, /Users/Devin/GitHub/spotio/skin/apps/zlink-queue.scss */
 #outer.empty {
   min-height: 100%; }
 
+/* line 7, /Users/Devin/GitHub/spotio/skin/apps/zlink-queue.scss */
 .empty-container {
   display: none; }
 
+/* line 10, /Users/Devin/GitHub/spotio/skin/apps/zlink-queue.scss */
 .empty-container.visible {
   display: block; }
 
+/* line 13, /Users/Devin/GitHub/spotio/skin/apps/zlink-queue.scss */
 .empty-content {
   margin: 0 auto;
   text-align: center; }
 
+/* line 17, /Users/Devin/GitHub/spotio/skin/apps/zlink-queue.scss */
 .empty-content .message {
   margin: 1em auto 2em auto;
   max-width: 320px; }
 
+/* line 21, /Users/Devin/GitHub/spotio/skin/apps/zlink-queue.scss */
 .empty-content .button {
   margin: 0 5px; }
 
+/* line 24, /Users/Devin/GitHub/spotio/skin/apps/zlink-queue.scss */
 #history-tracklist {
   margin-top: 24px; }
 
+/* line 27, /Users/Devin/GitHub/spotio/skin/apps/zlink-queue.scss */
 [data-button=clear-queue] {
   /* Prevent section jumping when clearing queue */
   margin-top: -5px;
   /* Align baseline of button text with section header text */
   margin-bottom: -2px; }
 
+/* line 33, /Users/Devin/GitHub/spotio/skin/apps/zlink-queue.scss */
 .tl-row.hidden {
   display: none; }

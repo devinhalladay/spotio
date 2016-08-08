@@ -1,3 +1,4 @@
+/* line 4, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .modal-image-upload {
   position: fixed;
   top: 0;
@@ -8,26 +9,32 @@
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.7); }
 
+/* line 14, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .modal-image-upload .popover-content {
   text-align: center; }
 
+/* line 17, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .modal-image-upload .input-file-select {
   display: none; }
 
+/* line 20, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .modal-image-upload .file-drag {
   color: #fff;
   display: block;
   padding: 9px; }
 
+/* line 25, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .modal-image-upload .modal {
   display: block; }
 
+/* line 28, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .modal-image-upload .popover-content {
   text-align: center;
   position: relative;
   display: table;
   height: 299px; }
 
+/* line 34, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .modal-image-upload .drop-area {
   position: absolute;
   width: 560px;
@@ -40,11 +47,13 @@
   line-height: 308px;
   display: none; }
 
+/* line 46, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .modal-image-upload .button-file-select {
   display: block;
   margin: 10px auto;
   min-width: 300px; }
 
+/* line 51, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .modal-image-upload .progress {
   background-color: #6a6e73;
   width: 100%;
@@ -53,6 +62,7 @@
   margin: 0;
   padding: 0; }
 
+/* line 59, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .modal-image-upload .progress-bar {
   background-color: #84bd00;
   height: 100%;
@@ -64,6 +74,7 @@
   -o-transition: width 0.5s ease-in-out;
   transition: width 0.5s ease-in-out; }
 
+/* line 70, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .modal-image-upload .step {
   display: table-cell;
   vertical-align: middle;
@@ -71,9 +82,11 @@
   display: none;
   position: relative; }
 
+/* line 77, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .modal-image-upload .popover-footer .btn-primary {
   display: none; }
 
+/* line 80, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .modal-image-upload .upload-error {
   position: absolute;
   width: 100%;
@@ -81,10 +94,12 @@
   left: 0;
   display: none; }
 
+/* line 87, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .modal-image-upload .preview {
   max-height: 260px;
   /* modal body - 20px padding top and bottom */ }
 
+/* line 91, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .modal-image-upload .modal-dialog {
   width: 420px;
   left: 50%;
@@ -92,29 +107,36 @@
   margin-left: -210px;
   padding: 0; }
 
+/* line 98, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .modal-image-upload .modal-dialog-small .modal {
   max-height: 350px;
   margin-top: -125px; }
 
+/* line 102, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .modal-image-upload .modal-dialog-small .popover-content {
   height: 199px; }
 
+/* line 105, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .modal-image-upload .modal-dialog-small .preview {
   max-height: 160px; }
 
+/* line 108, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .modal-image-upload .modal-dialog-small .upload-error {
   padding: 5px; }
 
+/* line 111, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .modal-image-upload .modal-dialog-small .drop-area {
   height: 208px;
   line-height: 208px; }
 
 @media screen and (min-width: 610px) {
+  /* line 116, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
   .modal-image-upload .modal-dialog {
     margin-left: -220px;
     padding-top: 0;
     padding-bottom: 0; } }
 
+/* line 122, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .media-image-edit {
   width: 100%;
   height: 100%;
@@ -146,45 +168,57 @@
   -webkit-justify-content: center;
   justify-content: center; }
 
+/* line 153, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .media-image:hover .media-image-edit {
   opacity: 100; }
 
+/* line 156, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .media.artist .media-image .media-image-edit,
 .media.user .media-image .media-image-edit,
 .media.artist .media-image .media-placeholder,
 .media.user .media-image .media-placeholder {
   border-radius: 500px; }
 
+/* line 162, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 html {
   overflow-y: scroll; }
 
+/* line 165, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .profile {
   margin: 0 auto; }
 
+/* line 168, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .profile > .error {
   margin-top: 40px; }
 
+/* line 171, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .profile > .playlists,
 .profile > .recent-artists,
 .profile > .followers,
 .profile > .following {
   display: none; }
 
+/* line 177, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .media-info.has-meta.has-subtitle {
   min-height: 9em; }
 
+/* line 180, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .no-section-divider {
   padding-top: 32px; }
 
+/* line 183, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .header-media {
   position: relative; }
 
+/* line 186, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .media-image-edit:hover {
   opacity: 1; }
 
+/* line 189, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .overlay {
   display: none; }
 
+/* line 192, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .overlay.show {
   display: block;
   position: fixed;
@@ -195,6 +229,7 @@ html {
   z-index: 99999;
   background-color: rgba(0, 0, 0, 0.7); }
 
+/* line 202, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .section-throbber {
   position: absolute;
   top: 50%;
@@ -202,9 +237,11 @@ html {
   margin-top: -20px;
   margin-left: -20px; }
 
+/* line 209, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .loading-playlists {
   margin-bottom: 20px; }
 
+/* line 212, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .legal-permission {
   font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
   font-size: 11px;
@@ -215,34 +252,44 @@ html {
   height: 32px;
   align-items: center; }
 
+/* line 222, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .profile-controllers {
   display: flex; }
 
+/* line 225, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .following .list-group-item {
   border-top: 0; }
 
+/* line 228, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .followers .list-group-item {
   border-top: 0; }
 
+/* line 231, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .user-modification-enabled .h-title:hover {
   cursor: pointer; }
 
+/* line 234, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .user-modification-enabled .h-title:focus {
   cursor: text; }
 
+/* line 237, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .user-modification-enabled .h-title[contenteditable="true"] {
   outline: #777 dotted 1px; }
 
+/* line 240, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .loading-playlists-throbber {
   margin: 0 auto; }
 
+/* line 243, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .empty-state {
   margin-top: 30px; }
 
+/* line 246, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .empty-state i {
   color: #A0A0A0;
   line-height: 68px; }
 
+/* line 250, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .empty-state i:before {
   font-family: "glue1-spoticon";
   font-style: normal;
@@ -255,19 +302,24 @@ html {
   content: "\f15d";
   font-size: 64px; }
 
+/* line 262, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .empty-state .message {
   text-align: center;
   padding: 50px 0; }
 
+/* line 266, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .verified .mo-verified {
   display: block; }
 
+/* line 269, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .mo-image-wrapper {
   overflow: visible; }
 
+/* line 272, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .header-user .h-media {
   position: relative; }
 
+/* line 275, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .upload-container {
   position: absolute;
   top: 0px;
@@ -280,6 +332,7 @@ html {
   opacity: 0;
   transition: opacity 0.3s linear; }
 
+/* line 287, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .upload-container .add-image-label {
   position: absolute;
   bottom: 0.2em;
@@ -296,6 +349,7 @@ html {
   align-items: center;
   transition: color 0.3s linear; }
 
+/* line 303, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .upload-container .background-stripe {
   position: absolute;
   bottom: 0;
@@ -306,6 +360,7 @@ html {
   border-radius: 500px;
   transition: opacity 0.3s linear; }
 
+/* line 313, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .upload-container .background-big {
   position: absolute;
   top: 0;
@@ -316,23 +371,30 @@ html {
   opacity: 0.4;
   transition: opacity 0.3s linear; }
 
+/* line 323, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .upload-container:hover .background-stripe {
   opacity: 0.7; }
 
+/* line 326, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .upload-container:hover .add-image-label {
   color: white; }
 
+/* line 329, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .upload-container.display-hover:hover {
   opacity: 1; }
 
+/* line 332, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .upload-container.display-always {
   opacity: 1; }
 
+/* line 335, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .upload-container.display-always .background-big {
   display: none; }
 
+/* line 338, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .error-and-offline {
   display: block; }
 
+/* line 341, /Users/Devin/GitHub/spotio/skin/apps/profile.scss */
 .error-and-offline .offline-content {
   display: block; }

@@ -1,3 +1,4 @@
+/* line 4, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .throbberWrapper {
   position: absolute;
   background-color: #282828;
@@ -7,6 +8,7 @@
   bottom: 0;
   z-index: 2; }
 
+/* line 13, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .throbberWrapper .throbber {
   position: absolute;
   top: 50%;
@@ -14,13 +16,16 @@
   margin-top: -20px;
   margin-left: -20px; }
 
+/* line 20, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .throbberWrapper.initial {
   top: 0; }
 
+/* line 23, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 html,
 body {
   height: 100%; }
 
+/* line 27, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -30,19 +35,24 @@ body {
   background-color: #282828;
   min-width: 239px; }
 
+/* line 36, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 ul {
   margin-bottom: 0 !important; }
 
+/* line 39, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .content {
   padding: 0 20px 0 0; }
 
+/* line 42, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .view-content {
   height: 100%; }
 
+/* line 45, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .view-content .results,
 .view-content .history {
   display: none; }
 
+/* line 49, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .view-content[data-state="results"] .results,
 .view-content[data-state="history"] .history {
   display: block; }
@@ -50,42 +60,53 @@ ul {
 /* ==========================================================================
    Highlight
    ========================================================================== */
+/* line 56, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 strong,
 .item-subtitle strong {
   font-weight: 400; }
 
+/* line 60, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 strong {
   color: #ffffff !important; }
 
+/* line 63, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .item-subtitle strong {
   color: #bababa !important; }
 
 /* ==========================================================================
    GLUE OVERRIDES
    ========================================================================== */
+/* line 69, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .mo-image {
   -webkit-backface-visibility: visible !important; }
 
+/* line 72, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 li > a {
   color: #FFFFFF !important; }
 
+/* line 75, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 [data-uri^="spotify:track"] .mo-info,
 [data-uri^="spotify:internal:topresult:spotify:track"] .mo-info {
   margin-left: 0 !important; }
 
+/* line 79, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 [data-uri^="spotify:track"] .mo-image-wrapper,
 [data-uri^="spotify:internal:topresult:spotify:track"] .mo-image-wrapper {
   display: none !important; }
 
+/* line 83, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .mo-title {
   display: none !important; }
 
+/* line 86, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .mo-info {
   padding-top: 15px !important; }
 
+/* line 89, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .has-subtitle .mo-info {
   padding-top: 5px !important; }
 
+/* line 92, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .item-title,
 .item-subtitle {
   overflow: hidden;
@@ -93,22 +114,27 @@ li > a {
   white-space: nowrap;
   display: block; }
 
+/* line 99, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .item-title {
   margin: 0 !important;
   line-height: 21px !important; }
 
+/* line 103, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .mo-info {
   padding-left: 10px !important;
   padding-right: 10px !important;
   background-color: transparent !important; }
 
+/* line 108, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .list-group-item.list-group-item-media.more {
   border-bottom: 2px solid transparent !important;
   margin-bottom: 0 !important; }
 
+/* line 112, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .mo-image-background-color {
   display: none !important; }
 
+/* line 115, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .mo-image.fade-able {
   -webkit-transition: opacity 300ms;
   -moz-transition: opacity 300ms;
@@ -116,6 +142,7 @@ li > a {
   transition: opacity 300ms;
   opacity: 1; }
 
+/* line 122, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .mo-image.fade-out {
   opacity: 0; }
 
@@ -124,6 +151,7 @@ This is needed for desktop, it's a super hack for CEF.
 If not added, searching for a uri and then removing it, to render
 recent searches - hover state will be broken.
 */
+/* line 130, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .media-image,
 .media-placeholder svg {
   -webkit-transform: none !important;
@@ -135,6 +163,7 @@ recent searches - hover state will be broken.
 /* ==========================================================================
    Icons
    ========================================================================== */
+/* line 141, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .spoticon-arrow-left-16 {
   line-height: 1.3;
   -webkit-transform: rotate(45deg);
@@ -150,6 +179,7 @@ recent searches - hover state will be broken.
 /* ==========================================================================
    Item
    ========================================================================== */
+/* line 156, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .selectable {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -166,9 +196,11 @@ recent searches - hover state will be broken.
   -o-transition: background-color ease-in-out 100ms;
   transition: background-color ease-in-out 100ms; }
 
+/* line 172, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .selectable .item-subtitle {
   color: #A0A0A0 !important; }
 
+/* line 175, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .selectable > a {
   position: absolute;
   top: 0;
@@ -178,9 +210,11 @@ recent searches - hover state will be broken.
   border-bottom: 0 !important;
   z-index: 1; }
 
+/* line 184, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .selectable:last-child {
   margin-bottom: 0 !important; }
 
+/* line 187, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .selectable .label {
   color: #A0A0A0;
   background: transparent;
@@ -192,19 +226,23 @@ recent searches - hover state will be broken.
   font-size: 10px;
   margin-right: 5px; }
 
+/* line 198, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .selectable.selected {
   background-color: #4d4d4d !important; }
 
+/* line 201, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .selectable.selected .label {
   color: #bababa !important;
   border-color: #666666 !important; }
 
+/* line 205, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .selectable.selected:hover {
   cursor: pointer; }
 
 /* ==========================================================================
    Title
    ========================================================================== */
+/* line 211, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .title {
   margin: 16px 0 4px;
   font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
@@ -216,6 +254,7 @@ recent searches - hover state will be broken.
   text-transform: uppercase;
   letter-spacing: 0.16em; }
 
+/* line 222, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .title > .linkable-title:hover {
   cursor: pointer;
   color: #bababa; }
@@ -223,10 +262,12 @@ recent searches - hover state will be broken.
 /* ==========================================================================
    History
    ========================================================================== */
+/* line 229, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .history {
   width: 239px;
   padding: 6px 8px; }
 
+/* line 233, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .history .selectable {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -237,18 +278,22 @@ recent searches - hover state will be broken.
   padding: 10px 25px 10px 10px;
   border-color: #404040; }
 
+/* line 243, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .history .selectable.selected {
   background-color: #4d4d4d !important; }
 
+/* line 246, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .history .selectable:first-child {
   border-top: 0 !important; }
 
+/* line 249, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .history .selectable:last-child {
   border-bottom: 0 !important; }
 
 /* ==========================================================================
    Results
    ========================================================================== */
+/* line 255, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .results {
   width: 239px;
   padding: 8px 11px;

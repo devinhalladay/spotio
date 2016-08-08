@@ -1,10 +1,13 @@
+/* line 4, /Users/Devin/GitHub/spotio/skin/apps/chart.scss */
 #main-container {
   padding-bottom: 20px; }
 
+/* line 7, /Users/Devin/GitHub/spotio/skin/apps/chart.scss */
 .header .new-entities {
   display: inline-block;
   font-weight: 400; }
 
+/* line 11, /Users/Devin/GitHub/spotio/skin/apps/chart.scss */
 .header .new-entities::before {
   content: '\00a0';
   background-color: #4687D6;
@@ -15,6 +18,7 @@
   height: 10px;
   width: 10px; }
 
+/* line 21, /Users/Devin/GitHub/spotio/skin/apps/chart.scss */
 .offline-sync-container {
   border-top: 1px solid #282828;
   display: flex;
@@ -23,6 +27,7 @@
   line-height: 56px;
   margin-bottom: 10px; }
 
+/* line 29, /Users/Devin/GitHub/spotio/skin/apps/chart.scss */
 .offline-sync .slider {
   display: inline-block;
   vertical-align: middle;

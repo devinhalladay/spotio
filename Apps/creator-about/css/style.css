@@ -1,46 +1,60 @@
+/* line 4, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 label {
   display: block; }
 
+/* line 7, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 html {
   overflow-y: hidden; }
 
+/* line 10, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 #main {
   overflow: hidden; }
 
+/* line 13, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .gutter {
   width: 100%;
   display: inline-block; }
 
 @media (min-width: 844px) {
+  /* line 18, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .gutter {
     width: 33.33333333%;
     float: left; } }
 
+/* line 23, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .main {
   width: 100%;
   display: inline-block; }
 
 @media (min-width: 844px) {
+  /* line 28, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .main {
     width: 66.66666667%;
     float: right; } }
 
 @media (max-width: 843px) {
+  /* line 34, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .wrapper {
     display: flex;
     flex-direction: column; }
+  /* line 38, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .biography {
     order: 1; }
+  /* line 41, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .listening {
     order: 2; }
+  /* line 44, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .locations {
     order: 3; }
+  /* line 47, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .playlists {
     order: 4; } }
 
+/* line 51, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .dim-app {
   pointer-events: none; }
 
+/* line 54, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .dim-app:after {
   background-color: rgba(24, 24, 24, 0.8);
   position: absolute;
@@ -51,47 +65,57 @@ html {
   right: 0;
   z-index: 5; }
 
+/* line 64, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .listening {
   text-align: center;
   margin-bottom: 20px;
   vertical-align: top;
   position: relative; }
 
+/* line 70, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .listening.no-fans .global-position__circle {
   right: 16px;
   left: auto;
   top: 226px; }
 
 @media (min-width: 844px) {
+  /* line 76, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .listening.no-fans .global-position__circle {
     right: 36px;
     top: calc(32vw - 14px); } }
 
 @media (min-width: 1490px) {
+  /* line 82, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .listening.no-fans .global-position__circle {
     right: 36px;
     top: 482.66666667px; } }
 
+/* line 87, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .listening.no-fans .listening__secondary {
   border-top: 0; }
 
+/* line 90, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .listening.no-fans .monthly {
   width: 100%;
   padding-right: 0;
   float: none; }
 
 @media (max-width: 843px) {
+  /* line 96, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .listening.no-fans .monthly__data > div {
     text-align: center; } }
 
+/* line 100, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .listening.no-fans .monthly__wrapper {
   height: 240px; }
 
 @media (min-width: 844px) {
+  /* line 104, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .listening.no-fans .monthly__wrapper {
     height: 32vw;
     max-height: 496.66666667px; } }
 
+/* line 109, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .listening__subsection {
   text-align: left;
   border-bottom: 1px solid #282828;
@@ -99,9 +123,11 @@ html {
   padding-left: 12px; }
 
 @media (min-width: 844px) {
+  /* line 116, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .listening__subsection {
     line-height: 79px; } }
 
+/* line 120, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .listening__subsection h2 {
   display: inline-block;
   font-weight: 400;
@@ -110,38 +136,47 @@ html {
   margin: 0; }
 
 @media (min-width: 844px) {
+  /* line 128, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .listening__subsection {
     line-height: 45px; } }
 
+/* line 132, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .listening__subsection ul {
   margin: 0;
   padding: 0; }
 
+/* line 136, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .listening__subsection li {
   list-style: none;
   display: inline-block; }
 
+/* line 140, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .listening__subsection li:nth-child(n+2)::before {
   content: ' ';
   margin-left: 5px;
   margin-right: 5px; }
 
+/* line 145, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .listening .global-position {
   padding: 27px 0;
   color: #FFFFFF; }
 
+/* line 149, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .listening .global-position h3 {
   margin: 0;
   font-weight: 400;
   line-height: .8; }
 
+/* line 154, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .listening .global-position h3 .numeral-modifier {
   font-size: 18px; }
 
+/* line 157, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .listening .global-position div {
   font-weight: 100;
   line-height: 1; }
 
+/* line 161, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .listening .global-position__circle {
   z-index: 1;
   width: 88px;
@@ -153,16 +188,20 @@ html {
   top: calc(51vw - 14px); }
 
 @media (min-width: 844px) {
+  /* line 172, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .listening .global-position__circle {
     top: calc(32vw - 14px); } }
 
 @media (min-width: 1490px) {
+  /* line 177, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .listening .global-position__circle {
     top: 482.66666667px; } }
 
+/* line 181, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .listening__secondary {
   border-top: 1px solid #282828; }
 
+/* line 184, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .listening .monthly {
   text-align: center;
   width: 50%;
@@ -170,11 +209,13 @@ html {
   padding-right: 20px; }
 
 @media (min-width: 844px) {
+  /* line 191, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .listening .monthly {
     width: 100%;
     float: none;
     padding-right: 20px; } }
 
+/* line 197, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .listening .monthly__wrapper {
   height: 51vw;
   text-align: center;
@@ -182,10 +223,12 @@ html {
   position: relative; }
 
 @media (min-width: 844px) {
+  /* line 204, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .listening .monthly__wrapper {
     height: 32vw;
     max-height: 496.66666667px; } }
 
+/* line 209, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .listening .monthly__data {
   position: absolute;
   top: 0;
@@ -198,6 +241,7 @@ html {
   background-size: auto 100%;
   background-repeat: no-repeat; }
 
+/* line 221, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .listening .monthly__data > div {
   position: relative;
   top: 50%;
@@ -207,53 +251,67 @@ html {
   margin: 0 auto;
   display: inline-block; }
 
+/* line 230, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .listening .monthly__data.size-1 h2 {
   font-size: 6.5vw; }
 
 @media (min-width: 844px) {
+  /* line 234, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .listening .monthly__data.size-1 h2 {
     font-size: 4.5vw; } }
 
 @media (min-width: 1490px) {
+  /* line 239, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .listening .monthly__data.size-1 h2 {
     font-size: 72px; } }
 
+/* line 243, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .listening .monthly__data.size-2 h2 {
   font-size: 7vw; }
 
 @media (min-width: 844px) {
+  /* line 247, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .listening .monthly__data.size-2 h2 {
     font-size: 5vw; } }
 
 @media (min-width: 1490px) {
+  /* line 252, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .listening .monthly__data.size-2 h2 {
     font-size: 72px; } }
 
+/* line 256, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .listening .monthly__data.size-3 h2 {
   font-size: 8vw; }
 
 @media (min-width: 844px) {
+  /* line 260, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .listening .monthly__data.size-3 h2 {
     font-size: 6vw; } }
 
 @media (min-width: 1490px) {
+  /* line 265, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .listening .monthly__data.size-3 h2 {
     font-size: 72px; } }
 
+/* line 269, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .listening .monthly__data.size-4 h2 {
   font-size: 10.5vw; }
 
 @media (min-width: 844px) {
+  /* line 273, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .listening .monthly__data.size-4 h2 {
     font-size: 8.5vw; } }
 
 @media (min-width: 1490px) {
+  /* line 278, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .listening .monthly__data.size-4 h2 {
     font-size: 72px; } }
 
+/* line 282, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .listening .monthly__data.center > div {
   text-align: center; }
 
+/* line 285, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .listening .monthly__data h2 {
   font-weight: 400;
   line-height: 1;
@@ -261,15 +319,18 @@ html {
   margin-bottom: 0;
   width: auto; }
 
+/* line 292, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .listening .monthly__data h2.empty {
   font-size: 3vw; }
 
+/* line 295, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .listening .monthly__data-description {
   font-size: 14px;
   line-height: 1;
   color: #FFFFFF;
   font-weight: 100; }
 
+/* line 301, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .listening .monthly__data-delta {
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -277,12 +338,15 @@ html {
   font-weight: normal;
   display: inline; }
 
+/* line 308, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .listening .monthly__data-delta.up {
   color: #19E68C; }
 
+/* line 311, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .listening .monthly__data-delta.down {
   color: #F573A0; }
 
+/* line 314, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .top-fans {
   text-align: center;
   margin-bottom: 20px;
@@ -292,29 +356,35 @@ html {
   margin-bottom: 0;
   padding-top: 26px; }
 
+/* line 323, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .top-fans.no-fans {
   padding-top: 7px; }
 
+/* line 326, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .top-fans .settings-link {
   padding-left: 12px;
   padding-bottom: 12px;
   border-bottom: none;
   display: block; }
 
+/* line 332, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .top-fans .section-divider {
   margin-bottom: 0;
   padding-bottom: 8px;
   padding-top: 0; }
 
+/* line 337, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .top-fans .section-divider h2 {
   float: none; }
 
+/* line 340, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .top-fans .top-fan {
   width: 9vw;
   display: inline-block;
   margin-right: 20px;
   margin-left: 16px; }
 
+/* line 346, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .top-fans .top-fan__name {
   font-weight: 400;
   font-size: 3.5vw;
@@ -322,13 +392,16 @@ html {
   overflow: hidden;
   text-overflow: ellipsis; }
 
+/* line 353, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .top-fans .top-fan__name a {
   line-height: 1; }
 
+/* line 356, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .top-fans .top-fan__name a:hover {
   border-bottom: 0;
   color: #d9d9d9; }
 
+/* line 360, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .top-fans .top-fan__list {
   list-style: none;
   padding: 0;
@@ -336,15 +409,18 @@ html {
   height: calc(51vw - 94px);
   margin: 0; }
 
+/* line 367, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .top-fans .top-fan__container {
   margin-bottom: 12px; }
 
+/* line 370, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .top-fans .top-fan__plays {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 12px;
   font-weight: normal; }
 
+/* line 376, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .top-fans .top-fan__info {
   display: inline-block;
   vertical-align: top;
@@ -352,21 +428,28 @@ html {
   width: calc(100% - 9vw - 36px); }
 
 @media (min-width: 844px) {
+  /* line 383, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .top-fans {
     padding-right: 20px; }
+  /* line 386, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .top-fans .top-fan {
     width: 88px; }
+  /* line 389, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .top-fans .top-fan__info {
     padding: 25px 0;
     width: calc(100% - 124px); }
+  /* line 393, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .top-fans .top-fan__name {
     font-size: 24px; }
+  /* line 396, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .top-fans .top-fan__list {
     height: auto;
     padding-top: 20px; }
+  /* line 400, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .top-fans .top-fan__contianer {
     margin-bottom: 20px; } }
 
+/* line 404, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .playlists {
   text-align: center;
   margin-bottom: 20px;
@@ -374,15 +457,18 @@ html {
   text-align: left; }
 
 @media (min-width: 844px) {
+  /* line 411, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .playlists__top-five .playlist.fixed-size:first-child {
     height: 32vw; } }
 
+/* line 415, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .playlists__top-five .playlist:first-child {
   height: 240px;
   position: relative;
   overflow: hidden;
   background: #282828; }
 
+/* line 421, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .playlists__top-five .playlist:nth-child(n+2) {
   border-bottom: 1px solid #282828;
   overflow: hidden;
@@ -390,12 +476,14 @@ html {
   position: relative;
   height: 60px; }
 
+/* line 428, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .playlists__top-five .playlist .count {
   padding-left: 12px;
   font-size: 14px;
   line-height: 59px;
   display: inline-block; }
 
+/* line 434, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .playlists__top-five .playlist-listening {
   color: #A0A0A0;
   margin: 0;
@@ -404,9 +492,11 @@ html {
   font-size: 12px;
   font-weight: normal; }
 
+/* line 442, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .playlists__top-five .playlist-owner a {
   color: #A0A0A0; }
 
+/* line 445, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .playlists__top-five .playlist__object {
   width: 100%;
   padding-left: 35px;
@@ -418,11 +508,13 @@ html {
   width: auto;
   display: inline-block; }
 
+/* line 456, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .playlists__top-five .playlist__image {
   width: 240px;
   display: inline-block;
   z-index: 1; }
 
+/* line 461, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .playlists__top-five .playlist__info {
   position: relative;
   top: 50%;
@@ -433,6 +525,7 @@ html {
   padding: 0 35px;
   max-width: calc(100% - 240px); }
 
+/* line 471, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .playlists__top-five .playlist__name {
   font-size: 5.5vw;
   max-height: 2;
@@ -444,13 +537,16 @@ html {
   margin: 0; }
 
 @media (min-width: 844px) {
+  /* line 482, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .playlists__top-five .playlist__name {
     font-size: 4vw; } }
 
 @media (min-width: 1490px) {
+  /* line 487, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .playlists__top-five .playlist__name {
     font-size: 54px; } }
 
+/* line 491, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .playlists__top-five .playlist__name .ellipsis {
   content: ' ';
   -webkit-box-sizing: content-box;
@@ -468,6 +564,7 @@ html {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00282828', endColorstr='#ff282828', GradientType=1); }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
+  /* line 508, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .playlists__top-five .playlist__name {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -475,26 +572,32 @@ html {
     -webkit-line-clamp: 2;
     /* number of lines to show */
     -webkit-box-orient: vertical; }
+  /* line 516, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .playlists__top-five .playlist__name .ellipsis {
     display: none !important; } }
 
+/* line 520, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .playlists__top-five .playlist__name a {
   line-height: 1;
   border-bottom: 0; }
 
+/* line 524, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .playlists__top-five .playlist__name a:hover {
   border-bottom: 0;
   color: #d9d9d9; }
 
+/* line 528, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .playlists__top-five .playlist:first-child .playlist-listening {
   position: absolute;
   bottom: 0;
   right: 0;
   padding: 12px; }
 
+/* line 534, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .playlists__top-five .playlist:nth-child(n+2) {
   height: 80px; }
 
+/* line 537, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .playlists__top-five .playlist:nth-child(n+2) .playlist-listening {
   line-height: 1;
   display: inline-block;
@@ -502,32 +605,41 @@ html {
   line-height: 79px;
   padding-right: 12px; }
 
+/* line 544, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .playlists__top-five .playlist:nth-child(n+2) .count {
   line-height: 79px; }
 
+/* line 547, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .playlists .media-object-playlist {
   text-align: left; }
 
+/* line 550, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .playlists .media-object-playlist .mo-info {
   padding-top: 8px;
   background: transparent; }
 
+/* line 554, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .playlists .media-object-playlist .mo-title {
   margin: 0; }
 
+/* line 557, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .playlists .media-object-playlist .mo-subtitle {
   display: block; }
 
+/* line 560, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .playlists .media-object-playlist .mo-subtitle a {
   border-bottom: 1px solid transparent; }
 
+/* line 563, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .playlists .media-object-playlist .mo-subtitle a:hover {
   color: #A0A0A0;
   border-bottom-color: currentcolor; }
 
+/* line 567, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .biography {
   position: relative; }
 
+/* line 570, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .biography-text {
   width: 75%;
   max-height: 72px;
@@ -536,6 +648,7 @@ html {
   margin-top: 26px;
   position: relative; }
 
+/* line 578, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .biography-text .collapsed {
   content: "";
   text-align: right;
@@ -546,33 +659,41 @@ html {
   height: 48px;
   background: linear-gradient(to bottom, rgba(24, 24, 24, 0), #181818 100%); }
 
+/* line 588, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .biography-text.images-0 {
   margin-top: 0; }
 
 @media (min-width: 844px) {
+  /* line 592, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .biography-text.images-0 {
     margin-top: 26px; } }
 
+/* line 596, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .biography-text .pre {
   font-size: 18px;
   line-height: 24px;
   font-weight: 300; }
 
+/* line 601, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .biography__image-carousel {
   height: 51vw;
   overflow: hidden; }
 
 @media (min-width: 844px) {
+  /* line 606, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .biography__image-carousel {
     height: 32vw;
     max-height: 496.66666667px; } }
 
+/* line 611, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .biography__image-carousel a {
   border-bottom: none; }
 
+/* line 614, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .biography__image-carousel.images-1 .large {
   width: 100%; }
 
+/* line 617, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .biography__image-carousel.images-0 {
   border: 2px solid #242424;
   font-size: 24px;
@@ -582,22 +703,27 @@ html {
   display: none; }
 
 @media (min-width: 844px) {
+  /* line 626, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .biography__image-carousel.images-0 {
     display: block;
     line-height: 32vw; } }
 
+/* line 631, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .biography__image-carousel.images-2 .large {
   width: calc(50% - 2px); }
 
+/* line 634, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .biography__image-carousel.images-2 .small {
   width: calc(50% - 2px);
   height: 51vw; }
 
 @media (min-width: 844px) {
+  /* line 639, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .biography__image-carousel.images-2 .small {
     height: 32vw;
     max-height: 496.66666667px; } }
 
+/* line 644, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .biography__image-carousel .large {
   height: 51vw;
   display: inline-block;
@@ -607,10 +733,12 @@ html {
   position: relative; }
 
 @media (min-width: 844px) {
+  /* line 653, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .biography__image-carousel .large {
     height: 32vw;
     max-height: 496.66666667px; } }
 
+/* line 658, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .biography__image-carousel .image {
   background-size: cover;
   background-position: 50%;
@@ -618,6 +746,7 @@ html {
   height: 100%;
   position: absolute; }
 
+/* line 665, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .biography__image-carousel .image-count-overlay {
   position: absolute;
   top: 0;
@@ -630,13 +759,16 @@ html {
   line-height: 25.5vw; }
 
 @media (min-width: 844px) {
+  /* line 677, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .biography__image-carousel .image-count-overlay {
     line-height: 16vw; } }
 
 @media (min-width: 1490px) {
+  /* line 682, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .biography__image-carousel .image-count-overlay {
     line-height: 248.33333333px; } }
 
+/* line 686, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .biography__image-carousel .small {
   display: inline-block;
   width: calc(25% - 4px);
@@ -648,16 +780,20 @@ html {
   position: relative; }
 
 @media (min-width: 844px) {
+  /* line 697, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .biography__image-carousel .small {
     height: calc(16vw - 2px);
     max-height: 246.33333333px; } }
 
+/* line 702, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .biography__image-carousel .small:nth-child(2) {
   margin-bottom: 2px; }
 
+/* line 705, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .biography__image-carousel .small:nth-child(3) {
   margin-top: 2px; }
 
+/* line 708, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .biography__artist-info {
   display: inline-block;
   font-weight: 400;
@@ -665,32 +801,39 @@ html {
   margin-top: 19px;
   margin-bottom: 9.5px; }
 
+/* line 715, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .biography__show-more {
   margin-top: 12px; }
 
+/* line 718, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .biography .bio-show {
   margin-top: 12px; }
 
+/* line 721, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .locations {
   text-align: center;
   margin-bottom: 20px;
   vertical-align: top;
   text-align: left; }
 
+/* line 727, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .locations .land {
   stroke: #202020;
   fill: #202020; }
 
 @media (min-width: 844px) {
+  /* line 732, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .locations .city.fixed-size:first-child {
     height: 32vw; } }
 
+/* line 736, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .locations .city:first-child {
   height: 240px;
   position: relative;
   overflow: hidden;
   background: #282828; }
 
+/* line 742, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .locations .city:nth-child(n+2) {
   border-bottom: 1px solid #282828;
   overflow: hidden;
@@ -698,29 +841,35 @@ html {
   position: relative;
   height: 60px; }
 
+/* line 749, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .locations .city .count {
   padding-left: 12px;
   font-size: 14px;
   line-height: 59px;
   display: inline-block; }
 
+/* line 755, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .locations .city:first-child .city__data {
   text-align: center;
   padding: 0; }
 
+/* line 759, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .locations .city:first-child .city__description {
   font-size: 5.5vw;
   font-weight: 400;
   line-height: 1; }
 
 @media (min-width: 844px) {
+  /* line 765, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .locations .city:first-child .city__description {
     font-size: 4vw; } }
 
 @media (min-width: 1490px) {
+  /* line 770, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
   .locations .city:first-child .city__description {
     font-size: 54px; } }
 
+/* line 774, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .locations .city:first-child .city__listeners {
   line-height: 19px;
   position: absolute;
@@ -728,6 +877,7 @@ html {
   right: 0;
   padding: 12px; }
 
+/* line 781, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .locations .city__data {
   width: 100%;
   padding-left: 35px;
@@ -737,6 +887,7 @@ html {
   transform: translateY(-50%);
   z-index: 1; }
 
+/* line 790, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .locations .city__listeners {
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -747,13 +898,16 @@ html {
   padding-right: 12px;
   line-height: 38px; }
 
+/* line 800, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .locations .city__description {
   color: #FFFFFF;
   display: inline-block; }
 
+/* line 804, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .locations .city__country {
   color: #A0A0A0; }
 
+/* line 807, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .locations .city__map {
   position: absolute;
   top: 0;
@@ -762,9 +916,11 @@ html {
   z-index: 0;
   background: #282828; }
 
+/* line 815, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .edit-buttons button {
   margin-left: 12px; }
 
+/* line 818, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 #dragging-image {
   position: absolute;
   top: 0;
@@ -774,36 +930,45 @@ html {
   cursor: move;
   opacity: .8; }
 
+/* line 827, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .edit-button {
   position: absolute;
   right: 0;
   top: 0;
   margin-top: 22px; }
 
+/* line 833, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .edit-image {
   position: relative;
   box-sizing: border-box; }
 
+/* line 837, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .edit-image-gallery {
   position: relative; }
 
+/* line 840, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .edit-image-gallery.dragging {
   cursor: move; }
 
+/* line 843, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .edit-image:hover .edit-image__overlay {
   display: block;
   cursor: move; }
 
+/* line 847, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .edit-image.dragging {
   outline: 1px dashed white;
   outline-offset: -1px; }
 
+/* line 851, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .edit-image.dragging .image {
   visibility: hidden; }
 
+/* line 854, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .edit-image.dragging .edit-image__overlay {
   display: none; }
 
+/* line 857, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .edit-image__overlay {
   display: none;
   position: absolute;
@@ -815,15 +980,18 @@ html {
   border: 2px solid white;
   text-align: right; }
 
+/* line 868, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .edit-image__overlay button {
   margin-top: 6px;
   margin-right: 4px; }
 
+/* line 872, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .edit-buttons {
   display: inline-block;
   padding-top: 24px;
   float: right; }
 
+/* line 877, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .edit-view {
   position: absolute;
   z-index: 10;
@@ -832,13 +1000,16 @@ html {
   pointer-events: auto;
   top: 0; }
 
+/* line 885, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .edit-view .section-divider {
   display: inline-block;
   vertical-align: top; }
 
+/* line 889, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .additional-image {
   margin: 8px 8px 0px 0;
   display: inline-block; }
 
+/* line 893, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .additional-image img {
   height: 150px; }

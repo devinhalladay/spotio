@@ -34,6 +34,10 @@ module.exports = function(grunt) {
 
     // Watch and build
     watch: {
+      glue: {
+        files: ['skin/**/*.scss', '!skin/apps/*.scss'],
+        tasks: ['sass']
+      },
       sass: {
         files: 'skin/**/*.scss',
         tasks: ['sass']

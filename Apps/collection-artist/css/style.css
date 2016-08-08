@@ -1,11 +1,14 @@
+/* line 4, /Users/Devin/GitHub/spotio/skin/apps/collection-artist.scss */
 body.show-offline-screen,
 body.throbber-is-visible {
   overflow: hidden; }
 
+/* line 8, /Users/Devin/GitHub/spotio/skin/apps/collection-artist.scss */
 .error-and-offline {
   position: fixed; }
 
 /* TODO: Fix this is GLUE instead */
+/* line 12, /Users/Devin/GitHub/spotio/skin/apps/collection-artist.scss */
 .tl-time {
   text-overflow: clip !important; }
 
@@ -14,23 +17,28 @@ body.throbber-is-visible {
    the tooltips anyway. This might be auto-solved when using views
    and glue fully.
  */
+/* line 20, /Users/Devin/GitHub/spotio/skin/apps/collection-artist.scss */
 #tooltip {
   display: none !important; }
 
+/* line 23, /Users/Devin/GitHub/spotio/skin/apps/collection-artist.scss */
 .nux-screen {
   display: table;
   height: 100%;
   width: 100%;
   padding-top: 10%; }
 
+/* line 29, /Users/Devin/GitHub/spotio/skin/apps/collection-artist.scss */
 .nux-screen .nux-screen-inner-box {
   display: table-cell;
   text-align: center;
   vertical-align: middle; }
 
+/* line 34, /Users/Devin/GitHub/spotio/skin/apps/collection-artist.scss */
 .nux-screen .nux-screen-inner-box .nux-icon {
   line-height: 128px; }
 
+/* line 37, /Users/Devin/GitHub/spotio/skin/apps/collection-artist.scss */
 .nux-screen .nux-screen-inner-box .nux-songs-icon:before {
   font-family: "glue1-spoticon";
   font-style: normal;
@@ -43,6 +51,7 @@ body.throbber-is-visible {
   content: "\f157";
   font-size: 128px; }
 
+/* line 49, /Users/Devin/GitHub/spotio/skin/apps/collection-artist.scss */
 .nux-screen .nux-screen-inner-box .nux-albums-icon:before {
   font-family: "glue1-spoticon";
   font-style: normal;
@@ -55,6 +64,7 @@ body.throbber-is-visible {
   content: "\f1C1";
   font-size: 128px; }
 
+/* line 61, /Users/Devin/GitHub/spotio/skin/apps/collection-artist.scss */
 .nux-screen .nux-screen-inner-box .nux-artists-icon:before {
   font-family: "glue1-spoticon";
   font-style: normal;
@@ -67,19 +77,23 @@ body.throbber-is-visible {
   content: "\f103";
   font-size: 128px; }
 
+/* line 73, /Users/Devin/GitHub/spotio/skin/apps/collection-artist.scss */
 .ca-hidden,
 .ca-hidden * {
   visibility: hidden !important; }
 
+/* line 77, /Users/Devin/GitHub/spotio/skin/apps/collection-artist.scss */
 .ca-removed {
   position: absolute;
   visibility: hidden;
   z-index: -1; }
 
 /* Start atamon GLUE override hacks */
+/* line 83, /Users/Devin/GitHub/spotio/skin/apps/collection-artist.scss */
 header.header .h-data {
   padding-top: 15px; }
 
+/* line 86, /Users/Devin/GitHub/spotio/skin/apps/collection-artist.scss */
 header.header section.h-main-content {
   margin-top: 10px;
   margin-bottom: 10px; }

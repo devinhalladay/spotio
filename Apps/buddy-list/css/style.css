@@ -1,19 +1,24 @@
+/* line 4, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 body {
   font-size: 12px;
   min-width: 100px; }
 
+/* line 8, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 html,
 body,
 #main {
   height: 100%; }
 
+/* line 13, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .offline #throbber {
   /* ensure throbber is not still animating behind offline overlay */
   display: none; }
 
+/* line 17, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .nux {
   display: none; }
 
+/* line 20, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .nux .nux-cta {
   background-image: url(../img/nux_cta_bg.png);
   min-height: 217px;
@@ -22,31 +27,39 @@ body,
   text-align: center; }
 
 @media screen and (max-width: 100px) {
+  /* line 28, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
   .nux .nux-cta {
     background: #FAFAFC; } }
 
+/* line 32, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .nux .nux-cta h4 {
   margin-top: 40px; }
 
 @media screen and (max-width: 100px) {
+  /* line 36, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
   .nux .nux-cta h4 {
     display: none; } }
 
+/* line 40, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .nux .nux-cta .find-friends,
 .nux .nux-cta .find-friends-small {
   margin-top: 20px; }
 
+/* line 44, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .nux .nux-feed-example {
   background-image: url(../img/nux_feed_bg.png);
   min-height: 820px; }
 
 @media screen and (max-width: 100px) {
+  /* line 49, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
   .nux .nux-feed-example {
     display: none; } }
 
+/* line 53, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .app-title {
   margin-bottom: 26px; }
 
+/* line 56, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .card {
   position: absolute;
   top: 0px;
@@ -60,36 +73,45 @@ body,
   display: flex; }
 
 @media screen and (max-width: 100px) {
+  /* line 69, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
   .card {
     padding-left: 0; } }
 
+/* line 73, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .context-info {
   flex: 1;
   overflow: hidden; }
 
+/* line 77, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .friend:hover .user-play-button .mo-image-wrapper .mo-play,
 .friend:hover .user-play-button .mo-image-wrapper .mo-overlay {
   visibility: visible; }
 
 @media screen and (max-width: 100px) {
+  /* line 82, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
   .friend:hover .user-play-button .mo-image-wrapper .mo-play,
   .friend:hover .user-play-button .mo-image-wrapper .mo-overlay {
     visibility: hidden; } }
 
+/* line 87, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .friend .user {
   margin-top: 11px;
   margin-bottom: 3px; }
 
+/* line 91, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .friend .user.has-context {
   margin-top: 0; }
 
+/* line 94, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .friend .user-image.has-context {
   margin-top: 20px; }
 
 @media screen and (max-width: 100px) {
+  /* line 98, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
   .friend .user-image.has-context {
     margin-top: 0px; } }
 
+/* line 102, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .friend .user .name {
   font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
   font-size: 14px;
@@ -99,44 +121,54 @@ body,
   text-transform: normal;
   color: #56666F; }
 
+/* line 111, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .friend .user-image {
   position: relative;
   width: 40px;
   height: 40px;
   margin-right: 13px; }
 
+/* line 117, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .friend .song-title {
   line-height: 14px; }
 
+/* line 120, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .friend .context {
   margin-top: 2px; }
 
+/* line 123, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .friend .status-containers {
   float: right;
   overflow: hidden;
   margin-right: 8px; }
 
+/* line 128, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .friend .active-indicator,
 .friend .from-now {
   margin-left: 5px;
   overflow: hidden; }
 
 @media screen and (max-width: 100px) {
+  /* line 134, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
   .friend .active-indicator,
   .friend .from-now {
     position: absolute; }
+  /* line 138, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
   .friend .status-containers {
     width: 14px;
     height: 14px;
     margin-top: 13px;
     float: left; }
+  /* line 144, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
   .friend .user-image {
     margin-left: 3px; }
+  /* line 147, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
   .friend .from-now {
     width: 13px;
     height: 13px;
     visibility: hidden !important; } }
 
+/* line 153, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .friend .user-play-button {
   width: 100%;
   height: 100%;
@@ -146,19 +178,23 @@ body,
   /* Always show a user placeholder, since we're pretending the mo is a user
     with a different context */ }
 
+/* line 162, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .friend .user-play-button .mo-overlay {
   border-radius: 100%; }
 
+/* line 165, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .friend .user-play-button .mo-wrapper,
 .friend .user-play-button .mo-image-wrapper {
   overflow: visible; }
 
+/* line 169, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .friend .user-play-button .mo-image,
 .friend .user-play-button .mo-image-wrapper {
   /* force all context-types to appear rounded, since we pretend
       that they are playable users */
   border-radius: 500px; }
 
+/* line 175, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .friend .user-play-button .mo-placeholder .album-placeholder,
 .friend .user-play-button .mo-placeholder .artist-placeholder,
 .friend .user-play-button .mo-placeholder .playlist-placeholder,
@@ -166,9 +202,11 @@ body,
 .friend .user-play-button .mo-placeholder .genre-placeholder {
   display: none; }
 
+/* line 182, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .friend .user-play-button .mo-placeholder .user-placeholder {
   display: block; }
 
+/* line 185, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .friend .user-play-button .button.mo-play {
   height: 40px;
   line-height: 38px;
@@ -186,61 +224,75 @@ body,
   padding-right: 0;
   margin: -20px 0px 0px -20px; }
 
+/* line 202, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .friend .user-play-button .button.mo-play .b-alt-text {
   margin-top: -38px; }
 
+/* line 205, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .friend .user-play-button .button.mo-play.contextmenu-active,
 .friend .user-play-button .button.mo-play:not(:disabled):hover {
   background-color: rgba(24, 24, 24, 0.7);
   color: #ffffff; }
 
+/* line 210, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .friend .user-play-button .button.mo-play:not(:disabled):hover:active {
   background: rgba(16, 16, 16, 0.76);
   color: #cccccc;
   transform: scale(1); }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
+  /* line 216, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
   .friend .user-play-button .button.mo-play:not(:disabled):hover:active {
     transform: scale(1); } }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
+  /* line 221, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
   .friend .user-play-button .button.mo-play {
     transition-duration: 50ms; } }
 
+/* line 225, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .friend .user-play-button .button.mo-play:after {
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: box-shadow; }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
+  /* line 230, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
   .friend .user-play-button .button.mo-play:after {
     transition-duration: 50ms; } }
 
+/* line 234, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .friend .user-play-button .button.mo-play.contextmenu-active,
 .friend .user-play-button .button.mo-play:not(:disabled):hover {
   transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
   transition-property: transform, box-shadow, color, background-color; }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
+  /* line 240, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
   .friend .user-play-button .button.mo-play.contextmenu-active,
   .friend .user-play-button .button.mo-play:not(:disabled):hover {
     transition-duration: 66ms; } }
 
+/* line 245, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .friend .user-play-button .button.mo-play.contextmenu-active:after,
 .friend .user-play-button .button.mo-play:not(:disabled):hover:after {
   transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
   transition-property: box-shadow; }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
+  /* line 251, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
   .friend .user-play-button .button.mo-play.contextmenu-active:after,
   .friend .user-play-button .button.mo-play:not(:disabled):hover:after {
     transition-duration: 66ms; } }
 
+/* line 256, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .friend .user-play-button .button.mo-play:not(:disabled):hover:active {
   transition: none; }
 
+/* line 259, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .friend .user-play-button .button.mo-play:not(:disabled):hover:active:after {
   transition: none; }
 
+/* line 262, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .friend .user-play-button .button.mo-play:after {
   content: '';
   position: absolute;
@@ -251,37 +303,46 @@ body,
   border-radius: 500px;
   box-shadow: inset 0 0 0 1px #A0A0A0; }
 
+/* line 272, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .friend .user-play-button .button.mo-play.contextmenu-active,
 .friend .user-play-button .button.mo-play:not(:disabled):hover {
   box-shadow: inset 0 0 0 1px #FFFFFF, 0 0 0 1px transparent; }
 
+/* line 276, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .friend .user-play-button .button.mo-play.contextmenu-active:after,
 .friend .user-play-button .button.mo-play:not(:disabled):hover:after {
   box-shadow: inset 0 0 0 1px #FFFFFF; }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
+  /* line 281, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
   .friend .user-play-button .button.mo-play.contextmenu-active,
   .friend .user-play-button .button.mo-play:not(:disabled):hover {
     box-shadow: inset 0 0 0 1px #FFFFFF; }
+  /* line 285, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
   .friend .user-play-button .button.mo-play.contextmenu-active:after,
   .friend .user-play-button .button.mo-play:not(:disabled):hover:after {
     box-shadow: inset 0 0 0 1px #FFFFFF; } }
 
+/* line 290, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .friend .user-play-button .button.mo-play:not(:disabled):hover:active {
   box-shadow: inset 0 0 0 1px #808080; }
 
+/* line 293, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .friend .user-play-button .button.mo-play:not(:disabled):hover:active:after {
   box-shadow: inset 0 0 0 1px #808080; }
 
+/* line 296, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .friend .user-play-button .button.mo-play.contextmenu-active,
 .friend .user-play-button .button.mo-play:not(:disabled):hover {
   transform: scale(1.1); }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
+  /* line 301, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
   .friend .user-play-button .button.mo-play.contextmenu-active,
   .friend .user-play-button .button.mo-play:not(:disabled):hover {
     transform: scale(1.1); } }
 
+/* line 306, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .friend .user-play-button .button.mo-play:before {
   font-family: "glue1-spoticon";
   font-style: normal;
@@ -301,9 +362,11 @@ body,
   padding-left: 10px;
   width: calc(100% - 10px); }
 
+/* line 325, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .friend .user-play-button .button.mo-play.button-play:before {
   content: "\f132"; }
 
+/* line 328, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .friend .user-play-button .button.mo-play.button-play.playing:not(:hover),
 .tl-row.playing .friend .user-play-button .button.mo-play.button-play:not(:hover),
 .tl-row.playing.friend .user-play-button .button.mo-play.button-play:not(:hover),
@@ -311,6 +374,7 @@ body,
 .media-object.playing.friend .user-play-button .button.mo-play.button-play:not(:hover) {
   box-shadow: inset 0 0 0 1px transparent; }
 
+/* line 335, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .friend .user-play-button .button.mo-play.button-play.playing:not(:hover):after,
 .tl-row.playing .friend .user-play-button .button.mo-play.button-play:not(:hover):after,
 .tl-row.playing.friend .user-play-button .button.mo-play.button-play:not(:hover):after,
@@ -325,6 +389,7 @@ body,
   border-radius: 500px;
   box-shadow: inset 0 0 0 1px transparent; }
 
+/* line 349, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .friend .user-play-button .button.mo-play.button-play.playing:not(:hover).contextmenu-active,
 .tl-row.playing .friend .user-play-button .button.mo-play.button-play:not(:hover).contextmenu-active,
 .tl-row.playing.friend .user-play-button .button.mo-play.button-play:not(:hover).contextmenu-active,
@@ -337,6 +402,7 @@ body,
 .media-object.playing.friend .user-play-button .button.mo-play.button-play:not(:hover):not(:disabled):hover {
   box-shadow: inset 0 0 0 1px transparent, 0 0 0 1px transparent; }
 
+/* line 361, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .friend .user-play-button .button.mo-play.button-play.playing:not(:hover).contextmenu-active:after,
 .tl-row.playing .friend .user-play-button .button.mo-play.button-play:not(:hover).contextmenu-active:after,
 .tl-row.playing.friend .user-play-button .button.mo-play.button-play:not(:hover).contextmenu-active:after,
@@ -350,6 +416,7 @@ body,
   box-shadow: inset 0 0 0 1px transparent; }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
+  /* line 374, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
   .friend .user-play-button .button.mo-play.button-play.playing:not(:hover).contextmenu-active,
   .tl-row.playing .friend .user-play-button .button.mo-play.button-play:not(:hover).contextmenu-active,
   .tl-row.playing.friend .user-play-button .button.mo-play.button-play:not(:hover).contextmenu-active,
@@ -361,6 +428,7 @@ body,
   .media-object.playing .friend .user-play-button .button.mo-play.button-play:not(:hover):not(:disabled):hover,
   .media-object.playing.friend .user-play-button .button.mo-play.button-play:not(:hover):not(:disabled):hover {
     box-shadow: inset 0 0 0 1px transparent; }
+  /* line 386, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
   .friend .user-play-button .button.mo-play.button-play.playing:not(:hover).contextmenu-active:after,
   .tl-row.playing .friend .user-play-button .button.mo-play.button-play:not(:hover).contextmenu-active:after,
   .tl-row.playing.friend .user-play-button .button.mo-play.button-play:not(:hover).contextmenu-active:after,
@@ -373,6 +441,7 @@ body,
   .media-object.playing.friend .user-play-button .button.mo-play.button-play:not(:hover):not(:disabled):hover:after {
     box-shadow: inset 0 0 0 1px transparent; } }
 
+/* line 399, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .friend .user-play-button .button.mo-play.button-play.playing:not(:hover):not(:disabled):hover:active,
 .tl-row.playing .friend .user-play-button .button.mo-play.button-play:not(:hover):not(:disabled):hover:active,
 .tl-row.playing.friend .user-play-button .button.mo-play.button-play:not(:hover):not(:disabled):hover:active,
@@ -380,6 +449,7 @@ body,
 .media-object.playing.friend .user-play-button .button.mo-play.button-play:not(:hover):not(:disabled):hover:active {
   box-shadow: inset 0 0 0 1px transparent; }
 
+/* line 406, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .friend .user-play-button .button.mo-play.button-play.playing:not(:hover):not(:disabled):hover:active:after,
 .tl-row.playing .friend .user-play-button .button.mo-play.button-play:not(:hover):not(:disabled):hover:active:after,
 .tl-row.playing.friend .user-play-button .button.mo-play.button-play:not(:hover):not(:disabled):hover:active:after,
@@ -387,6 +457,7 @@ body,
 .media-object.playing.friend .user-play-button .button.mo-play.button-play:not(:hover):not(:disabled):hover:active:after {
   box-shadow: inset 0 0 0 1px transparent; }
 
+/* line 413, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .friend .user-play-button .button.mo-play.button-play.playing:not(:hover):before,
 .tl-row.playing .friend .user-play-button .button.mo-play.button-play:not(:hover):before,
 .tl-row.playing.friend .user-play-button .button.mo-play.button-play:not(:hover):before,
@@ -396,6 +467,7 @@ body,
   padding-left: 8.75px;
   width: calc(100% - 8.75px); }
 
+/* line 422, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .friend .user-play-button .button.mo-play.button-play.playing:hover:before,
 .tl-row.playing .friend .user-play-button .button.mo-play.button-play:hover:before,
 .tl-row.playing.friend .user-play-button .button.mo-play.button-play:hover:before,
@@ -403,23 +475,28 @@ body,
 .media-object.playing.friend .user-play-button .button.mo-play.button-play:hover:before {
   content: "\f130"; }
 
+/* line 429, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .friend .user-play-button.playing .button.mo-play:not(:hover):before {
   padding-left: 8.75px;
   width: calc(100% - 8.75px); }
 
+/* line 433, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .glue2 .friend .user-play-button .button.mo-play {
   width: 40px;
   height: 40px; }
 
+/* line 437, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .glue2 .friend .user-play-button .button.mo-play:before {
   line-height: 40px;
   font-size: 28px;
   padding-left: 6px;
   width: calc(100% - 6px); }
 
+/* line 443, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .card.inactive-friends-divider {
   padding: 0px; }
 
+/* line 446, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .card.inactive-friends-divider .section-divider {
   padding: 19px 0 0px 0px;
   margin: 0 13px;
@@ -427,11 +504,14 @@ body,
   border-top: 1px solid #222326; }
 
 @media screen and (max-width: 100px) {
+  /* line 453, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
   .card.inactive-friends-divider .section-divider {
     padding-top: 0; }
+  /* line 456, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
   .card.inactive-friends-divider .section-divider h3 {
     display: none; } }
 
+/* line 460, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .card.inactive-friends-divider .section-divider > * {
   font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
   font-size: 18px;
@@ -441,25 +521,32 @@ body,
   color: #FFFFFF;
   text-transform: normal; }
 
+/* line 469, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .drop-target-active {
   background-color: #FFFFFF;
   color: #444; }
 
+/* line 473, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .drop-target-active .user .name {
   color: #444; }
 
+/* line 476, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 :not(.spot-enabled) .friend .status-containers.active .active-indicator {
   display: block; }
 
+/* line 479, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 :not(.spot-enabled) .friend .status-containers.active .from-now {
   display: none; }
 
+/* line 482, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 :not(.spot-enabled) .friend .status-containers:not(.active) .active-indicator {
   display: none; }
 
+/* line 485, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 :not(.spot-enabled) .friend .status-containers:not(.active) .from-now {
   display: block; }
 
+/* line 488, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .active-indicator {
   width: 13px;
   height: 13px;
@@ -480,42 +567,53 @@ body,
   to {
     background-position: 100%; } }
 
+/* line 512, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .find-friends-button-container {
   padding: 34px 0;
   text-align: center;
   display: block; }
 
+/* line 517, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .social-icons-card {
   padding: 8px 8px 7px 14px; }
 
+/* line 520, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .social-icons-card img {
   display: inline-block;
   cursor: pointer; }
 
 @media screen and (max-width: 100px) {
+  /* line 525, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
   .context-info {
     display: none; } }
 
+/* line 529, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .find-friends-small {
   display: none; }
 
 @media screen and (max-width: 100px) {
+  /* line 533, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
   .find-friends-small {
     display: block; } }
 
 @media screen and (max-width: 100px) {
+  /* line 538, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
   .find-friends {
     display: none; } }
 
+/* line 542, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .container {
   min-width: 100px; }
 
+/* line 545, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .new-chrome-style body {
   background: #000000; }
 
 @media screen and (max-width: 100px) {
+  /* line 549, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
   .new-chrome-style .nux .nux-cta {
     background: #000000; } }
 
+/* line 553, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .new-chrome-style .card {
   background-color: #000000; }

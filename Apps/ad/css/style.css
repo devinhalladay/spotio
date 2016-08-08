@@ -1,12 +1,15 @@
+/* line 3, /Users/Devin/GitHub/spotio/skin/apps/ad.scss */
 .ad-page-container {
   margin: 0;
   padding: 0;
   height: 100%; }
 
+/* line 9, /Users/Devin/GitHub/spotio/skin/apps/ad.scss */
 .ad-page-frame {
   width: 100%;
   min-height: 100%;
   border: none; }
 
+/* line 15, /Users/Devin/GitHub/spotio/skin/apps/ad.scss */
 html {
   height: 100%; }

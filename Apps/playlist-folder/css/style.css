@@ -1,14 +1,18 @@
+/* line 4, /Users/Devin/GitHub/spotio/skin/apps/playlist-folder.scss */
 .empty-content {
   margin: 0 auto;
   text-align: center; }
 
+/* line 8, /Users/Devin/GitHub/spotio/skin/apps/playlist-folder.scss */
 .empty-content .message {
   margin: 1em auto 2em auto;
   max-width: 400px; }
 
+/* line 12, /Users/Devin/GitHub/spotio/skin/apps/playlist-folder.scss */
 .empty-content .btn-info {
   margin: 0 5px; }
 
+/* line 15, /Users/Devin/GitHub/spotio/skin/apps/playlist-folder.scss */
 .folder-content .media-object .button-add,
 .folder-content .media-object .button-more {
   display: none; }

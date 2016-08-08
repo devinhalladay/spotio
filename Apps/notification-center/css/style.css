@@ -1,33 +1,40 @@
 /* Sizes */
+/* line 5, /Users/Devin/GitHub/spotio/skin/apps/notification-center.scss */
 html {
   height: 100%;
   overflow: hidden; }
 
+/* line 9, /Users/Devin/GitHub/spotio/skin/apps/notification-center.scss */
 body {
   height: 100%;
   overflow: hidden;
   min-width: 0; }
 
+/* line 14, /Users/Devin/GitHub/spotio/skin/apps/notification-center.scss */
 #notification-center {
   width: 100%;
   height: 100%;
   background-color: #333333; }
 
+/* line 19, /Users/Devin/GitHub/spotio/skin/apps/notification-center.scss */
 #title-bar {
   /* Override GLUE here since the app container handles borders */
   border-radius: 0;
   overflow: hidden;
   padding: 2px inherit 0; }
 
+/* line 25, /Users/Devin/GitHub/spotio/skin/apps/notification-center.scss */
 #notification-list {
   position: absolute;
   top: 36px;
   bottom: 0px;
   width: 100%; }
 
+/* line 31, /Users/Devin/GitHub/spotio/skin/apps/notification-center.scss */
 #notification-list .scrollbar-track {
   right: 3px; }
 
+/* line 34, /Users/Devin/GitHub/spotio/skin/apps/notification-center.scss */
 #alert-container {
   background-color: #333333;
   width: 100%;
@@ -35,22 +42,27 @@ body {
   display: table;
   text-align: center; }
 
+/* line 41, /Users/Devin/GitHub/spotio/skin/apps/notification-center.scss */
 #alert-container #alert-inner {
   display: table-cell;
   vertical-align: middle; }
 
+/* line 45, /Users/Devin/GitHub/spotio/skin/apps/notification-center.scss */
 #alert-container #alert-message {
   margin-top: 20px;
   margin-left: 50px;
   margin-right: 50px;
   margin-bottom: 0; }
 
+/* line 51, /Users/Devin/GitHub/spotio/skin/apps/notification-center.scss */
 #notificationListContent {
   overflow-x: hidden; }
 
+/* line 54, /Users/Devin/GitHub/spotio/skin/apps/notification-center.scss */
 .hide {
   display: none; }
 
+/* line 57, /Users/Devin/GitHub/spotio/skin/apps/notification-center.scss */
 #throbber-container {
   position: absolute;
   top: 0;
@@ -59,6 +71,7 @@ body {
   bottom: 0;
   background-color: #333333; }
 
+/* line 65, /Users/Devin/GitHub/spotio/skin/apps/notification-center.scss */
 #loading-throbber {
   position: absolute;
   top: 50%;
