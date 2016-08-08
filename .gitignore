@@ -3,3 +3,4 @@
 Gemfile.lock
 node_modules
 build
+dist/Spotify.app

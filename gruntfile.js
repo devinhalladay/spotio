@@ -138,7 +138,16 @@ module.exports = function(grunt) {
           'hdiutil detach /Volumes/Spotify'
         ].join('&&')
       }
-    }
+    },
+
+    compress: {
+      main: {
+        options: {
+          archive: 'dist/Spotify.zip'
+        },
+      files: [{expand: true, src: ['Spotify.zip'], dest: '/'}]
+      }
+    },
   });
 
   // Load dependencies
