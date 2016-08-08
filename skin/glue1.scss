@@ -1,6 +1,5 @@
-@import "vendor/normalize";
-
 @import "base/variables";
+@import "vendor/normalize";
 
 @keyframes glue-keyframes-rotate {
   0% {
@@ -12,19 +11,12 @@
 }
 
 @import "base/type";
-
 @import "base/reset";
-
 @import "objects/grid";
-
 @import "components/icons";
-
 @import "utilities/clearfix";
-
 @import "utilities/layout";
-
 @import "utilities/scrollbar";
-
 @import "utilities/drag-drop";
 
 .pre-scrollable {
