@@ -1,46 +1,26 @@
 module.exports = function(grunt) {
   grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json'),
     sass: {
-      glue: {
-        options: {
-          sourcemap: 'none'
-        },
-        files: [{
-          expand: true,
-          cwd: "skin",
-          src: ["glue1.scss"],
-          dest: "dist",
-          ext: ".css"
-        }]
+      task: {
+        src: ['source'],
+        dest: 'destination'
       },
-      apps: {
-        options: {
-          sourcemap: 'none'
-        },
-        files: [{
-          expand: true,
-          cwd: "skin/apps",
-          src: ["*.scss"],
-          dest: "Apps/",
-          ext: ".css",
-          rename: function(dest, src) {
-            return dest + src.slice(0, -4) + "/css/" + 'style.css';
-          }
-        }]
-      },
+      options: {
+        'sourcemap': 'none',
+        'update': true
+      }
     },
     watch: {
-      options: {
-        spawn: false,
-      },
-      source: {
-        files: ['skin/**/*.scss'],
-        tasks: ['sass']
+      task: {
+        src: ['source'],
+        dest: 'destination'
       }
     }
   });
 
-  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.registerTask('default', ['sass']);
+  grunt.loadNpmTasks('grunt-contrib-watch');
+
+  grunt.registerTask('default', ['sass', 'watch']);
 };

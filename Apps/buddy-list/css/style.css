@@ -24,12 +24,14 @@ body,
 @media screen and (max-width: 100px) {
   .nux .nux-cta {
     background: #FAFAFC; } }
+
 .nux .nux-cta h4 {
   margin-top: 40px; }
 
 @media screen and (max-width: 100px) {
   .nux .nux-cta h4 {
     display: none; } }
+
 .nux .nux-cta .find-friends,
 .nux .nux-cta .find-friends-small {
   margin-top: 20px; }
@@ -41,6 +43,7 @@ body,
 @media screen and (max-width: 100px) {
   .nux .nux-feed-example {
     display: none; } }
+
 .app-title {
   margin-bottom: 26px; }
 
@@ -59,6 +62,7 @@ body,
 @media screen and (max-width: 100px) {
   .card {
     padding-left: 0; } }
+
 .context-info {
   flex: 1;
   overflow: hidden; }
@@ -71,6 +75,7 @@ body,
   .friend:hover .user-play-button .mo-image-wrapper .mo-play,
   .friend:hover .user-play-button .mo-image-wrapper .mo-overlay {
     visibility: hidden; } }
+
 .friend .user {
   margin-top: 11px;
   margin-bottom: 3px; }
@@ -84,6 +89,7 @@ body,
 @media screen and (max-width: 100px) {
   .friend .user-image.has-context {
     margin-top: 0px; } }
+
 .friend .user .name {
   font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
   font-size: 14px;
@@ -119,20 +125,18 @@ body,
   .friend .active-indicator,
   .friend .from-now {
     position: absolute; }
-
   .friend .status-containers {
     width: 14px;
     height: 14px;
     margin-top: 13px;
     float: left; }
-
   .friend .user-image {
     margin-left: 3px; }
-
   .friend .from-now {
     width: 13px;
     height: 13px;
     visibility: hidden !important; } }
+
 .friend .user-play-button {
   width: 100%;
   height: 100%;
@@ -198,9 +202,11 @@ body,
 @media (-webkit-min-device-pixel-ratio: 2) {
   .friend .user-play-button .button.mo-play:not(:disabled):hover:active {
     transform: scale(1); } }
+
 @media (-webkit-min-device-pixel-ratio: 2) {
   .friend .user-play-button .button.mo-play {
     transition-duration: 50ms; } }
+
 .friend .user-play-button .button.mo-play:after {
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: box-shadow; }
@@ -208,6 +214,7 @@ body,
 @media (-webkit-min-device-pixel-ratio: 2) {
   .friend .user-play-button .button.mo-play:after {
     transition-duration: 50ms; } }
+
 .friend .user-play-button .button.mo-play.contextmenu-active,
 .friend .user-play-button .button.mo-play:not(:disabled):hover {
   transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
@@ -217,6 +224,7 @@ body,
   .friend .user-play-button .button.mo-play.contextmenu-active,
   .friend .user-play-button .button.mo-play:not(:disabled):hover {
     transition-duration: 66ms; } }
+
 .friend .user-play-button .button.mo-play.contextmenu-active:after,
 .friend .user-play-button .button.mo-play:not(:disabled):hover:after {
   transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
@@ -226,6 +234,7 @@ body,
   .friend .user-play-button .button.mo-play.contextmenu-active:after,
   .friend .user-play-button .button.mo-play:not(:disabled):hover:after {
     transition-duration: 66ms; } }
+
 .friend .user-play-button .button.mo-play:not(:disabled):hover:active {
   transition: none; }
 
@@ -254,10 +263,10 @@ body,
   .friend .user-play-button .button.mo-play.contextmenu-active,
   .friend .user-play-button .button.mo-play:not(:disabled):hover {
     box-shadow: inset 0 0 0 1px #FFFFFF; }
-
   .friend .user-play-button .button.mo-play.contextmenu-active:after,
   .friend .user-play-button .button.mo-play:not(:disabled):hover:after {
     box-shadow: inset 0 0 0 1px #FFFFFF; } }
+
 .friend .user-play-button .button.mo-play:not(:disabled):hover:active {
   box-shadow: inset 0 0 0 1px #808080; }
 
@@ -272,6 +281,7 @@ body,
   .friend .user-play-button .button.mo-play.contextmenu-active,
   .friend .user-play-button .button.mo-play:not(:disabled):hover {
     transform: scale(1.1); } }
+
 .friend .user-play-button .button.mo-play:before {
   font-family: "glue1-spoticon";
   font-style: normal;
@@ -351,7 +361,6 @@ body,
   .media-object.playing .friend .user-play-button .button.mo-play.button-play:not(:hover):not(:disabled):hover,
   .media-object.playing.friend .user-play-button .button.mo-play.button-play:not(:hover):not(:disabled):hover {
     box-shadow: inset 0 0 0 1px transparent; }
-
   .friend .user-play-button .button.mo-play.button-play.playing:not(:hover).contextmenu-active:after,
   .tl-row.playing .friend .user-play-button .button.mo-play.button-play:not(:hover).contextmenu-active:after,
   .tl-row.playing.friend .user-play-button .button.mo-play.button-play:not(:hover).contextmenu-active:after,
@@ -363,6 +372,7 @@ body,
   .media-object.playing .friend .user-play-button .button.mo-play.button-play:not(:hover):not(:disabled):hover:after,
   .media-object.playing.friend .user-play-button .button.mo-play.button-play:not(:hover):not(:disabled):hover:after {
     box-shadow: inset 0 0 0 1px transparent; } }
+
 .friend .user-play-button .button.mo-play.button-play.playing:not(:hover):not(:disabled):hover:active,
 .tl-row.playing .friend .user-play-button .button.mo-play.button-play:not(:hover):not(:disabled):hover:active,
 .tl-row.playing.friend .user-play-button .button.mo-play.button-play:not(:hover):not(:disabled):hover:active,
@@ -419,9 +429,9 @@ body,
 @media screen and (max-width: 100px) {
   .card.inactive-friends-divider .section-divider {
     padding-top: 0; }
-
   .card.inactive-friends-divider .section-divider h3 {
     display: none; } }
+
 .card.inactive-friends-divider .section-divider > * {
   font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
   font-size: 18px;
@@ -463,11 +473,13 @@ body,
     background-position: 0%; }
   to {
     background-position: 100%; } }
+
 @-webkit-keyframes speaker-b {
   from {
     background-position: 0%; }
   to {
     background-position: 100%; } }
+
 .find-friends-button-container {
   padding: 34px 0;
   text-align: center;
@@ -483,15 +495,18 @@ body,
 @media screen and (max-width: 100px) {
   .context-info {
     display: none; } }
+
 .find-friends-small {
   display: none; }
 
 @media screen and (max-width: 100px) {
   .find-friends-small {
     display: block; } }
+
 @media screen and (max-width: 100px) {
   .find-friends {
     display: none; } }
+
 .container {
   min-width: 100px; }
 
@@ -501,5 +516,6 @@ body,
 @media screen and (max-width: 100px) {
   .new-chrome-style .nux .nux-cta {
     background: #000000; } }
+
 .new-chrome-style .card {
   background-color: #000000; }

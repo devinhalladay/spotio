@@ -17,6 +17,7 @@
     -ms-transform: translateX(0px);
     -o-transform: translateX(0px);
     transform: translateX(0px); } }
+
 @-o-keyframes bounceInLeft {
   0% {
     -webkit-transform: translateX(258px);
@@ -36,6 +37,7 @@
     -ms-transform: translateX(0px);
     -o-transform: translateX(0px);
     transform: translateX(0px); } }
+
 @-webkit-keyframes bounceInLeft {
   0% {
     -webkit-transform: translateX(258px);
@@ -55,6 +57,7 @@
     -ms-transform: translateX(0px);
     -o-transform: translateX(0px);
     transform: translateX(0px); } }
+
 @keyframes bounceInLeft {
   0% {
     -webkit-transform: translateX(258px);
@@ -74,6 +77,7 @@
     -ms-transform: translateX(0px);
     -o-transform: translateX(0px);
     transform: translateX(0px); } }
+
 .station-creator-overlay {
   position: fixed;
   top: 0px;

@@ -140,6 +140,7 @@
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
   .edit-pinned-item__controls {
     backface-visibility: hidden; } }
+
 .edit-pinned-item__controls .button {
   margin-left: 5px; }
 
@@ -177,6 +178,7 @@
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
   .edit-pinned-item-button {
     backface-visibility: hidden; } }
+
 .edit-pinned-item-button .button {
   margin-left: 5px; }
 
@@ -281,6 +283,7 @@
 @media (max-width: 853px) {
   .col-hidden {
     display: none; } }
+
 /*
   TOP TRACKS Listings
 */
@@ -457,10 +460,12 @@
 @media (max-width: 1274px) {
   .discography .section-auxiliary.crsl-6-item {
     display: block; } }
+
 @media (max-width: 854px) {
   .discography .section-auxiliary.crsl-6-item,
   .discography .section-auxiliary.crsl-4-item {
     display: block; } }
+
 /* NOTIFICATION BOX (RELEASE WINDOW, CUSTOM MESSAGE ETC.) */
 .notification-box {
   border: 1px solid #282828;
