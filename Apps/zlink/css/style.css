@@ -21,7 +21,6 @@
 @media (max-height: 768px) {
   .app-header {
     height: 40px; } }
-
 .browser-navigation {
   flex: 0 0 auto; }
 
@@ -37,6 +36,7 @@
 @media (max-width: 1006px) {
   .profile-menu-wrapper .profile .username {
     max-width: 160px; }
+
   .accessibility-links {
     height: 1px;
     width: 1px;
@@ -46,31 +46,27 @@
     padding: 0;
     clip: rect(0 0 0 0);
     border: 0; } }
-
 @media (max-width: 1070px) {
   .header-inline-controls .profile-menu-wrapper .profile .username {
     max-width: 160px; } }
-
 @media (max-width: 956px) {
   .profile-menu-wrapper .profile .username {
     max-width: 110px; } }
-
 @media (max-width: 1020px) {
   .header-inline-controls .profile-menu-wrapper .profile .username {
     max-width: 110px; } }
-
 @media (max-width: 894px) {
   .upgrade-button {
     display: none; }
+
   .profile-menu-wrapper .profile .username {
     max-width: 110px; } }
-
 @media (max-width: 958px) {
   .header-inline-controls .upgrade-button {
     display: none; }
+
   .header-inline-controls .profile-menu-wrapper .profile .username {
     max-width: 110px; } }
-
 .header-old-chrome-style {
   background: #ffffff;
   border-bottom: 2px solid #E5E8EA; }
@@ -228,11 +224,9 @@
 @media (-webkit-min-device-pixel-ratio: 2) {
   .capping-full-screen-message .cfsm-close-btn:not(:disabled):hover:active {
     transform: scale(1); } }
-
 @media (-webkit-min-device-pixel-ratio: 2) {
   .capping-full-screen-message .cfsm-close-btn {
     transition-duration: 50ms; } }
-
 .capping-full-screen-message .cfsm-close-btn:after {
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: box-shadow; }
@@ -240,7 +234,6 @@
 @media (-webkit-min-device-pixel-ratio: 2) {
   .capping-full-screen-message .cfsm-close-btn:after {
     transition-duration: 50ms; } }
-
 .capping-full-screen-message .cfsm-close-btn.contextmenu-active,
 .capping-full-screen-message .cfsm-close-btn:not(:disabled):hover {
   transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
@@ -250,7 +243,6 @@
   .capping-full-screen-message .cfsm-close-btn.contextmenu-active,
   .capping-full-screen-message .cfsm-close-btn:not(:disabled):hover {
     transition-duration: 66ms; } }
-
 .capping-full-screen-message .cfsm-close-btn.contextmenu-active:after,
 .capping-full-screen-message .cfsm-close-btn:not(:disabled):hover:after {
   transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
@@ -260,7 +252,6 @@
   .capping-full-screen-message .cfsm-close-btn.contextmenu-active:after,
   .capping-full-screen-message .cfsm-close-btn:not(:disabled):hover:after {
     transition-duration: 66ms; } }
-
 .capping-full-screen-message .cfsm-close-btn:not(:disabled):hover:active {
   transition: none; }
 
@@ -346,6 +337,7 @@
   .media-object.playing .capping-full-screen-message .cfsm-close-btn.button-play:not(:hover):not(:disabled):hover,
   .media-object.playing.capping-full-screen-message .cfsm-close-btn.button-play:not(:hover):not(:disabled):hover {
     box-shadow: inset 0 0 0 1px transparent; }
+
   .capping-full-screen-message .cfsm-close-btn.button-play.playing:not(:hover).contextmenu-active:after,
   .tl-row.playing .capping-full-screen-message .cfsm-close-btn.button-play:not(:hover).contextmenu-active:after,
   .tl-row.playing.capping-full-screen-message .cfsm-close-btn.button-play:not(:hover).contextmenu-active:after,
@@ -357,7 +349,6 @@
   .media-object.playing .capping-full-screen-message .cfsm-close-btn.button-play:not(:hover):not(:disabled):hover:after,
   .media-object.playing.capping-full-screen-message .cfsm-close-btn.button-play:not(:hover):not(:disabled):hover:after {
     box-shadow: inset 0 0 0 1px transparent; } }
-
 .capping-full-screen-message .cfsm-close-btn.button-play.playing:not(:hover):not(:disabled):hover:active,
 .tl-row.playing .capping-full-screen-message .cfsm-close-btn.button-play:not(:hover):not(:disabled):hover:active,
 .tl-row.playing.capping-full-screen-message .cfsm-close-btn.button-play:not(:hover):not(:disabled):hover:active,
@@ -638,11 +629,9 @@
 @media (-webkit-min-device-pixel-ratio: 2) {
   .navbar-old-chrome-style.sidebar-scroll-element .playing-indicator:not(:disabled):hover:active {
     transform: scale(1); } }
-
 @media (-webkit-min-device-pixel-ratio: 2) {
   .navbar-old-chrome-style.sidebar-scroll-element .playing-indicator {
     transition-duration: 50ms; } }
-
 .navbar-old-chrome-style.sidebar-scroll-element .playing-indicator:after {
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: box-shadow; }
@@ -650,7 +639,6 @@
 @media (-webkit-min-device-pixel-ratio: 2) {
   .navbar-old-chrome-style.sidebar-scroll-element .playing-indicator:after {
     transition-duration: 50ms; } }
-
 .navbar-old-chrome-style.sidebar-scroll-element .playing-indicator.contextmenu-active,
 .navbar-old-chrome-style.sidebar-scroll-element .playing-indicator:not(:disabled):hover {
   transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
@@ -660,7 +648,6 @@
   .navbar-old-chrome-style.sidebar-scroll-element .playing-indicator.contextmenu-active,
   .navbar-old-chrome-style.sidebar-scroll-element .playing-indicator:not(:disabled):hover {
     transition-duration: 66ms; } }
-
 .navbar-old-chrome-style.sidebar-scroll-element .playing-indicator.contextmenu-active:after,
 .navbar-old-chrome-style.sidebar-scroll-element .playing-indicator:not(:disabled):hover:after {
   transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
@@ -670,7 +657,6 @@
   .navbar-old-chrome-style.sidebar-scroll-element .playing-indicator.contextmenu-active:after,
   .navbar-old-chrome-style.sidebar-scroll-element .playing-indicator:not(:disabled):hover:after {
     transition-duration: 66ms; } }
-
 .navbar-old-chrome-style.sidebar-scroll-element .playing-indicator:not(:disabled):hover:active {
   transition: none; }
 
@@ -699,10 +685,10 @@
   .navbar-old-chrome-style.sidebar-scroll-element .playing-indicator.contextmenu-active,
   .navbar-old-chrome-style.sidebar-scroll-element .playing-indicator:not(:disabled):hover {
     box-shadow: inset 0 0 0 1px #56666F; }
+
   .navbar-old-chrome-style.sidebar-scroll-element .playing-indicator.contextmenu-active:after,
   .navbar-old-chrome-style.sidebar-scroll-element .playing-indicator:not(:disabled):hover:after {
     box-shadow: inset 0 0 0 1px #56666F; } }
-
 .navbar-old-chrome-style.sidebar-scroll-element .playing-indicator:not(:disabled):hover:active {
   box-shadow: inset 0 0 0 1px #8b949a; }
 
@@ -711,13 +697,12 @@
 
 .navbar-old-chrome-style.sidebar-scroll-element .playing-indicator.contextmenu-active,
 .navbar-old-chrome-style.sidebar-scroll-element .playing-indicator:not(:disabled):hover {
-  transform: scale(1.07142857); }
+  transform: scale(1.07143); }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
   .navbar-old-chrome-style.sidebar-scroll-element .playing-indicator.contextmenu-active,
   .navbar-old-chrome-style.sidebar-scroll-element .playing-indicator:not(:disabled):hover {
-    transform: scale(1.07142857); } }
-
+    transform: scale(1.07143); } }
 .navbar-old-chrome-style.sidebar-scroll-element .playing-indicator:before {
   font-family: "glue1-spoticon";
   font-style: normal;
@@ -797,6 +782,7 @@
   .media-object.playing .navbar-old-chrome-style.sidebar-scroll-element .playing-indicator.button-play:not(:hover):not(:disabled):hover,
   .media-object.playing.navbar-old-chrome-style.sidebar-scroll-element .playing-indicator.button-play:not(:hover):not(:disabled):hover {
     box-shadow: inset 0 0 0 1px transparent; }
+
   .navbar-old-chrome-style.sidebar-scroll-element .playing-indicator.button-play.playing:not(:hover).contextmenu-active:after,
   .tl-row.playing .navbar-old-chrome-style.sidebar-scroll-element .playing-indicator.button-play:not(:hover).contextmenu-active:after,
   .tl-row.playing.navbar-old-chrome-style.sidebar-scroll-element .playing-indicator.button-play:not(:hover).contextmenu-active:after,
@@ -808,7 +794,6 @@
   .media-object.playing .navbar-old-chrome-style.sidebar-scroll-element .playing-indicator.button-play:not(:hover):not(:disabled):hover:after,
   .media-object.playing.navbar-old-chrome-style.sidebar-scroll-element .playing-indicator.button-play:not(:hover):not(:disabled):hover:after {
     box-shadow: inset 0 0 0 1px transparent; } }
-
 .navbar-old-chrome-style.sidebar-scroll-element .playing-indicator.button-play.playing:not(:hover):not(:disabled):hover:active,
 .tl-row.playing .navbar-old-chrome-style.sidebar-scroll-element .playing-indicator.button-play:not(:hover):not(:disabled):hover:active,
 .tl-row.playing.navbar-old-chrome-style.sidebar-scroll-element .playing-indicator.button-play:not(:hover):not(:disabled):hover:active,
@@ -1116,11 +1101,9 @@
 @media (-webkit-min-device-pixel-ratio: 2) {
   .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .playing-indicator:not(:disabled):hover:active {
     transform: scale(1); } }
-
 @media (-webkit-min-device-pixel-ratio: 2) {
   .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .playing-indicator {
     transition-duration: 50ms; } }
-
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .playing-indicator:after {
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: box-shadow; }
@@ -1128,7 +1111,6 @@
 @media (-webkit-min-device-pixel-ratio: 2) {
   .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .playing-indicator:after {
     transition-duration: 50ms; } }
-
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .playing-indicator.contextmenu-active,
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .playing-indicator:not(:disabled):hover {
   transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
@@ -1138,7 +1120,6 @@
   .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .playing-indicator.contextmenu-active,
   .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .playing-indicator:not(:disabled):hover {
     transition-duration: 66ms; } }
-
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .playing-indicator.contextmenu-active:after,
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .playing-indicator:not(:disabled):hover:after {
   transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
@@ -1148,7 +1129,6 @@
   .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .playing-indicator.contextmenu-active:after,
   .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .playing-indicator:not(:disabled):hover:after {
     transition-duration: 66ms; } }
-
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .playing-indicator:not(:disabled):hover:active {
   transition: none; }
 
@@ -1177,10 +1157,10 @@
   .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .playing-indicator.contextmenu-active,
   .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .playing-indicator:not(:disabled):hover {
     box-shadow: inset 0 0 0 1px #56666F; }
+
   .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .playing-indicator.contextmenu-active:after,
   .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .playing-indicator:not(:disabled):hover:after {
     box-shadow: inset 0 0 0 1px #56666F; } }
-
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .playing-indicator:not(:disabled):hover:active {
   box-shadow: inset 0 0 0 1px #8b949a; }
 
@@ -1189,13 +1169,12 @@
 
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .playing-indicator.contextmenu-active,
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .playing-indicator:not(:disabled):hover {
-  transform: scale(1.07142857); }
+  transform: scale(1.07143); }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
   .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .playing-indicator.contextmenu-active,
   .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .playing-indicator:not(:disabled):hover {
-    transform: scale(1.07142857); } }
-
+    transform: scale(1.07143); } }
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .playing-indicator:before {
   font-family: "glue1-spoticon";
   font-style: normal;
@@ -1275,6 +1254,7 @@
   .media-object.playing .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .playing-indicator.button-play:not(:hover):not(:disabled):hover,
   .media-object.playing.sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .playing-indicator.button-play:not(:hover):not(:disabled):hover {
     box-shadow: inset 0 0 0 1px transparent; }
+
   .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .playing-indicator.button-play.playing:not(:hover).contextmenu-active:after,
   .tl-row.playing .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .playing-indicator.button-play:not(:hover).contextmenu-active:after,
   .tl-row.playing.sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .playing-indicator.button-play:not(:hover).contextmenu-active:after,
@@ -1286,7 +1266,6 @@
   .media-object.playing .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .playing-indicator.button-play:not(:hover):not(:disabled):hover:after,
   .media-object.playing.sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .playing-indicator.button-play:not(:hover):not(:disabled):hover:after {
     box-shadow: inset 0 0 0 1px transparent; } }
-
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .playing-indicator.button-play.playing:not(:hover):not(:disabled):hover:active,
 .tl-row.playing .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .playing-indicator.button-play:not(:hover):not(:disabled):hover:active,
 .tl-row.playing.sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item .playing-indicator.button-play:not(:hover):not(:disabled):hover:active,
@@ -2033,10 +2012,10 @@
   #view-profile-menu .profile .avatar {
     height: 24px;
     width: 24px; }
+
   #view-profile-menu .profile .avatar::before {
     line-height: 24px;
     left: 4px; } }
-
 .view-player #connect {
   display: inline-flex;
   align-items: center; }
@@ -2357,13 +2336,15 @@ body.remotebar #connect-container-background {
 @media (max-height: 768px) {
   .view-player #connect-picker #connect-container {
     bottom: 52px; }
+
   .view-player .remote-playback-bar {
     height: 20px; }
+
   #connect-container-background {
     bottom: 52px; }
+
   body.remotebar #connect-container-background {
     bottom: 72px; } }
-
 @keyframes castloading {
   0% {
     content: "\f30D"; }
@@ -2371,7 +2352,6 @@ body.remotebar #connect-container-background {
     content: "\f30F"; }
   100% {
     content: "\f311"; } }
-
 /* Get some "irregular" flickering like in the original trilogy */
 @keyframes saber-flicker {
   0% {
@@ -2382,7 +2362,6 @@ body.remotebar #connect-container-background {
     opacity: 0; }
   100% {
     opacity: 1; } }
-
 #progressbar[data-saber-color] .progress-bar,
 #progress-bar-new[data-saber-color] .progress-bar {
   height: 8px;
@@ -2565,12 +2544,10 @@ body.remotebar #connect-container-background {
   .view-player #controls #previous:not(:disabled):hover:active,
   .view-player #controls #next:not(:disabled):hover:active {
     transform: scale(1); } }
-
 @media (-webkit-min-device-pixel-ratio: 2) {
   .view-player #controls #previous,
   .view-player #controls #next {
     transition-duration: 50ms; } }
-
 .view-player #controls #previous:after,
 .view-player #controls #next:after {
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
@@ -2580,7 +2557,6 @@ body.remotebar #connect-container-background {
   .view-player #controls #previous:after,
   .view-player #controls #next:after {
     transition-duration: 50ms; } }
-
 .view-player #controls #previous.contextmenu-active,
 .view-player #controls #next.contextmenu-active,
 .view-player #controls #previous:not(:disabled):hover,
@@ -2594,7 +2570,6 @@ body.remotebar #connect-container-background {
   .view-player #controls #previous:not(:disabled):hover,
   .view-player #controls #next:not(:disabled):hover {
     transition-duration: 66ms; } }
-
 .view-player #controls #previous.contextmenu-active:after,
 .view-player #controls #next.contextmenu-active:after,
 .view-player #controls #previous:not(:disabled):hover:after,
@@ -2608,7 +2583,6 @@ body.remotebar #connect-container-background {
   .view-player #controls #previous:not(:disabled):hover:after,
   .view-player #controls #next:not(:disabled):hover:after {
     transition-duration: 66ms; } }
-
 .view-player #controls #previous:not(:disabled):hover:active,
 .view-player #controls #next:not(:disabled):hover:active {
   transition: none; }
@@ -2738,6 +2712,7 @@ body.remotebar #connect-container-background {
   .media-object.playing.view-player #controls #previous.button-play:not(:hover):not(:disabled):hover,
   .media-object.playing.view-player #controls #next.button-play:not(:hover):not(:disabled):hover {
     box-shadow: inset 0 0 0 1px transparent; }
+
   .view-player #controls #previous.button-play.playing:not(:hover).contextmenu-active:after,
   .view-player #controls #next.button-play.playing:not(:hover).contextmenu-active:after,
   .tl-row.playing .view-player #controls #previous.button-play:not(:hover).contextmenu-active:after,
@@ -2759,7 +2734,6 @@ body.remotebar #connect-container-background {
   .media-object.playing.view-player #controls #previous.button-play:not(:hover):not(:disabled):hover:after,
   .media-object.playing.view-player #controls #next.button-play:not(:hover):not(:disabled):hover:after {
     box-shadow: inset 0 0 0 1px transparent; } }
-
 .view-player #controls #previous.button-play.playing:not(:hover):not(:disabled):hover:active,
 .view-player #controls #next.button-play.playing:not(:hover):not(:disabled):hover:active,
 .tl-row.playing .view-player #controls #previous.button-play:not(:hover):not(:disabled):hover:active,
@@ -2842,11 +2816,9 @@ body.remotebar #connect-container-background {
 @media (-webkit-min-device-pixel-ratio: 2) {
   .view-player #controls #play:not(:disabled):hover:active {
     transform: scale(1); } }
-
 @media (-webkit-min-device-pixel-ratio: 2) {
   .view-player #controls #play {
     transition-duration: 50ms; } }
-
 .view-player #controls #play:after {
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: box-shadow; }
@@ -2854,7 +2826,6 @@ body.remotebar #connect-container-background {
 @media (-webkit-min-device-pixel-ratio: 2) {
   .view-player #controls #play:after {
     transition-duration: 50ms; } }
-
 .view-player #controls #play.contextmenu-active,
 .view-player #controls #play:not(:disabled):hover {
   transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
@@ -2864,7 +2835,6 @@ body.remotebar #connect-container-background {
   .view-player #controls #play.contextmenu-active,
   .view-player #controls #play:not(:disabled):hover {
     transition-duration: 66ms; } }
-
 .view-player #controls #play.contextmenu-active:after,
 .view-player #controls #play:not(:disabled):hover:after {
   transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
@@ -2874,7 +2844,6 @@ body.remotebar #connect-container-background {
   .view-player #controls #play.contextmenu-active:after,
   .view-player #controls #play:not(:disabled):hover:after {
     transition-duration: 66ms; } }
-
 .view-player #controls #play:not(:disabled):hover:active {
   transition: none; }
 
@@ -2903,10 +2872,10 @@ body.remotebar #connect-container-background {
   .view-player #controls #play.contextmenu-active,
   .view-player #controls #play:not(:disabled):hover {
     box-shadow: inset 0 0 0 1px #56666F; }
+
   .view-player #controls #play.contextmenu-active:after,
   .view-player #controls #play:not(:disabled):hover:after {
     box-shadow: inset 0 0 0 1px #56666F; } }
-
 .view-player #controls #play:not(:disabled):hover:active {
   box-shadow: inset 0 0 0 1px #8b949a; }
 
@@ -2915,13 +2884,12 @@ body.remotebar #connect-container-background {
 
 .view-player #controls #play.contextmenu-active,
 .view-player #controls #play:not(:disabled):hover {
-  transform: scale(1.09090909); }
+  transform: scale(1.09091); }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
   .view-player #controls #play.contextmenu-active,
   .view-player #controls #play:not(:disabled):hover {
-    transform: scale(1.09090909); } }
-
+    transform: scale(1.09091); } }
 .view-player #controls #play:before {
   font-family: "glue1-spoticon";
   font-style: normal;
@@ -3001,6 +2969,7 @@ body.remotebar #connect-container-background {
   .media-object.playing .view-player #controls #play.button-play:not(:hover):not(:disabled):hover,
   .media-object.playing.view-player #controls #play.button-play:not(:hover):not(:disabled):hover {
     box-shadow: inset 0 0 0 1px transparent; }
+
   .view-player #controls #play.button-play.playing:not(:hover).contextmenu-active:after,
   .tl-row.playing .view-player #controls #play.button-play:not(:hover).contextmenu-active:after,
   .tl-row.playing.view-player #controls #play.button-play:not(:hover).contextmenu-active:after,
@@ -3012,7 +2981,6 @@ body.remotebar #connect-container-background {
   .media-object.playing .view-player #controls #play.button-play:not(:hover):not(:disabled):hover:after,
   .media-object.playing.view-player #controls #play.button-play:not(:hover):not(:disabled):hover:after {
     box-shadow: inset 0 0 0 1px transparent; } }
-
 .view-player #controls #play.button-play.playing:not(:hover):not(:disabled):hover:active,
 .tl-row.playing .view-player #controls #play.button-play:not(:hover):not(:disabled):hover:active,
 .tl-row.playing.view-player #controls #play.button-play:not(:hover):not(:disabled):hover:active,
@@ -3068,10 +3036,10 @@ body.remotebar #connect-container-background {
   .view-player #controls #play.button-play.playing:not(:hover).contextmenu-active,
   .view-player #controls #play.button-play.playing:not(:hover):not(:disabled):hover {
     box-shadow: inset 0 0 0 1px #56666F; }
+
   .view-player #controls #play.button-play.playing:not(:hover).contextmenu-active:after,
   .view-player #controls #play.button-play.playing:not(:hover):not(:disabled):hover:after {
     box-shadow: inset 0 0 0 1px #56666F; } }
-
 .view-player #controls #play.button-play.playing:not(:hover):not(:disabled):hover:active {
   box-shadow: inset 0 0 0 1px #56666F; }
 
@@ -3153,10 +3121,13 @@ body.remotebar #connect-container-background {
 @media (max-height: 768px) {
   .view-player {
     height: 53px; }
+
   .view-player .player-controls-container {
     height: 52px; }
+
   .view-player #controls {
     margin: 0 20px 0 10px; }
+
   .view-player #controls #previous,
   .view-player #controls #next {
     height: 18px;
@@ -3173,42 +3144,51 @@ body.remotebar #connect-container-background {
     padding-left: 0;
     padding-right: 0;
     margin: 0 8px; }
+
   .view-player #controls #previous .b-alt-text,
   .view-player #controls #next .b-alt-text {
     margin-top: -16px; }
+
   .view-player #controls #previous.contextmenu-active,
   .view-player #controls #next.contextmenu-active,
   .view-player #controls #previous:not(:disabled):hover,
   .view-player #controls #next:not(:disabled):hover {
     background-color: transparent;
     color: #FFFFFF; }
+
   .view-player #controls #previous:not(:disabled):hover:active,
   .view-player #controls #next:not(:disabled):hover:active {
     background: transparent;
     color: #808080;
     transform: scale(1); }
+
   .view-player #controls #previous:after,
   .view-player #controls #next:after {
     transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
     transition-property: box-shadow; }
+
   .view-player #controls #previous.contextmenu-active,
   .view-player #controls #next.contextmenu-active,
   .view-player #controls #previous:not(:disabled):hover,
   .view-player #controls #next:not(:disabled):hover {
     transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
     transition-property: transform, box-shadow, color, background-color; }
+
   .view-player #controls #previous.contextmenu-active:after,
   .view-player #controls #next.contextmenu-active:after,
   .view-player #controls #previous:not(:disabled):hover:after,
   .view-player #controls #next:not(:disabled):hover:after {
     transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
     transition-property: box-shadow; }
+
   .view-player #controls #previous:not(:disabled):hover:active,
   .view-player #controls #next:not(:disabled):hover:active {
     transition: none; }
+
   .view-player #controls #previous:not(:disabled):hover:active:after,
   .view-player #controls #next:not(:disabled):hover:active:after {
     transition: none; }
+
   .view-player #controls #previous:before,
   .view-player #controls #next:before {
     font-family: "glue1-spoticon";
@@ -3228,9 +3208,11 @@ body.remotebar #connect-container-background {
     font-size: 18px;
     padding-left: 0px;
     width: calc(100% - 0px); }
+
   .view-player #controls #previous.button-play:before,
   .view-player #controls #next.button-play:before {
     content: "\f132"; }
+
   .view-player #controls #previous.button-play.playing:not(:hover),
   .view-player #controls #next.button-play.playing:not(:hover),
   .tl-row.playing .view-player #controls #previous.button-play:not(:hover),
@@ -3242,6 +3224,7 @@ body.remotebar #connect-container-background {
   .media-object.playing.view-player #controls #previous.button-play:not(:hover),
   .media-object.playing.view-player #controls #next.button-play:not(:hover) {
     box-shadow: inset 0 0 0 1px transparent; }
+
   .view-player #controls #previous.button-play.playing:not(:hover):after,
   .view-player #controls #next.button-play.playing:not(:hover):after,
   .tl-row.playing .view-player #controls #previous.button-play:not(:hover):after,
@@ -3260,6 +3243,7 @@ body.remotebar #connect-container-background {
     left: 0;
     border-radius: 500px;
     box-shadow: inset 0 0 0 1px transparent; }
+
   .view-player #controls #previous.button-play.playing:not(:hover).contextmenu-active,
   .view-player #controls #next.button-play.playing:not(:hover).contextmenu-active,
   .tl-row.playing .view-player #controls #previous.button-play:not(:hover).contextmenu-active,
@@ -3281,6 +3265,7 @@ body.remotebar #connect-container-background {
   .media-object.playing.view-player #controls #previous.button-play:not(:hover):not(:disabled):hover,
   .media-object.playing.view-player #controls #next.button-play:not(:hover):not(:disabled):hover {
     box-shadow: inset 0 0 0 1px transparent, 0 0 0 1px transparent; }
+
   .view-player #controls #previous.button-play.playing:not(:hover).contextmenu-active:after,
   .view-player #controls #next.button-play.playing:not(:hover).contextmenu-active:after,
   .tl-row.playing .view-player #controls #previous.button-play:not(:hover).contextmenu-active:after,
@@ -3302,6 +3287,7 @@ body.remotebar #connect-container-background {
   .media-object.playing.view-player #controls #previous.button-play:not(:hover):not(:disabled):hover:after,
   .media-object.playing.view-player #controls #next.button-play:not(:hover):not(:disabled):hover:after {
     box-shadow: inset 0 0 0 1px transparent; }
+
   .view-player #controls #previous.button-play.playing:not(:hover):not(:disabled):hover:active,
   .view-player #controls #next.button-play.playing:not(:hover):not(:disabled):hover:active,
   .tl-row.playing .view-player #controls #previous.button-play:not(:hover):not(:disabled):hover:active,
@@ -3313,6 +3299,7 @@ body.remotebar #connect-container-background {
   .media-object.playing.view-player #controls #previous.button-play:not(:hover):not(:disabled):hover:active,
   .media-object.playing.view-player #controls #next.button-play:not(:hover):not(:disabled):hover:active {
     box-shadow: inset 0 0 0 1px transparent; }
+
   .view-player #controls #previous.button-play.playing:not(:hover):not(:disabled):hover:active:after,
   .view-player #controls #next.button-play.playing:not(:hover):not(:disabled):hover:active:after,
   .tl-row.playing .view-player #controls #previous.button-play:not(:hover):not(:disabled):hover:active:after,
@@ -3324,6 +3311,7 @@ body.remotebar #connect-container-background {
   .media-object.playing.view-player #controls #previous.button-play:not(:hover):not(:disabled):hover:active:after,
   .media-object.playing.view-player #controls #next.button-play:not(:hover):not(:disabled):hover:active:after {
     box-shadow: inset 0 0 0 1px transparent; }
+
   .view-player #controls #previous.button-play.playing:not(:hover):before,
   .view-player #controls #next.button-play.playing:not(:hover):before,
   .tl-row.playing .view-player #controls #previous.button-play:not(:hover):before,
@@ -3337,6 +3325,7 @@ body.remotebar #connect-container-background {
     content: "\f1D0";
     padding-left: -1.125px;
     width: calc(100% - -1.125px); }
+
   .view-player #controls #previous.button-play.playing:hover:before,
   .view-player #controls #next.button-play.playing:hover:before,
   .tl-row.playing .view-player #controls #previous.button-play:hover:before,
@@ -3348,6 +3337,7 @@ body.remotebar #connect-container-background {
   .media-object.playing.view-player #controls #previous.button-play:hover:before,
   .media-object.playing.view-player #controls #next.button-play:hover:before {
     content: "\f130"; }
+
   .view-player #controls #play {
     height: 34px;
     line-height: 32px;
@@ -3363,31 +3353,40 @@ body.remotebar #connect-container-background {
     width: 34px;
     padding-left: 0;
     padding-right: 0; }
+
   .view-player #controls #play .b-alt-text {
     margin-top: -32px; }
+
   .view-player #controls #play.contextmenu-active,
   .view-player #controls #play:not(:disabled):hover {
     background-color: transparent;
     color: #FFFFFF; }
+
   .view-player #controls #play:not(:disabled):hover:active {
     background: transparent;
     color: #808080;
     transform: scale(1); }
+
   .view-player #controls #play:after {
     transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
     transition-property: box-shadow; }
+
   .view-player #controls #play.contextmenu-active,
   .view-player #controls #play:not(:disabled):hover {
     transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
     transition-property: transform, box-shadow, color, background-color; }
+
   .view-player #controls #play.contextmenu-active:after,
   .view-player #controls #play:not(:disabled):hover:after {
     transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
     transition-property: box-shadow; }
+
   .view-player #controls #play:not(:disabled):hover:active {
     transition: none; }
+
   .view-player #controls #play:not(:disabled):hover:active:after {
     transition: none; }
+
   .view-player #controls #play:after {
     content: '';
     position: absolute;
@@ -3397,19 +3396,25 @@ body.remotebar #connect-container-background {
     left: 0;
     border-radius: 500px;
     box-shadow: inset 0 0 0 1px #56666F; }
+
   .view-player #controls #play.contextmenu-active,
   .view-player #controls #play:not(:disabled):hover {
     box-shadow: inset 0 0 0 1px #FFFFFF, 0 0 0 1px transparent; }
+
   .view-player #controls #play.contextmenu-active:after,
   .view-player #controls #play:not(:disabled):hover:after {
     box-shadow: inset 0 0 0 1px #FFFFFF; }
+
   .view-player #controls #play:not(:disabled):hover:active {
     box-shadow: inset 0 0 0 1px #808080; }
+
   .view-player #controls #play:not(:disabled):hover:active:after {
     box-shadow: inset 0 0 0 1px #808080; }
+
   .view-player #controls #play.contextmenu-active,
   .view-player #controls #play:not(:disabled):hover {
-    transform: scale(1.11764706); }
+    transform: scale(1.11765); }
+
   .view-player #controls #play:before {
     font-family: "glue1-spoticon";
     font-style: normal;
@@ -3428,14 +3433,17 @@ body.remotebar #connect-container-background {
     font-size: 20px;
     padding-left: 7px;
     width: calc(100% - 7px); }
+
   .view-player #controls #play.button-play:before {
     content: "\f132"; }
+
   .view-player #controls #play.button-play.playing:not(:hover),
   .tl-row.playing .view-player #controls #play.button-play:not(:hover),
   .tl-row.playing.view-player #controls #play.button-play:not(:hover),
   .media-object.playing .view-player #controls #play.button-play:not(:hover),
   .media-object.playing.view-player #controls #play.button-play:not(:hover) {
     box-shadow: inset 0 0 0 1px transparent; }
+
   .view-player #controls #play.button-play.playing:not(:hover):after,
   .tl-row.playing .view-player #controls #play.button-play:not(:hover):after,
   .tl-row.playing.view-player #controls #play.button-play:not(:hover):after,
@@ -3449,6 +3457,7 @@ body.remotebar #connect-container-background {
     left: 0;
     border-radius: 500px;
     box-shadow: inset 0 0 0 1px transparent; }
+
   .view-player #controls #play.button-play.playing:not(:hover).contextmenu-active,
   .tl-row.playing .view-player #controls #play.button-play:not(:hover).contextmenu-active,
   .tl-row.playing.view-player #controls #play.button-play:not(:hover).contextmenu-active,
@@ -3460,6 +3469,7 @@ body.remotebar #connect-container-background {
   .media-object.playing .view-player #controls #play.button-play:not(:hover):not(:disabled):hover,
   .media-object.playing.view-player #controls #play.button-play:not(:hover):not(:disabled):hover {
     box-shadow: inset 0 0 0 1px transparent, 0 0 0 1px transparent; }
+
   .view-player #controls #play.button-play.playing:not(:hover).contextmenu-active:after,
   .tl-row.playing .view-player #controls #play.button-play:not(:hover).contextmenu-active:after,
   .tl-row.playing.view-player #controls #play.button-play:not(:hover).contextmenu-active:after,
@@ -3471,18 +3481,21 @@ body.remotebar #connect-container-background {
   .media-object.playing .view-player #controls #play.button-play:not(:hover):not(:disabled):hover:after,
   .media-object.playing.view-player #controls #play.button-play:not(:hover):not(:disabled):hover:after {
     box-shadow: inset 0 0 0 1px transparent; }
+
   .view-player #controls #play.button-play.playing:not(:hover):not(:disabled):hover:active,
   .tl-row.playing .view-player #controls #play.button-play:not(:hover):not(:disabled):hover:active,
   .tl-row.playing.view-player #controls #play.button-play:not(:hover):not(:disabled):hover:active,
   .media-object.playing .view-player #controls #play.button-play:not(:hover):not(:disabled):hover:active,
   .media-object.playing.view-player #controls #play.button-play:not(:hover):not(:disabled):hover:active {
     box-shadow: inset 0 0 0 1px transparent; }
+
   .view-player #controls #play.button-play.playing:not(:hover):not(:disabled):hover:active:after,
   .tl-row.playing .view-player #controls #play.button-play:not(:hover):not(:disabled):hover:active:after,
   .tl-row.playing.view-player #controls #play.button-play:not(:hover):not(:disabled):hover:active:after,
   .media-object.playing .view-player #controls #play.button-play:not(:hover):not(:disabled):hover:active:after,
   .media-object.playing.view-player #controls #play.button-play:not(:hover):not(:disabled):hover:active:after {
     box-shadow: inset 0 0 0 1px transparent; }
+
   .view-player #controls #play.button-play.playing:not(:hover):before,
   .tl-row.playing .view-player #controls #play.button-play:not(:hover):before,
   .tl-row.playing.view-player #controls #play.button-play:not(:hover):before,
@@ -3491,14 +3504,17 @@ body.remotebar #connect-container-background {
     content: "\f1D0";
     padding-left: 5.75px;
     width: calc(100% - 5.75px); }
+
   .view-player #controls #play.button-play.playing:hover:before,
   .tl-row.playing .view-player #controls #play.button-play:hover:before,
   .tl-row.playing.view-player #controls #play.button-play:hover:before,
   .media-object.playing .view-player #controls #play.button-play:hover:before,
   .media-object.playing.view-player #controls #play.button-play:hover:before {
     content: "\f130"; }
+
   .view-player #controls #play.button-play.playing:not(:hover) {
     box-shadow: inset 0 0 0 1px #56666F; }
+
   .view-player #controls #play.button-play.playing:not(:hover):after {
     content: '';
     position: absolute;
@@ -3508,55 +3524,56 @@ body.remotebar #connect-container-background {
     left: 0;
     border-radius: 500px;
     box-shadow: inset 0 0 0 1px #56666F; }
+
   .view-player #controls #play.button-play.playing:not(:hover).contextmenu-active,
   .view-player #controls #play.button-play.playing:not(:hover):not(:disabled):hover {
     box-shadow: inset 0 0 0 1px #56666F, 0 0 0 1px transparent; }
+
   .view-player #controls #play.button-play.playing:not(:hover).contextmenu-active:after,
   .view-player #controls #play.button-play.playing:not(:hover):not(:disabled):hover:after {
     box-shadow: inset 0 0 0 1px #56666F; }
+
   .view-player #controls #play.button-play.playing:not(:hover):not(:disabled):hover:active {
     box-shadow: inset 0 0 0 1px #56666F; }
+
   .view-player #controls #play.button-play.playing:not(:hover):not(:disabled):hover:active:after {
     box-shadow: inset 0 0 0 1px #56666F; }
+
   .view-player #controls #play.button-play.playing:not(:hover):before {
     content: "\f1D3";
     color: inherit;
     padding-left: 7px;
     width: calc(100% - 7px); }
+
   .view-player .remote-playback-bar p {
     font-size: 9pt; }
+
   body.remotebar .view-player {
     height: 73px; } }
-
 @media (max-height: 768px) and (-webkit-min-device-pixel-ratio: 2) {
   .view-player #controls #previous:not(:disabled):hover:active,
   .view-player #controls #next:not(:disabled):hover:active {
     transform: scale(1); } }
-
 @media (max-height: 768px) and (-webkit-min-device-pixel-ratio: 2) {
   .view-player #controls #previous,
   .view-player #controls #next {
     transition-duration: 50ms; } }
-
 @media (max-height: 768px) and (-webkit-min-device-pixel-ratio: 2) {
   .view-player #controls #previous:after,
   .view-player #controls #next:after {
     transition-duration: 50ms; } }
-
 @media (max-height: 768px) and (-webkit-min-device-pixel-ratio: 2) {
   .view-player #controls #previous.contextmenu-active,
   .view-player #controls #next.contextmenu-active,
   .view-player #controls #previous:not(:disabled):hover,
   .view-player #controls #next:not(:disabled):hover {
     transition-duration: 66ms; } }
-
 @media (max-height: 768px) and (-webkit-min-device-pixel-ratio: 2) {
   .view-player #controls #previous.contextmenu-active:after,
   .view-player #controls #next.contextmenu-active:after,
   .view-player #controls #previous:not(:disabled):hover:after,
   .view-player #controls #next:not(:disabled):hover:after {
     transition-duration: 66ms; } }
-
 @media (max-height: 768px) and (-webkit-min-device-pixel-ratio: 2) {
   .view-player #controls #previous.button-play.playing:not(:hover).contextmenu-active,
   .view-player #controls #next.button-play.playing:not(:hover).contextmenu-active,
@@ -3579,6 +3596,7 @@ body.remotebar #connect-container-background {
   .media-object.playing.view-player #controls #previous.button-play:not(:hover):not(:disabled):hover,
   .media-object.playing.view-player #controls #next.button-play:not(:hover):not(:disabled):hover {
     box-shadow: inset 0 0 0 1px transparent; }
+
   .view-player #controls #previous.button-play.playing:not(:hover).contextmenu-active:after,
   .view-player #controls #next.button-play.playing:not(:hover).contextmenu-active:after,
   .tl-row.playing .view-player #controls #previous.button-play:not(:hover).contextmenu-active:after,
@@ -3600,42 +3618,35 @@ body.remotebar #connect-container-background {
   .media-object.playing.view-player #controls #previous.button-play:not(:hover):not(:disabled):hover:after,
   .media-object.playing.view-player #controls #next.button-play:not(:hover):not(:disabled):hover:after {
     box-shadow: inset 0 0 0 1px transparent; } }
-
 @media (max-height: 768px) and (-webkit-min-device-pixel-ratio: 2) {
   .view-player #controls #play:not(:disabled):hover:active {
     transform: scale(1); } }
-
 @media (max-height: 768px) and (-webkit-min-device-pixel-ratio: 2) {
   .view-player #controls #play {
     transition-duration: 50ms; } }
-
 @media (max-height: 768px) and (-webkit-min-device-pixel-ratio: 2) {
   .view-player #controls #play:after {
     transition-duration: 50ms; } }
-
 @media (max-height: 768px) and (-webkit-min-device-pixel-ratio: 2) {
   .view-player #controls #play.contextmenu-active,
   .view-player #controls #play:not(:disabled):hover {
     transition-duration: 66ms; } }
-
 @media (max-height: 768px) and (-webkit-min-device-pixel-ratio: 2) {
   .view-player #controls #play.contextmenu-active:after,
   .view-player #controls #play:not(:disabled):hover:after {
     transition-duration: 66ms; } }
-
 @media (max-height: 768px) and (-webkit-min-device-pixel-ratio: 2) {
   .view-player #controls #play.contextmenu-active,
   .view-player #controls #play:not(:disabled):hover {
     box-shadow: inset 0 0 0 1px #FFFFFF; }
+
   .view-player #controls #play.contextmenu-active:after,
   .view-player #controls #play:not(:disabled):hover:after {
     box-shadow: inset 0 0 0 1px #FFFFFF; } }
-
 @media (max-height: 768px) and (-webkit-min-device-pixel-ratio: 2) {
   .view-player #controls #play.contextmenu-active,
   .view-player #controls #play:not(:disabled):hover {
-    transform: scale(1.11764706); } }
-
+    transform: scale(1.11765); } }
 @media (max-height: 768px) and (-webkit-min-device-pixel-ratio: 2) {
   .view-player #controls #play.button-play.playing:not(:hover).contextmenu-active,
   .tl-row.playing .view-player #controls #play.button-play:not(:hover).contextmenu-active,
@@ -3648,6 +3659,7 @@ body.remotebar #connect-container-background {
   .media-object.playing .view-player #controls #play.button-play:not(:hover):not(:disabled):hover,
   .media-object.playing.view-player #controls #play.button-play:not(:hover):not(:disabled):hover {
     box-shadow: inset 0 0 0 1px transparent; }
+
   .view-player #controls #play.button-play.playing:not(:hover).contextmenu-active:after,
   .tl-row.playing .view-player #controls #play.button-play:not(:hover).contextmenu-active:after,
   .tl-row.playing.view-player #controls #play.button-play:not(:hover).contextmenu-active:after,
@@ -3659,15 +3671,14 @@ body.remotebar #connect-container-background {
   .media-object.playing .view-player #controls #play.button-play:not(:hover):not(:disabled):hover:after,
   .media-object.playing.view-player #controls #play.button-play:not(:hover):not(:disabled):hover:after {
     box-shadow: inset 0 0 0 1px transparent; } }
-
 @media (max-height: 768px) and (-webkit-min-device-pixel-ratio: 2) {
   .view-player #controls #play.button-play.playing:not(:hover).contextmenu-active,
   .view-player #controls #play.button-play.playing:not(:hover):not(:disabled):hover {
     box-shadow: inset 0 0 0 1px #56666F; }
+
   .view-player #controls #play.button-play.playing:not(:hover).contextmenu-active:after,
   .view-player #controls #play.button-play.playing:not(:hover):not(:disabled):hover:after {
     box-shadow: inset 0 0 0 1px #56666F; } }
-
 .view-player-new #connect-picker-new-chrome-style {
   display: none; }
 
@@ -3694,7 +3705,6 @@ body.remotebar #connect-container-background {
 @media (max-height: 768px) {
   .view-player-new #connect-picker-new-chrome-style #connect-container-new-chrome-style {
     bottom: 68px; } }
-
 .view-player-new #connect-picker-new-chrome-style #connect-container-new-chrome-style .connect-title {
   position: relative;
   background-color: #282828;
@@ -3953,15 +3963,18 @@ body.remotebar #connect-container-background-new-chrome-style {
 @media (max-height: 768px) {
   body.remotebar .view-player-new {
     height: 93px; }
+
   body.remotebar .view-player-new .player-bar-wrapper {
     height: calc(100% - 20px); }
+
   body.remotebar .view-player-new #connect-picker-new-chrome-style #connect-container-new-chrome-style {
     bottom: 92px; }
+
   body.remotebar .view-player-new #connect-picker-new-chrome-style #connect-container-new-chrome-style.remote {
     bottom: 88px; }
+
   body.remotebar #connect-container-background-new-chrome-style {
     bottom: 92px; } }
-
 /* Flexbox and text-align */
 .view-player-new .player-bar-wrapper {
   display: flex;
@@ -3989,7 +4002,6 @@ body.remotebar #connect-container-background-new-chrome-style {
 @media (max-height: 768px) {
   .view-player-new .now-playing-container .caption .cover-image-link {
     flex-basis: 48px; } }
-
 .view-player-new .now-playing-container .caption .cover-image-link .toggle-cover-size {
   text-align: center; }
 
@@ -4043,7 +4055,6 @@ body.remotebar #connect-container-background-new-chrome-style {
 @media (max-height: 768px) {
   .view-player-new {
     height: 72px; } }
-
 .view-player-new .now-playing {
   display: none;
   overflow: hidden;
@@ -4062,7 +4073,6 @@ body.remotebar #connect-container-background-new-chrome-style {
   .view-player-new .now-playing .cover-image-link-wrapper {
     flex: 0 1 60px;
     height: 48px; } }
-
 .view-player-new .now-playing .cover-image-link {
   position: absolute;
   right: 0;
@@ -4080,10 +4090,10 @@ body.remotebar #connect-container-background-new-chrome-style {
   .view-player-new .now-playing .cover-image-link {
     height: 48px;
     width: 48px; }
+
   .view-player-new .now-playing .cover-image-link figure {
     height: 48px;
     width: 48px; } }
-
 .view-player-new .now-playing .cover-image-link .toggle-cover-size {
   cursor: default;
   position: absolute;
@@ -4134,7 +4144,6 @@ body.remotebar #connect-container-background-new-chrome-style {
 @media (max-height: 768px) {
   .view-player-new .player-controls-container .progress-container {
     margin-top: 3px; } }
-
 .view-player-new .player-controls-container .progress-container .elapsed,
 .view-player-new .player-controls-container .progress-container .remaining {
   opacity: 0;
@@ -4173,7 +4182,6 @@ body.remotebar #connect-container-background-new-chrome-style {
 @media (max-height: 768px) {
   .view-player-new .player-controls-container .controls {
     margin-top: 2px; } }
-
 .view-player-new .player-controls-container .controls .button-play {
   height: 32px;
   line-height: 30px;
@@ -4206,11 +4214,9 @@ body.remotebar #connect-container-background-new-chrome-style {
 @media (-webkit-min-device-pixel-ratio: 2) {
   .view-player-new .player-controls-container .controls .button-play:not(:disabled):hover:active {
     transform: scale(1); } }
-
 @media (-webkit-min-device-pixel-ratio: 2) {
   .view-player-new .player-controls-container .controls .button-play {
     transition-duration: 50ms; } }
-
 .view-player-new .player-controls-container .controls .button-play:after {
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: box-shadow; }
@@ -4218,7 +4224,6 @@ body.remotebar #connect-container-background-new-chrome-style {
 @media (-webkit-min-device-pixel-ratio: 2) {
   .view-player-new .player-controls-container .controls .button-play:after {
     transition-duration: 50ms; } }
-
 .view-player-new .player-controls-container .controls .button-play.contextmenu-active,
 .view-player-new .player-controls-container .controls .button-play:not(:disabled):hover {
   transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
@@ -4228,7 +4233,6 @@ body.remotebar #connect-container-background-new-chrome-style {
   .view-player-new .player-controls-container .controls .button-play.contextmenu-active,
   .view-player-new .player-controls-container .controls .button-play:not(:disabled):hover {
     transition-duration: 66ms; } }
-
 .view-player-new .player-controls-container .controls .button-play.contextmenu-active:after,
 .view-player-new .player-controls-container .controls .button-play:not(:disabled):hover:after {
   transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
@@ -4238,7 +4242,6 @@ body.remotebar #connect-container-background-new-chrome-style {
   .view-player-new .player-controls-container .controls .button-play.contextmenu-active:after,
   .view-player-new .player-controls-container .controls .button-play:not(:disabled):hover:after {
     transition-duration: 66ms; } }
-
 .view-player-new .player-controls-container .controls .button-play:not(:disabled):hover:active {
   transition: none; }
 
@@ -4267,10 +4270,10 @@ body.remotebar #connect-container-background-new-chrome-style {
   .view-player-new .player-controls-container .controls .button-play.contextmenu-active,
   .view-player-new .player-controls-container .controls .button-play:not(:disabled):hover {
     box-shadow: inset 0 0 0 1px #FFFFFF; }
+
   .view-player-new .player-controls-container .controls .button-play.contextmenu-active:after,
   .view-player-new .player-controls-container .controls .button-play:not(:disabled):hover:after {
     box-shadow: inset 0 0 0 1px #FFFFFF; } }
-
 .view-player-new .player-controls-container .controls .button-play:not(:disabled):hover:active {
   box-shadow: inset 0 0 0 1px #808080; }
 
@@ -4285,7 +4288,6 @@ body.remotebar #connect-container-background-new-chrome-style {
   .view-player-new .player-controls-container .controls .button-play.contextmenu-active,
   .view-player-new .player-controls-container .controls .button-play:not(:disabled):hover {
     transform: scale(1.0625); } }
-
 .view-player-new .player-controls-container .controls .button-play:before {
   font-family: "glue1-spoticon";
   font-style: normal;
@@ -4365,6 +4367,7 @@ body.remotebar #connect-container-background-new-chrome-style {
   .media-object.playing .view-player-new .player-controls-container .controls .button-play.button-play:not(:hover):not(:disabled):hover,
   .media-object.playing.view-player-new .player-controls-container .controls .button-play.button-play:not(:hover):not(:disabled):hover {
     box-shadow: inset 0 0 0 1px transparent; }
+
   .view-player-new .player-controls-container .controls .button-play.button-play.playing:not(:hover).contextmenu-active:after,
   .tl-row.playing .view-player-new .player-controls-container .controls .button-play.button-play:not(:hover).contextmenu-active:after,
   .tl-row.playing.view-player-new .player-controls-container .controls .button-play.button-play:not(:hover).contextmenu-active:after,
@@ -4376,7 +4379,6 @@ body.remotebar #connect-container-background-new-chrome-style {
   .media-object.playing .view-player-new .player-controls-container .controls .button-play.button-play:not(:hover):not(:disabled):hover:after,
   .media-object.playing.view-player-new .player-controls-container .controls .button-play.button-play:not(:hover):not(:disabled):hover:after {
     box-shadow: inset 0 0 0 1px transparent; } }
-
 .view-player-new .player-controls-container .controls .button-play.button-play.playing:not(:hover):not(:disabled):hover:active,
 .tl-row.playing .view-player-new .player-controls-container .controls .button-play.button-play:not(:hover):not(:disabled):hover:active,
 .tl-row.playing.view-player-new .player-controls-container .controls .button-play.button-play:not(:hover):not(:disabled):hover:active,
@@ -4432,10 +4434,10 @@ body.remotebar #connect-container-background-new-chrome-style {
   .view-player-new .player-controls-container .controls .button-play.button-play.playing:not(:hover).contextmenu-active,
   .view-player-new .player-controls-container .controls .button-play.button-play.playing:not(:hover):not(:disabled):hover {
     box-shadow: inset 0 0 0 1px #56666F; }
+
   .view-player-new .player-controls-container .controls .button-play.button-play.playing:not(:hover).contextmenu-active:after,
   .view-player-new .player-controls-container .controls .button-play.button-play.playing:not(:hover):not(:disabled):hover:after {
     box-shadow: inset 0 0 0 1px #56666F; } }
-
 .view-player-new .player-controls-container .controls .button-play.button-play.playing:not(:hover):not(:disabled):hover:active {
   box-shadow: inset 0 0 0 1px #56666F; }
 
@@ -4485,12 +4487,10 @@ body.remotebar #connect-container-background-new-chrome-style {
   .view-player-new .player-controls-container .controls .previous:not(:disabled):hover:active,
   .view-player-new .player-controls-container .controls .next:not(:disabled):hover:active {
     transform: scale(1); } }
-
 @media (-webkit-min-device-pixel-ratio: 2) {
   .view-player-new .player-controls-container .controls .previous,
   .view-player-new .player-controls-container .controls .next {
     transition-duration: 50ms; } }
-
 .view-player-new .player-controls-container .controls .previous:after,
 .view-player-new .player-controls-container .controls .next:after {
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
@@ -4500,7 +4500,6 @@ body.remotebar #connect-container-background-new-chrome-style {
   .view-player-new .player-controls-container .controls .previous:after,
   .view-player-new .player-controls-container .controls .next:after {
     transition-duration: 50ms; } }
-
 .view-player-new .player-controls-container .controls .previous.contextmenu-active,
 .view-player-new .player-controls-container .controls .next.contextmenu-active,
 .view-player-new .player-controls-container .controls .previous:not(:disabled):hover,
@@ -4514,7 +4513,6 @@ body.remotebar #connect-container-background-new-chrome-style {
   .view-player-new .player-controls-container .controls .previous:not(:disabled):hover,
   .view-player-new .player-controls-container .controls .next:not(:disabled):hover {
     transition-duration: 66ms; } }
-
 .view-player-new .player-controls-container .controls .previous.contextmenu-active:after,
 .view-player-new .player-controls-container .controls .next.contextmenu-active:after,
 .view-player-new .player-controls-container .controls .previous:not(:disabled):hover:after,
@@ -4528,7 +4526,6 @@ body.remotebar #connect-container-background-new-chrome-style {
   .view-player-new .player-controls-container .controls .previous:not(:disabled):hover:after,
   .view-player-new .player-controls-container .controls .next:not(:disabled):hover:after {
     transition-duration: 66ms; } }
-
 .view-player-new .player-controls-container .controls .previous:not(:disabled):hover:active,
 .view-player-new .player-controls-container .controls .next:not(:disabled):hover:active {
   transition: none; }
@@ -4658,6 +4655,7 @@ body.remotebar #connect-container-background-new-chrome-style {
   .media-object.playing.view-player-new .player-controls-container .controls .previous.button-play:not(:hover):not(:disabled):hover,
   .media-object.playing.view-player-new .player-controls-container .controls .next.button-play:not(:hover):not(:disabled):hover {
     box-shadow: inset 0 0 0 1px transparent; }
+
   .view-player-new .player-controls-container .controls .previous.button-play.playing:not(:hover).contextmenu-active:after,
   .view-player-new .player-controls-container .controls .next.button-play.playing:not(:hover).contextmenu-active:after,
   .tl-row.playing .view-player-new .player-controls-container .controls .previous.button-play:not(:hover).contextmenu-active:after,
@@ -4679,7 +4677,6 @@ body.remotebar #connect-container-background-new-chrome-style {
   .media-object.playing.view-player-new .player-controls-container .controls .previous.button-play:not(:hover):not(:disabled):hover:after,
   .media-object.playing.view-player-new .player-controls-container .controls .next.button-play:not(:hover):not(:disabled):hover:after {
     box-shadow: inset 0 0 0 1px transparent; } }
-
 .view-player-new .player-controls-container .controls .previous.button-play.playing:not(:hover):not(:disabled):hover:active,
 .view-player-new .player-controls-container .controls .next.button-play.playing:not(:hover):not(:disabled):hover:active,
 .tl-row.playing .view-player-new .player-controls-container .controls .previous.button-play:not(:hover):not(:disabled):hover:active,
@@ -4806,14 +4803,12 @@ body.remotebar #connect-container-background-new-chrome-style {
   .view-player-new .player-controls-container .controls .button-thumbs-down:not(:disabled):hover:active,
   .view-player-new .player-controls-container .controls .button-thumbs-up:not(:disabled):hover:active {
     transform: scale(1); } }
-
 @media (-webkit-min-device-pixel-ratio: 2) {
   .view-player-new .player-controls-container .controls .button-shuffle,
   .view-player-new .player-controls-container .controls .button-repeat,
   .view-player-new .player-controls-container .controls .button-thumbs-down,
   .view-player-new .player-controls-container .controls .button-thumbs-up {
     transition-duration: 50ms; } }
-
 .view-player-new .player-controls-container .controls .button-shuffle:after,
 .view-player-new .player-controls-container .controls .button-repeat:after,
 .view-player-new .player-controls-container .controls .button-thumbs-down:after,
@@ -4827,7 +4822,6 @@ body.remotebar #connect-container-background-new-chrome-style {
   .view-player-new .player-controls-container .controls .button-thumbs-down:after,
   .view-player-new .player-controls-container .controls .button-thumbs-up:after {
     transition-duration: 50ms; } }
-
 .view-player-new .player-controls-container .controls .button-shuffle.contextmenu-active,
 .view-player-new .player-controls-container .controls .button-repeat.contextmenu-active,
 .view-player-new .player-controls-container .controls .button-thumbs-down.contextmenu-active,
@@ -4849,7 +4843,6 @@ body.remotebar #connect-container-background-new-chrome-style {
   .view-player-new .player-controls-container .controls .button-thumbs-down:not(:disabled):hover,
   .view-player-new .player-controls-container .controls .button-thumbs-up:not(:disabled):hover {
     transition-duration: 66ms; } }
-
 .view-player-new .player-controls-container .controls .button-shuffle.contextmenu-active:after,
 .view-player-new .player-controls-container .controls .button-repeat.contextmenu-active:after,
 .view-player-new .player-controls-container .controls .button-thumbs-down.contextmenu-active:after,
@@ -4871,7 +4864,6 @@ body.remotebar #connect-container-background-new-chrome-style {
   .view-player-new .player-controls-container .controls .button-thumbs-down:not(:disabled):hover:after,
   .view-player-new .player-controls-container .controls .button-thumbs-up:not(:disabled):hover:after {
     transition-duration: 66ms; } }
-
 .view-player-new .player-controls-container .controls .button-shuffle:not(:disabled):hover:active,
 .view-player-new .player-controls-container .controls .button-repeat:not(:disabled):hover:active,
 .view-player-new .player-controls-container .controls .button-thumbs-down:not(:disabled):hover:active,
@@ -5089,6 +5081,7 @@ body.remotebar #connect-container-background-new-chrome-style {
   .media-object.playing.view-player-new .player-controls-container .controls .button-thumbs-down.button-play:not(:hover):not(:disabled):hover,
   .media-object.playing.view-player-new .player-controls-container .controls .button-thumbs-up.button-play:not(:hover):not(:disabled):hover {
     box-shadow: inset 0 0 0 1px transparent; }
+
   .view-player-new .player-controls-container .controls .button-shuffle.button-play.playing:not(:hover).contextmenu-active:after,
   .view-player-new .player-controls-container .controls .button-repeat.button-play.playing:not(:hover).contextmenu-active:after,
   .view-player-new .player-controls-container .controls .button-thumbs-down.button-play.playing:not(:hover).contextmenu-active:after,
@@ -5130,7 +5123,6 @@ body.remotebar #connect-container-background-new-chrome-style {
   .media-object.playing.view-player-new .player-controls-container .controls .button-thumbs-down.button-play:not(:hover):not(:disabled):hover:after,
   .media-object.playing.view-player-new .player-controls-container .controls .button-thumbs-up.button-play:not(:hover):not(:disabled):hover:after {
     box-shadow: inset 0 0 0 1px transparent; } }
-
 .view-player-new .player-controls-container .controls .button-shuffle.button-play.playing:not(:hover):not(:disabled):hover:active,
 .view-player-new .player-controls-container .controls .button-repeat.button-play.playing:not(:hover):not(:disabled):hover:active,
 .view-player-new .player-controls-container .controls .button-thumbs-down.button-play.playing:not(:hover):not(:disabled):hover:active,
@@ -5310,13 +5302,11 @@ body.remotebar #connect-container-background-new-chrome-style {
   .view-player-new .extra-controls-container .button-queue:not(:disabled):hover:active,
   .view-player-new .extra-controls-container .button-devices:not(:disabled):hover:active {
     transform: scale(1); } }
-
 @media (-webkit-min-device-pixel-ratio: 2) {
   .view-player-new .extra-controls-container .button-lyrics,
   .view-player-new .extra-controls-container .button-queue,
   .view-player-new .extra-controls-container .button-devices {
     transition-duration: 50ms; } }
-
 .view-player-new .extra-controls-container .button-lyrics:after,
 .view-player-new .extra-controls-container .button-queue:after,
 .view-player-new .extra-controls-container .button-devices:after {
@@ -5328,7 +5318,6 @@ body.remotebar #connect-container-background-new-chrome-style {
   .view-player-new .extra-controls-container .button-queue:after,
   .view-player-new .extra-controls-container .button-devices:after {
     transition-duration: 50ms; } }
-
 .view-player-new .extra-controls-container .button-lyrics.contextmenu-active,
 .view-player-new .extra-controls-container .button-queue.contextmenu-active,
 .view-player-new .extra-controls-container .button-devices.contextmenu-active,
@@ -5346,7 +5335,6 @@ body.remotebar #connect-container-background-new-chrome-style {
   .view-player-new .extra-controls-container .button-queue:not(:disabled):hover,
   .view-player-new .extra-controls-container .button-devices:not(:disabled):hover {
     transition-duration: 66ms; } }
-
 .view-player-new .extra-controls-container .button-lyrics.contextmenu-active:after,
 .view-player-new .extra-controls-container .button-queue.contextmenu-active:after,
 .view-player-new .extra-controls-container .button-devices.contextmenu-active:after,
@@ -5364,7 +5352,6 @@ body.remotebar #connect-container-background-new-chrome-style {
   .view-player-new .extra-controls-container .button-queue:not(:disabled):hover:after,
   .view-player-new .extra-controls-container .button-devices:not(:disabled):hover:after {
     transition-duration: 66ms; } }
-
 .view-player-new .extra-controls-container .button-lyrics:not(:disabled):hover:active,
 .view-player-new .extra-controls-container .button-queue:not(:disabled):hover:active,
 .view-player-new .extra-controls-container .button-devices:not(:disabled):hover:active {
@@ -5538,6 +5525,7 @@ body.remotebar #connect-container-background-new-chrome-style {
   .media-object.playing.view-player-new .extra-controls-container .button-queue.button-play:not(:hover):not(:disabled):hover,
   .media-object.playing.view-player-new .extra-controls-container .button-devices.button-play:not(:hover):not(:disabled):hover {
     box-shadow: inset 0 0 0 1px transparent; }
+
   .view-player-new .extra-controls-container .button-lyrics.button-play.playing:not(:hover).contextmenu-active:after,
   .view-player-new .extra-controls-container .button-queue.button-play.playing:not(:hover).contextmenu-active:after,
   .view-player-new .extra-controls-container .button-devices.button-play.playing:not(:hover).contextmenu-active:after,
@@ -5569,7 +5557,6 @@ body.remotebar #connect-container-background-new-chrome-style {
   .media-object.playing.view-player-new .extra-controls-container .button-queue.button-play:not(:hover):not(:disabled):hover:after,
   .media-object.playing.view-player-new .extra-controls-container .button-devices.button-play:not(:hover):not(:disabled):hover:after {
     box-shadow: inset 0 0 0 1px transparent; } }
-
 .view-player-new .extra-controls-container .button-lyrics.button-play.playing:not(:hover):not(:disabled):hover:active,
 .view-player-new .extra-controls-container .button-queue.button-play.playing:not(:hover):not(:disabled):hover:active,
 .view-player-new .extra-controls-container .button-devices.button-play.playing:not(:hover):not(:disabled):hover:active,
@@ -5697,7 +5684,6 @@ body.remotebar #connect-container-background-new-chrome-style {
 @media (max-height: 768px) {
   .view-player-new .image-expanded .now-playing-text-spacer {
     flex-basis: 12px; } }
-
 .view-player-new .transitioning .cover-image-link-wrapper {
   transition: all 250ms cubic-bezier(0.3, 0, 0, 1); }
 
@@ -5831,11 +5817,9 @@ body.remotebar #connect-container-background-new-chrome-style {
 @media (-webkit-min-device-pixel-ratio: 2) {
   .view-player-new .nowplaying-add-button:not(:disabled):hover:active {
     transform: scale(1); } }
-
 @media (-webkit-min-device-pixel-ratio: 2) {
   .view-player-new .nowplaying-add-button {
     transition-duration: 50ms; } }
-
 .view-player-new .nowplaying-add-button:after {
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: box-shadow; }
@@ -5843,7 +5827,6 @@ body.remotebar #connect-container-background-new-chrome-style {
 @media (-webkit-min-device-pixel-ratio: 2) {
   .view-player-new .nowplaying-add-button:after {
     transition-duration: 50ms; } }
-
 .view-player-new .nowplaying-add-button.contextmenu-active,
 .view-player-new .nowplaying-add-button:not(:disabled):hover {
   transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
@@ -5853,7 +5836,6 @@ body.remotebar #connect-container-background-new-chrome-style {
   .view-player-new .nowplaying-add-button.contextmenu-active,
   .view-player-new .nowplaying-add-button:not(:disabled):hover {
     transition-duration: 66ms; } }
-
 .view-player-new .nowplaying-add-button.contextmenu-active:after,
 .view-player-new .nowplaying-add-button:not(:disabled):hover:after {
   transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
@@ -5863,7 +5845,6 @@ body.remotebar #connect-container-background-new-chrome-style {
   .view-player-new .nowplaying-add-button.contextmenu-active:after,
   .view-player-new .nowplaying-add-button:not(:disabled):hover:after {
     transition-duration: 66ms; } }
-
 .view-player-new .nowplaying-add-button:not(:disabled):hover:active {
   transition: none; }
 
@@ -5949,6 +5930,7 @@ body.remotebar #connect-container-background-new-chrome-style {
   .media-object.playing .view-player-new .nowplaying-add-button.button-play:not(:hover):not(:disabled):hover,
   .media-object.playing.view-player-new .nowplaying-add-button.button-play:not(:hover):not(:disabled):hover {
     box-shadow: inset 0 0 0 1px transparent; }
+
   .view-player-new .nowplaying-add-button.button-play.playing:not(:hover).contextmenu-active:after,
   .tl-row.playing .view-player-new .nowplaying-add-button.button-play:not(:hover).contextmenu-active:after,
   .tl-row.playing.view-player-new .nowplaying-add-button.button-play:not(:hover).contextmenu-active:after,
@@ -5960,7 +5942,6 @@ body.remotebar #connect-container-background-new-chrome-style {
   .media-object.playing .view-player-new .nowplaying-add-button.button-play:not(:hover):not(:disabled):hover:after,
   .media-object.playing.view-player-new .nowplaying-add-button.button-play:not(:hover):not(:disabled):hover:after {
     box-shadow: inset 0 0 0 1px transparent; } }
-
 .view-player-new .nowplaying-add-button.button-play.playing:not(:hover):not(:disabled):hover:active,
 .tl-row.playing .view-player-new .nowplaying-add-button.button-play:not(:hover):not(:disabled):hover:active,
 .tl-row.playing.view-player-new .nowplaying-add-button.button-play:not(:hover):not(:disabled):hover:active,
@@ -6126,11 +6107,9 @@ body.remotebar #connect-container-background-new-chrome-style {
 @media (-webkit-min-device-pixel-ratio: 2) {
   .upgrade-button .blue-border:not(:disabled):hover:active {
     transform: scale(1); } }
-
 @media (-webkit-min-device-pixel-ratio: 2) {
   .upgrade-button .blue-border {
     transition-duration: 50ms; } }
-
 .upgrade-button .blue-border:after {
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: box-shadow; }
@@ -6138,7 +6117,6 @@ body.remotebar #connect-container-background-new-chrome-style {
 @media (-webkit-min-device-pixel-ratio: 2) {
   .upgrade-button .blue-border:after {
     transition-duration: 50ms; } }
-
 .upgrade-button .blue-border.contextmenu-active,
 .upgrade-button .blue-border:not(:disabled):hover {
   transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
@@ -6148,7 +6126,6 @@ body.remotebar #connect-container-background-new-chrome-style {
   .upgrade-button .blue-border.contextmenu-active,
   .upgrade-button .blue-border:not(:disabled):hover {
     transition-duration: 66ms; } }
-
 .upgrade-button .blue-border.contextmenu-active:after,
 .upgrade-button .blue-border:not(:disabled):hover:after {
   transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
@@ -6158,7 +6135,6 @@ body.remotebar #connect-container-background-new-chrome-style {
   .upgrade-button .blue-border.contextmenu-active:after,
   .upgrade-button .blue-border:not(:disabled):hover:after {
     transition-duration: 66ms; } }
-
 .upgrade-button .blue-border:not(:disabled):hover:active {
   transition: none; }
 
@@ -6187,10 +6163,10 @@ body.remotebar #connect-container-background-new-chrome-style {
   .upgrade-button .blue-border.contextmenu-active,
   .upgrade-button .blue-border:not(:disabled):hover {
     box-shadow: inset 0 0 0 1px #4491ee; }
+
   .upgrade-button .blue-border.contextmenu-active:after,
   .upgrade-button .blue-border:not(:disabled):hover:after {
     box-shadow: inset 0 0 0 1px #4491ee; } }
-
 .upgrade-button .blue-border:not(:disabled):hover:active {
   box-shadow: inset 0 0 0 1px #386cab; }
 
@@ -6199,13 +6175,12 @@ body.remotebar #connect-container-background-new-chrome-style {
 
 .upgrade-button .blue-border.contextmenu-active,
 .upgrade-button .blue-border:not(:disabled):hover {
-  transform: scale(1.08333333); }
+  transform: scale(1.08333); }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
   .upgrade-button .blue-border.contextmenu-active,
   .upgrade-button .blue-border:not(:disabled):hover {
-    transform: scale(1.08333333); } }
-
+    transform: scale(1.08333); } }
 #delete-playlist {
   position: absolute;
   top: 0;
@@ -6262,11 +6237,11 @@ body.remotebar #connect-container-background-new-chrome-style {
   transition: opacity 1s; }
 
 #view-modal {
-  /*! Quill Editor v0.19.8
- *  https://quilljs.com/
- *  Copyright (c) 2014, Jason Chen
- *  Copyright (c) 2013, salesforce.com
- */ }
+ /*! Quill Editor v0.19.8
+*  https://quilljs.com/
+*  Copyright (c) 2014, Jason Chen
+*  Copyright (c) 2013, salesforce.com
+*/ }
 
 #view-modal .iframe-modal .popover-content {
   padding: 0;
@@ -6460,6 +6435,7 @@ body.remotebar #connect-container-background-new-chrome-style {
   #view-modal .ql-snow.ql-toolbar .ql-picker .ql-picker-label[data-value=link],
   #view-modal .ql-snow.ql-toolbar .ql-picker .ql-picker-item[data-value=link] {
     background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAABDlBMVEUAAAD///8AAACAgIBVVVVAQEAzMzNVVVVAQEBNTU1HR0dAQEBJSUlGRkZDQ0NAQEBERERHR0dGRkZDQ0NBQUFGRkZERERCQkJGRkZFRUVCQkJFRUVERERDQ0NDQ0NCQkJFRUVDQ0NERERDQ0NFRUVDQ0NFRUVFRUVFRUVFRUVERERDQ0NFRUVERERFRUVERERERERDQ0NFRUVFRUVERERERERERERERERFRUVERERERERERERFRUVDQ0NERERERERFRUVERERERERERERERERERERERERERERERERERERERERFRUVERERERERERERERERERERERERERERERERERERERERERERERERERERERESFPz0UAAAAWXRSTlMAAAECAwQFBggKEhQVFhccHiQoKissLTIzNDpGR0hMTU5QUlRVW12BgoaHjI2PmJmam5ygpKWosbKztLW6vcDD0NLT2Nna3N7g4eLj5Ofo6err7u/w8vn7/A90CXkAAAFqSURBVDjLzdTHUgJREIXho8yo6JgFc0LFjAkVMZAFJYrCzP/+L+JCtJipS5U7Patbt79Vd1dr6BfRHyBJUiie6dSSiwrEh2aeAPAO7cEoUqWXdHgQirQAOh7A46gZzVQBzsfmSgAnRhR6AjiS5OQAd9aE4t9GmqoCCRPKAGe9zzhQDxlQBzpjknab9c2RD2DBgGrgzUlqQnfrHlg3oGug6Eh1oFsAEtvLVhAteUBuSjseP2lfzQf6dARQjY/s9SncY9uH7DQA7+ky/XkI+8YSfvRVC6k3AO4s34BHT90+1N2yYq8A+/5V0Wyi0ac2NJkD3KgfSaGF9QRQ9oCC5JSAiyCStA2k9jzISooCFQNaBlpWrJBdkTThQsOA7DYQ+3pbKeDWgHQFvDiSNJwEWDWheRfIOZKVBLiRCekYoBiZSAHkx83IfgDABXielhkpfAcAkJ/WICTrwAXgZlyDkRS9rDRu1wJL98/u0yeVYHcP1mwWWgAAAABJRU5ErkJggg=="); }
+
   #view-modal .ql-snow.ql-toolbar .ql-format-button.ql-link.ql-active,
   #view-modal .ql-snow.ql-toolbar .ql-picker.ql-link .ql-picker-label.ql-active,
   #view-modal .ql-snow.ql-toolbar .ql-picker .ql-picker-label[data-value=link].ql-active,
@@ -6469,7 +6445,6 @@ body.remotebar #connect-container-background-new-chrome-style {
   #view-modal .ql-snow.ql-toolbar:not(.ios) .ql-picker .ql-picker-label[data-value=link]:hover,
   #view-modal .ql-snow.ql-toolbar:not(.ios) .ql-picker .ql-picker-item[data-value=link]:hover {
     background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAABDlBMVEUAAAD///8AAP8AgP8AVaoAgL8AZswAVdUAYL8AZswAY8YAZswAYc4AaNEAZMgAZMgAZswAY80AZswAZ8gAZcoAaMsAZswAZswAZM0AZ8kAZcoAZswAZc0AZ8oAZc0AZ8oAZcsAZswAZ8oAZMsAZswAZc0AZcsAZ84AZswAZ84AZswAZswAZ8wAZs0AZs0AZs0AZ80AZswAZ8wAZswAZ8wAZswAZs0AZs0AZs0AZ8wAZswAZ8wAZ8wAZ8wAZs0AZswAZs0AZswAZswAZswAZswAZs0AZswAZswAZswAZswAZswAZswAZswAZswAZswAZswAZswAZswAZswAZswAZswAZswAZswAZswAZswAZsxCnEEHAAAAWXRSTlMAAAECAwQFBggKEhQVFhccHiQoKissLTIzNDpGR0hMTU5QUlRVW12BgoaHjI2PmJmam5ygpKWosbKztLW6vcDD0NLT2Nna3N7g4eLj5Ofo6err7u/w8vn7/A90CXkAAAFqSURBVDjLzdTHUgJREIXho8yo6JgFc0LFjAkVMZAFJYrCzP/+L+JCtJipS5U7Patbt79Vd1dr6BfRHyBJUiie6dSSiwrEh2aeAPAO7cEoUqWXdHgQirQAOh7A46gZzVQBzsfmSgAnRhR6AjiS5OQAd9aE4t9GmqoCCRPKAGe9zzhQDxlQBzpjknab9c2RD2DBgGrgzUlqQnfrHlg3oGug6Eh1oFsAEtvLVhAteUBuSjseP2lfzQf6dARQjY/s9SncY9uH7DQA7+ky/XkI+8YSfvRVC6k3AO4s34BHT90+1N2yYq8A+/5V0Wyi0ac2NJkD3KgfSaGF9QRQ9oCC5JSAiyCStA2k9jzISooCFQNaBlpWrJBdkTThQsOA7DYQ+3pbKeDWgHQFvDiSNJwEWDWheRfIOZKVBLiRCekYoBiZSAHkx83IfgDABXielhkpfAcAkJ/WICTrwAXgZlyDkRS9rDRu1wJL98/u0yeVYHcP1mwWWgAAAABJRU5ErkJggg=="); } }
-
 #view-modal .ql-snow .ql-tooltip {
   border: 1px solid #ccc;
   box-shadow: 0px 0px 5px #ddd;
@@ -6801,7 +6776,6 @@ body.remotebar #connect-container-background-new-chrome-style {
 @media (max-height: 600px) {
   #churned-locked-state .message-highlight {
     font-size: 0.89em; } }
-
 #churned-locked-state .message {
   max-width: 448px;
   margin: 0 auto; }
@@ -6813,11 +6787,9 @@ body.remotebar #connect-container-background-new-chrome-style {
 @media (max-height: 600px) {
   #churned-locked-state .message-title {
     font-size: 3em; } }
-
 @media (max-height: 600px) {
   #churned-locked-state .message-title {
     line-height: 1em; } }
-
 #churned-locked-state .message-description {
   margin-top: 30px;
   font-size: 1.25em; }
@@ -6825,7 +6797,6 @@ body.remotebar #connect-container-background-new-chrome-style {
 @media (max-height: 600px) {
   #churned-locked-state .message-description {
     font-size: 1em; } }
-
 #churned-locked-state .update-payment {
   margin-top: 25px; }
 
@@ -6837,7 +6808,6 @@ body.remotebar #connect-container-background-new-chrome-style {
 @media (max-height: 600px) {
   #churned-locked-state .message-cancel-sub {
     font-size: 1em; } }
-
 #churned-locked-state .cancel-sub {
   color: #008CD6; }
 
@@ -6851,7 +6821,6 @@ body.remotebar #connect-container-background-new-chrome-style {
 @media screen and (max-width: 1190px) {
   #view-buddy-list {
     display: none; } }
-
 .hide-buddy-list #view-buddy-list {
   display: none; }
 
@@ -6870,6 +6839,7 @@ body.remotebar #connect-container-background-new-chrome-style {
   header,
   #main {
     display: none; }
+
   #view-player {
     min-width: 100%;
     max-width: 100%;
@@ -6877,10 +6847,12 @@ body.remotebar #connect-container-background-new-chrome-style {
     display: flex;
     flex-flow: column;
     position: relative; }
+
   #view-player #miniplayer {
     flex: 1;
     display: flex;
     flex-flow: row-reverse; }
+
   #view-player #miniplayer .miniplayer-bg {
     display: block;
     position: absolute;
@@ -6890,6 +6862,7 @@ body.remotebar #connect-container-background-new-chrome-style {
     left: 0;
     background-size: cover;
     background-position: center; }
+
   #view-player #miniplayer .miniplayer-bg::before {
     content: '';
     position: absolute;
@@ -6898,13 +6871,16 @@ body.remotebar #connect-container-background-new-chrome-style {
     top: 0;
     left: 0;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 50%, #000000 100%); }
+
   #view-player #miniplayer .cover {
     position: relative; }
+
   #view-player #miniplayer .cover figure {
     width: 100vh;
     height: 100vh;
     background-size: cover;
     margin: 0; }
+
   #view-player #miniplayer .metadata {
     flex: 1;
     margin: 0 8px;
@@ -6914,14 +6890,17 @@ body.remotebar #connect-container-background-new-chrome-style {
     display: flex;
     flex-flow: row;
     align-items: center; }
+
   #view-player #miniplayer .metadata > div {
     width: 100%; }
+
   #view-player #miniplayer .metadata h4,
   #view-player #miniplayer .metadata h5 {
     margin: 0;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis; }
+
   #view-player #miniplayer .expand {
     position: absolute;
     right: 5px;
@@ -6931,69 +6910,86 @@ body.remotebar #connect-container-background-new-chrome-style {
     height: 12px;
     background-color: #FFF;
     display: none; }
+
   #view-player .player-controls-container {
     position: relative;
     height: 40px;
     padding-top: 0;
     padding-right: 100vh; }
+
   #view-player .player-controls-container #controls {
     margin: 0 8px; }
+
   #view-player .player-controls-container #elapsed,
   #view-player .player-controls-container #remaining {
     display: none; }
+
   #view-player .player-controls-container #progressbar {
     margin: 0; }
+
   #view-player .player-controls-container #progressbar .progress-bar-wrapper {
     position: initial; }
+
   #view-player .player-controls-container #progressbar .progress-bar-wrapper .progress-bar {
     bottom: 0;
     top: auto;
     right: 100vh;
     height: 2px;
     border-radius: 0; }
+
   #view-player .player-controls-container #extra-buttons {
     margin: 3px 8px 8px auto; }
+
   #view-player .player-controls-container #extra-buttons button:hover:not(.button-no-hover) {
     background-color: transparent; }
+
   #view-player .player-controls-container #offline {
     margin: 6px 10px 0 0; }
+
   #view-player .player-controls-container #offline span {
     display: none; }
+
   #view-player #lyrics-button,
   #view-player #queue,
   #view-player #connecticon,
   #view-player #volumebar-container,
   #view-player .remote-playback-bar:before {
     display: none; } }
-
 @media (max-height: 1px) and (max-aspect-ratio: 199 / 100) {
   #view-player #miniplayer {
     flex-flow: column;
     padding-top: 20px; }
+
   #view-player #miniplayer .miniplayer-bg {
     right: 0; }
+
   #view-player #miniplayer .cover {
     text-align: center; }
+
   #view-player #miniplayer .cover figure {
     height: calc(100vh - 113px);
     width: calc(100vh - 113px);
     margin: auto; }
+
   #view-player #miniplayer .metadata {
     padding-top: 10px;
     margin: 0; }
+
   #view-player .player-controls-container {
     padding-right: 0; }
+
   #view-player .player-controls-container #progressbar .progress-bar-wrapper {
     position: relative; }
+
   #view-player .player-controls-container #progressbar .progress-bar-wrapper .progress-bar {
     right: 0;
     top: 0;
     margin: auto;
     height: 4px;
     border-radius: 2px; }
+
   #view-player .player-controls-container #extra-buttons {
     margin-left: 10px; } }
-
 #view-video {
   position: absolute;
   z-index: 998;
@@ -7054,11 +7050,9 @@ body.remotebar #connect-container-background-new-chrome-style {
 @media (-webkit-min-device-pixel-ratio: 2) {
   .video-close-button:not(:disabled):hover:active {
     transform: scale(1); } }
-
 @media (-webkit-min-device-pixel-ratio: 2) {
   .video-close-button {
     transition-duration: 50ms; } }
-
 .video-close-button:after {
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: box-shadow; }
@@ -7066,7 +7060,6 @@ body.remotebar #connect-container-background-new-chrome-style {
 @media (-webkit-min-device-pixel-ratio: 2) {
   .video-close-button:after {
     transition-duration: 50ms; } }
-
 .video-close-button.contextmenu-active,
 .video-close-button:not(:disabled):hover {
   transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
@@ -7076,7 +7069,6 @@ body.remotebar #connect-container-background-new-chrome-style {
   .video-close-button.contextmenu-active,
   .video-close-button:not(:disabled):hover {
     transition-duration: 66ms; } }
-
 .video-close-button.contextmenu-active:after,
 .video-close-button:not(:disabled):hover:after {
   transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
@@ -7086,7 +7078,6 @@ body.remotebar #connect-container-background-new-chrome-style {
   .video-close-button.contextmenu-active:after,
   .video-close-button:not(:disabled):hover:after {
     transition-duration: 66ms; } }
-
 .video-close-button:not(:disabled):hover:active {
   transition: none; }
 
@@ -7172,6 +7163,7 @@ body.remotebar #connect-container-background-new-chrome-style {
   .media-object.playing .video-close-button.button-play:not(:hover):not(:disabled):hover,
   .media-object.playing.video-close-button.button-play:not(:hover):not(:disabled):hover {
     box-shadow: inset 0 0 0 1px transparent; }
+
   .video-close-button.button-play.playing:not(:hover).contextmenu-active:after,
   .tl-row.playing .video-close-button.button-play:not(:hover).contextmenu-active:after,
   .tl-row.playing.video-close-button.button-play:not(:hover).contextmenu-active:after,
@@ -7183,7 +7175,6 @@ body.remotebar #connect-container-background-new-chrome-style {
   .media-object.playing .video-close-button.button-play:not(:hover):not(:disabled):hover:after,
   .media-object.playing.video-close-button.button-play:not(:hover):not(:disabled):hover:after {
     box-shadow: inset 0 0 0 1px transparent; } }
-
 .video-close-button.button-play.playing:not(:hover):not(:disabled):hover:active,
 .tl-row.playing .video-close-button.button-play:not(:hover):not(:disabled):hover:active,
 .tl-row.playing.video-close-button.button-play:not(:hover):not(:disabled):hover:active,
@@ -7482,29 +7473,24 @@ body.video .view-player-new #lyrics-button {
 @media (min-height: 0px) and (max-height: 600px) {
   .billboard-ad .billboard {
     transform: scale(0.6, 0.6); } }
-
 @media (min-height: 600px) and (max-height: 750px) {
   .billboard-ad .billboard {
     transform: scale(0.7, 0.7); }
+
   .billboard-ad.has-been-maximized .billboard {
     margin-bottom: 125px; } }
-
 @media (min-width: 0px) and (max-width: 900px) and (min-height: 750px) {
   .billboard-ad .billboard {
     transform: scale(0.6, 0.6); } }
-
 @media (min-width: 900px) and (max-width: 1000px) and (min-height: 750px) {
   .billboard-ad .billboard {
     transform: scale(0.7, 0.7); } }
-
 @media (min-width: 1000px) and (max-width: 1100px) and (min-height: 750px) {
   .billboard-ad .billboard {
     transform: scale(0.8, 0.8); } }
-
 @media (min-width: 1100px) and (max-width: 1200px) and (min-height: 750px) {
   .billboard-ad .billboard {
     transform: scale(0.9, 0.9); } }
-
 .blurred {
   -webkit-filter: blur(10px);
   transform: scale(1.1);
@@ -7530,11 +7516,9 @@ body.video .view-player-new #lyrics-button {
   #leaderboard-ad-element {
     padding: 0 8px;
     margin: 8px auto; } }
-
 @media (max-height: 768px) {
   #leaderboard-ad-element {
     margin: 8px auto; } }
-
 .saf-video-takeover {
   position: absolute;
   top: 0;
@@ -7580,22 +7564,18 @@ body.video .view-player-new #lyrics-button {
   .saf-video-takeover-max .saf-video-takeover-video video {
     max-width: 540px;
     margin: 0px; } }
-
 @media (min-width: 1000px) and (max-width: 1279px) {
   .saf-video-takeover-max .saf-video-takeover-video video {
     max-width: 640px;
     margin: 80px; } }
-
 @media (min-width: 1280px) and (max-width: 1899px) {
   .saf-video-takeover-max .saf-video-takeover-video video {
     max-width: 854px;
     margin: 100px; } }
-
 @media (min-width: 1900px) {
   .saf-video-takeover-max .saf-video-takeover-video video {
     max-width: 1280px;
     margin: 150px; } }
-
 .saf-video-takeover-btn-min,
 .saf-video-takeover-btn-max {
   display: none;
@@ -7749,3 +7729,5 @@ ul {
 
 .sidebar-new-chrome-style {
   background-color: #FAFAFC; }
+
+/*# sourceMappingURL=style.css.map */

@@ -2,6 +2,9 @@ module.exports = function(grunt) {
   grunt.initConfig({
     sass: {
       glue: {
+        options: {
+          sourcemap: none
+        },
         files: [{
           expand: true,
           cwd: "skin",
@@ -11,6 +14,9 @@ module.exports = function(grunt) {
         }]
       },
       apps: {
+        options: {
+          sourcemap: none
+        },
         files: [{
           expand: true,
           cwd: "skin/apps",
@@ -24,17 +30,17 @@ module.exports = function(grunt) {
       },
     },
     watch: {
-      sass: {
+      options: {
+        spawn: false,
+      },
+      source: {
         files: ['skin/**/*.scss'],
-        tasks: ['sass'],
-        options: {
-          spawn: false
-        }
+        tasks: ['sass']
       }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-sass');
+  grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.registerTask('default', ['sass']);
 };

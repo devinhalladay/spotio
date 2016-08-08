@@ -162,29 +162,24 @@
 @media (min-height: 0px) and (max-height: 600px) {
   .billboard-ad .billboard {
     transform: scale(0.6, 0.6); } }
-
 @media (min-height: 600px) and (max-height: 750px) {
   .billboard-ad .billboard {
     transform: scale(0.7, 0.7); }
+
   .billboard-ad.has-been-maximized .billboard {
     margin-bottom: 125px; } }
-
 @media (min-width: 0px) and (max-width: 900px) and (min-height: 750px) {
   .billboard-ad .billboard {
     transform: scale(0.6, 0.6); } }
-
 @media (min-width: 900px) and (max-width: 1000px) and (min-height: 750px) {
   .billboard-ad .billboard {
     transform: scale(0.7, 0.7); } }
-
 @media (min-width: 1000px) and (max-width: 1100px) and (min-height: 750px) {
   .billboard-ad .billboard {
     transform: scale(0.8, 0.8); } }
-
 @media (min-width: 1100px) and (max-width: 1200px) and (min-height: 750px) {
   .billboard-ad .billboard {
     transform: scale(0.9, 0.9); } }
-
 .blurred {
   -webkit-filter: blur(10px);
   transform: scale(1.1);
@@ -210,11 +205,9 @@
   #leaderboard-ad-element {
     padding: 0 8px;
     margin: 8px auto; } }
-
 @media (max-height: 768px) {
   #leaderboard-ad-element {
     margin: 8px auto; } }
-
 .ne-bg-image {
   position: absolute;
   top: 0;
@@ -326,18 +319,18 @@
 @media screen and (max-width: 750px) {
   .sponsored-credits {
     display: none; } }
-
 /* GLUE RESIZING OVERRIDES */
 @media screen and (max-width: 804px) {
   .h-media {
     width: 210px;
     padding-bottom: 16px; }
+
   .h-description {
     display: -webkit-box;
     visibility: visible; }
+
   .h-controllers {
     left: auto; } }
-
 #hpto {
   position: relative;
   overflow: hidden; }
@@ -413,7 +406,6 @@
 @media screen and (max-width: 804px) {
   .hpto-button {
     display: none; } }
-
 .saf-video-takeover {
   position: absolute;
   top: 0;
@@ -459,22 +451,18 @@
   .saf-video-takeover-max .saf-video-takeover-video video {
     max-width: 540px;
     margin: 0px; } }
-
 @media (min-width: 1000px) and (max-width: 1279px) {
   .saf-video-takeover-max .saf-video-takeover-video video {
     max-width: 640px;
     margin: 80px; } }
-
 @media (min-width: 1280px) and (max-width: 1899px) {
   .saf-video-takeover-max .saf-video-takeover-video video {
     max-width: 854px;
     margin: 100px; } }
-
 @media (min-width: 1900px) {
   .saf-video-takeover-max .saf-video-takeover-video video {
     max-width: 1280px;
     margin: 150px; } }
-
 .saf-video-takeover-btn-min,
 .saf-video-takeover-btn-max {
   display: none;
@@ -547,3 +535,5 @@ html.glue2 #view-video-ad .saf-video-takeover-btn-max {
 
 .empty-content .message {
   margin-bottom: 10px; }
+
+/*# sourceMappingURL=style.css.map */

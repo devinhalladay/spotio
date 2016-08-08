@@ -90,7 +90,6 @@
   .mo-add,
   .mo-more {
     display: none !important; } }
-
 .s-header .media-object {
   width: 100px !important; }
 
@@ -170,3 +169,5 @@ html.full-height > body > .container {
 
 .no-result i:before {
   font-size: 112px; }
+
+/*# sourceMappingURL=style.css.map */

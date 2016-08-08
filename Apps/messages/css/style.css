@@ -30,11 +30,9 @@
 @media (max-width: 853px) {
   .composer {
     padding-left: 20px; } }
-
 @media (max-width: 585px) {
   .composer {
     padding-left: 20px; } }
-
 #thread-body {
   height: 100%;
   padding-bottom: 170px; }
@@ -111,11 +109,9 @@
 @media (max-width: 853px) {
   #thread-body .scroller {
     padding-left: 8px; } }
-
 @media (max-width: 585px) {
   #thread-body .scroller {
     padding-left: 8px; } }
-
 #thread-list {
   height: 100%;
   overflow: hidden;
@@ -144,15 +140,15 @@
 @media (max-width: 853px) {
   #thread-list {
     padding-right: 8px; }
+
   #thread-list-actions {
     padding-left: 20px; } }
-
 @media (max-width: 585px) {
   #thread-list {
     padding-right: 8px; }
+
   #thread-list-actions {
     padding-left: 20px; } }
-
 /* Temporary solution since it went missing in GLUE 9 */
 .fixed-container-wrapper {
   position: fixed;
@@ -197,17 +193,14 @@ textarea {
   #app-title {
     left: 8px;
     right: 8px; } }
-
 @media (min-width: 854px) {
   #app-title {
     left: 10px;
     right: 10px; } }
-
 @media (min-width: 1274px) {
   #app-title {
     left: 12px;
     right: 12px; } }
-
 .loading #app-title {
   display: none; }
 
@@ -246,11 +239,14 @@ textarea {
 @media (max-width: 853px) {
   #thread-not-selected {
     display: none; }
+
   #thread-nav {
     padding-top: 20px; }
+
   #thread-nav h2 {
     display: none; } }
-
 @media (min-width: 854px) {
   #thread-nav #back-to-convos {
     display: none; } }
+
+/*# sourceMappingURL=style.css.map */

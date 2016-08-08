@@ -15,7 +15,6 @@ html {
   .gutter {
     width: 33.33333333%;
     float: left; } }
-
 .main {
   width: 100%;
   display: inline-block; }
@@ -24,20 +23,22 @@ html {
   .main {
     width: 66.66666667%;
     float: right; } }
-
 @media (max-width: 843px) {
   .wrapper {
     display: flex;
     flex-direction: column; }
+
   .biography {
     order: 1; }
+
   .listening {
     order: 2; }
+
   .locations {
     order: 3; }
+
   .playlists {
     order: 4; } }
-
 .dim-app {
   pointer-events: none; }
 
@@ -66,12 +67,10 @@ html {
   .listening.no-fans .global-position__circle {
     right: 36px;
     top: calc(32vw - 14px); } }
-
 @media (min-width: 1490px) {
   .listening.no-fans .global-position__circle {
     right: 36px;
     top: 482.66666667px; } }
-
 .listening.no-fans .listening__secondary {
   border-top: 0; }
 
@@ -83,7 +82,6 @@ html {
 @media (max-width: 843px) {
   .listening.no-fans .monthly__data > div {
     text-align: center; } }
-
 .listening.no-fans .monthly__wrapper {
   height: 240px; }
 
@@ -91,7 +89,6 @@ html {
   .listening.no-fans .monthly__wrapper {
     height: 32vw;
     max-height: 496.66666667px; } }
-
 .listening__subsection {
   text-align: left;
   border-bottom: 1px solid #282828;
@@ -101,7 +98,6 @@ html {
 @media (min-width: 844px) {
   .listening__subsection {
     line-height: 79px; } }
-
 .listening__subsection h2 {
   display: inline-block;
   font-weight: 400;
@@ -112,7 +108,6 @@ html {
 @media (min-width: 844px) {
   .listening__subsection {
     line-height: 45px; } }
-
 .listening__subsection ul {
   margin: 0;
   padding: 0; }
@@ -155,11 +150,9 @@ html {
 @media (min-width: 844px) {
   .listening .global-position__circle {
     top: calc(32vw - 14px); } }
-
 @media (min-width: 1490px) {
   .listening .global-position__circle {
     top: 482.66666667px; } }
-
 .listening__secondary {
   border-top: 1px solid #282828; }
 
@@ -174,7 +167,6 @@ html {
     width: 100%;
     float: none;
     padding-right: 20px; } }
-
 .listening .monthly__wrapper {
   height: 51vw;
   text-align: center;
@@ -185,7 +177,6 @@ html {
   .listening .monthly__wrapper {
     height: 32vw;
     max-height: 496.66666667px; } }
-
 .listening .monthly__data {
   position: absolute;
   top: 0;
@@ -213,44 +204,36 @@ html {
 @media (min-width: 844px) {
   .listening .monthly__data.size-1 h2 {
     font-size: 4.5vw; } }
-
 @media (min-width: 1490px) {
   .listening .monthly__data.size-1 h2 {
     font-size: 72px; } }
-
 .listening .monthly__data.size-2 h2 {
   font-size: 7vw; }
 
 @media (min-width: 844px) {
   .listening .monthly__data.size-2 h2 {
     font-size: 5vw; } }
-
 @media (min-width: 1490px) {
   .listening .monthly__data.size-2 h2 {
     font-size: 72px; } }
-
 .listening .monthly__data.size-3 h2 {
   font-size: 8vw; }
 
 @media (min-width: 844px) {
   .listening .monthly__data.size-3 h2 {
     font-size: 6vw; } }
-
 @media (min-width: 1490px) {
   .listening .monthly__data.size-3 h2 {
     font-size: 72px; } }
-
 .listening .monthly__data.size-4 h2 {
   font-size: 10.5vw; }
 
 @media (min-width: 844px) {
   .listening .monthly__data.size-4 h2 {
     font-size: 8.5vw; } }
-
 @media (min-width: 1490px) {
   .listening .monthly__data.size-4 h2 {
     font-size: 72px; } }
-
 .listening .monthly__data.center > div {
   text-align: center; }
 
@@ -354,19 +337,23 @@ html {
 @media (min-width: 844px) {
   .top-fans {
     padding-right: 20px; }
+
   .top-fans .top-fan {
     width: 88px; }
+
   .top-fans .top-fan__info {
     padding: 25px 0;
     width: calc(100% - 124px); }
+
   .top-fans .top-fan__name {
     font-size: 24px; }
+
   .top-fans .top-fan__list {
     height: auto;
     padding-top: 20px; }
+
   .top-fans .top-fan__contianer {
     margin-bottom: 20px; } }
-
 .playlists {
   text-align: center;
   margin-bottom: 20px;
@@ -376,7 +363,6 @@ html {
 @media (min-width: 844px) {
   .playlists__top-five .playlist.fixed-size:first-child {
     height: 32vw; } }
-
 .playlists__top-five .playlist:first-child {
   height: 240px;
   position: relative;
@@ -446,11 +432,9 @@ html {
 @media (min-width: 844px) {
   .playlists__top-five .playlist__name {
     font-size: 4vw; } }
-
 @media (min-width: 1490px) {
   .playlists__top-five .playlist__name {
     font-size: 54px; } }
-
 .playlists__top-five .playlist__name .ellipsis {
   content: ' ';
   -webkit-box-sizing: content-box;
@@ -475,9 +459,9 @@ html {
     -webkit-line-clamp: 2;
     /* number of lines to show */
     -webkit-box-orient: vertical; }
+
   .playlists__top-five .playlist__name .ellipsis {
     display: none !important; } }
-
 .playlists__top-five .playlist__name a {
   line-height: 1;
   border-bottom: 0; }
@@ -552,7 +536,6 @@ html {
 @media (min-width: 844px) {
   .biography-text.images-0 {
     margin-top: 26px; } }
-
 .biography-text .pre {
   font-size: 18px;
   line-height: 24px;
@@ -566,7 +549,6 @@ html {
   .biography__image-carousel {
     height: 32vw;
     max-height: 496.66666667px; } }
-
 .biography__image-carousel a {
   border-bottom: none; }
 
@@ -585,7 +567,6 @@ html {
   .biography__image-carousel.images-0 {
     display: block;
     line-height: 32vw; } }
-
 .biography__image-carousel.images-2 .large {
   width: calc(50% - 2px); }
 
@@ -597,7 +578,6 @@ html {
   .biography__image-carousel.images-2 .small {
     height: 32vw;
     max-height: 496.66666667px; } }
-
 .biography__image-carousel .large {
   height: 51vw;
   display: inline-block;
@@ -610,7 +590,6 @@ html {
   .biography__image-carousel .large {
     height: 32vw;
     max-height: 496.66666667px; } }
-
 .biography__image-carousel .image {
   background-size: cover;
   background-position: 50%;
@@ -632,11 +611,9 @@ html {
 @media (min-width: 844px) {
   .biography__image-carousel .image-count-overlay {
     line-height: 16vw; } }
-
 @media (min-width: 1490px) {
   .biography__image-carousel .image-count-overlay {
     line-height: 248.33333333px; } }
-
 .biography__image-carousel .small {
   display: inline-block;
   width: calc(25% - 4px);
@@ -651,7 +628,6 @@ html {
   .biography__image-carousel .small {
     height: calc(16vw - 2px);
     max-height: 246.33333333px; } }
-
 .biography__image-carousel .small:nth-child(2) {
   margin-bottom: 2px; }
 
@@ -684,7 +660,6 @@ html {
 @media (min-width: 844px) {
   .locations .city.fixed-size:first-child {
     height: 32vw; } }
-
 .locations .city:first-child {
   height: 240px;
   position: relative;
@@ -716,11 +691,9 @@ html {
 @media (min-width: 844px) {
   .locations .city:first-child .city__description {
     font-size: 4vw; } }
-
 @media (min-width: 1490px) {
   .locations .city:first-child .city__description {
     font-size: 54px; } }
-
 .locations .city:first-child .city__listeners {
   line-height: 19px;
   position: absolute;
@@ -842,3 +815,5 @@ html {
 
 .additional-image img {
   height: 150px; }
+
+/*# sourceMappingURL=style.css.map */

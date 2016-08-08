@@ -129,7 +129,6 @@ body,
     opacity: 0; }
   100% {
     opacity: 1; } }
-
 .full-screen-modal--edit-header-image .full-screen-modal__close {
   display: none; }
 
@@ -491,3 +490,5 @@ input[type=range].slider:focus {
  */
 .phantom-js .header-image--placeholder {
   float: left; }
+
+/*# sourceMappingURL=style.css.map */
