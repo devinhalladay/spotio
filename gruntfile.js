@@ -78,7 +78,6 @@ module.exports = function(grunt) {
           { src: 'dist/glue1.css', dest: 'Apps/zlogin/css/glue1.css' },
         ]
       },
-
     },
 
     // Watch and build
@@ -91,7 +90,13 @@ module.exports = function(grunt) {
         files: ['skin/apps/*.scss', 'skin/base/_variables.scss'],
         tasks: ['sass:apps']
       }
-    }
+    },
+
+    // Delete files
+    clean: {
+      // Delete .spa files
+      spa: ['.tmp/Spotify.app/Contents/Resources/Apps/*.spa'],
+    },
   });
 
   // Load dependencies
