@@ -117,9 +117,34 @@ module.exports = function(grunt) {
         }
       }
     },
+
+    mkdir: {
+      tmp: {
+        options: {
+          create: ['.tmp']
+        },
+      },
+    },
+
+    curl: {
+      '.tmp/Spotify.dmg': 'https://download.spotify.com/Spotify.dmg',
+    },
+
+    shell: {
+      extract: {
+        command: [
+          'hdiutil attach .tmp/Spotify.dmg',
+          'cp -R "/Volumes/Spotify/Spotify.app" .tmp/',
+          'hdiutil detach /Volumes/Spotify'
+        ].join('&&')
+      }
+    }
   });
 
   // Load dependencies
+  grunt.loadNpmTasks('grunt-shell');
+  grunt.loadNpmTasks('grunt-mkdir');
+  grunt.loadNpmTasks('grunt-curl');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
@@ -127,4 +152,5 @@ module.exports = function(grunt) {
 
   // Run tasks
   grunt.registerTask('default', ['sass', 'watch']);
+  grunt.registerTask('download', ['mkdir', 'curl', 'shell:extract']);
 };
