@@ -78,6 +78,14 @@ module.exports = function(grunt) {
           { src: 'dist/glue1.css', dest: 'Apps/zlogin/css/glue1.css' },
         ]
       },
+      apps: {
+        files: [{
+          expand: true,
+          cwd: 'Apps',
+          src: ['**/*'],
+          dest: '.tmp/Spotify.app/Contents/Resources/Apps/',
+        }]
+      }
     },
 
     // Watch and build

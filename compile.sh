@@ -9,16 +9,16 @@
 # done
 
 # Filter build/glue1.css into all app dirs
-echo "\n## Placing processed glue1.css into all App directories"
-find Apps/. -type d -name "css" -print0 | xargs -0 -I {} sudo cp dist/glue1.css {}
+# echo "\n## Placing processed glue1.css into all App directories"
+# find Apps/. -type d -name "css" -print0 | xargs -0 -I {} sudo cp dist/glue1.css {}
 
 # Remove all the .spa files in the app
-echo "\n## Removing .spa files from Spotify.app"
-sudo rm -rf .tmp/Spotify.app/Contents/Resources/Apps/*.spa
+# echo "\n## Removing .spa files from Spotify.app"
+# sudo rm -rf .tmp/Spotify.app/Contents/Resources/Apps/*.spa
 
 # Copy over our built App code to the app in .tmp
-echo "\n## Moving compiled app code into Spotify.app"
-sudo cp -r "Apps/"* ".tmp/Spotify.app/Contents/Resources/Apps/"
+# echo "\n## Moving compiled app code into Spotify.app"
+# sudo cp -r "Apps/"* ".tmp/Spotify.app/Contents/Resources/Apps/"
 
 # Move our compiled app into /dist
 echo "\n## Moving Spotify.app to dist/"
