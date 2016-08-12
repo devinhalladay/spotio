@@ -3,7 +3,7 @@
 
 .throbberWrapper {
   position: absolute;
-  background-color: #282828;
+  background-color: $secondary-view-bg-color;
   top: 0;
   left: 0;
   right: 0;
@@ -30,7 +30,7 @@ body {
   box-sizing: border-box;
   position: relative;
   padding: 0;
-  background-color: #282828;
+  background-color: $primary-border-color;
   min-width: 239px;
 }
 ul {
@@ -196,7 +196,7 @@ recent searches - hover state will be broken.
   margin-right: 5px;
 }
 .selectable.selected {
-  background-color: #4d4d4d !important;
+  background-color: blue !important;
 }
 .selectable.selected .label {
   color: #bababa !important;

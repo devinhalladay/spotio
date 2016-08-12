@@ -1,7 +1,7 @@
 /* line 4, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .throbberWrapper {
   position: absolute;
-  background-color: #282828;
+  background-color: #f2f3f6;
   top: 0;
   left: 0;
   right: 0;
@@ -32,7 +32,7 @@ body {
   box-sizing: border-box;
   position: relative;
   padding: 0;
-  background-color: #282828;
+  background-color: #E5E8EA;
   min-width: 239px; }
 
 /* line 36, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
@@ -228,7 +228,7 @@ recent searches - hover state will be broken.
 
 /* line 198, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .selectable.selected {
-  background-color: #4d4d4d !important; }
+  background-color: blue !important; }
 
 /* line 201, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .selectable.selected .label {

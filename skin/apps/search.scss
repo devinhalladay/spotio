@@ -1,5 +1,8 @@
 @import '../base/variables';
 
+body {
+  background-color: #ffffff;
+}
 
 .throbberWrapper {
   position: fixed;
@@ -7,7 +10,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #181818;
+  background-color: #ffffff;
   z-index: 999;
 }
 .throbberWrapper .throbber-large {
@@ -24,7 +27,7 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #181818;
+  background-color: #ffffff;
   opacity: 0.8;
 }
 .throbberLoader .throbber {

@@ -224,7 +224,7 @@
   color: $primary-accent-color;
   text-decoration: none;
   outline: 0;
-  background-color: #404040;
+  background-color: $secondary-view-bg-color;
 }
 .dropdown-menu > .disabled > a,
 .dropdown-interior-menu > .disabled > a,

@@ -1,14 +1,18 @@
-/* line 4, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
+/* line 3, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
+body {
+  background-color: #ffffff; }
+
+/* line 7, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
 .throbberWrapper {
   position: fixed;
   top: 59px;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #181818;
+  background-color: #ffffff;
   z-index: 999; }
 
-/* line 13, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
+/* line 16, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
 .throbberWrapper .throbber-large {
   position: absolute;
   top: 50%;
@@ -16,7 +20,7 @@
   margin-left: -35px;
   margin-top: -35px; }
 
-/* line 20, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
+/* line 23, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
 .throbberLoader {
   height: 60px;
   position: absolute;
@@ -24,10 +28,10 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #181818;
+  background-color: #ffffff;
   opacity: 0.8; }
 
-/* line 30, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
+/* line 33, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
 .throbberLoader .throbber {
   position: absolute;
   top: 50%;
@@ -35,33 +39,33 @@
   margin-left: -20px;
   margin-top: -20px; }
 
-/* line 37, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
+/* line 40, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
 ::-webkit-scrollbar:horizontal {
   height: 10px !important; }
 
 /* ==========================================================================
   HEADER
   ========================================================================== */
-/* line 43, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
+/* line 46, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
 .s-header {
   padding: 0 !important;
   position: relative; }
 
-/* line 47, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
+/* line 50, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
 .s-header.rows-1 {
   height: 220px !important;
   margin-bottom: 25px; }
 
-/* line 51, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
+/* line 54, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
 .s-header.rows-2 {
   height: 440px !important;
   margin-bottom: 25px; }
 
-/* line 55, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
+/* line 58, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
 .s-header .pod {
   position: absolute; }
 
-/* line 58, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
+/* line 61, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
 .s-header .title {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -71,78 +75,78 @@
 /* ==========================================================================
   GLUE OVERRIDES
   ========================================================================== */
-/* line 67, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
+/* line 70, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
 .tl-popularity {
   width: 72px; }
 
-/* line 70, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
+/* line 73, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
 .pop-meter {
   width: 46px; }
 
-/* line 73, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
+/* line 76, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
 .pop-meter-background:after {
   box-shadow: 4px 0 0 0 #404040, 8px 0 0 0 #404040, 12px 0 0 0 #404040, 16px 0 0 0 #404040, 20px 0 0 0 #404040, 24px 0 0 0 #404040, 28px 0 0 0 #404040, 32px 0 0 0 #404040, 36px 0 0 0 #404040, 40px 0 0 0 #404040, 44px 0 0 0 #404040, 48px 0 0 0 #404040; }
 
-/* line 76, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
+/* line 79, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
 .pop-meter-overlay:after {
   box-shadow: 4px 0 0 0 #A0A0A0, 8px 0 0 0 #A0A0A0, 12px 0 0 0 #A0A0A0, 16px 0 0 0 #A0A0A0, 20px 0 0 0 #A0A0A0, 24px 0 0 0 #A0A0A0, 28px 0 0 0 #A0A0A0, 32px 0 0 0 #A0A0A0, 36px 0 0 0 #A0A0A0, 40px 0 0 0 #A0A0A0, 44px 0 0 0 #A0A0A0, 48px 0 0 0 #A0A0A0; }
 
-/* line 79, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
+/* line 82, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
 .disable-link {
   pointer-events: none !important;
   cursor: default !important;
   color: #404040 !important; }
 
-/* line 84, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
+/* line 87, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
 .hide-auxiliary-controls .mo-add,
 .hide-auxiliary-controls .mo-more {
   display: none !important; }
 
-/* line 88, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
+/* line 91, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
 .s-header .mo-add,
 .s-header .mo-more {
   display: none !important; }
 
 @media screen and (max-width: 700px) {
-  /* line 93, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
+  /* line 96, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
   .mo-add,
   .mo-more {
     display: none !important; } }
 
-/* line 98, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
+/* line 101, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
 .s-header .media-object {
   width: 100px !important; }
 
-/* line 101, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
+/* line 104, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
 .s-header .media-object .mo-info {
   height: 60px !important;
   padding: 3px 5px !important; }
 
-/* line 105, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
+/* line 108, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
 .s-header .media-object .mo-info .mo-title {
   margin-bottom: 0 !important; }
 
-/* line 108, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
+/* line 111, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
 .s-header .media-object .mo-info .mo-subtitle {
   margin-top: 0 !important;
   font-size: 85%; }
 
-/* line 112, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
+/* line 115, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
 .grid {
   margin: 0 !important;
   overflow: hidden; }
 
-/* line 116, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
+/* line 119, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
 .grid li {
   display: block;
   float: left; }
 
-/* line 120, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
+/* line 123, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
 .s-header .media-object-playlist .mo-subtitle,
 .s-header .mo-meta {
   display: none; }
 
-/* line 124, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
+/* line 127, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
 .s-header .mo-verified {
   right: 18% !important;
   bottom: 18% !important;
@@ -150,18 +154,18 @@
   height: 18px;
   line-height: 18px; }
 
-/* line 131, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
+/* line 134, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
 .s-header .mo-verified span:before {
   font-size: 12px; }
 
-/* line 134, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
+/* line 137, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
 .alert {
   margin: 0 !important; }
 
 /* ==========================================================================
   QUERY BAR
   ========================================================================== */
-/* line 140, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
+/* line 143, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
 .s-query div {
   height: 59px;
   line-height: 59px;
@@ -170,7 +174,7 @@
   text-overflow: ellipsis;
   white-space: nowrap; }
 
-/* line 148, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
+/* line 151, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
 .s-query div h3 {
   display: inline !important;
   margin: 0 !important; }
@@ -178,30 +182,30 @@
 /* ==========================================================================
   NO RESULTS
   ========================================================================== */
-/* line 155, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
+/* line 158, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
 html.full-height,
 html.full-height > body,
 html.full-height > body > .container {
   height: 100%;
   max-width: none !important; }
 
-/* line 161, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
+/* line 164, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
 .no-result {
   margin: 100px auto 0;
   text-align: center; }
 
-/* line 165, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
+/* line 168, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
 .no-result p {
   line-height: 1.3 !important;
   word-wrap: break-word; }
 
-/* line 169, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
+/* line 172, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
 .no-result i {
   display: block;
   line-height: 1.5;
   color: #404040;
   text-align: center; }
 
-/* line 175, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
+/* line 178, /Users/Devin/GitHub/spotio/skin/apps/search.scss */
 .no-result i:before {
   font-size: 112px; }
