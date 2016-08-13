@@ -108,7 +108,7 @@ html {
 }
 .listening__subsection {
   text-align: left;
-  border-bottom: 1px solid #282828;
+  border-bottom: 1px solid $primary-border-color;
   line-height: 59px;
   padding-left: 12px;
 }
@@ -179,7 +179,7 @@ html {
   }
 }
 .listening__secondary {
-  border-top: 1px solid #282828;
+  border-top: 1px solid $primary-border-color;
 }
 .listening .monthly {
   text-align: center;
@@ -213,7 +213,7 @@ html {
   width: 100%;
   height: 100%;
   padding: 15px;
-  background: #282828;
+  background: $secondary-text-color-hover;
   background-image: url('/img/bubbles_long.png');
   background-size: auto 100%;
   background-repeat: no-repeat;
@@ -226,6 +226,9 @@ html {
   width: auto;
   margin: 0 auto;
   display: inline-block;
+}
+.listening .monthly__data h2 {
+  color: #ffffff;
 }
 .listening .monthly__data.size-1 h2 {
   font-size: 6.5vw;
@@ -295,7 +298,7 @@ html {
 .listening .monthly__data-description {
   font-size: 14px;
   line-height: 1;
-  color: $primary-text-color;
+  color: #ffffff;
   font-weight: 100;
 }
 .listening .monthly__data-delta {
@@ -355,7 +358,7 @@ html {
 }
 .top-fans .top-fan__name a:hover {
   border-bottom: 0;
-  color: #d9d9d9;
+  color: $secondary-text-color;
 }
 .top-fans .top-fan__list {
   list-style: none;
@@ -416,10 +419,10 @@ html {
   height: 240px;
   position: relative;
   overflow: hidden;
-  background: #282828;
+  background: $secondary-view-bg-color;
 }
 .playlists__top-five .playlist:nth-child(n+2) {
-  border-bottom: 1px solid #282828;
+  border-bottom: 1px solid $primary-border-color;
   overflow: hidden;
   text-overflow: ellipsis;
   position: relative;
@@ -432,7 +435,7 @@ html {
   display: inline-block;
 }
 .playlists__top-five .playlist-listening {
-  color: #A0A0A0;
+  color: $secondary-text-color;
   margin: 0;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -440,7 +443,7 @@ html {
   font-weight: normal;
 }
 .playlists__top-five .playlist-owner a {
-  color: #A0A0A0;
+  color: $secondary-text-color;
 }
 .playlists__top-five .playlist__object {
   width: 100%;
@@ -523,7 +526,7 @@ html {
 }
 .playlists__top-five .playlist__name a:hover {
   border-bottom: 0;
-  color: #d9d9d9;
+  color: $secondary-text-color;
 }
 .playlists__top-five .playlist:first-child .playlist-listening {
   position: absolute;
@@ -561,7 +564,7 @@ html {
   border-bottom: 1px solid transparent;
 }
 .playlists .media-object-playlist .mo-subtitle a:hover {
-  color: #A0A0A0;
+  color: $secondary-text-color;
   border-bottom-color: currentcolor;
 }
 .biography {
@@ -708,7 +711,7 @@ html {
 .biography__artist-info {
   display: inline-block;
   font-weight: 400;
-  color: white;
+  color: $primary-text-color;
   margin-top: 19px;
   margin-bottom: 9.5px;
 }
@@ -725,8 +728,8 @@ html {
   text-align: left;
 }
 .locations .land {
-  stroke: #202020;
-  fill: #202020;
+  stroke: $secondary-text-color-hover;
+  fill: $secondary-text-color-hover;
 }
 @media (min-width: 844px) {
   .locations .city.fixed-size:first-child {
@@ -737,10 +740,16 @@ html {
   height: 240px;
   position: relative;
   overflow: hidden;
-  background: #282828;
+  background: $primary-text-color;
+  .city__description {
+    color: #ffffff;
+  }
+  .city__country {
+    color: #ffffff;
+  }
 }
 .locations .city:nth-child(n+2) {
-  border-bottom: 1px solid #282828;
+  border-bottom: 1px solid $primary-border-color;
   overflow: hidden;
   text-overflow: ellipsis;
   position: relative;
@@ -777,6 +786,7 @@ html {
   bottom: 0;
   right: 0;
   padding: 12px;
+  color: #ffffff;
 }
 .locations .city__data {
   width: 100%;
@@ -802,7 +812,7 @@ html {
   display: inline-block;
 }
 .locations .city__country {
-  color: #A0A0A0;
+  color: $secondary-text-color;
 }
 .locations .city__map {
   position: absolute;
@@ -810,7 +820,7 @@ html {
   bottom: 0;
   width: 100%;
   z-index: 0;
-  background: #282828;
+  background: $secondary-text-color;
 }
 .edit-buttons button {
   margin-left: 12px;

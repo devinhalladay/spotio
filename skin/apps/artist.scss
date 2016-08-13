@@ -17,7 +17,7 @@
 }
 .search .search-item .mo-info.subtitle {
   padding-top: 5px;
-  background-color: #333333;
+  background-color: $secondary-view-bg-color;
 }
 .search .search-item .mo-info.subtitle .mo-title {
   margin-bottom: 0;
@@ -39,9 +39,9 @@
   user-select: none;
   height: 40px;
   margin-bottom: 0;
-  border-color: #404040;
+  border-color: $primary-border-color;
   color: $primary-text-color;
-  background-color: #333333;
+  background-color: $secondary-view-bg-color;
   margin-bottom: 2px;
   height: 50px;
   position: relative;
@@ -73,13 +73,13 @@
 .search .search-item.selectable:hover .mo-info.subtitle,
 .search .search-item.selectable:focus .mo-info.subtitle,
 .search .search-item.selectable.selected .mo-info.subtitle {
-  background-color: #4d4d4d;
+  background-color: $secondary-text-color;
 }
 .search .search-item.selectable:hover .label,
 .search .search-item.selectable:focus .label,
 .search .search-item.selectable.selected .label {
-  color: #bababa;
-  border-color: #666666;
+  color: $secondary-text-color;
+  border-color: $primary-border-color;
 }
 .search .search-item.selectable:hover:hover,
 .search .search-item.selectable:focus:hover,

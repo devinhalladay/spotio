@@ -17,7 +17,7 @@
 /* line 18, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .search .search-item .mo-info.subtitle {
   padding-top: 5px;
-  background-color: #333333; }
+  background-color: #f2f3f6; }
 
 /* line 22, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .search .search-item .mo-info.subtitle .mo-title {
@@ -42,9 +42,9 @@
   user-select: none;
   height: 40px;
   margin-bottom: 0;
-  border-color: #404040;
+  border-color: #E5E8EA;
   color: #56666F;
-  background-color: #333333;
+  background-color: #f2f3f6;
   margin-bottom: 2px;
   height: 50px;
   position: relative;
@@ -81,14 +81,14 @@
 .search .search-item.selectable:hover .mo-info.subtitle,
 .search .search-item.selectable:focus .mo-info.subtitle,
 .search .search-item.selectable.selected .mo-info.subtitle {
-  background-color: #4d4d4d; }
+  background-color: #9CA6AC; }
 
 /* line 78, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .search .search-item.selectable:hover .label,
 .search .search-item.selectable:focus .label,
 .search .search-item.selectable.selected .label {
-  color: #bababa;
-  border-color: #666666; }
+  color: #9CA6AC;
+  border-color: #E5E8EA; }
 
 /* line 84, /Users/Devin/GitHub/spotio/skin/apps/artist.scss */
 .search .search-item.selectable:hover:hover,

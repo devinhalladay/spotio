@@ -2098,7 +2098,7 @@
 }
 .view-player #connect:hover #devices-label.remote,
 .view-player #connect:hover #devices-icon.remote {
-  color: #34da70;
+  color: $primary-accent-color;
 }
 .view-player #connect #connecticon {
   color: $primary-text-color;
