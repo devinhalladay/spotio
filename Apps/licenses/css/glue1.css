@@ -12505,7 +12505,7 @@ a.list-group-item.active .list-group-item-text {
  */
 /* line 10, /Users/Devin/GitHub/spotio/skin/components/_main-menu.scss */
 .etched-top {
-  border-top: 1px solid #000000; }
+  border-top: 1px solid #E5E8EA; }
 
 /* line 13, /Users/Devin/GitHub/spotio/skin/components/_main-menu.scss */
 .etched-top:before {
@@ -12516,11 +12516,11 @@ a.list-group-item.active .list-group-item-text {
   left: 0;
   height: 1px;
   position: absolute;
-  background-color: #dbdbdb; }
+  background-color: #E5E8EA; }
 
 /* line 23, /Users/Devin/GitHub/spotio/skin/components/_main-menu.scss */
 .etched-bottom {
-  border-bottom: 1px solid #dbdbdb; }
+  border-bottom: 1px solid #E5E8EA; }
 
 /* line 26, /Users/Devin/GitHub/spotio/skin/components/_main-menu.scss */
 .etched-bottom:after {
@@ -12531,11 +12531,11 @@ a.list-group-item.active .list-group-item-text {
   left: 0;
   height: 1px;
   position: absolute;
-  background-color: #000000; }
+  background-color: #f2f3f6; }
 
 /* line 36, /Users/Devin/GitHub/spotio/skin/components/_main-menu.scss */
 .etched-right {
-  border-right: 1px solid #dbdbdb; }
+  border-right: 1px solid #E5E8EA; }
 
 /* line 39, /Users/Devin/GitHub/spotio/skin/components/_main-menu.scss */
 .etched-right:after {
@@ -12546,7 +12546,7 @@ a.list-group-item.active .list-group-item-text {
   top: 0;
   width: 1px;
   position: absolute;
-  background-color: #000000; }
+  background-color: #E5E8EA; }
 
 /* line 49, /Users/Devin/GitHub/spotio/skin/components/_main-menu.scss */
 .main-menu.narrow-menu,
@@ -14595,13 +14595,13 @@ a.list-group-item.active > .badge,
 .media-object .mo-add:not(:disabled):hover,
 .media-object .mo-more:not(:disabled):hover {
   background-color: transparent;
-  color: #008CD6; }
+  color: #00a7ff; }
 
 /* line 110, /Users/Devin/GitHub/spotio/skin/components/_media-objects.scss */
 .media-object .mo-add:not(:disabled):hover:active,
 .media-object .mo-more:not(:disabled):hover:active {
   background: transparent;
-  color: #0566a4;
+  color: #008CD6;
   transform: scale(1); }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
@@ -15285,7 +15285,7 @@ a.list-group-item.active > .badge,
 .media-object .collection-placeholder,
 .media-object .local-files-placeholder {
   display: none;
-  fill: #404040; }
+  fill: #56666F; }
 
 /* line 747, /Users/Devin/GitHub/spotio/skin/components/_media-objects.scss */
 .media-object-album .album-placeholder {
@@ -15493,7 +15493,7 @@ a.list-group-item.active > .badge,
   font-size: 11px;
   letter-spacing: 0.015em;
   font-weight: 200;
-  color: #A0A0A0;
+  color: #9CA6AC;
   text-transform: uppercase;
   letter-spacing: 0.16em;
   display: block;

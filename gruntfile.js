@@ -2,6 +2,16 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
+    // Configure notifications
+    notify_hooks: {
+      options: {
+        enabled: true,
+        title: "Spotio", // defaults to the name in package.json, or will use project directory's name
+        success: true, // whether successful grunt executions should be notified automatically
+        duration: 3 // the duration of notification in seconds, for `notify-send only
+      }
+    },
+
     // Compile Sass
     sass: {
       options: {
@@ -100,11 +110,11 @@ module.exports = function(grunt) {
     watch: {
       glue: { // Watch our GLUE file separately from App sass
         files: ['skin/**/*.scss', '!skin/apps/*.scss'],
-        tasks: ['sass:glue', 'copy:glue', 'copy:apps', 'shell:copyspotifyapp']
+        tasks: ['sass:glue', 'copy:glue', 'copy:apps', 'shell:copyspotifyapp', 'notify_hooks']
       },
       apps: { // Watch App-specific sass separately from GLUE
         files: ['skin/apps/*.scss', 'skin/base/_variables.scss'],
-        tasks: ['sass:apps', 'copy:apps', 'shell:copyspotifyapp']
+        tasks: ['sass:apps', 'copy:apps', 'shell:copyspotifyapp', 'notify_hooks']
       },
     },
 
@@ -155,6 +165,7 @@ module.exports = function(grunt) {
   });
 
   // Load dependencies
+  grunt.loadNpmTasks('grunt-notify');
   grunt.loadNpmTasks('grunt-contrib-compress');
   grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-mkdir');

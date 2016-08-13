@@ -427,7 +427,7 @@
   left: 328px;
 }
 .merch-popup-legal {
-  color: #999;
+  color: $secondary-text-color-hover;
   font-size: .85em;
   padding: 10px;
   position: absolute;
@@ -441,7 +441,7 @@
   line-height: 24px;
   letter-spacing: normal;
   font-weight: 400;
-  color: #FFFFFF;
+  color: $primary-text-color;
   text-transform: normal;
 }
 #related {

@@ -8,7 +8,7 @@
  * Styleguide 40.1
  */
 .etched-top {
-  border-top: 1px solid #000000;
+  border-top: 1px solid $primary-border-color;
 }
 .etched-top:before {
   display: block;
@@ -18,10 +18,10 @@
   left: 0;
   height: 1px;
   position: absolute;
-  background-color: #dbdbdb;
+  background-color: $primary-border-color;
 }
 .etched-bottom {
-  border-bottom: 1px solid #dbdbdb;
+  border-bottom: 1px solid $primary-border-color;
 }
 .etched-bottom:after {
   display: block;
@@ -31,10 +31,10 @@
   left: 0;
   height: 1px;
   position: absolute;
-  background-color: #000000;
+  background-color: $secondary-view-bg-color;
 }
 .etched-right {
-  border-right: 1px solid #dbdbdb;
+  border-right: 1px solid $primary-border-color;
 }
 .etched-right:after {
   display: block;
@@ -44,7 +44,7 @@
   top: 0;
   width: 1px;
   position: absolute;
-  background-color: #000000;
+  background-color: $primary-border-color;
 }
 .main-menu.narrow-menu,
 .main-menu.wide-menu {

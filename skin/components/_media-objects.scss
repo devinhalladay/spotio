@@ -105,12 +105,12 @@
 .media-object .mo-add:not(:disabled):hover,
 .media-object .mo-more:not(:disabled):hover {
   background-color: transparent;
-  color: $primary-accent-color;
+  color: $primary-accent-color--light;
 }
 .media-object .mo-add:not(:disabled):hover:active,
 .media-object .mo-more:not(:disabled):hover:active {
   background: transparent;
-  color: $primary-accent-color--dark;
+  color: $primary-accent-color;
   transform: scale(1);
 }
 @media (-webkit-min-device-pixel-ratio: 2) {
@@ -742,7 +742,7 @@
 .media-object .collection-placeholder,
 .media-object .local-files-placeholder {
   display: none;
-  fill: #404040;
+  fill: $primary-text-color;
 }
 .media-object-album .album-placeholder {
   display: block;
@@ -915,7 +915,7 @@
   font-size: 11px;
   letter-spacing: 0.015em;
   font-weight: 200;
-  color: #A0A0A0;
+  color: $secondary-text-color;
   text-transform: uppercase;
   letter-spacing: 0.16em;
   display: block;
