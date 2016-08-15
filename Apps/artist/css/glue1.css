@@ -203,6 +203,157 @@ textarea {
 table {
   border-spacing: 0; }
 
+/* line 1, /Users/Devin/GitHub/spotio/skin/objects/_contextmenu.scss */
+body {
+  margin: 0;
+  padding: 0; }
+
+/* line 6, /Users/Devin/GitHub/spotio/skin/objects/_contextmenu.scss */
+.context-menu-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0; }
+  /* line 12, /Users/Devin/GitHub/spotio/skin/objects/_contextmenu.scss */
+  .context-menu-container ::-webkit-scrollbar-track {
+    background-color: #f2f3f6 !important; }
+  /* line 15, /Users/Devin/GitHub/spotio/skin/objects/_contextmenu.scss */
+  .context-menu-container ::-webkit-scrollbar {
+    width: 10px;
+    background-color: #9CA6AC !important; }
+  /* line 19, /Users/Devin/GitHub/spotio/skin/objects/_contextmenu.scss */
+  .context-menu-container ::-webkit-scrollbar:horizontal {
+    height: 10px; }
+  /* line 22, /Users/Devin/GitHub/spotio/skin/objects/_contextmenu.scss */
+  .context-menu-container ::-webkit-scrollbar-thumb {
+    border: 1px solid #ffffff !important;
+    border-radius: 10px;
+    background-color: #9CA6AC !important; }
+  /* line 27, /Users/Devin/GitHub/spotio/skin/objects/_contextmenu.scss */
+  .context-menu-container ::-webkit-scrollbar-corner {
+    background-color: #f2f3f6 !important; }
+
+/* line 32, /Users/Devin/GitHub/spotio/skin/objects/_contextmenu.scss */
+.context-menu {
+  padding: 5px 0;
+  position: absolute;
+  display: none;
+  width: auto;
+  min-width: 160px;
+  max-width: 350px;
+  color: #56666F !important;
+  background-color: #f2f3f6 !important;
+  box-shadow: 0 0 10px rgba(86, 102, 111, 0.8) !important; }
+
+/* line 44, /Users/Devin/GitHub/spotio/skin/objects/_contextmenu.scss */
+.context-menu .item {
+  padding: 4px 25px;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: default;
+  line-height: 18px; }
+
+/* line 54, /Users/Devin/GitHub/spotio/skin/objects/_contextmenu.scss */
+.context-menu .sep {
+  display: block;
+  margin: 4px 0;
+  height: 1px;
+  background-color: #E5E8EA !important; }
+
+/* line 61, /Users/Devin/GitHub/spotio/skin/objects/_contextmenu.scss */
+.context-menu .item.disabled {
+  color: #9CA6AC !important; }
+
+/* line 65, /Users/Devin/GitHub/spotio/skin/objects/_contextmenu.scss */
+.context-menu .filter-search {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 0;
+  width: 0;
+  opacity: 0; }
+
+/* line 74, /Users/Devin/GitHub/spotio/skin/objects/_contextmenu.scss */
+.context-menu .filter-search input:focus {
+  outline: 0; }
+
+/* line 78, /Users/Devin/GitHub/spotio/skin/objects/_contextmenu.scss */
+.context-menu .item.disabled.hover {
+  background-color: transparent; }
+
+/* line 82, /Users/Devin/GitHub/spotio/skin/objects/_contextmenu.scss */
+.context-menu .item.check {
+  padding-left: 10px; }
+
+/* line 86, /Users/Devin/GitHub/spotio/skin/objects/_contextmenu.scss */
+.context-menu .item.check:before {
+  content: '✓';
+  font-weight: bold;
+  display: inline-block;
+  width: 15px; }
+
+/* line 93, /Users/Devin/GitHub/spotio/skin/objects/_contextmenu.scss */
+.context-menu .item span {
+  pointer-events: none; }
+
+/* line 97, /Users/Devin/GitHub/spotio/skin/objects/_contextmenu.scss */
+.context-menu .item.secondary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 10px; }
+
+/* line 104, /Users/Devin/GitHub/spotio/skin/objects/_contextmenu.scss */
+.context-menu .item.secondary .text {
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+/* line 109, /Users/Devin/GitHub/spotio/skin/objects/_contextmenu.scss */
+.context-menu .item.secondary .secondary {
+  margin-left: 20px;
+  letter-spacing: 1px;
+  flex-shrink: 0; }
+
+/* line 115, /Users/Devin/GitHub/spotio/skin/objects/_contextmenu.scss */
+.context-menu .filtered {
+  display: none; }
+
+/* line 119, /Users/Devin/GitHub/spotio/skin/objects/_contextmenu.scss */
+.context-menu .item .highlight {
+  background-color: #cfcf00;
+  color: #333;
+  padding: 0 3px;
+  border-radius: 2px; }
+
+/* line 126, /Users/Devin/GitHub/spotio/skin/objects/_contextmenu.scss */
+.context-menu .item.parent:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 0 4px 6px;
+  border-color: transparent transparent transparent #666; }
+
+/* line 139, /Users/Devin/GitHub/spotio/skin/objects/_contextmenu.scss */
+.context-menu .item.hover {
+  background-color: #dde1e3 !important;
+  cursor: default; }
+
+/* line 144, /Users/Devin/GitHub/spotio/skin/objects/_contextmenu.scss */
+.context-menu .item.active, .context-menu .item:active {
+  background-color: #bbc3c8 !important; }
+
+/* line 148, /Users/Devin/GitHub/spotio/skin/objects/_contextmenu.scss */
+.context-menu .item:last-child {
+  border: 0; }
+
 @keyframes glue-keyframes-rotate {
   0% {
     transform: rotate(0deg); }
@@ -5838,12 +5989,12 @@ html {
   border-top: 1px solid #008CD6;
   pointer-events: none; }
 
-/* line 22, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 24, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .pre-scrollable {
   max-height: 340px;
   overflow-y: scroll; }
 
-/* line 26, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 28, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .fade {
   opacity: 0;
   -webkit-transition: opacity 0.15s linear;
@@ -5851,11 +6002,11 @@ html {
   -o-transition: opacity 0.15s linear;
   transition: opacity 0.15s linear; }
 
-/* line 33, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 35, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .fade.in {
   opacity: 1; }
 
-/* line 36, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 38, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .collapse {
   position: relative;
   height: 0;
@@ -5865,7 +6016,7 @@ html {
   -o-transition: height 0.35s ease;
   transition: height 0.35s ease; }
 
-/* line 45, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 47, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .collapse.in {
   height: auto; }
 
@@ -16366,7 +16517,7 @@ a.list-group-item.active > .badge,
  *
  * Styleguide 70.20
  */
-/* line 89, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 91, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .puff {
   background-color: #f2f3f6;
   display: flex;
@@ -16376,16 +16527,16 @@ a.list-group-item.active > .badge,
   will-change: -webkit-filter;
   border-bottom: none; }
 
-/* line 98, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 100, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .puff:hover .pf-title {
   border-bottom-color: currentcolor; }
 
-/* line 101, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 103, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .pf-images {
   padding-bottom: 80px;
   flex: 1; }
 
-/* line 105, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 107, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .pf-bg {
   background-size: cover;
   position: absolute;
@@ -16397,7 +16548,7 @@ a.list-group-item.active > .badge,
   opacity: 0.3;
   filter: alpha(opacity=30); }
 
-/* line 116, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 118, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .pf-media-object {
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4);
   top: 36px;
@@ -16407,27 +16558,27 @@ a.list-group-item.active > .badge,
   width: 80px;
   z-index: 1; }
 
-/* line 125, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 127, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .pf-media-object:nth-child(1) {
   display: block;
   top: 25px;
   margin-left: -40px;
   z-index: 3; }
 
-/* line 131, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 133, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .pf-media-object:nth-child(2) {
   display: block;
   margin-left: -80px;
   opacity: 0.5;
   filter: alpha(opacity=50); }
 
-/* line 137, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 139, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .pf-media-object:nth-child(3) {
   display: block;
   opacity: 0.5;
   filter: alpha(opacity=50); }
 
-/* line 142, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 144, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .pf-info-container {
   flex: 0 0 48px;
   display: flex;
@@ -16439,11 +16590,11 @@ a.list-group-item.active > .badge,
   z-index: 4;
   padding: 0 10px; }
 
-/* line 153, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 155, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .pf-info-container > * {
   max-width: 100%; }
 
-/* line 156, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 158, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .pf-title {
   font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
   font-size: 14px;
@@ -16454,309 +16605,309 @@ a.list-group-item.active > .badge,
   text-transform: normal;
   border-bottom: 1px solid transparent; }
 
-/* line 166, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 168, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .pf-subtitle {
   display: none;
   font-size: 12px; }
 
-/* line 170, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 172, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .pf-title-with-subtitle {
   margin-bottom: 0; }
 
 @media (min-width: 586px) {
-  /* line 174, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 176, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .pf-images {
     padding-bottom: 90px; }
-  /* line 177, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 179, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .pf-media-object {
     top: 33.75px;
     width: 90px; }
-  /* line 181, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 183, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .pf-media-object:nth-child(1) {
     top: 22.5px;
     margin-left: -45px; }
-  /* line 185, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 187, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .pf-media-object:nth-child(2) {
     margin-left: -90px; }
-  /* line 188, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 190, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .pf-title-with-subtitle {
     margin-bottom: 0; }
-  /* line 191, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 193, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .pf-subtitle {
     display: none; }
-  /* line 194, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 196, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .col-sm-6 .pf-images {
     padding-bottom: 110px; }
-  /* line 197, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 199, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .col-sm-6 .pf-media-object {
     top: 41.25px;
     width: 110px; }
-  /* line 201, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 203, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .col-sm-6 .pf-media-object:nth-child(1) {
     top: 27.5px;
     margin-left: -55px; }
-  /* line 205, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 207, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .col-sm-6 .pf-media-object:nth-child(2) {
     margin-left: -110px; }
-  /* line 208, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 210, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .col-sm-6 .pf-info-container {
     flex-basis: 64px; }
-  /* line 211, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 213, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .col-sm-6 .pf-title-with-subtitle {
     margin-bottom: 5px; }
-  /* line 214, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 216, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .col-sm-6 .pf-subtitle {
     display: block; } }
 
 @media (min-width: 854px) {
-  /* line 219, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 221, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .pf-images {
     padding-bottom: 120px; }
-  /* line 222, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 224, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .pf-media-object {
     top: 45px;
     width: 120px; }
-  /* line 226, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 228, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .pf-media-object:nth-child(1) {
     top: 30px;
     margin-left: -60px; }
-  /* line 230, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 232, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .pf-media-object:nth-child(2) {
     margin-left: -120px; }
-  /* line 233, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 235, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .pf-info-container {
     flex-basis: 64px; }
-  /* line 236, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 238, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .pf-title-with-subtitle {
     margin-bottom: 5px; }
-  /* line 239, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 241, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .pf-subtitle {
     display: block; }
-  /* line 242, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 244, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .col-sm-6 .pf-images {
     padding-bottom: 132px; }
-  /* line 245, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 247, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .col-sm-6 .pf-media-object {
     top: 49.5px;
     width: 132px; }
-  /* line 249, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 251, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .col-sm-6 .pf-media-object:nth-child(1) {
     top: 33px;
     margin-left: -66px; }
-  /* line 253, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 255, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .col-sm-6 .pf-media-object:nth-child(2) {
     margin-left: -132px; }
-  /* line 256, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 258, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .col-sm-6 .pf-info-container {
     flex-basis: 64px; }
-  /* line 259, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 261, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .col-sm-6 .pf-title-with-subtitle {
     margin-bottom: 5px; }
-  /* line 262, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 264, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .col-sm-6 .pf-subtitle {
     display: block; } }
 
 @media (min-width: 1274px) {
-  /* line 267, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 269, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .pf-images {
     padding-bottom: 132px; }
-  /* line 270, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 272, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .pf-media-object {
     top: 49.5px;
     width: 132px; }
-  /* line 274, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 276, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .pf-media-object:nth-child(1) {
     top: 33px;
     margin-left: -66px; }
-  /* line 278, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 280, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .pf-media-object:nth-child(2) {
     margin-left: -132px; }
-  /* line 281, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 283, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .pf-info-container {
     flex-basis: 64px; }
-  /* line 284, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 286, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .pf-title-with-subtitle {
     margin-bottom: 5px; }
-  /* line 287, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 289, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .pf-subtitle {
     display: block; }
-  /* line 290, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 292, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .col-sm-6 .pf-images {
     padding-bottom: 164px; }
-  /* line 293, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 295, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .col-sm-6 .pf-media-object {
     top: 61.5px;
     width: 164px; }
-  /* line 297, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 299, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .col-sm-6 .pf-media-object:nth-child(1) {
     top: 41px;
     margin-left: -82px; }
-  /* line 301, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 303, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .col-sm-6 .pf-media-object:nth-child(2) {
     margin-left: -164px; }
-  /* line 304, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 306, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .col-sm-6 .pf-info-container {
     flex-basis: 64px; }
-  /* line 307, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 309, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .col-sm-6 .pf-title-with-subtitle {
     margin-bottom: 5px; }
-  /* line 310, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 312, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .col-sm-6 .pf-subtitle {
     display: block; }
-  /* line 313, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 315, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .col-sm-6 .pf-info-container {
     flex-basis: 70px; }
-  /* line 316, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 318, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .col-sm-6 .pf-title-with-subtitle {
     margin-bottom: 5px; }
-  /* line 319, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 321, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .col-sm-6 .pf-subtitle {
     display: block; } }
 
-/* line 323, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 325, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .genre-card {
   /* Needed because all links have hover/focus styles with a bottom border */
   border-bottom-color: transparent !important; }
 
-/* line 327, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 329, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .gc-image-container {
   overflow: hidden;
   position: relative; }
 
-/* line 331, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 333, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .gc-image {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   height: 198px; }
 
-/* line 337, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 339, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .gc-image-cols-1 {
   height: auto;
   margin-top: 0px;
   padding-bottom: 100%; }
 
 @media (min-width: 586px) {
-  /* line 343, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 345, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .gc-image-cols-1 {
     margin-top: 0px; } }
 
 @media (min-width: 854px) {
-  /* line 348, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 350, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .gc-image-cols-1 {
     margin-top: 0px; } }
 
 @media (min-width: 1274px) {
-  /* line 353, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 355, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .gc-image-cols-1 {
     margin-top: 0px; } }
 
-/* line 357, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 359, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .gc-image-cols-2 {
   height: auto;
   margin-top: -8px;
   padding-bottom: 50%; }
 
 @media (min-width: 586px) {
-  /* line 363, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 365, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .gc-image-cols-2 {
     margin-top: -8px; } }
 
 @media (min-width: 854px) {
-  /* line 368, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 370, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .gc-image-cols-2 {
     margin-top: -10px; } }
 
 @media (min-width: 1274px) {
-  /* line 373, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 375, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .gc-image-cols-2 {
     margin-top: -12px; } }
 
-/* line 377, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 379, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .gc-image-cols-3 {
   height: auto;
   margin-top: -10.66666667px;
   padding-bottom: 33.33333333%; }
 
 @media (min-width: 586px) {
-  /* line 383, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 385, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .gc-image-cols-3 {
     margin-top: -10.66666667px; } }
 
 @media (min-width: 854px) {
-  /* line 388, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 390, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .gc-image-cols-3 {
     margin-top: -13.33333333px; } }
 
 @media (min-width: 1274px) {
-  /* line 393, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 395, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .gc-image-cols-3 {
     margin-top: -16px; } }
 
-/* line 397, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 399, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .gc-image-cols-4 {
   height: auto;
   margin-top: -12px;
   padding-bottom: 25%; }
 
 @media (min-width: 586px) {
-  /* line 403, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 405, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .gc-image-cols-4 {
     margin-top: -12px; } }
 
 @media (min-width: 854px) {
-  /* line 408, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 410, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .gc-image-cols-4 {
     margin-top: -15px; } }
 
 @media (min-width: 1274px) {
-  /* line 413, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 415, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .gc-image-cols-4 {
     margin-top: -18px; } }
 
-/* line 417, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 419, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .gc-image-cols-5 {
   height: auto;
   margin-top: -12.8px;
   padding-bottom: 20%; }
 
 @media (min-width: 586px) {
-  /* line 423, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 425, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .gc-image-cols-5 {
     margin-top: -12.8px; } }
 
 @media (min-width: 854px) {
-  /* line 428, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 430, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .gc-image-cols-5 {
     margin-top: -16px; } }
 
 @media (min-width: 1274px) {
-  /* line 433, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 435, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .gc-image-cols-5 {
     margin-top: -19.2px; } }
 
-/* line 437, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 439, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .gc-image-cols-6 {
   height: auto;
   margin-top: -13.33333333px;
   padding-bottom: 16.66666667%; }
 
 @media (min-width: 586px) {
-  /* line 443, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 445, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .gc-image-cols-6 {
     margin-top: -13.33333333px; } }
 
 @media (min-width: 854px) {
-  /* line 448, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 450, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .gc-image-cols-6 {
     margin-top: -16.66666667px; } }
 
 @media (min-width: 1274px) {
-  /* line 453, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 455, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .gc-image-cols-6 {
     margin-top: -20px; } }
 
-/* line 457, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 459, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .gc-label-container {
   position: absolute;
   top: 50%;
@@ -16774,35 +16925,35 @@ a.list-group-item.active > .badge,
   padding: 16px; }
 
 @media (min-width: 586px) {
-  /* line 474, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 476, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .gc-label-container {
     max-width: 554px;
     padding: 16px; } }
 
 @media (min-width: 854px) {
-  /* line 480, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 482, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .gc-label-container {
     max-width: 814px;
     padding: 20px; } }
 
 @media (min-width: 1274px) {
-  /* line 486, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 488, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .gc-label-container {
     max-width: 1226px;
     padding: 24px; } }
 
-/* line 491, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 493, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .gc-label-text-wrapper {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis; }
 
-/* line 496, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 498, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .gc-label-text {
   font-size: 16px;
   border-bottom: 1px solid transparent; }
 
-/* line 500, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 502, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .genre-card:hover .gc-label-text {
   border-bottom-color: currentcolor; }
 
@@ -16888,26 +17039,26 @@ a.list-group-item.active > .badge,
  *
  * Styleguide 80.3
  */
-/* line 585, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 587, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .header {
   background: #FCFCFC;
   clear: left;
   margin: 0 auto;
   position: relative; }
 
-/* line 591, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 593, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-main-content {
   padding-top: 16px;
   padding-bottom: 0;
   position: relative; }
 
-/* line 596, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 598, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-media {
   float: left;
   padding-bottom: 16px;
   width: 210px; }
 
-/* line 601, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 603, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-label {
   font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
   font-size: 11px;
@@ -16918,7 +17069,7 @@ a.list-group-item.active > .badge,
   text-transform: uppercase;
   letter-spacing: 0.16em; }
 
-/* line 611, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 613, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-title {
   margin: 0;
   position: relative;
@@ -16927,18 +17078,18 @@ a.list-group-item.active > .badge,
   text-overflow: ellipsis;
   white-space: nowrap; }
 
-/* line 619, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 621, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-title a {
   border: none !important;
   color: #56666F !important; }
 
-/* line 623, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 625, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-description,
 .h-meta-info {
   font-size: 14px;
   line-height: 20px; }
 
-/* line 628, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 630, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-description {
   line-height: 20px;
   max-height: 40px;
@@ -16947,7 +17098,7 @@ a.list-group-item.active > .badge,
   white-space: normal;
   margin-top: 4px; }
 
-/* line 636, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 638, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-description .ellipsis {
   content: ' ';
   -webkit-box-sizing: content-box;
@@ -16965,7 +17116,7 @@ a.list-group-item.active > .badge,
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00181818', endColorstr='#ff181818', GradientType=1); }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
-  /* line 653, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 655, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .h-description {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -16973,11 +17124,11 @@ a.list-group-item.active > .badge,
     -webkit-line-clamp: 2;
     /* number of lines to show */
     -webkit-box-orient: vertical; }
-  /* line 661, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 663, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .h-description .ellipsis {
     display: none !important; } }
 
-/* line 665, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 667, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-meta-info {
   display: block;
   overflow: hidden;
@@ -16985,29 +17136,29 @@ a.list-group-item.active > .badge,
   white-space: nowrap;
   margin-top: 10px; }
 
-/* line 672, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 674, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-data {
   float: left;
   margin-left: -214px;
   padding-left: 230px;
   width: 100%; }
 
-/* line 678, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 680, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-extra {
   bottom: 10px;
   right: 32px;
   position: absolute;
   text-align: right; }
 
-/* line 684, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 686, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-extra .enable-pointer {
   transition: color .2s; }
 
-/* line 687, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 689, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-extra .enable-pointer:hover {
   color: #FFFFFF; }
 
-/* line 690, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 692, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-extra .listeners-count {
   font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
   font-size: 11px;
@@ -17018,38 +17169,38 @@ a.list-group-item.active > .badge,
   text-transform: uppercase;
   letter-spacing: 0.16em; }
 
-/* line 700, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 702, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-controllers {
   bottom: 16px;
   position: absolute; }
 
-/* line 704, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 706, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-controllers .button {
   margin-right: 12px; }
 
-/* line 707, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 709, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-bar {
   border-top: 1px solid #E5E8EA;
   border-bottom: 1px solid #E5E8EA;
   line-height: 36px;
   margin: 0; }
 
-/* line 713, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 715, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-search-bar {
   border-top: 1px solid #E5E8EA;
   line-height: 36px;
   margin: 0; }
 
-/* line 718, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 720, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-search-field-outer-wrapper {
   height: 56px; }
 
-/* line 721, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 723, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-search-field-wrapper {
   padding-top: 10px;
   padding-bottom: 10px; }
 
-/* line 725, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 727, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-search-field-wrapper.sticky-top {
   background-color: #ffffff;
   position: fixed;
@@ -17061,7 +17212,7 @@ a.list-group-item.active > .badge,
   margin-left: auto;
   max-width: 1490px; }
 
-/* line 736, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 738, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-search-field-wrapper.sticky-top:before,
 .h-search-field-wrapper.sticky-top:after {
   content: " ";
@@ -17069,58 +17220,58 @@ a.list-group-item.active > .badge,
   display: table;
   /* 2 */ }
 
-/* line 743, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 745, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-search-field-wrapper.sticky-top:after {
   clear: both; }
 
-/* line 746, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 748, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-search-field-wrapper.sticky-top {
   padding-left: 16px;
   padding-right: 16px; }
 
 @media (min-width: 586px) {
-  /* line 751, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 753, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .h-search-field-wrapper.sticky-top {
     padding-left: 16px;
     padding-right: 16px; } }
 
 @media (min-width: 854px) {
-  /* line 757, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 759, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .h-search-field-wrapper.sticky-top {
     padding-left: 20px;
     padding-right: 20px; } }
 
 @media (min-width: 1274px) {
-  /* line 763, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 765, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .h-search-field-wrapper.sticky-top {
     padding-left: 24px;
     padding-right: 24px; } }
 
-/* line 768, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 770, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-search-wrapper {
   max-width: 525px;
   position: relative;
   width: 100%; }
 
-/* line 773, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 775, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-search-wrapper:before {
   margin-left: 10px;
   position: absolute;
   pointer-events: none; }
 
-/* line 778, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 780, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-search-wrapper:hover:before {
   color: #56666F; }
 
-/* line 781, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 783, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-search-wrapper:hover .h-search::-webkit-input-placeholder {
   color: #56666F; }
 
-/* line 784, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 786, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-search-wrapper:hover .h-search::-moz-placeholder {
   color: #56666F; }
 
-/* line 787, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 789, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-search {
   width: 100%;
   height: 36px;
@@ -17134,12 +17285,12 @@ a.list-group-item.active > .badge,
   padding-left: 36px;
   padding-right: 36px; }
 
-/* line 800, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 802, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .focus .h-search,
 .h-search:focus {
   background: #56666F; }
 
-/* line 804, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 806, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-search-close {
   bottom: 0;
   display: none;
@@ -17149,15 +17300,15 @@ a.list-group-item.active > .badge,
   top: 0;
   width: 36px; }
 
-/* line 813, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 815, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-search-close:hover {
   color: #56666F; }
 
-/* line 816, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 818, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .focus .h-search-close {
   display: block; }
 
-/* line 819, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 821, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-search-suggestions {
   background: #E5E8EA;
   border-radius: 3px;
@@ -17171,11 +17322,11 @@ a.list-group-item.active > .badge,
   width: 100%;
   top: 100%; }
 
-/* line 832, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 834, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .focus .h-search-suggestions {
   display: block; }
 
-/* line 835, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 837, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-search-suggestion {
   border-radius: 3px;
   color: #9CA6AC;
@@ -17183,24 +17334,24 @@ a.list-group-item.active > .badge,
   padding-left: 36px;
   padding-right: 10px; }
 
-/* line 842, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 844, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-search-suggestion:hover {
   background: #333333;
   color: #FFFFFF; }
 
-/* line 846, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 848, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-search-result {
   display: block;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap; }
 
-/* line 852, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 854, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-search-matches {
   float: right;
   padding-left: 10px; }
 
-/* line 856, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 858, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .header-image {
   background-repeat: no-repeat;
   background-position: 50% 0;
@@ -17210,7 +17361,7 @@ a.list-group-item.active > .badge,
   min-height: 320px;
   max-width: 1480px; }
 
-/* line 865, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 867, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .header-image:before {
   background: rgba(255, 255, 255, 0.6);
   bottom: 0;
@@ -17220,38 +17371,38 @@ a.list-group-item.active > .badge,
   right: 0;
   top: 0; }
 
-/* line 874, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 876, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .header-image .h-main-content {
   height: 275px; }
 
-/* line 877, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 879, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .header-image .nav {
   border-bottom: 0; }
 
-/* line 880, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 882, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .header-album .h-title {
   text-overflow: clip;
   white-space: normal; }
 
-/* line 884, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 886, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .header-album .h-meta-info {
   margin-bottom: 65px; }
 
-/* line 887, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 889, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .header-artist.version_1-5 .h-data {
   padding-left: 130px; }
 
-/* line 890, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 892, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .header-artist.version_1-5 .h-title {
   padding-top: 25px; }
 
-/* line 893, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 895, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .header-artist.version_1-5 .verified .mo-verified {
   display: inline;
   bottom: 48px;
   right: auto; }
 
-/* line 898, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 900, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .header-artist.version_1-5:before {
   background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.83) 0%, rgba(255, 255, 255, 0.83) 28%, rgba(255, 255, 255, 0.92) 58%, white 77%, white 100%);
   background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.83) 0%, rgba(255, 255, 255, 0.83) 28%, rgba(255, 255, 255, 0.92) 58%, white 77%, white 100%);
@@ -17259,28 +17410,28 @@ a.list-group-item.active > .badge,
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4ffffff', endColorstr='#ffffff',GradientType=0 );
   opacity: 0.95; }
 
-/* line 907, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 909, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .header-artist.header-image {
   background-image: url("../img/standard-artist-header.png");
   background-size: cover;
   background-position: 50% 0; }
 
-/* line 912, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 914, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .header-artist .h-main-content {
   padding-top: 129px; }
 
-/* line 915, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 917, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .header-artist .h-data {
   padding-top: 16px;
   padding-left: 146px;
   padding-right: 100px;
   margin-left: -130px; }
 
-/* line 921, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 923, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .header-artist .h-media {
   width: 130px; }
 
-/* line 924, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 926, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .header-artist .h-spotlight-image {
   position: absolute;
   top: 20px;
@@ -17293,27 +17444,27 @@ a.list-group-item.active > .badge,
   -o-transition: opacity 0.15s linear;
   transition: opacity 0.15s linear; }
 
-/* line 936, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 938, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .header-artist .h-spotlight-image:hover {
   border: none;
   opacity: .8; }
 
-/* line 940, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 942, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .header-station .media-object-station .mo-image {
   display: none; }
 
-/* line 943, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 945, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .header-station .media-object-station .mo-station-mask {
   background-image: url("https://d2j0f09xqmv212.cloudfront.net/images/station-header-wave.svg"); }
 
-/* line 946, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 948, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .header-station .media-object-station .mo-station-overlay {
   height: 50.46%;
   left: 24.77%;
   top: 24.77%;
   width: 50.46%; }
 
-/* line 952, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 954, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .header-station .media-object-station.media-object-station-artist .mo-station-overlay {
   border-radius: 32767px;
   height: 59.52%;
@@ -17321,44 +17472,44 @@ a.list-group-item.active > .badge,
   top: 20.24%;
   width: 59.52%; }
 
-/* line 959, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 961, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .header-user .h-main-content {
   padding-top: 16px; }
 
-/* line 962, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 964, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .header-user .h-title {
   padding-right: 100px; }
 
-/* line 965, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 967, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .header-user .h-data {
   padding-top: 16px;
   padding-left: 146px;
   margin-left: -130px; }
 
-/* line 970, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 972, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .header-user .h-media {
   width: 130px; }
 
-/* line 973, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 975, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .header-inline .h-main-content {
   padding: 0; }
 
-/* line 976, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 978, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .header-inline .h-media {
   padding: 0;
   width: 134px; }
 
-/* line 980, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 982, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .header-inline .h-data {
   margin-left: -134px;
   padding-left: 150px;
   padding-top: 0; }
 
-/* line 985, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 987, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .header-inline .h-controllers {
   bottom: 0; }
 
-/* line 988, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 990, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .header-inline .h-title {
   font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
   font-size: 36px;
@@ -17370,7 +17521,7 @@ a.list-group-item.active > .badge,
   margin-bottom: 36px;
   max-height: inherit; }
 
-/* line 999, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1001, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .fade-in {
   animation: fadeIn .7s; }
 
@@ -17381,10 +17532,10 @@ a.list-group-item.active > .badge,
     opacity: 1; } }
 
 @media (max-width: 853px) {
-  /* line 1011, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 1013, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .h-extra {
     display: none; }
-  /* line 1014, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 1016, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .h-title {
     font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
     font-size: 36px;
@@ -17393,61 +17544,61 @@ a.list-group-item.active > .badge,
     font-weight: 400;
     color: #56666F;
     text-transform: normal; }
-  /* line 1023, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 1025, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .h-media,
   .header-artist .h-media {
     width: 130px;
     padding-bottom: 60px; }
-  /* line 1028, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 1030, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .header-artist.version_1-5 .h-data {
     margin-top: 0; }
-  /* line 1031, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 1033, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .header-artist.version_1-5 .h-title {
     padding-top: 45px; }
-  /* line 1034, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 1036, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .header-artist.version_1-5 .verified .mo-verified {
     bottom: 36px;
     right: auto; }
-  /* line 1038, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 1040, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .header-artist .h-main-content {
     padding-top: 145px; }
-  /* line 1041, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 1043, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .header-artist .h-data {
     margin-top: -29px;
     padding-top: 0;
     padding-right: 0; }
-  /* line 1046, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 1048, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .header-artist .h-media {
     margin-top: -60px;
     padding: 0; }
-  /* line 1050, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 1052, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .header-artist.header-small .h-main-content {
     padding-top: 0; }
-  /* line 1053, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 1055, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .header-artist.header-small .h-media {
     margin-top: 0;
     padding: 10px 0 0 0;
     width: 45px; }
-  /* line 1058, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 1060, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .header-user .h-data {
     padding-top: 32px; }
-  /* line 1061, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 1063, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .header-user .h-title {
     padding-right: 0; }
-  /* line 1064, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 1066, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .header-inline .h-title {
     max-height: 88px; }
-  /* line 1067, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 1069, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .h-controllers {
     left: 32px; }
-  /* line 1070, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 1072, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .header-small .h-controllers {
     left: inherit; }
-  /* line 1073, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 1075, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .header-inline .h-controllers {
     left: inherit; } }
 
-/* line 1077, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1079, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-sticky-header {
   bottom: 66px;
   height: 0;
@@ -17456,7 +17607,7 @@ a.list-group-item.active > .badge,
   position: absolute;
   width: 100%; }
 
-/* line 1085, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1087, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-sticky-header .h-sticky-header-inner {
   background-color: #ffffff;
   overflow: hidden;
@@ -17466,22 +17617,22 @@ a.list-group-item.active > .badge,
   left: 0 !important;
   right: 0 !important; }
 
-/* line 1094, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1096, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-sticky-header .h-sticky-header-inner.sticky-top {
   position: fixed;
   top: 0; }
 
-/* line 1098, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1100, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-sticky-header .h-sticky-container {
   border-bottom: 1px solid #E5E8EA;
   padding-bottom: 16px;
   padding-top: 16px; }
 
-/* line 1103, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1105, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-sticky-header .h-sticky-container > * {
   height: 36px; }
 
-/* line 1106, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1108, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-sticky-header .h-sticky-image {
   background-size: cover;
   background-position: center;
@@ -17491,23 +17642,23 @@ a.list-group-item.active > .badge,
   position: relative;
   width: 36px; }
 
-/* line 1115, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1117, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-sticky-header .h-sticky-image .mo-image {
   bottom: 0;
   left: 0;
   right: 0;
   top: 0; }
 
-/* line 1121, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1123, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-sticky-header .h-sticky-controllers {
   float: right;
   margin-left: 15px; }
 
-/* line 1125, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1127, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-sticky-header .h-sticky-controllers .button:not(:first-child) {
   margin-left: 12px; }
 
-/* line 1128, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1130, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-sticky-header .h-sticky-title {
   color: #56666F;
   font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
@@ -17523,7 +17674,7 @@ a.list-group-item.active > .badge,
   text-overflow: ellipsis;
   white-space: nowrap; }
 
-/* line 1143, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1145, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-sticky-header .h-sticky-controllers:before,
 .h-sticky-header .h-sticky-title:before {
   content: "";
@@ -17583,7 +17734,7 @@ a.list-group-item.active > .badge,
  *
  * Styleguide 90.8
  */
-/* line 1202, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1204, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .trend-mark.trend-new::before {
   content: '\00a0';
   background-color: #4687D6;
@@ -17593,7 +17744,7 @@ a.list-group-item.active > .badge,
   height: 10px;
   width: 10px; }
 
-/* line 1211, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1213, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .trend-mark.trend-equal::before {
   content: '\00a0';
   background-color: #56666F;
@@ -17602,11 +17753,11 @@ a.list-group-item.active > .badge,
   height: 2px;
   width: 8px; }
 
-/* line 1219, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1221, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .trend-mark.trend-up {
   color: #1ED760; }
 
-/* line 1222, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1224, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .trend-mark.trend-down {
   color: #CD1A2B; }
 
@@ -17630,40 +17781,40 @@ a.list-group-item.active > .badge,
  *
  * Styleguide 90.4
  */
-/* line 1245, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1247, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .list-playlist .tl-time {
   width: 72px; }
 
 @media screen and (max-width: 1200px) {
-  /* line 1249, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 1251, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .tracklist-playlist.narrow .tl-added-by {
     display: none; } }
 
 @media screen and (max-width: 900px) {
-  /* line 1254, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 1256, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .tracklist-playlist.narrow .tl-date-added {
     display: none; } }
 
 @media screen and (max-width: 950px) {
-  /* line 1259, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 1261, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .tracklist-playlist .tl-time {
     display: none; } }
 
 @media screen and (max-width: 850px) {
-  /* line 1264, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 1266, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .tracklist-playlist .tl-albums {
     display: none; }
-  /* line 1267, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 1269, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .tracklist-playlist .tl-albums {
     display: none; } }
 
 @media screen and (max-width: 720px) {
-  /* line 1272, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 1274, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .tracklist-playlist .tl-added-by {
     display: none; } }
 
 @media screen and (max-width: 586px) {
-  /* line 1277, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 1279, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .tracklist-playlist .tl-date-added {
     display: none; } }
 
@@ -17688,10 +17839,10 @@ a.list-group-item.active > .badge,
  * Styleguide 90.5
  */
 @media screen and (max-width: 800px) {
-  /* line 1302, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 1304, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .tracklist-search .tl-popularity {
     display: none; }
-  /* line 1305, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 1307, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .tracklist-search .tl-time {
     padding-right: 12px; } }
 
@@ -17706,10 +17857,10 @@ a.list-group-item.active > .badge,
  * Styleguide 90.4
  */
 @media screen and (max-width: 850px) {
-  /* line 1320, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 1322, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .tracklist-station .tl-albums {
     display: none; }
-  /* line 1323, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 1325, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .tracklist-station .tl-albums {
     display: none; } }
 
@@ -17723,7 +17874,7 @@ a.list-group-item.active > .badge,
  *
  * Styleguide 90.4
  */
-/* line 1337, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1339, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tracklist-album,
 .tracklist-chart,
 .tracklist-dev,
@@ -17738,14 +17889,14 @@ a.list-group-item.active > .badge,
   table-layout: fixed;
   width: 100%; }
 
-/* line 1351, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1353, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-header th,
 .tl-cell {
   padding: 0 0 0 12px;
   border-top: 1px solid #E5E8EA;
   position: relative; }
 
-/* line 1357, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1359, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-header th {
   border-top: 0;
   font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
@@ -17760,12 +17911,12 @@ a.list-group-item.active > .badge,
   vertical-align: bottom;
   cursor: default; }
 
-/* line 1371, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1373, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-header .tl-time {
   padding-top: 0;
   padding-bottom: 0; }
 
-/* line 1375, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1377, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-header .tl-time:before {
   font-family: "glue1-spoticon";
   font-style: normal;
@@ -17778,13 +17929,13 @@ a.list-group-item.active > .badge,
   content: "\f152";
   font-size: 16px; }
 
-/* line 1387, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1389, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-header .tl-popularity {
   padding-top: 0;
   padding-bottom: 0;
   text-align: center; }
 
-/* line 1392, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1394, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-header .tl-popularity:before {
   font-family: "glue1-spoticon";
   font-style: normal;
@@ -17797,13 +17948,13 @@ a.list-group-item.active > .badge,
   content: "\f150";
   font-size: 16px; }
 
-/* line 1404, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1406, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-header .tl-date-added,
 .tl-header .tl-time-sent {
   padding-top: 0;
   padding-bottom: 0; }
 
-/* line 1409, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1411, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-header .tl-date-added:before,
 .tl-header .tl-time-sent:before {
   font-family: "glue1-spoticon";
@@ -17817,86 +17968,86 @@ a.list-group-item.active > .badge,
   content: "\f198";
   font-size: 16px; }
 
-/* line 1422, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1424, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-header-hidden {
   display: none; }
 
-/* line 1425, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1427, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-header th:last-child {
   padding-right: 12px; }
 
-/* line 1428, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1430, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-cell {
   height: 40px; }
 
-/* line 1431, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1433, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-cell:last-child {
   padding-right: 12px; }
 
-/* line 1434, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1436, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-cell,
 .tl-cell > div {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap; }
 
-/* line 1440, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1442, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-save {
   overflow: visible; }
 
-/* line 1443, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1445, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row:focus {
   outline: 0; }
 
-/* line 1446, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1448, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-number,
 .tl-empty,
 .tl-play {
   width: 40px; }
 
-/* line 1451, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1453, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-local {
   width: 40px; }
 
-/* line 1454, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1456, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-image {
   padding: 0;
   width: 40px; }
 
-/* line 1458, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1460, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-image img {
   display: block;
   max-width: none; }
 
-/* line 1462, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1464, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-time {
   text-align: right;
   width: 70px;
   padding-left: 0; }
 
-/* line 1467, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1469, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-listen-count {
   text-align: right;
   width: 120px; }
 
-/* line 1471, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1473, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-date-added {
   width: 110px; }
 
-/* line 1474, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1476, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-time-sent {
   width: 120px; }
 
-/* line 1477, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1479, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-popularity {
   width: 54px; }
 
-/* line 1480, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1482, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-explicit {
   padding: 0;
   width: 70px; }
 
-/* line 1484, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1486, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-more,
 .tl-save,
 .tl-trend,
@@ -17904,11 +18055,11 @@ a.list-group-item.active > .badge,
   padding: 0;
   width: 40px; }
 
-/* line 1491, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1493, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-trend {
   text-align: center; }
 
-/* line 1494, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1496, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row .button-play {
   display: none;
   margin-left: -4px;
@@ -17927,75 +18078,75 @@ a.list-group-item.active > .badge,
   padding-left: 0;
   padding-right: 0; }
 
-/* line 1512, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1514, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row .button-play .b-alt-text {
   margin-top: -26px; }
 
-/* line 1515, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1517, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row .button-play.contextmenu-active,
 .tl-row .button-play:not(:disabled):hover {
   background-color: #9CA6AC;
   color: #ffffff; }
 
-/* line 1520, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1522, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row .button-play:not(:disabled):hover:active {
   background: #9CA6AC;
   color: #ffffff;
   transform: scale(1); }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
-  /* line 1526, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 1528, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .tl-row .button-play:not(:disabled):hover:active {
     transform: scale(1); } }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
-  /* line 1531, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 1533, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .tl-row .button-play {
     transition-duration: 50ms; } }
 
-/* line 1535, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1537, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row .button-play:after {
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: box-shadow; }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
-  /* line 1540, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 1542, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .tl-row .button-play:after {
     transition-duration: 50ms; } }
 
-/* line 1544, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1546, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row .button-play.contextmenu-active,
 .tl-row .button-play:not(:disabled):hover {
   transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
   transition-property: transform, box-shadow, color, background-color; }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
-  /* line 1550, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 1552, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .tl-row .button-play.contextmenu-active,
   .tl-row .button-play:not(:disabled):hover {
     transition-duration: 66ms; } }
 
-/* line 1555, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1557, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row .button-play.contextmenu-active:after,
 .tl-row .button-play:not(:disabled):hover:after {
   transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
   transition-property: box-shadow; }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
-  /* line 1561, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 1563, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .tl-row .button-play.contextmenu-active:after,
   .tl-row .button-play:not(:disabled):hover:after {
     transition-duration: 66ms; } }
 
-/* line 1566, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1568, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row .button-play:not(:disabled):hover:active {
   transition: none; }
 
-/* line 1569, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1571, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row .button-play:not(:disabled):hover:active:after {
   transition: none; }
 
-/* line 1572, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1574, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row .button-play:after {
   content: '';
   position: absolute;
@@ -18006,46 +18157,46 @@ a.list-group-item.active > .badge,
   border-radius: 500px;
   box-shadow: inset 0 0 0 1px #E5E8EA; }
 
-/* line 1582, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1584, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row .button-play.contextmenu-active,
 .tl-row .button-play:not(:disabled):hover {
   box-shadow: inset 0 0 0 1px #56666F, 0 0 0 1px transparent; }
 
-/* line 1586, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1588, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row .button-play.contextmenu-active:after,
 .tl-row .button-play:not(:disabled):hover:after {
   box-shadow: inset 0 0 0 1px #56666F; }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
-  /* line 1591, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 1593, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .tl-row .button-play.contextmenu-active,
   .tl-row .button-play:not(:disabled):hover {
     box-shadow: inset 0 0 0 1px #56666F; }
-  /* line 1595, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 1597, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .tl-row .button-play.contextmenu-active:after,
   .tl-row .button-play:not(:disabled):hover:after {
     box-shadow: inset 0 0 0 1px #56666F; } }
 
-/* line 1600, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1602, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row .button-play:not(:disabled):hover:active {
   box-shadow: inset 0 0 0 1px #8b949a; }
 
-/* line 1603, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1605, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row .button-play:not(:disabled):hover:active:after {
   box-shadow: inset 0 0 0 1px #8b949a; }
 
-/* line 1606, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1608, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row .button-play.contextmenu-active,
 .tl-row .button-play:not(:disabled):hover {
   transform: scale(1.07142857); }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
-  /* line 1611, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 1613, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .tl-row .button-play.contextmenu-active,
   .tl-row .button-play:not(:disabled):hover {
     transform: scale(1.07142857); } }
 
-/* line 1616, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1618, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row .button-play:before {
   font-family: "glue1-spoticon";
   font-style: normal;
@@ -18065,11 +18216,11 @@ a.list-group-item.active > .badge,
   padding-left: 6px;
   width: calc(100% - 6px); }
 
-/* line 1635, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1637, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row .button-play.button-play:before {
   content: "\f132"; }
 
-/* line 1638, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1640, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row .button-play.button-play.playing:not(:hover),
 .tl-row.playing .tl-row .button-play.button-play:not(:hover),
 .tl-row.playing.tl-row .button-play.button-play:not(:hover),
@@ -18077,7 +18228,7 @@ a.list-group-item.active > .badge,
 .media-object.playing.tl-row .button-play.button-play:not(:hover) {
   box-shadow: inset 0 0 0 1px transparent; }
 
-/* line 1645, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1647, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row .button-play.button-play.playing:not(:hover):after,
 .tl-row.playing .tl-row .button-play.button-play:not(:hover):after,
 .tl-row.playing.tl-row .button-play.button-play:not(:hover):after,
@@ -18092,7 +18243,7 @@ a.list-group-item.active > .badge,
   border-radius: 500px;
   box-shadow: inset 0 0 0 1px transparent; }
 
-/* line 1659, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1661, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row .button-play.button-play.playing:not(:hover).contextmenu-active,
 .tl-row.playing .tl-row .button-play.button-play:not(:hover).contextmenu-active,
 .tl-row.playing.tl-row .button-play.button-play:not(:hover).contextmenu-active,
@@ -18105,7 +18256,7 @@ a.list-group-item.active > .badge,
 .media-object.playing.tl-row .button-play.button-play:not(:hover):not(:disabled):hover {
   box-shadow: inset 0 0 0 1px transparent, 0 0 0 1px transparent; }
 
-/* line 1671, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1673, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row .button-play.button-play.playing:not(:hover).contextmenu-active:after,
 .tl-row.playing .tl-row .button-play.button-play:not(:hover).contextmenu-active:after,
 .tl-row.playing.tl-row .button-play.button-play:not(:hover).contextmenu-active:after,
@@ -18119,7 +18270,7 @@ a.list-group-item.active > .badge,
   box-shadow: inset 0 0 0 1px transparent; }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
-  /* line 1684, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 1686, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .tl-row .button-play.button-play.playing:not(:hover).contextmenu-active,
   .tl-row.playing .tl-row .button-play.button-play:not(:hover).contextmenu-active,
   .tl-row.playing.tl-row .button-play.button-play:not(:hover).contextmenu-active,
@@ -18131,7 +18282,7 @@ a.list-group-item.active > .badge,
   .media-object.playing .tl-row .button-play.button-play:not(:hover):not(:disabled):hover,
   .media-object.playing.tl-row .button-play.button-play:not(:hover):not(:disabled):hover {
     box-shadow: inset 0 0 0 1px transparent; }
-  /* line 1696, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 1698, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .tl-row .button-play.button-play.playing:not(:hover).contextmenu-active:after,
   .tl-row.playing .tl-row .button-play.button-play:not(:hover).contextmenu-active:after,
   .tl-row.playing.tl-row .button-play.button-play:not(:hover).contextmenu-active:after,
@@ -18144,7 +18295,7 @@ a.list-group-item.active > .badge,
   .media-object.playing.tl-row .button-play.button-play:not(:hover):not(:disabled):hover:after {
     box-shadow: inset 0 0 0 1px transparent; } }
 
-/* line 1709, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1711, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row .button-play.button-play.playing:not(:hover):not(:disabled):hover:active,
 .tl-row.playing .tl-row .button-play.button-play:not(:hover):not(:disabled):hover:active,
 .tl-row.playing.tl-row .button-play.button-play:not(:hover):not(:disabled):hover:active,
@@ -18152,7 +18303,7 @@ a.list-group-item.active > .badge,
 .media-object.playing.tl-row .button-play.button-play:not(:hover):not(:disabled):hover:active {
   box-shadow: inset 0 0 0 1px transparent; }
 
-/* line 1716, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1718, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row .button-play.button-play.playing:not(:hover):not(:disabled):hover:active:after,
 .tl-row.playing .tl-row .button-play.button-play:not(:hover):not(:disabled):hover:active:after,
 .tl-row.playing.tl-row .button-play.button-play:not(:hover):not(:disabled):hover:active:after,
@@ -18160,7 +18311,7 @@ a.list-group-item.active > .badge,
 .media-object.playing.tl-row .button-play.button-play:not(:hover):not(:disabled):hover:active:after {
   box-shadow: inset 0 0 0 1px transparent; }
 
-/* line 1723, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1725, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row .button-play.button-play.playing:not(:hover):before,
 .tl-row.playing .tl-row .button-play.button-play:not(:hover):before,
 .tl-row.playing.tl-row .button-play.button-play:not(:hover):before,
@@ -18170,7 +18321,7 @@ a.list-group-item.active > .badge,
   padding-left: 5px;
   width: calc(100% - 5px); }
 
-/* line 1732, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1734, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row .button-play.button-play.playing:hover:before,
 .tl-row.playing .tl-row .button-play.button-play:hover:before,
 .tl-row.playing.tl-row .button-play.button-play:hover:before,
@@ -18178,68 +18329,68 @@ a.list-group-item.active > .badge,
 .media-object.playing.tl-row .button-play.button-play:hover:before {
   content: "\f130"; }
 
-/* line 1739, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1741, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-save .button,
 .tl-more .button {
   visibility: hidden; }
 
-/* line 1743, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1745, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-save {
   padding: 0 10px; }
 
-/* line 1746, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1748, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-save .button {
   width: 20px !important;
   visibility: visible; }
 
-/* line 1750, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1752, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-save .button:before {
   content: "\f1C6";
   padding-left: 2px; }
 
-/* line 1754, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1756, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-thumbs .button {
   visibility: hidden; }
 
-/* line 1757, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1759, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .thumbs-down .tl-thumbs .button-thumbs-down,
 .thumbs-up .tl-thumbs .button-thumbs-up {
   pointer-events: none;
   visibility: visible; }
 
-/* line 1762, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1764, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .current.thumbs-none .tl-thumbs .button {
   pointer-events: auto;
   visibility: visible; }
 
-/* line 1766, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1768, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row.playing .tl-cell,
 .tl-row.playing .tl-cell a:link,
 .tl-row.playing .tl-highlight {
   color: #008CD6; }
 
-/* line 1771, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1773, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row.playing .tl-number-wrap {
   display: none; }
 
-/* line 1774, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1776, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row.playing .button-play {
   display: inline-block; }
 
-/* line 1777, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1779, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row.selected + .tl-row .td-cell {
   border-top-color: #E5E8EA; }
 
-/* line 1780, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1782, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row.selected .tl-cell {
   background-color: #E5E8EA;
   border-color: #E5E8EA; }
 
-/* line 1784, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1786, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row.added .tl-save .button {
   visibility: visible; }
 
-/* line 1787, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1789, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row.offline-waiting .tl-save .button.button-add:before,
 .tl-row.offline-downloading .tl-save .button.button-add:before,
 .tl-row.offline-waiting.added .tl-save .button.button-add:before,
@@ -18250,30 +18401,30 @@ a.list-group-item.active > .badge,
   margin-left: 2px;
   /* Adjust position to match the normal icon position */ }
 
-/* line 1797, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1799, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row.offline-downloading .tl-save .button.button-add:before,
 .tl-row.offline-downloading.added .tl-save .button.button-add:before {
   animation: glue-keyframes-rotate 1.5s linear infinite; }
 
-/* line 1801, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1803, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row.unavailable .tl-cell,
 .tl-row.unavailable .tl-cell a:link,
 .tl-row.unavailable .tl-highlight {
   color: #56666F !important; }
 
-/* line 1806, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1808, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row.unavailable .button-play {
   display: none !important; }
 
-/* line 1809, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1811, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row.unavailable .tl-number-wrap {
   display: inline-block; }
 
-/* line 1812, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1814, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row.unavailable .tl-number {
   color: #56666F; }
 
-/* line 1815, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1817, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row.local .button-add {
   visibility: hidden !important; }
 
@@ -18284,55 +18435,55 @@ a.list-group-item.active > .badge,
  * instead of repainting a huge texture that spans the entire list height, it
  * just needs to repaint a few row textures and then composite the layers.
  */
-/* line 1825, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1827, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .scroll-container-enabled .tl-row {
   will-change: transform; }
 
-/* line 1828, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1830, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .offline .tl-row .tl-cell,
 .offline .tl-row .tl-cell a:link,
 .offline .tl-row .tl-highlight {
   color: #56666F !important; }
 
-/* line 1833, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1835, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .offline .tl-row .button-play {
   display: none !important; }
 
-/* line 1836, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1838, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .offline .tl-row .tl-number-wrap {
   display: inline-block; }
 
-/* line 1839, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1841, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .offline .tl-row .tl-number {
   color: #56666F; }
 
-/* line 1842, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1844, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .offline .tl-row.offline-downloaded .tl-cell,
 .offline .tl-row.local.local-file-available .tl-cell {
   color: inherit !important; }
 
-/* line 1846, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1848, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .offline .tl-row.offline-downloaded .tl-cell a:link,
 .offline .tl-row.local.local-file-available .tl-cell a:link,
 .offline .tl-row.offline-downloaded .tl-highlight,
 .offline .tl-row.local.local-file-available .tl-highlight {
   color: #56666F !important; }
 
-/* line 1852, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1854, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .offline .tl-row.offline-downloaded:hover .button-play,
 .offline .tl-row.local.local-file-available:hover .button-play,
 .offline .tl-row.offline-downloaded.playing .button-play,
 .offline .tl-row.local.local-file-available.playing .button-play {
   display: inline-block !important; }
 
-/* line 1858, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1860, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .offline .tl-row.offline-downloaded:hover .tl-number-wrap,
 .offline .tl-row.local.local-file-available:hover .tl-number-wrap,
 .offline .tl-row.offline-downloaded.playing .tl-number-wrap,
 .offline .tl-row.local.local-file-available.playing .tl-number-wrap {
   display: none; }
 
-/* line 1864, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1866, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .offline .tl-row.offline-downloaded.playing .tl-cell,
 .offline .tl-row.local.local-file-available.playing .tl-cell,
 .offline .tl-row.offline-downloaded.playing .tl-cell a:link,
@@ -18341,102 +18492,102 @@ a.list-group-item.active > .badge,
 .offline .tl-row.local.local-file-available.playing .tl-cell .tl-highlight {
   color: #008CD6 !important; }
 
-/* line 1872, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1874, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row:hover .tl-cell {
   background: #F3F4F6; }
 
-/* line 1875, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1877, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row:hover .tl-highlight {
   color: #56666F; }
 
-/* line 1878, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1880, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row:hover.playing .tl-highlight {
   color: #008CD6; }
 
-/* line 1881, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1883, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row:hover .tl-number-wrap {
   display: none; }
 
-/* line 1884, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1886, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row:hover.unavailable .tl-number-wrap {
   display: block; }
 
-/* line 1887, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1889, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row:hover .button-play {
   display: inline-block; }
 
-/* line 1890, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1892, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row:hover .tl-more .button,
 .tl-row:hover .tl-save .button {
   visibility: visible; }
 
-/* line 1894, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1896, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row:hover .tl-more .button:before,
 .tl-row:hover .tl-save .button:before {
   color: #9CA6AC; }
 
-/* line 1898, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1900, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row:hover .tl-more .button:hover:before,
 .tl-row:hover .tl-save .button:hover:before {
   color: #9CA6AC; }
 
-/* line 1902, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1904, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row:hover.current.thumbs-none .tl-thumbs .button {
   visibility: visible; }
 
-/* line 1905, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1907, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row:hover.current.thumbs-none .tl-thumbs .button:before {
   color: #9CA6AC; }
 
-/* line 1908, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1910, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row:hover.current.thumbs-none .tl-thumbs .button:hover:before {
   color: #9CA6AC; }
 
-/* line 1911, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1913, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row:hover.offline-waiting .tl-save .button.button-add.hover:before,
 .tl-row:hover.offline-downloading .tl-save .button.button-add.hover:before {
   content: "\f1C6";
   -webkit-animation: none;
   animation: none; }
 
-/* line 1917, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1919, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row:hover.offline-waiting.added .tl-save .button.button-add:hover:before,
 .tl-row:hover.offline-downloading.added .tl-save .button.button-add:hover:before {
   content: "\f1C5"; }
 
-/* line 1921, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1923, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .offline .tl-row:hover .tl-number-wrap {
   display: block; }
 
-/* line 1924, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1926, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .offline .tl-row:hover.offline-downloaded .tl-number-wrap {
   display: none; }
 
-/* line 1927, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1929, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row:hover .tl-explicit .label,
 .tl-row.selection-focus .tl-explicit .label {
   color: #9CA6AC !important;
   border-color: #56666F !important; }
 
-/* line 1932, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1934, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row.selection-focus-touch .tl-more .button {
   visibility: visible; }
 
-/* line 1935, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1937, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-highlight {
   color: #56666F; }
 
-/* line 1938, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1940, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-featuring a,
 .tl-featuring span {
   color: #9CA6AC; }
 
-/* line 1942, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1944, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-featuring a:hover,
 .tl-featuring span:hover {
   color: #8b949a; }
 
-/* line 1946, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1948, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-item-new {
   max-width: 100%;
   overflow: hidden;
@@ -18446,7 +18597,7 @@ a.list-group-item.active > .badge,
   vertical-align: top;
   white-space: nowrap; }
 
-/* line 1955, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1957, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-item-new::before {
   content: "●";
   color: #4687D6;
@@ -18456,7 +18607,7 @@ a.list-group-item.active > .badge,
   width: 10px;
   height: 10px; }
 
-/* line 1964, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1966, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-item-local {
   display: block;
   width: 40px;
@@ -18464,7 +18615,7 @@ a.list-group-item.active > .badge,
   line-height: 40px;
   text-align: center; }
 
-/* line 1971, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1973, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-explicit .label {
   color: #9CA6AC;
   background: transparent;
@@ -18475,7 +18626,7 @@ a.list-group-item.active > .badge,
   border: 1px solid #E5E8EA;
   font-size: 10px; }
 
-/* line 1981, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1983, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-number,
 .tl-time,
 .tl-listen-count {
@@ -18483,7 +18634,7 @@ a.list-group-item.active > .badge,
   font-feature-settings: 'tnum';
   letter-spacing: 0; }
 
-/* line 1988, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 1990, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-sort-asc:after,
 .tl-sort-desc:after {
   margin-left: 4px;
@@ -18498,25 +18649,25 @@ a.list-group-item.active > .badge,
   color: #008CD6;
   font-size: 14px; }
 
-/* line 2002, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2004, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-sort-asc:after {
   content: "\f112"; }
 
-/* line 2005, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2007, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-sort-desc:after {
   content: "\f10c"; }
 
-/* line 2008, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2010, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 th[data-sort]:hover {
   color: #56666F; }
 
-/* line 2011, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2013, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .pop-meter {
   width: 30px;
   height: 9px;
   position: relative; }
 
-/* line 2016, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2018, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .pop-meter-background,
 .pop-meter-overlay {
   width: 100%;
@@ -18525,7 +18676,7 @@ th[data-sort]:hover {
   height: 9px;
   overflow-x: hidden; }
 
-/* line 2024, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2026, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .pop-meter-background:after,
 .pop-meter-overlay:after {
   content: ' ';
@@ -18541,11 +18692,11 @@ th[data-sort]:hover {
   height: 8px;
   top: 0px; }
 
-/* line 2039, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2041, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .pop-meter-background:after {
   box-shadow: 4px 0 0 0 #56666F, 8px 0 0 0 #56666F, 12px 0 0 0 #56666F, 16px 0 0 0 #56666F, 20px 0 0 0 #56666F, 24px 0 0 0 #56666F, 28px 0 0 0 #56666F, 32px 0 0 0 #56666F; }
 
-/* line 2042, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2044, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .pop-meter-overlay:after {
   box-shadow: 4px 0 0 0 #9CA6AC, 8px 0 0 0 #9CA6AC, 12px 0 0 0 #9CA6AC, 16px 0 0 0 #9CA6AC, 20px 0 0 0 #9CA6AC, 24px 0 0 0 #9CA6AC, 28px 0 0 0 #9CA6AC, 32px 0 0 0 #9CA6AC; }
 
@@ -18676,12 +18827,12 @@ th[data-sort]:hover {
   100% {
     box-shadow: 0px -26px rgba(255, 255, 255, 0.2), 19.5px -19.5px 0 rgba(255, 255, 255, 0.2), 26px 0 0 rgba(255, 255, 255, 0.2), 19.5px 19.5px 0 rgba(255, 255, 255, 0.2), 0 26px 0 rgba(255, 255, 255, 0.2), -19.5px 19.5px 0 rgba(255, 255, 255, 0.2), -26px 0 0 rgba(255, 255, 255, 0.2), -19.5px -19.5px 0 rgba(255, 255, 255, 0.2); } }
 
-/* line 2224, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2226, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .throbber,
 .throbber-large {
   position: relative; }
 
-/* line 2228, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2230, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .throbber div,
 .throbber-large div {
   background: transparent;
@@ -18690,12 +18841,12 @@ th[data-sort]:hover {
   position: absolute;
   top: 50%; }
 
-/* line 2236, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2238, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .throbber {
   height: 40px;
   width: 40px; }
 
-/* line 2240, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2242, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .throbber div {
   height: 8px;
   margin: -4px 0 0 -4px;
@@ -18704,12 +18855,12 @@ th[data-sort]:hover {
   -webkit-animation: throbber 1.5s ease infinite;
   animation: throbber 1.5s ease infinite; }
 
-/* line 2248, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2250, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .throbber-large {
   height: 70px;
   width: 70px; }
 
-/* line 2252, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2254, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .throbber-large div {
   height: 12px;
   margin: -6px 0 0 -6px;
@@ -18731,7 +18882,7 @@ th[data-sort]:hover {
  *
  * Styleguide 100.1.1
  */
-/* line 2273, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2275, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .throbber-initial {
   position: relative;
   height: 70px;
@@ -18742,7 +18893,7 @@ th[data-sort]:hover {
   margin-top: -35px;
   margin-left: -35px; }
 
-/* line 2283, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2285, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .throbber-initial div {
   background: transparent;
   border-radius: 50%;
@@ -18750,7 +18901,7 @@ th[data-sort]:hover {
   position: absolute;
   top: 50%; }
 
-/* line 2290, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2292, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .throbber-initial div {
   height: 12px;
   margin: -6px 0 0 -6px;
@@ -18771,7 +18922,7 @@ th[data-sort]:hover {
  *
  * Styleguide 100.1
  */
-/* line 2310, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2312, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .error-and-offline {
   display: none;
   position: absolute;
@@ -18785,7 +18936,7 @@ th[data-sort]:hover {
   background-size: cover;
   background-position: center; }
 
-/* line 2323, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2325, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .error-and-offline:before {
   content: ' ';
   position: absolute;
@@ -18795,40 +18946,40 @@ th[data-sort]:hover {
   left: 0;
   right: 0; }
 
-/* line 2332, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2334, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .error-and-offline > .container {
   position: relative;
   top: 50%;
   margin-top: -100px; }
 
-/* line 2337, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2339, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .error-and-offline .offline-content,
 .error-and-offline .error-content {
   display: none; }
 
-/* line 2341, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2343, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .error-and-offline .offline-content > .button,
 .error-and-offline .error-content > .button {
   margin-top: 32px; }
 
-/* line 2345, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2347, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .error-and-offline .error-version {
   position: absolute;
   right: 0px;
   bottom: 0px;
   margin: 0 7px; }
 
-/* line 2351, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2353, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .show-offline-screen .error-and-offline,
 .show-offline-screen .offline-content {
   display: block; }
 
-/* line 2355, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2357, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .show-error-screen .error-and-offline,
 .show-error-screen .error-content {
   display: block; }
 
-/* line 2359, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2361, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .facepile {
   display: inline-block;
   float: left;
@@ -18836,16 +18987,16 @@ th[data-sort]:hover {
   margin: 0px 2px;
   width: 26px; }
 
-/* line 2366, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2368, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .facepile-list {
   display: inline-block;
   height: 26px; }
 
-/* line 2370, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2372, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .facepile-list-container {
   height: 26px; }
 
-/* line 2373, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2375, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .facepile-badge {
   display: inline-block;
   float: left;
@@ -18867,84 +19018,84 @@ th[data-sort]:hover {
   /* override btn stuff */
   font-size: 10px; }
 
-/* line 2394, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2396, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .facepile-badge .b-alt-text {
   margin-top: -24px; }
 
-/* line 2397, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2399, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .facepile-badge.contextmenu-active,
 .facepile-badge:not(:disabled):hover {
   background-color: #008CD6;
   color: #ffffff; }
 
-/* line 2402, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2404, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .facepile-badge:not(:disabled):hover:active {
   background: #9CA6AC;
   color: #56666F;
   transform: scale(1); }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
-  /* line 2408, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 2410, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .facepile-badge:not(:disabled):hover:active {
     transform: scale(1); } }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
-  /* line 2413, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 2415, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .facepile-badge {
     transition-duration: 50ms; } }
 
-/* line 2417, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2419, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .facepile-badge:after {
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: box-shadow; }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
-  /* line 2422, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 2424, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .facepile-badge:after {
     transition-duration: 50ms; } }
 
-/* line 2426, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2428, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .facepile-badge.contextmenu-active,
 .facepile-badge:not(:disabled):hover {
   transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
   transition-property: transform, box-shadow, color, background-color; }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
-  /* line 2432, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 2434, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .facepile-badge.contextmenu-active,
   .facepile-badge:not(:disabled):hover {
     transition-duration: 66ms; } }
 
-/* line 2437, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2439, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .facepile-badge.contextmenu-active:after,
 .facepile-badge:not(:disabled):hover:after {
   transition: none 33ms cubic-bezier(0.3, 0, 0, 1);
   transition-property: box-shadow; }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
-  /* line 2443, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 2445, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .facepile-badge.contextmenu-active:after,
   .facepile-badge:not(:disabled):hover:after {
     transition-duration: 66ms; } }
 
-/* line 2448, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2450, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .facepile-badge:not(:disabled):hover:active {
   transition: none; }
 
-/* line 2451, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2453, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .facepile-badge:not(:disabled):hover:active:after {
   transition: none; }
 
-/* line 2454, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2456, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .facepile-badge:not(:disabled):hover {
   transform: scale(1.07692308); }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
-  /* line 2458, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 2460, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .facepile-badge:not(:disabled):hover {
     transform: scale(1.07692308); } }
 
-/* line 2462, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2464, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .facepile-badge:before {
   font-family: "glue1-spoticon";
   font-style: normal;
@@ -18964,11 +19115,11 @@ th[data-sort]:hover {
   padding-left: 6.5px;
   width: calc(100% - 6.5px); }
 
-/* line 2481, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2483, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .facepile-badge.button-play:before {
   content: "\f132"; }
 
-/* line 2484, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2486, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .facepile-badge.button-play.playing:not(:hover),
 .tl-row.playing .facepile-badge.button-play:not(:hover),
 .tl-row.playing.facepile-badge.button-play:not(:hover),
@@ -18976,7 +19127,7 @@ th[data-sort]:hover {
 .media-object.playing.facepile-badge.button-play:not(:hover) {
   box-shadow: inset 0 0 0 1px transparent; }
 
-/* line 2491, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2493, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .facepile-badge.button-play.playing:not(:hover):after,
 .tl-row.playing .facepile-badge.button-play:not(:hover):after,
 .tl-row.playing.facepile-badge.button-play:not(:hover):after,
@@ -18991,7 +19142,7 @@ th[data-sort]:hover {
   border-radius: 500px;
   box-shadow: inset 0 0 0 1px transparent; }
 
-/* line 2505, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2507, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .facepile-badge.button-play.playing:not(:hover).contextmenu-active,
 .tl-row.playing .facepile-badge.button-play:not(:hover).contextmenu-active,
 .tl-row.playing.facepile-badge.button-play:not(:hover).contextmenu-active,
@@ -19004,7 +19155,7 @@ th[data-sort]:hover {
 .media-object.playing.facepile-badge.button-play:not(:hover):not(:disabled):hover {
   box-shadow: inset 0 0 0 1px transparent, 0 0 0 1px transparent; }
 
-/* line 2517, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2519, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .facepile-badge.button-play.playing:not(:hover).contextmenu-active:after,
 .tl-row.playing .facepile-badge.button-play:not(:hover).contextmenu-active:after,
 .tl-row.playing.facepile-badge.button-play:not(:hover).contextmenu-active:after,
@@ -19018,7 +19169,7 @@ th[data-sort]:hover {
   box-shadow: inset 0 0 0 1px transparent; }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
-  /* line 2530, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 2532, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .facepile-badge.button-play.playing:not(:hover).contextmenu-active,
   .tl-row.playing .facepile-badge.button-play:not(:hover).contextmenu-active,
   .tl-row.playing.facepile-badge.button-play:not(:hover).contextmenu-active,
@@ -19030,7 +19181,7 @@ th[data-sort]:hover {
   .media-object.playing .facepile-badge.button-play:not(:hover):not(:disabled):hover,
   .media-object.playing.facepile-badge.button-play:not(:hover):not(:disabled):hover {
     box-shadow: inset 0 0 0 1px transparent; }
-  /* line 2542, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 2544, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .facepile-badge.button-play.playing:not(:hover).contextmenu-active:after,
   .tl-row.playing .facepile-badge.button-play:not(:hover).contextmenu-active:after,
   .tl-row.playing.facepile-badge.button-play:not(:hover).contextmenu-active:after,
@@ -19043,7 +19194,7 @@ th[data-sort]:hover {
   .media-object.playing.facepile-badge.button-play:not(:hover):not(:disabled):hover:after {
     box-shadow: inset 0 0 0 1px transparent; } }
 
-/* line 2555, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2557, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .facepile-badge.button-play.playing:not(:hover):not(:disabled):hover:active,
 .tl-row.playing .facepile-badge.button-play:not(:hover):not(:disabled):hover:active,
 .tl-row.playing.facepile-badge.button-play:not(:hover):not(:disabled):hover:active,
@@ -19051,7 +19202,7 @@ th[data-sort]:hover {
 .media-object.playing.facepile-badge.button-play:not(:hover):not(:disabled):hover:active {
   box-shadow: inset 0 0 0 1px transparent; }
 
-/* line 2562, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2564, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .facepile-badge.button-play.playing:not(:hover):not(:disabled):hover:active:after,
 .tl-row.playing .facepile-badge.button-play:not(:hover):not(:disabled):hover:active:after,
 .tl-row.playing.facepile-badge.button-play:not(:hover):not(:disabled):hover:active:after,
@@ -19059,7 +19210,7 @@ th[data-sort]:hover {
 .media-object.playing.facepile-badge.button-play:not(:hover):not(:disabled):hover:active:after {
   box-shadow: inset 0 0 0 1px transparent; }
 
-/* line 2569, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2571, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .facepile-badge.button-play.playing:not(:hover):before,
 .tl-row.playing .facepile-badge.button-play:not(:hover):before,
 .tl-row.playing.facepile-badge.button-play:not(:hover):before,
@@ -19069,7 +19220,7 @@ th[data-sort]:hover {
   padding-left: 5.6875px;
   width: calc(100% - 5.6875px); }
 
-/* line 2578, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2580, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .facepile-badge.button-play.playing:hover:before,
 .tl-row.playing .facepile-badge.button-play:hover:before,
 .tl-row.playing.facepile-badge.button-play:hover:before,
@@ -19077,35 +19228,35 @@ th[data-sort]:hover {
 .media-object.playing.facepile-badge.button-play:hover:before {
   content: "\f130"; }
 
-/* line 2585, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2587, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .facepile-text {
   float: left;
   margin-right: 10px;
   line-height: 29px; }
 
 @media (max-width: 854px) {
-  /* line 2591, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 2593, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .header-album .facepile-list-container {
     display: none; } }
 
 @media (max-width: 974px) {
-  /* line 2596, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+  /* line 2598, /Users/Devin/GitHub/spotio/skin/glue1.scss */
   .header .facepile-text {
     display: none; } }
 
-/* line 2600, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2602, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .navbar .facepile-list {
   margin-top: 8px; }
 
-/* line 2603, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2605, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .h-bar-facepile {
   white-space: normal; }
 
-/* line 2606, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2608, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .verified .facepile .mo-verified {
   display: none; }
 
-/* line 2609, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2611, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .media-object .facepile .playlist-placeholder,
 .media-object .facepile .playlist-folder-placeholder,
 .media-object .facepile .album-placeholder,
@@ -19113,11 +19264,11 @@ th[data-sort]:hover {
 .media-object .facepile .genre-placeholder {
   display: none; }
 
-/* line 2616, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2618, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .media-object .facepile .media-object-user.show-placeholder .mo-image-background-color {
   background: #333333; }
 
-/* line 2619, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2621, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .header-album .facepile-list-container {
   bottom: 16px;
   position: absolute;
@@ -19133,51 +19284,51 @@ th[data-sort]:hover {
  *
  * Styleguide 50.6.4
  */
-/* line 2634, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2636, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .modal-social-user-list {
   overflow: hidden;
   padding-bottom: 10px; }
 
-/* line 2638, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2640, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .modal-social-user-list .modal-social-user-list-scroll-area {
   height: 400px;
   margin-top: 5px;
   margin-left: 5px;
   margin-right: 5px; }
 
-/* line 2644, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2646, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .modal-social-user-list .modal-social-user-list-user {
   padding: 10px;
   padding-right: 20px;
   padding-bottom: 0px; }
 
-/* line 2649, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2651, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .modal-social-user-list .modal-social-user-list-user .modal-social-user-list-inner {
   margin-bottom: 10px; }
 
-/* line 2652, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2654, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .modal-social-user-list .modal-social-user-list-user .modal-social-user-list-image-container {
   margin-right: 20px; }
 
-/* line 2655, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2657, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .modal-social-user-list .modal-social-user-list-user .modal-social-user-list-follow-container {
   margin-top: 2px;
   margin-left: 20px; }
 
-/* line 2659, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2661, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .modal-social-user-list .modal-social-user-list-user .modal-social-user-list-user-name {
   font-size: 14px;
   color: #56666F; }
 
-/* line 2663, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2665, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .modal-social-user-list .modal-social-user-list-user .modal-social-user-list-user-details {
   font-size: 12px;
   color: #9CA6AC; }
 
-/* line 2667, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2669, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .modal-social-user-list .modal-social-user-list-user .media-object-image {
   width: 40px; }
 
-/* line 2670, /Users/Devin/GitHub/spotio/skin/glue1.scss */
+/* line 2672, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .modal-social-user-list hr {
   border-top-color: #E5E8EA; }

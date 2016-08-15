@@ -116,6 +116,10 @@ module.exports = function(grunt) {
         files: ['skin/apps/*.scss', 'skin/base/_variables.scss'],
         tasks: ['sass:apps', 'copy:apps', 'shell:copyspotifyapp', 'notify_hooks']
       },
+      bundlejs: { // Watch App-specific bundle.js
+        files: ['Apps/**/bundle.js'],
+        tasks: ['copy:apps', 'shell:copyspotifyapp', 'notify_hooks']
+      },
     },
 
     // Delete files

@@ -1,6 +1,8 @@
 @import "base/variables";
 @import "vendor/normalize";
 
+@import "objects/contextmenu";
+
 @keyframes glue-keyframes-rotate {
   0% {
     transform: rotate(0deg);
