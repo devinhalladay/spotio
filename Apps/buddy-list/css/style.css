@@ -617,3 +617,26 @@ body,
 /* line 553, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .new-chrome-style .card {
   background-color: #ffffff; }
+
+/* line 558, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
+::-webkit-scrollbar-track {
+  background-color: #f2f3f6 !important; }
+
+/* line 561, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #9CA6AC !important; }
+
+/* line 565, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
+::-webkit-scrollbar:horizontal {
+  height: 10px; }
+
+/* line 568, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
+::-webkit-scrollbar-thumb {
+  border: 1px solid #ffffff !important;
+  border-radius: 10px;
+  background-color: #9CA6AC !important; }
+
+/* line 573, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
+::-webkit-scrollbar-corner {
+  background-color: #f2f3f6 !important; }

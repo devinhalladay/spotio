@@ -553,3 +553,23 @@ body,
 .new-chrome-style .card {
   background-color: $main-view-bg-color;
 }
+
+
+::-webkit-scrollbar-track {
+  background-color: $secondary-view-bg-color !important;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: $secondary-text-color !important;
+}
+::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  border: 1px solid $main-view-bg-color !important;
+  border-radius: 10px;
+  background-color: $secondary-text-color !important;
+}
+::-webkit-scrollbar-corner {
+  background-color: $secondary-view-bg-color !important;
+}
