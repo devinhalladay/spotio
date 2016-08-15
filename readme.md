@@ -14,6 +14,7 @@ I sorely miss Rdio. It was the perfect music streaming service: quality streamin
 To download Spotio, hit the [releases](https://github.com/devinhalladay/spotio/releases) page and download `Spotify.app.Binary.zip`. Unzip, and you'll have a shiny new Spotify.app that you can test out or replace your usual app with.
 
 # To-do
+- [ ] **HIGH PRIORITY:** Figure out how to get access to the rendered DOM from Chromium Embedded Framework so I can fully style all elements.
 - [x] Streaming build system so I don't need to keep rebuilding and recompiling every single Sass file when I make a single change.
 - [ ] Add a Grunt task to setup the local repo for people who have just cloned this repo for development.
 - [ ] Add documentation guide for contributing to this repo.
