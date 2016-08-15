@@ -8123,7 +8123,7 @@ CircularLoader.prototype._paintFrame = function (value) {
     this._ctx.beginPath();
     this._ctx.arc(x, y, radius, startAngle, endAngle, false);
     this._ctx.lineWidth = lineWidth;
-    this._ctx.strokeStyle = '#1DB854'; // @color-green
+    this._ctx.strokeStyle = '#008CD6'; // @color-blue
     this._ctx.stroke();
   } else if (this._type === 'pie') {
     radius = this._canvas.width / 2;
@@ -8138,7 +8138,7 @@ CircularLoader.prototype._paintFrame = function (value) {
     this._ctx.beginPath();
     this._ctx.moveTo(x, y);
     this._ctx.arc(x, y, radius, startAngle, endAngle, false);
-    this._ctx.fillStyle = '#1DB854'; // @color-green
+    this._ctx.fillStyle = '#008CD6'; // @color-blue
     this._ctx.fill();
   }
 };

@@ -799,7 +799,7 @@
 }
 .focus .h-search,
 .h-search:focus {
-  background: #404040;
+  background: $primary-text-color;
 }
 .h-search-close {
   bottom: 0;
@@ -1210,7 +1210,7 @@
 }
 .trend-mark.trend-equal::before {
   content: '\00a0';
-  background-color: #404040;
+  background-color: $primary-text-color;
   display: block;
   margin: 0 auto;
   height: 2px;
@@ -1801,7 +1801,7 @@
 .tl-row.unavailable .tl-cell,
 .tl-row.unavailable .tl-cell a:link,
 .tl-row.unavailable .tl-highlight {
-  color: #404040 !important;
+  color: $primary-text-color !important;
 }
 .tl-row.unavailable .button-play {
   display: none !important;
@@ -1810,7 +1810,7 @@
   display: inline-block;
 }
 .tl-row.unavailable .tl-number {
-  color: #404040;
+  color: $primary-text-color;
 }
 .tl-row.local .button-add {
   visibility: hidden !important;
@@ -1828,7 +1828,7 @@
 .offline .tl-row .tl-cell,
 .offline .tl-row .tl-cell a:link,
 .offline .tl-row .tl-highlight {
-  color: #404040 !important;
+  color: $primary-text-color !important;
 }
 .offline .tl-row .button-play {
   display: none !important;
@@ -1837,7 +1837,7 @@
   display: inline-block;
 }
 .offline .tl-row .tl-number {
-  color: #404040;
+  color: $primary-text-color;
 }
 .offline .tl-row.offline-downloaded .tl-cell,
 .offline .tl-row.local.local-file-available .tl-cell {
@@ -1903,7 +1903,7 @@
   visibility: visible;
 }
 .tl-row:hover.current.thumbs-none .tl-thumbs .button:before {
-  color: #A0A0A0;
+  color: $secondary-text-color;
 }
 .tl-row:hover.current.thumbs-none .tl-thumbs .button:hover:before {
   color: $secondary-text-color;
@@ -1926,8 +1926,8 @@
 }
 .tl-row:hover .tl-explicit .label,
 .tl-row.selection-focus .tl-explicit .label {
-  color: #A0A0A0 !important;
-  border-color: #404040 !important;
+  color: $secondary-text-color !important;
+  border-color: $primary-text-color !important;
 }
 .tl-row.selection-focus-touch .tl-more .button {
   visibility: visible;
@@ -2037,10 +2037,10 @@ th[data-sort]:hover {
   top: 0px;
 }
 .pop-meter-background:after {
-  box-shadow: 4px 0 0 0 #404040, 8px 0 0 0 #404040, 12px 0 0 0 #404040, 16px 0 0 0 #404040, 20px 0 0 0 #404040, 24px 0 0 0 #404040, 28px 0 0 0 #404040, 32px 0 0 0 #404040;
+  box-shadow: 4px 0 0 0 $primary-text-color, 8px 0 0 0 $primary-text-color, 12px 0 0 0 $primary-text-color, 16px 0 0 0 $primary-text-color, 20px 0 0 0 $primary-text-color, 24px 0 0 0 $primary-text-color, 28px 0 0 0 $primary-text-color, 32px 0 0 0 $primary-text-color;
 }
 .pop-meter-overlay:after {
-  box-shadow: 4px 0 0 0 #A0A0A0, 8px 0 0 0 #A0A0A0, 12px 0 0 0 #A0A0A0, 16px 0 0 0 #A0A0A0, 20px 0 0 0 #A0A0A0, 24px 0 0 0 #A0A0A0, 28px 0 0 0 #A0A0A0, 32px 0 0 0 #A0A0A0;
+  box-shadow: 4px 0 0 0 $secondary-text-color, 8px 0 0 0 $secondary-text-color, 12px 0 0 0 $secondary-text-color, 16px 0 0 0 $secondary-text-color, 20px 0 0 0 $secondary-text-color, 24px 0 0 0 $secondary-text-color, 28px 0 0 0 $secondary-text-color, 32px 0 0 0 $secondary-text-color;
 }
 /**
  * Standard Throbber
