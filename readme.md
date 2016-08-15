@@ -11,6 +11,12 @@ I sorely miss Rdio. It was the perfect music streaming service: quality streamin
 # Download
 To download Spotio, hit the [releases](https://github.com/devinhalladay/spotio/releases) page and download `Spotify.app.Binary.zip`. Unzip, and you'll have a shiny new Spotify.app that you can test out or replace your usual app with.
 
+# To-do
+- [x] Streaming build system so I don't need to keep rebuilding and recompiling every single Sass file when I make a single change.
+- [ ] Add a Grunt task to setup the local repo for people who have just cloned this repo for development.
+- [ ] Add documentation guide for contributing to this repo.
+- [ ] Design new icons for the app for `v1.0.0` public release.
+
 # Known Skin Issues
 - I'm not yet sure how to handle the release cycle for the Spotify app. While developing this skin I haven't encountered an update to the app so I don't know exactly how updates will effect Spotio. **For the time-being, please avoid updating your Spotify.app until I have figured out a new release cycle.**
 - Contrast is an issue in some areas, but this is being fixed.
@@ -18,11 +24,6 @@ To download Spotio, hit the [releases](https://github.com/devinhalladay/spotio/r
 
 # Development
 Originally, I used bash scripts to manage development for this app, but I switched to a streaming build system using Grunt.
-
-## To-do
-- [x] Streaming build system so I don't need to keep rebuilding and recompiling every single Sass file when I make a single change.
-- [ ] Add a Grunt task to setup the local repo for people who have just cloned this repo for development.
-- [ ] Add documentation guide for contributing to this repo.
 
 ## Known Development Issues
 - I'm not yet sure how to handle the update cycle for the Spotify app. I don't know exactly how updates directly from Spotify will effect Spotio. **For the time-being, please avoid updating your Spotify.app until I have figured out a new release cycle.**
