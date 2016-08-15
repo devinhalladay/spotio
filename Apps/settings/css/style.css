@@ -297,11 +297,11 @@ section#playback .col.crossfade.disabled {
 
 /* line 248, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .slider-range.disabled.track {
-  background: #282828; }
+  background: #8b949a; }
 
 /* line 251, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .slider-range.disabled .applied {
-  background: #A0A0A0; }
+  background: #9CA6AC; }
 
 /* line 254, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .slider-range .container {

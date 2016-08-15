@@ -67,7 +67,7 @@ strong,
 
 /* line 60, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 strong {
-  color: #ffffff !important; }
+  color: #008CD6 !important; }
 
 /* line 63, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .item-subtitle strong {
@@ -186,7 +186,7 @@ recent searches - hover state will be broken.
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
-  color: #FFFFFF !important;
+  color: #56666F !important;
   background-color: #f2f3f6 !important;
   margin-bottom: 2px;
   height: 50px;
@@ -198,7 +198,7 @@ recent searches - hover state will be broken.
 
 /* line 172, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .selectable .item-subtitle {
-  color: #A0A0A0 !important; }
+  color: #8b949a !important; }
 
 /* line 175, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .selectable > a {
@@ -216,19 +216,19 @@ recent searches - hover state will be broken.
 
 /* line 187, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .selectable .label {
-  color: #A0A0A0;
+  color: #9CA6AC;
   background: transparent;
   padding-top: 2px;
   padding-bottom: 1px;
   letter-spacing: 0;
   vertical-align: 10%;
-  border: 1px solid #4d4d4d;
+  border: 1px solid #c9cfd3;
   font-size: 10px;
   margin-right: 5px; }
 
 /* line 198, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .selectable.selected {
-  background-color: blue !important; }
+  background-color: #c9cfd3 !important; }
 
 /* line 201, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .selectable.selected .label {
@@ -250,14 +250,14 @@ recent searches - hover state will be broken.
   line-height: 16px;
   letter-spacing: 0.015em;
   font-weight: 200;
-  color: #A0A0A0;
+  color: #9CA6AC;
   text-transform: uppercase;
   letter-spacing: 0.16em; }
 
 /* line 222, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .title > .linkable-title:hover {
   cursor: pointer;
-  color: #bababa; }
+  color: #8b949a; }
 
 /* ==========================================================================
    History
@@ -276,11 +276,11 @@ recent searches - hover state will be broken.
   margin-bottom: 0 !important;
   background-color: transparent !important;
   padding: 10px 25px 10px 10px;
-  border-color: #404040; }
+  border-color: #c9cfd3; }
 
 /* line 243, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .history .selectable.selected {
-  background-color: #4d4d4d !important; }
+  background-color: #c9cfd3 !important; }
 
 /* line 246, /Users/Devin/GitHub/spotio/skin/apps/suggest.scss */
 .history .selectable:first-child {

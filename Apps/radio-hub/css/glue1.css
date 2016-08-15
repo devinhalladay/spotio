@@ -1158,10 +1158,12 @@ html {
   font-size: 62.5%;
   -webkit-tap-highlight-color: transparent;
   color: #56666F;
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  background-color: #ffffff; }
 
-/* line 12, /Users/Devin/GitHub/spotio/skin/base/_reset.scss */
+/* line 13, /Users/Devin/GitHub/spotio/skin/base/_reset.scss */
 body {
+  background-color: #ffffff;
   cursor: default;
   font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
   font-size: 14px;
@@ -1179,11 +1181,11 @@ body {
   -ms-user-select: none;
   user-select: none; }
 
-/* line 30, /Users/Devin/GitHub/spotio/skin/base/_reset.scss */
+/* line 32, /Users/Devin/GitHub/spotio/skin/base/_reset.scss */
 body.disable-pointer-events {
   pointer-events: none; }
 
-/* line 33, /Users/Devin/GitHub/spotio/skin/base/_reset.scss */
+/* line 35, /Users/Devin/GitHub/spotio/skin/base/_reset.scss */
 .selectable {
   cursor: text;
   -webkit-touch-callout: default;
@@ -1196,12 +1198,12 @@ body.disable-pointer-events {
 /**
  * Forms
  */
-/* line 45, /Users/Devin/GitHub/spotio/skin/base/_reset.scss */
+/* line 47, /Users/Devin/GitHub/spotio/skin/base/_reset.scss */
 input,
 textarea {
   font-weight: 200; }
 
-/* line 49, /Users/Devin/GitHub/spotio/skin/base/_reset.scss */
+/* line 51, /Users/Devin/GitHub/spotio/skin/base/_reset.scss */
 input,
 button,
 select,
@@ -1210,36 +1212,36 @@ textarea {
   font-size: inherit;
   line-height: inherit; }
 
-/* line 57, /Users/Devin/GitHub/spotio/skin/base/_reset.scss */
+/* line 59, /Users/Devin/GitHub/spotio/skin/base/_reset.scss */
 a {
   color: #56666F;
   text-decoration: none;
   cursor: pointer;
   border-bottom: 1px solid transparent; }
 
-/* line 63, /Users/Devin/GitHub/spotio/skin/base/_reset.scss */
+/* line 65, /Users/Devin/GitHub/spotio/skin/base/_reset.scss */
 a:hover:not(.button),
 a:focus:not(.button) {
   color: #56666F;
   text-decoration: none;
   border-bottom-color: currentcolor; }
 
-/* line 69, /Users/Devin/GitHub/spotio/skin/base/_reset.scss */
+/* line 71, /Users/Devin/GitHub/spotio/skin/base/_reset.scss */
 a:hover:not(.button):active,
 a:focus:not(.button):active {
   color: #9CA6AC; }
 
-/* line 73, /Users/Devin/GitHub/spotio/skin/base/_reset.scss */
+/* line 75, /Users/Devin/GitHub/spotio/skin/base/_reset.scss */
 a:active {
   background-color: transparent; }
 
-/* line 76, /Users/Devin/GitHub/spotio/skin/base/_reset.scss */
+/* line 78, /Users/Devin/GitHub/spotio/skin/base/_reset.scss */
 img {
   max-width: 100%;
   height: auto;
   vertical-align: middle; }
 
-/* line 81, /Users/Devin/GitHub/spotio/skin/base/_reset.scss */
+/* line 83, /Users/Devin/GitHub/spotio/skin/base/_reset.scss */
 .sr-only {
   position: absolute;
   width: 1px;

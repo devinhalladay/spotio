@@ -8,8 +8,10 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   color: $primary-text-color;
   overflow-y: scroll;
+  background-color: $main-view-bg-color;
 }
 body {
+  background-color: $main-view-bg-color;
   cursor: default;
   font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
   font-size: 14px;

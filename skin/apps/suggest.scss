@@ -58,7 +58,7 @@ strong,
   font-weight: 400;
 }
 strong {
-  color: #ffffff !important;
+  color: $primary-accent-color !important;
 }
 .item-subtitle strong {
   color: #bababa !important;
@@ -159,7 +159,7 @@ recent searches - hover state will be broken.
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
-  color: #FFFFFF !important;
+  color: $primary-text-color !important;
   background-color: $secondary-view-bg-color !important;
   margin-bottom: 2px;
   height: 50px;
@@ -170,7 +170,7 @@ recent searches - hover state will be broken.
   transition: background-color ease-in-out 100ms;
 }
 .selectable .item-subtitle {
-  color: #A0A0A0 !important;
+  color: $secondary-text-color-hover!important;
 }
 .selectable > a {
   position: absolute;
@@ -185,18 +185,18 @@ recent searches - hover state will be broken.
   margin-bottom: 0 !important;
 }
 .selectable .label {
-  color: #A0A0A0;
+  color: $secondary-text-color;
   background: transparent;
   padding-top: 2px;
   padding-bottom: 1px;
   letter-spacing: 0;
   vertical-align: 10%;
-  border: 1px solid #4d4d4d;
+  border: 1px solid darken($primary-border-color, 10%);
   font-size: 10px;
   margin-right: 5px;
 }
 .selectable.selected {
-  background-color: blue !important;
+  background-color: darken($primary-border-color, 10%) !important;
 }
 .selectable.selected .label {
   color: #bababa !important;
@@ -215,13 +215,13 @@ recent searches - hover state will be broken.
   line-height: 16px;
   letter-spacing: 0.015em;
   font-weight: 200;
-  color: #A0A0A0;
+  color: $secondary-text-color;
   text-transform: uppercase;
   letter-spacing: 0.16em;
 }
 .title > .linkable-title:hover {
   cursor: pointer;
-  color: #bababa;
+  color: $secondary-text-color-hover;
 }
 /* ==========================================================================
    History
@@ -238,10 +238,10 @@ recent searches - hover state will be broken.
   margin-bottom: 0 !important;
   background-color: transparent !important;
   padding: 10px 25px 10px 10px;
-  border-color: #404040;
+  border-color: darken($primary-border-color, 10%);
 }
 .history .selectable.selected {
-  background-color: #4d4d4d !important;
+  background-color: darken($primary-border-color, 10%) !important;
 }
 .history .selectable:first-child {
   border-top: 0 !important;

@@ -1981,7 +1981,7 @@
 }
 .profile:hover .spoticon-user-16,
 .profile:hover .avatar.incognito {
-  background-color: #333333;
+  background-color: $primary-border-color;
   color: $primary-text-color;
   box-shadow: 0px 0px 0px 1px $primary-text-color;
 }
@@ -2063,7 +2063,7 @@
 .dropdown .dropdown-menu li.selected > a,
 .dropdown .dropdown-menu li.selected > a:hover {
   color: $secondary-text-color-hover;
-  background-color: #404040;
+  background-color: darken($primary-border-color, 3%);
 }
 .dropdown .dropdown-menu li.selected a:after {
   border-left-color: $secondary-text-color-hover;

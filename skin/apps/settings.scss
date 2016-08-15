@@ -246,10 +246,10 @@ section#playback .col.crossfade.disabled {
   background: transparent;
 }
 .slider-range.disabled.track {
-  background: #282828;
+  background: $secondary-text-color-hover;
 }
 .slider-range.disabled .applied {
-  background: #A0A0A0;
+  background: $secondary-text-color;
 }
 .slider-range .container {
   display: block;

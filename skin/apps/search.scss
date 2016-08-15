@@ -143,7 +143,7 @@ body {
 .s-query div {
   height: 59px;
   line-height: 59px;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid $primary-border-color;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -172,7 +172,7 @@ html.full-height > body > .container {
 .no-result i {
   display: block;
   line-height: 1.5;
-  color: #404040;
+  color: $primary-text-color;
   text-align: center;
 }
 .no-result i:before {
