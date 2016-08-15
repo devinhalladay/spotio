@@ -1,13 +1,33 @@
-# Rdio skin for Spotify
-## VERY WIP
+# Spotio for Spotify.app
 
 I sorely miss Rdio. It was the perfect music streaming service: quality streaming, massive selection, perfect UX, beautiful UI, and wonderful social interaction features. When it was bought by Pandora, many of us were left out in the dust and were forced to choose between lesser services like Apple Music, Spotify, and Google Play Music.
 
-**If you decided to go with Spotify but, like me, you hate the UI, you're in luck—I discovered that you can skin the Spotify app with CSS.**
+**If you decided to go with Spotify but, like me, you miss Rdio's light UI, you're in luck—I discovered that you can skin the Spotify app with CSS.**
 
+*Disclaimer: I have nothing but respect for the Spotify design and engineering teams, and undertaking this project has served only to increase that respect. They're really, really brilliant teams doing things that I admire greatly. I appreciate the design decisions they made while designing the app, but I prefer a light theme in my apps, so this project is merely an attempt to cater to my own selfish desires, not to do it "better" than the Spotify team did.*
 ---
 
-## DOCS
+# Download
+To download Spotio, hit the [releases](https://github.com/devinhalladay/spotio/releases) page and download `Spotify.app.Binary.zip`. Unzip, and you'll have a shiny new Spotify.app that you can test out or replace your usual app with.
+
+# Known Skin Issues
+- I'm not yet sure how to handle the release cycle for the Spotify app. While developing this skin I haven't encountered an update to the app so I don't know exactly how updates will effect Spotio. **For the time-being, please avoid updating your Spotify.app until I have figured out a new release cycle.**
+- Contrast is an issue in some areas, but this is being fixed.
+- Some album or artist header images are styled on Spotify's servers so they break the Spotio skin's look and feel, often making header text unreadable. I'm working on a workaround for this.
+
+# Development
+Originally, I used bash scripts to manage development for this app, but I switched to a streaming build system using Grunt.
+
+## To-do
+- [x] Streaming build system so I don't need to keep rebuilding and recompiling every single Sass file when I make a single change.
+- [ ] Add a Grunt task to setup the local repo for people who have just cloned this repo for development.
+- [ ] Add documentation guide for contributing to this repo.
+
+## Known Development Issues
+- I'm not yet sure how to handle the update cycle for the Spotify app. I don't know exactly how updates directly from Spotify will effect Spotio. **For the time-being, please avoid updating your Spotify.app until I have figured out a new release cycle.**
+- Some Grunt tasks need to be tweaked to make cloning the repo for development easier.
+
+## Grunt Tasks
 - `sudo grunt`: Build all CSS and watch for changes
 - `sudo grunt clean:spa`: Deletes all `.spa` files from .tmp/Spotify.app
 - `sudo grunt clean:oldApps`: Deletes old apps in .tmp
@@ -15,17 +35,28 @@ I sorely miss Rdio. It was the perfect music streaming service: quality streamin
 - `sudo grunt shell:extract`: Extracts the most recently downloaded Spotify.app from .tmp/Spotify.dmg
 - `grunt compress`: Compress your Spotify.app into a distributable .zip
 
-## TODO
-- [x] Streaming build system so I don't need to keep rebuilding and recompiling every single Sass file when I make a single change.
+---
 
-<!-- ## Install
+# License
 
-*Note: not tested on Windows, but in theory this approach will also work on the Windows Spotify app*
+MIT License
 
-Spotify's Mac app uses a modular design where each page in the app is broken up into modules, or `Apps`. Each `App` is either a page or an element of a page (i.e. `about` is the app's about popover, `collection` is your collection page, `collection-album` is the albums tab of your collection, etc.).
+Copyright (c) 2016 Devin Halladay studio@devinhalladay.com
 
-The current, up-to-date with the current Rdio Skin CSS, Spotify.app is built for you in /dist. -->
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-## Contributing
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-TODO
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
