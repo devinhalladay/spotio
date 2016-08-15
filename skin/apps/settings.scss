@@ -2,20 +2,20 @@
 
 
 #settings.is-incognito .incognito-state .slider {
-  background: #333333;
+  background: $secondary-text-color-hover;
   border-color: transparent;
   pointer-events: none;
 }
 #settings.is-incognito .incognito-state .slider div {
-  background: #404040;
+  background: $secondary-text-color;
   box-shadow: none;
 }
 #settings.is-incognito .incognito-state .slider:active div {
-  background: #404040;
+  background: $secondary-text-color;
   width: 22px;
 }
 #settings.is-incognito .incognito-state .slider:hover div {
-  background: #404040;
+  background: $secondary-text-color;
 }
 #settings.is-incognito .incognito-state .slider.enabled:active div {
   left: 15px;
@@ -96,12 +96,12 @@ body {
 .setting-row.disabled,
 #settings.is-incognito .incognito-state,
 #settings.is-incognito .incognito-state .setting-row {
-  color: #404040;
+  color: $secondary-text-color;
 }
 .setting-row.disabled .col.action a,
 #settings.is-incognito .incognito-state .col.action a,
 #settings.is-incognito .incognito-state .setting-row .col.action a {
-  color: #333333;
+  color: $secondary-text-color-hover;
 }
 .setting-row.disabled .col.action a:hover,
 #settings.is-incognito .incognito-state .col.action a:hover,
@@ -178,16 +178,16 @@ body {
   color: #FFFFFF;
   border: 0;
   border-radius: 2px;
-  background-color: #333333;
+  background-color: $secondary-view-bg-color;
 }
 .form-group input::-webkit-input-placeholder {
-  color: #A0A0A0;
+  color: $secondary-text-color;
 }
 .form-group input:focus {
-  color: #FFFFFF;
+  color: $primary-text-color;
   outline: 0;
-  border-color: #404040;
-  background-color: #404040;
+  border-color: $primary-border-color;
+  background-color: $primary-border-color;
 }
 .form-group input[name=host],
 .form-group input[name=username],
@@ -198,16 +198,16 @@ body {
   width: 70px;
 }
 .form-group input[disabled] {
-  color: #A0A0A0;
-  background-color: #282828;
+  color: $secondary-text-color;
+  background-color: $primary-border-color;
 }
 .form-group input.error {
   border: 1px solid #CD1A2B;
 }
 select {
   min-width: 200px;
-  background: #333333;
-  color: #FFFFFF;
+  background: $primary-border-color;
+  color: $primary-text-color;
   border: 0;
   height: 24px;
 }

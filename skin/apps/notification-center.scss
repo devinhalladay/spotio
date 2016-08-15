@@ -14,7 +14,7 @@ body {
 #notification-center {
   width: 100%;
   height: 100%;
-  background-color: #333333;
+  background-color: $secondary-view-bg-color;
 }
 #title-bar {
   /* Override GLUE here since the app container handles borders */
@@ -32,7 +32,7 @@ body {
   right: 3px;
 }
 #alert-container {
-  background-color: #333333;
+  background-color: $secondary-view-bg-color;
   width: 100%;
   height: 100%;
   display: table;
@@ -60,7 +60,7 @@ body {
   right: 0;
   left: 0;
   bottom: 0;
-  background-color: #333333;
+  background-color: $secondary-view-bg-color;
 }
 #loading-throbber {
   position: absolute;

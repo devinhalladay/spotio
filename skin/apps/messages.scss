@@ -4,7 +4,7 @@
 .composer {
   border-top: 1px solid $primary-border-color;
   bottom: 0;
-  height: 10px;
+  height: 100px;
   left: 0;
   padding: 12px;
   width: 100%;
@@ -48,7 +48,7 @@
   padding-right: 12px;
 }
 #thread-nav {
-  border-bottom: 1px solid #404040;
+  border-bottom: 1px solid $primary-border-color;
   box-shadow: none;
   height: 86px;
   padding-top: 33px;
@@ -60,7 +60,7 @@
   margin-top: 5px;
 }
 .msg-list .divider .divider-title {
-  color: #A0A0A0;
+  color: $secondary-text-color
 }
 .msg-list {
   padding-top: 46px;
@@ -78,7 +78,7 @@
   margin-bottom: 0;
 }
 .msg-grp-heading a {
-  color: #FFFFFF;
+  color: $primary-text-color;
   text-indent: -1px;
 }
 .msg-grp-message {
@@ -130,7 +130,7 @@
   padding-bottom: 70px;
 }
 #thread-list-actions {
-  border-top: 1px solid #404040;
+  border-top: 1px solid $primary-border-color;
   padding: 12px;
   position: static;
   width: 100%;
@@ -198,7 +198,7 @@ textarea {
   color: inherit;
 }
 #app-title {
-  border-bottom: 1px solid #404040;
+  border-bottom: 1px solid $primary-border-color;
   left: 8px;
   right: 8px;
   position: absolute;
@@ -255,7 +255,7 @@ textarea {
   font-size: 14px;
 }
 .text-aux {
-  color: #A0A0A0;
+  color: $secondary-text-color;
 }
 @media (max-width: 853px) {
   #thread-not-selected {
@@ -272,4 +272,10 @@ textarea {
   #thread-nav #back-to-convos {
     display: none;
   }
+}
+
+/// CUSTOM CSS
+
+#ko-thread-item div {
+  border-color: 2px solid $primary-border-color !important;
 }

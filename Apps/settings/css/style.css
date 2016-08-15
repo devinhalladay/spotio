@@ -1,22 +1,22 @@
 /* line 4, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 #settings.is-incognito .incognito-state .slider {
-  background: #333333;
+  background: #8b949a;
   border-color: transparent;
   pointer-events: none; }
 
 /* line 9, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 #settings.is-incognito .incognito-state .slider div {
-  background: #404040;
+  background: #9CA6AC;
   box-shadow: none; }
 
 /* line 13, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 #settings.is-incognito .incognito-state .slider:active div {
-  background: #404040;
+  background: #9CA6AC;
   width: 22px; }
 
 /* line 17, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 #settings.is-incognito .incognito-state .slider:hover div {
-  background: #404040; }
+  background: #9CA6AC; }
 
 /* line 20, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 #settings.is-incognito .incognito-state .slider.enabled:active div {
@@ -117,13 +117,13 @@ body {
 .setting-row.disabled,
 #settings.is-incognito .incognito-state,
 #settings.is-incognito .incognito-state .setting-row {
-  color: #404040; }
+  color: #9CA6AC; }
 
 /* line 101, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .setting-row.disabled .col.action a,
 #settings.is-incognito .incognito-state .col.action a,
 #settings.is-incognito .incognito-state .setting-row .col.action a {
-  color: #333333; }
+  color: #8b949a; }
 
 /* line 106, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .setting-row.disabled .col.action a:hover,
@@ -214,18 +214,18 @@ body {
   color: #FFFFFF;
   border: 0;
   border-radius: 2px;
-  background-color: #333333; }
+  background-color: #f2f3f6; }
 
 /* line 183, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .form-group input::-webkit-input-placeholder {
-  color: #A0A0A0; }
+  color: #9CA6AC; }
 
 /* line 186, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .form-group input:focus {
-  color: #FFFFFF;
+  color: #56666F;
   outline: 0;
-  border-color: #404040;
-  background-color: #404040; }
+  border-color: #E5E8EA;
+  background-color: #E5E8EA; }
 
 /* line 192, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .form-group input[name=host],
@@ -239,8 +239,8 @@ body {
 
 /* line 200, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .form-group input[disabled] {
-  color: #A0A0A0;
-  background-color: #282828; }
+  color: #9CA6AC;
+  background-color: #E5E8EA; }
 
 /* line 204, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 .form-group input.error {
@@ -249,8 +249,8 @@ body {
 /* line 207, /Users/Devin/GitHub/spotio/skin/apps/settings.scss */
 select {
   min-width: 200px;
-  background: #333333;
-  color: #FFFFFF;
+  background: #E5E8EA;
+  color: #56666F;
   border: 0;
   height: 24px; }
 
