@@ -17302,7 +17302,7 @@ a.list-group-item.active > .badge,
 
 /* line 865, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .header-image:before {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(255, 255, 255, 0.6);
   bottom: 0;
   content: "";
   left: 0;
@@ -17351,7 +17351,7 @@ a.list-group-item.active > .badge,
 
 /* line 907, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .header-artist.header-image {
-  background-image: url("https://d2j0f09xqmv212.cloudfront.net/images/standard-artist-header.png");
+  background-image: url("../img/standard-artist-header.png");
   background-size: cover;
   background-position: 50% 0; }
 
