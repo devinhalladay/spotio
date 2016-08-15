@@ -6088,7 +6088,7 @@ html {
 /* line 213, /Users/Devin/GitHub/spotio/skin/components/_buttons.scss */
 .button.button-green:not(:disabled):hover:active {
   background: primary-accent-color--dark;
-  color: #cccccc;
+  color: #9CA6AC;
   transform: scale(1); }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
@@ -6524,7 +6524,7 @@ html {
   color: #56666F;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: transform, box-shadow, color, background-color;
-  border: 1px solid #E5E8EA; }
+  border: 1px solid #9CA6AC; }
 
 /* line 606, /Users/Devin/GitHub/spotio/skin/components/_buttons.scss */
 .button.button-with-stroke .b-alt-text {
@@ -6594,45 +6594,6 @@ html {
 .button.button-with-stroke:not(:disabled):hover:active:after {
   transition: none; }
 
-/* line 666, /Users/Devin/GitHub/spotio/skin/components/_buttons.scss */
-.button.button-with-stroke:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-radius: 500px;
-  box-shadow: inset 0 0 0 1px #E5E8EA; }
-
-/* line 676, /Users/Devin/GitHub/spotio/skin/components/_buttons.scss */
-.button.button-with-stroke.contextmenu-active,
-.button.button-with-stroke:not(:disabled):hover {
-  box-shadow: inset 0 0 0 1px #FFFFFF, 0 0 0 1px transparent; }
-
-/* line 680, /Users/Devin/GitHub/spotio/skin/components/_buttons.scss */
-.button.button-with-stroke.contextmenu-active:after,
-.button.button-with-stroke:not(:disabled):hover:after {
-  box-shadow: inset 0 0 0 1px #FFFFFF; }
-
-@media (-webkit-min-device-pixel-ratio: 2) {
-  /* line 685, /Users/Devin/GitHub/spotio/skin/components/_buttons.scss */
-  .button.button-with-stroke.contextmenu-active,
-  .button.button-with-stroke:not(:disabled):hover {
-    box-shadow: inset 0 0 0 1px #FFFFFF; }
-  /* line 689, /Users/Devin/GitHub/spotio/skin/components/_buttons.scss */
-  .button.button-with-stroke.contextmenu-active:after,
-  .button.button-with-stroke:not(:disabled):hover:after {
-    box-shadow: inset 0 0 0 1px #FFFFFF; } }
-
-/* line 694, /Users/Devin/GitHub/spotio/skin/components/_buttons.scss */
-.button.button-with-stroke:not(:disabled):hover:active {
-  box-shadow: inset 0 0 0 1px #808080; }
-
-/* line 697, /Users/Devin/GitHub/spotio/skin/components/_buttons.scss */
-.button.button-with-stroke:not(:disabled):hover:active:after {
-  box-shadow: inset 0 0 0 1px #808080; }
-
 /* line 700, /Users/Devin/GitHub/spotio/skin/components/_buttons.scss */
 .button.button-with-stroke.contextmenu-active,
 .button.button-with-stroke:not(:disabled):hover {
@@ -6656,8 +6617,7 @@ html {
   background: rgba(156, 166, 172, 0.7);
   color: #ffffff;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
-  transition-property: transform, box-shadow, color, background-color;
-  box-shadow: inset 0 0 0 1px #ffffff; }
+  transition-property: transform, box-shadow, color, background-color; }
 
 /* line 724, /Users/Devin/GitHub/spotio/skin/components/_buttons.scss */
 .button.button-with-stroke.added .b-alt-text,
@@ -6744,56 +6704,6 @@ html {
 .button.button-with-stroke.added:not(:disabled):hover:active:after,
 .button.button-with-stroke.active:not(:disabled):hover:active:after {
   transition: none; }
-
-/* line 802, /Users/Devin/GitHub/spotio/skin/components/_buttons.scss */
-.button.button-with-stroke.added:after,
-.button.button-with-stroke.active:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-radius: 500px;
-  box-shadow: inset 0 0 0 1px #9CA6AC; }
-
-/* line 813, /Users/Devin/GitHub/spotio/skin/components/_buttons.scss */
-.button.button-with-stroke.added.contextmenu-active,
-.button.button-with-stroke.active.contextmenu-active,
-.button.button-with-stroke.added:not(:disabled):hover,
-.button.button-with-stroke.active:not(:disabled):hover {
-  box-shadow: inset 0 0 0 1px #FFFFFF, 0 0 0 1px transparent; }
-
-/* line 819, /Users/Devin/GitHub/spotio/skin/components/_buttons.scss */
-.button.button-with-stroke.added.contextmenu-active:after,
-.button.button-with-stroke.active.contextmenu-active:after,
-.button.button-with-stroke.added:not(:disabled):hover:after,
-.button.button-with-stroke.active:not(:disabled):hover:after {
-  box-shadow: inset 0 0 0 1px #FFFFFF; }
-
-@media (-webkit-min-device-pixel-ratio: 2) {
-  /* line 826, /Users/Devin/GitHub/spotio/skin/components/_buttons.scss */
-  .button.button-with-stroke.added.contextmenu-active,
-  .button.button-with-stroke.active.contextmenu-active,
-  .button.button-with-stroke.added:not(:disabled):hover,
-  .button.button-with-stroke.active:not(:disabled):hover {
-    box-shadow: inset 0 0 0 1px #FFFFFF; }
-  /* line 832, /Users/Devin/GitHub/spotio/skin/components/_buttons.scss */
-  .button.button-with-stroke.added.contextmenu-active:after,
-  .button.button-with-stroke.active.contextmenu-active:after,
-  .button.button-with-stroke.added:not(:disabled):hover:after,
-  .button.button-with-stroke.active:not(:disabled):hover:after {
-    box-shadow: inset 0 0 0 1px #FFFFFF; } }
-
-/* line 839, /Users/Devin/GitHub/spotio/skin/components/_buttons.scss */
-.button.button-with-stroke.added:not(:disabled):hover:active,
-.button.button-with-stroke.active:not(:disabled):hover:active {
-  box-shadow: inset 0 0 0 1px #808080; }
-
-/* line 843, /Users/Devin/GitHub/spotio/skin/components/_buttons.scss */
-.button.button-with-stroke.added:not(:disabled):hover:active:after,
-.button.button-with-stroke.active:not(:disabled):hover:active:after {
-  box-shadow: inset 0 0 0 1px #808080; }
 
 /* line 847, /Users/Devin/GitHub/spotio/skin/components/_buttons.scss */
 .button.button-with-stroke.added.contextmenu-active,
