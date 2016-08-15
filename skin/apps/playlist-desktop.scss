@@ -179,6 +179,9 @@ body.loaded-tracklist .throbber-tracklist {
 }
 .discover-weekly .header {
   background-image: url(/images/dw-universe.png);
+  * {
+    color: #ffffff !important;
+  }
 }
 #header .h-search-bar {
   display: flex;

@@ -210,100 +210,103 @@ body.loaded-tracklist .throbber-tracklist {
 /* line 180, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
 .discover-weekly .header {
   background-image: url(/images/dw-universe.png); }
+  /* line 182, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
+  .discover-weekly .header * {
+    color: #ffffff !important; }
 
-/* line 183, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
+/* line 186, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
 #header .h-search-bar {
   display: flex;
   align-items: center; }
 
-/* line 187, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
+/* line 190, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
 #header .search-field-wrapper {
   flex-grow: 1;
   margin-right: 16px; }
 
-/* line 191, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
+/* line 194, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
 #header .offline-sync .slider {
   display: inline-block;
   vertical-align: middle;
   margin-left: 7px; }
 
-/* line 196, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
+/* line 199, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
 #header .h-extra {
   bottom: 8px; }
 
-/* line 199, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
+/* line 202, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
 .tracklist {
   visibility: hidden; }
 
-/* line 202, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
+/* line 205, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
 .tracklist.visible {
   visibility: visible; }
 
-/* line 205, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
+/* line 208, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
 .empty-view {
   display: none; }
 
-/* line 208, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
+/* line 211, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
 .empty-view.visible {
   display: block; }
 
-/* line 211, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
+/* line 214, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
 .empty-content {
   margin: 0 auto;
   text-align: center; }
 
-/* line 215, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
+/* line 218, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
 .empty-content h2 {
   margin-top: 0; }
 
-/* line 218, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
+/* line 221, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
 .empty-content .message {
   margin: 1em auto 1.4em auto;
   max-width: 400px; }
 
-/* line 222, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
+/* line 225, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
 .empty-content .btn-info {
   margin: 0 5px; }
 
-/* line 225, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
+/* line 228, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
 .empty-filtered-content {
   border-top: 1px solid #E5E8EA;
   padding: 10px 0; }
 
-/* line 229, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
+/* line 232, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
 .empty-filtered-content .remove-filter-button {
   margin: 0 10px;
   cursor: default; }
 
-/* line 233, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
+/* line 236, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
 .local-files .header .media-object .local-files-placeholder {
   display: block;
   fill: #9CA6AC;
   cursor: default; }
 
-/* line 238, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
+/* line 241, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
 .throbber-initial.throbber-tracklist {
   z-index: 2;
   top: 450px; }
 
-/* line 242, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
+/* line 245, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
 #header.annotate-enabled .h-title,
 #header.annotate-enabled .h-description,
 #header.annotate-enabled .h-media {
   cursor: pointer; }
 
-/* line 247, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
+/* line 250, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
 #header.annotate-enabled .h-title,
 #header.annotate-enabled .h-description {
   max-width: -moz-fit-content;
   max-width: -webkit-fit-content;
   max-width: fit-content; }
 
-/* line 253, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
+/* line 256, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
 #header.annotate-enabled .h-media .media-object:hover {
   position: relative; }
 
-/* line 256, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
+/* line 259, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
 #header.annotate-enabled .h-media .media-object:hover:before {
   font-family: "glue1-spoticon";
   font-style: normal;
@@ -316,7 +319,7 @@ body.loaded-tracklist .throbber-tracklist {
   content: "\f1E3";
   font-size: 60px; }
 
-/* line 268, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
+/* line 271, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
 #header.annotate-enabled .h-media .media-object:hover:before {
   position: absolute;
   top: 50%;
@@ -328,7 +331,7 @@ body.loaded-tracklist .throbber-tracklist {
   text-align: center;
   color: #56666F; }
 
-/* line 279, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
+/* line 282, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
 #header.annotate-enabled .h-media .media-object:hover:after {
   content: '';
   position: absolute;
@@ -338,12 +341,12 @@ body.loaded-tracklist .throbber-tracklist {
   background: rgba(0, 0, 0, 0.75);
   z-index: 1; }
 
-/* line 288, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
+/* line 291, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
 #header.annotate-enabled.annotate-visible-header-hint .h-title {
   position: relative;
   padding-right: 48px; }
 
-/* line 292, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
+/* line 295, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
 #header.annotate-enabled.annotate-visible-header-hint .h-title:before {
   font-family: "glue1-spoticon";
   font-style: normal;
@@ -356,34 +359,34 @@ body.loaded-tracklist .throbber-tracklist {
   content: "\f1E3";
   font-size: 32px; }
 
-/* line 304, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
+/* line 307, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
 #header.annotate-enabled.annotate-visible-header-hint .h-title:before {
   position: absolute;
   color: #808080;
   right: 0; }
 
-/* line 309, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
+/* line 312, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
 #header.annotate-enabled.annotate-visible-header-hint .h-title:hover:before {
   color: #FFFFFF; }
 
-/* line 312, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
+/* line 315, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
 .sticky-clone {
   z-index: 1000; }
 
-/* line 315, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
+/* line 318, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
 .sticky-clone thead {
   background: #f2f3f6; }
 
-/* line 318, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
+/* line 321, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
 .tl-cell > * {
   line-height: 40px; }
 
-/* line 321, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
+/* line 324, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
 .tracklist em {
   display: inline-block;
   background: rgba(255, 255, 255, 0.1); }
 
-/* line 325, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
+/* line 328, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
 .sponsored .h-label,
 .sponsored .h-title,
 .sponsored .h-description,
@@ -391,43 +394,43 @@ body.loaded-tracklist .throbber-tracklist {
   opacity: 1;
   transition: opacity .7s; }
 
-/* line 332, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
+/* line 335, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
 .sponsored .h-title,
 .sponsored .h-description {
   margin-right: 150px; }
 
-/* line 336, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
+/* line 339, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
 .sponsored .sponsored-logo {
   position: absolute;
   top: 40px;
   right: 20px;
   transition: top .7s; }
 
-/* line 342, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
+/* line 345, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
 .sponsored .sponsored-logo a:hover,
 .sponsored .sponsored-logo a:focus {
   border-bottom: none; }
 
-/* line 346, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
+/* line 349, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
 .sponsored .sponsored-logo img {
   max-height: 75px;
   max-width: 140px; }
 
 @media (max-width: 853px) {
-  /* line 351, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
+  /* line 354, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
   .sponsored .h-title,
   .sponsored .h-description {
     margin-right: 70px; }
-  /* line 355, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
+  /* line 358, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
   .sponsored .sponsored-logo {
     top: 29px; } }
 
 @media (max-width: 700px) {
-  /* line 360, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
+  /* line 363, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
   .fresh-playlist-button {
     display: none; } }
 
 @media (max-width: 1000px) {
-  /* line 365, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
+  /* line 368, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */
   .playlist-followers-label {
     display: none !important; } }
