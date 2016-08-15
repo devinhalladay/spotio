@@ -649,8 +649,8 @@ html.glue2 #view-video-ad .saf-video-takeover-btn-max {
   /* otherwise section header border shows through !? */
   position: absolute;
   width: 100%;
-  background-color: #282828;
-  color: #FFFFFF;
+  background-color: #f2f3f6;
+  color: #56666F;
   font-size: 14px;
   line-height: 44px;
   font-weight: 200; }
@@ -710,7 +710,7 @@ html.glue2 #view-video-ad .saf-video-takeover-btn-max {
 
 /* line 622, /Users/Devin/GitHub/spotio/skin/apps/concerts.scss */
 .change-location__label {
-  background-color: #333333;
+  background-color: #c9cfd3;
   position: relative;
   margin-bottom: 0px;
   width: 100%;
@@ -730,22 +730,22 @@ html.glue2 #view-video-ad .saf-video-takeover-btn-max {
 
 /* line 639, /Users/Devin/GitHub/spotio/skin/apps/concerts.scss */
 .change-location__list::-webkit-scrollbar-track {
-  background-color: #282828; }
+  background-color: #E5E8EA; }
 
 /* line 642, /Users/Devin/GitHub/spotio/skin/apps/concerts.scss */
 .change-location__list::-webkit-scrollbar-corner {
-  background-color: #333333; }
+  background-color: #9CA6AC; }
 
 /* line 645, /Users/Devin/GitHub/spotio/skin/apps/concerts.scss */
 .change-location__list::-webkit-scrollbar {
   width: 8px;
-  background-color: #333333; }
+  background-color: #9CA6AC; }
 
 /* line 649, /Users/Devin/GitHub/spotio/skin/apps/concerts.scss */
 .change-location__list::-webkit-scrollbar-thumb {
-  border: 1px solid #333333;
+  border: 1px solid #9CA6AC;
   border-radius: 10px;
-  background-color: #333333; }
+  background-color: #9CA6AC; }
 
 /* line 654, /Users/Devin/GitHub/spotio/skin/apps/concerts.scss */
 .change-location__item,
@@ -760,7 +760,7 @@ html.glue2 #view-video-ad .saf-video-takeover-btn-max {
 
 /* line 663, /Users/Devin/GitHub/spotio/skin/apps/concerts.scss */
 .change-location__item {
-  border-bottom: 1px solid #333333;
+  border-bottom: 1px solid #E5E8EA;
   padding: 0; }
 
 /* line 667, /Users/Devin/GitHub/spotio/skin/apps/concerts.scss */
@@ -768,7 +768,7 @@ html.glue2 #view-video-ad .saf-video-takeover-btn-max {
 .change-location__item:hover {
   cursor: pointer;
   outline: none;
-  background-color: #333333; }
+  background-color: #E5E8EA; }
 
 /* line 673, /Users/Devin/GitHub/spotio/skin/apps/concerts.scss */
 .change-location__link {
@@ -789,11 +789,11 @@ html.glue2 #view-video-ad .saf-video-takeover-btn-max {
   width: 100%;
   height: 70px;
   overflow: hidden;
-  border-bottom: 1px solid #282828; }
+  border-bottom: 1px solid #E5E8EA; }
 
 /* line 691, /Users/Devin/GitHub/spotio/skin/apps/concerts.scss */
 .concert-list-row:hover {
-  background-color: #333333; }
+  background-color: #E5E8EA; }
 
 /* line 694, /Users/Devin/GitHub/spotio/skin/apps/concerts.scss */
 .concert-list-row:hover .right,
@@ -888,8 +888,8 @@ html.glue2 #view-video-ad .saf-video-takeover-btn-max {
 
 /* line 768, /Users/Devin/GitHub/spotio/skin/apps/concerts.scss */
 .concert-count {
-  background-color: #A0A0A0;
-  color: #191919;
+  background-color: #E5E8EA;
+  color: #56666F;
   border-radius: 2px;
   padding: 0 2px;
   margin-left: 4px;
@@ -928,7 +928,7 @@ html.glue2 #view-video-ad .saf-video-takeover-btn-max {
 
 /* line 803, /Users/Devin/GitHub/spotio/skin/apps/concerts.scss */
 .concert-list--expanded {
-  border-bottom: 1px solid #282828; }
+  border-bottom: 1px solid #E5E8EA; }
 
 /* line 806, /Users/Devin/GitHub/spotio/skin/apps/concerts.scss */
 .concert-list--expanded .concert-list-row {

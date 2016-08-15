@@ -570,8 +570,8 @@ html.glue2 #view-video-ad .saf-video-takeover-btn-max {
   /* otherwise section header border shows through !? */
   position: absolute;
   width: 100%;
-  background-color: #282828;
-  color: #FFFFFF;
+  background-color: $secondary-view-bg-color;
+  color: $primary-text-color;
   font-size: 14px;
   line-height: 44px;
   font-weight: 200;
@@ -620,7 +620,7 @@ html.glue2 #view-video-ad .saf-video-takeover-btn-max {
   outline: none;
 }
 .change-location__label {
-  background-color: #333333;
+  background-color: darken($primary-border-color, 10%);
   position: relative;
   margin-bottom: 0px;
   width: 100%;
@@ -637,19 +637,19 @@ html.glue2 #view-video-ad .saf-video-takeover-btn-max {
   overflow-y: scroll;
 }
 .change-location__list::-webkit-scrollbar-track {
-  background-color: #282828;
+  background-color: $primary-border-color;
 }
 .change-location__list::-webkit-scrollbar-corner {
-  background-color: #333333;
+  background-color: $secondary-text-color;
 }
 .change-location__list::-webkit-scrollbar {
   width: 8px;
-  background-color: #333333;
+  background-color: $secondary-text-color;
 }
 .change-location__list::-webkit-scrollbar-thumb {
-  border: 1px solid #333333;
+  border: 1px solid $secondary-text-color;
   border-radius: 10px;
-  background-color: #333333;
+  background-color: $secondary-text-color;
 }
 .change-location__item,
 .change-location__error {
@@ -661,14 +661,14 @@ html.glue2 #view-video-ad .saf-video-takeover-btn-max {
   padding: 0px 16px;
 }
 .change-location__item {
-  border-bottom: 1px solid #333333;
+  border-bottom: 1px solid $primary-border-color;
   padding: 0;
 }
 .change-location__item:focus,
 .change-location__item:hover {
   cursor: pointer;
   outline: none;
-  background-color: #333333;
+  background-color: $primary-border-color;
 }
 .change-location__link {
   display: block;
@@ -686,10 +686,10 @@ html.glue2 #view-video-ad .saf-video-takeover-btn-max {
   width: 100%;
   height: 70px;
   overflow: hidden;
-  border-bottom: 1px solid #282828;
+  border-bottom: 1px solid $primary-border-color;
 }
 .concert-list-row:hover {
-  background-color: #333333;
+  background-color: $primary-border-color;
 }
 .concert-list-row:hover .right,
 .concert-list-row:hover .mo-play {
@@ -766,8 +766,8 @@ html.glue2 #view-video-ad .saf-video-takeover-btn-max {
   margin-top: -1px;
 }
 .concert-count {
-  background-color: #A0A0A0;
-  color: #191919;
+  background-color: $primary-border-color;
+  color: $primary-text-color;
   border-radius: 2px;
   padding: 0 2px;
   margin-left: 4px;
@@ -801,7 +801,7 @@ html.glue2 #view-video-ad .saf-video-takeover-btn-max {
   border-bottom-color: transparent;
 }
 .concert-list--expanded {
-  border-bottom: 1px solid #282828;
+  border-bottom: 1px solid $primary-border-color;
 }
 .concert-list--expanded .concert-list-row {
   border: 0;
