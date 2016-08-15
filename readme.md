@@ -5,6 +5,7 @@ I sorely miss Rdio. It was the perfect music streaming service: quality streamin
 **If you decided to go with Spotify but, like me, you miss Rdio's light UI, you're in luck—I discovered that you can skin the Spotify app with CSS.**
 
 *Disclaimer: I have nothing but respect for the Spotify design and engineering teams, and undertaking this project has served only to increase that respect. They're really, really brilliant teams doing things that I admire greatly. I appreciate the design decisions they made while designing the app, but I prefer a light theme in my apps, so this project is merely an attempt to cater to my own selfish desires, not to do it "better" than the Spotify team did.*
+
 ---
 
 # Download
