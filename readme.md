@@ -38,7 +38,7 @@ Originally, I used bash scripts to manage development for this app, but I switch
 - `sudo grunt clean:oldApps`: Deletes old apps in .tmp
 - `sudo grunt download`: Downloads latest spotify binary and places it in .tmp/
 - `sudo grunt shell:extract`: Extracts the most recently downloaded Spotify.app from .tmp/Spotify.dmg
-- `grunt compress`: Compress your Spotify.app into a distributable .zip
+- `sudo grunt compress`: Compress your Spotify.app into a distributable .zip
 
 ---
 
