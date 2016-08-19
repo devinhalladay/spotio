@@ -2421,7 +2421,7 @@
 /* line 2095, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .view-player #connect:hover #devices-label,
 .view-player #connect:hover #devices-icon {
-  color: #FFFFFF; }
+  color: #008CD6; }
 
 /* line 2099, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .view-player #connect:hover #devices-label.remote,
@@ -2463,7 +2463,7 @@
   left: auto;
   top: auto;
   display: block;
-  background: #333333;
+  background: #f2f3f6;
   border-radius: 3px;
   padding: 0;
   margin: 0;
@@ -2480,10 +2480,10 @@
   line-height: 24px;
   letter-spacing: normal;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #56666F;
   text-transform: normal;
   position: relative;
-  background-color: #333333;
+  background-color: #f2f3f6;
   text-align: left; }
 
 /* line 2152, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
@@ -2507,9 +2507,9 @@
 .view-player #connect-picker #connect-container #connect-upsell,
 .view-player #connect-picker #connect-container #connect-header,
 .view-player #connect-picker #connect-container #connect-offline {
-  background-color: #282828;
-  border-bottom: 1px solid #404040;
-  border-top: 1px solid #404040;
+  background-color: #e3e5ec;
+  border-bottom: 1px solid #9CA6AC;
+  border-top: 1px solid #9CA6AC;
   text-align: center;
   margin: 0;
   padding: 12px; }
@@ -2571,7 +2571,7 @@
 
 /* line 2224, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .view-player #connect-picker #connect-container #connect-offline .title {
-  color: #FFFFFF;
+  color: #56666F;
   margin-top: 1em;
   margin-bottom: 1em;
   font-size: 110%;
@@ -2579,7 +2579,7 @@
 
 /* line 2231, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .view-player #connect-picker #connect-container #connect-devices {
-  border-top: 1px solid #404040;
+  border-top: 1px solid #9CA6AC;
   max-height: 300px;
   overflow-y: auto; }
 
@@ -2594,8 +2594,8 @@
 .view-player #connect-picker #connect-container #connect-devices ul li {
   margin: 0;
   padding: 0;
-  background-color: #282828;
-  border-bottom: 1px solid #404040;
+  background-color: #e3e5ec;
+  border-bottom: 1px solid #9CA6AC;
   height: 60px;
   position: relative;
   text-align: center;
@@ -2628,7 +2628,7 @@
 /* line 2274, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .view-player #connect-picker #connect-container #connect-devices ul li .device-subtitle {
   font-size: 10pt;
-  color: #FFF; }
+  color: #56666F; }
 
 /* line 2278, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .view-player #connect-picker #connect-container #connect-devices ul li .device {
@@ -2678,7 +2678,7 @@
 /* line 2314, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .view-player #connect-picker #connect-container #connect-devices ul li.selectable:hover,
 .view-player #connect-picker #connect-container #connect-devices ul li.selectable:focus {
-  background-color: #333333; }
+  background-color: #d4d7e1; }
 
 /* line 2318, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .view-player #connect-picker #connect-container #connect-devices ul li.device-self.active .device-icon {
@@ -2707,7 +2707,7 @@
 
 /* line 2338, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .view-player #connect-picker #connect-container #connect-devices ul li.connecting .device-icon:before {
-  color: #FFF; }
+  color: #56666F; }
 
 /* line 2341, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .view-player #connect-picker #connect-container #connect-devices ul li.connecting .spoticon-chromecast-connected-16::before {
@@ -6524,7 +6524,7 @@ body.remotebar #connect-container-background-new-chrome-style {
 .view-player-new .extra-controls-container .button-lyrics.drop-target-active:not(:disabled):hover,
 .view-player-new .extra-controls-container .button-queue.drop-target-active:not(:disabled):hover,
 .view-player-new .extra-controls-container .button-devices.drop-target-active:not(:disabled):hover {
-  background-color: #FFFFFF; }
+  background-color: #56666F; }
 
 /* line 5870, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .view-player-new .extra-controls-container .volumebar-container {
@@ -6639,11 +6639,11 @@ body.remotebar #connect-container-background-new-chrome-style {
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.015em;
-  color: #FFFFFF; }
+  color: #56666F; }
 
 /* line 5963, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .view-player-new .track a {
-  color: #FFFFFF; }
+  color: #56666F; }
 
 /* line 5966, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .view-player-new .artist {
@@ -6706,12 +6706,12 @@ body.remotebar #connect-container-background-new-chrome-style {
 .view-player-new .nowplaying-add-button.contextmenu-active,
 .view-player-new .nowplaying-add-button:not(:disabled):hover {
   background-color: transparent;
-  color: #FFFFFF; }
+  color: #56666F; }
 
 /* line 6019, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .view-player-new .nowplaying-add-button:not(:disabled):hover:active {
   background: transparent;
-  color: #808080;
+  color: #8b949a;
   transform: scale(1); }
 
 @media (-webkit-min-device-pixel-ratio: 2) {

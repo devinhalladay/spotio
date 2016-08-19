@@ -99,7 +99,7 @@
   left: 0px;
   width: 100%;
   height: 100%;
-  background-color: #404040;
+  background-color: $secondary-view-bg-color;
   opacity: 0.6;
   z-index: 999 !important;
   display: none;
@@ -109,13 +109,13 @@
 }
 .station-creator-box {
   position: fixed;
-  background: #181818;
+  background: $secondary-view-bg-color;
   width: 258px;
   top: 0px;
   right: -258px;
   height: 100%;
   z-index: 1000 !important;
-  border-left: 1px solid #282828;
+  border-left: 1px solid $primary-border-color;
   -webkit-animation-duration: .2s;
   -moz-animation-duration: .2s;
   -o-animation-duration: .2s;
@@ -137,9 +137,9 @@
   -o-transform: translateX(0px);
   transform: translateX(0px);
   right: 0px;
-  -moz-box-shadow: 1px 5px 16px 3px #181818;
-  -webkit-box-shadow: 1px 5px 16px 3px #181818;
-  box-shadow: 1px 5px 16px 3px #181818;
+  -moz-box-shadow: 1px 5px 16px 3px $primary-text-color;
+  -webkit-box-shadow: 1px 5px 16px 3px $primary-text-color;
+  box-shadow: 1px 5px 16px 3px $primary-text-color;
 }
 .station-creator-box .media-object-track .mo-info {
   margin-left: 0 !important;
@@ -185,7 +185,7 @@
   -o-user-select: none;
   user-select: none;
   color: #FFFFFF !important;
-  background-color: #333333 !important;
+  background-color: darken($secondary-view-bg-color, 5%) !important;
   margin-bottom: 2px;
   height: 50px;
   position: relative;
@@ -195,7 +195,7 @@
   transition: background-color ease-in-out 100ms;
 }
 .station-creator-box .selectable:hover {
-  background-color: #4d4d4d !important;
+  background-color: darken($secondary-view-bg-color, 10%) !important;
 }
 .station-creator-box .selectable > a {
   position: absolute;
@@ -210,11 +210,11 @@
   margin-bottom: 0 !important;
 }
 .station-creator-box .selectable.selected {
-  background-color: #4d4d4d !important;
+  background-color: $secondary-text-color !important;
 }
 .station-creator-box .selectable.selected .label {
-  color: #bababa !important;
-  border-color: #666666 !important;
+  color: #ffffff !important;
+  border-color: $primary-border-color !important;
 }
 .station-creator-box .selectable.selected:hover {
   cursor: pointer;
@@ -223,7 +223,7 @@
   outline: none;
 }
 .station-creator-box .input-container {
-  background-color: #404040;
+  background-color: darken($secondary-view-bg-color, 5%);
   height: 70px;
   width: 100%;
   padding-top: 20px;
@@ -232,7 +232,7 @@
   position: absolute;
   top: 25px;
   left: 30px;
-  color: #A0A0A0;
+  color: #ffffff;
   z-index: 2;
 }
 .station-creator-box .input-container .spoticon-search-16 :before {
@@ -241,8 +241,8 @@
 }
 .station-creator-box .input-container input {
   outline: 0;
-  background-color: #181818;
-  color: #A0A0A0;
+  background-color: $secondary-text-color;
+  color: #ffffff;
   border: 0px;
   border-radius: 4px;
   padding: 6px 22px 6px 34px;
@@ -250,11 +250,25 @@
   display: block;
   width: 84%;
 }
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #ffffff;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #ffffff;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #ffffff;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #ffffff;
+}
+
 .station-creator-box .input-container .clear-input {
   position: absolute;
   top: 25px;
   right: 25px;
-  color: #A0A0A0;
+  color: #ffffff;
   width: 16px;
   height: 16px;
   z-index: 10;
@@ -286,7 +300,7 @@
 .station-creator-box .results-container .result-category .category-header {
   text-transform: uppercase;
   font-size: 14px;
-  color: #A0A0A0 !important;
+  color: $primary-text-color !important;
   margin-top: 21px;
   margin-bottom: 6px;
 }

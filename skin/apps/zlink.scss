@@ -2094,7 +2094,7 @@
 }
 .view-player #connect:hover #devices-label,
 .view-player #connect:hover #devices-icon {
-  color: #FFFFFF;
+  color: $primary-accent-color;
 }
 .view-player #connect:hover #devices-label.remote,
 .view-player #connect:hover #devices-icon.remote {
@@ -2128,7 +2128,7 @@
   left: auto;
   top: auto;
   display: block;
-  background: #333333;
+  background: $secondary-view-bg-color;
   border-radius: 3px;
   padding: 0;
   margin: 0;
@@ -2143,10 +2143,10 @@
   line-height: 24px;
   letter-spacing: normal;
   font-weight: 400;
-  color: #FFFFFF;
+  color: $primary-text-color;
   text-transform: normal;
   position: relative;
-  background-color: #333333;
+  background-color: $secondary-view-bg-color;
   text-align: left;
 }
 .view-player #connect-picker #connect-container #connect-title span {
@@ -2167,9 +2167,9 @@
 .view-player #connect-picker #connect-container #connect-upsell,
 .view-player #connect-picker #connect-container #connect-header,
 .view-player #connect-picker #connect-container #connect-offline {
-  background-color: #282828;
-  border-bottom: 1px solid #404040;
-  border-top: 1px solid #404040;
+  background-color: darken($secondary-view-bg-color, 5%);
+  border-bottom: 1px solid $secondary-text-color;
+  border-top: 1px solid $secondary-text-color;
   text-align: center;
   margin: 0;
   padding: 12px;
@@ -2222,14 +2222,14 @@
   padding-bottom: 10px;
 }
 .view-player #connect-picker #connect-container #connect-offline .title {
-  color: #FFFFFF;
+  color: $primary-text-color;
   margin-top: 1em;
   margin-bottom: 1em;
   font-size: 110%;
   display: block;
 }
 .view-player #connect-picker #connect-container #connect-devices {
-  border-top: 1px solid #404040;
+  border-top: 1px solid $secondary-text-color;
   max-height: 300px;
   overflow-y: auto;
 }
@@ -2242,8 +2242,8 @@
 .view-player #connect-picker #connect-container #connect-devices ul li {
   margin: 0;
   padding: 0;
-  background-color: #282828;
-  border-bottom: 1px solid #404040;
+  background-color: darken($secondary-view-bg-color, 5%);
+  border-bottom: 1px solid $secondary-text-color;
   height: 60px;
   position: relative;
   text-align: center;
@@ -2273,7 +2273,7 @@
 }
 .view-player #connect-picker #connect-container #connect-devices ul li .device-subtitle {
   font-size: 10pt;
-  color: #FFF;
+  color: $primary-text-color;
 }
 .view-player #connect-picker #connect-container #connect-devices ul li .device {
   position: absolute;
@@ -2313,7 +2313,7 @@
 }
 .view-player #connect-picker #connect-container #connect-devices ul li.selectable:hover,
 .view-player #connect-picker #connect-container #connect-devices ul li.selectable:focus {
-  background-color: #333333;
+  background-color: darken($secondary-view-bg-color, 10%);
 }
 .view-player #connect-picker #connect-container #connect-devices ul li.device-self.active .device-icon {
   display: none;
@@ -2336,7 +2336,7 @@
   vertical-align: middle;
 }
 .view-player #connect-picker #connect-container #connect-devices ul li.connecting .device-icon:before {
-  color: #FFF;
+  color: $primary-text-color;
 }
 .view-player #connect-picker #connect-container #connect-devices ul li.connecting .spoticon-chromecast-connected-16::before {
   animation: castloading 0.8s linear infinite alternate;
@@ -5865,7 +5865,7 @@ body.remotebar #connect-container-background-new-chrome-style {
 .view-player-new .extra-controls-container .button-lyrics.drop-target-active:not(:disabled):hover,
 .view-player-new .extra-controls-container .button-queue.drop-target-active:not(:disabled):hover,
 .view-player-new .extra-controls-container .button-devices.drop-target-active:not(:disabled):hover {
-  background-color: #FFFFFF;
+  background-color: $primary-text-color;
 }
 .view-player-new .extra-controls-container .volumebar-container {
   width: 56px;
@@ -5958,10 +5958,10 @@ body.remotebar #connect-container-background-new-chrome-style {
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.015em;
-  color: #FFFFFF;
+  color: $primary-text-color;
 }
 .view-player-new .track a {
-  color: #FFFFFF;
+  color: $primary-text-color;
 }
 .view-player-new .artist {
   font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
@@ -6014,11 +6014,11 @@ body.remotebar #connect-container-background-new-chrome-style {
 .view-player-new .nowplaying-add-button.contextmenu-active,
 .view-player-new .nowplaying-add-button:not(:disabled):hover {
   background-color: transparent;
-  color: #FFFFFF;
+  color: $primary-text-color;
 }
 .view-player-new .nowplaying-add-button:not(:disabled):hover:active {
   background: transparent;
-  color: #808080;
+  color: $secondary-text-color-hover;
   transform: scale(1);
 }
 @media (-webkit-min-device-pixel-ratio: 2) {

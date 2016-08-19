@@ -334,20 +334,25 @@
 .tours a:hover {
   text-decoration: none;
 }
+.tours a .calendar-icon .calendar-icon-day {
+  background-color: $secondary-view-bg-color;
+  color: $primary-text-color;
+}
 .tours a:hover .calendar-icon .calendar-icon-day {
-  background-color: $primary-text-color;
+  background-color: $secondary-text-color-hover;
+  color: #ffffff;
 }
 .tours .tour-details {
   line-height: 1.3;
 }
 .tours .tour-caption {
-  color: #A0A0A0;
+  color: $secondary-text-color;
 }
 .tours .tour-title {
-  color: #FFFFFF;
+  color: $primary-text-color;
 }
 .tours .tour-location {
-  color: #A0A0A0;
+  color: $secondary-text-color;
 }
 /*
   Modal popover
