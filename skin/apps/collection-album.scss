@@ -13,7 +13,7 @@ body.show-offline-screen {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #181818;
+  background-color: $main-view-bg-color;
 }
 /* Override crazy default in glue */
 .tl-time {

@@ -13,7 +13,7 @@ body.show-offline-screen {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #181818; }
+  background-color: #ffffff; }
 
 /* Override crazy default in glue */
 /* line 19, /Users/Devin/GitHub/spotio/skin/apps/collection-album.scss */

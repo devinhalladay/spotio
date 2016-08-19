@@ -18934,7 +18934,7 @@ th[data-sort]:hover {
   top: 0;
   left: 0;
   text-align: center;
-  background-image: url("https://d2j0f09xqmv212.cloudfront.net/images/error-bg.jpg");
+  background-image: url("https://s3.postimg.org/y6ubu8our/error_bg.jpg");
   background-size: cover;
   background-position: center; }
 
@@ -18942,7 +18942,7 @@ th[data-sort]:hover {
 .error-and-offline:before {
   content: ' ';
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(255, 255, 255, 0.75);
   top: 0;
   bottom: 0;
   left: 0;

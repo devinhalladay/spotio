@@ -154,7 +154,7 @@ module.exports = function(grunt) {
         ].join('&&')
       },
       copyspotifyapp: {
-        command: 'cp -r ".tmp/Spotify.app" "dist/"'
+        command: 'sudo cp -r ".tmp/Spotify.app" "dist/"'
       }
     },
 
