@@ -554,27 +554,33 @@
 }
 .navbar-old-chrome-style.sidebar-scroll-element a:not(.button):not(.folder):hover,
 .navbar-old-chrome-style.sidebar-scroll-element .item:not(.folder):hover {
-  color: $primary-text-color;
+  color: $primary-accent-color;
 }
 .navbar-old-chrome-style.sidebar-scroll-element a:not(.button):not(.folder):hover .menu-accessory:before,
 .navbar-old-chrome-style.sidebar-scroll-element .item:not(.folder):hover .menu-accessory:before {
-  color: $primary-text-color;
+  color: $primary-accent-color;
 }
 .navbar-old-chrome-style.sidebar-scroll-element a:not(.button).folder .title:hover,
 .navbar-old-chrome-style.sidebar-scroll-element .item.folder .title:hover {
-  color: $primary-text-color;
+  color: $primary-accent-color--dark;
 }
 .navbar-old-chrome-style.sidebar-scroll-element a:not(.button).active,
 .navbar-old-chrome-style.sidebar-scroll-element .item.active,
 .navbar-old-chrome-style.sidebar-scroll-element a:not(.button).active a,
 .navbar-old-chrome-style.sidebar-scroll-element .item.active a {
-  color: $primary-text-color;
+  color: $primary-accent-color;
+  &:hover {
+    color: $primary-accent-color--dark;
+  }
 }
 .navbar-old-chrome-style.sidebar-scroll-element a:not(.button).active .menu-accessory:before,
 .navbar-old-chrome-style.sidebar-scroll-element .item.active .menu-accessory:before,
 .navbar-old-chrome-style.sidebar-scroll-element a:not(.button).active a .menu-accessory:before,
 .navbar-old-chrome-style.sidebar-scroll-element .item.active a .menu-accessory:before {
-  color: $primary-text-color;
+  color: $primary-accent-color;
+  &:hover {
+    color: $primary-accent-color--dark;
+  }
 }
 .navbar-old-chrome-style.sidebar-scroll-element a:not(.button).active:after,
 .navbar-old-chrome-style.sidebar-scroll-element .item.active:after,
