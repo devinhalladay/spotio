@@ -11,7 +11,7 @@
 /* line 13, /Users/Devin/GitHub/spotio/skin/apps/people.scss */
 .people-background-mask {
   content: ' ';
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(86, 102, 111, 0.75);
   height: 100%;
   margin: 0;
   overflow: hidden; }

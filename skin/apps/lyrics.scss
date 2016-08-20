@@ -146,7 +146,7 @@ div.visualization-container {
   width: 210px;
   height: 88px;
   background-color: #333;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 10px 0 rgba($primary-text-color, 0.25);
   -webkit-transition: opacity 0.25s;
 }
 .menu-row-select {

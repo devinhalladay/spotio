@@ -111,8 +111,8 @@
   height: 122px;
   transition: bottom 0.5s;
   pointer-events: auto;
-  border-top: 1px solid #282828;
-  background-color: #181818; }
+  border-top: 1px solid #E5E8EA;
+  background-color: #f2f3f6; }
 
 /* line 105, /Users/Devin/GitHub/spotio/skin/apps/genre.scss */
 .billboard-ad .footer .companion {
@@ -701,7 +701,7 @@ html.glue2 #view-video-ad .saf-video-takeover-btn-max {
 
 /* line 616, /Users/Devin/GitHub/spotio/skin/apps/genre.scss */
 .bfs-debug-controls-controls {
-  background-color: #181818;
+  background-color: #f2f3f6;
   border-radius: 8px;
   padding: 8px;
   position: absolute;
@@ -769,9 +769,9 @@ html.glue2 #view-video-ad .saf-video-takeover-btn-max {
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: -webkit-gradient(linear, left 0%, left 100%, from(rgba(24, 24, 24, 0)), to(rgba(24, 24, 24, 0.8)));
-  background-image: -moz-linear-gradient(top, rgba(24, 24, 24, 0) 0%, rgba(24, 24, 24, 0.8) 100%);
-  background-image: linear-gradient(to bottom, rgba(24, 24, 24, 0) 0%, rgba(24, 24, 24, 0.8) 100%);
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(rgba(86, 102, 111, 0)), to(rgba(86, 102, 111, 0.8)));
+  background-image: -moz-linear-gradient(top, rgba(86, 102, 111, 0) 0%, rgba(86, 102, 111, 0.8) 100%);
+  background-image: linear-gradient(to bottom, rgba(86, 102, 111, 0) 0%, rgba(86, 102, 111, 0.8) 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00181818', endColorstr='#cc181818', GradientType=0); }
 

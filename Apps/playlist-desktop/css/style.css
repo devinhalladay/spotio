@@ -338,7 +338,7 @@ body.loaded-tracklist .throbber-tracklist {
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(86, 102, 111, 0.75);
   z-index: 1; }
 
 /* line 291, /Users/Devin/GitHub/spotio/skin/apps/playlist-desktop.scss */

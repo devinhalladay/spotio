@@ -248,9 +248,9 @@
   -moz-transition: opacity 0.3s linear, top 0.3s ease-out;
   -o-transition: opacity 0.3s linear, top 0.3s ease-out;
   transition: opacity 0.3s linear, top 0.3s ease-out;
-  -webkit-box-shadow: 4px 6px 41px 0px rgba(0, 0, 0, 0.82);
-  -moz-box-shadow: 4px 6px 41px 0px rgba(0, 0, 0, 0.82);
-  box-shadow: 4px 6px 41px 0px rgba(0, 0, 0, 0.82);
+  -webkit-box-shadow: 4px 6px 41px 0px rgba($primary-text-color, 0.82);
+  -moz-box-shadow: 4px 6px 41px 0px rgba($primary-text-color, 0.82);
+  box-shadow: 4px 6px 41px 0px rgba($primary-text-color, 0.82);
 }
 .popover.modal.fade {
   display: block;

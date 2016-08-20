@@ -56,7 +56,7 @@ html {
 
 /* line 54, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .dim-app:after {
-  background-color: rgba(24, 24, 24, 0.8);
+  background-color: rgba(86, 102, 111, 0.8);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -662,7 +662,7 @@ html {
   right: 0;
   width: 100%;
   height: 48px;
-  background: linear-gradient(to bottom, rgba(24, 24, 24, 0), #181818 100%); }
+  background: linear-gradient(to bottom, rgba(86, 102, 111, 0), #181818 100%); }
 
 /* line 592, /Users/Devin/GitHub/spotio/skin/apps/creator-about.scss */
 .biography-text.images-0 {
@@ -758,7 +758,7 @@ html {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(86, 102, 111, 0.5);
   text-align: center;
   pointer-events: none;
   line-height: 25.5vw; }
@@ -984,7 +984,7 @@ html {
 .edit-image__overlay {
   display: none;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(86, 102, 111, 0.4);
   top: 0;
   bottom: 0;
   left: 0;
@@ -1007,7 +1007,7 @@ html {
 .edit-view {
   position: absolute;
   z-index: 10;
-  background-color: #181818;
+  background-color: #f2f3f6;
   width: 100%;
   pointer-events: auto;
   top: 0; }

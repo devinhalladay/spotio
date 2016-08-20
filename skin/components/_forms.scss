@@ -362,13 +362,13 @@ textarea.input-lg {
 }
 .has-warning .form-control {
   border-color: #FFFFFF;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-box-shadow: inset 0 1px 1px rgba($primary-text-color, 0.075);
+  box-shadow: inset 0 1px 1px rgba($primary-text-color, 0.075);
 }
 .has-warning .form-control:focus {
   border-color: #e6e6e6;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ffffff;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ffffff;
+  -webkit-box-shadow: inset 0 1px 1px rgba($primary-text-color, 0.075), 0 0 6px #ffffff;
+  box-shadow: inset 0 1px 1px rgba($primary-text-color, 0.075), 0 0 6px #ffffff;
 }
 .has-error .help-block,
 .has-error .control-label,
@@ -380,13 +380,13 @@ textarea.input-lg {
 }
 .has-error .form-control {
   border-color: #CD1A2B;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-box-shadow: inset 0 1px 1px rgba($primary-text-color, 0.075);
+  box-shadow: inset 0 1px 1px rgba($primary-text-color, 0.075);
 }
 .has-error .form-control:focus {
   border-color: #a01422;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #eb626f;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #eb626f;
+  -webkit-box-shadow: inset 0 1px 1px rgba($primary-text-color, 0.075), 0 0 6px #eb626f;
+  box-shadow: inset 0 1px 1px rgba($primary-text-color, 0.075), 0 0 6px #eb626f;
 }
 .has-success .help-block,
 .has-success .control-label,
@@ -398,13 +398,13 @@ textarea.input-lg {
 }
 .has-success .form-control {
   border-color: $primary-accent-color;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-box-shadow: inset 0 1px 1px rgba($primary-text-color, 0.075);
+  box-shadow: inset 0 1px 1px rgba($primary-text-color, 0.075);
 }
 .has-success .form-control:focus {
   border-color: #18a94c;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #6feb9c;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #6feb9c;
+  -webkit-box-shadow: inset 0 1px 1px rgba($primary-text-color, 0.075), 0 0 6px #6feb9c;
+  box-shadow: inset 0 1px 1px rgba($primary-text-color, 0.075), 0 0 6px #6feb9c;
 }
 .form-control-static {
   margin-bottom: 0;

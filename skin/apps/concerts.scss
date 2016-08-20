@@ -99,8 +99,8 @@
   height: 122px;
   transition: bottom 0.5s;
   pointer-events: auto;
-  border-top: 1px solid #282828;
-  background-color: #181818;
+  border-top: 1px solid $primary-border-color;
+  background-color: $secondary-view-bg-color;
 }
 .billboard-ad .footer .companion {
   position: absolute;
@@ -581,7 +581,7 @@ html.glue2 #view-video-ad .saf-video-takeover-btn-max {
   position: static;
 }
 .change-location__standalone {
-  background: #181818;
+  background: $primary-border-color;
   display: flex;
   align-items: center;
 }
@@ -593,7 +593,7 @@ html.glue2 #view-video-ad .saf-video-takeover-btn-max {
 .change-location__standalone .change-location__list {
   position: absolute;
   width: 100%;
-  background-color: #282828;
+  background-color: $secondary-view-bg-color;
 }
 .change-location__standalone .change-location__item {
   margin-right: 0;

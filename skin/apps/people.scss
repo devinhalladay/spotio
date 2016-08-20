@@ -12,7 +12,7 @@
 }
 .people-background-mask {
   content: ' ';
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba($primary-text-color, 0.75);
   height: 100%;
   margin: 0;
   overflow: hidden;

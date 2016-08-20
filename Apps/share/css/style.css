@@ -246,7 +246,7 @@ body.sending .popover-footer .throbber {
 
 /* line 207, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #user-list .selected-user {
-  background: #282828;
+  background: #56666F;
   border-radius: 3px;
   color: #FFFFFF;
   cursor: default;
@@ -288,7 +288,7 @@ body.sending .popover-footer .throbber {
   left: -1px;
   right: -1px;
   z-index: 10;
-  background-color: #181818; }
+  background-color: #E5E8EA; }
 
 /* line 248, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #user-results .throbber {
@@ -308,7 +308,7 @@ body.sending .popover-footer .throbber {
 
 /* line 260, /Users/Devin/GitHub/spotio/skin/apps/share.scss */
 #user-results .no-results {
-  color: #888;
+  color: #9CA6AC;
   text-align: center; }
 
 /* Options view */

@@ -5,7 +5,7 @@
 }
 html {
   font-size: 62.5%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgba($primary-text-color, 0);
   color: $primary-text-color;
   overflow-y: scroll;
   background-color: $main-view-bg-color;

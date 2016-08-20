@@ -112,10 +112,10 @@
   list-style: none;
   background-color: $secondary-view-bg-color;
   border: 1px solid $primary-border-color;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba($primary-text-color, 0.15);
   border-radius: 3px;
-  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  -webkit-box-shadow: 0 6px 12px rgba($primary-text-color, 0.175);
+  box-shadow: 0 6px 12px rgba($primary-text-color, 0.175);
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding-box;
   background-clip: padding-box;

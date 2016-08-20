@@ -205,7 +205,7 @@ body.sending .popover-footer .throbber {
   /* override glue .form-control */
 }
 #user-list .selected-user {
-  background: #282828;
+  background: $primary-text-color;
   border-radius: 3px;
   color: #FFFFFF;
   cursor: default;
@@ -243,7 +243,7 @@ body.sending .popover-footer .throbber {
   left: -1px;
   right: -1px;
   z-index: 10;
-  background-color: #181818;
+  background-color: $primary-border-color;
 }
 #user-results .throbber {
   margin: 0 auto;
@@ -258,7 +258,7 @@ body.sending .popover-footer .throbber {
   display: none;
 }
 #user-results .no-results {
-  color: #888;
+  color: $secondary-text-color;
   text-align: center;
 }
 /* Options view */

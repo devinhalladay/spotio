@@ -44,7 +44,7 @@ body,
   right: 0;
   left: 0;
   z-index: -1;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba($primary-text-color, 0.7);
 }
 .full-screen-modal--container > div {
   position: fixed;
@@ -55,7 +55,7 @@ body,
   right: 0;
 }
 .full-screen-modal--container > div:not(.modal-backdrop--hidden) {
-  background-color: rgba(24, 24, 24, 0.8);
+  background-color: rgba($primary-text-color, 0.8);
 }
 /**
  * Our modal component styles.
@@ -142,7 +142,7 @@ body,
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba($primary-text-color, 0.7);
   z-index: 100;
 }
 .edit-header-image--error {
@@ -279,7 +279,7 @@ body,
   top: 320px;
   height: 44px;
   margin-top: -44px;
-  background: rgba(24, 24, 24, 0.7);
+  background: rgba($primary-text-color, 0.7);
 }
 .placeholder-desktop .header-image--overlay {
   top: -125px;
@@ -394,7 +394,7 @@ input[type=range].slider::-webkit-slider-thumb {
   background: #ffffff;
   border-radius: 50%;
   border: 3px solid #ffffff;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 3px rgba($primary-text-color, 0.4);
   display: block;
   height: 12px;
   width: 12px;

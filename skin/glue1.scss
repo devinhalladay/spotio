@@ -116,7 +116,7 @@
   filter: alpha(opacity=30);
 }
 .pf-media-object {
-  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 1px 5px rgba($primary-text-color, 0.4);
   top: 36px;
   display: none;
   left: 50%;
@@ -645,9 +645,9 @@
   right: 0;
   top: 20px;
   width: 100%;
-  background-image: -webkit-gradient(linear, 70% top, 100% top, from(rgba(24, 24, 24, 0)), to($main-view-bg-color));
-  background-image: -moz-linear-gradient(left, rgba(24, 24, 24, 0) 70%, $main-view-bg-color 100%);
-  background-image: linear-gradient(to right, rgba(24, 24, 24, 0) 70%, $main-view-bg-color 100%);
+  background-image: -webkit-gradient(linear, 70% top, 100% top, from(rgba($primary-text-color, 0)), to($main-view-bg-color));
+  background-image: -moz-linear-gradient(left, rgba($primary-text-color, 0) 70%, $main-view-bg-color 100%);
+  background-image: linear-gradient(to right, rgba($primary-text-color, 0) 70%, $main-view-bg-color 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00181818', endColorstr='#ff181818', GradientType=1);
 }

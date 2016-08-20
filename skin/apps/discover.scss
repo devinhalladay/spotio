@@ -99,8 +99,8 @@
   height: 122px;
   transition: bottom 0.5s;
   pointer-events: auto;
-  border-top: 1px solid #282828;
-  background-color: #181818;
+  border-top: 1px solid $primary-border-color;
+  background-color: $secondary-view-bg-color;
 }
 .billboard-ad .footer .companion {
   position: absolute;

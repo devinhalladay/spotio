@@ -1126,7 +1126,7 @@
   padding-left: 28px;
   padding-right: 28px;
   border-radius: 14px;
-  background: rgba(24, 24, 24, 0.7);
+  background: rgba($primary-text-color, 0.7);
   color: $primary-text-color;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: transform, box-shadow, color, background-color;
@@ -1742,7 +1742,7 @@
   left: 0;
   right: 0;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.67);
+  background-color: rgba($primary-text-color, 0.67);
   z-index: 1;
 }
 #view-now-playing {
@@ -6310,7 +6310,7 @@ body.remotebar #connect-container-background-new-chrome-style {
   padding-left: 24px;
   padding-right: 24px;
   border-radius: 12px;
-  background: rgba(24, 24, 24, 0.7);
+  background: rgba($primary-text-color, 0.7);
   color: #FFFFFF;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
   transition-property: transform, box-shadow, color, background-color;
@@ -6321,7 +6321,7 @@ body.remotebar #connect-container-background-new-chrome-style {
 }
 .upgrade-button .blue-border.contextmenu-active,
 .upgrade-button .blue-border:not(:disabled):hover {
-  background-color: rgba(24, 24, 24, 0.7);
+  background-color: rgba($primary-text-color, 0.7);
   color: #ffffff;
 }
 .upgrade-button .blue-border:not(:disabled):hover:active {
@@ -6443,10 +6443,10 @@ body.remotebar #connect-container-background-new-chrome-style {
 }
 #view-leaderboard-ad {
   position: relative;
-  background-color: #181818;
+  background-color: $secondary-view-bg-color
 }
 #view-leaderboard-ad #leaderboard-ad-wrapper {
-  border-top: 1px solid #282828;
+  border-top: 1px solid $primary-border-color;
 }
 #view-leaderboard-ad .ad-feedback-button {
   position: absolute;
@@ -6463,7 +6463,7 @@ body.remotebar #connect-container-background-new-chrome-style {
   right: 0px;
   top: 1px;
   color: $primary-text-color;
-  background: #181818;
+  background: $secondary-view-bg-color;
   font-size: 24px;
   padding: 10px 11px 11px 13px;
   cursor: pointer;
@@ -6750,7 +6750,7 @@ body.remotebar #connect-container-background-new-chrome-style {
   left: 0;
   bottom: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba($primary-text-color, 0.75);
   z-index: 5;
 }
 #view-modal .playlist-annotate.drag.drag-valid .dropzone-wrapper {
@@ -7123,7 +7123,7 @@ body.remotebar #connect-container-background-new-chrome-style {
     right: 0;
     top: 0;
     left: 0;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 50%, #000000 100%);
+    background: linear-gradient(to bottom, rgba($primary-text-color, 0.7) 0%, rgba($primary-text-color, 0.7) 50%, #000000 100%);
   }
   #view-player #miniplayer .cover {
     position: relative;
@@ -7543,7 +7543,7 @@ body.video .view-player-new #lyrics-button {
   height: 30px;
   min-width: 30px;
   border: none;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba($primary-text-color, 0.8);
   color: white;
   outline: none;
   background-image: url('http://zlink.app.spotify.com/images/icon-sad.png');
@@ -7676,8 +7676,8 @@ body.video .view-player-new #lyrics-button {
   height: 122px;
   transition: bottom 0.5s;
   pointer-events: auto;
-  border-top: 1px solid #282828;
-  background-color: #181818;
+  border-top: 1px solid $primary-border-color;
+  background-color: $secondary-view-bg-color;
 }
 .billboard-ad .footer .companion {
   position: absolute;

@@ -30,7 +30,7 @@
 .slider div {
   background: $primary-border-color;
   border-radius: inherit;
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.75), 0 0 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 1px rgba($primary-text-color, 0.75), 0 0 3px rgba($primary-text-color, 0.3);
   height: 22px;
   left: -5px;
   position: absolute;

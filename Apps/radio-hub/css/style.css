@@ -85,7 +85,7 @@
   left: 0px;
   width: 100%;
   height: 100%;
-  background-color: #404040;
+  background-color: #f2f3f6;
   opacity: 0.6;
   z-index: 999 !important;
   display: none; }
@@ -97,13 +97,13 @@
 /* line 110, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
 .station-creator-box {
   position: fixed;
-  background: #181818;
+  background: #f2f3f6;
   width: 258px;
   top: 0px;
   right: -258px;
   height: 100%;
   z-index: 1000 !important;
-  border-left: 1px solid #282828;
+  border-left: 1px solid #E5E8EA;
   -webkit-animation-duration: .2s;
   -moz-animation-duration: .2s;
   -o-animation-duration: .2s;
@@ -126,9 +126,9 @@
   -o-transform: translateX(0px);
   transform: translateX(0px);
   right: 0px;
-  -moz-box-shadow: 1px 5px 16px 3px #181818;
-  -webkit-box-shadow: 1px 5px 16px 3px #181818;
-  box-shadow: 1px 5px 16px 3px #181818; }
+  -moz-box-shadow: 1px 5px 16px 3px #56666F;
+  -webkit-box-shadow: 1px 5px 16px 3px #56666F;
+  box-shadow: 1px 5px 16px 3px #56666F; }
 
 /* line 144, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
 .station-creator-box .media-object-track .mo-info {
@@ -185,7 +185,7 @@
   -o-user-select: none;
   user-select: none;
   color: #FFFFFF !important;
-  background-color: #333333 !important;
+  background-color: #e3e5ec !important;
   margin-bottom: 2px;
   height: 50px;
   position: relative;
@@ -196,7 +196,7 @@
 
 /* line 197, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
 .station-creator-box .selectable:hover {
-  background-color: #4d4d4d !important; }
+  background-color: #d4d7e1 !important; }
 
 /* line 200, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
 .station-creator-box .selectable > a {
@@ -214,12 +214,12 @@
 
 /* line 212, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
 .station-creator-box .selectable.selected {
-  background-color: #4d4d4d !important; }
+  background-color: #9CA6AC !important; }
 
 /* line 215, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
 .station-creator-box .selectable.selected .label {
-  color: #bababa !important;
-  border-color: #666666 !important; }
+  color: #ffffff !important;
+  border-color: #E5E8EA !important; }
 
 /* line 219, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
 .station-creator-box .selectable.selected:hover {
@@ -231,7 +231,7 @@
 
 /* line 225, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
 .station-creator-box .input-container {
-  background-color: #404040;
+  background-color: #e3e5ec;
   height: 70px;
   width: 100%;
   padding-top: 20px; }
@@ -241,7 +241,7 @@
   position: absolute;
   top: 25px;
   left: 30px;
-  color: #A0A0A0;
+  color: #ffffff;
   z-index: 2; }
 
 /* line 238, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
@@ -252,8 +252,8 @@
 /* line 242, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
 .station-creator-box .input-container input {
   outline: 0;
-  background-color: #181818;
-  color: #A0A0A0;
+  background-color: #9CA6AC;
+  color: #ffffff;
   border: 0px;
   border-radius: 4px;
   padding: 6px 22px 6px 34px;
@@ -262,21 +262,41 @@
   width: 84%; }
 
 /* line 253, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #ffffff; }
+
+/* line 256, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #ffffff; }
+
+/* line 259, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #ffffff; }
+
+/* line 262, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #ffffff; }
+
+/* line 265, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
 .station-creator-box .input-container .clear-input {
   position: absolute;
   top: 25px;
   right: 25px;
-  color: #A0A0A0;
+  color: #ffffff;
   width: 16px;
   height: 16px;
   z-index: 10;
   cursor: pointer; }
 
-/* line 263, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
+/* line 275, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
 .station-creator-box .input-container .clear-input:before {
   font-size: 11px; }
 
-/* line 266, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
+/* line 278, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
 .station-creator-box .results-container {
   overflow-y: auto;
   text-shadow: initial;
@@ -291,73 +311,73 @@
   left: 0px;
   padding-bottom: 20px; }
 
-/* line 280, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
+/* line 292, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
 .station-creator-box .results-container .result-category {
   padding: 0px;
   width: 258px;
   margin: 0;
   position: relative; }
 
-/* line 286, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
+/* line 298, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
 .station-creator-box .results-container .result-category .category-header {
   text-transform: uppercase;
   font-size: 14px;
-  color: #A0A0A0 !important;
+  color: #56666F !important;
   margin-top: 21px;
   margin-bottom: 6px; }
 
-/* line 293, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
+/* line 305, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
 .station-creator-box .results-container .result-category .category-header,
 .station-creator-box .results-container .result-category .results {
   width: 88%;
   margin-left: auto;
   margin-right: auto; }
 
-/* line 299, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
+/* line 311, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
 .offline .error-and-offline {
   display: block; }
 
-/* line 302, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
+/* line 314, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
 .offline .error-and-offline .offline-content {
   display: block; }
 
-/* line 305, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
+/* line 317, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
 .header {
   width: 100%;
   display: block; }
 
-/* line 309, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
+/* line 321, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
 .header .header-name {
   float: left; }
 
-/* line 312, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
+/* line 324, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
 .header .station-creator-button-container {
   float: right;
   padding-top: 40px; }
 
-/* line 316, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
+/* line 328, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
 .media-objects-container {
   overflow: auto; }
 
-/* line 319, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
+/* line 331, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
 .single-media-object {
   width: 300px; }
 
-/* line 322, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
+/* line 334, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
 .about-info-list {
   list-style: none;
   padding: 0;
   margin: 0; }
 
-/* line 327, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
+/* line 339, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
 .my-loader {
   margin-top: 20px; }
 
-/* line 330, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
+/* line 342, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
 .genre-stations .genres {
   padding: 0 50px;
   text-align: center; }
 
-/* line 334, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
+/* line 346, /Users/Devin/GitHub/spotio/skin/apps/radio-hub.scss */
 .genre-stations a {
   margin: 8px 5px; }
