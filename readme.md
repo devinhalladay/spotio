@@ -2,7 +2,7 @@
 
 ![Spotio screenshot](screenshot.png)
 
-I sorely miss Rdio. It was the perfect music streaming service: quality streaming, massive selection, perfect UX, beautiful UI, and wonderful social interaction features. When it was bought by Pandora, many of us were left out in the dust and were forced to choose between other services like Apple Music, Spotify, and Google Play Music.
+I sorely miss Rdio. It was the perfect music streaming service: quality streaming, massive selection, perfect UX, beautiful UI, and wonderful social interaction features. When it was bought by Pandora, many of us were left out in the dust and were forced to choose between lesser services like Apple Music, Spotify, and Google Play Music.
 
 **If you decided to go with Spotify but, like me, you miss Rdio's light UI, you're in luck—I discovered that you can skin the Spotify app with CSS.**
 
@@ -11,17 +11,21 @@ I sorely miss Rdio. It was the perfect music streaming service: quality streamin
 ---
 
 # Download
-To download Spotio, hit the [releases](https://github.com/devinhalladay/spotio/releases) page and download `Spotify.app.Binary.zip`. Unzip, and you'll have a shiny new Spotify.app that you can test out or replace your usual app with.
+**IMPORTANT:** Make sure you allow opening applications from anywhere in your Mac's Security preferences, otherwise this app will ***not*** work.
+
+**Make sure you quit (cmd + q) your local Spotify.app before launching my version, otherwise my version won't launch.**
+
+Download the latest release: [v0.9 Beta 2](https://github.com/devinhalladay/spotio/releases/download/v0.9-beta.2/Spotify.app.zip).
 
 # To-do
-- [ ] **HIGH PRIORITY:** Figure out how to get access to the rendered DOM from Chromium Embedded Framework so I can fully style all elements.
+- [x] **HIGH PRIORITY:** Figure out how to get access to the rendered DOM from Chromium Embedded Framework so I can fully style all elements.
 - [x] Streaming build system so I don't need to keep rebuilding and recompiling every single Sass file when I make a single change.
 - [ ] Add a Grunt task to setup the local repo for people who have just cloned this repo for development.
 - [ ] Add documentation guide for contributing to this repo.
-- [ ] Design new icons for the app for `v1.0.0` public release.
+- [ ] Design new icons for the app for `v1.1` public release.
 
 # Known Skin Issues
-- I'm not yet sure how to handle the release cycle for the Spotify app. While developing this skin I haven't encountered an update to the app so I don't know exactly how updates will effect Spotio. **For the time-being, please avoid updating your Spotify.app until I have figured out a new release cycle.**
+- I'm not yet sure how to handle the update cycle for the Spotify app. I don't know exactly how updates directly from Spotify will effect Spotio. **For the time-being, please avoid updating your Spotify.app until I have figured out a new release cycle.**
 - Contrast is an issue in some areas, but this is being fixed.
 - Some album or artist header images are styled on Spotify's servers so they break the Spotio skin's look and feel, often making header text unreadable. I'm working on a workaround for this.
 
