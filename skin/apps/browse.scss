@@ -532,7 +532,7 @@ html.glue2 #view-video-ad .saf-video-takeover-btn-max {
 .bfs-calendar-month {
   background-color: #ed1845;
   color: #FFFFFF;
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 10px;
   font-weight: 400;
   line-height: 10px;
@@ -543,7 +543,7 @@ html.glue2 #view-video-ad .saf-video-takeover-btn-max {
 .bfs-calendar-day {
   background-color: #333333;
   color: #FFFFFF;
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 23px;
   font-weight: 200;
   line-height: 23px;
@@ -720,7 +720,7 @@ html.glue2 #view-video-ad .saf-video-takeover-btn-max {
   font-size: 14px;
 }
 .section-divider-title {
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: normal;
@@ -730,7 +730,7 @@ html.glue2 #view-video-ad .saf-video-takeover-btn-max {
   margin: 0;
 }
 .section-auxiliary a {
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 11px;
   line-height: 16px;
   letter-spacing: 0.015em;
@@ -740,7 +740,7 @@ html.glue2 #view-video-ad .saf-video-takeover-btn-max {
   letter-spacing: 0.16em;
 }
 .section-divider-editorial-title {
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: normal;
@@ -752,7 +752,7 @@ html.glue2 #view-video-ad .saf-video-takeover-btn-max {
   clear: both;
   letter-spacing: 0px;
   text-transform: none;
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.015em;

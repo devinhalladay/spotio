@@ -113,7 +113,7 @@ body,
 
 /* line 102, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .friend .user .name {
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: "Whitney", "Helvetica Neue", Helvetica, Arial, "Yu Gothic UI", sans-serif;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.015em;
@@ -513,7 +513,7 @@ body,
 
 /* line 460, /Users/Devin/GitHub/spotio/skin/apps/buddy-list.scss */
 .card.inactive-friends-divider .section-divider > * {
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: "Whitney", "Helvetica Neue", Helvetica, Arial, "Yu Gothic UI", sans-serif;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: normal;

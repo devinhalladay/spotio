@@ -17,6 +17,42 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Whitney';
+  src: url('/fonts/Whitney-Light.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/Whitney-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/Whitney-Light.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/Whitney-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/Whitney-Light.svg#8ded3776ecf328b599f345385da981be') format('svg'); /* Legacy iOS */
+
+  font-style:   normal;
+  font-weight:  200;
+}
+
+@font-face {
+  font-family: 'Whitney';
+  src: url('/fonts/Whitney-Book.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/Whitney-Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/Whitney-Book.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/Whitney-Book.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/Whitney-Book.svg#f28578544bcd221f22d5dc42685e92f2') format('svg'); /* Legacy iOS */
+
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Whitney';
+  src: url('/fonts/Whitney-Bold.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/Whitney-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/Whitney-Bold.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/Whitney-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/Whitney-Bold.svg#ea4cb46c3a1f8ac3e9553c5155895e33') format('svg'); /* Legacy iOS */
+
+  font-style:   normal;
+  font-weight:  600;
+}
+
 /**
  * Typography
  *
@@ -148,7 +184,7 @@ a.text-secondary:focus,
   color: $secondary-text-color-hover;
 }
 .text-meta {
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 11px;
   line-height: 16px;
   letter-spacing: 0.015em;
@@ -317,6 +353,7 @@ h3,
 h4,
 h5 {
   color: $primary-text-color;
+  font-weight: 600;
   cursor: default;
 }
 .hdr-xxl a,
@@ -350,7 +387,7 @@ h5 {
 }
 h1,
 .hdr-xxl {
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 48px;
   line-height: 56px;
   letter-spacing: -0.005em;
@@ -360,7 +397,7 @@ h1,
 }
 h2,
 .hdr-xl {
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 36px;
   line-height: 44px;
   letter-spacing: -0.005em;
@@ -370,7 +407,7 @@ h2,
 }
 h3,
 .hdr-l {
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 28px;
   line-height: 36px;
   letter-spacing: -0.005em;
@@ -380,7 +417,7 @@ h3,
 }
 h4,
 .hdr-m {
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: normal;
@@ -390,7 +427,7 @@ h4,
 }
 h5,
 .hdr-sm {
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.015em;

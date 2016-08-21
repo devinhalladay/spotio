@@ -13,7 +13,7 @@ html {
 body {
   background-color: $main-view-bg-color;
   cursor: default;
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.015em;

@@ -34,7 +34,7 @@ hr {
 .divider .divider-title {
   background-color: $main-view-bg-color;
   padding: 0 6px;
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 11px;
   line-height: 16px;
   letter-spacing: 0.015em;
@@ -104,7 +104,7 @@ hr {
   clear: both;
 }
 .section-divider > * {
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: normal;
@@ -125,7 +125,7 @@ hr {
   float: right;
 }
 .section-divider .section-auxiliary a {
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 11px;
   line-height: 16px;
   letter-spacing: 0.015em;
@@ -143,7 +143,7 @@ hr {
   padding-bottom: 0;
 }
 .section-divider-small > * {
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.015em;

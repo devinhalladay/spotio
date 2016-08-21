@@ -45,7 +45,7 @@ h1 {
   margin-bottom: 20px;
 }
 .reactions {
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 11px;
   line-height: 16px;
   letter-spacing: 0.015em;
@@ -63,7 +63,7 @@ h1 {
 }
 .story {
   background: $secondary-view-bg-color;
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.015em;
@@ -97,7 +97,7 @@ h1 {
   margin-top: 8px;
 }
 .story .share-object .share-meta {
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 11px;
   line-height: 16px;
   letter-spacing: 0.015em;
@@ -108,7 +108,7 @@ h1 {
 }
 .story .share-group .lead {
   color: $primary-text-color;
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.015em;

@@ -168,7 +168,7 @@
   background-color: transparent;
   border: 0;
   z-index: 0;
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 11px;
   font-weight: 400;
   letter-spacing: 0.16em;
@@ -192,11 +192,11 @@
 }
 .button.button-green {
   height: 32px;
-  line-height: 30px;
+  line-height: $button-line-height;
   padding-top: 2px;
   padding-left: 32px;
   padding-right: 32px;
-  border-radius: 16px;
+  border-radius: $button-border-radius;
   background: $primary-accent-color;
   color: #FFFFFF;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
@@ -272,11 +272,11 @@
 }
 .button.button-white {
   height: 32px;
-  line-height: 30px;
+  line-height: $button-line-height;
   padding-top: 2px;
   padding-left: 32px;
   padding-right: 32px;
-  border-radius: 16px;
+  border-radius: $button-border-radius;
   background: $primary-border-color;
   color: $primary-text-color;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
@@ -352,11 +352,11 @@
 }
 .button.button-blue {
   height: 32px;
-  line-height: 30px;
+  line-height: $button-line-height;
   padding-top: 2px;
   padding-left: 32px;
   padding-right: 32px;
-  border-radius: 16px;
+  border-radius: $button-border-radius;
   background: #4687D6;
   color: #FFFFFF;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
@@ -432,11 +432,11 @@
 }
 .button.button-red {
   height: 32px;
-  line-height: 30px;
+  line-height: $button-line-height;
   padding-top: 2px;
   padding-left: 32px;
   padding-right: 32px;
-  border-radius: 16px;
+  border-radius: $button-border-radius;
   background: #CD1A2B;
   color: #FFFFFF;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
@@ -512,11 +512,11 @@
 }
 .button.button-gray {
   height: 32px;
-  line-height: 30px;
+  line-height: $button-line-height;
   padding-top: 2px;
   padding-left: 32px;
   padding-right: 32px;
-  border-radius: 16px;
+  border-radius: $button-border-radius;
   background: $secondary-text-color;
   color: #FFFFFF;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
@@ -592,11 +592,11 @@
 }
 .button.button-with-stroke {
   height: 32px;
-  line-height: 30px;
+  line-height: $button-line-height;
   padding-top: 2px;
   padding-left: 32px;
   padding-right: 32px;
-  border-radius: 16px;
+  border-radius: $button-border-radius;
   background: $secondary-view-bg-color;
   color: $primary-text-color;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
@@ -710,11 +710,11 @@
 .button.button-with-stroke.added,
 .button.button-with-stroke.active {
   height: 32px;
-  line-height: 30px;
+  line-height: $button-line-height;
   padding-top: 2px;
   padding-left: 32px;
   padding-right: 32px;
-  border-radius: 16px;
+  border-radius: $button-border-radius;
   background: rgba($secondary-text-color, 0.7);
   color: #ffffff;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
@@ -860,11 +860,11 @@
 }
 .button.button-facebook {
   height: 32px;
-  line-height: 30px;
+  line-height: $button-line-height;
   padding-top: 2px;
   padding-left: 32px;
   padding-right: 32px;
-  border-radius: 16px;
+  border-radius: $button-border-radius;
   background: #3b5998;
   color: #FFFFFF;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
@@ -940,11 +940,11 @@
 }
 .button.button-icon-only {
   height: 32px;
-  line-height: 30px;
+  line-height: $button-line-height;
   padding-top: 2px;
   padding-left: 32px;
   padding-right: 32px;
-  border-radius: 16px;
+  border-radius: $button-border-radius;
   background: transparent;
   color: $secondary-text-color;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
@@ -1157,11 +1157,11 @@
 }
 .button.button-icon-with-stroke {
   height: 32px;
-  line-height: 30px;
+  line-height: $button-line-height;
   padding-top: 2px;
   padding-left: 32px;
   padding-right: 32px;
-  border-radius: 16px;
+  border-radius: $button-border-radius;
   background: rgba($primary-text-color, 0.7);
   color: #FFFFFF;
   transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);

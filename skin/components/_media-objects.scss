@@ -870,7 +870,7 @@
   max-width: 100%;
 }
 .mo-description {
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.015em;
@@ -911,7 +911,7 @@
   }
 }
 .mo-meta {
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 11px;
   letter-spacing: 0.015em;
   font-weight: 200;

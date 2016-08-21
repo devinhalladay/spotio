@@ -162,7 +162,7 @@ body,
   float: right;
 }
 .edit-header-image--retry {
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 28px;
   line-height: 36px;
   letter-spacing: -0.005em;
@@ -199,7 +199,7 @@ body,
   width: 575px;
   padding: 0 0 1em 5vw;
   text-align: left;
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
 }
 .header-image--placeholder {
   position: relative;

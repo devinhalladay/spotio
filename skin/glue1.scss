@@ -156,7 +156,7 @@
   max-width: 100%;
 }
 .pf-title {
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.015em;
@@ -601,7 +601,7 @@
   width: 210px;
 }
 .h-label {
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 11px;
   line-height: 16px;
   letter-spacing: 0.015em;
@@ -690,7 +690,7 @@
   color: #FFFFFF;
 }
 .h-extra .listeners-count {
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 11px;
   line-height: 16px;
   letter-spacing: 0.015em;
@@ -988,7 +988,7 @@
   bottom: 0;
 }
 .header-inline .h-title {
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 36px;
   line-height: 44px;
   letter-spacing: -0.005em;
@@ -1014,7 +1014,7 @@
     display: none;
   }
   .h-title {
-    font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+    font-family: $font-replacement;
     font-size: 36px;
     line-height: 44px;
     letter-spacing: -0.005em;
@@ -1129,7 +1129,7 @@
 }
 .h-sticky-header .h-sticky-title {
   color: $primary-text-color;
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 28px;
   letter-spacing: -0.005em;
   font-weight: 400;
@@ -1358,7 +1358,7 @@
 }
 .tl-header th {
   border-top: 0;
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 11px;
   line-height: 16px;
   letter-spacing: 0.015em;

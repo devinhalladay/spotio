@@ -53,7 +53,7 @@ h1 {
 
 /* line 47, /Users/Devin/GitHub/spotio/skin/apps/social-feed.scss */
 .reactions {
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: "Whitney", "Helvetica Neue", Helvetica, Arial, "Yu Gothic UI", sans-serif;
   font-size: 11px;
   line-height: 16px;
   letter-spacing: 0.015em;
@@ -73,7 +73,7 @@ h1 {
 /* line 64, /Users/Devin/GitHub/spotio/skin/apps/social-feed.scss */
 .story {
   background: #f2f3f6;
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: "Whitney", "Helvetica Neue", Helvetica, Arial, "Yu Gothic UI", sans-serif;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.015em;
@@ -115,7 +115,7 @@ h1 {
 
 /* line 99, /Users/Devin/GitHub/spotio/skin/apps/social-feed.scss */
 .story .share-object .share-meta {
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: "Whitney", "Helvetica Neue", Helvetica, Arial, "Yu Gothic UI", sans-serif;
   font-size: 11px;
   line-height: 16px;
   letter-spacing: 0.015em;
@@ -127,7 +127,7 @@ h1 {
 /* line 109, /Users/Devin/GitHub/spotio/skin/apps/social-feed.scss */
 .story .share-group .lead {
   color: #56666F;
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: "Whitney", "Helvetica Neue", Helvetica, Arial, "Yu Gothic UI", sans-serif;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.015em;

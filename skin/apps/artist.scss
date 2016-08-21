@@ -3,7 +3,7 @@
 
 .search .search-title {
   margin: 16px 0 4px;
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 11px;
   line-height: 16px;
   letter-spacing: 0.015em;
@@ -117,7 +117,7 @@
   background-color: transparent;
   border: 0;
   z-index: 0;
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 11px;
   font-weight: 400;
   letter-spacing: 0.16em;
@@ -158,7 +158,7 @@
   background-color: transparent;
   border: 0;
   z-index: 0;
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 11px;
   font-weight: 400;
   letter-spacing: 0.16em;
@@ -441,7 +441,7 @@
   margin-top: 10px;
   margin-left: 10px;
   margin-right: 10px;
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: normal;

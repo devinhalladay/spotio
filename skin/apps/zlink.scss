@@ -132,7 +132,7 @@
 }
 .accessibility-links {
   margin: 0 24px 0 24px;
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.015em;
@@ -524,7 +524,7 @@
   color: $primary-text-color;
   padding-left: 15px;
   margin: 0;
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 11px;
   line-height: 16px;
   letter-spacing: 0.015em;
@@ -538,7 +538,7 @@
   color: $primary-text-color;
   text-decoration: none;
   position: relative;
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.015em;
@@ -1040,7 +1040,7 @@
   background-color: $secondary-text-color;
 }
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element h2 {
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 11px;
   line-height: 16px;
   letter-spacing: 0.015em;
@@ -1063,7 +1063,7 @@
 }
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item {
   position: relative;
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.015em;
@@ -1380,7 +1380,7 @@
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item.folder .title,
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item.playlist .sub-title,
 .sidebar-new-chrome-style .navbar-new-chrome-style.sidebar-scroll-element .item.folder .sub-title {
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.015em;
@@ -1529,7 +1529,7 @@
   display: none;
   background-color: #404040;
   color: #FFFFFF;
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.015em;
@@ -1551,7 +1551,7 @@
 }
 .sidebar-new-chrome-style #menu-playlists .item,
 .sidebar-new-chrome-style #menu-recently-played .item {
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.015em;
@@ -1693,7 +1693,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.015em;
@@ -2144,7 +2144,7 @@
   margin-right: 100px;
 }
 .view-player #connect-picker #connect-container #connect-title {
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: normal;
@@ -3852,7 +3852,7 @@ body.remotebar #connect-container-background {
   position: relative;
   background-color: #282828;
   text-align: left;
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.015em;
@@ -5960,7 +5960,7 @@ body.remotebar #connect-container-background-new-chrome-style {
   padding-bottom: 1px;
 }
 .view-player-new .track {
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.015em;
@@ -5970,7 +5970,7 @@ body.remotebar #connect-container-background-new-chrome-style {
   color: $primary-text-color;
 }
 .view-player-new .artist {
-  font-family: 'spotify-circular', 'Helvetica Neue', Helvetica, Arial, 'Yu Gothic UI', sans-serif;
+  font-family: $font-replacement;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.015em;
