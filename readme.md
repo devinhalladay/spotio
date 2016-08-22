@@ -1,5 +1,7 @@
 # Spotio for Spotify.app
 
+**[HELP NEEDED](#help-needed)**
+
 ![Spotio screenshot](screenshot.png)
 
 **If you decided to go with Spotify after Rdio was bought but, like me, you miss Rdio's light UI, you're in luck—I discovered that you can skin the Spotify app with CSS.**
@@ -14,6 +16,12 @@
 **Make sure you quit (cmd + q) your local Spotify.app before launching my version, otherwise my version won't launch.**
 
 Download the latest release: [v1.0](https://github.com/devinhalladay/spotio/releases/download/v1.0/Spotify.zip).
+
+# HELP NEEDED!
+I really need help coming up with a way to deal with updates to the Spotify app.
+Currently there is no good way to diff the Spotio assets with the default Spotify.app assets because I am regenerating all assets during the build process.
+
+**If anyone is up for the challenge and wants to help me come up with a way to handle updates, I will be forever in your debt.**
 
 # To-do
 - [ ] Add a Grunt task to setup the local repo for people who have just cloned this repo for development.
