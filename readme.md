@@ -2,9 +2,7 @@
 
 ![Spotio screenshot](screenshot.png)
 
-I sorely miss Rdio. It was the perfect music streaming service: quality streaming, massive selection, perfect UX, beautiful UI, and wonderful social interaction features. When it was bought by Pandora, many of us were left out in the dust and were forced to choose between lesser services like Apple Music, Spotify, and Google Play Music.
-
-**If you decided to go with Spotify but, like me, you miss Rdio's light UI, you're in luck—I discovered that you can skin the Spotify app with CSS.**
+**If you decided to go with Spotify after Rdio was bought but, like me, you miss Rdio's light UI, you're in luck—I discovered that you can skin the Spotify app with CSS.**
 
 *Disclaimer: I have nothing but respect for the Spotify design and engineering teams, and undertaking this project has served only to increase that respect. They're really, really brilliant teams doing things that I admire greatly. I appreciate the design decisions they made while designing the app, but I prefer a light theme in my apps, so this project is merely an attempt to cater to my own selfish desires, not to do it "better" than the Spotify team did.*
 
@@ -15,19 +13,19 @@ I sorely miss Rdio. It was the perfect music streaming service: quality streamin
 
 **Make sure you quit (cmd + q) your local Spotify.app before launching my version, otherwise my version won't launch.**
 
-Download the latest release: [v0.9 Beta 2](https://github.com/devinhalladay/spotio/releases/download/v0.9-beta.2/Spotify.app.zip).
+Download the latest release: [v1.0](https://github.com/devinhalladay/spotio/releases/download/v1.0/Spotify.zip).
 
 # To-do
-- [x] **HIGH PRIORITY:** Figure out how to get access to the rendered DOM from Chromium Embedded Framework so I can fully style all elements.
-- [x] Streaming build system so I don't need to keep rebuilding and recompiling every single Sass file when I make a single change.
 - [ ] Add a Grunt task to setup the local repo for people who have just cloned this repo for development.
 - [ ] Add documentation guide for contributing to this repo.
 - [ ] Design new icons for the app for `v1.1` public release.
+- [x] **HIGH PRIORITY:** Figure out how to get access to the rendered DOM from Chromium Embedded Framework so I can fully style all elements.
+- [x] Streaming build system so I don't need to keep rebuilding and recompiling every single Sass file when I make a single change.
 
 # Known Skin Issues
 - I'm not yet sure how to handle the update cycle for the Spotify app. I don't know exactly how updates directly from Spotify will effect Spotio. **For the time-being, please avoid updating your Spotify.app until I have figured out a new release cycle.**
 - Contrast is an issue in some areas, but this is being fixed.
-- Some album or artist header images are styled on Spotify's servers so they break the Spotio skin's look and feel, often making header text unreadable. I'm working on a workaround for this.
+- ~Some album or artist header images are styled on Spotify's servers so they break the Spotio skin's look and feel, often making header text unreadable. I'm working on a workaround for this.~ *Fixed as of v0.9b3*
 
 # Development
 Originally, I used bash scripts to manage development for this app, but I switched to a streaming build system using Grunt.
