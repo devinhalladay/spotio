@@ -96,6 +96,13 @@ module.exports = function(grunt) {
           dest: '.tmp/Spotify.app/Contents/Resources/Apps/',
         }]
       },
+      icon: { // Copy App directories into .tmp/Spotify.app
+        files: [{
+          expand: true,
+          src: ['Icon.icns'],
+          dest: 'dist/Spotify.app/Contents/Resources/',
+        }]
+      },
       // spotifyapp: { // Copy completed Spotify.app to dist/
       //   files: [{
       //     expand: true,
