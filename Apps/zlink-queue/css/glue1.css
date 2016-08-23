@@ -18724,11 +18724,11 @@ th[data-sort]:hover {
 
 /* line 2041, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .pop-meter-background:after {
-  box-shadow: 4px 0 0 0 #56666F, 8px 0 0 0 #56666F, 12px 0 0 0 #56666F, 16px 0 0 0 #56666F, 20px 0 0 0 #56666F, 24px 0 0 0 #56666F, 28px 0 0 0 #56666F, 32px 0 0 0 #56666F; }
+  box-shadow: 4px 0 0 0 #9CA6AC, 8px 0 0 0 #9CA6AC, 12px 0 0 0 #9CA6AC, 16px 0 0 0 #9CA6AC, 20px 0 0 0 #9CA6AC, 24px 0 0 0 #9CA6AC, 28px 0 0 0 #9CA6AC, 32px 0 0 0 #9CA6AC; }
 
 /* line 2044, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .pop-meter-overlay:after {
-  box-shadow: 4px 0 0 0 #9CA6AC, 8px 0 0 0 #9CA6AC, 12px 0 0 0 #9CA6AC, 16px 0 0 0 #9CA6AC, 20px 0 0 0 #9CA6AC, 24px 0 0 0 #9CA6AC, 28px 0 0 0 #9CA6AC, 32px 0 0 0 #9CA6AC; }
+  box-shadow: 4px 0 0 0 #008CD6, 8px 0 0 0 #008CD6, 12px 0 0 0 #008CD6, 16px 0 0 0 #008CD6, 20px 0 0 0 #008CD6, 24px 0 0 0 #008CD6, 28px 0 0 0 #008CD6, 32px 0 0 0 #008CD6; }
 
 /**
  * Standard Throbber

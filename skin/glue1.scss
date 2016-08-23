@@ -2039,10 +2039,10 @@ th[data-sort]:hover {
   top: 0px;
 }
 .pop-meter-background:after {
-  box-shadow: 4px 0 0 0 $primary-text-color, 8px 0 0 0 $primary-text-color, 12px 0 0 0 $primary-text-color, 16px 0 0 0 $primary-text-color, 20px 0 0 0 $primary-text-color, 24px 0 0 0 $primary-text-color, 28px 0 0 0 $primary-text-color, 32px 0 0 0 $primary-text-color;
+  box-shadow: 4px 0 0 0 $secondary-text-color, 8px 0 0 0 $secondary-text-color, 12px 0 0 0 $secondary-text-color, 16px 0 0 0 $secondary-text-color, 20px 0 0 0 $secondary-text-color, 24px 0 0 0 $secondary-text-color, 28px 0 0 0 $secondary-text-color, 32px 0 0 0 $secondary-text-color;
 }
 .pop-meter-overlay:after {
-  box-shadow: 4px 0 0 0 $secondary-text-color, 8px 0 0 0 $secondary-text-color, 12px 0 0 0 $secondary-text-color, 16px 0 0 0 $secondary-text-color, 20px 0 0 0 $secondary-text-color, 24px 0 0 0 $secondary-text-color, 28px 0 0 0 $secondary-text-color, 32px 0 0 0 $secondary-text-color;
+  box-shadow: 4px 0 0 0 $primary-accent-color, 8px 0 0 0 $primary-accent-color, 12px 0 0 0 $primary-accent-color, 16px 0 0 0 $primary-accent-color, 20px 0 0 0 $primary-accent-color, 24px 0 0 0 $primary-accent-color, 28px 0 0 0 $primary-accent-color, 32px 0 0 0 $primary-accent-color;
 }
 /**
  * Standard Throbber
