@@ -20589,6 +20589,30 @@ BrowserNavigation.prototype._registerKeyboardShortcuts = function () {
     }, function () {
       window.location.reload();
     });
+
+    Keyboard.registerShortcut({
+      key: Keyboard.KEYS.R,
+      shift: true,
+      ctrl: true
+    }, function () {
+      window.location.reload();
+    });
+
+    Keyboard.registerShortcut({
+      key: Keyboard.KEYS.J,
+      shift: true,
+      ctrl: true
+    }, function () {
+      var markup = document.documentElement.innerHTML;
+      input = document.createElement('input');
+      input.style.position = 'fixed';
+      input.style.opacity = 0;
+      input.value = markup;
+      document.body.appendChild(input);
+      input.select();
+      document.execCommand('Copy');
+      document.body.removeChild(input);
+    });
   }
 
   var _this = this;
@@ -116011,12 +116035,20 @@ module.exports = Object.assign || function (target, source) {
 
 },{}]},{},[84]);
 
-// window.addEventListener("keydown", checkKeyPressed, false);
-//
-// function checkKeyPressed(e) {
-//   var markup = document.documentElement.innerHTML;
-//   if (e.keyCode == "17") {
-//     // alert(markup);
-//     prompt("Enter your name", markup);
-//   }
-// }
+var map = []; // Or you could call it "key"
+onkeydown = onkeyup = function(e){
+  e = e || event; // to deal with IE
+  map[e.keyCode] = e.type == 'keydown';
+
+  if(map[17] && map[16] && map[75]){ // CTRL+SHIFT+K
+    var markup = document.documentElement.innerHTML;
+    input = document.createElement('input');
+    input.style.position = 'fixed';
+    input.style.opacity = 0;
+    input.value = markup;
+    document.body.appendChild(input);
+    input.select();
+    document.execCommand('Copy');
+    document.body.removeChild(input);
+  }
+}
