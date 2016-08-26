@@ -1803,7 +1803,7 @@
 .tl-row.unavailable .tl-cell,
 .tl-row.unavailable .tl-cell a:link,
 .tl-row.unavailable .tl-highlight {
-  color: $primary-text-color !important;
+  color: $secondary-text-color !important;
 }
 .tl-row.unavailable .button-play {
   display: none !important;
@@ -1812,7 +1812,7 @@
   display: inline-block;
 }
 .tl-row.unavailable .tl-number {
-  color: $primary-text-color;
+  color: $secondary-text-color;
 }
 .tl-row.local .button-add {
   visibility: hidden !important;

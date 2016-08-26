@@ -18440,7 +18440,7 @@ a.list-group-item.active > .badge,
 .tl-row.unavailable .tl-cell,
 .tl-row.unavailable .tl-cell a:link,
 .tl-row.unavailable .tl-highlight {
-  color: #56666F !important; }
+  color: #9CA6AC !important; }
 
 /* line 1808, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row.unavailable .button-play {
@@ -18452,7 +18452,7 @@ a.list-group-item.active > .badge,
 
 /* line 1814, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row.unavailable .tl-number {
-  color: #56666F; }
+  color: #9CA6AC; }
 
 /* line 1817, /Users/Devin/GitHub/spotio/skin/glue1.scss */
 .tl-row.local .button-add {

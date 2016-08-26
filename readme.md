@@ -1,12 +1,12 @@
 # Spotio for Spotify.app
 
-**[HELP NEEDED](#help-needed)**
+### **[HELP NEEDED](http://github.com/devinhalladay/spotio/issues)**
 
 ![Spotio screenshot](screenshot.png)
 
 **If you decided to go with Spotify after Rdio was bought but, like me, you miss Rdio's light UI, you're in luck—I discovered that you can skin the Spotify app with CSS.**
 
-*Disclaimer: I have nothing but respect for the Spotify design and engineering teams, and undertaking this project has served only to increase that respect. They're really, really brilliant teams doing things that I admire greatly. I appreciate the design decisions they made while designing the app, but I prefer a light theme in my apps, so this project is merely an attempt to cater to my own selfish desires, not to do it "better" than the Spotify team did.*
+*Disclaimer: I have nothing but respect for the Spotify design and engineering teams, and undertaking this project has served only to increase that respect. They're really, really brilliant teams doing things that I admire greatly. I appreciate the design decisions they made while designing the app, but I prefer a light theme in my apps, so this project is merely an attempt to cater to my love of Rdio, not to do it "better" than the Spotify team did.*
 
 ---
 
@@ -15,13 +15,7 @@
 
 **Make sure you quit (cmd + q) your local Spotify.app before launching my version, otherwise my version won't launch.**
 
-Download the latest release: [v1.0](https://github.com/devinhalladay/spotio/releases/download/v1.0/Spotify.zip).
-
-# HELP NEEDED!
-I really need help coming up with a way to deal with updates to the Spotify app.
-Currently there is no good way to diff the Spotio assets with the default Spotify.app assets because I am regenerating all assets during the build process.
-
-**If anyone is up for the challenge and wants to help me come up with a way to handle updates, I will be forever in your debt.**
+Download the latest release: https://github.com/devinhalladay/spotio/releases/latest.
 
 # To-do
 - [ ] Add a Grunt task to setup the local repo for people who have just cloned this repo for development.
@@ -30,17 +24,8 @@ Currently there is no good way to diff the Spotio assets with the default Spotif
 - [x] **HIGH PRIORITY:** Figure out how to get access to the rendered DOM from Chromium Embedded Framework so I can fully style all elements.
 - [x] Streaming build system so I don't need to keep rebuilding and recompiling every single Sass file when I make a single change.
 
-# Known Skin Issues
-- I'm not yet sure how to handle the update cycle for the Spotify app. I don't know exactly how updates directly from Spotify will effect Spotio. **For the time-being, please avoid updating your Spotify.app until I have figured out a new release cycle.**
-- Contrast is an issue in some areas, but this is being fixed.
-- ~Some album or artist header images are styled on Spotify's servers so they break the Spotio skin's look and feel, often making header text unreadable. I'm working on a workaround for this.~ *Fixed as of v0.9b3*
-
 # Development
 Originally, I used bash scripts to manage development for this app, but I switched to a streaming build system using Grunt.
-
-## Known Development Issues
-- I'm not yet sure how to handle the update cycle for the Spotify app. I don't know exactly how updates directly from Spotify will effect Spotio. **For the time-being, please avoid updating your Spotify.app until I have figured out a new release cycle.**
-- Some Grunt tasks need to be tweaked to make cloning the repo for development easier.
 
 ## Grunt Tasks
 - `sudo grunt`: Build all CSS and watch for changes
@@ -49,6 +34,7 @@ Originally, I used bash scripts to manage development for this app, but I switch
 - `sudo grunt download`: Downloads latest spotify binary and places it in .tmp/
 - `sudo grunt shell:extract`: Extracts the most recently downloaded Spotify.app from .tmp/Spotify.dmg
 - `sudo grunt compress`: Compress your Spotify.app into a distributable .zip
+- `sudo grunt copy:icon`: Copies the custom icon into dist/Spotify.app
 
 ---
 
