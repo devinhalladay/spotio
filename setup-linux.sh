@@ -22,8 +22,8 @@ tar -zxf data.tar.gz
 
 
 # cleanup
-#rm ./spotify.deb
-#rm ./data.tar.gz
+rm ./spotify.deb
+rm ./data.tar.gz
 
 # Rename .spa file to zip file
 find ./usr/share/spotify/Apps/ -iname "*.spa" -exec bash -c 'mv "$0" "${0%\.spa}.zip"' {} \;
@@ -35,12 +35,10 @@ ls ./usr/share/spotify/Apps/*.zip | awk -F'.zip' '{print "unzip -o "$0" -d "$1}'
 rm ./usr/share/spotify/Apps/*.zip
 
 # Copy all necesary files
-cp ../Apps/* ./usr/share/spotify/
+cp -R ../Apps/* ./usr/share/spotify/Apps/
 
 # Now let's repack everything
-# ls -d ./usr/share/spotify/Apps/ | awk -F '' '{print "zip ./usr/share/spotify/Apps/"$0".spa ./usr/share/spotify/Apps/"$0"/"}'
-# find ./usr/share/spotify/Apps/ -maxdepth 1 -type d | awk -F '' '{print "cd " $0 "; ls -lh; cd ../../../../;" }'
-find ./usr/share/spotify/Apps/ -maxdepth 1 -type d | awk -F '' '{print "cd " $0 "; END_DIR=basename " $0"; zip -r ../$END_DIR.spa *; cd ../../../../../" }' # I need a way to figure out how to repack all subdirectories! :(
+find ./usr/share/spotify/Apps/* -maxdepth 0 -type d | awk -F '' '{print "END_DIR=`basename " $0"`; cd " $0 "; zip -q -r ../$END_DIR.spa *; cd ../../../../../ ; rm -r "$0}' | bash
 
 # Create a new md5sum file
 
@@ -49,32 +47,9 @@ find ./usr/share/spotify/Apps/ -maxdepth 1 -type d | awk -F '' '{print "cd " $0 
 # Repack all our files into the original data.tar.gz
 
 # Repack into a .deb file
-cd ../
-
-ar m * spotify.deb
-
-cp spotify.deb ../debian
-print "You can now install Spotio with dpkg -i spotify.deb"
-
-# Get the
-# RAW_MATCING_FILE=`grep -s -q $REMOTE_FILES <<< $ARCH`
-# # echo $RAW_MATCING_FILE
+# cd ../
 #
-# grep -s -q $REMOTE_FILES <<< $ARCH
-
-# # Download latest Spotify binary and extract it to .tmp
-# curl https://download.spotify.com/Spotify.dmg --create-dirs -o .tmp/Spotify.dmg
-# hdiutil attach .tmp/Spotify.dmg
-# sudo cp -R "/Volumes/Spotify/Spotify.app" .tmp/
-# sudo chmod -R 755 .tmp/Spotify.app
+# ar m * spotify.deb
 #
-# # Renaming .spa files to .zip files
-# find .tmp/Spotify.app/Contents/Resources/Apps/ -iname "*.spa" -exec bash -c 'sudo mv "$0" "${0%\.spa}.zip"' {} \;
-#
-# # Switch into the new tmp dir and then unzip all .zips to /Apps/
-# pushd .tmp/Spotify.app/Contents/Resources/Apps
-# ls *.zip|awk -F'.zip' '{print "sudo unzip -o "$0" -d ../../../../../Apps/"$1}'|sh
-#
-# # Final step: unmount and delete our temporary DMG
-# hdiutil detach /Volumes/Spotify
-# sudo rm -rf .tmp/*
+# cp spotify.deb ../debian
+# print "You can now install Spotio with dpkg -i spotify.deb
