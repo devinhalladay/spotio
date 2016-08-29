@@ -17,11 +17,11 @@ curl $BASE_URL${FILE_WE_WANT:1:-1} --create-dirs -o .tmp/spotify.deb
 # current directory is now ./tmp/ because ar doesn't support changing the output directory
 cd .tmp
 ar -x ./spotify.deb
+
 # Extract data.tar.gz
 tar -zxf data.tar.gz
 
-
-# cleanup
+# Cleanup
 rm ./spotify.deb
 rm ./data.tar.gz
 
@@ -40,16 +40,27 @@ cp -R ../Apps/* ./usr/share/spotify/Apps/
 # Now let's repack everything
 find ./usr/share/spotify/Apps/* -maxdepth 0 -type d | awk -F '' '{print "END_DIR=`basename " $0"`; cd " $0 "; zip -q -r ../$END_DIR.spa *; cd ../../../../../ ; rm -r "$0}' | bash
 
-# Create a new md5sum file
+# Unpack the control files
+mkdir control && tar -zxf control.tar.gz -C ./control/
 
-# Repack the control files back into control.tar.gz
+# Remove the old mds5sums file
+rm ./control/md5sums
+
+# Create a new md5sum file
+find usr/* -type f | awk -F '' '{print "md5sum " $0 " >> ./control/md5sums"}' | bash
+
+# # Repack the control files back into control.tar.gz
+cd ./control && tar -czf ../control.tar.gz * && cd ../
 
 # Repack all our files into the original data.tar.gz
+tar -czf ./data.tar.gz usr/*
 
-# Repack into a .deb file
-# cd ../
-#
-# ar m * spotify.deb
-#
-# cp spotify.deb ../debian
-# print "You can now install Spotio with dpkg -i spotify.deb
+# More cleaning! :D
+rm -r usr/
+rm -r control/
+
+# Create .deb file!
+ar r ../spotio.deb debian-binary control.tar.gz data.tar.gz
+
+# Last cleanup! :D
+cd ../ && rm -r .tmp
