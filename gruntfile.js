@@ -132,7 +132,7 @@ module.exports = function(grunt) {
     // Delete files
     clean: {
       // Delete .spa files
-      spa: ['.tmp/Spotify.app/Contents/Resources/Apps/*.spa'],
+      spa: ['.tmp/Spotify.app/Contents/Resources/Apps/*.spa', '%AppData%/Roaming/Spotify/Apps/*.spa'],
       oldApps: {
         files: {
           src: ['.tmp/Spotify.app', '.tmp/Spotify.dmg']
