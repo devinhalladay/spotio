@@ -60,7 +60,7 @@ rm -r usr/
 rm -r control/
 
 # Create .deb file!
-ar r ../spotio.deb debian-binary control.tar.gz data.tar.gz
+ar r ../dist/spotio.deb debian-binary control.tar.gz data.tar.gz
 
 # Last cleanup! :D
 cd ../ && rm -r .tmp
