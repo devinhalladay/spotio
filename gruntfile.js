@@ -6,9 +6,9 @@ module.exports = function(grunt) {
     notify_hooks: {
       options: {
         enabled: true,
-        title: "Spotio", // defaults to the name in package.json, or will use project directory's name
-        success: true, // whether successful grunt executions should be notified automatically
-        duration: 3 // the duration of notification in seconds, for `notify-send only
+        title: "Spotio",
+        success: true,
+        duration: 1
       }
     },
 
@@ -102,15 +102,7 @@ module.exports = function(grunt) {
           src: ['Icon.icns'],
           dest: 'dist/Spotify.app/Contents/Resources/',
         }]
-      },
-      // spotifyapp: { // Copy completed Spotify.app to dist/
-      //   files: [{
-      //     expand: true,
-      //     cwd: '.tmp/',
-      //     src: ['Spotify.app/**'],
-      //     dest: 'dist/',
-      //   }]
-      // },
+      }
     },
 
     // Watch and build
@@ -162,6 +154,9 @@ module.exports = function(grunt) {
       },
       copyspotifyapp: {
         command: 'sudo cp -r ".tmp/Spotify.app" "dist/"'
+      },
+      package: {
+        command: 'find dist/Spotify.app/Contents/Resources/Apps/* -maxdepth 0 -type d | awk -F '' '{print "END_DIR=`basename " $0"`; cd " $0 "; zip -q -r ../$END_DIR.spa *; cd ../../../../../ ; rm -r "$0}' | bash'
       }
     },
 
@@ -189,5 +184,5 @@ module.exports = function(grunt) {
   // Run tasks
   grunt.registerTask('default', ['sass', 'watch']);
   grunt.registerTask('download', ['mkdir', 'curl', 'shell:extract']);
-  grunt.registerTask('copyapp', ['mkdir', 'curl', 'shell:extract']);
+  grunt.registerTask('release', ['copy:apps', 'shell:copyspotifyapp', 'copy:icon', 'shell:package']);
 };
