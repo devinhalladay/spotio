@@ -156,7 +156,7 @@ module.exports = function(grunt) {
         command: 'sudo cp -r ".tmp/Spotify.app" "dist/"'
       },
       package: {
-        command: 'find dist/Spotify.app/Contents/Resources/Apps/* -maxdepth 0 -type d | awk -F '' '{print "END_DIR=`basename " $0"`; cd " $0 "; zip -q -r ../$END_DIR.spa *; cd ../../../../../ ; rm -r "$0}' | bash'
+        command: "find dist/Spotify.app/Contents/Resources/Apps/* -maxdepth 0 -type d | awk -F '' '{print \"END_DIR=`basename \" $0\"`; cd \" $0 \"; zip -q -r ../$END_DIR.spa *; cd ../../../../../ ; rm -r \"$0}' | bash"
       }
     },
 
