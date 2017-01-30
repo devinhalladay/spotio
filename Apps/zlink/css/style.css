@@ -6608,16 +6608,6 @@ body.remotebar #connect-container-background-new-chrome-style {
   top: 0;
   width: 6px; }
 
-/* line 5932, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
-.view-player-new .text-container .text-item-container .text-item .scroll-text-container::before {
-  background: linear-gradient(to left, transparent, #282828);
-  left: 0; }
-
-/* line 5936, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
-.view-player-new .text-container .text-item-container .text-item .scroll-text-container::after {
-  background: linear-gradient(to right, transparent, #282828);
-  right: 0; }
-
 /* line 5940, /Users/Devin/GitHub/spotio/skin/apps/zlink.scss */
 .view-player-new .text-container .text-item-container .text-item .scroll-text-container p {
   padding: 0 6px; }
